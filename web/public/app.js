@@ -3,9 +3,14 @@
 
 const CONFIG = {
   donateUrl: null,          // e.g. "https://buycoffee.to/<name>"; the link stays hidden while null
-  bookingUrl: "https://r.pl/bilety-czarterowe",
-  staleAfterHours: 14,      // ingest runs every 6 h; two missed runs = warn
+  // Per operator (deal.operator): display name, booking page, and when its data counts as stale
+  // (two missed runs: r.pl runs every 6 h, Itaka every 12 h).
+  operators: {
+    r_pl: { name: "r.pl", url: "https://r.pl/bilety-czarterowe", staleAfterHours: 14 },
+    itaka: { name: "Itaka", url: "https://www.itaka.pl/bilety-lotnicze/", staleAfterHours: 26 },
+  },
 };
+const operatorInfo = (code) => CONFIG.operators[code] ?? { name: code, url: null, staleAfterHours: 14 };
 
 // useGrouping "always": pl-PL skips the separator for 4-digit numbers by default (1249 vs 1 249).
 const zl = new Intl.NumberFormat("pl-PL", { maximumFractionDigits: 0, useGrouping: "always" });
@@ -52,12 +57,20 @@ function renderStatus(data) {
   const box = $("#status");
   box.replaceChildren();
 
-  const updated = s.last_successful_fetch ? new Date(s.last_successful_fetch) : null;
-  const stale = !updated || Date.now() - updated.getTime() > CONFIG.staleAfterHours * 3600e3;
+  // Freshness per operator: one operator's outage must not hide behind the other's fresh data.
+  const ops = (s.operators ?? []).map((o) => {
+    const info = operatorInfo(o.operator);
+    const at = o.last_successful_fetch ? new Date(o.last_successful_fetch) : null;
+    const old = !at || Date.now() - at.getTime() > info.staleAfterHours * 3600e3;
+    return { ...o, info, at, old };
+  });
+  const staleOps = ops.filter((o) => o.old);
+  const stale = ops.length === 0 || staleOps.length > 0;
   box.classList.toggle("stale", stale);
 
+  const checks = ops.filter((o) => o.at).map((o) => `${o.info.name} ${dateTime.format(o.at)}`);
   const meta = el("p", { class: "meta" },
-    updated ? `Ostatnie sprawdzenie cen: ${dateTime.format(updated)}. ` : "",
+    checks.length ? `Ostatnie sprawdzenie cen: ${checks.join(", ")}. ` : "",
     `Śledzimy ${num.format(s.flights_priced ?? 0)} lotów.`);
 
   if (data.deals.length) {
@@ -83,11 +96,15 @@ function renderStatus(data) {
     box.append(
       el("h2", {}, "Dziś bez okazji"),
       el("p", {}, `Żaden lot nie kosztuje dziś co najmniej ${pct.format(data.params.discount_threshold * 100)}% mniej niż średnia. ` +
-        `Porównujemy ${num.format(s.segments_with_baseline)} tras; sprawdzamy ceny co 6 godzin.`),
+        `Porównujemy ${num.format(s.segments_with_baseline)} tras; ceny sprawdzamy kilka razy dziennie.`),
       meta,
     );
   }
-  if (stale) box.append(el("p", {}, "Dane mogą być nieaktualne: ostatnie sprawdzenie cen było dawno. Przed zakupem sprawdź cenę u organizatora."));
+  if (stale) {
+    const who = staleOps.length && staleOps.length < ops.length
+      ? ` dla ${staleOps.map((o) => o.info.name).join(", ")}` : "";
+    box.append(el("p", {}, `Dane${who} mogą być nieaktualne: ostatnie sprawdzenie cen było dawno. Przed zakupem sprawdź cenę u organizatora.`));
+  }
 }
 
 function dealsHeadline(n) {
@@ -168,10 +185,12 @@ function strip(deal, params) {
   const when = back
     ? `${dayMonth.format(out)} – ${fullDate.format(back)}, ${days(deal.stay_days)}`
     : `${fullDate.format(out)}, w jedną stronę`;
+  const op = operatorInfo(deal.operator);
   return el("li", { class: "strip" },
     el("div", { class: "strip-route" },
       el("span", { "aria-hidden": "true" }, deal.origin_iata),
       el("span", { "aria-hidden": "true" }, deal.dest_iata),
+      el("small", {}, op.name),
       el("small", {}, deal.flight_no ? `lot ${deal.flight_no}` : "")),
     el("div", { class: "strip-body" },
       el("h3", {}, `${deal.origin_name} – ${deal.dest_name}`, deal.dest_country ? `, ${deal.dest_country}` : ""),
@@ -183,7 +202,7 @@ function strip(deal, params) {
       el("span", { class: "now" }, money(deal.current_price)),
       el("span", { class: "per" }, "za osobę, tam i z powrotem"),
       el("span", { class: "off" }, `−${pct.format(deal.discount_pct)}%`),
-      el("a", { href: CONFIG.bookingUrl, rel: "noopener", target: "_blank" }, "Sprawdź na r.pl")));
+      op.url ? el("a", { href: op.url, rel: "noopener", target: "_blank" }, `Sprawdź na ${op.name}`) : null));
 }
 
 function renderDeals(data) {

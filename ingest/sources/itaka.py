@@ -16,7 +16,6 @@ into the bundle (the full payload is ~700 KB of page layout per page).
 
 from __future__ import annotations
 
-import copy
 import json
 import logging
 import re
@@ -24,18 +23,24 @@ from datetime import date, datetime
 from decimal import Decimal, InvalidOperation
 from typing import Any
 
+import httpx
+
 from ingest.config import SourceConfig
-from ingest.http_client import RequestCapReached
+from ingest.http_client import Fetcher
 from ingest.models import FlightOffer, ParseError
-from ingest.sources.r_pl import Fetcher
 
 OPERATOR = "itaka"
 BUNDLE_VERSION = 1
 
 _LIST_LINE = re.compile(r'^[0-9a-f]+:(\{"flightsList":.*)$', re.MULTILINE)
-_PRICE = re.compile(r"^\s*(\d{1,3}(?:[\s  ]?\d{3})*(?:[.,]\d{1,2})?)\s*zł\s*$")
+_SPACES = r"\s\u00a0\u202f"  # regular, non-breaking, narrow no-break (pl-PL grouping)
+_PRICE = re.compile(rf"^[{_SPACES}]*(\d{{1,3}}(?:[{_SPACES}]?\d{{3}})*(?:[.,]\d{{1,2}})?)"
+                    rf"[{_SPACES}]*zł[{_SPACES}]*$")
 _IATA = re.compile(r"^[A-Z]{3}$")
-_DROP = {"url", "badges"}
+# Raw-bundle whitelist (see trim_offer).
+_OFFER_KEYS = ("type", "currency", "pricePerPerson", "isApproximateSchedule")
+_LEG_KEYS = ("flightNumber", "numberOfStops")
+_POINT_KEYS = ("airportCode", "dateIso", "time")
 
 log = logging.getLogger(__name__)
 
@@ -63,43 +68,60 @@ def extract_list(text: str) -> dict[str, Any]:
     return obj
 
 
+def _trim_leg(leg: Any) -> Any:
+    if not isinstance(leg, dict):
+        return leg
+    out: dict[str, Any] = {k: leg[k] for k in _LEG_KEYS if k in leg}
+    for part in ("departure", "arrival"):
+        p = leg.get(part)
+        out[part] = {k: p[k] for k in _POINT_KEYS if k in p} if isinstance(p, dict) else p
+    dep = leg.get("departure")
+    info = dep.get("flightCarrierInfo") if isinstance(dep, dict) else None
+    if isinstance(info, dict):  # later offers carry RSC "$ref" strings instead: not resolved
+        out["carrier"] = info.get("name")
+    luggage = leg.get("luggage")
+    if isinstance(luggage, dict):
+        out["luggage"] = luggage
+    return out
+
+
 def trim_offer(offer: Any) -> Any:
-    """Drop page-only fields; carrier info -> {"name": ...} (RSC "$ref" strings -> None)."""
+    """Keep only what parse() uses (+ carrier name and luggage for later analysis).
+
+    A whitelist keeps the raw bundle small (~3k offers per run). Missing fields stay missing, so
+    parse() still fails loudly on them.
+    """
     if not isinstance(offer, dict):
         return offer
-    o = copy.deepcopy(offer)
-    for k in _DROP:
-        o.pop(k, None)
-    for leg_key in ("departureFlight", "returnFlight"):
-        leg = o.get(leg_key)
-        if not isinstance(leg, dict):
-            continue
-        for part in (leg, leg.get("departure"), leg.get("arrival")):
-            if isinstance(part, dict) and "flightCarrierInfo" in part:
-                info = part["flightCarrierInfo"]
-                part["flightCarrierInfo"] = {"name": info.get("name")} if isinstance(info, dict) \
-                    else None
-    return o
+    out: dict[str, Any] = {k: offer[k] for k in _OFFER_KEYS if k in offer}
+    for leg in ("departureFlight", "returnFlight"):
+        if leg in offer:
+            out[leg] = _trim_leg(offer[leg])
+    return out
 
 
 def crawl(client: Fetcher, source: SourceConfig, today: date) -> dict[str, Any]:
     """Fetch all listing pages for one run and return the raw bundle (JSON-serializable).
 
-    If a page's payload has an unexpected shape, the error is recorded in the bundle and the
-    crawl stops (no point fetching 150 pages of a changed layout); ``parse`` then fails loudly.
+    - Unexpected payload shape: the error is recorded as a page and the crawl stops (no point
+      fetching 150 pages of a changed layout); ``parse`` then fails loudly.
+    - Fetch failure (request cap, 403, 4xx/5xx after retries, network): the crawl stops and the
+      bundle is marked truncated, keeping every page fetched so far (saved raw and parsed).
+    - The page count is re-read from every page: offers sell out during the ~15 min crawl.
     """
     max_pages = int(source.payload.get("max_pages", 220))
     pages: list[dict[str, Any]] = []
     pages_count: int | None = None
-    rate_count: int | None = None
+    rate_count: Any = None
     truncated = False
+    fetch_error: str | None = None
     page = 1
     while True:
         try:
             resp = client.fetch(source, None, params=page_params(source, page))
-        except RequestCapReached as e:
-            log.error("itaka crawl truncated at page %d: %s", page, e)
-            truncated = True
+        except (RuntimeError, httpx.HTTPError) as e:  # RequestCapReached, BlockedError, give-up
+            log.error("itaka crawl stopped at page %d: %s", page, e)
+            truncated, fetch_error = True, f"page {page}: {e}"
             break
         try:
             obj = extract_list(resp.text)
@@ -107,17 +129,22 @@ def crawl(client: Fetcher, source: SourceConfig, today: date) -> dict[str, Any]:
             pages.append({"page": page, "error": str(e)})
             log.error("itaka page %d: %s", page, e)
             break
-        pages.append({"page": page, "flightsList": [trim_offer(o) for o in obj["flightsList"]]})
+        count = obj.get("pagesCount")
+        if isinstance(count, bool) or not isinstance(count, int) or count < 0:
+            pages.append({"page": page, "error": f"bad pagesCount {count!r}"})
+            log.error("itaka page %d: bad pagesCount %r", page, count)
+            break
+        items = obj["flightsList"]
+        pages.append({"page": page, "flightsList": [trim_offer(o) for o in items]})
         if pages_count is None:
-            pages_count, rate_count = obj.get("pagesCount"), obj.get("rateCount")
-            log.info("itaka: %s pages, %s offers", pages_count, rate_count)
-        elif obj.get("pagesCount") != pages_count:
-            log.warning("itaka: pagesCount changed mid-crawl %s -> %s", pages_count,
-                        obj.get("pagesCount"))
-        if not isinstance(pages_count, int) or page >= pages_count:
+            log.info("itaka: %s pages, %s offers", count, obj.get("rateCount"))
+        elif count != pages_count:
+            log.warning("itaka: pagesCount changed mid-crawl %s -> %s", pages_count, count)
+        pages_count, rate_count = count, obj.get("rateCount")
+        if not items or page >= count:
             break
         if page >= max_pages:
-            log.error("itaka: max_pages=%d reached of %s pages", max_pages, pages_count)
+            log.error("itaka: max_pages=%d reached of %s pages", max_pages, count)
             truncated = True
             break
         page += 1
@@ -128,6 +155,7 @@ def crawl(client: Fetcher, source: SourceConfig, today: date) -> dict[str, Any]:
         "passengers": int(source.payload.get("adults", 1)),
         "fetched_for": today.isoformat(),
         "truncated": truncated,
+        "fetch_error": fetch_error,
         "pages_count": pages_count,
         "rate_count": rate_count,
         "pages": pages,
@@ -163,7 +191,7 @@ def parse_price(value: Any, path: str) -> Decimal:
     m = _PRICE.match(value) if isinstance(value, str) else None
     if not m:
         raise ParseError(f"bad price at {path}: {value!r}")
-    digits = re.sub(r"[\s  ]", "", m.group(1)).replace(",", ".")
+    digits = re.sub(f"[{_SPACES}]", "", m.group(1)).replace(",", ".")
     try:
         price = Decimal(digits).quantize(Decimal("0.01"))
     except InvalidOperation as e:

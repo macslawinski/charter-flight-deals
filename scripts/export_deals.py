@@ -55,9 +55,27 @@ _STATUS = """
 select (select max(snapshot_date) from price_snapshots)            as last_snapshot_date,
        (select min(snapshot_date) from price_snapshots)            as first_snapshot_date,
        (select count(distinct snapshot_date) from price_snapshots) as history_days,
-       (select max(fetched_at) from raw_fetches where parse_ok)    as last_successful_fetch,
+       (select max(fetched_at) from raw_fetches
+         where parse_ok and operator in (select distinct operator from flights))
+                                                                   as last_successful_fetch,
        (select count(*) from price_snapshots
          where snapshot_date = (select max(snapshot_date) from price_snapshots)) as flights_priced
+"""
+
+# Per-operator freshness: one operator's outage must not hide behind the other's fresh data.
+_OPERATORS = """
+with last_day as (select max(snapshot_date) as d from price_snapshots)
+select f.operator,
+       max(s.snapshot_date)                                         as last_snapshot_date,
+       count(*) filter (where s.snapshot_date = (select d from last_day)) as flights_priced,
+       (select max(r.fetched_at) from raw_fetches r
+         where r.operator = f.operator and r.parse_ok)               as last_successful_fetch,
+       (select max(r.fetched_at) from raw_fetches r
+         where r.operator = f.operator and r.parse_ok is false)      as last_failed_parse
+from price_snapshots s
+join flights f on f.flight_key = s.flight_key
+group by f.operator
+order by f.operator
 """
 
 # Upcoming segments (operator + origin + destination + departure month) and how many already have
@@ -117,6 +135,7 @@ def _row(r: dict[str, Any]) -> dict[str, Any]:
 def build_payload(conn: psycopg.Connection[Any], generated_at: datetime) -> dict[str, Any]:
     with conn.cursor(row_factory=dict_row) as cur:
         status = cur.execute(_STATUS).fetchone() or {}
+        operators = [_row(r) for r in cur.execute(_OPERATORS).fetchall()]
         params = cur.execute(
             """select window_days, discount_threshold, min_baseline_flights, baseline_stat,
                       default_min_stay_days, include_one_way, market_stay_tolerance_days,
@@ -146,6 +165,7 @@ def build_payload(conn: psycopg.Connection[Any], generated_at: datetime) -> dict
             **_row(status),
             "segments_upcoming": segments["segments"],
             "segments_with_baseline": segments["ready"],
+            "operators": operators,
         },
         "params": _row(params),
         "zones": [_row(z) for z in zones],

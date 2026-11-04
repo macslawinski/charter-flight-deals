@@ -27,6 +27,7 @@ class SourceConfig:
     token_env: str | None = None      # env var holding an API token (never in the toml)
     token_header: str | None = None   # header the token is sent in, e.g. X-Access-Token
     follow_redirects: bool = False
+    max_requests_per_run: int | None = None  # overrides [defaults]; redirect hops count too
 
     @property
     def cookie(self) -> str | None:
@@ -68,6 +69,7 @@ def load_settings(path: Path = DEFAULT_CONFIG) -> Settings:
             token_env=cfg.get("token_env"),
             token_header=cfg.get("token_header"),
             follow_redirects=bool(cfg.get("follow_redirects", False)),
+            max_requests_per_run=cfg.get("max_requests_per_run"),
         )
         for name, cfg in raw.get("sources", {}).items()
     }

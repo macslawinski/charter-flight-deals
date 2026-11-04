@@ -8,14 +8,15 @@ on:
         type: boolean
         default: false
       itaka:
-        description: "Also crawl Itaka (otherwise only on the 06:17 / 18:17 UTC cron)"
+        description: "Also crawl Itaka (otherwise only on the 00:17 / 12:17 UTC cron)"
         type: boolean
         default: false
   schedule:
     # Every 6 h at :17 UTC (off the top of the hour). A full r.pl run is ~100 requests, ~10 min.
-    # Itaka (~150 requests, ~14 min) only twice a day: the second entry. The step condition
-    # matches the schedule string, not the clock, so a run delayed in GitHub's queue still counts.
-    # Exit code 3 (request cap hit, data incomplete) fails the r.pl step on purpose.
+    # Itaka (~150 pages, ~15 min) only twice a day: the first entry. 00:17 UTC is the first run
+    # of a new Europe/Warsaw snapshot_date, so the new day's deals include Itaka from the start.
+    # The step condition matches the schedule string, not the clock, so a run delayed in
+    # GitHub's queue still counts. Exit code 3 (request cap hit, data incomplete) fails the step.
     - cron: "17 0,12 * * *"
     - cron: "17 6,18 * * *"
 
@@ -38,15 +39,17 @@ jobs:
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           RPL_COOKIE: ${{ secrets.RPL_COOKIE }}
-      # Second operator: must not block r.pl deals from being deployed if Itaka changes/blocks.
+      # Second operator, independent of r.pl both ways: continue-on-error so an Itaka failure
+      # doesn't block the deploy, and !cancelled() so an r.pl failure doesn't skip Itaka.
       - run: python -m ingest.run --source itaka
-        if: ${{ !inputs.market_only && (inputs.itaka || github.event.schedule == '17 6,18 * * *') }}
+        if: ${{ !cancelled() && !inputs.market_only && (inputs.itaka || github.event.schedule == '17 0,12 * * *') }}
         continue-on-error: true
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
       # Regular-airline reference prices (display-only). After the operator runs so today's deal
       # segments are fetched first. Must not block the deploy: a failure only shows as a warning.
       - run: python -m ingest.market
+        if: ${{ !cancelled() }}
         continue-on-error: true
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
