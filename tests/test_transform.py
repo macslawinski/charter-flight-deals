@@ -231,6 +231,31 @@ def test_other_operator_flights_do_not_fill_a_thin_segment(db):
     assert deals(db) == {}
 
 
+def test_itaka_destinations_are_seeded_with_their_zone(db):
+    # 007: without the seed FUE fell back to default_min_stay_days (3) and a 3-day trip passed.
+    short = "test|XXO|FUE|2027-03-10|3d"
+    week = "test|XXO|FUE|2027-03-10|7d"
+    for key, stay in ((short, 3), (week, 7)):
+        db.execute(
+            """insert into flights (flight_key, operator, origin_iata, dest_iata, outbound_date,
+                                    return_date) values (%s, 'test', 'XXO', 'FUE', %s, %s)""",
+            (key, DEP, DEP + timedelta(days=stay)),
+        )
+    eligible = {r[0] for r in db.execute(
+        "select flight_key from eligible_flights where dest_iata = 'FUE' and operator = 'test'")}
+    assert eligible == {week}
+
+
+def test_unknown_destinations_are_reported(db):
+    flight(db, 1)  # XXL is seeded by the fixture
+    db.execute(
+        """insert into flights (flight_key, operator, origin_iata, dest_iata, outbound_date,
+                                return_date) values ('test|XXO|QQQ|x', 'test', 'XXO', 'QQQ', %s, %s)""",
+        (DEP, DEP + timedelta(days=7)),
+    )
+    assert store.unknown_destinations(db, "test") == ["QQQ"]
+
+
 def test_refresh_deals_is_idempotent(db):
     keys = segment(db, 6)
     db.execute("update price_snapshots set price_last = 1249 where flight_key = %s and "

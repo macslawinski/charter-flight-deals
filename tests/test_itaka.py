@@ -11,7 +11,7 @@ import httpx
 import pytest
 
 from ingest.config import SourceConfig
-from ingest.http_client import RequestCapReached
+from ingest.http_client import BlockedError, RequestCapReached
 from ingest.models import ParseError
 from ingest.sources import itaka
 
@@ -65,17 +65,29 @@ def test_extract_list_fails_loudly(text):
         itaka.extract_list(text)
 
 
-def test_trim_offer_drops_page_fields_and_carrier_details():
-    o = {"url": "/x?y", "badges": [1], "pricePerPerson": "1 zł",
-         "departureFlight": {"flightCarrierInfo": "$52:ref",
-                             "departure": {"flightCarrierInfo": {"name": "Enter Air", "phone": "1"}},
-                             "arrival": {"flightCarrierInfo": "$52:ref"}}}
+def test_trim_offer_keeps_only_whitelisted_fields():
+    o = {"url": "/x?y", "badges": [1], "id": "Cg...", "pricePerPerson": "1 zł", "type": "returnTicket",
+         "departureFlight": {"flightCarrierInfo": "$52:ref", "flightNumber": "ENT1",
+                             "numberOfStops": 0, "duration": {"hours": 5},
+                             "luggage": {"included": True},
+                             "departure": {"airportCode": "KTW", "dateIso": "2026-11-05",
+                                           "city": "Katowice",
+                                           "flightCarrierInfo": {"name": "Enter Air", "phone": "1"}},
+                             "arrival": {"airportCode": "FNC", "flightCarrierInfo": "$52:ref"}}}
     t = itaka.trim_offer(o)
-    assert "url" not in t and "badges" not in t and t["pricePerPerson"] == "1 zł"
-    leg = t["departureFlight"]
-    assert leg["flightCarrierInfo"] is None and leg["arrival"]["flightCarrierInfo"] is None
-    assert leg["departure"]["flightCarrierInfo"] == {"name": "Enter Air"}
-    assert o["departureFlight"]["departure"]["flightCarrierInfo"]["phone"] == "1"  # not mutated
+    assert set(t) == {"pricePerPerson", "type", "departureFlight"}
+    assert t["departureFlight"] == {
+        "flightNumber": "ENT1", "numberOfStops": 0, "carrier": "Enter Air",
+        "luggage": {"included": True},
+        "departure": {"airportCode": "KTW", "dateIso": "2026-11-05"},
+        "arrival": {"airportCode": "FNC"},
+    }
+    assert "city" in o["departureFlight"]["departure"]  # input not mutated
+
+
+def test_trim_offer_keeps_missing_fields_missing():
+    t = itaka.trim_offer({"type": "returnTicket", "departureFlight": {"departure": None}})
+    assert "returnFlight" not in t and t["departureFlight"]["departure"] is None
 
 
 def test_open_jaw_offer_is_skipped():
@@ -108,10 +120,13 @@ def test_unexpected_shape_fails_loudly(mutate, msg):
 
 
 class FakeClient:
-    """Serves `pages` RSC payloads (a page is a list of offers or a raw string)."""
+    """Serves `pages`: a list of offers, a raw RSC string, or an exception to raise.
 
-    def __init__(self, pages: list[Any], cap: int = 100) -> None:
-        self.pages, self.cap = pages, cap
+    `counts` overrides the pagesCount reported on each page (default: len(pages)).
+    """
+
+    def __init__(self, pages: list[Any], cap: int = 100, counts: list[Any] | None = None) -> None:
+        self.pages, self.cap, self.counts = pages, cap, counts
         self.calls: list[dict[str, str]] = []
 
     def fetch(self, source, payload=None, *, path="", params=None):
@@ -119,11 +134,15 @@ class FakeClient:
             raise RequestCapReached("cap")
         p = dict(params or [])
         self.calls.append(p)
-        page = self.pages[int(p["page"]) - 1]
+        n = int(p["page"])
+        page = self.pages[n - 1]
+        if isinstance(page, Exception):
+            raise page
         if isinstance(page, str):
             return httpx.Response(200, text=page)
-        obj = {"flightsList": page, "pagesCount": len(self.pages), "rateCount": 7}
-        return httpx.Response(200, text=rsc(obj))
+        count = self.counts[n - 1] if self.counts else len(self.pages)
+        return httpx.Response(200, text=rsc({"flightsList": page, "pagesCount": count,
+                                             "rateCount": 7}))
 
 
 def sample_pages() -> list[list[Any]]:
@@ -152,3 +171,42 @@ def test_crawl_marks_truncation_at_request_cap():
     bundle = itaka.crawl(FakeClient(sample_pages(), cap=1), SOURCE, date(2026, 11, 4))
     assert bundle["truncated"] is True and len(bundle["pages"]) == 1
     assert len(itaka.parse(bundle, NOW)) == 5
+
+
+@pytest.mark.parametrize("error", [
+    BlockedError("403 from x; stopping run"),
+    RuntimeError("giving up on x after 5 attempts"),
+    httpx.HTTPStatusError("404", request=httpx.Request("GET", "https://x"),
+                          response=httpx.Response(404)),
+    httpx.ConnectTimeout("timeout"),
+])
+def test_fetch_error_mid_crawl_keeps_pages_already_fetched(error):
+    p1, p2 = sample_pages()
+    client = FakeClient([p1, error, p2])
+    bundle = itaka.crawl(client, SOURCE, date(2026, 11, 4))
+    assert len(client.calls) == 2
+    assert bundle["truncated"] is True and bundle["fetch_error"].startswith("page 2:")
+    assert len(itaka.parse(bundle, NOW)) == 5  # page 1 is kept, saved and parsed
+
+
+def test_page_count_shrinking_mid_crawl_stops_at_the_new_end():
+    p1, p2 = sample_pages()
+    client = FakeClient([p1, p2, "never requested"], counts=[3, 2, 2])
+    bundle = itaka.crawl(client, SOURCE, date(2026, 11, 4))
+    assert [c["page"] for c in client.calls] == ["1", "2"]
+    assert bundle["truncated"] is False and bundle["pages_count"] == 2
+
+
+def test_empty_page_ends_the_crawl():
+    p1, _ = sample_pages()
+    client = FakeClient([p1, [], "never requested"], counts=[3, 3, 3])
+    itaka.crawl(client, SOURCE, date(2026, 11, 4))
+    assert len(client.calls) == 2
+
+
+@pytest.mark.parametrize("count", ["150", None, -1, True])
+def test_bad_pages_count_is_a_shape_error(count):
+    bundle = itaka.crawl(FakeClient(sample_pages(), counts=[count, count]), SOURCE,
+                         date(2026, 11, 4))
+    with pytest.raises(ParseError, match="pagesCount"):
+        itaka.parse(bundle, NOW)

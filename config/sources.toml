@@ -33,8 +33,9 @@ pakiet_batch_size = 200     # pakietId values per wyszukaj-przylot request (URL 
 # No JSON API: the listing is a Next.js page; with header `RSC: 1` it returns the React Server
 # Components payload, one line of which is plain JSON {"flightsList": [...20 offers], "pagesCount",
 # "rateCount"}. Discovered 2026-11-04; works without cookies. The URL 307-redirects to an internal
-# /multitenant/flights path, so redirects are followed. ~150 pages per run (fixed 20 per page),
-# sorted by departure date so offers don't jump between pages when prices change mid-crawl.
+# /multitenant/flights path (which itself redirects when requested directly), so redirects are
+# followed: 2 HTTP requests per page, both counted against the cap. ~150 pages per run (fixed 20
+# per page), sorted by departure date so offers don't jump between pages when prices change.
 # Runs twice a day (see .github/workflows/ingest.yml), not every 6 h.
 [sources.itaka]
 operator = "itaka"
@@ -43,6 +44,7 @@ method = "GET"
 url = "https://www.itaka.pl/bilety-lotnicze/"
 headers = { "RSC" = "1" }
 follow_redirects = true
+max_requests_per_run = 450  # 2 per page (redirect + page) x max_pages 220, plus retries
 
 [sources.itaka.payload]
 adults = 1                  # price per person = pricePerPerson for a single adult

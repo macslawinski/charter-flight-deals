@@ -98,6 +98,10 @@ def main(argv: list[str] | None = None) -> int:
         snapshot_date = observed_at.astimezone(WARSAW).date()
         written = store.upsert_offers(conn, offers, snapshot_date)
         store.mark_parse_result(conn, raw_id, None)
+        unknown = store.unknown_destinations(conn, args.source)
+        if unknown:
+            log.warning("destinations missing from `destinations` (default min stay applies, "
+                        "seed them in a migration): %s", ", ".join(unknown))
         n_deals = store.refresh_deals(conn, snapshot_date)
         pruned = store.prune_raw_fetches(conn, observed_at)
         conn.commit()

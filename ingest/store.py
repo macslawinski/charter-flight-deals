@@ -108,6 +108,22 @@ def upsert_offers(conn: psycopg.Connection[Any], offers: list[FlightOffer],
     return len(offers)
 
 
+def unknown_destinations(conn: psycopg.Connection[Any], operator: str) -> list[str]:
+    """Destinations of `operator`'s flights missing from `destinations`.
+
+    They silently fall back to default_min_stay_days, which can let a too-short long-haul trip
+    through the sensible-stay filter; the run logs them so they get seeded.
+    """
+    rows = conn.execute(
+        """select distinct f.dest_iata from flights f
+           where f.operator = %s
+             and not exists (select 1 from destinations d where d.iata = f.dest_iata)
+           order by 1""",
+        (operator,),
+    ).fetchall()
+    return [r[0] for r in rows]
+
+
 def refresh_deals(conn: psycopg.Connection[Any], as_of: date) -> int:
     """Recompute the `deals` rows for `as_of` (SQL in 004_transform.sql). Returns deal count."""
     row = conn.execute("select refresh_deals(%s)", (as_of,)).fetchone()

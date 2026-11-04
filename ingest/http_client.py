@@ -5,7 +5,7 @@ from __future__ import annotations
 import logging
 import random
 import time
-from typing import Any, Self
+from typing import Any, Protocol, Self
 
 import httpx
 
@@ -20,6 +20,19 @@ class BlockedError(RuntimeError):
 
 class RequestCapReached(RuntimeError):
     """max_requests_per_run exhausted."""
+
+
+class Fetcher(Protocol):
+    """What source crawlers need from a client (PoliteClient, or a fake in tests)."""
+
+    def fetch(
+        self,
+        source: SourceConfig,
+        payload: dict[str, Any] | None = None,
+        *,
+        path: str = "",
+        params: list[tuple[str, str]] | None = None,
+    ) -> httpx.Response: ...
 
 
 class PoliteClient:
@@ -57,9 +70,10 @@ class PoliteClient:
             headers[source.token_header] = source.token
         url = f"{source.url.rstrip('/')}/{path.lstrip('/')}" if path else source.url
 
+        cap = source.max_requests_per_run or self._s.max_requests_per_run
         for attempt in range(self._s.max_retries + 1):
-            if self._count >= self._s.max_requests_per_run:
-                raise RequestCapReached(f"cap of {self._s.max_requests_per_run} requests reached")
+            if self._count >= cap:
+                raise RequestCapReached(f"cap of {cap} requests reached")
             if self._count > 0:
                 time.sleep(random.uniform(self._s.min_delay_seconds, self._s.max_delay_seconds))
             self._count += 1
@@ -69,6 +83,8 @@ class PoliteClient:
                 params=tuple(params) if params else None, json=payload,
                 follow_redirects=source.follow_redirects,
             )
+            # Every redirect hop is a real request to the site: count it against the cap.
+            self._count += len(resp.history)
 
             if resp.status_code == 403:
                 raise BlockedError(f"403 from {url}; stopping run")

@@ -19,12 +19,10 @@ import logging
 from collections.abc import Iterator
 from datetime import date, datetime, timedelta
 from decimal import Decimal
-from typing import Any, Protocol
-
-import httpx
+from typing import Any
 
 from ingest.config import SourceConfig
-from ingest.http_client import RequestCapReached
+from ingest.http_client import Fetcher, RequestCapReached
 from ingest.models import FlightOffer, ParseError
 
 OPERATOR = "r_pl"
@@ -35,17 +33,6 @@ PATH_OUTBOUND = "destynacja/v4.1/wyszukaj-wylot"
 PATH_INBOUND = "destynacja/v4.1/wyszukaj-przylot"
 
 log = logging.getLogger(__name__)
-
-
-class Fetcher(Protocol):
-    def fetch(
-        self,
-        source: SourceConfig,
-        payload: dict[str, Any] | None = None,
-        *,
-        path: str = "",
-        params: list[tuple[str, str]] | None = None,
-    ) -> httpx.Response: ...
 
 
 # --------------------------------------------------------------------------- crawling

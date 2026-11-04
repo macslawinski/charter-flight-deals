@@ -10,7 +10,23 @@
   "last_successful_fetch": "2099-01-01T12:00:00Z",
   "flights_priced": 8123,
   "segments_upcoming": 790,
-  "segments_with_baseline": 512
+  "segments_with_baseline": 512,
+  "operators": [
+   {
+    "operator": "itaka",
+    "last_snapshot_date": "2026-12-04",
+    "flights_priced": 2986,
+    "last_successful_fetch": "2099-01-01T00:40:00Z",
+    "last_failed_parse": null
+   },
+   {
+    "operator": "r_pl",
+    "last_snapshot_date": "2026-12-04",
+    "flights_priced": 5137,
+    "last_successful_fetch": "2099-01-01T12:00:00Z",
+    "last_failed_parse": null
+   }
+  ]
  },
  "params": {
   "window_days": 30,
@@ -82,8 +98,8 @@
   },
   {
    "as_of": "2026-12-04",
-   "flight_key": "r_pl|WAW|TFS|2027-02-07|2027-02-21|ENT3/ENT4",
-   "operator": "r_pl",
+   "flight_key": "itaka|WAW|TFS|2027-02-07|2027-02-21|ENT3/ENT4",
+   "operator": "itaka",
    "origin_iata": "WAW",
    "origin_name": "Warszawa",
    "dest_iata": "TFS",
