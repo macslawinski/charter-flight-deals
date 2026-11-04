@@ -134,6 +134,34 @@ function proof(deal, params) {
       `z dni ${fullDate.format(d(deal.window_start))} – ${fullDate.format(d(deal.window_end))}.`));
 }
 
+// Regular airlines on the same route (Aviasales data). Context only: it never decides a deal.
+const AVIASALES = "https://www.aviasales.com/";
+
+function market(deal, params) {
+  const m = deal.market;
+  if (!m) return null;  // segment not checked recently
+  const tol = params.market_stay_tolerance_days ?? 2;
+  const checked = m.checked_at ? `Sprawdzono ${dayMonth.format(new Date(m.checked_at))}.` : "";
+  if (m.price == null) {
+    return el("p", { class: "market" },
+      `Linie regularne: w danych Aviasales brak lotów bez przesiadek w tym miesiącu ` +
+      `przy podobnej długości pobytu (±${days(tol)}). ${checked}`);
+  }
+  const when = m.same_dates ? "te same daty"
+    : `${dayMonth.format(d(m.outbound_date))} – ${dayMonth.format(d(m.return_date))}`;
+  const from = m.origin_airport && m.origin_airport !== deal.origin_iata
+    ? `, wylot: ${m.origin_airport_name ?? m.origin_airport}` : "";
+  const diff = deal.current_price - m.price;
+  const cmp = Math.abs(diff) < 1 ? "Czarter kosztuje tyle samo."
+    : `Czarter jest o ${money(Math.abs(diff))} ${diff > 0 ? "droższy" : "tańszy"}.`;
+  const url = typeof m.url === "string" && m.url.startsWith(AVIASALES) ? m.url : AVIASALES;
+  return el("p", { class: "market" },
+    "Linie regularne bez przesiadek: ", el("b", {}, `od ${money(m.price)}`),
+    ` (${m.airline_name}, ${when}${from}), cena bez bagażu rejestrowanego. ${cmp} `,
+    "Źródło: ", el("a", { href: url, rel: "noopener nofollow", target: "_blank" }, "Aviasales"),
+    m.found_date ? `, cena znaleziona ${dayMonth.format(d(m.found_date))}.` : ".");
+}
+
 function strip(deal, params) {
   const out = d(deal.outbound_date);
   const back = deal.return_date ? d(deal.return_date) : null;
@@ -149,7 +177,8 @@ function strip(deal, params) {
       el("h3", {}, `${deal.origin_name} – ${deal.dest_name}`, deal.dest_country ? `, ${deal.dest_country}` : ""),
       el("p", { class: "when" }, when),
       ruler(deal),
-      proof(deal, params)),
+      proof(deal, params),
+      market(deal, params)),
     el("div", { class: "strip-price" },
       el("span", { class: "now" }, money(deal.current_price)),
       el("span", { class: "per" }, "za osobę, tam i z powrotem"),

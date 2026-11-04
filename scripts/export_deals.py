@@ -80,6 +80,25 @@ from seg
 """
 
 
+# Regular-airline reference per deal (display-only; 005_market_fares.sql).
+_MARKET = "select * from market_reference(%(as_of)s)"
+AVIASALES = "https://www.aviasales.com"
+
+
+def _market(r: dict[str, Any] | None) -> dict[str, Any] | None:
+    """None = segment not checked recently; price None = checked, no direct regular fare."""
+    if r is None:
+        return None
+    m = _row(r)
+    m.pop("flight_key", None)
+    link = m.pop("link", None)
+    m["url"] = f"{AVIASALES}{link}" if isinstance(link, str) and link.startswith("/") else None
+    if m.get("origin_airport"):
+        m["origin_airport_name"] = ORIGINS.get(m["origin_airport"], m["origin_airport"])
+    m["airline_name"] = m.get("airline_name") or m.get("airline")
+    return m
+
+
 def _jsonable(v: Any) -> Any:
     if isinstance(v, Decimal):
         return float(v)
@@ -99,14 +118,17 @@ def build_payload(conn: psycopg.Connection[Any], generated_at: datetime) -> dict
         status = cur.execute(_STATUS).fetchone() or {}
         params = cur.execute(
             """select window_days, discount_threshold, min_baseline_flights, baseline_stat,
-                      default_min_stay_days, include_one_way from pipeline_params"""
+                      default_min_stay_days, include_one_way, market_stay_tolerance_days,
+                      market_max_age_days from pipeline_params"""
         ).fetchone() or {}
         as_of = status.get("last_snapshot_date")
         deals: list[dict[str, Any]] = []
+        market: dict[str, dict[str, Any]] = {}
         segments: dict[str, Any] = {"segments": 0, "ready": 0}
         if as_of is not None:
             deals = [_row(r) for r in cur.execute(_DEALS, {"as_of": as_of}).fetchall()]
             segments = cur.execute(_SEGMENTS, {"as_of": as_of}).fetchone() or segments
+            market = {r["flight_key"]: r for r in cur.execute(_MARKET, {"as_of": as_of}).fetchall()}
         zones = cur.execute(
             "select zone, min_sensible_stay_days from zones order by min_sensible_stay_days"
         ).fetchall()
@@ -114,6 +136,7 @@ def build_payload(conn: psycopg.Connection[Any], generated_at: datetime) -> dict
     for d in deals:
         d["origin_name"] = ORIGINS.get(d["origin_iata"], d["origin_iata"])
         d["dest_name"] = d["dest_name"] or d["dest_iata"]
+        d["market"] = _market(market.get(d["flight_key"]))
     return {
         "schema_version": SCHEMA_VERSION,
         "generated_at": _jsonable(generated_at),

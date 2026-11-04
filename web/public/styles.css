@@ -156,6 +156,13 @@ h1 {
 .proof .eq .ok { color: var(--below); }
 .proof .src { display: block; margin-top: 0.25rem; font-size: var(--step--1); color: var(--ink-soft); }
 
+/* regular-airline reference: context, not part of the proof */
+.market {
+  margin: 0.6rem 0 0; padding-top: 0.5rem; border-top: 1px dashed var(--line);
+  font-size: var(--step--1); color: var(--ink-soft); font-variant-numeric: tabular-nums;
+}
+.market b { color: var(--ink); font-weight: 600; }
+
 /* ---------- method, ad, footer ---------- */
 .ad-slot {
   margin: 3rem 0;
