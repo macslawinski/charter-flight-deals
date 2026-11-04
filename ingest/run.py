@@ -95,11 +95,14 @@ def main(argv: list[str] | None = None) -> int:
             conn.commit()
             log.error("parse failed, raw_fetches.id=%d kept: %s", raw_id, e)
             return 1
-        written = store.upsert_offers(conn, offers, observed_at.astimezone(WARSAW).date())
+        snapshot_date = observed_at.astimezone(WARSAW).date()
+        written = store.upsert_offers(conn, offers, snapshot_date)
         store.mark_parse_result(conn, raw_id, None)
+        n_deals = store.refresh_deals(conn, snapshot_date)
         pruned = store.prune_raw_fetches(conn, observed_at)
         conn.commit()
-    log.info("raw_fetches.id=%d: %d offers upserted, %d old raw rows pruned", raw_id, written, pruned)
+    log.info("raw_fetches.id=%d: %d offers upserted, %d deals for %s, %d old raw rows pruned",
+             raw_id, written, n_deals, snapshot_date, pruned)
     return 3 if truncated else 0
 
 
