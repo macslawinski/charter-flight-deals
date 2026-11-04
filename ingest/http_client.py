@@ -37,10 +37,23 @@ class PoliteClient:
     def __exit__(self, *exc: object) -> None:
         self._client.close()
 
-    def fetch(self, source: SourceConfig, payload: dict[str, Any] | None = None) -> httpx.Response:
+    @property
+    def request_count(self) -> int:
+        return self._count
+
+    def fetch(
+        self,
+        source: SourceConfig,
+        payload: dict[str, Any] | None = None,
+        *,
+        path: str = "",
+        params: list[tuple[str, str]] | None = None,
+    ) -> httpx.Response:
+        """Send one request to `source.url` + `path`. `params` may repeat keys (list of pairs)."""
         headers = dict(source.headers)
         if source.cookie:
             headers["Cookie"] = source.cookie
+        url = f"{source.url.rstrip('/')}/{path.lstrip('/')}" if path else source.url
 
         for attempt in range(self._s.max_retries + 1):
             if self._count >= self._s.max_requests_per_run:
@@ -49,10 +62,13 @@ class PoliteClient:
                 time.sleep(random.uniform(self._s.min_delay_seconds, self._s.max_delay_seconds))
             self._count += 1
 
-            resp = self._client.request(source.method, source.url, headers=headers, json=payload)
+            resp = self._client.request(
+                source.method, url, headers=headers,
+                params=tuple(params) if params else None, json=payload,
+            )
 
             if resp.status_code == 403:
-                raise BlockedError(f"403 from {source.url}; stopping run")
+                raise BlockedError(f"403 from {url}; stopping run")
             if resp.status_code == 429 or resp.status_code >= 500:
                 wait = _retry_after(resp) or min(2**attempt * 5, 300)
                 log.warning("HTTP %s, attempt %s, sleeping %ss", resp.status_code, attempt + 1, wait)
@@ -61,7 +77,7 @@ class PoliteClient:
             resp.raise_for_status()
             return resp
 
-        raise RuntimeError(f"giving up on {source.url} after {self._s.max_retries + 1} attempts")
+        raise RuntimeError(f"giving up on {url} after {self._s.max_retries + 1} attempts")
 
 
 def _retry_after(resp: httpx.Response) -> float | None:

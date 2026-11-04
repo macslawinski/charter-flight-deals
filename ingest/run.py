@@ -8,8 +8,10 @@ import logging
 import sys
 from datetime import UTC, datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from ingest.config import load_settings
+from ingest.http_client import PoliteClient
 from ingest.sources import r_pl
 from ingest.store import dedupe
 
@@ -23,6 +25,7 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--source", default="r_pl", choices=sorted(PARSERS))
     ap.add_argument("--dry-run", action="store_true", help="parse and report, write nothing")
     ap.add_argument("--from-file", type=Path, help="parse a saved JSON response instead of fetching")
+    ap.add_argument("--save-raw", type=Path, help="write the fetched raw bundle to this file")
     args = ap.parse_args(argv)
 
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
@@ -42,7 +45,25 @@ def main(argv: list[str] | None = None) -> int:
     if not source.enabled:
         log.error("source %s is disabled in config/sources.toml", args.source)
         return 2
-    raise NotImplementedError("network fetch not implemented yet")
+
+    today = datetime.now(ZoneInfo("Europe/Warsaw")).date()
+    with PoliteClient(settings) as client:
+        try:
+            bundle = source_mod.crawl(client, source, today)
+        finally:
+            log.info("%d requests sent", client.request_count)
+    if args.save_raw:
+        args.save_raw.parent.mkdir(parents=True, exist_ok=True)
+        args.save_raw.write_text(json.dumps(bundle, ensure_ascii=False), encoding="utf-8")
+        log.info("raw bundle saved to %s", args.save_raw)
+
+    offers = dedupe(source_mod.parse(bundle, observed_at))
+    log.info("parsed %d offers", len(offers))
+    if bundle.get("truncated"):
+        log.error("run hit max_requests_per_run; data is incomplete")
+    if args.dry_run:
+        return 3 if bundle.get("truncated") else 0
+    raise NotImplementedError("DB write not implemented yet")
 
 
 if __name__ == "__main__":

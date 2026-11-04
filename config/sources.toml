@@ -1,21 +1,30 @@
 # Endpoint definitions per operator. No secrets here: cookies/tokens go to .env.
-# Values for r.pl are placeholders until the endpoint is discovered (Claude in Chrome, network tab).
 
 [defaults]
 min_delay_seconds = 3.0
 max_delay_seconds = 8.0
-max_requests_per_run = 50
+max_requests_per_run = 250   # r.pl full crawl is ~1 + 38 + ~50 requests; see ingest/sources/r_pl.py
 max_retries = 4
 timeout_seconds = 30
 user_agent = "charter-flight-deals/0.1 (price research PoC)"
 
+# r.pl (Rainbow) charter flights ("Czartery", https://r.pl/bilety-czarterowe).
+# Undocumented JSON API, discovered 2026-11-04. Works without cookies. Flow per run:
+#   1. GET wyszukiwanie/v4.1/wyszukaj            -> destinations (IATA in Destynacje[].Klucz)
+#   2. GET destynacja/v4.1/wyszukaj-wylot        -> outbound legs per destination (all origins)
+#   3. GET destynacja/v4.1/wyszukaj-przylot      -> return legs for a batch of pakietId values;
+#      Bilety[].CenaRazem = round-trip total for all passengers (BindId -> outbound pakiet).
 [sources.r_pl]
 operator = "r_pl"
-enabled = false            # flip to true once url/payload are filled in
-method = "POST"
-url = "TODO"
-headers = { "Accept" = "application/json", "Content-Type" = "application/json" }
-cookie_env = "RPL_COOKIE"  # name of the .env variable holding the cookie, if needed
+enabled = true
+method = "GET"
+url = "https://r.pl/api/czartery"
+headers = { "Accept" = "application/json" }
+cookie_env = "RPL_COOKIE"  # not required as of 2026-11-04; leave unset in .env
 
-# Request body template; fields are filled in by ingest/sources/r_pl.py.
 [sources.r_pl.payload]
+# Passenger birth dates (adults). Price per person = CenaRazem / number of passengers.
+birth_dates = ["1990-01-01"]
+horizon_days = 365          # dataMax = today + horizon_days
+pakiet_batch_size = 200     # pakietId values per wyszukaj-przylot request (URL ~4.7 KB;
+                            # 200 verified identical to 4x50 on 2026-11-04; ~9k pakiety total)
