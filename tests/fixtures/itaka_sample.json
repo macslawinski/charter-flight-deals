@@ -1,0 +1,707 @@
+{
+ "bundle_version": 1,
+ "operator": "itaka",
+ "passengers": 1,
+ "fetched_for": "2026-11-04",
+ "truncated": true,
+ "pages_count": 150,
+ "rate_count": 2987,
+ "pages": [
+  {
+   "page": 1,
+   "flightsList": [
+    {
+     "departureFlight": {
+      "departure": {
+       "city": "Katowice",
+       "airport": "",
+       "airportCode": "KTW",
+       "dateIso": "2026-11-05",
+       "date": "czwartek, 5 lis",
+       "time": "07:25",
+       "flightCarrierInfo": {
+        "name": "Enter Air"
+       },
+       "flightNumber": "ENT5401"
+      },
+      "arrival": {
+       "city": "Mombasa",
+       "airport": "",
+       "airportCode": "MBA",
+       "dateIso": "2026-11-05",
+       "date": "czwartek, 5 lis",
+       "time": "20:10",
+       "flightCarrierInfo": null,
+       "flightNumber": "ENT5401"
+      },
+      "duration": {
+       "hours": 10,
+       "minutes": 45
+      },
+      "date": "czwartek, 5 lis",
+      "dateIso": "2026-11-05",
+      "flightCarrierInfo": null,
+      "flightNumber": "ENT5401",
+      "numberOfStops": 0,
+      "luggage": {
+       "included": true,
+       "details": {
+        "handWeight": 5,
+        "registeredWeight": 20
+       }
+      }
+     },
+     "returnFlight": {
+      "departure": {
+       "city": "Mombasa",
+       "airport": "",
+       "airportCode": "MBA",
+       "dateIso": "2026-11-12",
+       "date": "czwartek, 12 lis",
+       "time": "20:55",
+       "flightCarrierInfo": {
+        "name": "Enter Air"
+       },
+       "flightNumber": "ENT5402"
+      },
+      "arrival": {
+       "city": "Katowice",
+       "airport": "",
+       "airportCode": "KTW",
+       "dateIso": "2026-11-13",
+       "date": "piątek, 13 lis",
+       "time": "05:40",
+       "flightCarrierInfo": null,
+       "flightNumber": "ENT5402"
+      },
+      "duration": {
+       "hours": 10,
+       "minutes": 45
+      },
+      "date": "czwartek, 12 lis",
+      "dateIso": "2026-11-12",
+      "flightCarrierInfo": null,
+      "flightNumber": "ENT5402",
+      "numberOfStops": 0,
+      "luggage": {
+       "included": true,
+       "details": {
+        "handWeight": 5,
+        "registeredWeight": 20
+       }
+      }
+     },
+     "type": "returnTicket",
+     "flightPrice": "2 590 zł",
+     "pricePerPerson": "2 590 zł",
+     "priceCatalogCode": "M306",
+     "currency": "PLN",
+     "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX0tUV01CQV8oAjoETTMwNkIGCICOr9cGSgYIgIPU1wZQAmIFCgNLVFdqBQoDTUJBcgMKATF6BQoDTUJBggEFCgNLVFeKAQMKATHiAQkKB1Jlc2FiZWXqAQkKB1Jlc2FiZWU=",
+     "isBestseller": false,
+     "isPromoted": false,
+     "isRecommended": null,
+     "participantsPriceDetails": [
+      {
+       "type": "adult",
+       "price": "2 590 zł"
+      }
+     ],
+     "isApproximateSchedule": false
+    },
+    {
+     "departureFlight": {
+      "departure": {
+       "city": "Warszawa-Okęcie",
+       "airport": "",
+       "airportCode": "WAW",
+       "dateIso": "2026-11-05",
+       "date": "czwartek, 5 lis",
+       "time": "08:30",
+       "flightCarrierInfo": {
+        "name": "Smartwings"
+       },
+       "flightNumber": "TVP7320"
+      },
+      "arrival": {
+       "city": "Wyspy Kanaryjskie - Teneryfa (Południe)",
+       "airport": "",
+       "airportCode": "TFS",
+       "dateIso": "2026-11-05",
+       "date": "czwartek, 5 lis",
+       "time": "13:40",
+       "flightCarrierInfo": null,
+       "flightNumber": "TVP7320"
+      },
+      "duration": {
+       "hours": 6,
+       "minutes": 10
+      },
+      "date": "czwartek, 5 lis",
+      "dateIso": "2026-11-05",
+      "flightCarrierInfo": null,
+      "flightNumber": "TVP7320",
+      "numberOfStops": 0,
+      "luggage": {
+       "included": true,
+       "details": {
+        "handWeight": 8,
+        "registeredWeight": 23
+       }
+      }
+     },
+     "returnFlight": {
+      "departure": {
+       "city": "Wyspy Kanaryjskie - Teneryfa (Południe)",
+       "airport": "",
+       "airportCode": "TFS",
+       "dateIso": "2026-11-12",
+       "date": "czwartek, 12 lis",
+       "time": "14:30",
+       "flightCarrierInfo": {
+        "name": "Smartwings"
+       },
+       "flightNumber": "TVP7321"
+      },
+      "arrival": {
+       "city": "Warszawa-Okęcie",
+       "airport": "",
+       "airportCode": "WAW",
+       "dateIso": "2026-11-12",
+       "date": "czwartek, 12 lis",
+       "time": "21:10",
+       "flightCarrierInfo": null,
+       "flightNumber": "TVP7321"
+      },
+      "duration": {
+       "hours": 5,
+       "minutes": 40
+      },
+      "date": "czwartek, 12 lis",
+      "dateIso": "2026-11-12",
+      "flightCarrierInfo": null,
+      "flightNumber": "TVP7321",
+      "numberOfStops": 0,
+      "luggage": {
+       "included": true,
+       "details": {
+        "handWeight": 8,
+        "registeredWeight": 23
+       }
+      }
+     },
+     "type": "returnTicket",
+     "flightPrice": "1 796 zł",
+     "pricePerPerson": "1 796 zł",
+     "priceCatalogCode": "L299",
+     "currency": "PLN",
+     "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX1dBV1RGU18oAjoETDI5OUIGCICOr9cGSgYIgIPU1wZQAmIFCgNXQVdqBQoDVEZTcgMKATF6BQoDVEZTggEFCgNXQVeKAQMKATHiAQkKB1Jlc2FiZWXqAQkKB1Jlc2FiZWU=",
+     "isBestseller": false,
+     "isPromoted": false,
+     "isRecommended": null,
+     "participantsPriceDetails": [
+      {
+       "type": "adult",
+       "price": "1 796 zł"
+      }
+     ],
+     "isApproximateSchedule": false
+    },
+    {
+     "departureFlight": {
+      "departure": {
+       "city": "Warszawa-Okęcie",
+       "airport": "",
+       "airportCode": "WAW",
+       "dateIso": "2026-11-05",
+       "date": "czwartek, 5 lis",
+       "time": "08:35",
+       "flightCarrierInfo": {
+        "name": "Smartwings"
+       },
+       "flightNumber": "TVP7304"
+      },
+      "arrival": {
+       "city": "Wyspy Kanaryjskie - Fuerteventura",
+       "airport": "",
+       "airportCode": "FUE",
+       "dateIso": "2026-11-05",
+       "date": "czwartek, 5 lis",
+       "time": "13:20",
+       "flightCarrierInfo": null,
+       "flightNumber": "TVP7304"
+      },
+      "duration": {
+       "hours": 5,
+       "minutes": 45
+      },
+      "date": "czwartek, 5 lis",
+      "dateIso": "2026-11-05",
+      "flightCarrierInfo": null,
+      "flightNumber": "TVP7304",
+      "numberOfStops": 0,
+      "luggage": {
+       "included": true,
+       "details": {
+        "handWeight": 8,
+        "registeredWeight": 23
+       }
+      }
+     },
+     "returnFlight": {
+      "departure": {
+       "city": "Wyspy Kanaryjskie - Fuerteventura",
+       "airport": "",
+       "airportCode": "FUE",
+       "dateIso": "2026-11-12",
+       "date": "czwartek, 12 lis",
+       "time": "14:10",
+       "flightCarrierInfo": {
+        "name": "Smartwings"
+       },
+       "flightNumber": "TVP7305"
+      },
+      "arrival": {
+       "city": "Warszawa-Okęcie",
+       "airport": "",
+       "airportCode": "WAW",
+       "dateIso": "2026-11-12",
+       "date": "czwartek, 12 lis",
+       "time": "20:25",
+       "flightCarrierInfo": null,
+       "flightNumber": "TVP7305"
+      },
+      "duration": {
+       "hours": 5,
+       "minutes": 15
+      },
+      "date": "czwartek, 12 lis",
+      "dateIso": "2026-11-12",
+      "flightCarrierInfo": null,
+      "flightNumber": "TVP7305",
+      "numberOfStops": 0,
+      "luggage": {
+       "included": true,
+       "details": {
+        "handWeight": 8,
+        "registeredWeight": 23
+       }
+      }
+     },
+     "type": "returnTicket",
+     "flightPrice": "1 796 zł",
+     "pricePerPerson": "1 796 zł",
+     "priceCatalogCode": "L300",
+     "currency": "PLN",
+     "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX1dBV0ZVRV8oAjoETDMwMEIGCICOr9cGSgYIgIPU1wZQAmIFCgNXQVdqBQoDRlVFcgMKATJ6BQoDRlVFggEFCgNXQVeKAQMKATLiAQkKB1Jlc2FiZWXqAQkKB1Jlc2FiZWU=",
+     "isBestseller": false,
+     "isPromoted": false,
+     "isRecommended": null,
+     "participantsPriceDetails": [
+      {
+       "type": "adult",
+       "price": "1 796 zł"
+      }
+     ],
+     "isApproximateSchedule": false
+    },
+    {
+     "departureFlight": {
+      "departure": {
+       "city": "Warszawa-Okęcie",
+       "airport": "",
+       "airportCode": "WAW",
+       "dateIso": "2026-11-05",
+       "date": "czwartek, 5 lis",
+       "time": "08:35",
+       "flightCarrierInfo": {
+        "name": "Smartwings"
+       },
+       "flightNumber": "TVP7304"
+      },
+      "arrival": {
+       "city": "Wyspy Kanaryjskie - Fuerteventura",
+       "airport": "",
+       "airportCode": "FUE",
+       "dateIso": "2026-11-05",
+       "date": "czwartek, 5 lis",
+       "time": "13:20",
+       "flightCarrierInfo": null,
+       "flightNumber": "TVP7304"
+      },
+      "duration": {
+       "hours": 5,
+       "minutes": 45
+      },
+      "date": "czwartek, 5 lis",
+      "dateIso": "2026-11-05",
+      "flightCarrierInfo": null,
+      "flightNumber": "TVP7304",
+      "numberOfStops": 0,
+      "luggage": {
+       "included": true,
+       "details": {
+        "handWeight": 8,
+        "registeredWeight": 23
+       }
+      }
+     },
+     "returnFlight": {
+      "departure": {
+       "city": "Wyspy Kanaryjskie - Fuerteventura",
+       "airport": "",
+       "airportCode": "FUE",
+       "dateIso": "2026-11-19",
+       "date": "czwartek, 19 lis",
+       "time": "14:10",
+       "flightCarrierInfo": {
+        "name": "Smartwings"
+       },
+       "flightNumber": "TVP7305"
+      },
+      "arrival": {
+       "city": "Warszawa-Okęcie",
+       "airport": "",
+       "airportCode": "WAW",
+       "dateIso": "2026-11-19",
+       "date": "czwartek, 19 lis",
+       "time": "20:25",
+       "flightCarrierInfo": null,
+       "flightNumber": "TVP7305"
+      },
+      "duration": {
+       "hours": 5,
+       "minutes": 15
+      },
+      "date": "czwartek, 19 lis",
+      "dateIso": "2026-11-19",
+      "flightCarrierInfo": null,
+      "flightNumber": "TVP7305",
+      "numberOfStops": 0,
+      "luggage": {
+       "included": true,
+       "details": {
+        "handWeight": 8,
+        "registeredWeight": 23
+       }
+      }
+     },
+     "type": "returnTicket",
+     "flightPrice": "1 796 zł",
+     "pricePerPerson": "1 796 zł",
+     "priceCatalogCode": "L300",
+     "currency": "PLN",
+     "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX1dBV0ZVRV8oAjoETDMwMEIGCICOr9cGSgYIgPj41wZQAmIFCgNXQVdqBQoDRlVFcgMKATJ6BQoDRlVFggEFCgNXQVeKAQMKATLiAQkKB1Jlc2FiZWXqAQkKB1Jlc2FiZWU=",
+     "isBestseller": false,
+     "isPromoted": false,
+     "isRecommended": null,
+     "participantsPriceDetails": [
+      {
+       "type": "adult",
+       "price": "1 796 zł"
+      }
+     ],
+     "isApproximateSchedule": false
+    },
+    {
+     "departureFlight": {
+      "departure": {
+       "city": "Warszawa-Okęcie",
+       "airport": "",
+       "airportCode": "WAW",
+       "dateIso": "2026-11-05",
+       "date": "czwartek, 5 lis",
+       "time": "11:30",
+       "flightCarrierInfo": {
+        "name": "Enter Air"
+       },
+       "flightNumber": "ENT5353"
+      },
+      "arrival": {
+       "city": "Mombasa",
+       "airport": "",
+       "airportCode": "MBA",
+       "dateIso": "2026-11-06",
+       "date": "piątek, 6 lis",
+       "time": "00:10",
+       "flightCarrierInfo": null,
+       "flightNumber": "ENT5353"
+      },
+      "duration": {
+       "hours": 10,
+       "minutes": 40
+      },
+      "date": "czwartek, 5 lis",
+      "dateIso": "2026-11-05",
+      "flightCarrierInfo": null,
+      "flightNumber": "ENT5353",
+      "numberOfStops": 0,
+      "luggage": {
+       "included": true,
+       "details": {
+        "handWeight": 5,
+        "registeredWeight": 20
+       }
+      }
+     },
+     "returnFlight": {
+      "departure": {
+       "city": "Mombasa",
+       "airport": "",
+       "airportCode": "MBA",
+       "dateIso": "2026-11-13",
+       "date": "piątek, 13 lis",
+       "time": "00:15",
+       "flightCarrierInfo": {
+        "name": "Enter Air"
+       },
+       "flightNumber": "ENT5354"
+      },
+      "arrival": {
+       "city": "Warszawa-Okęcie",
+       "airport": "",
+       "airportCode": "WAW",
+       "dateIso": "2026-11-13",
+       "date": "piątek, 13 lis",
+       "time": "09:10",
+       "flightCarrierInfo": null,
+       "flightNumber": "ENT5354"
+      },
+      "duration": {
+       "hours": 10,
+       "minutes": 55
+      },
+      "date": "piątek, 13 lis",
+      "dateIso": "2026-11-13",
+      "flightCarrierInfo": null,
+      "flightNumber": "ENT5354",
+      "numberOfStops": 0,
+      "luggage": {
+       "included": true,
+       "details": {
+        "handWeight": 5,
+        "registeredWeight": 20
+       }
+      }
+     },
+     "type": "returnTicket",
+     "flightPrice": "2 590 zł",
+     "pricePerPerson": "2 590 zł",
+     "priceCatalogCode": "M306",
+     "currency": "PLN",
+     "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX1dBV01CQV8oAjoETTMwNkIGCICOr9cGSgYIgIPU1wZQAmIFCgNXQVdqBQoDTUJBcgMKATF6BQoDTUJBggEFCgNXQVeKAQMKATHiAQkKB1Jlc2FiZWXqAQkKB1Jlc2FiZWU=",
+     "isBestseller": false,
+     "isPromoted": false,
+     "isRecommended": null,
+     "participantsPriceDetails": [
+      {
+       "type": "adult",
+       "price": "2 590 zł"
+      }
+     ],
+     "isApproximateSchedule": false
+    }
+   ]
+  },
+  {
+   "page": 150,
+   "flightsList": [
+    {
+     "departureFlight": {
+      "departure": {
+       "city": "Warszawa-Okęcie",
+       "airport": "",
+       "airportCode": "WAW",
+       "dateIso": "2027-04-23",
+       "date": "piątek, 23 kwi",
+       "time": "06:30",
+       "flightCarrierInfo": {
+        "name": "Smartwings"
+       },
+       "flightNumber": "TVP7646"
+      },
+      "arrival": {
+       "city": "Salala",
+       "airport": "",
+       "airportCode": "SLL",
+       "dateIso": "2027-04-23",
+       "date": "piątek, 23 kwi",
+       "time": "15:30",
+       "flightCarrierInfo": null,
+       "flightNumber": "TVP7646"
+      },
+      "duration": {
+       "hours": 7,
+       "minutes": 0
+      },
+      "date": "piątek, 23 kwi",
+      "dateIso": "2027-04-23",
+      "flightCarrierInfo": null,
+      "flightNumber": "TVP7646",
+      "numberOfStops": 0,
+      "luggage": {
+       "included": true,
+       "details": {
+        "handWeight": 8,
+        "registeredWeight": 15
+       }
+      }
+     },
+     "returnFlight": {
+      "departure": {
+       "city": "Salala",
+       "airport": "",
+       "airportCode": "SLL",
+       "dateIso": "2027-05-07",
+       "date": "piątek, 7 maj",
+       "time": "16:50",
+       "flightCarrierInfo": {
+        "name": "Smartwings"
+       },
+       "flightNumber": "TVP7647"
+      },
+      "arrival": {
+       "city": "Warszawa-Okęcie",
+       "airport": "",
+       "airportCode": "WAW",
+       "dateIso": "2027-05-07",
+       "date": "piątek, 7 maj",
+       "time": "22:25",
+       "flightCarrierInfo": null,
+       "flightNumber": "TVP7647"
+      },
+      "duration": {
+       "hours": 7,
+       "minutes": 35
+      },
+      "date": "piątek, 7 maj",
+      "dateIso": "2027-05-07",
+      "flightCarrierInfo": null,
+      "flightNumber": "TVP7647",
+      "numberOfStops": 0,
+      "luggage": {
+       "included": true,
+       "details": {
+        "handWeight": 8,
+        "registeredWeight": 15
+       }
+      }
+     },
+     "type": "returnTicket",
+     "flightPrice": "3 496 zł",
+     "pricePerPerson": "3 496 zł",
+     "priceCatalogCode": "KFLI",
+     "currency": "PLN",
+     "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX1dBV1NMTF8oAjoES0ZMSUIGCICpqt4GSgYIgJP03gZQAmIFCgNXQVdqBQoDU0xMcgMKATF6BQoDU0xMggEFCgNXQVeKAQMKATHiAQkKB1Jlc2FiZWXqAQkKB1Jlc2FiZWU=",
+     "isBestseller": false,
+     "isPromoted": false,
+     "isRecommended": null,
+     "participantsPriceDetails": [
+      {
+       "type": "adult",
+       "price": "3 496 zł"
+      }
+     ],
+     "isApproximateSchedule": false
+    },
+    {
+     "departureFlight": {
+      "departure": {
+       "city": "Katowice",
+       "airport": "",
+       "airportCode": "KTW",
+       "dateIso": "2027-04-23",
+       "date": "piątek, 23 kwi",
+       "time": "06:50",
+       "flightCarrierInfo": {
+        "name": "Enter Air"
+       },
+       "flightNumber": "ENT5007"
+      },
+      "arrival": {
+       "city": "Salala",
+       "airport": "",
+       "airportCode": "SLL",
+       "dateIso": "2027-04-23",
+       "date": "piątek, 23 kwi",
+       "time": "16:30",
+       "flightCarrierInfo": null,
+       "flightNumber": "ENT5007"
+      },
+      "duration": {
+       "hours": 7,
+       "minutes": 40
+      },
+      "date": "piątek, 23 kwi",
+      "dateIso": "2027-04-23",
+      "flightCarrierInfo": null,
+      "flightNumber": "ENT5007",
+      "numberOfStops": 0,
+      "luggage": {
+       "included": true,
+       "details": {
+        "handWeight": 5,
+        "registeredWeight": 16
+       }
+      }
+     },
+     "returnFlight": {
+      "departure": {
+       "city": "Salala",
+       "airport": "",
+       "airportCode": "SLL",
+       "dateIso": "2027-04-30",
+       "date": "piątek, 30 kwi",
+       "time": "17:50",
+       "flightCarrierInfo": {
+        "name": "Enter Air"
+       },
+       "flightNumber": "ENT5008"
+      },
+      "arrival": {
+       "city": "Katowice",
+       "airport": "",
+       "airportCode": "KTW",
+       "dateIso": "2027-05-01",
+       "date": "sobota, 1 maj",
+       "time": "00:05",
+       "flightCarrierInfo": null,
+       "flightNumber": "ENT5008"
+      },
+      "duration": {
+       "hours": 8,
+       "minutes": 15
+      },
+      "date": "piątek, 30 kwi",
+      "dateIso": "2027-04-30",
+      "flightCarrierInfo": null,
+      "flightNumber": "ENT5008",
+      "numberOfStops": 0,
+      "luggage": {
+       "included": true,
+       "details": {
+        "handWeight": 5,
+        "registeredWeight": 16
+       }
+      }
+     },
+     "type": "returnTicket",
+     "flightPrice": "3 496 zł",
+     "pricePerPerson": "3 496 zł",
+     "priceCatalogCode": "KFLI",
+     "currency": "PLN",
+     "id": "CgVJdGFrYRIEVklUWBoDUExOIgxfRkxHX0tUV1NMTF8oAjoES0ZMSUIGCICpqt4GSgYIgJ7P3gZQAmIFCgNLVFdqBQoDU0xMcgMKATF6BQoDU0xMggEFCgNLVFeKAQMKATHiAQkKB1Jlc2FiZWXqAQkKB1Jlc2FiZWU=",
+     "isBestseller": false,
+     "isPromoted": false,
+     "isRecommended": null,
+     "participantsPriceDetails": [
+      {
+       "type": "adult",
+       "price": "3 496 zł"
+      }
+     ],
+     "isApproximateSchedule": false
+    }
+   ]
+  }
+ ]
+}

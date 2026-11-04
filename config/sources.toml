@@ -29,6 +29,25 @@ horizon_days = 365          # dataMax = today + horizon_days
 pakiet_batch_size = 200     # pakietId values per wyszukaj-przylot request (URL ~4.7 KB;
                             # 200 verified identical to 4x50 on 2026-11-04; ~9k pakiety total)
 
+# Itaka charter flights ("Loty czarterowe - Bilety lotnicze", https://www.itaka.pl/bilety-lotnicze/).
+# No JSON API: the listing is a Next.js page; with header `RSC: 1` it returns the React Server
+# Components payload, one line of which is plain JSON {"flightsList": [...20 offers], "pagesCount",
+# "rateCount"}. Discovered 2026-11-04; works without cookies. The URL 307-redirects to an internal
+# /multitenant/flights path, so redirects are followed. ~150 pages per run (fixed 20 per page),
+# sorted by departure date so offers don't jump between pages when prices change mid-crawl.
+# Runs twice a day (see .github/workflows/ingest.yml), not every 6 h.
+[sources.itaka]
+operator = "itaka"
+enabled = true
+method = "GET"
+url = "https://www.itaka.pl/bilety-lotnicze/"
+headers = { "RSC" = "1" }
+follow_redirects = true
+
+[sources.itaka.payload]
+adults = 1                  # price per person = pricePerPerson for a single adult
+max_pages = 220             # safety cap; ~150 pages as of 2026-11-04
+
 # Reference prices of regular airlines (display-only, see db/migrations/005_market_fares.sql).
 # Official Travelpayouts / Aviasales Data API, free affiliate token in .env. Cached prices found
 # by Aviasales users in the last days, so coverage is good 1-3 months ahead and thin beyond.

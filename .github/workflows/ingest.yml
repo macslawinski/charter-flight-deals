@@ -4,13 +4,20 @@ on:
   workflow_dispatch:
     inputs:
       market_only:
-        description: "Only refresh regular-airline reference prices (skip the r.pl crawl)"
+        description: "Only refresh regular-airline reference prices (skip the r.pl and Itaka crawls)"
+        type: boolean
+        default: false
+      itaka:
+        description: "Also crawl Itaka (otherwise only on the 06:17 / 18:17 UTC cron)"
         type: boolean
         default: false
   schedule:
     # Every 6 h at :17 UTC (off the top of the hour). A full r.pl run is ~100 requests, ~10 min.
-    # Exit code 3 (request cap hit, data incomplete) fails the job on purpose so it gets noticed.
-    - cron: "17 */6 * * *"
+    # Itaka (~150 requests, ~14 min) only twice a day: the second entry. The step condition
+    # matches the schedule string, not the clock, so a run delayed in GitHub's queue still counts.
+    # Exit code 3 (request cap hit, data incomplete) fails the r.pl step on purpose.
+    - cron: "17 0,12 * * *"
+    - cron: "17 6,18 * * *"
 
 concurrency:
   group: ingest
@@ -19,7 +26,7 @@ concurrency:
 jobs:
   ingest:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -31,7 +38,13 @@ jobs:
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           RPL_COOKIE: ${{ secrets.RPL_COOKIE }}
-      # Regular-airline reference prices (display-only). After the r.pl run so today's deal
+      # Second operator: must not block r.pl deals from being deployed if Itaka changes/blocks.
+      - run: python -m ingest.run --source itaka
+        if: ${{ !inputs.market_only && (inputs.itaka || github.event.schedule == '17 6,18 * * *') }}
+        continue-on-error: true
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      # Regular-airline reference prices (display-only). After the operator runs so today's deal
       # segments are fetched first. Must not block the deploy: a failure only shows as a warning.
       - run: python -m ingest.market
         continue-on-error: true
