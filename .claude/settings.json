@@ -16,7 +16,22 @@
       "Read(./uv.lock)",
       "Read(./poetry.lock)",
       "Read(./.env)",
-      "Read(./.env.*)"
+      "Read(./.env.local)",
+      "Read(./.env.production)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [{ "type": "command", "command": "python .claude/hooks/ruff_fix.py", "timeout": 30 }]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash|PowerShell",
+        "hooks": [{ "type": "command", "command": "python .claude/hooks/block_secrets.py", "timeout": 30 }]
+      }
     ]
   },
   "env": {

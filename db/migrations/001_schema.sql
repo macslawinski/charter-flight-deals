@@ -80,3 +80,12 @@ create table deals (
     window_end        date not null,
     primary key (as_of, flight_key)
 );
+
+-- RLS on, no policies: the public anon key gets nothing; ingest/export connect as postgres (bypasses RLS).
+alter table zones           enable row level security;
+alter table destinations    enable row level security;
+alter table pipeline_params enable row level security;
+alter table raw_fetches     enable row level security;
+alter table flights         enable row level security;
+alter table price_snapshots enable row level security;
+alter table deals           enable row level security;

@@ -14,8 +14,9 @@ optional "buy me a coffee" link and ads. Running costs must stay close to zero.
 ## Token economy (how to work in this repo)
 - Don't recap diffs or restate what the user can see; report outcome + anything surprising.
 - Locate with Grep/Glob first, then Read only the needed range. Don't read whole large files.
-- **Raw API responses / JSON samples can be huge**: inspect them with a short Python one-liner
-  (keys, lengths, first item) instead of reading the file.
+- **Raw API responses / JSON samples can be huge**: inspect them with
+  `python scripts/json_shape.py <file>` (structure only; `--diff other.json` to compare) instead of
+  reading the file.
 - Never read generated or vendored files (`node_modules`, `dist`, `.venv`, `coverage`, lockfiles).
 - Trim noisy command output (`-q`, `--tb=short`, `| Select-Object -First 50`); run targeted tests
   (`pytest tests/test_x.py -k name`) while iterating, the full suite before calling something done.
