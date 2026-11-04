@@ -1,0 +1,117 @@
+---
+import Base from "../../layouts/Base.astro";
+import FactRow from "../../components/FactRow.astro";
+import {
+  TOPICS,
+  carrierName,
+  carrierSlug,
+  carriers,
+  feeShort,
+  minAgeShort,
+  perAdultShort,
+  ruleLabel,
+  ruleOf,
+} from "../../lib/data";
+
+const first = (c: (typeof carriers)[number], key: string) => ruleOf(c, key)[0]?.value;
+const summary = carriers.map((c) => ({
+  code: c.carrier_iata,
+  fee: feeShort(first(c, "infant_fee")),
+  minAge: minAgeShort(first(c, "infant_min_age")),
+  perAdult: perAdultShort(first(c, "infants_per_adult")),
+}));
+
+// Per topic: every carrier's rules for that topic, carriers without one listed as "not stated".
+const topics = TOPICS.map((t) => ({
+  ...t,
+  rows: carriers.map((c) => ({
+    carrier: c,
+    rules: t.keys.flatMap((k) => ruleOf(c, k)),
+  })),
+})).filter((t) => t.rows.some((r) => r.rules.length > 0));
+const multiKey = (keys: string[]) => keys.length > 1;
+---
+
+<Base title="Zasady linii lotniczych dla dzieci" section="linie" description="Porównanie zasad sześciu linii dla dzieci do 3 lat, ze źródłami.">
+  <h1>Zasady linii dla dzieci do 3 lat</h1>
+  <p class="lead">
+    {carriers.length} przewoźników, którymi najczęściej lecą czartery z Polski. Porównanie według pytań,
+    które zadaje się przed lotem.
+  </p>
+
+  <div class="callout">
+    <p>
+      <strong>Lecisz z biurem podróży?</strong> Cenę biletu niemowlęcia w czarterze ustala biuro,
+      nie linia. Zasady bagażu, wózka i fotelika są zasadami linii, która wykonuje lot.
+    </p>
+  </div>
+
+  <h2 id="w-skrocie">W skrócie</h2>
+  <div class="table-scroll" role="region" aria-labelledby="w-skrocie" tabindex="0">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Linia</th>
+          <th scope="col">Niemowlę na kolanach</th>
+          <th scope="col">Najmłodsze dziecko</th>
+          <th scope="col">Na jednego dorosłego</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          summary.map((s) => (
+            <tr>
+              <th scope="row">
+                <a href={`/linie/${carrierSlug(s.code)}/`}>{carrierName(s.code)}</a>
+              </th>
+              <td class={s.fee ? undefined : "none"}>{s.fee ?? "linia nie podaje"}</td>
+              <td class={s.minAge ? undefined : "none"}>{s.minAge ?? "linia nie podaje"}</td>
+              <td class={s.perAdult ? undefined : "none"}>{s.perAdult ?? "linia nie podaje"}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+  <p>Szczegóły i źródła są niżej.</p>
+
+  <nav aria-label="Tematy">
+    <ul class="toc">
+      {topics.map((t) => <li><a href={`#${t.id}`}>{t.title}</a></li>)}
+    </ul>
+  </nav>
+
+  {
+    topics.map((t) => (
+      <section aria-labelledby={t.id}>
+        <h2 id={t.id}>{t.title}</h2>
+        <ul class="facts">
+          {t.rows.map(({ carrier, rules }) =>
+            rules.length === 0 ? (
+              <li class="fact missing">
+                <div class="fact-label">
+                  <a href={`/linie/${carrierSlug(carrier.carrier_iata)}/`}>
+                    {carrierName(carrier.carrier_iata)}
+                  </a>
+                </div>
+                <div class="fact-body">
+                  <p>Na stronie linii nie znaleźliśmy tej informacji.</p>
+                </div>
+              </li>
+            ) : (
+              rules.map((r) => (
+                <FactRow
+                  fact={r}
+                  label={carrierName(carrier.carrier_iata)}
+                  sub={multiKey(t.keys) ? ruleLabel(r.key).toLowerCase() : undefined}
+                  href={`/linie/${carrierSlug(carrier.carrier_iata)}/`}
+                  owner={carrierName(carrier.carrier_iata)}
+                />
+              ))
+            ),
+          )}
+        </ul>
+      </section>
+    ))
+  }
+</Base>

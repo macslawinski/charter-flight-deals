@@ -1,0 +1,42 @@
+---
+// Source stamp shown under every fact: where it comes from and when we checked it.
+import { plDate, sourceLabel, type Fact } from "../lib/data";
+
+interface Props {
+  fact: Pick<Fact, "source" | "url" | "verified_at" | "to_confirm">;
+  owner?: string;
+}
+const { fact, owner } = Astro.props;
+const src =
+  owner && fact.source === "carrier_official" ? `${owner}, oficjalna strona` : sourceLabel(fact.source);
+const cls = fact.to_confirm ? "stamp ask" : "stamp";
+---
+
+{
+  fact.url ? (
+    <a class={cls} href={fact.url} rel="noopener" target="_blank">
+      <span class="stamp-src">
+        {fact.to_confirm ? "Do potwierdzenia, " : "Źródło: "}
+        {src}
+        <span class="visually-hidden"> (otwiera się w nowej karcie)</span>
+      </span>
+      <span>sprawdzone {plDate(fact.verified_at)}</span>
+    </a>
+  ) : (
+    <span class={cls}>
+      <span class="stamp-src">Źródło: {src}</span>
+      <span>sprawdzone {plDate(fact.verified_at)}</span>
+    </span>
+  )
+}
+
+<style>
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+</style>

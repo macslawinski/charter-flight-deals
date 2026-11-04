@@ -1,0 +1,60 @@
+---
+import Base from "../../layouts/Base.astro";
+import FactRow from "../../components/FactRow.astro";
+import { TOPICS, carrierName, carrierSlug, carriers, plDate, ruleLabel, ruleOf, type Carrier } from "../../lib/data";
+
+export function getStaticPaths() {
+  return carriers.map((c) => ({ params: { carrier: carrierSlug(c.carrier_iata) }, props: { c } }));
+}
+interface Props {
+  c: Carrier;
+}
+const { c } = Astro.props;
+const name = carrierName(c.carrier_iata);
+const sections = TOPICS.map((t) => ({ ...t, rules: t.keys.flatMap((k) => ruleOf(c, k)) })).filter(
+  (t) => t.rules.length > 0,
+);
+const missing = TOPICS.flatMap((t) => t.keys).filter((k) => ruleOf(c, k).length === 0);
+const sources = [...new Set(c.rules.map((r) => r.url).filter((u): u is string => !!u))];
+const latest = c.rules.map((r) => r.verified_at).sort().at(-1);
+---
+
+<Base title={`${name}: lot z dzieckiem`} section="linie" description={`Zasady ${name} dla dzieci do 3 lat, ze źródłami.`}>
+  <p><a href="/linie/">Wszystkie linie</a></p>
+  <h1>{name}: lot z dzieckiem do 3 lat</h1>
+  <p class="lead">
+    {c.rules.length} zasad ze strony przewoźnika{latest && `, sprawdzone ${plDate(latest)}`}.
+  </p>
+
+  {
+    sections.map((t) => (
+      <section aria-labelledby={t.id}>
+        <h2 id={t.id}>{t.title}</h2>
+        <ul class="facts">
+          {t.rules.map((r) => (
+            <FactRow fact={r} label={ruleLabel(r.key)} owner={name} />
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+
+  {
+    missing.length > 0 && (
+      <section aria-labelledby="brak">
+        <h2 id="brak">Tego {name} nie podaje</h2>
+        <p>Na stronach linii nie znaleźliśmy informacji o tych sprawach. Zapytaj przewoźnika przed lotem.</p>
+        <ul class="missing-list">
+          {missing.map((k) => <li>{ruleLabel(k)}</li>)}
+        </ul>
+      </section>
+    )
+  }
+
+  <section aria-labelledby="zrodla">
+    <h2 id="zrodla">Źródła</h2>
+    <ul>
+      {sources.map((u) => <li><a href={u} rel="noopener">{u}</a></li>)}
+    </ul>
+  </section>
+</Base>

@@ -1,0 +1,45 @@
+---
+import Base from "../layouts/Base.astro";
+import Stamp from "../components/Stamp.astro";
+import { carrierName, carriers, data } from "../lib/data";
+
+const ruleCount = carriers.reduce((n, c) => n + c.rules.length, 0);
+const names = carriers.map((c) => carrierName(c.carrier_iata)).join(", ");
+const example = carriers.find((c) => c.carrier_iata === "FR")?.rules.find((r) => r.key === "infant_fee");
+const hotels = data.hotels;
+---
+
+<Base title="Pieluchy i paszporty" description="Podróże z dzieckiem do 3 lat: zasady linii lotniczych i hotele, każdy fakt ze źródłem.">
+  <h1>Z dzieckiem do 3 lat w samolot i do hotelu</h1>
+  <p class="lead">
+    Zebraliśmy zasady linii czarterowych i udogodnienia hoteli dla najmłodszych. Każdą informację
+    bierzemy ze strony przewoźnika albo hotelu i podpisujemy datą sprawdzenia.
+  </p>
+
+  {
+    example && (
+      <div class="callout">
+        <p>Tak wygląda każdy fakt na tej stronie:</p>
+        <p>{example.note}</p>
+        <Stamp fact={example} owner="Ryanair" />
+      </div>
+    )
+  }
+
+  <div class="entry">
+    <section>
+      <h2><a href="/linie/">Zasady linii lotniczych</a></h2>
+      <p>
+        {ruleCount} zasad dla {carriers.length} przewoźników: {names}. Opłata za niemowlę, wózek,
+        fotelik, bagaż i to, ile dzieci może lecieć z jednym dorosłym.
+      </p>
+    </section>
+    <section>
+      <h2><a href="/hotele/">Hotele</a></h2>
+      <p>
+        Na początek {hotels.map((h) => h.name).join(", ")}: łóżeczko, brodzik, bawialnia i wszystko,
+        czego na stronie hotelu nie ma, więc trzeba o to zapytać.
+      </p>
+    </section>
+  </div>
+</Base>

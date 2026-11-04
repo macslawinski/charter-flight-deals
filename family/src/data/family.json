@@ -1,0 +1,966 @@
+{
+ "carriers": [
+  {
+   "carrier_iata": "E4",
+   "rules": [
+    {
+     "age_band": "0-2",
+     "key": "infant_fee",
+     "note": "Enter Air nie pobiera opłaty za niemowlę na kolanach. Kupując lot w biurze podróży, cenę niemowlęcia sprawdź w biurze.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://fly.enterair.pl/wp-content/uploads/owp-regulations/GENERAL-TERMS-AND-CONDITIONS-OF-AIR-CARRIAGE.pdf",
+     "value": {
+      "carrier_fee": 0,
+      "set_by_tour_operator": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-2",
+     "key": "infants_per_adult",
+     "note": "Jeden dorosły może lecieć tylko z jednym niemowlęciem.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://fly.enterair.pl/wp-content/uploads/owp-regulations/GENERAL-TERMS-AND-CONDITIONS-OF-AIR-CARRIAGE.pdf",
+     "value": {
+      "max": 1
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-2",
+     "key": "twins",
+     "note": "Z bliźniętami do 2 lat muszą lecieć dwie dorosłe osoby (jedno niemowlę na dorosłego).",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://fly.enterair.pl/wp-content/uploads/owp-regulations/GENERAL-TERMS-AND-CONDITIONS-OF-AIR-CARRIAGE.pdf",
+     "value": {
+      "one_adult_allowed": false
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-2",
+     "key": "lap_infant",
+     "note": "Niemowlę leci na kolanach dorosłego. Na jednym locie może być najwyżej 15 niemowląt. Dzieci do 2 lat dostają na pokładzie specjalne kamizelki ratunkowe.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://fly.enterair.pl/wp-content/uploads/owp-regulations/GENERAL-TERMS-AND-CONDITIONS-OF-AIR-CARRIAGE.pdf",
+     "value": {
+      "allowed": true,
+      "infant_life_jacket": true,
+      "max_infants_per_flight": 15
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-2",
+     "key": "infant_baggage",
+     "note": "Niemowlę ma 5 kg bagażu podręcznego. Bagaż rejestrowany przysługuje tylko niemowlęciu z wykupionym własnym miejscem.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://fly.enterair.pl/wp-content/uploads/owp-regulations/GENERAL-TERMS-AND-CONDITIONS-OF-AIR-CARRIAGE.pdf",
+     "value": {
+      "cabin_kg": 5,
+      "checked_only_with_own_seat": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-2",
+     "key": "stroller",
+     "note": "Składany wózek niemowlęcia leci bezpłatnie w luku. Zgłoś go przy odprawie (dostaje własną zawieszkę). Zabezpiecz go pokrowcem: za uszkodzenia niezabezpieczonego wózka linia nie odpowiada.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://fly.enterair.pl/wp-content/uploads/owp-regulations/GENERAL-TERMS-AND-CONDITIONS-OF-AIR-CARRIAGE.pdf",
+     "value": {
+      "cover_recommended": true,
+      "free": true,
+      "hold": true,
+      "report_at_checkin": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "2+",
+     "key": "stroller",
+     "note": "Wózek starszego dziecka liczy się do wagi bagażu rejestrowanego.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://fly.enterair.pl/wp-content/uploads/owp-regulations/GENERAL-TERMS-AND-CONDITIONS-OF-AIR-CARRIAGE.pdf",
+     "value": {
+      "counts_as_checked_bag": true,
+      "free": false
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-2",
+     "key": "car_seat",
+     "note": "Własny fotelik na pokładzie tylko z wykupionym miejscem i certyfikatem lotniczym, maks. 43×35 cm. Na start i lądowanie dziecko siedzi na kolanach. Fotelik niespełniający wymogów leci bezpłatnie w luku.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://fly.enterair.pl/wp-content/uploads/owp-regulations/GENERAL-TERMS-AND-CONDITIONS-OF-AIR-CARRIAGE.pdf",
+     "value": {
+      "certified": true,
+      "lap_for_takeoff_landing": true,
+      "max_cm": "43x35",
+      "not_suitable_goes_to_hold_free": true,
+      "own_seat_required": true,
+      "provided_by_carrier": false
+     },
+     "verified_at": "2026-11-04"
+    }
+   ]
+  },
+  {
+   "carrier_iata": "FR",
+   "rules": [
+    {
+     "age_band": "0-2",
+     "key": "infant_fee",
+     "note": "Niemowlę na kolanach: 25 € za każdy lot w jedną stronę. Dziecko musi mieć mniej niż 2 lata w dniu wylotu i powrotu.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.ryanair.com/gb/en/useful-info/help-centre/fees",
+     "value": {
+      "amount_eur": 25,
+      "per": "one_way"
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "infant_min_age",
+     "note": "Dzieci do 7. dnia życia linia nie przewozi.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://help.ryanair.com/hc/en-us/articles/12891532701457-What-are-the-rules-for-travelling-with-infants-0-2",
+     "value": {
+      "min_days": 8
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-2",
+     "key": "infants_per_adult",
+     "note": "Jedno niemowlę na jednego dorosłego (od 18 lat).",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://help.ryanair.com/hc/en-us/articles/12891532701457-What-are-the-rules-for-travelling-with-infants-0-2",
+     "value": {
+      "adult_min_age": 18,
+      "max": 1
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-2",
+     "key": "twins",
+     "note": "Z bliźniętami do 2 lat muszą lecieć dwie dorosłe osoby. Niemowlęta siedzą wyłącznie na kolanach, jedno na dorosłego.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://help.ryanair.com/hc/en-us/articles/12891532701457-What-are-the-rules-for-travelling-with-infants-0-2",
+     "value": {
+      "one_adult_allowed": false
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-2",
+     "key": "infant_baggage",
+     "note": "Niemowlę nie ma własnego limitu bagażu, ale możesz zabrać torbę dla dziecka do 5 kg (45×35×20 cm).",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://help.ryanair.com/hc/en-us/articles/12891532701457-What-are-the-rules-for-travelling-with-infants-0-2",
+     "value": {
+      "baby_bag_kg": 5,
+      "dims_cm": "45x35x20",
+      "own_allowance": false
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "stroller",
+     "note": "Na dziecko bezpłatnie 2 rzeczy: wózek oraz fotelik, podstawka albo łóżeczko turystyczne. Każda kolejna to 15–20 € za sztukę i lot (do 20 kg).",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.ryanair.com/gb/en/useful-info/help-centre/fees",
+     "value": {
+      "extra_item_fee_eur": "15-20",
+      "extra_item_max_kg": 20,
+      "free": true,
+      "plus_one_of": [
+       "car_seat",
+       "booster_seat",
+       "travel_cot"
+      ]
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "2+",
+     "key": "child_seating",
+     "note": "Dzieci od 2 do 11 lat siedzą obok dorosłego. Przy losowym przydziale miejsce obok dorosłego z tej samej rezerwacji jest bezpłatne.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://help.ryanair.com/hc/en-gb/articles/12891623365777-What-is-Ryanair-s-Seat-Policy",
+     "value": {
+      "free_random_allocation_next_to_adult": true,
+      "must_sit_next_to_adult": true
+     },
+     "verified_at": "2026-11-04"
+    }
+   ]
+  },
+  {
+   "carrier_iata": "LO",
+   "rules": [
+    {
+     "age_band": "0-2",
+     "key": "infant_fee",
+     "note": "Niemowlę na kolanach płaci 10% taryfy normalnej na lotach międzynarodowych, a na krajowych leci bezpłatnie. Kupując lot czarterowy w biurze podróży, cenę sprawdź w biurze.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.lot.com/pl/pl/podrozuj/specjalne-wymagania/lot-dla-dzieci/przed-podroza",
+     "value": {
+      "discount_pct_domestic": 100,
+      "discount_pct_international": 90
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-2",
+     "key": "infants_per_adult",
+     "note": "Jeden dorosły może lecieć z dwójką maluchów do 2 lat, ale drugie dziecko potrzebuje własnego miejsca i fotelika samochodowego.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.lot.com/pl/pl/podrozuj/specjalne-wymagania/lot-dla-dzieci/przed-podroza",
+     "value": {
+      "max": 2,
+      "second_needs_own_seat_and_car_seat": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-2",
+     "key": "twins",
+     "note": "Z bliźniętami może lecieć jeden dorosły: jedno dziecko na kolanach, drugie na wykupionym miejscu w foteliku.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.lot.com/pl/pl/podrozuj/specjalne-wymagania/lot-dla-dzieci/przed-podroza",
+     "value": {
+      "one_adult_allowed": true,
+      "second_infant_own_seat": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-2",
+     "key": "infant_baggage",
+     "note": "Niemowlę: bagaż podręczny do 8 kg, przedmiot osobisty do 2 kg i torba z jedzeniem. W taryfach innych niż Economy Saver także bagaż rejestrowany do 23 kg.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.lot.com/pl/pl/podrozuj/specjalne-wymagania/lot-dla-dzieci/przed-podroza",
+     "value": {
+      "cabin_kg": 8,
+      "checked_kg_except_economy_saver": 23,
+      "food_bag": true,
+      "personal_item_kg": 2
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-2",
+     "key": "stroller",
+     "note": "Niemowlę na kolanach: bezpłatnie wózek albo fotelik (drugi z nich w bagażu rejestrowanym lub płatnie). Niemowlę z własnym miejscem: wózek i fotelik bezpłatnie.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.lot.com/pl/pl/podrozuj/specjalne-wymagania/lot-dla-dzieci/przed-podroza",
+     "value": {
+      "lap_infant_free": "stroller_or_car_seat",
+      "own_seat_free": "stroller_and_car_seat"
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "2+",
+     "key": "stroller",
+     "note": "Dzieci od 2 do 12 lat: wózek i fotelik bezpłatnie.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.lot.com/pl/pl/podrozuj/specjalne-wymagania/lot-dla-dzieci/przed-podroza",
+     "value": {
+      "car_seat_free": true,
+      "free": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "car_seat",
+     "note": "Na pokładzie tylko certyfikowany fotelik mocowany zwykłym pasem samolotu (naklejka „certified for use in motor vehicles and aircraft”). Montujesz go sam. Fotelik niespełniający wymogów leci bezpłatnie w luku.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.lot.com/pl/pl/podrozuj/specjalne-wymagania/lot-dla-dzieci/przed-podroza",
+     "value": {
+      "certified_label": "certified for use in motor vehicles and aircraft",
+      "installed_by_passenger": true,
+      "lap_belt_only": true,
+      "unsuitable_goes_to_hold_free": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-2",
+     "key": "bassinet",
+     "note": "Kołyska tylko na lotach długodystansowych Dreamlinerem. Zamawiasz ją w Contact Center najpóźniej 24 h przed lotem. Dziecko do 12 kg i 75 cm. Własnej kołyski nie zabierzesz.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.lot.com/pl/pl/podrozuj/specjalne-wymagania/lot-dla-dzieci/przed-podroza",
+     "value": {
+      "aircraft": "B787 long-haul",
+      "book_hours_before": 24,
+      "max_cm": 75,
+      "max_kg": 12,
+      "own_bassinet_allowed": false
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "child_seating",
+     "note": "Żeby usiąść razem, wykup wybór miejsca. Inaczej miejsca przydzielane są przy odprawie i wolnych foteli obok siebie może brakować. Dzieci nie siedzą w rzędach przy wyjściach awaryjnych.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.lot.com/pl/pl/podrozuj/specjalne-wymagania/lot-dla-dzieci/przed-podroza",
+     "value": {
+      "free_seats_together": false,
+      "no_exit_rows": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "2+",
+     "key": "child_baggage",
+     "note": "Dzieci od 2 lat mają taki sam limit bagażu jak dorośli.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.lot.com/pl/pl/podrozuj/specjalne-wymagania/lot-dla-dzieci/przed-podroza",
+     "value": {
+      "same_as_adult": true
+     },
+     "verified_at": "2026-11-04"
+    }
+   ]
+  },
+  {
+   "carrier_iata": "QS",
+   "rules": [
+    {
+     "age_band": "0-2",
+     "key": "infant_fee",
+     "note": "Niemowlę do 2 lat leci na kolanach dorosłego za obniżoną taryfą (strona nie podaje kwoty). Kupując lot w biurze podróży, cenę niemowlęcia sprawdź w biurze.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.smartwings.com/en/children/",
+     "value": {
+      "amount_published": false,
+      "discounted": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "infant_min_age",
+     "note": "Dzieci młodszych niż 48 godzin linia nie przewozi. Od 48 godzin do 7 dni potrzebny jest formularz.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.smartwings.com/en/children/",
+     "value": {
+      "form_required_until_days": 7,
+      "min_hours": 48
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-2",
+     "key": "lap_infant",
+     "note": "Niemowlę siedzi na kolanach dorosłego, przypięte specjalnym pasem. Dodatkowe miejsce można wykupić telefonicznie.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.smartwings.com/en/children/",
+     "value": {
+      "allowed": true,
+      "extra_seat_by_phone": true,
+      "own_seat": false
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "stroller",
+     "note": "Wózek bezpłatnie: oddajesz go przy wyjściu do samolotu, złożony i zapakowany (za uszkodzenia niezapakowanego linia nie odpowiada). Wózek do 55×40×23 cm i 8 kg może wejść na pokład zamiast bagażu podręcznego.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.smartwings.com/en/children/",
+     "value": {
+      "cabin_if_max_cm": "55x40x23",
+      "cabin_if_max_kg": 8,
+      "free": true,
+      "gate": true,
+      "replaces_cabin_bag": true,
+      "wrapped_required": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-2",
+     "key": "car_seat",
+     "note": "Fotelik przewożony bezpłatnie. Na pokładzie tylko fotelik z certyfikatem lotniczym i na wykupionym miejscu.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.smartwings.com/en/children/",
+     "value": {
+      "free": true,
+      "onboard_requires_certification": true,
+      "onboard_requires_own_seat": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "travel_cot",
+     "note": "Składane łóżeczko turystyczne przewożone bezpłatnie.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.smartwings.com/en/children/",
+     "value": {
+      "free": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "baby_food",
+     "note": "Do 200 ml jedzenia dla dziecka w bagażu podręcznym. Kontrola bezpieczeństwa może poprosić o spróbowanie.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.smartwings.com/en/children/",
+     "value": {
+      "cabin_ml": 200,
+      "may_be_tested": true
+     },
+     "verified_at": "2026-11-04"
+    }
+   ]
+  },
+  {
+   "carrier_iata": "RR",
+   "rules": [
+    {
+     "age_band": "0-2",
+     "key": "infant_fee",
+     "note": "Niemowlę na kolanach: 25 € za każdy lot w jedną stronę (przy zakupie w Buzz). Kupując lot w biurze podróży, cenę niemowlęcia sprawdź w biurze.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.buzzair.com/en/tcs/regulations/",
+     "value": {
+      "amount_eur": 25,
+      "per": "one_way"
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "infant_min_age",
+     "note": "Dzieci młodszych niż 8 dni linia nie przewozi.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.buzzair.com/en/tcs/regulations/",
+     "value": {
+      "min_days": 8
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-2",
+     "key": "infants_per_adult",
+     "note": "W rezerwacji musi być co najmniej jeden dorosły na każde niemowlę.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.buzzair.com/en/tcs/regulations/",
+     "value": {
+      "max": 1
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-2",
+     "key": "lap_infant",
+     "note": "Niemowlę na kolanach przypięte pasem od załogi. W jednym rzędzie najwyżej dwoje dzieci do 2 lat; z niemowlęciem nie usiądziesz w rzędach 1, 16 i 17.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.buzzair.com/en/tcs/regulations/",
+     "value": {
+      "allowed": true,
+      "excluded_rows": [
+       1,
+       16,
+       17
+      ],
+      "max_per_row": 2
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-2",
+     "key": "infant_seat",
+     "note": "Własne miejsce dla niemowlęcia: pełna taryfa, rezerwacja przez infolinię lub czat. Dziecko siedzi w zatwierdzonym foteliku przodem do kierunku lotu albo w pasach AmSafe CARES (od 12 miesięcy).",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.buzzair.com/en/tcs/regulations/",
+     "value": {
+      "booking": "call_centre_or_chat",
+      "cares_min_months": 12,
+      "forward_facing_car_seat": true,
+      "full_fare": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-2",
+     "key": "infant_baggage",
+     "note": "Torba dla niemowlęcia do 5 kg oprócz Twojego bagażu podręcznego. Niemowlę bez własnego miejsca nie ma osobnego bagażu podręcznego.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.buzzair.com/en/tcs/regulations/",
+     "value": {
+      "baby_bag_kg": 5,
+      "cabin_bag_without_own_seat": false
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "stroller",
+     "note": "Jeden składany wózek (także podwójny), system podróżny lub nosidło na dziecko bezpłatnie.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.buzzair.com/en/tcs/regulations/",
+     "value": {
+      "double_pushchair_ok": true,
+      "free": true,
+      "per_child": 1
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "car_seat",
+     "note": "Bezpłatnie jeden fotelik, podstawka albo łóżeczko turystyczne. Każdy kolejny sprzęt dziecięcy kosztuje 15 € za sztukę i lot (do 20 kg).",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.buzzair.com/en/tcs/regulations/",
+     "value": {
+      "extra_item_fee_eur": 15,
+      "extra_item_max_kg": 20,
+      "free_one_of": [
+       "car_seat",
+       "booster_seat",
+       "travel_cot"
+      ]
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "2+",
+     "key": "child_seating",
+     "note": "Z dzieckiem od 2 do 11 lat trzeba wykupić miejsce dla dorosłego. Dziecko dostaje wtedy miejsce obok bezpłatnie (najwyżej czworo dzieci na dorosłego).",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.buzzair.com/en/tcs/regulations/",
+     "value": {
+      "child_seat_free": true,
+      "max_free_children_per_adult": 4,
+      "paid_seat_required": true
+     },
+     "verified_at": "2026-11-04"
+    }
+   ]
+  },
+  {
+   "carrier_iata": "W6",
+   "rules": [
+    {
+     "age_band": "0-2",
+     "key": "infant_fee",
+     "note": "Niemowlę na kolanach leci za opłatą. Kwotę zobaczysz w rezerwacji, strona jej nie podaje. Dziecko musi mieć mniej niż 2 lata w dniu wylotu i powrotu.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.wizzair.com/pl-pl/centrum-pomocy/informacje-dotyczace-rezerwacji-i-uslugi/podroz-z-dziecmi/rezerwacja-lotu-z-dzieckiem",
+     "value": {
+      "amount_published": false,
+      "paid": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "infant_min_age",
+     "note": "Niemowlęta przewożone są od 14. dnia życia.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.wizzair.com/pl-pl/centrum-pomocy/informacje-dotyczace-rezerwacji-i-uslugi/podroz-z-dziecmi",
+     "value": {
+      "min_days": 14
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-2",
+     "key": "infants_per_adult",
+     "note": "Jednej osobie dorosłej (od 16 lat) może towarzyszyć tylko jedno niemowlę na kolanach.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.wizzair.com/pl-pl/centrum-pomocy/informacje-dotyczace-rezerwacji-i-uslugi/podroz-z-dziecmi",
+     "value": {
+      "adult_min_age": 16,
+      "max": 1
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-2",
+     "key": "infant_baggage",
+     "note": "Bezpłatnie dodatkowy przedmiot osobisty dla niemowlęcia (40×30×20 cm, do 10 kg) i jedzenie na czas lotu. Na niemowlę nie wykupisz walizki ani bagażu rejestrowanego.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.wizzair.com/pl-pl/centrum-pomocy/informacje-dotyczace-rezerwacji-i-uslugi/podroz-z-dziecmi/bagaz-dzieci%C4%99cy",
+     "value": {
+      "dims_cm": "40x30x20",
+      "extra_personal_item_kg": 10,
+      "own_allowance": false
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-2",
+     "key": "stroller",
+     "note": "Bezpłatnie wózek, łóżeczko turystyczne lub fotelik: zabierasz je do drzwi samolotu, a potem trafiają do luku. Wózków elektrycznych linia nie przewozi.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.wizzair.com/pl-pl/centrum-pomocy/informacje-dotyczace-rezerwacji-i-uslugi/podroz-z-dziecmi/bagaz-dzieci%C4%99cy",
+     "value": {
+      "electric_not_allowed": true,
+      "free": true,
+      "items": [
+       "stroller",
+       "travel_cot",
+       "car_seat"
+      ],
+      "to_aircraft_door": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "2+",
+     "key": "stroller",
+     "note": "Starsze dziecko: wózek, łóżeczko lub fotelik też bezpłatnie. Kompaktowy wózek do 55×40×23 cm wejdzie na pokład zamiast wykupionej walizki. Podstawka (booster) jest płatna.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.wizzair.com/pl-pl/centrum-pomocy/informacje-dotyczace-rezerwacji-i-uslugi/podroz-z-dziecmi/bagaz-dzieci%C4%99cy",
+     "value": {
+      "booster_seat_paid": true,
+      "cabin_if_max_cm": "55x40x23",
+      "free": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "2+",
+     "key": "child_fare",
+     "note": "Dziecko od 2 lat płaci taryfę dorosłego.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.wizzair.com/pl-pl/centrum-pomocy/informacje-dotyczace-rezerwacji-i-uslugi/podroz-z-dziecmi",
+     "value": {
+      "same_as_adult": true
+     },
+     "verified_at": "2026-11-04"
+    }
+   ]
+  }
+ ],
+ "feature_keys": [
+  "baby_bath",
+  "baby_monitor",
+  "beach_walk_minutes",
+  "bottle_warmer",
+  "changing_table",
+  "child_free_stay",
+  "cot",
+  "high_chair",
+  "kids_animation",
+  "kids_menu",
+  "kids_pool",
+  "lift",
+  "paddling_pool",
+  "parking",
+  "playground",
+  "playroom",
+  "potty",
+  "shade",
+  "step_free_access",
+  "stroller_rental",
+  "toddler_food"
+ ],
+ "hotels": [
+  {
+   "access": [],
+   "address": "ul. Nadmorska 36C, 78-132 Grzybowo",
+   "features": [
+    {
+     "age_band": "0-3",
+     "key": "cot",
+     "note": "Łóżeczko dla dziecka do 3 lat na zamówienie: 60 zł za dobę albo 180 zł za cały pobyt.",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelsaltic.pl/grzybowo/dzieci",
+     "value": {
+      "available": true,
+      "fee_pln_per_night": 60,
+      "fee_pln_per_stay": 180,
+      "on_request": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-3",
+     "key": "child_free_stay",
+     "note": "Dziecko do 3 lat śpiące z rodzicami nie płaci za pobyt (jedno takie dziecko na pobyt).",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelsaltic.pl/grzybowo/dzieci",
+     "value": {
+      "free": true,
+      "max_children": 1,
+      "sleeping_with_parents": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka na życzenie.",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelsaltic.pl/grzybowo/dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacz do butelek na życzenie.",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelsaltic.pl/grzybowo/dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka do karmienia w restauracji.",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelsaltic.pl/grzybowo/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Osobne menu dla dzieci w restauracji. O jedzeniu dla niemowląt strona nie wspomina.",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelsaltic.pl/grzybowo/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Przewijaki w toaletach ogólnodostępnych.",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelsaltic.pl/grzybowo/dzieci",
+     "value": {
+      "available": true,
+      "where": "public_toilets"
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Na życzenie nocnik, nakładka na sedes i podest.",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelsaltic.pl/grzybowo/dzieci",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "step_stool": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala zabaw (Kid's room) w budynku Morze, 1. piętro, codziennie 8:00–20:00 (przerwa 13:00–13:30). Minimalnego wieku i opieki strona nie podaje.",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelsaltic.pl/grzybowo/dzieci",
+     "value": {
+      "available": true,
+      "break": "13:00-13:30",
+      "close": "20:00",
+      "open": "08:00"
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Plac zabaw na zewnątrz.",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelsaltic.pl/grzybowo/dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Zajęcia z animatorami w wybranych godzinach; przedziału wieku strona nie podaje.",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelsaltic.pl/grzybowo/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Podgrzewane brodziki w strefie krytej (cały rok) i przy basenie zewnętrznym (sezonowo; termin sezonu nie jest podany).",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelsaltic.pl/grzybowo/dzieci",
+     "value": {
+      "heated": true,
+      "indoor": true,
+      "outdoor": true,
+      "outdoor_seasonal": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Około 3 minuty spacerem do dzikiej plaży.",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelsaltic.pl/grzybowo",
+     "value": {
+      "minutes": 3
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking płatny, 90 zł za dobę.",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelsaltic.pl/grzybowo/hotel/faq",
+     "value": {
+      "fee_pln_per_day": 90,
+      "paid": true
+     },
+     "verified_at": "2026-11-04"
+    }
+   ],
+   "lat": null,
+   "lon": null,
+   "name": "Saltic Resort & SPA Grzybowo",
+   "official_url": "https://www.hotelsaltic.pl/grzybowo",
+   "place": "grzybowo",
+   "slug": "saltic-resort-spa-grzybowo",
+   "status": "draft"
+  }
+ ],
+ "places": [
+  {
+   "country": "Grecja",
+   "dest_iata": "RHO",
+   "kind": "flight",
+   "name": "Rodos",
+   "region": null,
+   "slug": "rodos"
+  },
+  {
+   "country": "Grecja",
+   "dest_iata": "HER",
+   "kind": "flight",
+   "name": "Kreta – Heraklion",
+   "region": null,
+   "slug": "kreta-heraklion"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Grzybowo",
+   "region": "Bałtyk – Pomorze Zachodnie",
+   "slug": "grzybowo"
+  }
+ ],
+ "rule_keys": [
+  "baby_food",
+  "bassinet",
+  "car_seat",
+  "child_baggage",
+  "child_fare",
+  "child_seating",
+  "infant_baggage",
+  "infant_fee",
+  "infant_min_age",
+  "infant_seat",
+  "infants_per_adult",
+  "lap_infant",
+  "priority_boarding",
+  "stroller",
+  "travel_cot",
+  "twins"
+ ]
+}
