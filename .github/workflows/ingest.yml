@@ -2,6 +2,11 @@ name: ingest
 
 on:
   workflow_dispatch:
+    inputs:
+      market_only:
+        description: "Only refresh regular-airline reference prices (skip the r.pl crawl)"
+        type: boolean
+        default: false
   schedule:
     # Every 6 h at :17 UTC (off the top of the hour). A full r.pl run is ~100 requests, ~10 min.
     # Exit code 3 (request cap hit, data incomplete) fails the job on purpose so it gets noticed.
@@ -22,6 +27,7 @@ jobs:
           python-version: "3.12"
       - run: pip install -e .
       - run: python -m ingest.run --source r_pl
+        if: ${{ !inputs.market_only }}  # null on cron runs -> r.pl crawl runs
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           RPL_COOKIE: ${{ secrets.RPL_COOKIE }}
