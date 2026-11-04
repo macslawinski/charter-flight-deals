@@ -1,0 +1,30 @@
+---
+import Base from "../layouts/Base.astro";
+import { data } from "../lib/data";
+
+const places = data.places
+  .map((p) => ({ ...p, hotels: data.hotels.filter((h) => h.place === p.slug) }))
+  .filter((p) => p.hotels.length > 0);
+---
+
+<Base title="Hotele dla rodzin z maluchem" section="hotele" description="Hotele sprawdzone pod kątem dzieci do 3 lat.">
+  <h1>Hotele dla rodzin z dzieckiem do 3 lat</h1>
+  <p class="lead">
+    Opisujemy tylko to, co hotel sam podaje na swojej stronie, i wypisujemy, czego tam brakuje.
+  </p>
+  {
+    places.map((p) => (
+      <section aria-labelledby={p.slug}>
+        <h2 id={p.slug}>{p.name}</h2>
+        {p.region && <p>{p.region}</p>}
+        <ul>
+          {p.hotels.map((h) => (
+            <li>
+              <a href={`/${p.slug}/${h.slug}/`}>{h.name}</a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</Base>

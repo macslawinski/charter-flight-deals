@@ -1,0 +1,26 @@
+---
+// One fact as a row: label column (carrier or rule name + age band) and the note with its stamp.
+import Stamp from "./Stamp.astro";
+import { bandLabel, type Fact } from "../lib/data";
+
+interface Props {
+  fact: Fact;
+  label: string;
+  href?: string;
+  owner?: string;
+  sub?: string; // e.g. the rule name when one topic lists several rules per carrier
+}
+const { fact, label, href, owner, sub } = Astro.props;
+const band = [sub, bandLabel(fact.age_band)].filter(Boolean).join(", ");
+---
+
+<li class="fact">
+  <div class="fact-label">
+    {href ? <a href={href}>{label}</a> : label}
+    {band && <span class="band">{band}</span>}
+  </div>
+  <div class="fact-body">
+    {fact.note && <p>{fact.note}</p>}
+    <Stamp fact={fact} owner={owner} />
+  </div>
+</li>

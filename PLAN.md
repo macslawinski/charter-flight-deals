@@ -192,6 +192,29 @@ departure 07:00–15:00, off-season month. It is parameterized by `as_of` like t
 5. **Staleness rule**: every fact has `verified_at`. After 12 months (6 for fees), the site shows "to re-verify". A
    project skill `reverify-hotel` and a monthly SQL report list what has expired.
 
+### 3a. Indoor playgrounds per city ("bawialnie"), PoC Poznań (idea 2026-11-04)
+
+Parents of 0–3s in our six origin cities need a rainy-day list at home too, and it gives B local, repeat-visit
+pages. Same rules as hotels: discovery is legal and attributed, facts come from the venue's own website.
+
+- **Discovery: OpenStreetMap** (ODbL; credit "© OpenStreetMap contributors" on the page, no other obligations
+  for a list we enrich by hand). Overpass query on 2026-11-04 for Poznań (`leisure=indoor_play`, plus
+  `leisure=playground` + `indoor=yes`) returned 14 objects: ~10 real indoor playgrounds (Kraina Piratów,
+  Fikołki ×2, Mlecz, Bawialnia Bawimy, Monsterkowo, Smålandia, Madagaskar, Pobawimysię?, Holiday Park), the rest
+  noise (climbing wall, go-karts, unnamed). About half have a website tag. OSM is incomplete, so the list is a
+  starting point; missing venues get added by hand from their own sites (and can be contributed back to OSM).
+- **Facts from the venue's website only** (no Google Maps, Facebook or review scraping): youngest age / baby zone
+  (0–3), price for an under-3 and for the adult, opening hours, café, changing table, stroller parking, parking,
+  socks rule, birthday-party only days. Each with URL + `verified_at`, like `hotel_child_features`.
+- **Data model (new migration, after the PoC page works from TOML)**: `venues(id, slug, city, kind
+  'indoor_play', name, official_url, address, lat, lon, osm_type, osm_id, status)` + `venue_child_features`
+  with the same fact columns as hotels; TOML in `data/curated/venues/<city>/<slug>.toml`, loaded by
+  `ingest.curated`. `osm_id` lets a monthly check flag venues that closed (deleted in OSM).
+- **Page**: `/poznan/bawialnie/`: list with youngest age, price for a toddler, hours, and the same source stamp;
+  filter by "has a baby zone". Staleness: 6 months (prices and hours change often).
+- **Refresh**: one Overpass query per city per month (cheap, polite), diffed against our list; never automatic
+  publishing of new venues.
+
 ---
 
 ## 4. SEO basics for B

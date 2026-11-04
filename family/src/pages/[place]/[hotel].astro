@@ -1,0 +1,101 @@
+---
+import Base from "../../layouts/Base.astro";
+import FactRow from "../../components/FactRow.astro";
+import { FEATURE_GROUPS, data, featureLabel, plDate, type Hotel, type Place } from "../../lib/data";
+
+export function getStaticPaths() {
+  return data.hotels.map((h) => {
+    const place = data.places.find((p) => p.slug === h.place);
+    if (!place) throw new Error(`hotel ${h.slug}: unknown place ${h.place}`);
+    return { params: { place: place.slug, hotel: h.slug }, props: { h, place } };
+  });
+}
+interface Props {
+  h: Hotel;
+  place: Place;
+}
+const { h, place } = Astro.props;
+const groups = FEATURE_GROUPS.map((g) => ({
+  ...g,
+  facts: g.keys.flatMap((k) => h.features.filter((f) => f.key === k)),
+})).filter((g) => g.facts.length > 0);
+const stated = new Set(h.features.map((f) => f.key));
+const missing = FEATURE_GROUPS.flatMap((g) => g.keys)
+  .filter((k) => !stated.has(k))
+  .map(featureLabel);
+const latest = h.features.map((f) => f.verified_at).sort().at(-1);
+const slugify = (s: string) =>
+  s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/ł/g, "l").replace(/[^a-z0-9]+/g, "-");
+---
+
+<Base title={`${h.name}: z dzieckiem do 3 lat`} section="hotele" description={`Co ${h.name} oferuje dzieciom do 3 lat, ze źródłami.`}>
+  <p><a href="/hotele/">Wszystkie hotele</a></p>
+  <h1>{h.name}</h1>
+  <p class="lead">
+    {place.name}{place.region && `, ${place.region}`}
+  </p>
+  {h.address && <p>Adres: {h.address}</p>}
+
+  {
+    h.status === "draft" && (
+      <p class="draft-note">
+        Opis w przygotowaniu: fakty pochodzą ze strony hotelu
+        {latest && ` (sprawdzone ${plDate(latest)})`}, ale hotel jeszcze ich nie potwierdził.
+      </p>
+    )
+  }
+
+  {
+    h.official_url && (
+      <p>
+        Strona hotelu: <a href={h.official_url} rel="noopener">{h.official_url}</a>
+      </p>
+    )
+  }
+
+  {
+    groups.map((g) => (
+      <section aria-labelledby={slugify(g.title)}>
+        <h2 id={slugify(g.title)}>{g.title}</h2>
+        <ul class="facts">
+          {g.facts.map((f) => (
+            <FactRow fact={f} label={featureLabel(f.key)} />
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+
+  <section aria-labelledby="dojazd">
+    <h2 id="dojazd">Dojazd</h2>
+    {
+      h.access.length === 0 ? (
+        <p>
+          Czasy dojazdu autem i pociągiem z Warszawy, Poznania, Gdańska, Wrocławia, Krakowa i
+          Katowic jeszcze sprawdzamy.
+        </p>
+      ) : (
+        <ul>
+          {h.access.map((a) => (
+            <li>
+              {a.from_code}, {a.mode === "car" ? "autem" : a.mode === "train" ? "pociągiem" : a.mode}:
+              około {Math.floor(a.minutes / 60)} h {a.minutes % 60} min
+            </li>
+          ))}
+        </ul>
+      )
+    }
+  </section>
+
+  {
+    missing.length > 0 && (
+      <section aria-labelledby="zapytaj">
+        <h2 id="zapytaj">Zapytaj hotel przed rezerwacją</h2>
+        <p>Na stronie hotelu nie znaleźliśmy informacji o:</p>
+        <ul class="missing-list">
+          {missing.map((m) => <li>{m}</li>)}
+        </ul>
+      </section>
+    )
+  }
+</Base>
