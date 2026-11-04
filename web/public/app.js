@@ -4,13 +4,14 @@
 const CONFIG = {
   donateUrl: null,          // e.g. "https://buycoffee.to/<name>"; the link stays hidden while null
   // Per operator (deal.operator): display name, booking page, and when its data counts as stale
-  // (two missed runs: r.pl runs every 6 h, Itaka every 12 h).
+  // (one missed run plus queue delay: r.pl runs every 8 h, Itaka at 00:17 and 16:17 UTC, so its
+  // longest gap after a missed run is 24 h).
   operators: {
-    r_pl: { name: "r.pl", url: "https://r.pl/bilety-czarterowe", staleAfterHours: 14 },
-    itaka: { name: "Itaka", url: "https://www.itaka.pl/bilety-lotnicze/", staleAfterHours: 26 },
+    r_pl: { name: "r.pl", url: "https://r.pl/bilety-czarterowe", staleAfterHours: 20 },
+    itaka: { name: "Itaka", url: "https://www.itaka.pl/bilety-lotnicze/", staleAfterHours: 30 },
   },
 };
-const operatorInfo = (code) => CONFIG.operators[code] ?? { name: code, url: null, staleAfterHours: 14 };
+const operatorInfo = (code) => CONFIG.operators[code] ?? { name: code, url: null, staleAfterHours: 20 };
 
 // useGrouping "always": pl-PL skips the separator for 4-digit numbers by default (1249 vs 1 249).
 const zl = new Intl.NumberFormat("pl-PL", { maximumFractionDigits: 0, useGrouping: "always" });
