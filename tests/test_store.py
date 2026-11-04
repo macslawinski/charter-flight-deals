@@ -35,10 +35,12 @@ def conn() -> Iterator[psycopg.Connection[Any]]:
 
 
 def offer(price: str, observed_at: datetime = T0, dest: str = "AYT") -> FlightOffer:
-    return FlightOffer(operator="r_pl", origin_iata="WAW", dest_iata=dest,
+    # Operator "test_store" and a fake flight number keep keys disjoint from real data that may
+    # have been loaded into cfd_local (the tests roll back, but real rows are committed).
+    return FlightOffer(operator="test_store", origin_iata="WAW", dest_iata=dest,
                        outbound_date=date(2026, 12, 5), return_date=date(2026, 12, 12),
                        price_pln=Decimal(price), observed_at=observed_at,
-                       flight_no="ENT4001/ENT4002")
+                       flight_no="TST1/TST2")
 
 
 def snapshot(conn, key: str, d: date = D) -> tuple[Any, ...]:
@@ -55,7 +57,7 @@ def test_upsert_creates_flight_and_snapshot(conn):
     assert store.upsert_offers(conn, [o], D) == 1
     f = conn.execute("select origin_iata, dest_iata, stay_days, flight_no from flights "
                      "where flight_key = %s", (o.flight_key,)).fetchone()
-    assert f == ("WAW", "AYT", 7, "ENT4001/ENT4002")
+    assert f == ("WAW", "AYT", 7, "TST1/TST2")
     assert snapshot(conn, o.flight_key) == (Decimal("1099.00"), Decimal("1099.00"), 1, T0, T0)
 
 
