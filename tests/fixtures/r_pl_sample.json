@@ -1,0 +1,654 @@
+{
+ "bundle_version": 1,
+ "operator": "r_pl",
+ "passengers": 2,
+ "fetched_for": "2026-11-04",
+ "destinations": {
+  "Destynacje": [
+   {
+    "Panstwo": "Turcja",
+    "PanstwoUrl": "turcja",
+    "Region": "Riwiera Turecka",
+    "Nazwa": "Antalya",
+    "NazwaUrl": "antalya",
+    "Klucz": "AYT",
+    "WylotId": null,
+    "PrzylotId": null,
+    "TerminWyjazdu": "2026-11-28T00:00:00Z",
+    "Zdjecie410x410": "https://grafiki.r.pl/lokalizacja/160/turcja-riwiera-turecka-antalya-wakacje-129971.jpg?aspect_ratio=410%3A410",
+    "Zdjecie410x225": "https://grafiki.r.pl/lokalizacja/160/turcja-riwiera-turecka-antalya-wakacje-129971.jpg?aspect_ratio=410%3A225",
+    "Zdjecie": {
+     "Url": "https://grafiki.r.pl/lokalizacja/160/turcja-riwiera-turecka-antalya-wakacje-129971.jpg?aspect_ratio=3%3A2",
+     "Opis": "",
+     "Alt": "Widok z góry na turecką plażę Kaputas."
+    },
+    "SzerokoscGeo": 36.9043327,
+    "DlugoscGeo": 30.80187679,
+    "Flaga": "https://grafiki.r.pl/lokalizacja/45/flaga-turcja-83947.png",
+    "Bagaz": 20,
+    "Cena": 799,
+    "DataLayer": {
+     "brand": "Enter Air",
+     "category": "Turcja",
+     "id": 288474,
+     "name": "Antalya KTW - AYT 28/11/2026",
+     "price": 799
+    }
+   },
+   {
+    "Panstwo": "Portugalia",
+    "PanstwoUrl": "portugalia",
+    "Region": "Madera",
+    "Nazwa": "Madera",
+    "NazwaUrl": "funchal",
+    "Klucz": "FNC",
+    "WylotId": null,
+    "PrzylotId": null,
+    "TerminWyjazdu": "2026-11-14T00:00:00Z",
+    "Zdjecie410x410": "https://grafiki.r.pl/lokalizacja/3476/portugalia-madera-funchal-wakacje-130594.jpg?aspect_ratio=410%3A410",
+    "Zdjecie410x225": "https://grafiki.r.pl/lokalizacja/3476/portugalia-madera-funchal-wakacje-130594.jpg?aspect_ratio=410%3A225",
+    "Zdjecie": {
+     "Url": "https://grafiki.r.pl/lokalizacja/3476/portugalia-madera-funchal-wakacje-130594.jpg?aspect_ratio=3%3A2",
+     "Opis": "",
+     "Alt": "Widok z góry na miasto Câmara de Lobos na Maderze."
+    },
+    "SzerokoscGeo": null,
+    "DlugoscGeo": null,
+    "Flaga": "https://grafiki.r.pl/lokalizacja/71/flaga-portugalia-83829.png",
+    "Bagaz": 20,
+    "Cena": 849,
+    "DataLayer": {
+     "brand": "Enter Air",
+     "category": "Portugalia",
+     "id": 293427,
+     "name": "Madera POZ - FNC 14/11/2026",
+     "price": 849
+    }
+   },
+   {
+    "Panstwo": "Hiszpania",
+    "PanstwoUrl": "hiszpania",
+    "Region": "Teneryfa",
+    "Nazwa": "Teneryfa - Południe",
+    "NazwaUrl": "teneryfa",
+    "Klucz": "TFS",
+    "WylotId": null,
+    "PrzylotId": null,
+    "TerminWyjazdu": "2026-12-24T00:00:00Z",
+    "Zdjecie410x410": "https://grafiki.r.pl/lokalizacja/671/hiszpania-teneryfa-teneryfa-wakacje-133448.jpg?aspect_ratio=410%3A410",
+    "Zdjecie410x225": "https://grafiki.r.pl/lokalizacja/671/hiszpania-teneryfa-teneryfa-wakacje-133448.jpg?aspect_ratio=410%3A225",
+    "Zdjecie": {
+     "Url": "https://grafiki.r.pl/lokalizacja/671/hiszpania-teneryfa-teneryfa-wakacje-133448.jpg?aspect_ratio=3%3A2",
+     "Opis": "",
+     "Alt": "Krajobrazowe zdjęcie plaży Las Teresitas na Teneryfie w Hiszpanii."
+    },
+    "SzerokoscGeo": 28.0457718,
+    "DlugoscGeo": -16.57621599,
+    "Flaga": "https://grafiki.r.pl/lokalizacja/30/flaga-hiszpania-83923.png",
+    "Bagaz": 20,
+    "Cena": 979,
+    "DataLayer": {
+     "brand": "Enter Air",
+     "category": "Hiszpania",
+     "id": 300074,
+     "name": "Teneryfa - Południe KTW - TFS 24/12/2026",
+     "price": 979
+    }
+   }
+  ],
+  "Filtry": {
+   "CenaMin": 799,
+   "CenaMax": 5600,
+   "DlugoscLotuMin": "0:0",
+   "DlugoscLotuMinVal": 0,
+   "DlugoscLotuMax": "0:0",
+   "DlugoscLotuMaxVal": 0
+  }
+ },
+ "outbound": {
+  "AYT": [
+   {
+    "Data": "2026-11-14",
+    "Cena": 400,
+    "Bilety": [
+     {
+      "Id": "433600",
+      "DaneDoSzczegolow": {
+       "TrasaWCId": 433600,
+       "PrzystanekId": 1179068,
+       "Iata": "WAW"
+      },
+      "Wylot": {
+       "Panstwo": "Polska",
+       "Przystanek": "Warszawa Chopin",
+       "Region": null,
+       "Iata": "WAW",
+       "Godzina": "08:30",
+       "Przesuniecie": null
+      },
+      "Przylot": {
+       "Panstwo": "Turcja",
+       "Przystanek": "Antalya",
+       "Region": "Riwiera Turecka",
+       "Iata": "AYT",
+       "Godzina": "13:40",
+       "Przesuniecie": null
+      },
+      "CzasLotu": "3:10",
+      "CzyDreamliner": false,
+      "Dokument": "Paszport lub dowód",
+      "NazwaPrzewoznika": "Enter Air",
+      "BagazPodreczny": 5,
+      "BagazRejestrowany": 20,
+      "BagazSportowy": null,
+      "Wyzywienie": false,
+      "Cena": 400,
+      "CenaRazem": 800,
+      "Pakiety": [
+       "288617_433600"
+      ],
+      "KodPrzewoznikaIata": "E4",
+      "NumerLotu": "ENT4001",
+      "Wybrany": false
+     }
+    ],
+    "Wybrana": false
+   },
+   {
+    "Data": "2026-11-21",
+    "Cena": 560,
+    "Bilety": [
+     {
+      "Id": "433555",
+      "DaneDoSzczegolow": {
+       "TrasaWCId": 433555,
+       "PrzystanekId": 1178978,
+       "Iata": "KTW"
+      },
+      "Wylot": {
+       "Panstwo": "Polska",
+       "Przystanek": "Katowice",
+       "Region": null,
+       "Iata": "KTW",
+       "Godzina": "02:35",
+       "Przesuniecie": null
+      },
+      "Przylot": {
+       "Panstwo": "Turcja",
+       "Przystanek": "Antalya",
+       "Region": "Riwiera Turecka",
+       "Iata": "AYT",
+       "Godzina": "07:40",
+       "Przesuniecie": null
+      },
+      "CzasLotu": "3:5",
+      "CzyDreamliner": false,
+      "Dokument": "Paszport lub dowód",
+      "NazwaPrzewoznika": "Enter Air",
+      "BagazPodreczny": 5,
+      "BagazRejestrowany": 20,
+      "BagazSportowy": null,
+      "Wyzywienie": false,
+      "Cena": 560,
+      "CenaRazem": 1120,
+      "Pakiety": [
+       "288473_433555"
+      ],
+      "KodPrzewoznikaIata": "E4",
+      "NumerLotu": "ENT4113",
+      "Wybrany": false
+     }
+    ],
+    "Wybrana": false
+   },
+   {
+    "Data": "2026-11-28",
+    "Cena": 320,
+    "Bilety": [
+     {
+      "Id": "433556",
+      "DaneDoSzczegolow": {
+       "TrasaWCId": 433556,
+       "PrzystanekId": 1178980,
+       "Iata": "KTW"
+      },
+      "Wylot": {
+       "Panstwo": "Polska",
+       "Przystanek": "Katowice",
+       "Region": null,
+       "Iata": "KTW",
+       "Godzina": "02:35",
+       "Przesuniecie": null
+      },
+      "Przylot": {
+       "Panstwo": "Turcja",
+       "Przystanek": "Antalya",
+       "Region": "Riwiera Turecka",
+       "Iata": "AYT",
+       "Godzina": "07:40",
+       "Przesuniecie": null
+      },
+      "CzasLotu": "3:5",
+      "CzyDreamliner": false,
+      "Dokument": "Paszport lub dowód",
+      "NazwaPrzewoznika": "Enter Air",
+      "BagazPodreczny": 5,
+      "BagazRejestrowany": 20,
+      "BagazSportowy": null,
+      "Wyzywienie": false,
+      "Cena": 320,
+      "CenaRazem": 640,
+      "Pakiety": [
+       "288474_433556"
+      ],
+      "KodPrzewoznikaIata": "E4",
+      "NumerLotu": "ENT4113",
+      "Wybrany": false
+     },
+     {
+      "Id": "433602",
+      "DaneDoSzczegolow": {
+       "TrasaWCId": 433602,
+       "PrzystanekId": 1179072,
+       "Iata": "WAW"
+      },
+      "Wylot": {
+       "Panstwo": "Polska",
+       "Przystanek": "Warszawa Chopin",
+       "Region": null,
+       "Iata": "WAW",
+       "Godzina": "08:30",
+       "Przesuniecie": null
+      },
+      "Przylot": {
+       "Panstwo": "Turcja",
+       "Przystanek": "Antalya",
+       "Region": "Riwiera Turecka",
+       "Iata": "AYT",
+       "Godzina": "13:40",
+       "Przesuniecie": null
+      },
+      "CzasLotu": "3:10",
+      "CzyDreamliner": false,
+      "Dokument": "Paszport lub dowód",
+      "NazwaPrzewoznika": "Enter Air",
+      "BagazPodreczny": 5,
+      "BagazRejestrowany": 20,
+      "BagazSportowy": null,
+      "Wyzywienie": false,
+      "Cena": 440,
+      "CenaRazem": 880,
+      "Pakiety": [
+       "288619_433602"
+      ],
+      "KodPrzewoznikaIata": "E4",
+      "NumerLotu": "ENT4001",
+      "Wybrany": false
+     }
+    ],
+    "Wybrana": false
+   },
+   {
+    "Data": "2026-12-05",
+    "Cena": 560,
+    "Bilety": [
+     {
+      "Id": "433557",
+      "DaneDoSzczegolow": {
+       "TrasaWCId": 433557,
+       "PrzystanekId": 1178982,
+       "Iata": "KTW"
+      },
+      "Wylot": {
+       "Panstwo": "Polska",
+       "Przystanek": "Katowice",
+       "Region": null,
+       "Iata": "KTW",
+       "Godzina": "02:35",
+       "Przesuniecie": null
+      },
+      "Przylot": {
+       "Panstwo": "Turcja",
+       "Przystanek": "Antalya",
+       "Region": "Riwiera Turecka",
+       "Iata": "AYT",
+       "Godzina": "07:40",
+       "Przesuniecie": null
+      },
+      "CzasLotu": "3:5",
+      "CzyDreamliner": false,
+      "Dokument": "Paszport lub dowód",
+      "NazwaPrzewoznika": "Enter Air",
+      "BagazPodreczny": 5,
+      "BagazRejestrowany": 20,
+      "BagazSportowy": null,
+      "Wyzywienie": false,
+      "Cena": 560,
+      "CenaRazem": 1120,
+      "Pakiety": [
+       "288475_433557",
+       "288688_433557"
+      ],
+      "KodPrzewoznikaIata": "E4",
+      "NumerLotu": "ENT4113",
+      "Wybrany": false
+     },
+     {
+      "Id": "433603",
+      "DaneDoSzczegolow": {
+       "TrasaWCId": 433603,
+       "PrzystanekId": 1179074,
+       "Iata": "WAW"
+      },
+      "Wylot": {
+       "Panstwo": "Polska",
+       "Przystanek": "Warszawa Chopin",
+       "Region": null,
+       "Iata": "WAW",
+       "Godzina": "14:30",
+       "Przesuniecie": null
+      },
+      "Przylot": {
+       "Panstwo": "Turcja",
+       "Przystanek": "Antalya",
+       "Region": "Riwiera Turecka",
+       "Iata": "AYT",
+       "Godzina": "19:40",
+       "Przesuniecie": null
+      },
+      "CzasLotu": "3:10",
+      "CzyDreamliner": false,
+      "Dokument": "Paszport lub dowód",
+      "NazwaPrzewoznika": "Enter Air",
+      "BagazPodreczny": 5,
+      "BagazRejestrowany": 20,
+      "BagazSportowy": null,
+      "Wyzywienie": false,
+      "Cena": 600,
+      "CenaRazem": 1200,
+      "Pakiety": [
+       "288620_433603",
+       "288643_433603"
+      ],
+      "KodPrzewoznikaIata": "E4",
+      "NumerLotu": "ENT4001",
+      "Wybrany": false
+     }
+    ],
+    "Wybrana": false
+   }
+  ]
+ },
+ "inbound": {
+  "AYT": [
+   {
+    "Data": "2026-11-21",
+    "Cena": 679,
+    "Bilety": [
+     {
+      "BindId": "288617_433600",
+      "Id": "288617_433624",
+      "PakietId": 288617,
+      "DaneDoSzczegolow": {
+       "TrasaWCId": 433624,
+       "PrzystanekId": 1179117,
+       "Iata": "WAW"
+      },
+      "Wylot": {
+       "Panstwo": "Turcja",
+       "Przystanek": "Antalya",
+       "Region": "Riwiera Turecka",
+       "Iata": "AYT",
+       "Godzina": "14:25",
+       "Przesuniecie": null
+      },
+      "Przylot": {
+       "Panstwo": "Polska",
+       "Przystanek": "Warszawa Chopin",
+       "Region": null,
+       "Iata": "WAW",
+       "Godzina": "15:40",
+       "Przesuniecie": null
+      },
+      "CzasLotu": "3:15",
+      "CzyDreamliner": false,
+      "Dokument": "Paszport lub dowód",
+      "NazwaPrzewoznika": "Enter Air",
+      "BagazPodreczny": 5,
+      "BagazRejestrowany": 20,
+      "BagazSportowy": null,
+      "Wyzywienie": false,
+      "Cena": 679,
+      "CenaRazem": 1998,
+      "Pakiety": null,
+      "KodPrzewoznikaIata": "E4",
+      "NumerLotu": "ENT4002",
+      "Wybrany": false
+     }
+    ],
+    "Wybrana": false
+   },
+   {
+    "Data": "2026-11-28",
+    "Cena": 1079,
+    "Bilety": [
+     {
+      "BindId": "288473_433555",
+      "Id": "288473_433579",
+      "PakietId": 288473,
+      "DaneDoSzczegolow": {
+       "TrasaWCId": 433579,
+       "PrzystanekId": 1179027,
+       "Iata": "KTW"
+      },
+      "Wylot": {
+       "Panstwo": "Turcja",
+       "Przystanek": "Antalya",
+       "Region": "Riwiera Turecka",
+       "Iata": "AYT",
+       "Godzina": "08:15",
+       "Przesuniecie": null
+      },
+      "Przylot": {
+       "Panstwo": "Polska",
+       "Przystanek": "Katowice",
+       "Region": null,
+       "Iata": "KTW",
+       "Godzina": "09:25",
+       "Przesuniecie": null
+      },
+      "CzasLotu": "3:10",
+      "CzyDreamliner": false,
+      "Dokument": "Paszport lub dowód",
+      "NazwaPrzewoznika": "Enter Air",
+      "BagazPodreczny": 5,
+      "BagazRejestrowany": 20,
+      "BagazSportowy": null,
+      "Wyzywienie": false,
+      "Cena": 1079,
+      "CenaRazem": 2798,
+      "Pakiety": null,
+      "KodPrzewoznikaIata": "E4",
+      "NumerLotu": "ENT4114",
+      "Wybrany": false
+     }
+    ],
+    "Wybrana": false
+   },
+   {
+    "Data": "2026-12-05",
+    "Cena": 479,
+    "Bilety": [
+     {
+      "BindId": "288474_433556",
+      "Id": "288474_433580",
+      "PakietId": 288474,
+      "DaneDoSzczegolow": {
+       "TrasaWCId": 433580,
+       "PrzystanekId": 1179029,
+       "Iata": "KTW"
+      },
+      "Wylot": {
+       "Panstwo": "Turcja",
+       "Przystanek": "Antalya",
+       "Region": "Riwiera Turecka",
+       "Iata": "AYT",
+       "Godzina": "08:15",
+       "Przesuniecie": null
+      },
+      "Przylot": {
+       "Panstwo": "Polska",
+       "Przystanek": "Katowice",
+       "Region": null,
+       "Iata": "KTW",
+       "Godzina": "09:25",
+       "Przesuniecie": null
+      },
+      "CzasLotu": "3:10",
+      "CzyDreamliner": false,
+      "Dokument": "Paszport lub dowód",
+      "NazwaPrzewoznika": "Enter Air",
+      "BagazPodreczny": 5,
+      "BagazRejestrowany": 20,
+      "BagazSportowy": null,
+      "Wyzywienie": false,
+      "Cena": 479,
+      "CenaRazem": 1598,
+      "Pakiety": null,
+      "KodPrzewoznikaIata": "E4",
+      "NumerLotu": "ENT4114",
+      "Wybrany": true
+     },
+     {
+      "BindId": "288619_433602",
+      "Id": "288619_433626",
+      "PakietId": 288619,
+      "DaneDoSzczegolow": {
+       "TrasaWCId": 433626,
+       "PrzystanekId": 1179121,
+       "Iata": "WAW"
+      },
+      "Wylot": {
+       "Panstwo": "Turcja",
+       "Przystanek": "Antalya",
+       "Region": "Riwiera Turecka",
+       "Iata": "AYT",
+       "Godzina": "20:25",
+       "Przesuniecie": null
+      },
+      "Przylot": {
+       "Panstwo": "Polska",
+       "Przystanek": "Warszawa Chopin",
+       "Region": null,
+       "Iata": "WAW",
+       "Godzina": "21:40",
+       "Przesuniecie": null
+      },
+      "CzasLotu": "3:15",
+      "CzyDreamliner": false,
+      "Dokument": "Paszport lub dowód",
+      "NazwaPrzewoznika": "Enter Air",
+      "BagazPodreczny": 5,
+      "BagazRejestrowany": 20,
+      "BagazSportowy": null,
+      "Wyzywienie": false,
+      "Cena": 779,
+      "CenaRazem": 2198,
+      "Pakiety": null,
+      "KodPrzewoznikaIata": "E4",
+      "NumerLotu": "ENT4002",
+      "Wybrany": false
+     }
+    ],
+    "Wybrana": true
+   },
+   {
+    "Data": "2026-12-12",
+    "Cena": 1079,
+    "Bilety": [
+     {
+      "BindId": "288475_433557",
+      "Id": "288475_433581",
+      "PakietId": 288475,
+      "DaneDoSzczegolow": {
+       "TrasaWCId": 433581,
+       "PrzystanekId": 1179031,
+       "Iata": "KTW"
+      },
+      "Wylot": {
+       "Panstwo": "Turcja",
+       "Przystanek": "Antalya",
+       "Region": "Riwiera Turecka",
+       "Iata": "AYT",
+       "Godzina": "08:15",
+       "Przesuniecie": null
+      },
+      "Przylot": {
+       "Panstwo": "Polska",
+       "Przystanek": "Katowice",
+       "Region": null,
+       "Iata": "KTW",
+       "Godzina": "09:25",
+       "Przesuniecie": null
+      },
+      "CzasLotu": "3:10",
+      "CzyDreamliner": false,
+      "Dokument": "Paszport lub dowód",
+      "NazwaPrzewoznika": "Enter Air",
+      "BagazPodreczny": 5,
+      "BagazRejestrowany": 20,
+      "BagazSportowy": null,
+      "Wyzywienie": false,
+      "Cena": 1079,
+      "CenaRazem": 2798,
+      "Pakiety": null,
+      "KodPrzewoznikaIata": "E4",
+      "NumerLotu": "ENT4114",
+      "Wybrany": false
+     },
+     {
+      "BindId": "288620_433603",
+      "Id": "288620_433627",
+      "PakietId": 288620,
+      "DaneDoSzczegolow": {
+       "TrasaWCId": 433627,
+       "PrzystanekId": 1179123,
+       "Iata": "WAW"
+      },
+      "Wylot": {
+       "Panstwo": "Turcja",
+       "Przystanek": "Antalya",
+       "Region": "Riwiera Turecka",
+       "Iata": "AYT",
+       "Godzina": "14:25",
+       "Przesuniecie": null
+      },
+      "Przylot": {
+       "Panstwo": "Polska",
+       "Przystanek": "Warszawa Chopin",
+       "Region": null,
+       "Iata": "WAW",
+       "Godzina": "15:40",
+       "Przesuniecie": null
+      },
+      "CzasLotu": "3:15",
+      "CzyDreamliner": false,
+      "Dokument": "Paszport lub dowód",
+      "NazwaPrzewoznika": "Enter Air",
+      "BagazPodreczny": 5,
+      "BagazRejestrowany": 20,
+      "BagazSportowy": null,
+      "Wyzywienie": false,
+      "Cena": 1179,
+      "CenaRazem": 2998,
+      "Pakiety": null,
+      "KodPrzewoznikaIata": "E4",
+      "NumerLotu": "ENT4002",
+      "Wybrany": false
+     }
+    ],
+    "Wybrana": false
+   }
+  ]
+ }
+}
