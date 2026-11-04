@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Czarterowe okazje — tanie loty czarterowe z dowodem rabatu</title>
+  <meta name="description" content="Loty czarterowe bez hotelu, które są naprawdę tańsze niż zwykle. Przy każdej okazji pokazujemy wyliczenie: cenę, średnią z 30 dni i próg.">
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link rel="stylesheet" href="https://fonts.bunny.net/css?family=atkinson-hyperlegible:400,700|barlow-condensed:500,600,700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+  <a class="skip" href="#deals">Przejdź do okazji</a>
+
+  <header class="intro">
+    <p class="brand">Czarterowe okazje</p>
+    <h1>Lot czarterowy jest okazją, gdy kosztuje co najmniej 15% mniej niż zwykle.</h1>
+    <p class="rule" aria-label="Reguła okazji: cena dzisiaj mniejsza lub równa 0,85 razy średnia z 30 dni">
+      <span class="rule-term">cena dziś</span>
+      <span class="rule-op">≤</span>
+      <span class="rule-term">0,85 × średnia z 30 dni</span>
+    </p>
+    <p class="lede">Co 6 godzin sprawdzamy ceny samych przelotów (bez hotelu) w czarterach Rainbow
+      i porównujemy je z ceną podobnych lotów z ostatniego miesiąca. Przy każdej okazji pokazujemy
+      całe wyliczenie, więc każdą można sprawdzić samodzielnie.</p>
+  </header>
+
+  <section class="status" aria-live="polite" id="status">
+    <p class="status-loading">Wczytuję dane…</p>
+  </section>
+
+  <main id="deals" tabindex="-1">
+    <div class="toolbar" id="toolbar" hidden>
+      <label>Wylot z
+        <select id="origin"><option value="">każdego lotniska</option></select>
+      </label>
+      <label>Kolejność
+        <select id="sort">
+          <option value="discount">największy rabat</option>
+          <option value="price">najniższa cena</option>
+          <option value="date">najbliższy wylot</option>
+        </select>
+      </label>
+    </div>
+    <ol class="strips" id="list"></ol>
+  </main>
+
+  <aside class="ad-slot" aria-label="Reklama">
+    <p>Miejsce na reklamę</p>
+  </aside>
+
+  <section class="method">
+    <h2>Jak liczymy</h2>
+    <dl>
+      <dt>Porównujemy podobne loty</dt>
+      <dd>To samo lotnisko wylotu, ten sam cel i ten sam miesiąc wylotu. Ceny są za osobę, w obie strony.</dd>
+      <dt>Średnia z 30 poprzednich dni</dt>
+      <dd>Bierzemy ceny z dni przed dzisiejszym, więc dzisiejsza obniżka nie zaniża średniej. Każdy lot liczy się raz, niezależnie od tego, ile razy go widzieliśmy.</dd>
+      <dt>Co najmniej 5 lotów</dt>
+      <dd>Jeśli podobnych lotów jest mniej, nie ma z czym porównać, więc nie ogłaszamy okazji.</dd>
+      <dt>Sensowna długość pobytu</dt>
+      <dd id="zones-text">Pomijamy wyjazdy zbyt krótkie jak na odległość, np. 3 dni na Teneryfie.</dd>
+    </dl>
+  </section>
+
+  <footer class="foot">
+    <p id="donate" hidden>Strona jest darmowa. Jeśli pomogła Ci znaleźć lot, <a id="donate-link" href="#">postaw kawę</a>.</p>
+    <p>Niezależny projekt, niezwiązany z Rainbow Tours. Ceny pochodzą z r.pl i mogą się zmienić. Przed zakupem sprawdź aktualną cenę na stronie organizatora.</p>
+  </footer>
+</body>
+</html>

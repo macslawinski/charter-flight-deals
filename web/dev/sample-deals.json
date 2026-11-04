@@ -1,0 +1,39 @@
+{
+ "_note": "SYNTHETIC preview data for local design work only. Not deployed (Vercel serves web/public).",
+ "schema_version": 1,
+ "generated_at": "2026-12-04T12:20:00Z",
+ "as_of": "2026-12-04",
+ "status": {
+  "last_snapshot_date": "2026-12-04",
+  "first_snapshot_date": "2026-11-04",
+  "history_days": 31,
+  "last_successful_fetch": "2099-01-01T12:00:00Z",
+  "flights_priced": 8123,
+  "segments_upcoming": 790,
+  "segments_with_baseline": 512
+ },
+ "params": {"window_days": 30, "discount_threshold": 0.15, "min_baseline_flights": 5,
+            "baseline_stat": "avg", "default_min_stay_days": 3, "include_one_way": false},
+ "zones": [{"zone": "short", "min_sensible_stay_days": 3}, {"zone": "medium", "min_sensible_stay_days": 5},
+           {"zone": "long", "min_sensible_stay_days": 7}, {"zone": "exotic", "min_sensible_stay_days": 9}],
+ "deals": [
+  {"as_of": "2026-12-04", "flight_key": "r_pl|KTW|HRG|2027-01-16|2027-01-23|ENT1/ENT2", "operator": "r_pl",
+   "origin_iata": "KTW", "origin_name": "Katowice", "dest_iata": "HRG", "dest_name": "Hurghada", "dest_country": "Egipt",
+   "outbound_date": "2027-01-16", "return_date": "2027-01-23", "stay_days": 7, "flight_no": "ENT1/ENT2",
+   "current_price": 1249.0, "baseline_avg": 1612.0, "baseline_median": 1599.0, "baseline_used": 1612.0,
+   "threshold_price": 1370.2, "discount_pct": 22.52, "baseline_flights": 14, "baseline_obs": 312,
+   "window_start": "2026-11-04", "window_end": "2026-12-03"},
+  {"as_of": "2026-12-04", "flight_key": "r_pl|WAW|TFS|2027-02-07|2027-02-21|ENT3/ENT4", "operator": "r_pl",
+   "origin_iata": "WAW", "origin_name": "Warszawa", "dest_iata": "TFS", "dest_name": "Teneryfa - Południe", "dest_country": "Hiszpania",
+   "outbound_date": "2027-02-07", "return_date": "2027-02-21", "stay_days": 14, "flight_no": "ENT3/ENT4",
+   "current_price": 1899.0, "baseline_avg": 2310.5, "baseline_median": 2349.0, "baseline_used": 2310.5,
+   "threshold_price": 1963.93, "discount_pct": 17.81, "baseline_flights": 9, "baseline_obs": 188,
+   "window_start": "2026-11-04", "window_end": "2026-12-03"},
+  {"as_of": "2026-12-04", "flight_key": "r_pl|POZ|AYT|2027-04-25|2027-05-02|", "operator": "r_pl",
+   "origin_iata": "POZ", "origin_name": "Poznań", "dest_iata": "AYT", "dest_name": "Antalya", "dest_country": "Turcja",
+   "outbound_date": "2027-04-25", "return_date": "2027-05-02", "stay_days": 7, "flight_no": null,
+   "current_price": 799.0, "baseline_avg": 949.0, "baseline_median": 979.0, "baseline_used": 949.0,
+   "threshold_price": 806.65, "discount_pct": 15.81, "baseline_flights": 6, "baseline_obs": 97,
+   "window_start": "2026-11-04", "window_end": "2026-12-03"}
+ ]
+}
