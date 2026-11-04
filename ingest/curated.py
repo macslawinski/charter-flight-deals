@@ -45,6 +45,14 @@ RULE_KEYS = {
     "infant_baggage", "child_baggage", "child_fare", "child_seating",
 }
 ACCESS_CITIES = {"Warszawa", "Poznań", "Gdańsk", "Wrocław", "Kraków", "Katowice"}
+# Indoor playgrounds ("bawialnie"): TOML + site only for now, no DB table yet (PLAN.md 3a).
+VENUE_CITIES = {"poznan": "Poznań"}
+VENUE_KEYS = {
+    "age_range", "toddler_zone", "infant_free", "price_child", "price_adult", "opening_hours",
+    "cafe", "parking", "socks_required", "supervision", "toddler_classes", "changing_table",
+}
+VENUE_SOURCES = {"venue_website", "osm", "own_visit"}
+SHORT_MAX = 60  # one line on a phone card
 _SLUG = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 
 
@@ -72,6 +80,7 @@ class Fact:
     url: str | None
     verified_at: date
     to_confirm: bool
+    short: str | None = None  # card headline; site-only (not stored in the DB)
 
 
 @dataclass(frozen=True)
@@ -106,10 +115,25 @@ class CarrierRules:
 
 
 @dataclass(frozen=True)
+class Venue:
+    slug: str
+    city: str  # VENUE_CITIES key, e.g. 'poznan'
+    name: str
+    status: str
+    official_url: str | None = None
+    address: str | None = None
+    lat: float | None = None
+    lon: float | None = None
+    osm: str | None = None  # 'node/123' or 'way/456': lets a monthly check spot closed venues
+    features: tuple[Fact, ...] = field(default_factory=tuple)
+
+
+@dataclass(frozen=True)
 class Curated:
     places: tuple[Place, ...]
     hotels: tuple[Hotel, ...]
     carriers: tuple[CarrierRules, ...]
+    venues: tuple[Venue, ...] = ()
 
 
 # --- validation helpers ---------------------------------------------------------------------
@@ -144,11 +168,11 @@ def _slug(v: str, where: str) -> str:
     return v
 
 
-def _fact(d: Any, where: str, keys: set[str]) -> Fact:
+def _fact(d: Any, where: str, keys: set[str], sources: set[str] = SOURCES) -> Fact:
     if not isinstance(d, dict):
         raise CuratedError(f"{where}: expected a table")
-    _no_extra(d, {"key", "age_band", "value", "note", "source", "url", "verified_at", "to_confirm"},
-              where)
+    _no_extra(d, {"key", "age_band", "value", "note", "short", "source", "url", "verified_at",
+                  "to_confirm"}, where)
     key = _get(d, "key", str, where)
     if key not in keys:
         raise CuratedError(f"{where}: unknown key {key!r}")
@@ -156,10 +180,13 @@ def _fact(d: Any, where: str, keys: set[str]) -> Fact:
     if band is not None and band not in AGE_BANDS:
         raise CuratedError(f"{where}: bad age_band {band!r}")
     source = _get(d, "source", str, where)
-    if source not in SOURCES:
+    if source not in sources:
         raise CuratedError(f"{where}: bad source {source!r}")
     url = _url(_get(d, "url", str, where, required=source not in {"own_visit", "hotel_written"}),
                where)
+    short = _get(d, "short", str, where, required=False)
+    if short is not None and len(short) > SHORT_MAX:
+        raise CuratedError(f"{where}: 'short' longer than {SHORT_MAX} chars: {short!r}")
     verified = _get(d, "verified_at", date, where)
     if verified > date.today():
         raise CuratedError(f"{where}: verified_at {verified} is in the future")
@@ -167,7 +194,7 @@ def _fact(d: Any, where: str, keys: set[str]) -> Fact:
     if source == "review_hint" and not to_confirm:
         raise CuratedError(f"{where}: a review_hint is never a verified fact (set to_confirm = true)")
     return Fact(key, band, _get(d, "value", dict, where), _get(d, "note", str, where, required=False),
-                source, url, verified, to_confirm)
+                source, url, verified, to_confirm, short)
 
 
 def _access(d: Any, where: str) -> Access:
@@ -272,7 +299,38 @@ def load(root: Path = CURATED) -> Curated:
             if r.note is None:
                 raise CuratedError(f"{where} {r.key}: 'note' (the summary shown on the site) is required")
         carriers.append(CarrierRules(iata, tuple(rules)))
-    return Curated(tuple(places), tuple(hotels), tuple(carriers))
+
+    venues: list[Venue] = []
+    for path in sorted((root / "venues").glob("*/*.toml")):
+        where = str(path.relative_to(root))
+        v = _read(path)
+        _no_extra(v, {"slug", "city", "name", "status", "official_url", "address", "lat", "lon",
+                      "osm", "feature"}, where)
+        city = _get(v, "city", str, where)
+        if city not in VENUE_CITIES:
+            raise CuratedError(f"{where}: city {city!r} not in {sorted(VENUE_CITIES)}")
+        if path.parent.name != city:
+            raise CuratedError(f"{where}: file must live in venues/{city}/")
+        status = _get(v, "status", str, where)
+        if status not in {"draft", "published", "retired"}:
+            raise CuratedError(f"{where}: bad status {status!r}")
+        osm = _get(v, "osm", str, where, required=False)
+        if osm is not None and not re.fullmatch(r"(node|way|relation)/\d+", osm):
+            raise CuratedError(f"{where}: osm must look like 'node/123', got {osm!r}")
+        feats = [_fact(f, f"{where} feature[{i}]", VENUE_KEYS, VENUE_SOURCES)
+                 for i, f in enumerate(v.get("feature", []))]
+        _unique(feats, lambda f: (f.key, f.age_band), where)
+        venues.append(Venue(
+            slug=_slug(_get(v, "slug", str, where), where), city=city,
+            name=_get(v, "name", str, where), status=status,
+            official_url=_url(_get(v, "official_url", str, where, required=False), where),
+            address=_get(v, "address", str, where, required=False),
+            lat=_get(v, "lat", float, where, required=False),
+            lon=_get(v, "lon", float, where, required=False),
+            osm=osm, features=tuple(feats),
+        ))
+    _unique(venues, lambda v: v.slug, "venues")
+    return Curated(tuple(places), tuple(hotels), tuple(carriers), tuple(venues))
 
 
 # --- writing ---------------------------------------------------------------------------------
@@ -337,8 +395,8 @@ def main(argv: list[str] | None = None) -> int:
     except CuratedError as e:
         log.error("invalid curated data: %s", e)
         return 1
-    log.info("valid: %d places, %d hotels, %d carriers with rules",
-             len(data.places), len(data.hotels), len(data.carriers))
+    log.info("valid: %d places, %d hotels, %d carriers with rules, %d venues (site only)",
+             len(data.places), len(data.hotels), len(data.carriers), len(data.venues))
     if args.dry_run:
         return 0
     url = args.database_url or load_settings().database_url

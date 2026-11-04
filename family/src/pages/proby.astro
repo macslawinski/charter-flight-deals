@@ -1,0 +1,64 @@
+---
+// Three directions for the home page, side by side, so the owner can pick one. Not linked from nav.
+import Base from "../layouts/Base.astro";
+import Illustration from "../components/Illustration.astro";
+import Icon from "../components/Icon.astro";
+---
+
+<Base title="Wersje wyglądu">
+  <style is:inline>
+    .v { border-radius: 28px; margin: 1.5rem 0 3rem; overflow: hidden; }
+    .v-label { font-weight: 700; margin: 2rem 0 .25rem; }
+    .vA { background: var(--sky); padding: 1.5rem; border: 2px dashed var(--line); }
+    .vB { background: var(--coral); color: var(--navy); padding: clamp(1.5rem, 5vw, 3rem); display: grid; gap: 1rem; }
+    .vB h1 { font-size: clamp(2.6rem, 9vw, 6rem); line-height: .92; color: var(--white); margin: 0; }
+    .vB .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); gap: .75rem; }
+    .vB .blk { background: var(--sun); border-radius: 18px; padding: 1rem; font: 700 1.2rem/1.2 var(--display); }
+    .vB .blk:nth-child(2) { background: var(--white); }
+    .vB .blk:nth-child(3) { background: var(--navy); color: var(--white); }
+    .vC { background: var(--white); padding: clamp(1.25rem, 4vw, 2.5rem); border: 1px solid var(--line); }
+    .vC h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); }
+    .vC .q { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0; }
+    .vC .q span { border: 2px solid var(--navy); border-radius: 999px; padding: .45rem .9rem; font-weight: 700; }
+    .vC .q span:first-child { background: var(--navy); color: var(--white); }
+    .vC .res { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: .5rem; }
+    .vC .res div { background: var(--sea-soft); border-radius: 14px; padding: .8rem; display: flex; gap: .5rem; align-items: center; font-weight: 700; }
+  </style>
+
+  <h1 style="font-size: clamp(2rem, 5vw, 3rem)">Trzy wersje strony głównej</h1>
+  <p class="lead">Ta sama treść, trzy różne charaktery. Wybierz jedną albo powiedz, co z której wziąć.</p>
+
+  <p class="v-label">A. Ilustrowana i ciepła (ta jest teraz na stronie)</p>
+  <section class="v vA">
+    <div class="hero">
+      <div>
+        <h1>Wakacje z maluchem bez zgadywania</h1>
+        <p class="lead">Wózek, fotelik, opłata za niemowlę, łóżeczko w hotelu. Krótkie odpowiedzi ze źródłem.</p>
+      </div>
+      <Illustration name="hero" />
+    </div>
+  </section>
+
+  <p class="v-label">B. Plakat: wielkie litery i bloki koloru, bez ilustracji</p>
+  <section class="v vB">
+    <h1>Wózek? Fotelik? Niemowlę za ile?</h1>
+    <p style="font-size:1.2rem;max-width:34rem">Zasady 6 linii, hotele i bawialnie dla dzieci do 3 lat. Każda odpowiedź ze źródłem.</p>
+    <div class="row">
+      <div class="blk">Linie lotnicze</div>
+      <div class="blk">Hotele nad morzem</div>
+      <div class="blk">Bawialnie w Poznaniu</div>
+    </div>
+  </section>
+
+  <p class="v-label">C. Narzędzie: od razu pytanie i odpowiedź, minimum ozdób</p>
+  <section class="v vC">
+    <h1>Czym lecisz i ile lat ma dziecko?</h1>
+    <div class="q"><span>Ryanair</span><span>Wizz Air</span><span>Enter Air</span><span>do 2 lat</span><span>2–3 lata</span></div>
+    <div class="res">
+      <div><Icon name="ticket" /> 25 € za lot w jedną stronę</div>
+      <div><Icon name="stroller" /> Wózek i fotelik gratis</div>
+      <div><Icon name="bag" /> Torba dla dziecka do 5 kg</div>
+      <div><Icon name="people" /> Jedno niemowlę na dorosłego</div>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,57 @@
+---
+// One fact as a tile: icon, label, one-line answer; the full note and source behind "Szczegóły".
+import Icon from "./Icon.astro";
+import Stamp from "./Stamp.astro";
+import { bandLabel, short, type Fact } from "../lib/data";
+
+interface Props {
+  facts: Fact[]; // several facts of one topic for one carrier, or a single hotel/venue fact
+  label: string;
+  icon: string;
+  owner?: string;
+  href?: string;
+  showBand?: boolean;
+  missingText?: string;
+}
+const { facts, label, icon, owner, href, showBand = true, missingText = "Brak informacji u źródła" } =
+  Astro.props;
+const ask = facts.some((f) => f.to_confirm);
+const withBand = (f: Fact) => (showBand && bandLabel(f.age_band) ? `${bandLabel(f.age_band)}: ` : "");
+---
+
+<li class:list={["tile", { none: facts.length === 0, ask }]}>
+  <div class="tile-head">
+    <span class="tile-icon"><Icon name={icon} /></span>
+    <span class="tile-label">{href ? <a href={href}>{label}</a> : label}</span>
+  </div>
+  {
+    facts.length === 0 ? (
+      <p class="tile-short">{missingText}</p>
+    ) : facts.length === 1 ? (
+      <p class="tile-short">{withBand(facts[0]!)}{short(facts[0]!)}</p>
+    ) : (
+      <ul class="tile-short">
+        {facts.map((f) => (
+          <li>
+            {withBand(f)}
+            {short(f)}
+          </li>
+        ))}
+      </ul>
+    )
+  }
+  {ask && <span class="badge-ask">Do potwierdzenia</span>}
+  {
+    facts.length > 0 && (
+      <details class="more-info">
+        <summary>Szczegóły</summary>
+        {facts.map((f) => (
+          <>
+            {f.note && <p>{f.note}</p>}
+            <Stamp fact={f} owner={owner} />
+          </>
+        ))}
+      </details>
+    )
+  }
+</li>

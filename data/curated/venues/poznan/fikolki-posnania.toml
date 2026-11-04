@@ -1,0 +1,66 @@
+# Discovered via OpenStreetMap (node/11048021117, © OpenStreetMap contributors, ODbL); facts from the
+# venue's own pages (/ch-posnania-poznan/, /cennik/), read 2026-11-04. Written in our words.
+# Not stated: socks rule, changing table, adult price.
+slug = "fikolki-posnania"
+city = "poznan"
+name = "Fikołki Posnania"
+official_url = "https://fikolki.pl/ch-posnania-poznan/"
+address = "ul. Pleszewska 1 (Posnania, 2. piętro), 61-136 Poznań"
+lat = 52.398157
+lon = 16.954928
+osm = "node/11048021117"
+status = "draft"
+
+[[feature]]
+key = "age_range"
+value = { min = "infant", max_years = 11 }
+short = "Od niemowlaka do 11 lat"
+note = "Sala zabaw dla dzieci od niemowlęcia do 11 lat."
+source = "venue_website"
+url = "https://fikolki.pl/ch-posnania-poznan/"
+verified_at = 2026-11-04
+
+[[feature]]
+key = "toddler_zone"
+value = { available = true, max_years = 4, attractions_for = "0-3" }
+short = "Kącik malucha i atrakcje dla 0–3 lat"
+note = "Kącik malucha dla dzieci do 4 lat i osobne atrakcje dla maluchów od 0 do 3 lat."
+source = "venue_website"
+url = "https://fikolki.pl/ch-posnania-poznan/"
+verified_at = 2026-11-04
+
+[[feature]]
+key = "price_child"
+value = { weekday_pln_per_min = 0.75, weekday_day_pln = 55, weekend_pln_per_min = 0.9, weekend_day_pln = 66 }
+short = "0,75 zł za minutę albo 55 zł za dzień"
+note = "Dni robocze: 0,75 zł za minutę albo 55 zł za cały dzień. Weekendy i święta: 0,90 zł za minutę albo 66 zł. Cennik jest wspólny dla sieci Fikołki."
+source = "venue_website"
+url = "https://fikolki.pl/cennik/"
+verified_at = 2026-11-04
+
+[[feature]]
+key = "opening_hours"
+value = { osm = "Mo-Sa 10:00-21:00; Su 10:00-19:00" }
+short = "Pon.–sob. 10–21, niedz. 10–19"
+note = "Poniedziałek–sobota 10:00–21:00, niedziela 10:00–19:00, niedziela handlowa 10:00–20:00."
+source = "venue_website"
+url = "https://fikolki.pl/ch-posnania-poznan/"
+verified_at = 2026-11-04
+
+[[feature]]
+key = "cafe"
+value = { available = true }
+short = "Fikołki Caffe na miejscu"
+note = "Rodzic może usiąść przy kawie w Fikołki Caffe."
+source = "venue_website"
+url = "https://fikolki.pl/ch-posnania-poznan/"
+verified_at = 2026-11-04
+
+[[feature]]
+key = "parking"
+value = { available = true, mall = true }
+short = "Parking centrum handlowego"
+note = "Klub korzysta z parkingu centrum Posnania."
+source = "venue_website"
+url = "https://fikolki.pl/ch-posnania-poznan/"
+verified_at = 2026-11-04

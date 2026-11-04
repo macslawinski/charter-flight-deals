@@ -1,7 +1,17 @@
 ---
 import Base from "../../layouts/Base.astro";
-import FactRow from "../../components/FactRow.astro";
-import { FEATURE_GROUPS, data, featureLabel, plDate, type Hotel, type Place } from "../../lib/data";
+import FactTile from "../../components/FactTile.astro";
+import Icon from "../../components/Icon.astro";
+import Illustration from "../../components/Illustration.astro";
+import {
+  FEATURE_GROUPS,
+  data,
+  featureIcon,
+  featureLabel,
+  plDate,
+  type Hotel,
+  type Place,
+} from "../../lib/data";
 
 export function getStaticPaths() {
   return data.hotels.map((h) => {
@@ -15,87 +25,100 @@ interface Props {
   place: Place;
 }
 const { h, place } = Astro.props;
-const groups = FEATURE_GROUPS.map((g) => ({
-  ...g,
-  facts: g.keys.flatMap((k) => h.features.filter((f) => f.key === k)),
-})).filter((g) => g.facts.length > 0);
+const all = FEATURE_GROUPS.flatMap((g) => g.keys);
 const stated = new Set(h.features.map((f) => f.key));
-const missing = FEATURE_GROUPS.flatMap((g) => g.keys)
-  .filter((k) => !stated.has(k))
-  .map(featureLabel);
+const missing = all.filter((k) => !stated.has(k));
+const pct = Math.round((100 * stated.size) / all.length);
 const latest = h.features.map((f) => f.verified_at).sort().at(-1);
-const slugify = (s: string) =>
-  s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/ł/g, "l").replace(/[^a-z0-9]+/g, "-");
+const groups = FEATURE_GROUPS.map((g) => ({ ...g, keys: g.keys.filter((k) => stated.has(k)) })).filter(
+  (g) => g.keys.length > 0,
+);
 ---
 
-<Base title={`${h.name}: z dzieckiem do 3 lat`} section="hotele" description={`Co ${h.name} oferuje dzieciom do 3 lat, ze źródłami.`}>
-  <p><a href="/hotele/">Wszystkie hotele</a></p>
-  <h1>{h.name}</h1>
-  <p class="lead">
-    {place.name}{place.region && `, ${place.region}`}
-  </p>
-  {h.address && <p>Adres: {h.address}</p>}
+<Base title={`${h.name} z dzieckiem`} section="hotele" description={`Co ${h.name} oferuje dzieciom do 3 lat, ze źródłami.`}>
+  <p class="crumb"><a href="/hotele/">Wszystkie hotele</a></p>
+  <section class="page-hero">
+    <div>
+      <h1>{h.name}</h1>
+      <p class="lead">
+        {place.name}{place.region && `, ${place.region}`}
+      </p>
+      {
+        h.official_url && (
+          <p>
+            <a href={h.official_url} rel="noopener">Strona hotelu</a>
+            {h.address && <span class="note-small"> ({h.address})</span>}
+          </p>
+        )
+      }
+    </div>
+    <Illustration name="beach" />
+  </section>
+
+  <div class="score">
+    <span class="score-num">{stated.size} z {all.length}</span>
+    <span>rzeczy ważnych dla malucha hotel opisuje na swojej stronie</span>
+    <div class="bar" role="img" aria-label={`${pct}%`}><span style={`width:${pct}%`}></span></div>
+  </div>
 
   {
     h.status === "draft" && (
-      <p class="draft-note">
-        Opis w przygotowaniu: fakty pochodzą ze strony hotelu
-        {latest && ` (sprawdzone ${plDate(latest)})`}, ale hotel jeszcze ich nie potwierdził.
-      </p>
-    )
-  }
-
-  {
-    h.official_url && (
-      <p>
-        Strona hotelu: <a href={h.official_url} rel="noopener">{h.official_url}</a>
+      <p class="draft" style="margin-top:1rem">
+        <Icon name="info" />
+        <span>
+          Opis w przygotowaniu. Fakty pochodzą ze strony hotelu
+          {latest && ` (sprawdzone ${plDate(latest)})`}; hotel jeszcze ich nie potwierdził.
+        </span>
       </p>
     )
   }
 
   {
     groups.map((g) => (
-      <section aria-labelledby={slugify(g.title)}>
-        <h2 id={slugify(g.title)}>{g.title}</h2>
-        <ul class="facts">
-          {g.facts.map((f) => (
-            <FactRow fact={f} label={featureLabel(f.key)} />
+      <section class="section">
+        <h2>{g.title}</h2>
+        <ul class="tiles">
+          {g.keys.map((k) => (
+            <FactTile facts={h.features.filter((f) => f.key === k)} label={featureLabel(k)} icon={featureIcon(k)} showBand={false} />
           ))}
         </ul>
       </section>
     ))
   }
 
-  <section aria-labelledby="dojazd">
+  <section class="section" aria-labelledby="zapytaj">
+    <h2 id="zapytaj">Zapytaj hotel przed rezerwacją</h2>
+    <p>Tego strona hotelu nie podaje:</p>
+    <ul class="ask-list">
+      {
+        missing.map((k) => (
+          <li>
+            <Icon name={featureIcon(k)} size={18} />
+            {featureLabel(k)}
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="section" aria-labelledby="dojazd">
     <h2 id="dojazd">Dojazd</h2>
     {
       h.access.length === 0 ? (
-        <p>
+        <p class="note-small">
           Czasy dojazdu autem i pociągiem z Warszawy, Poznania, Gdańska, Wrocławia, Krakowa i
           Katowic jeszcze sprawdzamy.
         </p>
       ) : (
-        <ul>
+        <ul class="ask-list">
           {h.access.map((a) => (
             <li>
-              {a.from_code}, {a.mode === "car" ? "autem" : a.mode === "train" ? "pociągiem" : a.mode}:
-              około {Math.floor(a.minutes / 60)} h {a.minutes % 60} min
+              <Icon name={a.mode === "train" ? "train" : "car"} size={18} />
+              {a.from_code}: około {Math.floor(a.minutes / 60)} h {a.minutes % 60} min
             </li>
           ))}
         </ul>
       )
     }
   </section>
-
-  {
-    missing.length > 0 && (
-      <section aria-labelledby="zapytaj">
-        <h2 id="zapytaj">Zapytaj hotel przed rezerwacją</h2>
-        <p>Na stronie hotelu nie znaleźliśmy informacji o:</p>
-        <ul class="missing-list">
-          {missing.map((m) => <li>{m}</li>)}
-        </ul>
-      </section>
-    )
-  }
 </Base>

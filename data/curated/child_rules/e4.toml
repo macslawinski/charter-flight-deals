@@ -7,6 +7,7 @@ carrier = "E4"
 key = "infant_fee"
 age_band = "0-2"
 value = { carrier_fee = 0, set_by_tour_operator = true }
+short = "Linia nie pobiera opłaty; cenę ustala biuro"
 note = "Enter Air nie pobiera opłaty za niemowlę na kolanach. Kupując lot w biurze podróży, cenę niemowlęcia sprawdź w biurze."
 source = "carrier_official"
 url = "https://fly.enterair.pl/wp-content/uploads/owp-regulations/GENERAL-TERMS-AND-CONDITIONS-OF-AIR-CARRIAGE.pdf"
@@ -16,6 +17,7 @@ verified_at = 2026-11-04
 key = "infants_per_adult"
 age_band = "0-2"
 value = { max = 1 }
+short = "Jedno niemowlę na dorosłego"
 note = "Jeden dorosły może lecieć tylko z jednym niemowlęciem."
 source = "carrier_official"
 url = "https://fly.enterair.pl/wp-content/uploads/owp-regulations/GENERAL-TERMS-AND-CONDITIONS-OF-AIR-CARRIAGE.pdf"
@@ -25,6 +27,7 @@ verified_at = 2026-11-04
 key = "twins"
 age_band = "0-2"
 value = { one_adult_allowed = false }
+short = "Bliźnięta: potrzeba dwóch dorosłych"
 note = "Z bliźniętami do 2 lat muszą lecieć dwie dorosłe osoby (jedno niemowlę na dorosłego)."
 source = "carrier_official"
 url = "https://fly.enterair.pl/wp-content/uploads/owp-regulations/GENERAL-TERMS-AND-CONDITIONS-OF-AIR-CARRIAGE.pdf"
@@ -34,6 +37,7 @@ verified_at = 2026-11-04
 key = "lap_infant"
 age_band = "0-2"
 value = { allowed = true, max_infants_per_flight = 15, infant_life_jacket = true }
+short = "Na kolanach, z kamizelką ratunkową"
 note = "Niemowlę leci na kolanach dorosłego. Na jednym locie może być najwyżej 15 niemowląt. Dzieci do 2 lat dostają na pokładzie specjalne kamizelki ratunkowe."
 source = "carrier_official"
 url = "https://fly.enterair.pl/wp-content/uploads/owp-regulations/GENERAL-TERMS-AND-CONDITIONS-OF-AIR-CARRIAGE.pdf"
@@ -43,6 +47,7 @@ verified_at = 2026-11-04
 key = "infant_baggage"
 age_band = "0-2"
 value = { cabin_kg = 5, checked_only_with_own_seat = true }
+short = "5 kg bagażu podręcznego"
 note = "Niemowlę ma 5 kg bagażu podręcznego. Bagaż rejestrowany przysługuje tylko niemowlęciu z wykupionym własnym miejscem."
 source = "carrier_official"
 url = "https://fly.enterair.pl/wp-content/uploads/owp-regulations/GENERAL-TERMS-AND-CONDITIONS-OF-AIR-CARRIAGE.pdf"
@@ -52,6 +57,7 @@ verified_at = 2026-11-04
 key = "stroller"
 age_band = "0-2"
 value = { free = true, hold = true, report_at_checkin = true, cover_recommended = true }
+short = "Wózek gratis w luku"
 note = "Składany wózek niemowlęcia leci bezpłatnie w luku. Zgłoś go przy odprawie (dostaje własną zawieszkę). Zabezpiecz go pokrowcem: za uszkodzenia niezabezpieczonego wózka linia nie odpowiada."
 source = "carrier_official"
 url = "https://fly.enterair.pl/wp-content/uploads/owp-regulations/GENERAL-TERMS-AND-CONDITIONS-OF-AIR-CARRIAGE.pdf"
@@ -61,6 +67,7 @@ verified_at = 2026-11-04
 key = "stroller"
 age_band = "2+"
 value = { free = false, counts_as_checked_bag = true }
+short = "Wózek wlicza się do bagażu"
 note = "Wózek starszego dziecka liczy się do wagi bagażu rejestrowanego."
 source = "carrier_official"
 url = "https://fly.enterair.pl/wp-content/uploads/owp-regulations/GENERAL-TERMS-AND-CONDITIONS-OF-AIR-CARRIAGE.pdf"
@@ -70,6 +77,7 @@ verified_at = 2026-11-04
 key = "car_seat"
 age_band = "0-2"
 value = { own_seat_required = true, certified = true, max_cm = "43x35", provided_by_carrier = false, lap_for_takeoff_landing = true, not_suitable_goes_to_hold_free = true }
+short = "Fotelik tylko z własnym miejscem"
 note = "Własny fotelik na pokładzie tylko z wykupionym miejscem i certyfikatem lotniczym, maks. 43×35 cm. Na start i lądowanie dziecko siedzi na kolanach. Fotelik niespełniający wymogów leci bezpłatnie w luku."
 source = "carrier_official"
 url = "https://fly.enterair.pl/wp-content/uploads/owp-regulations/GENERAL-TERMS-AND-CONDITIONS-OF-AIR-CARRIAGE.pdf"

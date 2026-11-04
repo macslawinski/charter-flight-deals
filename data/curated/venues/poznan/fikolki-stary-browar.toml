@@ -1,0 +1,88 @@
+# Discovered via OpenStreetMap (way/1504245766, © OpenStreetMap contributors, ODbL); facts from the
+# venue's own pages (/stary-browar/, /cennik/), read 2026-11-04. Written in our words.
+# The free-entry sentence for under-2s on the club page is garbled: kept as to_confirm.
+# Not stated: socks rule, changing table, adult price.
+slug = "fikolki-stary-browar"
+city = "poznan"
+name = "Fikołki Stary Browar"
+official_url = "https://fikolki.pl/stary-browar/"
+address = "ul. Półwiejska 42 (Stary Browar), 61-888 Poznań"
+lat = 52.402821
+lon = 16.924838
+osm = "way/1504245766"
+status = "draft"
+
+[[feature]]
+key = "age_range"
+value = { min = "infant", max_years = 11 }
+short = "Od niemowlaka do 11 lat"
+note = "Sala zabaw dla dzieci od niemowlęcia do 11 lat."
+source = "venue_website"
+url = "https://fikolki.pl/stary-browar/"
+verified_at = 2026-11-04
+
+[[feature]]
+key = "toddler_zone"
+value = { available = true, max_years = 4 }
+short = "Kącik malucha do 4 lat"
+note = "Osobny kącik malucha dla dzieci do 4 lat."
+source = "venue_website"
+url = "https://fikolki.pl/stary-browar/"
+verified_at = 2026-11-04
+
+[[feature]]
+key = "price_child"
+value = { weekday_pln_per_min = 0.75, weekday_day_pln = 55, weekend_pln_per_min = 0.9, weekend_day_pln = 66 }
+short = "0,75 zł za minutę albo 55 zł za dzień"
+note = "Dni robocze: 0,75 zł za minutę albo 55 zł za cały dzień. Weekendy i święta: 0,90 zł za minutę albo 66 zł. Cennik jest wspólny dla sieci Fikołki."
+source = "venue_website"
+url = "https://fikolki.pl/cennik/"
+verified_at = 2026-11-04
+
+[[feature]]
+key = "infant_free"
+age_band = "0-2"
+value = { free_with_card = "karta_malucha" }
+short = "Karta Malucha dla dzieci do 2 i do 3 lat"
+note = "Sieć ma Kartę Malucha (wersje 0–2 i 0–3 lata). Strona klubu pisze, że z nią dzieci do 2 lat bawią się za darmo, ale zdanie jest niejasne: zapytaj w klubie."
+source = "venue_website"
+url = "https://fikolki.pl/cennik/"
+verified_at = 2026-11-04
+to_confirm = true
+
+[[feature]]
+key = "toddler_classes"
+age_band = "0-3"
+value = { available = true }
+short = "Zajęcia ogólnorozwojowe 0–3 lata"
+note = "Klub prowadzi zajęcia ogólnorozwojowe dla dzieci od 0 do 3 lat."
+source = "venue_website"
+url = "https://fikolki.pl/stary-browar/"
+verified_at = 2026-11-04
+
+[[feature]]
+key = "opening_hours"
+value = { osm = "Mo-Sa 10:00-21:00; Su 10:00-19:00" }
+short = "Pon.–sob. 10–21, niedz. 10–19"
+note = "Poniedziałek–sobota 10:00–21:00, niedziela 10:00–19:00, niedziela handlowa 10:00–20:00."
+source = "venue_website"
+url = "https://fikolki.pl/stary-browar/"
+verified_at = 2026-11-04
+
+[[feature]]
+key = "cafe"
+value = { available = true }
+short = "Fikołki Caffe na miejscu"
+note = "Na miejscu kawiarnia Fikołki Caffe."
+source = "venue_website"
+url = "https://fikolki.pl/stary-browar/"
+verified_at = 2026-11-04
+
+[[feature]]
+key = "parking"
+value = { available = true, mall = true }
+short = "Parking centrum handlowego"
+note = "Klub jest w centrum handlowym, które ma parking."
+source = "venue_website"
+url = "https://fikolki.pl/stary-browar/"
+verified_at = 2026-11-04

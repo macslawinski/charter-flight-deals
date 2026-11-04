@@ -6,6 +6,7 @@ carrier = "W6"
 key = "infant_fee"
 age_band = "0-2"
 value = { paid = true, amount_published = false }
+short = "Płatne, kwotę zobaczysz w rezerwacji"
 note = "Niemowlę na kolanach leci za opłatą. Kwotę zobaczysz w rezerwacji, strona jej nie podaje. Dziecko musi mieć mniej niż 2 lata w dniu wylotu i powrotu."
 source = "carrier_official"
 url = "https://www.wizzair.com/pl-pl/centrum-pomocy/informacje-dotyczace-rezerwacji-i-uslugi/podroz-z-dziecmi/rezerwacja-lotu-z-dzieckiem"
@@ -14,6 +15,7 @@ verified_at = 2026-11-04
 [[rule]]
 key = "infant_min_age"
 value = { min_days = 14 }
+short = "Od 14. dnia życia"
 note = "Niemowlęta przewożone są od 14. dnia życia."
 source = "carrier_official"
 url = "https://www.wizzair.com/pl-pl/centrum-pomocy/informacje-dotyczace-rezerwacji-i-uslugi/podroz-z-dziecmi"
@@ -23,6 +25,7 @@ verified_at = 2026-11-04
 key = "infants_per_adult"
 age_band = "0-2"
 value = { max = 1, adult_min_age = 16 }
+short = "Jedno niemowlę na dorosłego (16+)"
 note = "Jednej osobie dorosłej (od 16 lat) może towarzyszyć tylko jedno niemowlę na kolanach."
 source = "carrier_official"
 url = "https://www.wizzair.com/pl-pl/centrum-pomocy/informacje-dotyczace-rezerwacji-i-uslugi/podroz-z-dziecmi"
@@ -32,6 +35,7 @@ verified_at = 2026-11-04
 key = "infant_baggage"
 age_band = "0-2"
 value = { extra_personal_item_kg = 10, dims_cm = "40x30x20", own_allowance = false }
+short = "Dodatkowa torba do 10 kg"
 note = "Bezpłatnie dodatkowy przedmiot osobisty dla niemowlęcia (40×30×20 cm, do 10 kg) i jedzenie na czas lotu. Na niemowlę nie wykupisz walizki ani bagażu rejestrowanego."
 source = "carrier_official"
 url = "https://www.wizzair.com/pl-pl/centrum-pomocy/informacje-dotyczace-rezerwacji-i-uslugi/podroz-z-dziecmi/bagaz-dzieci%C4%99cy"
@@ -41,6 +45,7 @@ verified_at = 2026-11-04
 key = "stroller"
 age_band = "0-2"
 value = { free = true, items = ["stroller", "travel_cot", "car_seat"], to_aircraft_door = true, electric_not_allowed = true }
+short = "Wózek gratis do drzwi samolotu"
 note = "Bezpłatnie wózek, łóżeczko turystyczne lub fotelik: zabierasz je do drzwi samolotu, a potem trafiają do luku. Wózków elektrycznych linia nie przewozi."
 source = "carrier_official"
 url = "https://www.wizzair.com/pl-pl/centrum-pomocy/informacje-dotyczace-rezerwacji-i-uslugi/podroz-z-dziecmi/bagaz-dzieci%C4%99cy"
@@ -50,6 +55,7 @@ verified_at = 2026-11-04
 key = "stroller"
 age_band = "2+"
 value = { free = true, cabin_if_max_cm = "55x40x23", booster_seat_paid = true }
+short = "Wózek gratis, mały wejdzie na pokład"
 note = "Starsze dziecko: wózek, łóżeczko lub fotelik też bezpłatnie. Kompaktowy wózek do 55×40×23 cm wejdzie na pokład zamiast wykupionej walizki. Podstawka (booster) jest płatna."
 source = "carrier_official"
 url = "https://www.wizzair.com/pl-pl/centrum-pomocy/informacje-dotyczace-rezerwacji-i-uslugi/podroz-z-dziecmi/bagaz-dzieci%C4%99cy"
@@ -59,6 +65,7 @@ verified_at = 2026-11-04
 key = "child_fare"
 age_band = "2+"
 value = { same_as_adult = true }
+short = "Od 2 lat cena jak dorosły"
 note = "Dziecko od 2 lat płaci taryfę dorosłego."
 source = "carrier_official"
 url = "https://www.wizzair.com/pl-pl/centrum-pomocy/informacje-dotyczace-rezerwacji-i-uslugi/podroz-z-dziecmi"

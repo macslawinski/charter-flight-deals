@@ -6,6 +6,7 @@ carrier = "QS"
 key = "infant_fee"
 age_band = "0-2"
 value = { discounted = true, amount_published = false }
+short = "Zniżka, kwoty strona nie podaje"
 note = "Niemowlę do 2 lat leci na kolanach dorosłego za obniżoną taryfą (strona nie podaje kwoty). Kupując lot w biurze podróży, cenę niemowlęcia sprawdź w biurze."
 source = "carrier_official"
 url = "https://www.smartwings.com/en/children/"
@@ -14,6 +15,7 @@ verified_at = 2026-11-04
 [[rule]]
 key = "infant_min_age"
 value = { min_hours = 48, form_required_until_days = 7 }
+short = "Od 48 godzin (do 7 dni z formularzem)"
 note = "Dzieci młodszych niż 48 godzin linia nie przewozi. Od 48 godzin do 7 dni potrzebny jest formularz."
 source = "carrier_official"
 url = "https://www.smartwings.com/en/children/"
@@ -23,6 +25,7 @@ verified_at = 2026-11-04
 key = "lap_infant"
 age_band = "0-2"
 value = { allowed = true, own_seat = false, extra_seat_by_phone = true }
+short = "Na kolanach, z dodatkowym pasem"
 note = "Niemowlę siedzi na kolanach dorosłego, przypięte specjalnym pasem. Dodatkowe miejsce można wykupić telefonicznie."
 source = "carrier_official"
 url = "https://www.smartwings.com/en/children/"
@@ -31,6 +34,7 @@ verified_at = 2026-11-04
 [[rule]]
 key = "stroller"
 value = { free = true, gate = true, wrapped_required = true, cabin_if_max_cm = "55x40x23", cabin_if_max_kg = 8, replaces_cabin_bag = true }
+short = "Wózek gratis przy wejściu do samolotu"
 note = "Wózek bezpłatnie: oddajesz go przy wyjściu do samolotu, złożony i zapakowany (za uszkodzenia niezapakowanego linia nie odpowiada). Wózek do 55×40×23 cm i 8 kg może wejść na pokład zamiast bagażu podręcznego."
 source = "carrier_official"
 url = "https://www.smartwings.com/en/children/"
@@ -40,6 +44,7 @@ verified_at = 2026-11-04
 key = "car_seat"
 age_band = "0-2"
 value = { free = true, onboard_requires_certification = true, onboard_requires_own_seat = true }
+short = "Fotelik gratis; na pokład z miejscem"
 note = "Fotelik przewożony bezpłatnie. Na pokładzie tylko fotelik z certyfikatem lotniczym i na wykupionym miejscu."
 source = "carrier_official"
 url = "https://www.smartwings.com/en/children/"
@@ -48,6 +53,7 @@ verified_at = 2026-11-04
 [[rule]]
 key = "travel_cot"
 value = { free = true }
+short = "Łóżeczko turystyczne gratis"
 note = "Składane łóżeczko turystyczne przewożone bezpłatnie."
 source = "carrier_official"
 url = "https://www.smartwings.com/en/children/"
@@ -56,6 +62,7 @@ verified_at = 2026-11-04
 [[rule]]
 key = "baby_food"
 value = { cabin_ml = 200, may_be_tested = true }
+short = "Do 200 ml jedzenia dla dziecka"
 note = "Do 200 ml jedzenia dla dziecka w bagażu podręcznym. Kontrola bezpieczeństwa może poprosić o spróbowanie."
 source = "carrier_official"
 url = "https://www.smartwings.com/en/children/"

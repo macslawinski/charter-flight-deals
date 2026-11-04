@@ -104,6 +104,36 @@ def test_child_rule_needs_summary(tree):
         curated.load(tree)
 
 
+def test_short_headline_is_capped(tree):
+    path = tree / "child_rules" / "fr.toml"
+    text = path.read_text(encoding="utf-8")
+    path.write_text(text.replace('short = "25 € za lot w jedną stronę"', 'short = "' + "x" * 61 + '"'),
+                    encoding="utf-8")
+    with pytest.raises(CuratedError, match="longer than 60"):
+        curated.load(tree)
+
+
+def test_venues_load_with_their_own_sources():
+    data = curated.load()
+    venues = {v.slug: v for v in data.venues}
+    assert {"kraina-piratow", "mlecz", "fikolki-stary-browar"} <= set(venues)
+    kp = venues["kraina-piratow"]
+    assert kp.city == "poznan" and kp.osm == "node/1982842819"
+    assert all(f.source == "venue_website" and f.url for f in kp.features)
+
+
+def test_venue_rejects_hotel_source_and_bad_osm(tree):
+    path = tree / "venues" / "poznan" / "madagaskar.toml"
+    text = path.read_text(encoding="utf-8")
+    path.write_text(text.replace('source = "venue_website"', 'source = "hotel_website"', 1),
+                    encoding="utf-8")
+    with pytest.raises(CuratedError, match="bad source"):
+        curated.load(tree)
+    path.write_text(text.replace('osm = "way/165076478"', 'osm = "165076478"'), encoding="utf-8")
+    with pytest.raises(CuratedError, match="osm must look like"):
+        curated.load(tree)
+
+
 def test_save_round_trip(db):  # noqa: F811
     data = curated.load()
     counts = curated.save(db, data)

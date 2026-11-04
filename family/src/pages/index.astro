@@ -1,45 +1,66 @@
 ---
 import Base from "../layouts/Base.astro";
-import Stamp from "../components/Stamp.astro";
-import { carrierName, carriers, data } from "../lib/data";
+import Checker from "../components/Checker.astro";
+import Icon from "../components/Icon.astro";
+import Illustration from "../components/Illustration.astro";
+import { carriers, data } from "../lib/data";
 
-const ruleCount = carriers.reduce((n, c) => n + c.rules.length, 0);
-const names = carriers.map((c) => carrierName(c.carrier_iata)).join(", ");
-const example = carriers.find((c) => c.carrier_iata === "FR")?.rules.find((r) => r.key === "infant_fee");
-const hotels = data.hotels;
+const hotel = data.hotels[0];
+const venues = data.venues.length;
 ---
 
-<Base title="Pieluchy i paszporty" description="Podróże z dzieckiem do 3 lat: zasady linii lotniczych i hotele, każdy fakt ze źródłem.">
-  <h1>Z dzieckiem do 3 lat w samolot i do hotelu</h1>
-  <p class="lead">
-    Zebraliśmy zasady linii czarterowych i udogodnienia hoteli dla najmłodszych. Każdą informację
-    bierzemy ze strony przewoźnika albo hotelu i podpisujemy datą sprawdzenia.
-  </p>
+<Base title="Pieluchy i paszporty" description="Podróże z dzieckiem do 3 lat: zasady linii lotniczych, hotele i bawialnie, sprawdzone u źródła.">
+  <section class="hero">
+    <div>
+      <h1>Wakacje z maluchem bez zgadywania</h1>
+      <p class="lead">
+        Wózek, fotelik, opłata za niemowlę, łóżeczko w hotelu. Krótkie odpowiedzi, każda ze
+        źródłem.
+      </p>
+    </div>
+    <Illustration name="hero" />
+  </section>
 
-  {
-    example && (
-      <div class="callout">
-        <p>Tak wygląda każdy fakt na tej stronie:</p>
-        <p>{example.note}</p>
-        <Stamp fact={example} owner="Ryanair" />
+  <Checker />
+
+  <h2>Co jeszcze sprawdziliśmy</h2>
+  <div class="doors">
+    <a class="door sea" href="/linie/">
+      <Illustration name="plane" />
+      <div>
+        <h3>Linie lotnicze</h3>
+        <p>{carriers.length} przewoźników obok siebie: wózek, bagaż, fotelik.</p>
       </div>
-    )
-  }
-
-  <div class="entry">
-    <section>
-      <h2><a href="/linie/">Zasady linii lotniczych</a></h2>
-      <p>
-        {ruleCount} zasad dla {carriers.length} przewoźników: {names}. Opłata za niemowlę, wózek,
-        fotelik, bagaż i to, ile dzieci może lecieć z jednym dorosłym.
-      </p>
-    </section>
-    <section>
-      <h2><a href="/hotele/">Hotele</a></h2>
-      <p>
-        Na początek {hotels.map((h) => h.name).join(", ")}: łóżeczko, brodzik, bawialnia i wszystko,
-        czego na stronie hotelu nie ma, więc trzeba o to zapytać.
-      </p>
-    </section>
+    </a>
+    <a class="door sun" href="/hotele/">
+      <Illustration name="beach" />
+      <div>
+        <h3>Hotele</h3>
+        <p>{hotel ? `${hotel.name}: łóżeczko, brodzik, bawialnia.` : "Wkrótce."}</p>
+      </div>
+    </a>
+    <a class="door coral" href="/poznan/bawialnie/">
+      <Illustration name="play" />
+      <div>
+        <h3>Bawialnie w Poznaniu</h3>
+        <p>{venues} miejsc na deszczowy dzień: od ilu lat, ile kosztuje, kiedy otwarte.</p>
+      </div>
+    </a>
   </div>
+
+  <h2>Skąd to wiemy</h2>
+  <ul class="trust">
+    <li>
+      <span class="tile-icon"><Icon name="link" /></span>
+      <span>Tylko ze stron linii, hoteli i bawialni. Przy każdej odpowiedzi jest link.</span>
+    </li>
+    <li>
+      <span class="tile-icon"><Icon name="calendar" /></span>
+      <span>Każda informacja ma datę, kiedy ją sprawdziliśmy.</span>
+    </li>
+    <li>
+      <span class="tile-icon"><Icon name="question" /></span>
+      <span>Czego źródło nie podaje, piszemy wprost. Nie zgadujemy.</span>
+    </li>
+  </ul>
 </Base>
