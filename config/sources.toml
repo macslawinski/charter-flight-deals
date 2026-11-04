@@ -36,7 +36,7 @@ pakiet_batch_size = 200     # pakietId values per wyszukaj-przylot request (URL 
 # /multitenant/flights path (which itself redirects when requested directly), so redirects are
 # followed: 2 HTTP requests per page, both counted against the cap. ~150 pages per run (fixed 20
 # per page), sorted by departure date so offers don't jump between pages when prices change.
-# Runs twice a day (see .github/workflows/ingest.yml), not with every r.pl run.
+# Runs once a day while the repo is private (see .github/workflows/ingest.yml).
 [sources.itaka]
 operator = "itaka"
 enabled = true

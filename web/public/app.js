@@ -4,11 +4,10 @@
 const CONFIG = {
   donateUrl: null,          // e.g. "https://buycoffee.to/<name>"; the link stays hidden while null
   // Per operator (deal.operator): display name, booking page, and when its data counts as stale
-  // (one missed run plus queue delay: r.pl runs every 8 h, Itaka at 00:17 and 16:17 UTC, so its
-  // longest gap after a missed run is 24 h).
+  // (one missed run plus queue delay: r.pl runs every 8 h, Itaka once a day at 00:17 UTC).
   operators: {
     r_pl: { name: "r.pl", url: "https://r.pl/bilety-czarterowe", staleAfterHours: 20 },
-    itaka: { name: "Itaka", url: "https://www.itaka.pl/bilety-lotnicze/", staleAfterHours: 30 },
+    itaka: { name: "Itaka", url: "https://www.itaka.pl/bilety-lotnicze/", staleAfterHours: 50 },
   },
 };
 const operatorInfo = (code) => CONFIG.operators[code] ?? { name: code, url: null, staleAfterHours: 20 };

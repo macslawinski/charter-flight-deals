@@ -44,7 +44,7 @@ hotels/packages, mobile app.
 | Layer | Choice | Notes |
 |---|---|---|
 | Ingestion | Python 3.12, `httpx` or `requests`, stdlib `tomllib` | One script, CLI entry point |
-| Scheduling | GitHub Actions cron: r.pl 3×/day, Itaka 2×/day in a parallel job | Private repo: 2000 free min/month, keep runs lean; fall back to a home server/VPS if blocked |
+| Scheduling | GitHub Actions cron: r.pl 3×/day, Itaka 1×/day in a parallel job (2×/day once the repo is public) | Private repo: 2000 free min/month, keep runs lean; fall back to a home server/VPS if blocked |
 | Database | Supabase (Postgres, free tier) | Schema via SQL migration files in repo |
 | Transform | Plain SQL (views / SQL functions) in Postgres | No dbt/Airflow in the PoC |
 | Frontend | Static site (Astro or plain HTML + JS) on Vercel | Reads an exported `deals.json`; no public DB access |
