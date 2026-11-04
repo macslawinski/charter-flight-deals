@@ -36,6 +36,7 @@ venv = ".venv"
 pythonVersion = "3.12"
 typeCheckingMode = "standard"
 include = ["ingest", "scripts", "tests", ".claude/hooks"]
+extraPaths = ["scripts", "tests"]  # tests import scripts/*.py and sibling test helpers
 
 [tool.ruff]
 line-length = 100

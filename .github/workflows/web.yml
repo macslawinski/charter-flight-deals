@@ -1,0 +1,38 @@
+name: web
+
+# Export deals.json from Supabase and deploy web/ to Vercel (production).
+# Runs after every ingest (called from ingest.yml), on pushes that touch the page, or by hand.
+on:
+  workflow_call:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["web/**", "scripts/export_deals.py", ".github/workflows/web.yml"]
+
+concurrency:
+  group: web-deploy
+  cancel-in-progress: false
+
+env:
+  # Not secrets: identify the Vercel project (prj_...) and account (team_...).
+  VERCEL_ORG_ID: team_RP9rqytwTyqrHfxwX3jY2641
+  VERCEL_PROJECT_ID: prj_jpD2RWrwRdZxqdI1BtgDBIU4am30
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e .
+      - run: python scripts/export_deals.py --out web/public/deals.json
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      - name: Deploy to Vercel
+        working-directory: web
+        run: npx --yes vercel@latest deploy --prod --yes --token "$VERCEL_TOKEN"
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}

@@ -25,3 +25,8 @@ jobs:
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           RPL_COOKIE: ${{ secrets.RPL_COOKIE }}
+
+  web:
+    needs: ingest
+    uses: ./.github/workflows/web.yml
+    secrets: inherit
