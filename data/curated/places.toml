@@ -1,0 +1,23 @@
+# Product B places. 'flight' places link to Product A's destinations (dest_iata); 'domestic' places
+# (Polish Baltic coast for now) are reached by car or train. Slugs of flight places = destinations.slug.
+
+[[place]]
+slug = "rodos"
+name = "Rodos"
+country = "Grecja"
+kind = "flight"
+dest_iata = "RHO"
+
+[[place]]
+slug = "kreta-heraklion"
+name = "Kreta – Heraklion"
+country = "Grecja"
+kind = "flight"
+dest_iata = "HER"
+
+[[place]]
+slug = "grzybowo"
+name = "Grzybowo"
+country = "Polska"
+region = "Bałtyk – Pomorze Zachodnie"
+kind = "domestic"

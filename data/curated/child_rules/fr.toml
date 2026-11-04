@@ -1,0 +1,63 @@
+# Ryanair: Help Centre articles and the fees table (read 2026-11-04).
+carrier = "FR"
+
+[[rule]]
+key = "infant_fee"
+age_band = "0-2"
+value = { amount_eur = 25, per = "one_way" }
+note = "Niemowlę na kolanach: 25 € za każdy lot w jedną stronę. Dziecko musi mieć mniej niż 2 lata w dniu wylotu i powrotu."
+source = "carrier_official"
+url = "https://www.ryanair.com/gb/en/useful-info/help-centre/fees"
+verified_at = 2026-11-04
+
+[[rule]]
+key = "infant_min_age"
+value = { min_days = 8 }
+note = "Dzieci do 7. dnia życia linia nie przewozi."
+source = "carrier_official"
+url = "https://help.ryanair.com/hc/en-us/articles/12891532701457-What-are-the-rules-for-travelling-with-infants-0-2"
+verified_at = 2026-11-04
+
+[[rule]]
+key = "infants_per_adult"
+age_band = "0-2"
+value = { max = 1, adult_min_age = 18 }
+note = "Jedno niemowlę na jednego dorosłego (od 18 lat)."
+source = "carrier_official"
+url = "https://help.ryanair.com/hc/en-us/articles/12891532701457-What-are-the-rules-for-travelling-with-infants-0-2"
+verified_at = 2026-11-04
+
+[[rule]]
+key = "twins"
+age_band = "0-2"
+value = { one_adult_allowed = false }
+note = "Z bliźniętami do 2 lat muszą lecieć dwie dorosłe osoby. Niemowlęta siedzą wyłącznie na kolanach, jedno na dorosłego."
+source = "carrier_official"
+url = "https://help.ryanair.com/hc/en-us/articles/12891532701457-What-are-the-rules-for-travelling-with-infants-0-2"
+verified_at = 2026-11-04
+
+[[rule]]
+key = "infant_baggage"
+age_band = "0-2"
+value = { baby_bag_kg = 5, dims_cm = "45x35x20", own_allowance = false }
+note = "Niemowlę nie ma własnego limitu bagażu, ale możesz zabrać torbę dla dziecka do 5 kg (45×35×20 cm)."
+source = "carrier_official"
+url = "https://help.ryanair.com/hc/en-us/articles/12891532701457-What-are-the-rules-for-travelling-with-infants-0-2"
+verified_at = 2026-11-04
+
+[[rule]]
+key = "stroller"
+value = { free = true, plus_one_of = ["car_seat", "booster_seat", "travel_cot"], extra_item_fee_eur = "15-20", extra_item_max_kg = 20 }
+note = "Na dziecko bezpłatnie 2 rzeczy: wózek oraz fotelik, podstawka albo łóżeczko turystyczne. Każda kolejna to 15–20 € za sztukę i lot (do 20 kg)."
+source = "carrier_official"
+url = "https://www.ryanair.com/gb/en/useful-info/help-centre/fees"
+verified_at = 2026-11-04
+
+[[rule]]
+key = "child_seating"
+age_band = "2+"
+value = { must_sit_next_to_adult = true, free_random_allocation_next_to_adult = true }
+note = "Dzieci od 2 do 11 lat siedzą obok dorosłego. Przy losowym przydziale miejsce obok dorosłego z tej samej rezerwacji jest bezpłatne."
+source = "carrier_official"
+url = "https://help.ryanair.com/hc/en-gb/articles/12891623365777-What-is-Ryanair-s-Seat-Policy"
+verified_at = 2026-11-04
