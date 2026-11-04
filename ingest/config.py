@@ -28,6 +28,9 @@ class SourceConfig:
     token_header: str | None = None   # header the token is sent in, e.g. X-Access-Token
     follow_redirects: bool = False
     max_requests_per_run: int | None = None  # overrides [defaults]; redirect hops count too
+    # Override [defaults] delays, e.g. shorter for an official API with its own rate limits.
+    min_delay_seconds: float | None = None
+    max_delay_seconds: float | None = None
 
     @property
     def cookie(self) -> str | None:
@@ -70,6 +73,8 @@ def load_settings(path: Path = DEFAULT_CONFIG) -> Settings:
             token_header=cfg.get("token_header"),
             follow_redirects=bool(cfg.get("follow_redirects", False)),
             max_requests_per_run=cfg.get("max_requests_per_run"),
+            min_delay_seconds=cfg.get("min_delay_seconds"),
+            max_delay_seconds=cfg.get("max_delay_seconds"),
         )
         for name, cfg in raw.get("sources", {}).items()
     }

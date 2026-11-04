@@ -71,11 +71,12 @@ class PoliteClient:
         url = f"{source.url.rstrip('/')}/{path.lstrip('/')}" if path else source.url
 
         cap = source.max_requests_per_run or self._s.max_requests_per_run
+        lo, hi = delay_range(self._s, source)
         for attempt in range(self._s.max_retries + 1):
             if self._count >= cap:
                 raise RequestCapReached(f"cap of {cap} requests reached")
             if self._count > 0:
-                time.sleep(random.uniform(self._s.min_delay_seconds, self._s.max_delay_seconds))
+                time.sleep(random.uniform(lo, hi))
             self._count += 1
 
             resp = self._client.request(
@@ -97,6 +98,15 @@ class PoliteClient:
             return resp
 
         raise RuntimeError(f"giving up on {url} after {self._s.max_retries + 1} attempts")
+
+
+def delay_range(settings: Settings, source: SourceConfig) -> tuple[float, float]:
+    """Random delay bounds between requests: the source's override, else [defaults]."""
+    lo = settings.min_delay_seconds if source.min_delay_seconds is None else source.min_delay_seconds
+    hi = settings.max_delay_seconds if source.max_delay_seconds is None else source.max_delay_seconds
+    if not 0 <= lo <= hi:
+        raise ValueError(f"source {source.name}: bad delay range {lo}..{hi}")
+    return lo, hi
 
 
 def _retry_after(resp: httpx.Response) -> float | None:
