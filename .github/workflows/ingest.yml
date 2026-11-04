@@ -2,9 +2,10 @@ name: ingest
 
 on:
   workflow_dispatch:
-  # Enable once the r.pl source is implemented and DATABASE_URL secret is set:
-  # schedule:
-  #   - cron: "17 */6 * * *"
+  schedule:
+    # Every 6 h at :17 UTC (off the top of the hour). A full r.pl run is ~100 requests, ~10 min.
+    # Exit code 3 (request cap hit, data incomplete) fails the job on purpose so it gets noticed.
+    - cron: "17 */6 * * *"
 
 concurrency:
   group: ingest
