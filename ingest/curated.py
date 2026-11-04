@@ -29,7 +29,7 @@ from ingest.config import REPO_ROOT, load_settings
 CURATED = REPO_ROOT / "data" / "curated"
 log = logging.getLogger("ingest.curated")
 
-AGE_BANDS = {"0-1", "1-2", "2-3", "0-3", "3+"}
+AGE_BANDS = {"0-1", "0-2", "1-2", "2-3", "0-3", "2+", "3+"}
 SOURCES = {"hotel_written", "carrier_official", "hotel_website", "own_visit", "operator_page",
            "review_hint"}
 # Closed vocabularies: a typo must fail the load, not create a new feature nobody renders.
@@ -40,8 +40,9 @@ FEATURE_KEYS = {
     "baby_monitor", "beach_walk_minutes", "parking",
 }
 RULE_KEYS = {
-    "infant_fee", "lap_infant", "infants_per_adult", "twins", "infant_seat", "stroller", "car_seat",
-    "bassinet", "priority_boarding", "infant_baggage", "child_baggage", "child_fare",
+    "infant_fee", "infant_min_age", "lap_infant", "infants_per_adult", "twins", "infant_seat",
+    "stroller", "car_seat", "travel_cot", "bassinet", "baby_food", "priority_boarding",
+    "infant_baggage", "child_baggage", "child_fare", "child_seating",
 }
 ACCESS_CITIES = {"Warszawa", "Poznań", "Gdańsk", "Wrocław", "Kraków", "Katowice"}
 _SLUG = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")

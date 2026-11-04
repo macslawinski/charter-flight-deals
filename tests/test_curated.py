@@ -17,6 +17,14 @@ def test_repo_curated_data_is_valid():
     cot = next(f for f in saltic.features if f.key == "cot")
     assert cot.value["fee_pln_per_night"] == 60 and cot.age_band == "0-3"
     assert all(f.url and f.url.startswith("https://www.hotelsaltic.pl/") for f in saltic.features)
+    rules = {c.carrier_iata: {(r.key, r.age_band): r for r in c.rules} for c in data.carriers}
+    assert set(rules) >= {"E4", "QS", "RR", "LO", "FR", "W6"}
+    assert rules["E4"][("infants_per_adult", "0-2")].value == {"max": 1}
+    assert rules["LO"][("twins", "0-2")].value["one_adult_allowed"] is True
+    # Every fee rule tells the parent where the price comes from: an amount or an explicit flag.
+    for c in data.carriers:
+        fee = next(r for r in c.rules if r.key == "infant_fee")
+        assert fee.note and fee.url and fee.source == "carrier_official"
 
 
 @pytest.fixture
@@ -109,4 +117,8 @@ def test_save_round_trip(db):  # noqa: F811
     # Flight places join to Product A's destinations by IATA and share its slug.
     assert db.execute("""select d.slug from places p join destinations d on d.iata = p.dest_iata
                          where p.slug = 'kreta-heraklion'""").fetchone() == ("kreta-heraklion",)
+    # Child rules reference carriers seeded in `airlines` (005); an unknown code fails the FK.
+    assert counts["child_rules"] == sum(len(c.rules) for c in data.carriers) > 0
+    assert db.execute("""select r.value->>'amount_eur' from child_rules r
+                         where r.carrier_iata = 'FR' and r.rule_key = 'infant_fee'""").fetchone() == ("25",)
     assert curated.save(db, data) == counts  # idempotent: files are the source of truth

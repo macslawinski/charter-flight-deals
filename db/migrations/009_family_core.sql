@@ -27,8 +27,8 @@ insert into airports (iata, name, city) values
     ('WAW', 'Warszawa-Chopin', 'Warszawa'), ('WMI', 'Warszawa-Modlin', 'Warszawa'),
     ('WRO', 'Wrocław', 'Wrocław'), ('OSZ', 'Koszalin', 'Koszalin'), ('SZY', 'Olsztyn-Mazury', 'Olsztyn');
 
--- Age bands: airline rules split at 2 years, hotel facilities at 1 and 3.
-create type age_band as enum ('0-1', '1-2', '2-3', '0-3', '3+');
+-- Age bands: airline rules split at 2 years (infant '0-2', child '2+'), hotel facilities at 1 and 3.
+create type age_band as enum ('0-1', '0-2', '1-2', '2-3', '0-3', '2+', '3+');
 
 -- Where a fact comes from, best first. review_hint is never shown as a verified fact.
 create type fact_source as enum ('hotel_written', 'carrier_official', 'hotel_website', 'own_visit',
