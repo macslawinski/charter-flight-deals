@@ -67,5 +67,6 @@ def load_settings(path: Path = DEFAULT_CONFIG) -> Settings:
         timeout_seconds=defaults.get("timeout_seconds", 30),
         user_agent=defaults.get("user_agent", "charter-flight-deals/0.1"),
         sources=sources,
-        database_url=os.environ.get("DATABASE_URL"),
+        # strip(): secrets pasted into GitHub/Vercel UIs often carry a trailing newline.
+        database_url=(os.environ.get("DATABASE_URL") or "").strip() or None,
     )

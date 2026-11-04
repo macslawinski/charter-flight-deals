@@ -11,6 +11,8 @@ from pathlib import Path
 from typing import Any
 from zoneinfo import ZoneInfo
 
+import psycopg
+
 from ingest import store
 from ingest.config import load_settings
 from ingest.http_client import PoliteClient
@@ -41,6 +43,16 @@ def main(argv: list[str] | None = None) -> int:
     if not args.dry_run and not database_url:
         log.error("DATABASE_URL is not set (use .env, the env var, or --database-url)")
         return 2
+    if not args.dry_run:
+        # Fail fast: a full crawl takes ~10 min, don't spend it only to find the DB unreachable.
+        # (Reconnect after the crawl instead of holding an idle connection through the pooler.)
+        assert database_url is not None
+        try:
+            with store.connect(database_url) as conn:
+                conn.execute("select 1")
+        except psycopg.Error as e:
+            log.error("cannot connect to the database: %s", e)
+            return 2
 
     request_info: dict[str, Any] = {"source": args.source}
     if args.from_file:
