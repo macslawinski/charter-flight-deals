@@ -1,0 +1,33 @@
+name: family
+
+# Deploy the Product B site (family/) to its own Vercel project. Vercel builds it remotely from the
+# uploaded family/ folder (it reads the committed src/data/family.json), so this job only uploads:
+# ~1 billed Actions minute per run. Both targets sit behind Vercel Authentication (project setting
+# "all_except_custom_domains"): main -> production URL, other branches -> preview URL.
+on:
+  workflow_dispatch:
+  push:
+    paths: ["family/**", ".github/workflows/family.yml"]
+
+concurrency:
+  group: family-deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  # Not secrets: identify the Vercel project (prj_...) and account (team_...).
+  VERCEL_ORG_ID: team_RP9rqytwTyqrHfxwX3jY2641
+  VERCEL_PROJECT_ID: prj_Tr5bmKQFjGMukKSOzsvUlzsutoiS
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy to Vercel
+        working-directory: family
+        run: |
+          if [ "$GITHUB_REF" = "refs/heads/main" ]; then target="--prod"; else target=""; fi
+          npx --yes vercel@latest deploy $target --yes --token "$VERCEL_TOKEN"
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
