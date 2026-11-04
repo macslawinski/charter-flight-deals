@@ -119,7 +119,11 @@ Cold start is expected: the first deals appear only after enough history accumul
 - **Data plugin skills** — `data:sql-queries` / `data:write-query` for SQL, `data:explore-data` and
   `data:validate-data` for checking ingested data, `data:statistical-analysis` for tuning the
   threshold/window once there are 2–3 weeks of data.
-- **dataviz** skill — for the deals page and the price-vs-baseline chart.
+- **dataviz** skill — the price-vs-baseline chart; **frontend-design** plugin — the deals page.
+- **context7** plugin — current docs for Astro, Supabase, httpx, psycopg; use it instead of guessing APIs.
+- **pyright-lsp** plugin — type errors on edit; config in `pyproject.toml` (`[tool.pyright]`, uses `.venv`).
+- **Supabase CLI** (`supabase`, v3) is installed, but Docker is not, so `supabase start` / `db reset`
+  don't work locally yet. Test SQL in a `begin; … rollback;` transaction instead (see `apply-migration`).
 
 ## Working conventions
 - Every schema change = a new numbered migration file; never edit an applied migration.
@@ -129,7 +133,7 @@ Cold start is expected: the first deals appear only after enough history accumul
   and the transform on synthetic data (planted deal is found; 3-day long-haul flight is dropped;
   segment with too few flights yields no deal; a 10% drop is not flagged).
 - Ingestion supports `--dry-run` and `--from-file sample.json` for testing without the network/DB.
-- Before calling something done: run the tests, and for SQL changes run them against real data
+- Before calling something done: `ruff check .`, `pyright`, `pytest`, and for SQL changes run them against real data
   in Supabase and sanity-check a few results by hand.
 
 ## Definition of done for the PoC
