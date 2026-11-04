@@ -1,0 +1,33 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+coverage/
+.coverage
+
+# Frontend
+node_modules/
+dist/
+.astro/
+.vercel/
+
+# Local data / exports
+data/
+web/public/deals.json
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Claude Code local settings
+.claude/settings.local.json

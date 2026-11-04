@@ -1,0 +1,21 @@
+# Endpoint definitions per operator. No secrets here: cookies/tokens go to .env.
+# Values for r.pl are placeholders until the endpoint is discovered (Claude in Chrome, network tab).
+
+[defaults]
+min_delay_seconds = 3.0
+max_delay_seconds = 8.0
+max_requests_per_run = 50
+max_retries = 4
+timeout_seconds = 30
+user_agent = "charter-flight-deals/0.1 (price research PoC)"
+
+[sources.r_pl]
+operator = "r_pl"
+enabled = false            # flip to true once url/payload are filled in
+method = "POST"
+url = "TODO"
+headers = { "Accept" = "application/json", "Content-Type" = "application/json" }
+cookie_env = "RPL_COOKIE"  # name of the .env variable holding the cookie, if needed
+
+# Request body template; fields are filled in by ingest/sources/r_pl.py.
+[sources.r_pl.payload]
