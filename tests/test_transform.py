@@ -196,6 +196,41 @@ def test_median_baseline_stat(db):
     assert d["baseline_avg"] == Decimal("1360.00")
 
 
+def other_operator_flight(db, n: int, base: float) -> str:
+    """Same route and month as flight(), sold by another operator ('test2')."""
+    key = f"test2|XXO|XXL|{DEP}|{n}"
+    db.execute(
+        """insert into flights (flight_key, operator, origin_iata, dest_iata, outbound_date,
+                                return_date, flight_no) values (%s, 'test2', 'XXO', 'XXL', %s, %s, %s)""",
+        (key, DEP, DEP + timedelta(days=7), str(n)),
+    )
+    history(db, key, base)
+    price(db, key, D, base)
+    return key
+
+
+def test_baseline_is_per_operator(db):
+    # 6 flights of another operator at 1000 on the same route/month must neither pull this
+    # operator's baseline down (1600 -> deal at 1249 stays a deal) ...
+    for i in range(6):
+        other_operator_flight(db, i, 1000)
+    keys = segment(db, 6)
+    db.execute("update price_snapshots set price_last = 1249 where flight_key = %s and "
+               "snapshot_date = %s", (keys[0], D))
+    d = deals(db)[keys[0]]
+    assert (d["baseline_avg"], d["baseline_flights"]) == (Decimal("1600.00"), 6)
+
+
+def test_other_operator_flights_do_not_fill_a_thin_segment(db):
+    # ... nor make up the min_baseline_flights for a segment this operator barely sells.
+    for i in range(6):
+        other_operator_flight(db, i, 1600)
+    keys = segment(db, 2)
+    db.execute("update price_snapshots set price_last = 900 where flight_key = %s and "
+               "snapshot_date = %s", (keys[0], D))
+    assert deals(db) == {}
+
+
 def test_refresh_deals_is_idempotent(db):
     keys = segment(db, 6)
     db.execute("update price_snapshots set price_last = 1249 where flight_key = %s and "

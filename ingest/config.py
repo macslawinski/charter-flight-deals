@@ -26,6 +26,7 @@ class SourceConfig:
     cookie_env: str | None = None
     token_env: str | None = None      # env var holding an API token (never in the toml)
     token_header: str | None = None   # header the token is sent in, e.g. X-Access-Token
+    follow_redirects: bool = False
 
     @property
     def cookie(self) -> str | None:
@@ -66,6 +67,7 @@ def load_settings(path: Path = DEFAULT_CONFIG) -> Settings:
             cookie_env=cfg.get("cookie_env"),
             token_env=cfg.get("token_env"),
             token_header=cfg.get("token_header"),
+            follow_redirects=bool(cfg.get("follow_redirects", False)),
         )
         for name, cfg in raw.get("sources", {}).items()
     }

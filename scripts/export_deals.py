@@ -60,11 +60,12 @@ select (select max(snapshot_date) from price_snapshots)            as last_snaps
          where snapshot_date = (select max(snapshot_date) from price_snapshots)) as flights_priced
 """
 
-# Upcoming segments (origin + destination + departure month) and how many already have a baseline.
+# Upcoming segments (operator + origin + destination + departure month) and how many already have
+# a baseline.
 _SEGMENTS = """
 with p as (select * from pipeline_params),
 seg as (
-    select e.origin_iata, e.dest_iata, e.dep_month,
+    select e.operator, e.origin_iata, e.dest_iata, e.dep_month,
            count(distinct s.flight_key) filter (
                where s.snapshot_date between %(as_of)s - p.window_days and %(as_of)s - 1
            ) as baseline_flights
@@ -72,7 +73,7 @@ seg as (
     cross join p
     left join price_snapshots s on s.flight_key = e.flight_key
     where e.outbound_date > %(as_of)s
-    group by e.origin_iata, e.dest_iata, e.dep_month
+    group by e.operator, e.origin_iata, e.dest_iata, e.dep_month
 )
 select count(*) as segments,
        count(*) filter (where baseline_flights >= (select min_baseline_flights from p)) as ready

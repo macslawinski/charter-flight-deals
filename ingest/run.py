@@ -1,4 +1,4 @@
-"""CLI entry point: python -m ingest.run [--source r_pl] [--dry-run] [--from-file path]."""
+"""CLI entry point: python -m ingest.run [--source r_pl|itaka] [--dry-run] [--from-file path]."""
 
 from __future__ import annotations
 
@@ -17,10 +17,10 @@ from ingest import store
 from ingest.config import load_settings
 from ingest.http_client import PoliteClient
 from ingest.models import ParseError
-from ingest.sources import r_pl
+from ingest.sources import itaka, r_pl
 from ingest.store import dedupe
 
-PARSERS = {"r_pl": r_pl}
+PARSERS = {"r_pl": r_pl, "itaka": itaka}
 WARSAW = ZoneInfo("Europe/Warsaw")
 
 log = logging.getLogger("ingest")

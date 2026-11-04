@@ -3,7 +3,7 @@
 ## Project in one paragraph
 A free web app that tracks **flight-only charter prices** (no hotels, no packages) from Polish tour
 operators and flags flights that are *genuinely* cheap, with a verifiable proof of the discount.
-Current phase: **proof of concept with one operator — r.pl (Rainbow Tours)**. Monetization: free site,
+Current phase: **proof of concept with r.pl (Rainbow Tours) and Itaka**. Monetization: free site,
 optional "buy me a coffee" link and ads. Running costs must stay close to zero.
 
 ## Communication
@@ -25,7 +25,9 @@ optional "buy me a coffee" link and ads. Running costs must stay close to zero.
 
 ## Scope of the PoC
 In scope:
-1. Ingestion of r.pl flight-only offers from their (undocumented) JSON endpoint.
+1. Ingestion of r.pl flight-only offers from their (undocumented) JSON endpoint, and (since
+   2026-11-04) Itaka's from the RSC payload of their listing page (`ingest/sources/itaka.py`,
+   ~150 requests, twice a day). Same legal note as r.pl applies to Itaka.
 2. Storage of raw responses + normalized flights + daily price snapshots in Postgres.
 3. Transformation: rolling baseline, 15% deal rule, sensible-stay filter.
 4. A minimal public page listing current deals with the "math proof".
@@ -35,8 +37,8 @@ In scope:
    `market_fetches`, `airlines`, function `market_reference(as_of)`. Legal sources only: no
    scraping of Ryanair / Wizz / Google Flights.
 
-Out of scope (for now): other operators, user accounts, alerts/notifications, hotels/packages,
-mobile app. Design so a second operator (e.g. Itaka) can be added later without rewrites.
+Out of scope (for now): operators beyond r.pl and Itaka, user accounts, alerts/notifications,
+hotels/packages, mobile app.
 
 ## Tech stack
 | Layer | Choice | Notes |
@@ -91,7 +93,9 @@ tests/             # unit tests (parser) + SQL tests on synthetic data
 - `deals` — materialized result per `as_of` date, used for export and deal history.
 
 ## Business logic (must stay exactly like this unless the user changes it)
-**Segment** = same origin airport + same destination airport + same departure month.
+**Segment** = same operator + same origin airport + same destination airport + same departure month.
+(Per operator since 2026-11-04, migration 006: r.pl and Itaka sell seats on the same physical
+flights, so a shared baseline would count one flight twice.)
 
 **Sensible stay filter** (applied in the transform layer, before anything else):
 - Resolve min stay: destination override → zone value → `default_min_stay_days`.

@@ -67,6 +67,7 @@ class PoliteClient:
             resp = self._client.request(
                 source.method, url, headers=headers,
                 params=tuple(params) if params else None, json=payload,
+                follow_redirects=source.follow_redirects,
             )
 
             if resp.status_code == 403:

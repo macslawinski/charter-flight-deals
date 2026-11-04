@@ -18,7 +18,8 @@ eligible as (  -- same segment, passes the sensible-stay filter
     select f.flight_key
     from flights f
     cross join p
-    join target t on f.origin_iata = t.origin_iata
+    join target t on f.operator = t.operator          -- segment is per operator (006)
+                 and f.origin_iata = t.origin_iata
                  and f.dest_iata = t.dest_iata
                  and date_trunc('month', f.outbound_date) = date_trunc('month', t.outbound_date)
     left join destinations d on d.iata = f.dest_iata
