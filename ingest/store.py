@@ -108,6 +108,13 @@ def upsert_offers(conn: psycopg.Connection[Any], offers: list[FlightOffer],
     return len(offers)
 
 
+def refresh_deals(conn: psycopg.Connection[Any], as_of: date) -> int:
+    """Recompute the `deals` rows for `as_of` (SQL in 004_transform.sql). Returns deal count."""
+    row = conn.execute("select refresh_deals(%s)", (as_of,)).fetchone()
+    assert row is not None
+    return int(row[0])
+
+
 def prune_raw_fetches(conn: psycopg.Connection[Any], now: datetime, keep_days: int = 14) -> int:
     """Delete raw responses older than `keep_days`. Returns rows deleted."""
     cur = conn.execute("delete from raw_fetches where fetched_at < %s",
