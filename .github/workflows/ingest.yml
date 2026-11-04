@@ -8,19 +8,20 @@ on:
         type: boolean
         default: false
       itaka:
-        description: "Also crawl Itaka (otherwise only on the 00:17 / 16:17 UTC cron)"
+        description: "Also crawl Itaka (otherwise only on the 00:17 UTC cron)"
         type: boolean
         default: false
   schedule:
-    # r.pl three times a day (~90 requests, ~9 min), Itaka twice (~150 pages, ~14 min) in a
+    # r.pl three times a day (~110 requests, ~12 min), Itaka once (~150 pages, ~18 min) in a
     # parallel job: different sites, so each still gets one polite request at a time.
-    # The repo is private: Actions minutes are capped (2000/month), keep the schedule lean.
+    # The repo is private: Actions minutes are capped (2000/month, ~80 min/day with Itaka twice).
+    # Once the repo is public, add Itaka back to the 16:17 run ("17 0,16" + "17 8").
     # 00:17 UTC is the first run of a new Europe/Warsaw snapshot_date, so the new day's deals
     # include both operators from the start. The Itaka job matches the schedule string, not the
     # clock, so a run delayed in GitHub's queue still counts. Exit code 3 (request cap hit, data
     # incomplete) fails the step.
-    - cron: "17 0,16 * * *"   # r.pl + Itaka
-    - cron: "17 8 * * *"      # r.pl only
+    - cron: "17 0 * * *"      # r.pl + Itaka
+    - cron: "17 8,16 * * *"   # r.pl only
 
 concurrency:
   group: ingest
@@ -56,7 +57,7 @@ jobs:
   # Second operator, independent of r.pl: continue-on-error so an Itaka failure doesn't block
   # the deploy.
   itaka:
-    if: ${{ !inputs.market_only && (inputs.itaka || github.event.schedule == '17 0,16 * * *') }}
+    if: ${{ !inputs.market_only && (inputs.itaka || github.event.schedule == '17 0 * * *') }}
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:

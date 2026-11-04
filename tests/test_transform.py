@@ -246,6 +246,13 @@ def test_itaka_destinations_are_seeded_with_their_zone(db):
     assert eligible == {week}
 
 
+def test_turkish_aegean_destinations_match_antalya(db):
+    # 008: same zone as AYT, not the default min stay.
+    rows = db.execute("select iata, zone from destinations "
+                      "where iata in ('AYT', 'ADB', 'BJV', 'DLM')").fetchall()
+    assert dict(rows) == dict.fromkeys(("AYT", "ADB", "BJV", "DLM"), "medium")
+
+
 def test_unknown_destinations_are_reported(db):
     flight(db, 1)  # XXL is seeded by the fixture
     db.execute(
