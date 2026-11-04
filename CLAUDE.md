@@ -42,8 +42,11 @@ mobile app. Design so a second operator (e.g. Itaka) can be added later without 
 | Transform | Plain SQL (views / SQL functions) in Postgres | No dbt/Airflow in the PoC |
 | Frontend | Static site (Astro or plain HTML + JS) on Vercel | Reads an exported `deals.json`; no public DB access |
 | Secrets | `.env` locally, GitHub/Vercel secrets in CI | Never commit secrets, cookies or tokens |
+| Analytics | Vercel Web Analytics (free tier) | No product-analytics tools (Amplitude etc.) in the PoC |
 
-Open decision: hosting on Vercel vs Cloudflare Pages — default to Vercel unless the user says otherwise.
+Hosting: Vercel. If the user switches to Cloudflare Pages, use the Cloudflare API MCP server
+(`https://mcp.cloudflare.com/mcp`); the old "Cloudflare Developer Platform" connector is deprecated and
+disabled for this project.
 
 ## Repository layout (target)
 ```
