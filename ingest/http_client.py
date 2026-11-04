@@ -53,6 +53,8 @@ class PoliteClient:
         headers = dict(source.headers)
         if source.cookie:
             headers["Cookie"] = source.cookie
+        if source.token_header and source.token:
+            headers[source.token_header] = source.token
         url = f"{source.url.rstrip('/')}/{path.lstrip('/')}" if path else source.url
 
         for attempt in range(self._s.max_retries + 1):

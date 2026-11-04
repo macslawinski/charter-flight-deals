@@ -24,10 +24,18 @@ class SourceConfig:
     headers: dict[str, str] = field(default_factory=dict)
     payload: dict[str, Any] = field(default_factory=dict)
     cookie_env: str | None = None
+    token_env: str | None = None      # env var holding an API token (never in the toml)
+    token_header: str | None = None   # header the token is sent in, e.g. X-Access-Token
 
     @property
     def cookie(self) -> str | None:
         return os.environ.get(self.cookie_env) if self.cookie_env else None
+
+    @property
+    def token(self) -> str | None:
+        if not self.token_env:
+            return None
+        return (os.environ.get(self.token_env) or "").strip() or None
 
 
 @dataclass(frozen=True)
@@ -56,6 +64,8 @@ def load_settings(path: Path = DEFAULT_CONFIG) -> Settings:
             headers=cfg.get("headers", {}),
             payload=cfg.get("payload", {}),
             cookie_env=cfg.get("cookie_env"),
+            token_env=cfg.get("token_env"),
+            token_header=cfg.get("token_header"),
         )
         for name, cfg in raw.get("sources", {}).items()
     }

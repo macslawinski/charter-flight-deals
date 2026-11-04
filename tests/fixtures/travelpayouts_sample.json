@@ -1,0 +1,164 @@
+{
+ "source": "travelpayouts",
+ "truncated": false,
+ "responses": [
+  {
+   "origin": "WAW",
+   "destination": "TFS",
+   "month": "2026-12",
+   "body": {
+    "data": [
+     {
+      "flight_number": "6121",
+      "link": "/search/WAW0412TFS15121?t=FR17963886001796406900000365WMITFS17973555001797379140000334TFSWMI_042540e8541dc7986e20d4e28edf3d80_13565&search_date=04112026&expected_price_uuid=01a1a63c-3b21-8030-a217-acf8d455e236&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=KtSmcMCz3zaRVKN_QW-61w&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=pln&expected_price=646",
+      "origin_airport": "WMI",
+      "destination_airport": "TFS",
+      "departure_at": "2026-12-04T12:50:00+01:00",
+      "airline": "FR",
+      "destination": "TCI",
+      "return_at": "2026-12-15T17:25:00Z",
+      "origin": "WAW",
+      "price": 646,
+      "gate": "Kiwi.com",
+      "return_transfers": 0,
+      "duration": 699,
+      "duration_to": 365,
+      "duration_back": 334,
+      "transfers": 0
+     },
+     {
+      "flight_number": "1495",
+      "link": "/search/WAW1412TFS22121?t=W617972454001797263700000365WAWTFS17979603001797983940000334TFSWMI_ea5c91ebc5f85275cace3b546c0399d4_13367&search_date=02112026&expected_price_uuid=01a19e0c-7626-8031-27dd-fe65988e17c5&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=lKgF2E6JJWkHdpNTyHuTPQ&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=pln&expected_price=649",
+      "origin_airport": "WAW",
+      "destination_airport": "TFS",
+      "departure_at": "2026-12-14T10:50:00+01:00",
+      "airline": "W6",
+      "destination": "TCI",
+      "return_at": "2026-12-22T17:25:00Z",
+      "origin": "WAW",
+      "price": 649,
+      "gate": "Kiwi.com",
+      "return_transfers": 0,
+      "duration": 699,
+      "duration_to": 365,
+      "duration_back": 334,
+      "transfers": 0
+     },
+     {
+      "flight_number": "6121",
+      "link": "/search/WAW1012TFS17121?t=FR17968860001796904000000360WMITFS17975109001797534600000335TFSWMI_9452bf1544d51629c76641058bb5fa89_13805&search_date=04112026&expected_price_uuid=01a1a6da-ddae-8030-abcb-ec042f33b81b&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=bt51FBRavmrSAm5095A4RA&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=pln&expected_price=659",
+      "origin_airport": "WMI",
+      "destination_airport": "TFS",
+      "departure_at": "2026-12-10T07:00:00+01:00",
+      "airline": "FR",
+      "destination": "TCI",
+      "return_at": "2026-12-17T12:35:00Z",
+      "origin": "WAW",
+      "price": 659,
+      "gate": "Biletix",
+      "return_transfers": 0,
+      "duration": 695,
+      "duration_to": 360,
+      "duration_back": 335,
+      "transfers": 0
+     },
+     {
+      "flight_number": "6121",
+      "link": "/search/WAW0112TFS31121?t=FR17961255001796143800000365WMITFS17987352001798758900000335TFSWAW_3130cc6de2553c3a1029747aceb4b4f6_14088&search_date=02112026&expected_price_uuid=01a19e67-4cef-8031-6c40-4c3da99dec21&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=RrjpZOHZSHbPtR20G4JEJA&origin_airports=1&destination_airports=0&expected_price_source=share&expected_price_currency=pln&expected_price=684",
+      "origin_airport": "WMI",
+      "destination_airport": "TFS",
+      "departure_at": "2026-12-01T11:45:00+01:00",
+      "airline": "FR",
+      "destination": "TCI",
+      "return_at": "2026-12-31T16:40:00Z",
+      "origin": "WAW",
+      "price": 684,
+      "gate": "Kiwi.com",
+      "return_transfers": 0,
+      "duration": 700,
+      "duration_to": 365,
+      "duration_back": 335,
+      "transfers": 0
+     }
+    ],
+    "currency": "pln",
+    "success": true
+   }
+  },
+  {
+   "origin": "WAW",
+   "destination": "HRG",
+   "month": "2026-12",
+   "body": {
+    "data": [
+     {
+      "flight_number": "1321",
+      "link": "/search/WAW1012HRG15121?t=W617969178001796937300000265WMIHRG17973723001797384900000270HRGWMI_03e48657deb3febfb7f8b2f2df10c897_14971&search_date=02112026&expected_price_uuid=01a19a41-2395-8031-632b-199f563986d5&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=f8TIbKRKNPzkKtapZQ73Hw&expected_price_source=share&expected_price_currency=pln&expected_price=732",
+      "origin_airport": "WMI",
+      "destination_airport": "HRG",
+      "departure_at": "2026-12-10T15:50:00+01:00",
+      "airline": "W6",
+      "destination": "HRG",
+      "return_at": "2026-12-15T22:05:00+02:00",
+      "origin": "WAW",
+      "price": 732,
+      "gate": "Kiwi.com",
+      "return_transfers": 0,
+      "duration": 535,
+      "duration_to": 265,
+      "duration_back": 270,
+      "transfers": 0
+     },
+     {
+      "flight_number": "1321",
+      "link": "/search/WAW0112HRG08121?t=W617961411001796160600000265WMIHRG17967675001796780100000270HRGWMI_6ecb384669e6ab6ff68934ac21cc809e_15297&search_date=03112026&expected_price_uuid=01a1a09d-52ee-8031-6183-508f7c5ac4b7&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=-lIReOtC2PWuTC-6JS25lQ&expected_price_source=share&expected_price_currency=pln&expected_price=742",
+      "origin_airport": "WMI",
+      "destination_airport": "HRG",
+      "departure_at": "2026-12-01T16:05:00+01:00",
+      "airline": "W6",
+      "destination": "HRG",
+      "return_at": "2026-12-08T22:05:00+02:00",
+      "origin": "WAW",
+      "price": 742,
+      "gate": "Kiwi.com",
+      "return_transfers": 0,
+      "duration": 535,
+      "duration_to": 265,
+      "duration_back": 270,
+      "transfers": 0
+     },
+     {
+      "flight_number": "1321",
+      "link": "/search/WAW1312HRG24121?t=W617971413001797160500000260WMIHRG17981496001798162200000270HRGWMI_c2495dd6f8ac2c1d742c9bc1c6ad8b4a_15807&search_date=03112026&expected_price_uuid=01a1a1c6-7907-8030-a15a-b0f5d1710c89&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=R4te90g7b3f5lGKFGQA8qg&expected_price_source=share&expected_price_currency=pln&expected_price=765",
+      "origin_airport": "WMI",
+      "destination_airport": "HRG",
+      "departure_at": "2026-12-13T05:55:00+01:00",
+      "airline": "W6",
+      "destination": "HRG",
+      "return_at": "2026-12-24T22:00:00+02:00",
+      "origin": "WAW",
+      "price": 765,
+      "gate": "Kiwi.com",
+      "return_transfers": 0,
+      "duration": 530,
+      "duration_to": 260,
+      "duration_back": 270,
+      "transfers": 0
+     }
+    ],
+    "currency": "pln",
+    "success": true
+   }
+  },
+  {
+   "origin": "WAW",
+   "destination": "NBE",
+   "month": "2027-05",
+   "body": {
+    "data": [],
+    "currency": "pln",
+    "success": true
+   }
+  }
+ ]
+}

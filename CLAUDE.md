@@ -30,6 +30,11 @@ In scope:
 3. Transformation: rolling baseline, 15% deal rule, sensible-stay filter.
 4. A minimal public page listing current deals with the "math proof".
 
+5. Regular-airline reference price next to each deal (**display-only**, never changes the deal
+   rule): Travelpayouts / Aviasales Data API, `python -m ingest.market`, tables `market_fares`,
+   `market_fetches`, `airlines`, function `market_reference(as_of)`. Legal sources only: no
+   scraping of Ryanair / Wizz / Google Flights.
+
 Out of scope (for now): other operators, user accounts, alerts/notifications, hotels/packages,
 mobile app. Design so a second operator (e.g. Itaka) can be added later without rewrites.
 
