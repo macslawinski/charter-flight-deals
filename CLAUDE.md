@@ -122,8 +122,10 @@ Cold start is expected: the first deals appear only after enough history accumul
 - **dataviz** skill — the price-vs-baseline chart; **frontend-design** plugin — the deals page.
 - **context7** plugin — current docs for Astro, Supabase, httpx, psycopg; use it instead of guessing APIs.
 - **pyright-lsp** plugin — type errors on edit; config in `pyproject.toml` (`[tool.pyright]`, uses `.venv`).
-- **Supabase CLI** (`supabase`, v3) is installed, but Docker is not, so `supabase start` / `db reset`
-  don't work locally yet. Test SQL in a `begin; … rollback;` transaction instead (see `apply-migration`).
+- **Local Postgres 18** (scoop; superuser `postgres`, no password, localhost only). Start with
+  `pg_ctl start -D "$env:USERPROFILE\scoop\apps\postgresql\current\data" -w`, then
+  `python scripts/db_local.py` recreates `cfd_local` and applies all migrations. Default place to test SQL.
+- **Supabase CLI** (`supabase`, v3) is installed for linking/diffs; no Docker, so no `supabase start`.
 
 ## Working conventions
 - Every schema change = a new numbered migration file; never edit an applied migration.

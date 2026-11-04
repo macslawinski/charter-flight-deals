@@ -26,8 +26,11 @@ The repo's `db/migrations/` is the source of truth; the Supabase project must al
 
 ## 3. Test before applying
 Pick the first that is available:
-1. Local: Supabase CLI (`supabase db reset` applies all migrations to the local stack) or a local
-   Postgres (`psql -v ON_ERROR_STOP=1 -f` each file in order on a scratch DB). Then run the SQL tests.
+1. Local Postgres (default): make sure it runs (`pg_ctl status`, else `pg_ctl start -D
+   "$env:USERPROFILE\scoop\apps\postgresql\current\data" -w`), then `python scripts/db_local.py`
+   — recreates `cfd_local` and applies every migration in order, so it also proves the new file works
+   on top of all previous ones. Then run the SQL tests against `cfd_local`. Local is PG 18 while
+   Supabase may be older: avoid syntax newer than the remote version (`select version()` there).
 2. No local DB: on the remote project run the migration body wrapped in `begin; ... rollback;` with
    `execute_sql`, plus a couple of checking selects inside the same transaction. Nothing persists.
 
