@@ -80,7 +80,7 @@ def test_unknown_field_is_rejected(tree):
 
 
 def test_hotel_must_live_in_its_place_folder(tree):
-    (tree / "hotels" / "rodos").mkdir()
+    (tree / "hotels" / "rodos").mkdir(exist_ok=True)
     shutil.move(_hotel_file(tree), tree / "hotels" / "rodos" / "saltic.toml")
     with pytest.raises(CuratedError, match="must live in hotels/grzybowo/"):
         curated.load(tree)

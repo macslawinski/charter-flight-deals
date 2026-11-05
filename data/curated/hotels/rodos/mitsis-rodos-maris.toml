@@ -1,0 +1,146 @@
+# Facts from the hotel's own website (mitsis.com; robots.txt allows all crawlers, checked 2026-11-05):
+# /en/hotels/rodos-maris (overview, distances), /recreation/for-kids, /service/services.
+# Written in our words.
+# Also on the site, no feature key for it: Teens Club 12-16 (July-August), babysitting (extra charge),
+# arcade games (extra charge), "baby kit" for the room (contents not listed), rollaway beds.
+# Not stated: free stay for under-2s / under-3s, bottle warmer, kids' menu or baby food, changing
+# tables, paddling pool for toddlers, shade, step-free access, fees for the baby items.
+#
+# Coordinates: OpenStreetMap way/350641041 (© OpenStreetMap contributors, ODbL).
+# Access (checked 2026-11-05): car = OSRM public router (OpenStreetMap data), Rhodes airport (RHO) ->
+# hotel, free-flow time rounded to 5 min.
+slug = "mitsis-rodos-maris"
+place = "rodos"
+name = "Mitsis Rodos Maris"
+official_url = "https://www.mitsis.com/en/hotels/rodos-maris"
+address = "Kiotari, 851 09 Rodos"
+lat = 36.054225
+lon = 27.971797
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true }
+short = "Jest łóżeczko"
+note = "Łóżeczko dla niemowlęcia; ceny strona nie podaje."
+source = "hotel_website"
+url = "https://www.mitsis.com/en/hotels/rodos-maris/recreation/for-kids"
+verified_at = 2026-11-05
+
+[[feature]]
+key = "baby_bath"
+value = { available = true }
+short = "Jest wanienka"
+note = "Wanienka na liście usług hotelu."
+source = "hotel_website"
+url = "https://www.mitsis.com/en/hotels/rodos-maris/service/services"
+verified_at = 2026-11-05
+
+[[feature]]
+key = "high_chair"
+value = { available = true, where = "all_restaurants" }
+short = "We wszystkich restauracjach"
+note = "Krzesełka do karmienia we wszystkich restauracjach."
+source = "hotel_website"
+url = "https://www.mitsis.com/en/hotels/rodos-maris/recreation/for-kids"
+verified_at = 2026-11-05
+
+[[feature]]
+key = "potty"
+value = { available = true }
+short = "Jest nocnik"
+note = "Nocnik na liście usług hotelu."
+source = "hotel_website"
+url = "https://www.mitsis.com/en/hotels/rodos-maris/service/services"
+verified_at = 2026-11-05
+
+[[feature]]
+key = "baby_monitor"
+value = { available = true }
+short = "Jest elektroniczna niania"
+note = "Elektroniczna niania na liście usług hotelu."
+source = "hotel_website"
+url = "https://www.mitsis.com/en/hotels/rodos-maris/service/services"
+verified_at = 2026-11-05
+
+[[feature]]
+key = "stroller_rental"
+value = { available = true }
+short = "Wózki w ofercie hotelu"
+note = "Wózki dziecięce na liście usług hotelu; czy są płatne, strona nie podaje."
+source = "hotel_website"
+url = "https://www.mitsis.com/en/hotels/rodos-maris/service/services"
+verified_at = 2026-11-05
+
+[[feature]]
+key = "kids_animation"
+age_band = "3+"
+value = { available = true, min_age_years = 4, max_age_years = 12, open = "10:00", close = "18:00", under_4_with_parent = true }
+short = "Klub 4–12 lat, 10:00–18:00; młodsze z rodzicem"
+note = "Klub dziecięcy Mitsis Storyland dla dzieci 4–12 lat, 10:00–18:00. Dziecko poniżej 4 lat może przyjść tylko z rodzicem."
+source = "hotel_website"
+url = "https://www.mitsis.com/en/hotels/rodos-maris/recreation/for-kids"
+verified_at = 2026-11-05
+
+[[feature]]
+key = "playground"
+value = { available = true }
+short = "Jest plac zabaw"
+note = "Plac zabaw dla dzieci; godzin i wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.mitsis.com/en/hotels/rodos-maris/recreation/for-kids"
+verified_at = 2026-11-05
+
+[[feature]]
+key = "kids_pool"
+value = { available = true, fresh_water = true, water_slides = true }
+short = "Basen dla dzieci ze zjeżdżalniami"
+note = "Basen dla dzieci ze słodką wodą i zjeżdżalnie wodne. Podgrzewania ani wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.mitsis.com/en/hotels/rodos-maris/recreation/for-kids"
+verified_at = 2026-11-05
+
+[[feature]]
+key = "lift"
+value = { available = true, where = "main_building", pool_lift = true }
+short = "W budynku głównym i do basenu"
+note = "Windy w budynku głównym i winda przy wejściu do basenu; o pozostałych budynkach strona nie pisze."
+source = "hotel_website"
+url = "https://www.mitsis.com/en/hotels/rodos-maris/service/services"
+verified_at = 2026-11-05
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { distance_m = 30 }
+short = "Plaża ok. 30 m od hotelu"
+note = "Według hotelu plaża jest ok. 30 m od hotelu."
+source = "hotel_website"
+url = "https://www.mitsis.com/en/hotels/rodos-maris"
+verified_at = 2026-11-05
+
+[[feature]]
+key = "parking"
+value = { free = true }
+short = "Bezpłatny"
+note = "Bezpłatny parking."
+source = "hotel_website"
+url = "https://www.mitsis.com/en/hotels/rodos-maris/service/services"
+verified_at = 2026-11-05
+
+[[feature]]
+key = "transfer"
+value = { from_airport = true, paid = true, airport_km = 55 }
+short = "Z lotniska, płatny"
+note = "Lotnisko na Rodos jest ok. 55 km od hotelu (wg hotelu). Transfer z lotniska jest płatny; ceny strona nie podaje."
+source = "hotel_website"
+url = "https://www.mitsis.com/en/hotels/rodos-maris/service/services"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "airport"
+from = "RHO"
+mode = "car"
+minutes = 75
+note = "63 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=36.4054%2C28.0862%3B36.0542%2C27.9718"
+verified_at = 2026-11-05

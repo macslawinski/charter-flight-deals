@@ -41,7 +41,11 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       `find-playgrounds` skill for other cities.
 - [ ] U (phone, optional): Mlecz hours (regulamin 10–19 daily vs. OSM Fr–Su until 20) and Mlecz under-6-month
       discount (page shows −70% / −100% ambiguously); Bawimy hours (OSM only).
-- [ ] C: Rodos + Crete-Heraklion hotels (PLAN.md B5), facts from hotel websites only.
+- [x] C: Rodos + Crete-Heraklion hotels, first batch (2026-11-05, hotel websites only, robots.txt checked):
+      Mitsis Rodos Village, Mitsis Rodos Maris (Rodos), Mitsis Selection Rinela, Lyttos Beach (Heraklion);
+      car time from the airport (OSRM). Skipped: Lindos Imperial and Aldemar Knossos Royal (no working
+      official site found), Kipriotis Village (Kos, not our place). None states a free stay for 0–3.
+- [ ] C (optional): more Greek hotels once the first batch is reviewed (more family resorts sold by r.pl/Itaka).
 - [ ] C: project skill `reverify-child-rules` so re-checks of rules are repeatable.
 - [ ] C: venues migration (DB) once the venue format is stable.
 - [ ] Photos (optional): only with your permission per download (e.g. Unsplash), licence noted.

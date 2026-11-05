@@ -1949,6 +1949,683 @@
    "place": "grzybowo",
    "slug": "saltic-resort-spa-grzybowo",
    "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "HER",
+     "from_kind": "airport",
+     "minutes": 25,
+     "mode": "car",
+     "note": "20 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=35.3397%2C25.1803%3B35.3352%2C25.3525",
+     "verified_at": "2026-11-05"
+    }
+   ],
+   "address": "Hersonissos, 700 14 Kreta",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko dla niemowlęcia na liście usług hotelu; ceny strona nie podaje.",
+     "short": "Jest łóżeczko",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.lyttosbeach.gr/services-facilities/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacz do butelek na liście usług hotelu.",
+     "short": "Jest podgrzewacz",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.lyttosbeach.gr/services-facilities/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Osobny bufet dla dzieci. O jedzeniu dla niemowląt strona nie wspomina.",
+     "short": "Bufet dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.lyttosbeach.gr/services-facilities/",
+     "value": {
+      "available": true,
+      "kids_buffet": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "stroller_rental",
+     "note": "Wózek dziecięcy do dyspozycji, o ile jest wolny; czy jest płatny, strona nie podaje.",
+     "short": "Wózek, jeśli jest wolny",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.lyttosbeach.gr/services-facilities/",
+     "value": {
+      "available": true,
+      "subject_to_availability": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "3+",
+     "key": "kids_animation",
+     "note": "Klub dziecięcy codziennie 9:00–19:00 dla dzieci 4–12 lat, pod opieką personelu. Dzieci poniżej 4 lat mogą przyjść z rodzicem albo własną opiekunką.",
+     "short": "Klub 4–12 lat, 9:00–19:00; młodsze z opiekunem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.lyttosbeach.gr/family/kids-club/",
+     "value": {
+      "available": true,
+      "close": "19:00",
+      "max_age_years": 12,
+      "min_age_years": 4,
+      "open": "09:00",
+      "supervised": true,
+      "under_4_with_parent": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Plac zabaw Lyttopia z opiekunami na miejscu; godzin i wieku strona nie podaje.",
+     "short": "Plac zabaw z opiekunami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.lyttosbeach.gr/family/lyttopia-playground/",
+     "value": {
+      "available": true,
+      "supervised": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "kids_pool",
+     "note": "Baseny dla dzieci oraz hotelowy aquapark z ośmioma zjeżdżalniami. Wieku, godzin i podgrzewania strona nie podaje.",
+     "short": "Baseny dla dzieci i aquapark (8 zjeżdżalni)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.lyttosbeach.gr/family/waterpark/",
+     "value": {
+      "available": true,
+      "waterpark": true,
+      "waterpark_slides": 8
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking dla gości; czy jest płatny, strona nie podaje.",
+     "short": "Jest parking",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.lyttosbeach.gr/services-facilities/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-05"
+    }
+   ],
+   "lat": 35.335196,
+   "lon": 25.352468,
+   "name": "Lyttos Beach",
+   "official_url": "https://www.lyttosbeach.gr/",
+   "place": "kreta-heraklion",
+   "slug": "lyttos-beach",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "HER",
+     "from_kind": "airport",
+     "minutes": 15,
+     "mode": "car",
+     "note": "11 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=35.3397%2C25.1803%3B35.3309%2C25.2634",
+     "verified_at": "2026-11-05"
+    }
+   ],
+   "address": "Kokkini Hani, 715 00 Kreta",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko dla niemowlęcia; ceny strona nie podaje.",
+     "short": "Jest łóżeczko",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rinela-beach/recreation/for-kids",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka do karmienia we wszystkich restauracjach.",
+     "short": "We wszystkich restauracjach",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rinela-beach/recreation/for-kids",
+     "value": {
+      "available": true,
+      "where": "all_restaurants"
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacz do butelek w bezpłatnym zestawie dla niemowląt na życzenie (razem ze sterylizatorem, elektroniczną nianią i nocnikiem).",
+     "short": "Na życzenie, bezpłatnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rinela-beach/recreation/for-kids",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "baby_monitor",
+     "note": "Elektroniczna niania w bezpłatnym zestawie dla niemowląt na życzenie.",
+     "short": "Na życzenie, bezpłatnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rinela-beach/recreation/for-kids",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Nocnik w bezpłatnym zestawie dla niemowląt na życzenie.",
+     "short": "Na życzenie, bezpłatnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rinela-beach/recreation/for-kids",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "3+",
+     "key": "kids_animation",
+     "note": "Klub dziecięcy Mitsis Storyland dla dzieci 4–12 lat, 10:00–18:00. Dziecko poniżej 4 lat może przyjść tylko z rodzicem. Od maja 2026 klub ma też salę w budynku (180 m²).",
+     "short": "Klub 4–12 lat, 10:00–18:00; młodsze z rodzicem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rinela-beach/recreation/for-kids",
+     "value": {
+      "available": true,
+      "close": "18:00",
+      "max_age_years": 12,
+      "min_age_years": 4,
+      "open": "10:00",
+      "under_4_with_parent": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Plac zabaw czynny 10:00–18:00; rodzic musi zapisać wejście i wyjście dziecka. Od maja 2026 nowy plac zabaw (130 m²).",
+     "short": "10:00–18:00, wpis rodzica przy wejściu",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rinela-beach/recreation/for-kids",
+     "value": {
+      "available": true,
+      "close": "18:00",
+      "open": "10:00",
+      "parent_check_in": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Basen dla najmłodszych czynny 8:00–20:00, pilnowany przez wykwalifikowany personel. Baseny w hotelu nie są podgrzewane.",
+     "short": "Brodzik 8:00–20:00, z opieką, niepodgrzewany",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rinela-beach/recreation/for-kids",
+     "value": {
+      "available": true,
+      "close": "20:00",
+      "heated": false,
+      "open": "08:00",
+      "supervised": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "kids_pool",
+     "note": "Dwa baseny dla dzieci z dwiema małymi zjeżdżalniami, dla 4–12 lat, 10:00–18:00, z ratownikiem. Od maja 2026 także Splash Park (350 m², 3 zjeżdżalnie). Baseny nie są podgrzewane.",
+     "short": "2 baseny z minizjeżdżalniami, 4–12 lat",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rinela-beach/recreation/for-kids",
+     "value": {
+      "available": true,
+      "close": "18:00",
+      "count": 2,
+      "heated": false,
+      "lifeguard": true,
+      "max_age_years": 12,
+      "min_age_years": 4,
+      "mini_slides": 2,
+      "open": "10:00"
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Według hotelu leży bezpośrednio przy plaży.",
+     "short": "Hotel przy samej plaży",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rinela-beach",
+     "value": {
+      "on_beach": true
+     },
+     "verified_at": "2026-11-05"
+    }
+   ],
+   "lat": 35.330857,
+   "lon": 25.263414,
+   "name": "Mitsis Selection Rinela",
+   "official_url": "https://www.mitsis.com/en/hotels/rinela-beach",
+   "place": "kreta-heraklion",
+   "slug": "mitsis-selection-rinela",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "RHO",
+     "from_kind": "airport",
+     "minutes": 75,
+     "mode": "car",
+     "note": "63 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=36.4054%2C28.0862%3B36.0542%2C27.9718",
+     "verified_at": "2026-11-05"
+    }
+   ],
+   "address": "Kiotari, 851 09 Rodos",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko dla niemowlęcia; ceny strona nie podaje.",
+     "short": "Jest łóżeczko",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rodos-maris/recreation/for-kids",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka na liście usług hotelu.",
+     "short": "Jest wanienka",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rodos-maris/service/services",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka do karmienia we wszystkich restauracjach.",
+     "short": "We wszystkich restauracjach",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rodos-maris/recreation/for-kids",
+     "value": {
+      "available": true,
+      "where": "all_restaurants"
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Nocnik na liście usług hotelu.",
+     "short": "Jest nocnik",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rodos-maris/service/services",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "baby_monitor",
+     "note": "Elektroniczna niania na liście usług hotelu.",
+     "short": "Jest elektroniczna niania",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rodos-maris/service/services",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "stroller_rental",
+     "note": "Wózki dziecięce na liście usług hotelu; czy są płatne, strona nie podaje.",
+     "short": "Wózki w ofercie hotelu",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rodos-maris/service/services",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "3+",
+     "key": "kids_animation",
+     "note": "Klub dziecięcy Mitsis Storyland dla dzieci 4–12 lat, 10:00–18:00. Dziecko poniżej 4 lat może przyjść tylko z rodzicem.",
+     "short": "Klub 4–12 lat, 10:00–18:00; młodsze z rodzicem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rodos-maris/recreation/for-kids",
+     "value": {
+      "available": true,
+      "close": "18:00",
+      "max_age_years": 12,
+      "min_age_years": 4,
+      "open": "10:00",
+      "under_4_with_parent": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Plac zabaw dla dzieci; godzin i wieku strona nie podaje.",
+     "short": "Jest plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rodos-maris/recreation/for-kids",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "kids_pool",
+     "note": "Basen dla dzieci ze słodką wodą i zjeżdżalnie wodne. Podgrzewania ani wieku strona nie podaje.",
+     "short": "Basen dla dzieci ze zjeżdżalniami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rodos-maris/recreation/for-kids",
+     "value": {
+      "available": true,
+      "fresh_water": true,
+      "water_slides": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "lift",
+     "note": "Windy w budynku głównym i winda przy wejściu do basenu; o pozostałych budynkach strona nie pisze.",
+     "short": "W budynku głównym i do basenu",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rodos-maris/service/services",
+     "value": {
+      "available": true,
+      "pool_lift": true,
+      "where": "main_building"
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Według hotelu plaża jest ok. 30 m od hotelu.",
+     "short": "Plaża ok. 30 m od hotelu",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rodos-maris",
+     "value": {
+      "distance_m": 30
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Bezpłatny parking.",
+     "short": "Bezpłatny",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rodos-maris/service/services",
+     "value": {
+      "free": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "transfer",
+     "note": "Lotnisko na Rodos jest ok. 55 km od hotelu (wg hotelu). Transfer z lotniska jest płatny; ceny strona nie podaje.",
+     "short": "Z lotniska, płatny",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rodos-maris/service/services",
+     "value": {
+      "airport_km": 55,
+      "from_airport": true,
+      "paid": true
+     },
+     "verified_at": "2026-11-05"
+    }
+   ],
+   "lat": 36.054225,
+   "lon": 27.971797,
+   "name": "Mitsis Rodos Maris",
+   "official_url": "https://www.mitsis.com/en/hotels/rodos-maris",
+   "place": "rodos",
+   "slug": "mitsis-rodos-maris",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "RHO",
+     "from_kind": "airport",
+     "minutes": 75,
+     "mode": "car",
+     "note": "63 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=36.4054%2C28.0862%3B36.0562%2C27.9738",
+     "verified_at": "2026-11-05"
+    }
+   ],
+   "address": "Kiotari, 851 09 Rodos",
+   "features": [
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka do karmienia w restauracji. Inne rzeczy dla niemowląt hotel daje na życzenie, ale strona nie wymienia jakie.",
+     "short": "W restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rodos-village/recreation/for-kids",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "baby_monitor",
+     "note": "Elektroniczna niania na życzenie.",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rodos-village/service/services",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "stroller_rental",
+     "note": "Wózek dziecięcy na życzenie; czy jest płatny, strona nie podaje.",
+     "short": "Wózek na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rodos-village/service/services",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "3+",
+     "key": "kids_animation",
+     "note": "Klub dziecięcy Mitsis Storyland dla dzieci 4–12 lat, 10:00–17:00, z minidyskoteką. Dziecko poniżej 4 lat może przyjść tylko z rodzicem.",
+     "short": "Klub 4–12 lat, 10:00–17:00; młodsze z rodzicem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rodos-village/recreation/for-kids",
+     "value": {
+      "available": true,
+      "close": "17:00",
+      "max_age_years": 12,
+      "min_age_years": 4,
+      "open": "10:00",
+      "under_4_with_parent": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "kids_pool",
+     "note": "Dwa osobne baseny dla dzieci ze słodką wodą. Do tego Splash Park z trzema basenami podzielonymi według wieku, z prysznicami, windą zewnętrzną, leżakami i parasolami. Podgrzewania strona nie podaje.",
+     "short": "2 baseny dla dzieci + Splash Park",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rodos-village/recreation/for-kids",
+     "value": {
+      "available": true,
+      "count": 2,
+      "fresh_water": true,
+      "splash_park": true,
+      "splash_park_pools": 3
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "lift",
+     "note": "Windy w budynku głównym; o pozostałych budynkach strona nie pisze.",
+     "short": "W budynku głównym",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rodos-village/service/services",
+     "value": {
+      "available": true,
+      "where": "main_building"
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Według hotelu plaża jest ok. 100 m od hotelu.",
+     "short": "Plaża ok. 100 m od hotelu",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rodos-village",
+     "value": {
+      "distance_m": 100
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Bezpłatny parking.",
+     "short": "Bezpłatny",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rodos-village/service/services",
+     "value": {
+      "free": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "transfer",
+     "note": "Lotnisko na Rodos jest ok. 55 km od hotelu (wg hotelu). Transfer z lotniska jest płatny; bezpłatny tylko przy rezerwacji bezpośrednio na stronie hotelu na co najmniej 7 nocy i za co najmniej 2500 €.",
+     "short": "Z lotniska, płatny",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mitsis.com/en/hotels/rodos-village/service/services",
+     "value": {
+      "airport_km": 55,
+      "free_if": "direct online booking, 7+ nights, 2500+ EUR",
+      "from_airport": true,
+      "paid": true
+     },
+     "verified_at": "2026-11-05"
+    }
+   ],
+   "lat": 36.056159,
+   "lon": 27.973765,
+   "name": "Mitsis Rodos Village",
+   "official_url": "https://www.mitsis.com/en/hotels/rodos-village",
+   "place": "rodos",
+   "slug": "mitsis-rodos-village",
+   "status": "draft"
   }
  ],
  "places": [
