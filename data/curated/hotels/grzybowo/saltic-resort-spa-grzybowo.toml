@@ -1,11 +1,19 @@
 # Facts from the hotel's own website (robots.txt allows all, checked 2026-11-04). Written in our words.
 # Not stated on the site (so not recorded yet): lift/stroller access, shade, stroller rental, baby
-# monitor, baby food, playroom minimum age or supervision, outdoor pool season. Drive/train times: TODO.
+# monitor, baby food, playroom minimum age or supervision, outdoor pool season.
+#
+# Access (checked 2026-11-05):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12 (winter timetable), departures 05:00-14:00; fastest
+#   connection with at most one change, to Kołobrzeg station. Direct trains noted when they exist.
+#   Station -> hotel: ~6 km, ~13-15 min by taxi or the hotel's paid transfer (hotel FAQ / transport page).
 slug = "saltic-resort-spa-grzybowo"
 place = "grzybowo"
 name = "Saltic Resort & SPA Grzybowo"
 official_url = "https://www.hotelsaltic.pl/grzybowo"
 address = "ul. Nadmorska 36C, 78-132 Grzybowo"
+lat = 54.1653895  # from the hotel's own "Wyznacz trasę" map link
+lon = 15.5045583
 status = "draft"
 
 [[feature]]
@@ -135,3 +143,113 @@ note = "Parking płatny, 90 zł za dobę."
 source = "hotel_website"
 url = "https://www.hotelsaltic.pl/grzybowo/hotel/faq"
 verified_at = 2026-11-04
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 170
+note = "Ok. 250 km, bez korków i postojów."
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.1654%2C15.5046"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 255
+note = "Ok. 380 km, bez korków i postojów."
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.1654%2C15.5046"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 350
+note = "Ok. 510 km, bez korków i postojów."
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.1654%2C15.5046"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 390
+note = "Ok. 590 km, bez korków i postojów."
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.1654%2C15.5046"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 440
+note = "Ok. 690 km, bez korków i postojów."
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.1654%2C15.5046"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 495
+note = "Ok. 760 km, bez korków i postojów."
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.1654%2C15.5046"
+verified_at = 2026-11-05
+
+# --- Access: train to Kołobrzeg station (rozklad-pkp.pl, 2026-11-12) ------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "train"
+minutes = 250
+note = "Z 1 przesiadką, do stacji Kołobrzeg (stamtąd ok. 15 min autem). Bezpośredni: 4 h 42 min."
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 252
+note = "Bezpośredni, do stacji Kołobrzeg (stamtąd ok. 15 min autem)."
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 329
+note = "Z 1 przesiadką, do stacji Kołobrzeg (stamtąd ok. 15 min autem). Bezpośredni: 5 h 59 min."
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 400
+note = "Z 1 przesiadką, do stacji Kołobrzeg (stamtąd ok. 15 min autem). Bezpośredni: 7 h 08 min."
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 480
+note = "Z 1 przesiadką, do stacji Kołobrzeg (stamtąd ok. 15 min autem). Bezpośredni: 8 h 52 min."
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 555
+note = "Z 1 przesiadką, do stacji Kołobrzeg (stamtąd ok. 15 min autem). Bezpośredni: 9 h 21 min."
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05

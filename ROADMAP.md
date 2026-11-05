@@ -27,7 +27,8 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
 - [ ] C: donation link + ad slot placeholder on A (definition of done), still private.
 
 ## Step 4. B content, in parallel with A's waiting time
-- [ ] C: Saltic access times by car and train from the 6 cities.
+- [x] C: Saltic access times by car and train from the 6 cities (2026-11-05: car = OSRM free flow,
+      train = rozklad-pkp.pl to Kołobrzeg station, ≤1 change; page shows both with source).
 - [ ] C: more carriers' child rules: Corendon, Aegean, Electra, Neos, Nouvelair, World2Fly, Air Cairo.
 - [ ] C: remaining Poznań playgrounds (Kinderlandia, Monsterkowo, Bawimy, Smålandia) where a price list exists;
       resolve the two "do potwierdzenia" facts (Fikołki Karta Malucha, Mlecz hours) — U may phone them.
