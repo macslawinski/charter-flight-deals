@@ -32,8 +32,11 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
 - [x] C: more carriers' child rules: Corendon, Aegean, Electra, Neos, Nouvelair, World2Fly, Air Cairo
       (2026-11-05, official pages only; migration 011 adds NO/2W/3E to `airlines`). Infant fee is not
       published by 6 of the 7 (only Aegean: 90% off in Family fare): the site says "check with the operator".
-- [ ] C: remaining Poznań playgrounds (Kinderlandia, Monsterkowo, Bawimy, Smålandia) where a price list exists;
-      resolve the two "do potwierdzenia" facts (Fikołki Karta Malucha, Mlecz hours) — U may phone them.
+- [x] C: remaining Poznań playgrounds (2026-11-05): added Bawimy Jeżyce and Smålandia (IKEA, 3–10 lat).
+      Kinderlandia is now "Pobawimy się?" (Galeria A2) and Monsterkowo (monsterkowo.pl is a shop): no own site
+      with prices, skipped. Fikołki Karta Malucha resolved from /cennik/ (both clubs).
+- [ ] U (phone, optional): Mlecz hours (regulamin 10–19 daily vs. OSM Fr–Su until 20) and Mlecz under-6-month
+      discount (page shows −70% / −100% ambiguously); Bawimy hours (OSM only).
 - [ ] C: Rodos + Crete-Heraklion hotels (PLAN.md B5), facts from hotel websites only.
 - [ ] C: project skill `reverify-child-rules` so re-checks of rules are repeatable.
 - [ ] C: venues migration (DB) once the venue format is stable.

@@ -39,6 +39,16 @@ url = "https://fikolki.pl/cennik/"
 verified_at = 2026-11-04
 
 [[feature]]
+key = "infant_free"
+age_band = "0-2"
+value = { card = "karta_malucha_basic", pln_per_month_with_consents = 0, pln_per_month = 29.99, activation_pln = 19.99, weekdays_until = "16:00", plus_unlimited_pln_per_month_with_consents = 19.99 }
+short = "Do 2 lat gratis z Kartą Malucha (pon.–pt.)"
+note = "Karta Malucha Basic dla dzieci do 24 miesięcy: wstęp pon.–pt. do 16:00 za 0 zł miesięcznie, jeśli zgodzisz się na marketing (bez zgód 29,99 zł), plus jednorazowo 19,99 zł za aktywację. Wersja Plus, bez limitu godzin, kosztuje 19,99 zł miesięcznie ze zgodami."
+source = "venue_website"
+url = "https://fikolki.pl/cennik/"
+verified_at = 2026-11-05
+
+[[feature]]
 key = "opening_hours"
 value = { osm = "Mo-Sa 10:00-21:00; Su 10:00-19:00" }
 short = "Pon.–sob. 10–21, niedz. 10–19"

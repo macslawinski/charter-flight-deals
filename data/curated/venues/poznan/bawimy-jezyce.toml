@@ -1,0 +1,71 @@
+# Discovered via OpenStreetMap (node/12545941282 "Bawialnia Bawimy", © OpenStreetMap contributors,
+# ODbL); facts from the venue's own pages (home, /dla-odwiedzajacych/, /warsztaty/), read 2026-11-05.
+# Written in our words. Second location on Polanka (ul. Sowia 7/U3) has the same price list; not
+# added as it is not in OSM yet. Hours are not on the site: taken from OSM, kept as to_confirm.
+# Not stated: max age, socks rule, changing table, parking, adult price.
+slug = "bawimy-jezyce"
+city = "poznan"
+name = "Bawimy Jeżyce"
+official_url = "https://bawialniabawimy.pl/"
+address = "ul. Jana Henryka Dąbrowskiego 89/U5, Poznań"
+lat = 52.4147167
+lon = 16.8972469
+osm = "node/12545941282"
+status = "draft"
+
+[[feature]]
+key = "age_range"
+value = { min = "infant" }
+short = "Od niemowlaka, w duchu Montessori"
+note = "Bawialnia inspirowana pedagogiką Montessori: wspinaczki, zjeżdżalnie, zakamarki i kąciki do wyciszenia. Strona nie podaje górnej granicy wieku."
+source = "venue_website"
+url = "https://bawialniabawimy.pl/"
+verified_at = 2026-11-05
+
+[[feature]]
+key = "toddler_zone"
+value = { available = true, soft_mats = true }
+short = "Maty i zabawki dla niemowląt"
+note = "Zawsze dostępne są miękkie maty i zabawki dla niemowlaków, żeby najmłodsi mieli własną przestrzeń."
+source = "venue_website"
+url = "https://bawialniabawimy.pl/"
+verified_at = 2026-11-05
+
+[[feature]]
+key = "infant_free"
+age_band = "0-1"
+value = { max_months = 6, price = "coffee" }
+short = "Do 6 miesięcy w cenie kawy"
+note = "Dziecko do 6 miesięcy bawi się w cenie kawy."
+source = "venue_website"
+url = "https://bawialniabawimy.pl/dla-odwiedzajacych/"
+verified_at = 2026-11-05
+
+[[feature]]
+key = "price_child"
+value = { weekday_1h_pln = 40, weekend_1h_pln = 45, weekday_2h_pln = 65, weekend_2h_pln = 69, weekday_no_limit_pln = 80, weekend_no_limit_pln = 90, weekday_day_pln = 85, weekend_day_pln = 105, app_weekday_1h_pln = 35, app_weekday_pln_per_min = 0.7, app_weekend_pln_per_min = 0.85, sibling_discount_pct = 15 }
+short = "40 zł za godzinę (pon.–czw.)"
+note = "Pon.–czw.: 40 zł za godzinę, 65 zł za 2 godziny, 80 zł bez limitu. Pt.–niedz. i święta: 45, 69 i 90 zł. Taniej w aplikacji Rewardo (np. 35 zł za godzinę albo 0,70 zł za minutę). Rodzeństwo: 15% zniżki na drugie i kolejne dziecko."
+source = "venue_website"
+url = "https://bawialniabawimy.pl/dla-odwiedzajacych/"
+verified_at = 2026-11-05
+
+[[feature]]
+key = "toddler_classes"
+age_band = "0-3"
+value = { available = true, method = "Gordon" }
+short = "Umuzykalnianie metodą Gordona"
+note = "Zajęcia muzyczne metodą Gordona prowadzone także dla niemowląt i małych dzieci."
+source = "venue_website"
+url = "https://bawialniabawimy.pl/warsztaty/"
+verified_at = 2026-11-05
+
+[[feature]]
+key = "opening_hours"
+value = { osm = "Mo,Tu,Th,Fr 10:00-19:00; We 10:00-17:30; Sa 11:30-14:00; Su 09:00-19:00" }
+short = "Zwykle 10–19, w środy do 17:30"
+note = "Według OpenStreetMap: pon., wt., czw., pt. 10:00–19:00, śr. 10:00–17:30, sob. 11:30–14:00, niedz. 9:00–19:00. Strona bawialni nie podaje godzin, więc sprawdź przed wyjściem."
+source = "osm"
+url = "https://www.openstreetmap.org/node/12545941282"
+verified_at = 2026-11-05
+to_confirm = true

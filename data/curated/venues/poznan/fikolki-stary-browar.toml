@@ -1,6 +1,6 @@
 # Discovered via OpenStreetMap (way/1504245766, © OpenStreetMap contributors, ODbL); facts from the
 # venue's own pages (/stary-browar/, /cennik/), read 2026-11-04. Written in our words.
-# The free-entry sentence for under-2s on the club page is garbled: kept as to_confirm.
+# Karta Malucha (free entry for under-2s) re-read on /cennik/ 2026-11-05: the plan table settles it.
 # Not stated: socks rule, changing table, adult price.
 slug = "fikolki-stary-browar"
 city = "poznan"
@@ -42,13 +42,12 @@ verified_at = 2026-11-04
 [[feature]]
 key = "infant_free"
 age_band = "0-2"
-value = { free_with_card = "karta_malucha" }
-short = "Karta Malucha dla dzieci do 2 i do 3 lat"
-note = "Sieć ma Kartę Malucha (wersje 0–2 i 0–3 lata). Strona klubu pisze, że z nią dzieci do 2 lat bawią się za darmo, ale zdanie jest niejasne: zapytaj w klubie."
+value = { card = "karta_malucha_basic", pln_per_month_with_consents = 0, pln_per_month = 29.99, activation_pln = 19.99, weekdays_until = "16:00", plus_unlimited_pln_per_month_with_consents = 19.99 }
+short = "Do 2 lat gratis z Kartą Malucha (pon.–pt.)"
+note = "Karta Malucha Basic dla dzieci do 24 miesięcy: wstęp pon.–pt. do 16:00 za 0 zł miesięcznie, jeśli zgodzisz się na marketing (bez zgód 29,99 zł), plus jednorazowo 19,99 zł za aktywację. Wersja Plus, bez limitu godzin, kosztuje 19,99 zł miesięcznie ze zgodami."
 source = "venue_website"
 url = "https://fikolki.pl/cennik/"
-verified_at = 2026-11-04
-to_confirm = true
+verified_at = 2026-11-05
 
 [[feature]]
 key = "toddler_classes"

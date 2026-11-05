@@ -2014,6 +2014,111 @@
  ],
  "venues": [
   {
+   "address": "ul. Jana Henryka Dąbrowskiego 89/U5, Poznań",
+   "city": "poznan",
+   "features": [
+    {
+     "age_band": null,
+     "key": "age_range",
+     "note": "Bawialnia inspirowana pedagogiką Montessori: wspinaczki, zjeżdżalnie, zakamarki i kąciki do wyciszenia. Strona nie podaje górnej granicy wieku.",
+     "short": "Od niemowlaka, w duchu Montessori",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://bawialniabawimy.pl/",
+     "value": {
+      "min": "infant"
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "toddler_zone",
+     "note": "Zawsze dostępne są miękkie maty i zabawki dla niemowlaków, żeby najmłodsi mieli własną przestrzeń.",
+     "short": "Maty i zabawki dla niemowląt",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://bawialniabawimy.pl/",
+     "value": {
+      "available": true,
+      "soft_mats": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-1",
+     "key": "infant_free",
+     "note": "Dziecko do 6 miesięcy bawi się w cenie kawy.",
+     "short": "Do 6 miesięcy w cenie kawy",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://bawialniabawimy.pl/dla-odwiedzajacych/",
+     "value": {
+      "max_months": 6,
+      "price": "coffee"
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "price_child",
+     "note": "Pon.–czw.: 40 zł za godzinę, 65 zł za 2 godziny, 80 zł bez limitu. Pt.–niedz. i święta: 45, 69 i 90 zł. Taniej w aplikacji Rewardo (np. 35 zł za godzinę albo 0,70 zł za minutę). Rodzeństwo: 15% zniżki na drugie i kolejne dziecko.",
+     "short": "40 zł za godzinę (pon.–czw.)",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://bawialniabawimy.pl/dla-odwiedzajacych/",
+     "value": {
+      "app_weekday_1h_pln": 35,
+      "app_weekday_pln_per_min": 0.7,
+      "app_weekend_pln_per_min": 0.85,
+      "sibling_discount_pct": 15,
+      "weekday_1h_pln": 40,
+      "weekday_2h_pln": 65,
+      "weekday_day_pln": 85,
+      "weekday_no_limit_pln": 80,
+      "weekend_1h_pln": 45,
+      "weekend_2h_pln": 69,
+      "weekend_day_pln": 105,
+      "weekend_no_limit_pln": 90
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-3",
+     "key": "toddler_classes",
+     "note": "Zajęcia muzyczne metodą Gordona prowadzone także dla niemowląt i małych dzieci.",
+     "short": "Umuzykalnianie metodą Gordona",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://bawialniabawimy.pl/warsztaty/",
+     "value": {
+      "available": true,
+      "method": "Gordon"
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "opening_hours",
+     "note": "Według OpenStreetMap: pon., wt., czw., pt. 10:00–19:00, śr. 10:00–17:30, sob. 11:30–14:00, niedz. 9:00–19:00. Strona bawialni nie podaje godzin, więc sprawdź przed wyjściem.",
+     "short": "Zwykle 10–19, w środy do 17:30",
+     "source": "osm",
+     "to_confirm": true,
+     "url": "https://www.openstreetmap.org/node/12545941282",
+     "value": {
+      "osm": "Mo,Tu,Th,Fr 10:00-19:00; We 10:00-17:30; Sa 11:30-14:00; Su 09:00-19:00"
+     },
+     "verified_at": "2026-11-05"
+    }
+   ],
+   "lat": 52.4147167,
+   "lon": 16.8972469,
+   "name": "Bawimy Jeżyce",
+   "official_url": "https://bawialniabawimy.pl/",
+   "osm": "node/12545941282",
+   "slug": "bawimy-jezyce",
+   "status": "draft"
+  },
+  {
    "address": "ul. Smardzewska, 60-161 Poznań",
    "city": "poznan",
    "features": [
@@ -2106,6 +2211,24 @@
       "weekend_pln_per_min": 0.9
      },
      "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-2",
+     "key": "infant_free",
+     "note": "Karta Malucha Basic dla dzieci do 24 miesięcy: wstęp pon.–pt. do 16:00 za 0 zł miesięcznie, jeśli zgodzisz się na marketing (bez zgód 29,99 zł), plus jednorazowo 19,99 zł za aktywację. Wersja Plus, bez limitu godzin, kosztuje 19,99 zł miesięcznie ze zgodami.",
+     "short": "Do 2 lat gratis z Kartą Malucha (pon.–pt.)",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://fikolki.pl/cennik/",
+     "value": {
+      "activation_pln": 19.99,
+      "card": "karta_malucha_basic",
+      "pln_per_month": 29.99,
+      "pln_per_month_with_consents": 0,
+      "plus_unlimited_pln_per_month_with_consents": 19.99,
+      "weekdays_until": "16:00"
+     },
+     "verified_at": "2026-11-05"
     },
     {
      "age_band": null,
@@ -2207,15 +2330,20 @@
     {
      "age_band": "0-2",
      "key": "infant_free",
-     "note": "Sieć ma Kartę Malucha (wersje 0–2 i 0–3 lata). Strona klubu pisze, że z nią dzieci do 2 lat bawią się za darmo, ale zdanie jest niejasne: zapytaj w klubie.",
-     "short": "Karta Malucha dla dzieci do 2 i do 3 lat",
+     "note": "Karta Malucha Basic dla dzieci do 24 miesięcy: wstęp pon.–pt. do 16:00 za 0 zł miesięcznie, jeśli zgodzisz się na marketing (bez zgód 29,99 zł), plus jednorazowo 19,99 zł za aktywację. Wersja Plus, bez limitu godzin, kosztuje 19,99 zł miesięcznie ze zgodami.",
+     "short": "Do 2 lat gratis z Kartą Malucha (pon.–pt.)",
      "source": "venue_website",
-     "to_confirm": true,
+     "to_confirm": false,
      "url": "https://fikolki.pl/cennik/",
      "value": {
-      "free_with_card": "karta_malucha"
+      "activation_pln": 19.99,
+      "card": "karta_malucha_basic",
+      "pln_per_month": 29.99,
+      "pln_per_month_with_consents": 0,
+      "plus_unlimited_pln_per_month_with_consents": 19.99,
+      "weekdays_until": "16:00"
      },
-     "verified_at": "2026-11-04"
+     "verified_at": "2026-11-05"
     },
     {
      "age_band": "0-3",
@@ -2425,6 +2553,38 @@
     },
     {
      "age_band": null,
+     "key": "price_child",
+     "note": "1 godzina 30 zł, 2 godziny 45 zł, bez limitu 55 zł. W weekendy i święta: 35, 50 i 65 zł.",
+     "short": "30 zł za godzinę (w tygodniu)",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://bawialniamlecz.pl/bawialnia-kawiarnia/",
+     "value": {
+      "weekday_1h_pln": 30,
+      "weekday_2h_pln": 45,
+      "weekday_no_limit_pln": 55,
+      "weekend_1h_pln": 35,
+      "weekend_2h_pln": 50,
+      "weekend_no_limit_pln": 65
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-1",
+     "key": "infant_free",
+     "note": "Dzieci 6–12 miesięcy płacą o 50% mniej. Dla dzieci do 6 miesięcy cennik pokazuje zniżkę 70% albo 100% (układ strony jest niejasny), więc zapytaj na miejscu.",
+     "short": "Niemowlęta taniej: 6–12 mies. −50%",
+     "source": "venue_website",
+     "to_confirm": true,
+     "url": "https://bawialniamlecz.pl/bawialnia-kawiarnia/",
+     "value": {
+      "discount_pct_6_12_months": 50,
+      "discount_pct_under_6_months": "70 or 100"
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
      "key": "opening_hours",
      "note": "Regulamin podaje 10:00–19:00 codziennie. W OpenStreetMap w piątki–niedziele do 20:00, więc sprawdź przed wyjściem.",
      "short": "Codziennie 10:00–19:00",
@@ -2484,6 +2644,77 @@
    "official_url": "https://bawialniamlecz.pl/",
    "osm": "node/12492719739",
    "slug": "mlecz",
+   "status": "draft"
+  },
+  {
+   "address": "ul. Szwedzka 10 (IKEA), Poznań",
+   "city": "poznan",
+   "features": [
+    {
+     "age_band": null,
+     "key": "age_range",
+     "note": "Pokój zabaw przyjmuje dzieci od ukończonych 3 do 10 lat. Dziecko musi się swobodnie porozumiewać z personelem i samo korzystać z toalety. Personel może poprosić o dokument z datą urodzenia.",
+     "short": "Od 3 do 10 lat",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://www.ikea.com/pl/pl/files/pdf/76/64/76645b88/ikeapoznan-regulamin-smaland.pdf",
+     "value": {
+      "independent_toilet": true,
+      "max_years": 10,
+      "min_years": 3
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "supervision",
+     "note": "Dzieckiem opiekuje się personel, najdłużej godzinę. Opiekun wypełnia formularz, zostaje w sklepie i odbiera telefon w czasie pobytu dziecka.",
+     "short": "Personel pilnuje do 1 godziny",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://www.ikea.com/pl/pl/files/pdf/76/64/76645b88/ikeapoznan-regulamin-smaland.pdf",
+     "value": {
+      "max_minutes": 60,
+      "parent_stays_in_store": true,
+      "phone_required": true,
+      "staff": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "socks_required",
+     "note": "Dzieci wchodzą w skarpetkach, bez butów i okrycia wierzchniego. Nie wolno wnosić telefonów, zabawek ani jedzenia.",
+     "short": "Dzieci w skarpetkach, bez butów",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://www.ikea.com/pl/pl/files/pdf/76/64/76645b88/ikeapoznan-regulamin-smaland.pdf",
+     "value": {
+      "applies_to": "children",
+      "required": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "opening_hours",
+     "note": "Poniedziałek–piątek 14:00–20:00, sobota 9:00–20:30 (według strony sklepu IKEA Poznań).",
+     "short": "Pon.–pt. 14–20, sob. 9–20:30",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://www.ikea.com/pl/pl/stores/poznan/",
+     "value": {
+      "text": "pon.-pt. 14:00-20:00, sob. 09:00-20:30"
+     },
+     "verified_at": "2026-11-05"
+    }
+   ],
+   "lat": 52.3829292,
+   "lon": 16.9879961,
+   "name": "Smålandia w IKEA Poznań",
+   "official_url": "https://www.ikea.com/pl/pl/stores/poznan/",
+   "osm": "node/9945645798",
+   "slug": "smalandia-ikea",
    "status": "draft"
   }
  ]
