@@ -37,7 +37,7 @@ FEATURE_KEYS = {
     "cot", "child_free_stay", "baby_bath", "bottle_warmer", "high_chair", "kids_menu",
     "toddler_food", "changing_table", "potty", "playroom", "playground", "kids_animation",
     "paddling_pool", "kids_pool", "shade", "lift", "step_free_access", "stroller_rental",
-    "baby_monitor", "beach_walk_minutes", "parking",
+    "baby_monitor", "beach_walk_minutes", "parking", "transfer",
 }
 RULE_KEYS = {
     "infant_fee", "infant_min_age", "lap_infant", "infants_per_adult", "twins", "infant_seat",

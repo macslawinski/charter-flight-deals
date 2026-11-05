@@ -210,6 +210,7 @@ const FEATURES: Record<string, { label: string; icon: string }> = {
   stroller_rental: { label: "Wypożyczenie wózka", icon: "stroller" },
   beach_walk_minutes: { label: "Do plaży", icon: "umbrella" },
   parking: { label: "Parking", icon: "parking" },
+  transfer: { label: "Transfer z dworca / lotniska", icon: "car" },
 };
 export const featureLabel = (key: string) => must(FEATURES, key, "feature label").label;
 export const featureIcon = (key: string) => must(FEATURES, key, "feature icon").icon;
@@ -221,7 +222,7 @@ export const FEATURE_GROUPS: { title: string; keys: string[] }[] = [
   { title: "Zabawa", keys: ["playroom", "playground", "kids_animation"] },
   { title: "Woda i słońce", keys: ["paddling_pool", "kids_pool", "shade"] },
   { title: "Z wózkiem po hotelu", keys: ["lift", "step_free_access", "stroller_rental"] },
-  { title: "Okolica", keys: ["beach_walk_minutes", "parking"] },
+  { title: "Okolica", keys: ["beach_walk_minutes", "parking", "transfer"] },
 ];
 
 // --- indoor playgrounds -----------------------------------------------------------------------

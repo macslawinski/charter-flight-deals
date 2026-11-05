@@ -621,6 +621,77 @@ details.more-info p {
   color: var(--muted);
 }
 
+/* --- hotel access ("Dojazd") ------------------------------------------------------------------ */
+.access {
+  background: var(--white);
+  border-radius: var(--r-panel);
+  padding: 1rem 1.25rem 1.1rem;
+  margin-top: 0.75rem;
+  max-width: 44rem;
+}
+.access table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.access th,
+.access td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.6rem 0.75rem 0.6rem 0;
+}
+.access thead th {
+  font-size: 0.9rem;
+  color: var(--muted);
+  border-bottom: 2px solid var(--line);
+}
+.access tbody tr + tr > * {
+  border-top: 1px solid var(--line);
+}
+.access tbody th {
+  font-weight: 700;
+}
+.access-mode {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--navy);
+}
+.access-mode .icon {
+  color: var(--sea);
+}
+.access-time {
+  display: block;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.access-note {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.access-none {
+  color: var(--muted);
+}
+.access-transfer {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  margin: 0.9rem 0 0;
+  padding: 0.7rem 0.9rem;
+  background: var(--sea-soft);
+  border-radius: 12px;
+  font-size: 0.95rem;
+}
+.access-transfer .icon {
+  color: var(--sea);
+  flex: none;
+  margin-top: 0.15rem;
+}
+.access-how {
+  margin: 0.8rem 0 0;
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     scroll-behavior: auto !important;
