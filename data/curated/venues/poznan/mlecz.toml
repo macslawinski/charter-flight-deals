@@ -1,0 +1,59 @@
+# Discovered via OpenStreetMap (node/12492719739, © OpenStreetMap contributors, ODbL); facts from the
+# venue's own pages (home FAQ, /regulamin/), read 2026-11-04. Written in our words.
+# Hours: the rules say 10-19 daily, OSM says Fr-Su until 20: kept as to_confirm.
+# Not stated: prices (no price list on the site), changing table, parking.
+slug = "mlecz"
+city = "poznan"
+name = "Mlecz bawialnia i kawiarnia"
+official_url = "https://bawialniamlecz.pl/"
+address = "ul. Stanisława Barańczaka 1/47 LU3, 60-537 Poznań"
+lat = 52.415421
+lon = 16.90507
+osm = "node/12492719739"
+status = "draft"
+
+[[feature]]
+key = "age_range"
+value = { min_years = 0, max_years = 6 }
+short = "Dla dzieci od 0 do 6 lat"
+note = "Sala zabaw dla dzieci od 0 do 6 lat, urządzona głównie z myślą o młodszych."
+source = "venue_website"
+url = "https://bawialniamlecz.pl/regulamin/"
+verified_at = 2026-11-04
+
+[[feature]]
+key = "opening_hours"
+value = { text = "codziennie 10:00-19:00" }
+short = "Codziennie 10:00–19:00"
+note = "Regulamin podaje 10:00–19:00 codziennie. W OpenStreetMap w piątki–niedziele do 20:00, więc sprawdź przed wyjściem."
+source = "venue_website"
+url = "https://bawialniamlecz.pl/regulamin/"
+verified_at = 2026-11-04
+to_confirm = true
+
+[[feature]]
+key = "cafe"
+value = { available = true }
+short = "Kawiarnia z przekąskami dla dzieci"
+note = "Kawiarnia z kawą, napojami i lekkimi przekąskami dla dzieci i dorosłych."
+source = "venue_website"
+url = "https://bawialniamlecz.pl/"
+verified_at = 2026-11-04
+
+[[feature]]
+key = "socks_required"
+value = { required = true, applies_to = "children" }
+short = "Dzieci tylko w skarpetkach"
+note = "Dzieci bawią się wyłącznie w skarpetkach albo rajstopach, o każdej porze roku."
+source = "venue_website"
+url = "https://bawialniamlecz.pl/regulamin/"
+verified_at = 2026-11-04
+
+[[feature]]
+key = "supervision"
+value = { parent_required = true, paid_care_from_years = 3 }
+short = "Dziecko zostaje pod Twoją opieką"
+note = "Rodzic opiekuje się dzieckiem przez cały pobyt. Płatna opieka personelu jest tylko dla dzieci powyżej 3 lat."
+source = "venue_website"
+url = "https://bawialniamlecz.pl/regulamin/"
+verified_at = 2026-11-04

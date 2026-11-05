@@ -7,6 +7,7 @@
      "age_band": "0-2",
      "key": "infant_fee",
      "note": "Enter Air nie pobiera opłaty za niemowlę na kolanach. Kupując lot w biurze podróży, cenę niemowlęcia sprawdź w biurze.",
+     "short": "Linia nie pobiera opłaty; cenę ustala biuro",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://fly.enterair.pl/wp-content/uploads/owp-regulations/GENERAL-TERMS-AND-CONDITIONS-OF-AIR-CARRIAGE.pdf",
@@ -20,6 +21,7 @@
      "age_band": "0-2",
      "key": "infants_per_adult",
      "note": "Jeden dorosły może lecieć tylko z jednym niemowlęciem.",
+     "short": "Jedno niemowlę na dorosłego",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://fly.enterair.pl/wp-content/uploads/owp-regulations/GENERAL-TERMS-AND-CONDITIONS-OF-AIR-CARRIAGE.pdf",
@@ -32,6 +34,7 @@
      "age_band": "0-2",
      "key": "twins",
      "note": "Z bliźniętami do 2 lat muszą lecieć dwie dorosłe osoby (jedno niemowlę na dorosłego).",
+     "short": "Bliźnięta: potrzeba dwóch dorosłych",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://fly.enterair.pl/wp-content/uploads/owp-regulations/GENERAL-TERMS-AND-CONDITIONS-OF-AIR-CARRIAGE.pdf",
@@ -44,6 +47,7 @@
      "age_band": "0-2",
      "key": "lap_infant",
      "note": "Niemowlę leci na kolanach dorosłego. Na jednym locie może być najwyżej 15 niemowląt. Dzieci do 2 lat dostają na pokładzie specjalne kamizelki ratunkowe.",
+     "short": "Na kolanach, z kamizelką ratunkową",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://fly.enterair.pl/wp-content/uploads/owp-regulations/GENERAL-TERMS-AND-CONDITIONS-OF-AIR-CARRIAGE.pdf",
@@ -58,6 +62,7 @@
      "age_band": "0-2",
      "key": "infant_baggage",
      "note": "Niemowlę ma 5 kg bagażu podręcznego. Bagaż rejestrowany przysługuje tylko niemowlęciu z wykupionym własnym miejscem.",
+     "short": "5 kg bagażu podręcznego",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://fly.enterair.pl/wp-content/uploads/owp-regulations/GENERAL-TERMS-AND-CONDITIONS-OF-AIR-CARRIAGE.pdf",
@@ -71,6 +76,7 @@
      "age_band": "0-2",
      "key": "stroller",
      "note": "Składany wózek niemowlęcia leci bezpłatnie w luku. Zgłoś go przy odprawie (dostaje własną zawieszkę). Zabezpiecz go pokrowcem: za uszkodzenia niezabezpieczonego wózka linia nie odpowiada.",
+     "short": "Wózek gratis w luku",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://fly.enterair.pl/wp-content/uploads/owp-regulations/GENERAL-TERMS-AND-CONDITIONS-OF-AIR-CARRIAGE.pdf",
@@ -86,6 +92,7 @@
      "age_band": "2+",
      "key": "stroller",
      "note": "Wózek starszego dziecka liczy się do wagi bagażu rejestrowanego.",
+     "short": "Wózek wlicza się do bagażu",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://fly.enterair.pl/wp-content/uploads/owp-regulations/GENERAL-TERMS-AND-CONDITIONS-OF-AIR-CARRIAGE.pdf",
@@ -99,6 +106,7 @@
      "age_band": "0-2",
      "key": "car_seat",
      "note": "Własny fotelik na pokładzie tylko z wykupionym miejscem i certyfikatem lotniczym, maks. 43×35 cm. Na start i lądowanie dziecko siedzi na kolanach. Fotelik niespełniający wymogów leci bezpłatnie w luku.",
+     "short": "Fotelik tylko z własnym miejscem",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://fly.enterair.pl/wp-content/uploads/owp-regulations/GENERAL-TERMS-AND-CONDITIONS-OF-AIR-CARRIAGE.pdf",
@@ -121,6 +129,7 @@
      "age_band": "0-2",
      "key": "infant_fee",
      "note": "Niemowlę na kolanach: 25 € za każdy lot w jedną stronę. Dziecko musi mieć mniej niż 2 lata w dniu wylotu i powrotu.",
+     "short": "25 € za lot w jedną stronę",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.ryanair.com/gb/en/useful-info/help-centre/fees",
@@ -134,6 +143,7 @@
      "age_band": null,
      "key": "infant_min_age",
      "note": "Dzieci do 7. dnia życia linia nie przewozi.",
+     "short": "Od 8. dnia życia",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://help.ryanair.com/hc/en-us/articles/12891532701457-What-are-the-rules-for-travelling-with-infants-0-2",
@@ -146,6 +156,7 @@
      "age_band": "0-2",
      "key": "infants_per_adult",
      "note": "Jedno niemowlę na jednego dorosłego (od 18 lat).",
+     "short": "Jedno niemowlę na dorosłego (18+)",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://help.ryanair.com/hc/en-us/articles/12891532701457-What-are-the-rules-for-travelling-with-infants-0-2",
@@ -159,6 +170,7 @@
      "age_band": "0-2",
      "key": "twins",
      "note": "Z bliźniętami do 2 lat muszą lecieć dwie dorosłe osoby. Niemowlęta siedzą wyłącznie na kolanach, jedno na dorosłego.",
+     "short": "Bliźnięta: potrzeba dwóch dorosłych",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://help.ryanair.com/hc/en-us/articles/12891532701457-What-are-the-rules-for-travelling-with-infants-0-2",
@@ -171,6 +183,7 @@
      "age_band": "0-2",
      "key": "infant_baggage",
      "note": "Niemowlę nie ma własnego limitu bagażu, ale możesz zabrać torbę dla dziecka do 5 kg (45×35×20 cm).",
+     "short": "Torba dla dziecka do 5 kg",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://help.ryanair.com/hc/en-us/articles/12891532701457-What-are-the-rules-for-travelling-with-infants-0-2",
@@ -185,6 +198,7 @@
      "age_band": null,
      "key": "stroller",
      "note": "Na dziecko bezpłatnie 2 rzeczy: wózek oraz fotelik, podstawka albo łóżeczko turystyczne. Każda kolejna to 15–20 € za sztukę i lot (do 20 kg).",
+     "short": "Wózek i fotelik gratis",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.ryanair.com/gb/en/useful-info/help-centre/fees",
@@ -204,6 +218,7 @@
      "age_band": "2+",
      "key": "child_seating",
      "note": "Dzieci od 2 do 11 lat siedzą obok dorosłego. Przy losowym przydziale miejsce obok dorosłego z tej samej rezerwacji jest bezpłatne.",
+     "short": "Dziecko zawsze obok dorosłego",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://help.ryanair.com/hc/en-gb/articles/12891623365777-What-is-Ryanair-s-Seat-Policy",
@@ -222,6 +237,7 @@
      "age_band": "0-2",
      "key": "infant_fee",
      "note": "Niemowlę na kolanach płaci 10% taryfy normalnej na lotach międzynarodowych, a na krajowych leci bezpłatnie. Kupując lot czarterowy w biurze podróży, cenę sprawdź w biurze.",
+     "short": "10% ceny za granicę, krajowe gratis",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.lot.com/pl/pl/podrozuj/specjalne-wymagania/lot-dla-dzieci/przed-podroza",
@@ -235,6 +251,7 @@
      "age_band": "0-2",
      "key": "infants_per_adult",
      "note": "Jeden dorosły może lecieć z dwójką maluchów do 2 lat, ale drugie dziecko potrzebuje własnego miejsca i fotelika samochodowego.",
+     "short": "Do dwóch maluchów na dorosłego",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.lot.com/pl/pl/podrozuj/specjalne-wymagania/lot-dla-dzieci/przed-podroza",
@@ -248,6 +265,7 @@
      "age_band": "0-2",
      "key": "twins",
      "note": "Z bliźniętami może lecieć jeden dorosły: jedno dziecko na kolanach, drugie na wykupionym miejscu w foteliku.",
+     "short": "Bliźnięta z jednym dorosłym: tak",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.lot.com/pl/pl/podrozuj/specjalne-wymagania/lot-dla-dzieci/przed-podroza",
@@ -261,6 +279,7 @@
      "age_band": "0-2",
      "key": "infant_baggage",
      "note": "Niemowlę: bagaż podręczny do 8 kg, przedmiot osobisty do 2 kg i torba z jedzeniem. W taryfach innych niż Economy Saver także bagaż rejestrowany do 23 kg.",
+     "short": "8 kg podręcznego + torba z jedzeniem",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.lot.com/pl/pl/podrozuj/specjalne-wymagania/lot-dla-dzieci/przed-podroza",
@@ -276,6 +295,7 @@
      "age_band": "0-2",
      "key": "stroller",
      "note": "Niemowlę na kolanach: bezpłatnie wózek albo fotelik (drugi z nich w bagażu rejestrowanym lub płatnie). Niemowlę z własnym miejscem: wózek i fotelik bezpłatnie.",
+     "short": "Wózek albo fotelik gratis",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.lot.com/pl/pl/podrozuj/specjalne-wymagania/lot-dla-dzieci/przed-podroza",
@@ -289,6 +309,7 @@
      "age_band": "2+",
      "key": "stroller",
      "note": "Dzieci od 2 do 12 lat: wózek i fotelik bezpłatnie.",
+     "short": "Wózek i fotelik gratis",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.lot.com/pl/pl/podrozuj/specjalne-wymagania/lot-dla-dzieci/przed-podroza",
@@ -302,6 +323,7 @@
      "age_band": null,
      "key": "car_seat",
      "note": "Na pokładzie tylko certyfikowany fotelik mocowany zwykłym pasem samolotu (naklejka „certified for use in motor vehicles and aircraft”). Montujesz go sam. Fotelik niespełniający wymogów leci bezpłatnie w luku.",
+     "short": "Tylko fotelik z certyfikatem",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.lot.com/pl/pl/podrozuj/specjalne-wymagania/lot-dla-dzieci/przed-podroza",
@@ -317,6 +339,7 @@
      "age_band": "0-2",
      "key": "bassinet",
      "note": "Kołyska tylko na lotach długodystansowych Dreamlinerem. Zamawiasz ją w Contact Center najpóźniej 24 h przed lotem. Dziecko do 12 kg i 75 cm. Własnej kołyski nie zabierzesz.",
+     "short": "Kołyska tylko w Dreamlinerze",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.lot.com/pl/pl/podrozuj/specjalne-wymagania/lot-dla-dzieci/przed-podroza",
@@ -333,6 +356,7 @@
      "age_band": null,
      "key": "child_seating",
      "note": "Żeby usiąść razem, wykup wybór miejsca. Inaczej miejsca przydzielane są przy odprawie i wolnych foteli obok siebie może brakować. Dzieci nie siedzą w rzędach przy wyjściach awaryjnych.",
+     "short": "Miejsca razem: wykup wybór miejsca",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.lot.com/pl/pl/podrozuj/specjalne-wymagania/lot-dla-dzieci/przed-podroza",
@@ -346,6 +370,7 @@
      "age_band": "2+",
      "key": "child_baggage",
      "note": "Dzieci od 2 lat mają taki sam limit bagażu jak dorośli.",
+     "short": "Bagaż jak dorosły",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.lot.com/pl/pl/podrozuj/specjalne-wymagania/lot-dla-dzieci/przed-podroza",
@@ -363,6 +388,7 @@
      "age_band": "0-2",
      "key": "infant_fee",
      "note": "Niemowlę do 2 lat leci na kolanach dorosłego za obniżoną taryfą (strona nie podaje kwoty). Kupując lot w biurze podróży, cenę niemowlęcia sprawdź w biurze.",
+     "short": "Zniżka, kwoty strona nie podaje",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.smartwings.com/en/children/",
@@ -376,6 +402,7 @@
      "age_band": null,
      "key": "infant_min_age",
      "note": "Dzieci młodszych niż 48 godzin linia nie przewozi. Od 48 godzin do 7 dni potrzebny jest formularz.",
+     "short": "Od 48 godzin (do 7 dni z formularzem)",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.smartwings.com/en/children/",
@@ -389,6 +416,7 @@
      "age_band": "0-2",
      "key": "lap_infant",
      "note": "Niemowlę siedzi na kolanach dorosłego, przypięte specjalnym pasem. Dodatkowe miejsce można wykupić telefonicznie.",
+     "short": "Na kolanach, z dodatkowym pasem",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.smartwings.com/en/children/",
@@ -403,6 +431,7 @@
      "age_band": null,
      "key": "stroller",
      "note": "Wózek bezpłatnie: oddajesz go przy wyjściu do samolotu, złożony i zapakowany (za uszkodzenia niezapakowanego linia nie odpowiada). Wózek do 55×40×23 cm i 8 kg może wejść na pokład zamiast bagażu podręcznego.",
+     "short": "Wózek gratis przy wejściu do samolotu",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.smartwings.com/en/children/",
@@ -420,6 +449,7 @@
      "age_band": "0-2",
      "key": "car_seat",
      "note": "Fotelik przewożony bezpłatnie. Na pokładzie tylko fotelik z certyfikatem lotniczym i na wykupionym miejscu.",
+     "short": "Fotelik gratis; na pokład z miejscem",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.smartwings.com/en/children/",
@@ -434,6 +464,7 @@
      "age_band": null,
      "key": "travel_cot",
      "note": "Składane łóżeczko turystyczne przewożone bezpłatnie.",
+     "short": "Łóżeczko turystyczne gratis",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.smartwings.com/en/children/",
@@ -446,6 +477,7 @@
      "age_band": null,
      "key": "baby_food",
      "note": "Do 200 ml jedzenia dla dziecka w bagażu podręcznym. Kontrola bezpieczeństwa może poprosić o spróbowanie.",
+     "short": "Do 200 ml jedzenia dla dziecka",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.smartwings.com/en/children/",
@@ -464,6 +496,7 @@
      "age_band": "0-2",
      "key": "infant_fee",
      "note": "Niemowlę na kolanach: 25 € za każdy lot w jedną stronę (przy zakupie w Buzz). Kupując lot w biurze podróży, cenę niemowlęcia sprawdź w biurze.",
+     "short": "25 € za lot w jedną stronę",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.buzzair.com/en/tcs/regulations/",
@@ -477,6 +510,7 @@
      "age_band": null,
      "key": "infant_min_age",
      "note": "Dzieci młodszych niż 8 dni linia nie przewozi.",
+     "short": "Od 8. dnia życia",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.buzzair.com/en/tcs/regulations/",
@@ -489,6 +523,7 @@
      "age_band": "0-2",
      "key": "infants_per_adult",
      "note": "W rezerwacji musi być co najmniej jeden dorosły na każde niemowlę.",
+     "short": "Jedno niemowlę na dorosłego",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.buzzair.com/en/tcs/regulations/",
@@ -501,6 +536,7 @@
      "age_band": "0-2",
      "key": "lap_infant",
      "note": "Niemowlę na kolanach przypięte pasem od załogi. W jednym rzędzie najwyżej dwoje dzieci do 2 lat; z niemowlęciem nie usiądziesz w rzędach 1, 16 i 17.",
+     "short": "Na kolanach; nie w rzędach 1, 16, 17",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.buzzair.com/en/tcs/regulations/",
@@ -519,6 +555,7 @@
      "age_band": "0-2",
      "key": "infant_seat",
      "note": "Własne miejsce dla niemowlęcia: pełna taryfa, rezerwacja przez infolinię lub czat. Dziecko siedzi w zatwierdzonym foteliku przodem do kierunku lotu albo w pasach AmSafe CARES (od 12 miesięcy).",
+     "short": "Własne miejsce za pełną cenę",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.buzzair.com/en/tcs/regulations/",
@@ -534,6 +571,7 @@
      "age_band": "0-2",
      "key": "infant_baggage",
      "note": "Torba dla niemowlęcia do 5 kg oprócz Twojego bagażu podręcznego. Niemowlę bez własnego miejsca nie ma osobnego bagażu podręcznego.",
+     "short": "Torba dla dziecka do 5 kg",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.buzzair.com/en/tcs/regulations/",
@@ -547,6 +585,7 @@
      "age_band": null,
      "key": "stroller",
      "note": "Jeden składany wózek (także podwójny), system podróżny lub nosidło na dziecko bezpłatnie.",
+     "short": "Wózek gratis",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.buzzair.com/en/tcs/regulations/",
@@ -561,6 +600,7 @@
      "age_band": null,
      "key": "car_seat",
      "note": "Bezpłatnie jeden fotelik, podstawka albo łóżeczko turystyczne. Każdy kolejny sprzęt dziecięcy kosztuje 15 € za sztukę i lot (do 20 kg).",
+     "short": "Jeden fotelik albo łóżeczko gratis",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.buzzair.com/en/tcs/regulations/",
@@ -579,6 +619,7 @@
      "age_band": "2+",
      "key": "child_seating",
      "note": "Z dzieckiem od 2 do 11 lat trzeba wykupić miejsce dla dorosłego. Dziecko dostaje wtedy miejsce obok bezpłatnie (najwyżej czworo dzieci na dorosłego).",
+     "short": "Płatne miejsce dorosłego, dziecko obok",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.buzzair.com/en/tcs/regulations/",
@@ -598,6 +639,7 @@
      "age_band": "0-2",
      "key": "infant_fee",
      "note": "Niemowlę na kolanach leci za opłatą. Kwotę zobaczysz w rezerwacji, strona jej nie podaje. Dziecko musi mieć mniej niż 2 lata w dniu wylotu i powrotu.",
+     "short": "Płatne, kwotę zobaczysz w rezerwacji",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.wizzair.com/pl-pl/centrum-pomocy/informacje-dotyczace-rezerwacji-i-uslugi/podroz-z-dziecmi/rezerwacja-lotu-z-dzieckiem",
@@ -611,6 +653,7 @@
      "age_band": null,
      "key": "infant_min_age",
      "note": "Niemowlęta przewożone są od 14. dnia życia.",
+     "short": "Od 14. dnia życia",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.wizzair.com/pl-pl/centrum-pomocy/informacje-dotyczace-rezerwacji-i-uslugi/podroz-z-dziecmi",
@@ -623,6 +666,7 @@
      "age_band": "0-2",
      "key": "infants_per_adult",
      "note": "Jednej osobie dorosłej (od 16 lat) może towarzyszyć tylko jedno niemowlę na kolanach.",
+     "short": "Jedno niemowlę na dorosłego (16+)",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.wizzair.com/pl-pl/centrum-pomocy/informacje-dotyczace-rezerwacji-i-uslugi/podroz-z-dziecmi",
@@ -636,6 +680,7 @@
      "age_band": "0-2",
      "key": "infant_baggage",
      "note": "Bezpłatnie dodatkowy przedmiot osobisty dla niemowlęcia (40×30×20 cm, do 10 kg) i jedzenie na czas lotu. Na niemowlę nie wykupisz walizki ani bagażu rejestrowanego.",
+     "short": "Dodatkowa torba do 10 kg",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.wizzair.com/pl-pl/centrum-pomocy/informacje-dotyczace-rezerwacji-i-uslugi/podroz-z-dziecmi/bagaz-dzieci%C4%99cy",
@@ -650,6 +695,7 @@
      "age_band": "0-2",
      "key": "stroller",
      "note": "Bezpłatnie wózek, łóżeczko turystyczne lub fotelik: zabierasz je do drzwi samolotu, a potem trafiają do luku. Wózków elektrycznych linia nie przewozi.",
+     "short": "Wózek gratis do drzwi samolotu",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.wizzair.com/pl-pl/centrum-pomocy/informacje-dotyczace-rezerwacji-i-uslugi/podroz-z-dziecmi/bagaz-dzieci%C4%99cy",
@@ -669,6 +715,7 @@
      "age_band": "2+",
      "key": "stroller",
      "note": "Starsze dziecko: wózek, łóżeczko lub fotelik też bezpłatnie. Kompaktowy wózek do 55×40×23 cm wejdzie na pokład zamiast wykupionej walizki. Podstawka (booster) jest płatna.",
+     "short": "Wózek gratis, mały wejdzie na pokład",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.wizzair.com/pl-pl/centrum-pomocy/informacje-dotyczace-rezerwacji-i-uslugi/podroz-z-dziecmi/bagaz-dzieci%C4%99cy",
@@ -683,6 +730,7 @@
      "age_band": "2+",
      "key": "child_fare",
      "note": "Dziecko od 2 lat płaci taryfę dorosłego.",
+     "short": "Od 2 lat cena jak dorosły",
      "source": "carrier_official",
      "to_confirm": false,
      "url": "https://www.wizzair.com/pl-pl/centrum-pomocy/informacje-dotyczace-rezerwacji-i-uslugi/podroz-z-dziecmi",
@@ -726,6 +774,7 @@
      "age_band": "0-3",
      "key": "cot",
      "note": "Łóżeczko dla dziecka do 3 lat na zamówienie: 60 zł za dobę albo 180 zł za cały pobyt.",
+     "short": "Na zamówienie, 60 zł za dobę",
      "source": "hotel_website",
      "to_confirm": false,
      "url": "https://www.hotelsaltic.pl/grzybowo/dzieci",
@@ -741,6 +790,7 @@
      "age_band": "0-3",
      "key": "child_free_stay",
      "note": "Dziecko do 3 lat śpiące z rodzicami nie płaci za pobyt (jedno takie dziecko na pobyt).",
+     "short": "Do 3 lat gratis (śpi z rodzicami)",
      "source": "hotel_website",
      "to_confirm": false,
      "url": "https://www.hotelsaltic.pl/grzybowo/dzieci",
@@ -755,6 +805,7 @@
      "age_band": null,
      "key": "baby_bath",
      "note": "Wanienka na życzenie.",
+     "short": "Na życzenie",
      "source": "hotel_website",
      "to_confirm": false,
      "url": "https://www.hotelsaltic.pl/grzybowo/dzieci",
@@ -768,6 +819,7 @@
      "age_band": null,
      "key": "bottle_warmer",
      "note": "Podgrzewacz do butelek na życzenie.",
+     "short": "Na życzenie",
      "source": "hotel_website",
      "to_confirm": false,
      "url": "https://www.hotelsaltic.pl/grzybowo/dzieci",
@@ -781,6 +833,7 @@
      "age_band": null,
      "key": "high_chair",
      "note": "Krzesełka do karmienia w restauracji.",
+     "short": "W restauracji",
      "source": "hotel_website",
      "to_confirm": false,
      "url": "https://www.hotelsaltic.pl/grzybowo/dzieci",
@@ -793,6 +846,7 @@
      "age_band": null,
      "key": "kids_menu",
      "note": "Osobne menu dla dzieci w restauracji. O jedzeniu dla niemowląt strona nie wspomina.",
+     "short": "Jest menu dla dzieci",
      "source": "hotel_website",
      "to_confirm": false,
      "url": "https://www.hotelsaltic.pl/grzybowo/dzieci",
@@ -805,6 +859,7 @@
      "age_band": null,
      "key": "changing_table",
      "note": "Przewijaki w toaletach ogólnodostępnych.",
+     "short": "W toaletach ogólnodostępnych",
      "source": "hotel_website",
      "to_confirm": false,
      "url": "https://www.hotelsaltic.pl/grzybowo/dzieci",
@@ -818,6 +873,7 @@
      "age_band": null,
      "key": "potty",
      "note": "Na życzenie nocnik, nakładka na sedes i podest.",
+     "short": "Nocnik i nakładka na życzenie",
      "source": "hotel_website",
      "to_confirm": false,
      "url": "https://www.hotelsaltic.pl/grzybowo/dzieci",
@@ -833,6 +889,7 @@
      "age_band": null,
      "key": "playroom",
      "note": "Sala zabaw (Kid's room) w budynku Morze, 1. piętro, codziennie 8:00–20:00 (przerwa 13:00–13:30). Minimalnego wieku i opieki strona nie podaje.",
+     "short": "Codziennie 8:00–20:00",
      "source": "hotel_website",
      "to_confirm": false,
      "url": "https://www.hotelsaltic.pl/grzybowo/dzieci",
@@ -848,6 +905,7 @@
      "age_band": null,
      "key": "playground",
      "note": "Plac zabaw na zewnątrz.",
+     "short": "Na zewnątrz",
      "source": "hotel_website",
      "to_confirm": false,
      "url": "https://www.hotelsaltic.pl/grzybowo/dzieci",
@@ -861,6 +919,7 @@
      "age_band": null,
      "key": "kids_animation",
      "note": "Zajęcia z animatorami w wybranych godzinach; przedziału wieku strona nie podaje.",
+     "short": "W wybranych godzinach",
      "source": "hotel_website",
      "to_confirm": false,
      "url": "https://www.hotelsaltic.pl/grzybowo/dzieci",
@@ -873,6 +932,7 @@
      "age_band": null,
      "key": "paddling_pool",
      "note": "Podgrzewane brodziki w strefie krytej (cały rok) i przy basenie zewnętrznym (sezonowo; termin sezonu nie jest podany).",
+     "short": "Podgrzewane, w środku cały rok",
      "source": "hotel_website",
      "to_confirm": false,
      "url": "https://www.hotelsaltic.pl/grzybowo/dzieci",
@@ -888,6 +948,7 @@
      "age_band": null,
      "key": "beach_walk_minutes",
      "note": "Około 3 minuty spacerem do dzikiej plaży.",
+     "short": "Około 3 minuty pieszo",
      "source": "hotel_website",
      "to_confirm": false,
      "url": "https://www.hotelsaltic.pl/grzybowo",
@@ -900,6 +961,7 @@
      "age_band": null,
      "key": "parking",
      "note": "Parking płatny, 90 zł za dobę.",
+     "short": "Płatny, 90 zł za dobę",
      "source": "hotel_website",
      "to_confirm": false,
      "url": "https://www.hotelsaltic.pl/grzybowo/hotel/faq",
@@ -962,5 +1024,497 @@
   "stroller",
   "travel_cot",
   "twins"
+ ],
+ "venue_cities": {
+  "poznan": "Poznań"
+ },
+ "venue_keys": [
+  "age_range",
+  "cafe",
+  "changing_table",
+  "infant_free",
+  "opening_hours",
+  "parking",
+  "price_adult",
+  "price_child",
+  "socks_required",
+  "supervision",
+  "toddler_classes",
+  "toddler_zone"
+ ],
+ "venues": [
+  {
+   "address": "ul. Smardzewska, 60-161 Poznań",
+   "city": "poznan",
+   "features": [
+    {
+     "age_band": null,
+     "key": "price_child",
+     "note": "Poniedziałek–piątek 12 zł za godzinę (0,20 zł za minutę), weekend 15 zł (0,25 zł za minutę). Bilet do 5 godzin: 25 zł.",
+     "short": "12 zł za godzinę (pon.–pt.)",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://www.centrummadagaskar.pl/cennik.html",
+     "value": {
+      "up_to_5h_pln": 25,
+      "weekday_1h_pln": 12,
+      "weekday_pln_per_min": 0.2,
+      "weekend_1h_pln": 15,
+      "weekend_pln_per_min": 0.25
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "socks_required",
+     "note": "Strona prosi, żeby przed wizytą zaopatrzyć dziecko w rajstopy.",
+     "short": "Zabierz rajstopy dla dziecka",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://www.centrummadagaskar.pl/",
+     "value": {
+      "applies_to": "children",
+      "item": "tights",
+      "required": true
+     },
+     "verified_at": "2026-11-04"
+    }
+   ],
+   "lat": 52.389891,
+   "lon": 16.859353,
+   "name": "Centrum Madagaskar",
+   "official_url": "https://www.centrummadagaskar.pl/",
+   "osm": "way/165076478",
+   "slug": "madagaskar",
+   "status": "draft"
+  },
+  {
+   "address": "ul. Pleszewska 1 (Posnania, 2. piętro), 61-136 Poznań",
+   "city": "poznan",
+   "features": [
+    {
+     "age_band": null,
+     "key": "age_range",
+     "note": "Sala zabaw dla dzieci od niemowlęcia do 11 lat.",
+     "short": "Od niemowlaka do 11 lat",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://fikolki.pl/ch-posnania-poznan/",
+     "value": {
+      "max_years": 11,
+      "min": "infant"
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "toddler_zone",
+     "note": "Kącik malucha dla dzieci do 4 lat i osobne atrakcje dla maluchów od 0 do 3 lat.",
+     "short": "Kącik malucha i atrakcje dla 0–3 lat",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://fikolki.pl/ch-posnania-poznan/",
+     "value": {
+      "attractions_for": "0-3",
+      "available": true,
+      "max_years": 4
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "price_child",
+     "note": "Dni robocze: 0,75 zł za minutę albo 55 zł za cały dzień. Weekendy i święta: 0,90 zł za minutę albo 66 zł. Cennik jest wspólny dla sieci Fikołki.",
+     "short": "0,75 zł za minutę albo 55 zł za dzień",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://fikolki.pl/cennik/",
+     "value": {
+      "weekday_day_pln": 55,
+      "weekday_pln_per_min": 0.75,
+      "weekend_day_pln": 66,
+      "weekend_pln_per_min": 0.9
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "opening_hours",
+     "note": "Poniedziałek–sobota 10:00–21:00, niedziela 10:00–19:00, niedziela handlowa 10:00–20:00.",
+     "short": "Pon.–sob. 10–21, niedz. 10–19",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://fikolki.pl/ch-posnania-poznan/",
+     "value": {
+      "osm": "Mo-Sa 10:00-21:00; Su 10:00-19:00"
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "cafe",
+     "note": "Rodzic może usiąść przy kawie w Fikołki Caffe.",
+     "short": "Fikołki Caffe na miejscu",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://fikolki.pl/ch-posnania-poznan/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Klub korzysta z parkingu centrum Posnania.",
+     "short": "Parking centrum handlowego",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://fikolki.pl/ch-posnania-poznan/",
+     "value": {
+      "available": true,
+      "mall": true
+     },
+     "verified_at": "2026-11-04"
+    }
+   ],
+   "lat": 52.398157,
+   "lon": 16.954928,
+   "name": "Fikołki Posnania",
+   "official_url": "https://fikolki.pl/ch-posnania-poznan/",
+   "osm": "node/11048021117",
+   "slug": "fikolki-posnania",
+   "status": "draft"
+  },
+  {
+   "address": "ul. Półwiejska 42 (Stary Browar), 61-888 Poznań",
+   "city": "poznan",
+   "features": [
+    {
+     "age_band": null,
+     "key": "age_range",
+     "note": "Sala zabaw dla dzieci od niemowlęcia do 11 lat.",
+     "short": "Od niemowlaka do 11 lat",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://fikolki.pl/stary-browar/",
+     "value": {
+      "max_years": 11,
+      "min": "infant"
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "toddler_zone",
+     "note": "Osobny kącik malucha dla dzieci do 4 lat.",
+     "short": "Kącik malucha do 4 lat",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://fikolki.pl/stary-browar/",
+     "value": {
+      "available": true,
+      "max_years": 4
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "price_child",
+     "note": "Dni robocze: 0,75 zł za minutę albo 55 zł za cały dzień. Weekendy i święta: 0,90 zł za minutę albo 66 zł. Cennik jest wspólny dla sieci Fikołki.",
+     "short": "0,75 zł za minutę albo 55 zł za dzień",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://fikolki.pl/cennik/",
+     "value": {
+      "weekday_day_pln": 55,
+      "weekday_pln_per_min": 0.75,
+      "weekend_day_pln": 66,
+      "weekend_pln_per_min": 0.9
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-2",
+     "key": "infant_free",
+     "note": "Sieć ma Kartę Malucha (wersje 0–2 i 0–3 lata). Strona klubu pisze, że z nią dzieci do 2 lat bawią się za darmo, ale zdanie jest niejasne: zapytaj w klubie.",
+     "short": "Karta Malucha dla dzieci do 2 i do 3 lat",
+     "source": "venue_website",
+     "to_confirm": true,
+     "url": "https://fikolki.pl/cennik/",
+     "value": {
+      "free_with_card": "karta_malucha"
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-3",
+     "key": "toddler_classes",
+     "note": "Klub prowadzi zajęcia ogólnorozwojowe dla dzieci od 0 do 3 lat.",
+     "short": "Zajęcia ogólnorozwojowe 0–3 lata",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://fikolki.pl/stary-browar/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "opening_hours",
+     "note": "Poniedziałek–sobota 10:00–21:00, niedziela 10:00–19:00, niedziela handlowa 10:00–20:00.",
+     "short": "Pon.–sob. 10–21, niedz. 10–19",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://fikolki.pl/stary-browar/",
+     "value": {
+      "osm": "Mo-Sa 10:00-21:00; Su 10:00-19:00"
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "cafe",
+     "note": "Na miejscu kawiarnia Fikołki Caffe.",
+     "short": "Fikołki Caffe na miejscu",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://fikolki.pl/stary-browar/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Klub jest w centrum handlowym, które ma parking.",
+     "short": "Parking centrum handlowego",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://fikolki.pl/stary-browar/",
+     "value": {
+      "available": true,
+      "mall": true
+     },
+     "verified_at": "2026-11-04"
+    }
+   ],
+   "lat": 52.402821,
+   "lon": 16.924838,
+   "name": "Fikołki Stary Browar",
+   "official_url": "https://fikolki.pl/stary-browar/",
+   "osm": "way/1504245766",
+   "slug": "fikolki-stary-browar",
+   "status": "draft"
+  },
+  {
+   "address": "ul. Bolesława Krzywoustego 68 (Giant Meble), Poznań",
+   "city": "poznan",
+   "features": [
+    {
+     "age_band": null,
+     "key": "age_range",
+     "note": "Sala zabaw dla dzieci do 11 lat. Na zdjęciach jest kącik malucha, ale bez podanego przedziału wieku.",
+     "short": "Dla dzieci do 11 lat, jest kącik malucha",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://krainapiratow.pl/regulamin/",
+     "value": {
+      "max_years": 11
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": "0-1",
+     "key": "infant_free",
+     "note": "Dzieci, które jeszcze nie chodzą same (niemowlęta, dzieci noszone), nie płacą. Mogą być w strefie zabaw tylko z dorosłym.",
+     "short": "Niechodzące maluchy wchodzą za darmo",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://krainapiratow.pl/cennik/",
+     "value": {
+      "condition": "not_walking",
+      "free": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "price_child",
+     "note": "Poniedziałek–czwartek: 20 zł za godzinę, 30 zł za dwie, 40 zł za cały dzień. Piątek–niedziela i święta: 25, 35 i 45 zł. Dłuższy pobyt: 0,50 zł za minutę.",
+     "short": "Od 20 zł za godzinę (pon.–czw.)",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://krainapiratow.pl/cennik/",
+     "value": {
+      "extension_pln_per_min": 0.5,
+      "weekday_1h_pln": 20,
+      "weekday_2h_pln": 30,
+      "weekday_day_pln": 40,
+      "weekend_1h_pln": 25,
+      "weekend_2h_pln": 35,
+      "weekend_day_pln": 45
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "opening_hours",
+     "note": "Codziennie 10:00–20:00, także w niedziele niehandlowe.",
+     "short": "Codziennie 10:00–20:00",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://krainapiratow.pl/",
+     "value": {
+      "osm": "Mo-Su 10:00-20:00"
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "cafe",
+     "note": "Na miejscu jest kawiarnia dla rodziców.",
+     "short": "Kawiarnia na miejscu",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://krainapiratow.pl/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Duży parking przy galerii Giant Meble.",
+     "short": "Duży parking",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://krainapiratow.pl/",
+     "value": {
+      "available": true,
+      "large": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "socks_required",
+     "note": "Dzieci i dorośli chodzą po sali w skarpetkach albo obuwiu ochronnym.",
+     "short": "Skarpetki obowiązkowe, także dla dorosłych",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://krainapiratow.pl/regulamin/",
+     "value": {
+      "applies_to": "children_and_adults",
+      "required": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "supervision",
+     "note": "Za dziecko na sali odpowiada rodzic albo pełnoletni opiekun.",
+     "short": "Dziecko zostaje pod Twoją opieką",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://krainapiratow.pl/regulamin/",
+     "value": {
+      "parent_required": true
+     },
+     "verified_at": "2026-11-04"
+    }
+   ],
+   "lat": 52.377095,
+   "lon": 16.979014,
+   "name": "Kraina Piratów",
+   "official_url": "https://krainapiratow.pl/",
+   "osm": "node/1982842819",
+   "slug": "kraina-piratow",
+   "status": "draft"
+  },
+  {
+   "address": "ul. Stanisława Barańczaka 1/47 LU3, 60-537 Poznań",
+   "city": "poznan",
+   "features": [
+    {
+     "age_band": null,
+     "key": "age_range",
+     "note": "Sala zabaw dla dzieci od 0 do 6 lat, urządzona głównie z myślą o młodszych.",
+     "short": "Dla dzieci od 0 do 6 lat",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://bawialniamlecz.pl/regulamin/",
+     "value": {
+      "max_years": 6,
+      "min_years": 0
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "opening_hours",
+     "note": "Regulamin podaje 10:00–19:00 codziennie. W OpenStreetMap w piątki–niedziele do 20:00, więc sprawdź przed wyjściem.",
+     "short": "Codziennie 10:00–19:00",
+     "source": "venue_website",
+     "to_confirm": true,
+     "url": "https://bawialniamlecz.pl/regulamin/",
+     "value": {
+      "text": "codziennie 10:00-19:00"
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "cafe",
+     "note": "Kawiarnia z kawą, napojami i lekkimi przekąskami dla dzieci i dorosłych.",
+     "short": "Kawiarnia z przekąskami dla dzieci",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://bawialniamlecz.pl/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "socks_required",
+     "note": "Dzieci bawią się wyłącznie w skarpetkach albo rajstopach, o każdej porze roku.",
+     "short": "Dzieci tylko w skarpetkach",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://bawialniamlecz.pl/regulamin/",
+     "value": {
+      "applies_to": "children",
+      "required": true
+     },
+     "verified_at": "2026-11-04"
+    },
+    {
+     "age_band": null,
+     "key": "supervision",
+     "note": "Rodzic opiekuje się dzieckiem przez cały pobyt. Płatna opieka personelu jest tylko dla dzieci powyżej 3 lat.",
+     "short": "Dziecko zostaje pod Twoją opieką",
+     "source": "venue_website",
+     "to_confirm": false,
+     "url": "https://bawialniamlecz.pl/regulamin/",
+     "value": {
+      "paid_care_from_years": 3,
+      "parent_required": true
+     },
+     "verified_at": "2026-11-04"
+    }
+   ],
+   "lat": 52.415421,
+   "lon": 16.90507,
+   "name": "Mlecz bawialnia i kawiarnia",
+   "official_url": "https://bawialniamlecz.pl/",
+   "osm": "node/12492719739",
+   "slug": "mlecz",
+   "status": "draft"
+  }
  ]
 }

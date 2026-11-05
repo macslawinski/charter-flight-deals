@@ -1,22 +1,29 @@
-/* Pieluchy i paszporty: muslin-swaddle background, Polish-passport burgundy for the brand,
-   stamp blue for sources. The source stamp is the one loud element; everything else stays quiet. */
+/* Pieluchy i paszporty: holiday palette (sky, sun, sea, coral) on a light sky background.
+   Loud element: the yellow "checker" panel with its solid offset shadow. Everything else is flat
+   tinted tiles; short headline first, the full note and source only after "Szczegóły". */
 :root {
-  --muslin: #f1f4f2;
-  --paper: #ffffff;
-  --ink: #1d2631;
-  --muted: #56616c;
-  --line: #d3dcd7;
-  --passport: #7a2433;
-  --stamp: #2a578a;
-  --ask: #8f5200;
-  --ask-bg: #fff4e2;
+  --sky: #eef6ff;
+  --sky-deep: #d6e9ff;
+  --navy: #17204a;
+  --muted: #4a5578;
+  --sea: #0f7a74;
+  --sea-soft: #d9f2ee;
+  --sun: #ffc845;
+  --sun-soft: #fff1c7;
+  --coral: #ff7360;
+  --coral-ink: #b83a28;
+  --coral-soft: #ffe4df;
+  --white: #ffffff;
+  --line: #d3e0f0;
 
   --display: "Bricolage Grotesque Variable", "Segoe UI", sans-serif;
   --text: "Atkinson Hyperlegible Next", "Segoe UI", system-ui, sans-serif;
 
-  --measure: 40rem;
-  --wide: 62rem;
+  --measure: 38rem;
+  --wide: 70rem;
   --gap: clamp(1rem, 4vw, 2rem);
+  --r-panel: 28px;
+  --r-tile: 18px;
   color-scheme: light;
 }
 
@@ -25,59 +32,59 @@
 *::after {
   box-sizing: border-box;
 }
-
 html {
   -webkit-text-size-adjust: 100%;
 }
-
 body {
   margin: 0;
-  background: var(--muslin);
-  color: var(--ink);
-  font: 400 1.125rem/1.6 var(--text);
+  background: var(--sky);
+  color: var(--navy);
+  font: 400 1.0625rem/1.55 var(--text);
+}
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+.icon {
+  display: inline-block;
+  flex: none;
 }
 
 h1,
 h2,
 h3 {
   font-family: var(--display);
-  line-height: 1.12;
-  margin: 0 0 0.5em;
+  line-height: 1.08;
+  margin: 0 0 0.4em;
   text-wrap: balance;
 }
 h1 {
-  font-size: clamp(2.1rem, 6vw, 3.4rem);
-  font-weight: 760;
-  letter-spacing: -0.02em;
-  color: var(--passport);
+  font-size: clamp(2.3rem, 7vw, 4.2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
 }
 h2 {
-  font-size: clamp(1.45rem, 3.4vw, 1.9rem);
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  margin-top: 2.2em;
+  font-size: clamp(1.5rem, 3.6vw, 2.2rem);
+  font-weight: 750;
+  letter-spacing: -0.02em;
 }
 h3 {
-  font-size: 1.15rem;
-  font-weight: 650;
+  font-size: 1.12rem;
+  font-weight: 700;
 }
 p {
   margin: 0 0 1em;
   max-width: var(--measure);
 }
-
 a {
-  color: var(--stamp);
+  color: var(--sea);
   text-underline-offset: 0.18em;
-  text-decoration-thickness: 1px;
-}
-a:hover {
-  text-decoration-thickness: 2px;
 }
 :focus-visible {
-  outline: 3px solid var(--stamp);
+  outline: 3px solid var(--coral);
   outline-offset: 3px;
-  border-radius: 2px;
+  border-radius: 6px;
 }
 
 .skip {
@@ -87,9 +94,17 @@ a:hover {
 .skip:focus {
   left: 1rem;
   top: 1rem;
-  background: var(--paper);
+  background: var(--white);
   padding: 0.5rem 0.75rem;
-  z-index: 1;
+  z-index: 2;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .wrap {
@@ -98,205 +113,512 @@ a:hover {
   padding: 0 var(--gap);
 }
 
-/* Header: the wordmark is set like a passport cover title, not a logo. */
-.site-head {
-  border-bottom: 1px solid var(--line);
-  background: var(--paper);
-}
+/* --- header / footer ------------------------------------------------------------------------ */
 .site-head .wrap {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
-  gap: 0.5rem 1.5rem;
-  padding-block: 0.9rem;
+  gap: 0.75rem 1.5rem;
+  padding-block: 1rem;
 }
 .wordmark {
-  font: 720 1.3rem/1 var(--display);
-  color: var(--passport);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font: 800 1.2rem/1 var(--display);
+  color: var(--navy);
   text-decoration: none;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
+}
+.wordmark-mark {
+  display: grid;
+  place-items: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  background: var(--coral);
+  color: var(--white);
 }
 .site-nav {
   display: flex;
-  gap: 1.25rem;
-  font-size: 1rem;
+  flex-wrap: wrap;
+  gap: 0.4rem;
 }
 .site-nav a {
-  color: var(--ink);
+  color: var(--navy);
   text-decoration: none;
+  font-weight: 700;
+  font-size: 0.98rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+}
+.site-nav a:hover {
+  background: var(--white);
 }
 .site-nav a[aria-current="page"] {
-  text-decoration: underline 2px var(--passport);
-  text-underline-offset: 0.35em;
+  background: var(--navy);
+  color: var(--white);
 }
 
 main {
-  padding-block: clamp(1.5rem, 5vw, 3rem) 4rem;
-}
-
-.lead {
-  font-size: 1.25rem;
-  color: var(--muted);
-}
-
-.draft-note {
-  border-left: 4px solid var(--ask);
-  background: var(--ask-bg);
-  padding: 0.75rem 1rem;
-  max-width: var(--measure);
-  margin-bottom: 1.5rem;
-}
-
-.callout {
-  border-left: 4px solid var(--passport);
-  background: var(--paper);
-  padding: 1rem 1.25rem;
-  max-width: var(--measure);
-  margin: 1.5rem 0;
-}
-.callout p:last-child {
-  margin-bottom: 0;
-}
-
-/* The source stamp: double outline like an ink stamp in a passport. Every verified fact has one. */
-.stamp {
-  display: inline-flex;
-  flex-direction: column;
-  gap: 0.05rem;
-  margin-top: 0.4rem;
-  padding: 0.25rem 0.6rem;
-  border: 1.5px solid currentColor;
-  outline: 1px solid currentColor;
-  outline-offset: 2px;
-  border-radius: 6px;
-  color: var(--stamp);
-  font-size: 0.85rem;
-  line-height: 1.3;
-  text-decoration: none;
-}
-a.stamp:hover .stamp-src {
-  text-decoration: underline;
-}
-.stamp-src {
-  font-weight: 700;
-}
-.stamp.ask {
-  color: var(--ask);
-}
-.stamp:focus-visible {
-  outline: 3px solid var(--stamp);
-  outline-offset: 3px;
-}
-
-/* Fact rows: label column + body; stacks on phones. Used on carrier, comparison and hotel pages. */
-.facts {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid var(--line);
-}
-.fact {
-  display: grid;
-  gap: 0.25rem 1.5rem;
-  padding-block: 1rem;
-  border-bottom: 1px solid var(--line);
-}
-@media (min-width: 44rem) {
-  .fact {
-    grid-template-columns: 12rem minmax(0, 1fr);
-  }
-}
-.fact-label {
-  font-weight: 700;
-}
-.fact-label a {
-  color: var(--ink);
-}
-.fact-label .band {
-  display: block;
-  font-weight: 400;
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-.fact-body p {
-  margin-bottom: 0.25rem;
-}
-.fact.missing .fact-body {
-  color: var(--muted);
-}
-
-/* "W skrócie" table: real table, scrolls sideways on narrow screens instead of squashing. */
-.table-scroll {
-  overflow-x: auto;
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  margin: 1rem 0 0.5rem;
-}
-table {
-  border-collapse: collapse;
-  width: 100%;
-  min-width: 36rem;
-  font-size: 1rem;
-}
-th,
-td {
-  text-align: left;
-  vertical-align: top;
-  padding: 0.7rem 0.9rem;
-  border-bottom: 1px solid var(--line);
-}
-thead th {
-  font-family: var(--display);
-  font-weight: 650;
-  background: var(--muslin);
-}
-tbody tr:last-child > * {
-  border-bottom: 0;
-}
-td.none {
-  color: var(--muted);
-}
-
-.toc {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 1.25rem;
-  padding: 0;
-  margin: 1rem 0 0;
-  list-style: none;
-}
-
-.entry {
-  display: grid;
-  gap: 1.5rem;
-  margin-top: 2.5rem;
-}
-@media (min-width: 44rem) {
-  .entry {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-.entry section {
-  border-top: 3px solid var(--passport);
-  padding-top: 1rem;
-}
-.entry h2 {
-  margin-top: 0;
-}
-
-.missing-list {
-  columns: 2 14rem;
-  padding-left: 1.2rem;
-  max-width: var(--measure);
+  padding-block: 0.5rem 4rem;
 }
 
 .site-foot {
-  border-top: 1px solid var(--line);
+  background: var(--navy);
+  color: #d9def0;
+  font-size: 0.95rem;
+  padding-block: 2rem 3rem;
+}
+.site-foot a {
+  color: var(--sun);
+}
+
+/* --- hero ----------------------------------------------------------------------------------- */
+.hero {
+  display: grid;
+  align-items: center;
+  gap: 1rem 2rem;
+  padding-block: 1rem 2rem;
+}
+@media (min-width: 52rem) {
+  .hero {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+}
+.hero .lead {
+  font-size: 1.2rem;
+  color: var(--muted);
+}
+.hero .illo {
+  width: min(100%, 30rem);
+  margin-inline: auto;
+}
+.page-hero {
+  display: grid;
+  gap: 1rem 2rem;
+  align-items: center;
+  padding-block: 1rem 1.5rem;
+}
+@media (min-width: 44rem) {
+  .page-hero {
+    grid-template-columns: 1fr 12rem;
+  }
+}
+.page-hero h1 {
+  font-size: clamp(2rem, 5.5vw, 3.2rem);
+}
+.page-hero .illo {
+  width: 12rem;
+  background: var(--sky-deep);
+}
+/* Phones: content first; the small page illustrations only cost a screen of scrolling there. */
+@media (max-width: 43.99rem) {
+  .page-hero .illo {
+    display: none;
+  }
+  .hero .illo {
+    width: min(100%, 20rem);
+  }
+}
+.crumb {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+/* --- checker (the loud element) -------------------------------------------------------------- */
+.checker {
+  background: var(--sun);
+  border-radius: var(--r-panel);
+  box-shadow: 8px 8px 0 var(--navy);
+  padding: clamp(1.25rem, 4vw, 2.25rem);
+  margin-block: 0.5rem 3rem;
+}
+.checker h2 {
+  margin-bottom: 0.8rem;
+}
+.checker fieldset {
+  border: 0;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+.checker legend {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.chip input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.chip span {
+  display: inline-block;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  background: var(--white);
+  border: 2px solid var(--navy);
+  font-weight: 700;
+  cursor: pointer;
+}
+.chip input:checked + span {
+  background: var(--navy);
+  color: var(--white);
+}
+.chip input:focus-visible + span {
+  outline: 3px solid var(--coral);
+  outline-offset: 3px;
+}
+.answer {
+  display: none;
+  background: var(--white);
+  border-radius: var(--r-tile);
+  padding: 1.25rem;
+  margin-top: 0.5rem;
+}
+.answer > h3 {
+  font-size: 1.3rem;
+}
+.answer .more {
+  margin: 1rem 0 0;
+  font-weight: 700;
+}
+
+/* --- tiles ---------------------------------------------------------------------------------- */
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 0.75rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.tile {
+  background: var(--white);
+  border-radius: var(--r-tile);
+  padding: 1rem 1.1rem;
+}
+.answer .tile {
+  background: var(--sky);
+}
+.tile-head {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.35rem;
+}
+.tile-icon {
+  display: grid;
+  place-items: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 12px;
+  background: var(--sea-soft);
+  color: var(--sea);
+  flex: none;
+}
+.tile-label {
+  font-weight: 700;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.2;
+}
+.tile-label .band {
+  display: block;
+  font-weight: 400;
+}
+.tile-short {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.12rem;
+  line-height: 1.25;
+  margin: 0.2rem 0 0;
+}
+.tile.none .tile-short {
+  color: var(--muted);
+  font-weight: 500;
+}
+.tile.none .tile-icon {
+  background: var(--sky-deep);
+  color: var(--muted);
+}
+.tile.ask .tile-icon {
+  background: var(--sun-soft);
+  color: #8a5a00;
+}
+.tile ul {
+  margin: 0.25rem 0 0;
+  padding-left: 1.1rem;
+}
+
+details.more-info {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+details.more-info summary {
+  cursor: pointer;
+  color: var(--sea);
+  font-weight: 700;
+  list-style: none;
+}
+details.more-info summary::-webkit-details-marker {
+  display: none;
+}
+details.more-info summary::before {
+  content: "+ ";
+}
+details.more-info[open] summary::before {
+  content: "− ";
+}
+details.more-info p {
+  margin: 0.4rem 0;
+}
+
+/* Source line: small, always there, never loud. */
+.source {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.source .icon {
+  color: var(--sea);
+}
+.source.ask .icon {
+  color: #8a5a00;
+}
+.badge-ask {
+  display: inline-block;
+  background: var(--sun-soft);
+  color: #6b4500;
+  border-radius: 999px;
+  padding: 0.1rem 0.6rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+/* --- entry cards on home ------------------------------------------------------------------- */
+.doors {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  margin-block: 1rem 3rem;
+}
+.door {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border-radius: var(--r-panel);
+  padding: 1.25rem 1.25rem 1.5rem;
+  color: var(--navy);
+  text-decoration: none;
+}
+.door .illo,
+.page-hero .illo {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.door .illo {
+  width: 100%;
+  max-width: 13rem;
+  margin-bottom: 0.5rem;
+}
+.door h3 {
+  font-size: 1.45rem;
+  margin-bottom: 0.2rem;
+}
+.door p {
+  margin: 0;
+  color: var(--muted);
+}
+.door:hover h3 {
+  text-decoration: underline;
+}
+.door.sea {
+  background: var(--sea-soft);
+}
+.door.sun {
+  background: var(--sun-soft);
+}
+.door.coral {
+  background: var(--coral-soft);
+}
+
+.trust {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.trust li {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+.trust .tile-icon {
+  background: var(--white);
+}
+
+/* --- section headings with icon --------------------------------------------------------------- */
+.section {
+  margin-top: 2.5rem;
+}
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.section-title .tile-icon {
+  background: var(--navy);
+  color: var(--sun);
+}
+.toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+.toc a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--white);
+  border-radius: 999px;
+  padding: 0.4rem 0.85rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+/* --- hotel ---------------------------------------------------------------------------------- */
+.score {
+  background: var(--white);
+  border-radius: var(--r-panel);
+  padding: 1.25rem 1.5rem;
+  display: grid;
+  gap: 0.6rem;
+  max-width: 36rem;
+}
+.score-num {
+  font: 800 2.4rem/1 var(--display);
+}
+.bar {
+  height: 12px;
+  border-radius: 999px;
+  background: var(--sky-deep);
+  overflow: hidden;
+}
+.bar > span {
+  display: block;
+  height: 100%;
+  background: var(--sea);
+  border-radius: 999px;
+}
+.ask-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+}
+.ask-list li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--sun-soft);
+  border-radius: 999px;
+  padding: 0.4rem 0.85rem;
+  font-weight: 700;
+}
+.draft {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  background: var(--white);
+  border-left: 5px solid var(--sun);
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  max-width: 40rem;
+  font-size: 0.95rem;
+}
+
+/* --- venues --------------------------------------------------------------------------------- */
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin-block: 0.5rem 1.25rem;
+}
+.venues {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.venue {
+  background: var(--white);
+  border-radius: var(--r-panel);
+  padding: 1.25rem;
+  display: grid;
+  gap: 0.6rem;
+  align-content: start;
+}
+.venue h3 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+.venue .addr {
+  display: flex;
+  gap: 0.4rem;
   color: var(--muted);
   font-size: 0.95rem;
-  padding-block: 1.5rem 3rem;
+  margin: 0;
+}
+.venue-facts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+.venue-facts li {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+}
+.venue-facts .icon {
+  color: var(--sea);
+  margin-top: 0.1rem;
+}
+.tag-small {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--sea-soft);
+  color: var(--sea);
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  justify-self: start;
+}
+
+.note-small {
+  font-size: 0.9rem;
+  color: var(--muted);
 }
 
 @media (prefers-reduced-motion: reduce) {

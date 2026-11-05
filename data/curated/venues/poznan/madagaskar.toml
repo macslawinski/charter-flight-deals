@@ -1,0 +1,30 @@
+# Discovered via OpenStreetMap (way/165076478, © OpenStreetMap contributors, ODbL); facts from the
+# venue's own pages (home, /cennik.html), read 2026-11-04. Written in our words.
+# Not stated: age range, toddler zone, opening hours, café, changing table, parking.
+slug = "madagaskar"
+city = "poznan"
+name = "Centrum Madagaskar"
+official_url = "https://www.centrummadagaskar.pl/"
+address = "ul. Smardzewska, 60-161 Poznań"
+lat = 52.389891
+lon = 16.859353
+osm = "way/165076478"
+status = "draft"
+
+[[feature]]
+key = "price_child"
+value = { weekday_1h_pln = 12, weekend_1h_pln = 15, weekday_pln_per_min = 0.2, weekend_pln_per_min = 0.25, up_to_5h_pln = 25 }
+short = "12 zł za godzinę (pon.–pt.)"
+note = "Poniedziałek–piątek 12 zł za godzinę (0,20 zł za minutę), weekend 15 zł (0,25 zł za minutę). Bilet do 5 godzin: 25 zł."
+source = "venue_website"
+url = "https://www.centrummadagaskar.pl/cennik.html"
+verified_at = 2026-11-04
+
+[[feature]]
+key = "socks_required"
+value = { required = true, applies_to = "children", item = "tights" }
+short = "Zabierz rajstopy dla dziecka"
+note = "Strona prosi, żeby przed wizytą zaopatrzyć dziecko w rajstopy."
+source = "venue_website"
+url = "https://www.centrummadagaskar.pl/"
+verified_at = 2026-11-04

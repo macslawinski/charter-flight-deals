@@ -12,6 +12,7 @@ status = "draft"
 key = "cot"
 age_band = "0-3"
 value = { available = true, on_request = true, fee_pln_per_night = 60, fee_pln_per_stay = 180 }
+short = "Na zamówienie, 60 zł za dobę"
 note = "Łóżeczko dla dziecka do 3 lat na zamówienie: 60 zł za dobę albo 180 zł za cały pobyt."
 source = "hotel_website"
 url = "https://www.hotelsaltic.pl/grzybowo/dzieci"
@@ -21,6 +22,7 @@ verified_at = 2026-11-04
 key = "child_free_stay"
 age_band = "0-3"
 value = { free = true, sleeping_with_parents = true, max_children = 1 }
+short = "Do 3 lat gratis (śpi z rodzicami)"
 note = "Dziecko do 3 lat śpiące z rodzicami nie płaci za pobyt (jedno takie dziecko na pobyt)."
 source = "hotel_website"
 url = "https://www.hotelsaltic.pl/grzybowo/dzieci"
@@ -29,6 +31,7 @@ verified_at = 2026-11-04
 [[feature]]
 key = "baby_bath"
 value = { available = true, on_request = true }
+short = "Na życzenie"
 note = "Wanienka na życzenie."
 source = "hotel_website"
 url = "https://www.hotelsaltic.pl/grzybowo/dzieci"
@@ -37,6 +40,7 @@ verified_at = 2026-11-04
 [[feature]]
 key = "bottle_warmer"
 value = { available = true, on_request = true }
+short = "Na życzenie"
 note = "Podgrzewacz do butelek na życzenie."
 source = "hotel_website"
 url = "https://www.hotelsaltic.pl/grzybowo/dzieci"
@@ -45,6 +49,7 @@ verified_at = 2026-11-04
 [[feature]]
 key = "high_chair"
 value = { available = true }
+short = "W restauracji"
 note = "Krzesełka do karmienia w restauracji."
 source = "hotel_website"
 url = "https://www.hotelsaltic.pl/grzybowo/dzieci"
@@ -53,6 +58,7 @@ verified_at = 2026-11-04
 [[feature]]
 key = "kids_menu"
 value = { available = true }
+short = "Jest menu dla dzieci"
 note = "Osobne menu dla dzieci w restauracji. O jedzeniu dla niemowląt strona nie wspomina."
 source = "hotel_website"
 url = "https://www.hotelsaltic.pl/grzybowo/dzieci"
@@ -61,6 +67,7 @@ verified_at = 2026-11-04
 [[feature]]
 key = "changing_table"
 value = { available = true, where = "public_toilets" }
+short = "W toaletach ogólnodostępnych"
 note = "Przewijaki w toaletach ogólnodostępnych."
 source = "hotel_website"
 url = "https://www.hotelsaltic.pl/grzybowo/dzieci"
@@ -69,6 +76,7 @@ verified_at = 2026-11-04
 [[feature]]
 key = "potty"
 value = { available = true, on_request = true, toilet_seat_adapter = true, step_stool = true }
+short = "Nocnik i nakładka na życzenie"
 note = "Na życzenie nocnik, nakładka na sedes i podest."
 source = "hotel_website"
 url = "https://www.hotelsaltic.pl/grzybowo/dzieci"
@@ -77,6 +85,7 @@ verified_at = 2026-11-04
 [[feature]]
 key = "playroom"
 value = { available = true, open = "08:00", close = "20:00", break = "13:00-13:30" }
+short = "Codziennie 8:00–20:00"
 note = "Sala zabaw (Kid's room) w budynku Morze, 1. piętro, codziennie 8:00–20:00 (przerwa 13:00–13:30). Minimalnego wieku i opieki strona nie podaje."
 source = "hotel_website"
 url = "https://www.hotelsaltic.pl/grzybowo/dzieci"
@@ -85,6 +94,7 @@ verified_at = 2026-11-04
 [[feature]]
 key = "playground"
 value = { available = true, outdoor = true }
+short = "Na zewnątrz"
 note = "Plac zabaw na zewnątrz."
 source = "hotel_website"
 url = "https://www.hotelsaltic.pl/grzybowo/dzieci"
@@ -93,6 +103,7 @@ verified_at = 2026-11-04
 [[feature]]
 key = "kids_animation"
 value = { available = true }
+short = "W wybranych godzinach"
 note = "Zajęcia z animatorami w wybranych godzinach; przedziału wieku strona nie podaje."
 source = "hotel_website"
 url = "https://www.hotelsaltic.pl/grzybowo/dzieci"
@@ -101,6 +112,7 @@ verified_at = 2026-11-04
 [[feature]]
 key = "paddling_pool"
 value = { indoor = true, outdoor = true, heated = true, outdoor_seasonal = true }
+short = "Podgrzewane, w środku cały rok"
 note = "Podgrzewane brodziki w strefie krytej (cały rok) i przy basenie zewnętrznym (sezonowo; termin sezonu nie jest podany)."
 source = "hotel_website"
 url = "https://www.hotelsaltic.pl/grzybowo/dzieci"
@@ -109,6 +121,7 @@ verified_at = 2026-11-04
 [[feature]]
 key = "beach_walk_minutes"
 value = { minutes = 3 }
+short = "Około 3 minuty pieszo"
 note = "Około 3 minuty spacerem do dzikiej plaży."
 source = "hotel_website"
 url = "https://www.hotelsaltic.pl/grzybowo"
@@ -117,6 +130,7 @@ verified_at = 2026-11-04
 [[feature]]
 key = "parking"
 value = { paid = true, fee_pln_per_day = 90 }
+short = "Płatny, 90 zł za dobę"
 note = "Parking płatny, 90 zł za dobę."
 source = "hotel_website"
 url = "https://www.hotelsaltic.pl/grzybowo/hotel/faq"

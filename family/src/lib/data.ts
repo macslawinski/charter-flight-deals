@@ -1,6 +1,6 @@
-// Typed access to src/data/family.json (written by scripts/export_family.py) plus Polish labels.
-// Every lookup that misses throws: a new rule or feature key without a label must fail the build,
-// not render a raw key to parents.
+// Typed access to src/data/family.json (written by scripts/export_family.py) plus Polish labels and
+// icons. Every lookup that misses throws: a new key without a label must fail the build, not render
+// a raw key to parents.
 import raw from "../data/family.json";
 
 export type Value = Record<string, unknown>;
@@ -10,6 +10,7 @@ export interface Fact {
   age_band: string | null;
   value: Value;
   note: string | null;
+  short: string | null;
   source: string;
   url: string | null;
   verified_at: string;
@@ -53,21 +54,47 @@ export interface Carrier {
   rules: Fact[];
 }
 
+export interface Venue {
+  slug: string;
+  city: string;
+  name: string;
+  status: string;
+  official_url: string | null;
+  address: string | null;
+  lat: number | null;
+  lon: number | null;
+  osm: string | null;
+  features: Fact[];
+}
+
 interface Data {
   feature_keys: string[];
   rule_keys: string[];
+  venue_keys: string[];
+  venue_cities: Record<string, string>;
   places: Place[];
   hotels: Hotel[];
   carriers: Carrier[];
+  venues: Venue[];
 }
 
 export const data = raw as unknown as Data;
 
 function must<T>(table: Record<string, T>, key: string, what: string): T {
   const v = table[key];
-  if (v === undefined) throw new Error(`No ${what} label for '${key}' (family/src/lib/data.ts)`);
+  if (v === undefined) throw new Error(`No ${what} for '${key}' (family/src/lib/data.ts)`);
   return v;
 }
+
+// One-line headline for cards: the curated `short`, else the note's first sentence.
+export function short(f: Fact): string {
+  if (f.short) return f.short;
+  const note = f.note ?? "";
+  const m = note.match(/^.*?[.!?](\s|$)/);
+  return (m ? m[0] : note).trim();
+}
+
+// --- carriers ---------------------------------------------------------------------------------
 
 const CARRIERS: Record<string, { name: string; slug: string }> = {
   E4: { name: "Enter Air", slug: "enter-air" },
@@ -77,47 +104,64 @@ const CARRIERS: Record<string, { name: string; slug: string }> = {
   RR: { name: "Buzz", slug: "buzz" },
   W6: { name: "Wizz Air", slug: "wizz-air" },
 };
-export const carrierName = (code: string) => must(CARRIERS, code, "carrier").name;
-export const carrierSlug = (code: string) => must(CARRIERS, code, "carrier").slug;
+export const carrierName = (code: string) => must(CARRIERS, code, "carrier name").name;
+export const carrierSlug = (code: string) => must(CARRIERS, code, "carrier slug").slug;
 
 export const carriers = [...data.carriers].sort((a, b) =>
   carrierName(a.carrier_iata).localeCompare(carrierName(b.carrier_iata), "pl"),
 );
 
-const RULES: Record<string, string> = {
-  infant_fee: "Opłata za niemowlę",
-  child_fare: "Bilet dziecka",
-  infant_min_age: "Od jakiego wieku",
-  infants_per_adult: "Niemowlęta na jednego dorosłego",
-  twins: "Bliźnięta",
-  lap_infant: "Niemowlę na kolanach",
-  infant_seat: "Własne miejsce dla niemowlęcia",
-  bassinet: "Kołyska w samolocie",
-  child_seating: "Miejsce obok dziecka",
-  infant_baggage: "Bagaż niemowlęcia",
-  child_baggage: "Bagaż dziecka",
-  baby_food: "Jedzenie dla dziecka",
-  stroller: "Wózek",
-  car_seat: "Fotelik samochodowy",
-  travel_cot: "Łóżeczko turystyczne",
-  priority_boarding: "Pierwszeństwo wejścia na pokład",
+const RULES: Record<string, { label: string; icon: string }> = {
+  infant_fee: { label: "Opłata za niemowlę", icon: "ticket" },
+  child_fare: { label: "Bilet dziecka", icon: "ticket" },
+  infant_min_age: { label: "Od jakiego wieku", icon: "calendar" },
+  infants_per_adult: { label: "Dzieci na jednego dorosłego", icon: "people" },
+  twins: { label: "Bliźnięta", icon: "people" },
+  lap_infant: { label: "Na kolanach", icon: "seat" },
+  infant_seat: { label: "Własne miejsce", icon: "seat" },
+  bassinet: { label: "Kołyska w samolocie", icon: "cot" },
+  child_seating: { label: "Miejsce obok dziecka", icon: "seat" },
+  infant_baggage: { label: "Bagaż niemowlęcia", icon: "bag" },
+  child_baggage: { label: "Bagaż dziecka", icon: "bag" },
+  baby_food: { label: "Jedzenie dla dziecka", icon: "bottle" },
+  stroller: { label: "Wózek", icon: "stroller" },
+  car_seat: { label: "Fotelik", icon: "carseat" },
+  travel_cot: { label: "Łóżeczko turystyczne", icon: "cot" },
+  priority_boarding: { label: "Wejście na pokład", icon: "door" },
 };
-export const ruleLabel = (key: string) => must(RULES, key, "rule");
+export const ruleLabel = (key: string) => must(RULES, key, "rule label").label;
+export const ruleIcon = (key: string) => must(RULES, key, "rule icon").icon;
 
 // Comparison topics: the questions a parent asks, in the order they ask them.
-export const TOPICS: { id: string; title: string; keys: string[] }[] = [
-  { id: "cena", title: "Ile płacisz za dziecko", keys: ["infant_fee", "child_fare"] },
-  { id: "wiek", title: "Od jakiego wieku dziecko może lecieć", keys: ["infant_min_age"] },
-  { id: "dorosli", title: "Ile dzieci na jednego dorosłego", keys: ["infants_per_adult", "twins"] },
+export const TOPICS: { id: string; title: string; icon: string; keys: string[] }[] = [
+  { id: "cena", title: "Ile płacisz", icon: "ticket", keys: ["infant_fee", "child_fare"] },
+  { id: "wiek", title: "Od jakiego wieku", icon: "calendar", keys: ["infant_min_age"] },
+  { id: "dorosli", title: "Ilu dorosłych", icon: "people", keys: ["infants_per_adult", "twins"] },
   {
     id: "miejsce",
     title: "Gdzie siedzi dziecko",
+    icon: "seat",
     keys: ["lap_infant", "infant_seat", "bassinet", "child_seating"],
   },
-  { id: "bagaz", title: "Bagaż i jedzenie", keys: ["infant_baggage", "child_baggage", "baby_food"] },
-  { id: "sprzet", title: "Wózek, fotelik i łóżeczko", keys: ["stroller", "car_seat", "travel_cot"] },
-  { id: "wejscie", title: "Wejście na pokład", keys: ["priority_boarding"] },
+  { id: "bagaz", title: "Bagaż i jedzenie", icon: "bag", keys: ["infant_baggage", "child_baggage", "baby_food"] },
+  { id: "sprzet", title: "Wózek i fotelik", icon: "stroller", keys: ["stroller", "car_seat", "travel_cot"] },
+  { id: "wejscie", title: "Wejście na pokład", icon: "door", keys: ["priority_boarding"] },
 ];
+
+// Ages in the checker. A rule applies when its band overlaps the chosen age.
+export const AGES = [
+  { id: "niemowle", label: "do 2 lat", bands: [null, "0-1", "0-2", "1-2", "0-3"] },
+  { id: "maluch", label: "2–3 lata", bands: [null, "2+", "2-3", "0-3"] },
+] as const;
+export type AgeId = (typeof AGES)[number]["id"];
+export const rulesFor = (c: Carrier, keys: string[], age: AgeId) => {
+  const bands: readonly (string | null)[] = must(
+    Object.fromEntries(AGES.map((a) => [a.id, a.bands])),
+    age,
+    "age",
+  );
+  return keys.flatMap((k) => c.rules.filter((r) => r.key === k && bands.includes(r.age_band)));
+};
 
 const BANDS: Record<string, string> = {
   "0-1": "do 1. roku",
@@ -137,33 +181,38 @@ const SOURCES: Record<string, string> = {
   own_visit: "nasza wizyta",
   operator_page: "strona biura podróży",
   review_hint: "opinie gości",
+  venue_website: "strona bawialni",
+  osm: "OpenStreetMap",
 };
-export const sourceLabel = (s: string) => must(SOURCES, s, "source");
+export const sourceLabel = (s: string) => must(SOURCES, s, "source label");
 
-const FEATURES: Record<string, string> = {
-  cot: "Łóżeczko",
-  child_free_stay: "Pobyt dziecka",
-  baby_monitor: "Elektroniczna niania",
-  high_chair: "Krzesełko do karmienia",
-  kids_menu: "Menu dla dzieci",
-  toddler_food: "Posiłki dla maluchów",
-  bottle_warmer: "Podgrzewacz do butelek",
-  baby_bath: "Wanienka",
-  changing_table: "Przewijak",
-  potty: "Nocnik",
-  playroom: "Bawialnia",
-  playground: "Plac zabaw",
-  kids_animation: "Animacje dla dzieci",
-  paddling_pool: "Brodzik",
-  kids_pool: "Basen dla dzieci",
-  shade: "Cień przy basenie i placu zabaw",
-  lift: "Winda",
-  step_free_access: "Dojście bez schodów",
-  stroller_rental: "Wypożyczenie wózka",
-  beach_walk_minutes: "Spacer na plażę",
-  parking: "Parking",
+// --- hotels -----------------------------------------------------------------------------------
+
+const FEATURES: Record<string, { label: string; icon: string }> = {
+  cot: { label: "Łóżeczko", icon: "cot" },
+  child_free_stay: { label: "Pobyt dziecka", icon: "bed" },
+  baby_monitor: { label: "Elektroniczna niania", icon: "monitor" },
+  high_chair: { label: "Krzesełko do karmienia", icon: "chair" },
+  kids_menu: { label: "Menu dla dzieci", icon: "utensils" },
+  toddler_food: { label: "Posiłki dla maluchów", icon: "bottle" },
+  bottle_warmer: { label: "Podgrzewacz do butelek", icon: "bottle" },
+  baby_bath: { label: "Wanienka", icon: "bath" },
+  changing_table: { label: "Przewijak", icon: "diaper" },
+  potty: { label: "Nocnik", icon: "potty" },
+  playroom: { label: "Bawialnia", icon: "blocks" },
+  playground: { label: "Plac zabaw", icon: "slide" },
+  kids_animation: { label: "Animacje", icon: "star" },
+  paddling_pool: { label: "Brodzik", icon: "wave" },
+  kids_pool: { label: "Basen dla dzieci", icon: "wave" },
+  shade: { label: "Cień przy basenie", icon: "sun" },
+  lift: { label: "Winda", icon: "lift" },
+  step_free_access: { label: "Bez schodów", icon: "ramp" },
+  stroller_rental: { label: "Wypożyczenie wózka", icon: "stroller" },
+  beach_walk_minutes: { label: "Do plaży", icon: "umbrella" },
+  parking: { label: "Parking", icon: "parking" },
 };
-export const featureLabel = (key: string) => must(FEATURES, key, "feature");
+export const featureLabel = (key: string) => must(FEATURES, key, "feature label").label;
+export const featureIcon = (key: string) => must(FEATURES, key, "feature icon").icon;
 
 export const FEATURE_GROUPS: { title: string; keys: string[] }[] = [
   { title: "Spanie", keys: ["cot", "child_free_stay", "baby_monitor"] },
@@ -175,17 +224,49 @@ export const FEATURE_GROUPS: { title: string; keys: string[] }[] = [
   { title: "Okolica", keys: ["beach_walk_minutes", "parking"] },
 ];
 
-// Every feature key must sit in exactly one group, or a fact would silently vanish from the page.
+// --- indoor playgrounds -----------------------------------------------------------------------
+
+const VENUE_FEATURES: Record<string, { label: string; icon: string }> = {
+  age_range: { label: "Dla kogo", icon: "people" },
+  toddler_zone: { label: "Strefa malucha", icon: "blocks" },
+  infant_free: { label: "Najmłodsi", icon: "ticket" },
+  price_child: { label: "Cena za dziecko", icon: "ticket" },
+  price_adult: { label: "Cena za dorosłego", icon: "ticket" },
+  opening_hours: { label: "Godziny", icon: "clock" },
+  cafe: { label: "Kawiarnia", icon: "coffee" },
+  parking: { label: "Parking", icon: "parking" },
+  socks_required: { label: "Skarpetki", icon: "socks" },
+  supervision: { label: "Opieka", icon: "hand" },
+  toddler_classes: { label: "Zajęcia dla maluchów", icon: "star" },
+  changing_table: { label: "Przewijak", icon: "diaper" },
+};
+export const venueLabel = (key: string) => must(VENUE_FEATURES, key, "venue label").label;
+export const venueIcon = (key: string) => must(VENUE_FEATURES, key, "venue icon").icon;
+export const VENUE_ORDER = [
+  "age_range", "toddler_zone", "infant_free", "toddler_classes", "price_child", "price_adult",
+  "opening_hours", "socks_required", "cafe", "changing_table", "parking", "supervision",
+];
+
+// A venue is "for the youngest" only when its own site says so, never by guess.
+export function forToddlers(v: Venue): boolean {
+  return v.features.some((f) => {
+    if (["toddler_zone", "infant_free", "toddler_classes"].includes(f.key)) return true;
+    if (f.key === "age_range") return f.value.min === "infant" || f.value.min_years === 0;
+    return false;
+  });
+}
+export const cityName = (slug: string) => must(data.venue_cities, slug, "city");
+
+// --- consistency checks: a key outside its display list would silently vanish from the page ---
 {
-  const grouped = FEATURE_GROUPS.flatMap((g) => g.keys).sort();
-  const known = [...data.feature_keys].sort();
-  if (grouped.join() !== known.join()) {
-    throw new Error(`FEATURE_GROUPS out of sync with feature_keys: ${grouped} vs ${known}`);
+  const same = (a: string[], b: string[]) => [...a].sort().join() === [...b].sort().join();
+  if (!same(FEATURE_GROUPS.flatMap((g) => g.keys), data.feature_keys)) {
+    throw new Error("FEATURE_GROUPS out of sync with feature_keys");
   }
-  const topical = TOPICS.flatMap((t) => t.keys).sort();
-  if (topical.join() !== [...data.rule_keys].sort().join()) {
+  if (!same(TOPICS.flatMap((t) => t.keys), data.rule_keys)) {
     throw new Error("TOPICS out of sync with rule_keys");
   }
+  if (!same(VENUE_ORDER, data.venue_keys)) throw new Error("VENUE_ORDER out of sync with venue_keys");
 }
 
 const dateFmt = new Intl.DateTimeFormat("pl-PL", {
@@ -195,32 +276,3 @@ const dateFmt = new Intl.DateTimeFormat("pl-PL", {
   timeZone: "Europe/Warsaw",
 });
 export const plDate = (iso: string) => dateFmt.format(new Date(`${iso}T12:00:00Z`));
-
-// Short answers for the "w skrócie" table. Unknown shapes fall back to null ("see details"),
-// never to a guess.
-export function feeShort(v: Value | undefined): string | null {
-  if (!v) return null;
-  if (typeof v.amount_eur === "number") {
-    return `${v.amount_eur} € za lot${v.per === "one_way" ? " w jedną stronę" : ""}`;
-  }
-  if (typeof v.discount_pct_international === "number") {
-    return `${v.discount_pct_international}% zniżki od ceny dorosłego`;
-  }
-  if (v.set_by_tour_operator === true) return "cenę ustala biuro podróży";
-  if (v.amount_published === false) return v.discounted ? "zniżka, kwoty nie podaje" : "płatne, kwoty nie podaje";
-  return null;
-}
-
-export function minAgeShort(v: Value | undefined): string | null {
-  if (!v) return null;
-  if (typeof v.min_hours === "number") return `od ${v.min_hours} godzin`;
-  if (typeof v.min_days === "number") return `od ${v.min_days} dni`;
-  return null;
-}
-
-export function perAdultShort(v: Value | undefined): string | null {
-  if (!v || typeof v.max !== "number") return null;
-  return v.max === 1 ? "1 niemowlę" : `${v.max} niemowlęta`;
-}
-
-export const ruleOf = (c: Carrier, key: string) => c.rules.filter((r) => r.key === key);

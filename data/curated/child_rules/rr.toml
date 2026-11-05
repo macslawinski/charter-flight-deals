@@ -6,6 +6,7 @@ carrier = "RR"
 key = "infant_fee"
 age_band = "0-2"
 value = { amount_eur = 25, per = "one_way" }
+short = "25 € za lot w jedną stronę"
 note = "Niemowlę na kolanach: 25 € za każdy lot w jedną stronę (przy zakupie w Buzz). Kupując lot w biurze podróży, cenę niemowlęcia sprawdź w biurze."
 source = "carrier_official"
 url = "https://www.buzzair.com/en/tcs/regulations/"
@@ -14,6 +15,7 @@ verified_at = 2026-11-04
 [[rule]]
 key = "infant_min_age"
 value = { min_days = 8 }
+short = "Od 8. dnia życia"
 note = "Dzieci młodszych niż 8 dni linia nie przewozi."
 source = "carrier_official"
 url = "https://www.buzzair.com/en/tcs/regulations/"
@@ -23,6 +25,7 @@ verified_at = 2026-11-04
 key = "infants_per_adult"
 age_band = "0-2"
 value = { max = 1 }
+short = "Jedno niemowlę na dorosłego"
 note = "W rezerwacji musi być co najmniej jeden dorosły na każde niemowlę."
 source = "carrier_official"
 url = "https://www.buzzair.com/en/tcs/regulations/"
@@ -32,6 +35,7 @@ verified_at = 2026-11-04
 key = "lap_infant"
 age_band = "0-2"
 value = { allowed = true, max_per_row = 2, excluded_rows = [1, 16, 17] }
+short = "Na kolanach; nie w rzędach 1, 16, 17"
 note = "Niemowlę na kolanach przypięte pasem od załogi. W jednym rzędzie najwyżej dwoje dzieci do 2 lat; z niemowlęciem nie usiądziesz w rzędach 1, 16 i 17."
 source = "carrier_official"
 url = "https://www.buzzair.com/en/tcs/regulations/"
@@ -41,6 +45,7 @@ verified_at = 2026-11-04
 key = "infant_seat"
 age_band = "0-2"
 value = { full_fare = true, booking = "call_centre_or_chat", forward_facing_car_seat = true, cares_min_months = 12 }
+short = "Własne miejsce za pełną cenę"
 note = "Własne miejsce dla niemowlęcia: pełna taryfa, rezerwacja przez infolinię lub czat. Dziecko siedzi w zatwierdzonym foteliku przodem do kierunku lotu albo w pasach AmSafe CARES (od 12 miesięcy)."
 source = "carrier_official"
 url = "https://www.buzzair.com/en/tcs/regulations/"
@@ -50,6 +55,7 @@ verified_at = 2026-11-04
 key = "infant_baggage"
 age_band = "0-2"
 value = { baby_bag_kg = 5, cabin_bag_without_own_seat = false }
+short = "Torba dla dziecka do 5 kg"
 note = "Torba dla niemowlęcia do 5 kg oprócz Twojego bagażu podręcznego. Niemowlę bez własnego miejsca nie ma osobnego bagażu podręcznego."
 source = "carrier_official"
 url = "https://www.buzzair.com/en/tcs/regulations/"
@@ -58,6 +64,7 @@ verified_at = 2026-11-04
 [[rule]]
 key = "stroller"
 value = { free = true, per_child = 1, double_pushchair_ok = true }
+short = "Wózek gratis"
 note = "Jeden składany wózek (także podwójny), system podróżny lub nosidło na dziecko bezpłatnie."
 source = "carrier_official"
 url = "https://www.buzzair.com/en/tcs/regulations/"
@@ -66,6 +73,7 @@ verified_at = 2026-11-04
 [[rule]]
 key = "car_seat"
 value = { free_one_of = ["car_seat", "booster_seat", "travel_cot"], extra_item_fee_eur = 15, extra_item_max_kg = 20 }
+short = "Jeden fotelik albo łóżeczko gratis"
 note = "Bezpłatnie jeden fotelik, podstawka albo łóżeczko turystyczne. Każdy kolejny sprzęt dziecięcy kosztuje 15 € za sztukę i lot (do 20 kg)."
 source = "carrier_official"
 url = "https://www.buzzair.com/en/tcs/regulations/"
@@ -75,6 +83,7 @@ verified_at = 2026-11-04
 key = "child_seating"
 age_band = "2+"
 value = { paid_seat_required = true, child_seat_free = true, max_free_children_per_adult = 4 }
+short = "Płatne miejsce dorosłego, dziecko obok"
 note = "Z dzieckiem od 2 do 11 lat trzeba wykupić miejsce dla dorosłego. Dziecko dostaje wtedy miejsce obok bezpłatnie (najwyżej czworo dzieci na dorosłego)."
 source = "carrier_official"
 url = "https://www.buzzair.com/en/tcs/regulations/"

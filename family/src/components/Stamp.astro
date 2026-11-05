@@ -1,5 +1,6 @@
 ---
-// Source stamp shown under every fact: where it comes from and when we checked it.
+// Small source line under a fact: where it comes from and when we checked it.
+import Icon from "./Icon.astro";
 import { plDate, sourceLabel, type Fact } from "../lib/data";
 
 interface Props {
@@ -7,36 +8,20 @@ interface Props {
   owner?: string;
 }
 const { fact, owner } = Astro.props;
-const src =
-  owner && fact.source === "carrier_official" ? `${owner}, oficjalna strona` : sourceLabel(fact.source);
-const cls = fact.to_confirm ? "stamp ask" : "stamp";
+const src = owner && fact.source === "carrier_official" ? owner : sourceLabel(fact.source);
+const text = `${src}, sprawdzone ${plDate(fact.verified_at)}`;
 ---
 
-{
-  fact.url ? (
-    <a class={cls} href={fact.url} rel="noopener" target="_blank">
-      <span class="stamp-src">
-        {fact.to_confirm ? "Do potwierdzenia, " : "Źródło: "}
-        {src}
-        <span class="visually-hidden"> (otwiera się w nowej karcie)</span>
-      </span>
-      <span>sprawdzone {plDate(fact.verified_at)}</span>
-    </a>
-  ) : (
-    <span class={cls}>
-      <span class="stamp-src">Źródło: {src}</span>
-      <span>sprawdzone {plDate(fact.verified_at)}</span>
-    </span>
-  )
-}
-
-<style>
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip-path: inset(50%);
-    white-space: nowrap;
+<span class:list={["source", { ask: fact.to_confirm }]}>
+  <Icon name={fact.to_confirm ? "question" : "check"} size={16} />
+  {
+    fact.url ? (
+      <a href={fact.url} rel="noopener" target="_blank">
+        {text}
+        <span class="visually-hidden"> (źródło, otwiera się w nowej karcie)</span>
+      </a>
+    ) : (
+      <span>{text}</span>
+    )
   }
-</style>
+</span>

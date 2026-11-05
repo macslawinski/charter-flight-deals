@@ -43,6 +43,9 @@ def build(data: curated.Curated) -> dict[str, Any]:
         "places": [asdict(p) for p in data.places],
         "hotels": [asdict(h) for h in data.hotels],
         "carriers": [asdict(c) for c in sorted(data.carriers, key=lambda c: c.carrier_iata)],
+        "venue_keys": sorted(curated.VENUE_KEYS),
+        "venue_cities": curated.VENUE_CITIES,
+        "venues": [asdict(v) for v in sorted(data.venues, key=lambda v: (v.city, v.name))],
     })
 
 
