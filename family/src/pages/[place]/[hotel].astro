@@ -31,18 +31,30 @@ const missing = all.filter((k) => !stated.has(k));
 const pct = Math.round((100 * stated.size) / all.length);
 const latest = h.features.map((f) => f.verified_at).sort().at(-1);
 const duration = (min: number) => `${Math.floor(min / 60)} h ${String(min % 60).padStart(2, "0")} min`;
+// How we measured each mode: one caption under the table instead of the same words in every row.
 const ACCESS_MODES = [
-  { mode: "transfer", title: "Z lotniska", icon: "plane" },
-  { mode: "car", title: "Autem", icon: "car" },
-  { mode: "train", title: "Pociągiem", icon: "train" },
+  { mode: "transfer", title: "Transferem", icon: "plane", how: "z lotniska, wg strony hotelu" },
+  { mode: "car", title: "Autem", icon: "car", how: "bez korków i postojów" },
+  { mode: "train", title: "Pociągiem", icon: "train", how: "do najbliższej stacji, najszybsze połączenie z najwyżej 1 przesiadką" },
 ] as const;
 for (const a of h.access) {
   if (!ACCESS_MODES.some((m) => m.mode === a.mode)) throw new Error(`hotel ${h.slug}: no label for access mode ${a.mode}`);
 }
-const accessModes = ACCESS_MODES.map((m) => ({
-  ...m,
-  rows: h.access.filter((a) => a.mode === m.mode).sort((a, b) => a.minutes - b.minutes),
-})).filter((m) => m.rows.length > 0);
+const accessModes = ACCESS_MODES.filter((m) => h.access.some((a) => a.mode === m.mode));
+// Rows: one per origin, ordered by the first mode's time (usually car).
+const origins = [...new Set(
+  h.access
+    .filter((a) => a.mode === accessModes[0]?.mode)
+    .sort((a, b) => a.minutes - b.minutes)
+    .map((a) => a.from_code)
+    .concat(h.access.map((a) => a.from_code)),
+)];
+const cell = (from: string, mode: string) => h.access.find((a) => a.from_code === from && a.mode === mode);
+const accessSources = [...new Map(
+  h.access.filter((a) => a.url).map((a) => [new URL(a.url!).hostname.replace(/^www\./, ""), a.url!]),
+)];
+const accessChecked = h.access.map((a) => a.verified_at).sort().at(-1);
+const transfer = h.features.find((f) => f.key === "transfer");
 const groups = FEATURE_GROUPS.map((g) => ({ ...g, keys: g.keys.filter((k) => stated.has(k)) })).filter(
   (g) => g.keys.length > 0,
 );
@@ -122,28 +134,60 @@ const groups = FEATURE_GROUPS.map((g) => ({ ...g, keys: g.keys.filter((k) => sta
           Czasy dojazdu jeszcze sprawdzamy.
         </p>
       ) : (
-        accessModes.map((m) => (
-          <>
-            <h3 style="margin:1.25rem 0 0.5rem">{m.title}</h3>
-            <ul class="ask-list">
-              {m.rows.map((a) => (
-                <li>
-                  <Icon name={m.icon} size={18} />
-                  <span>
-                    <strong>{a.from_code}</strong>: około {duration(a.minutes)}
-                    {a.note && <span class="note-small"> {a.note}</span>}
-                    {a.url && (
-                      <span class="note-small">
-                        {" "}
-                        <a href={a.url} rel="noopener">Źródło</a>, {plDate(a.verified_at)}
-                      </span>
-                    )}
-                  </span>
-                </li>
+        <div class="access">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Skąd</th>
+                {accessModes.map((m) => (
+                  <th scope="col">
+                    <span class="access-mode">
+                      <Icon name={m.icon} size={18} />
+                      {m.title}
+                    </span>
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {origins.map((from) => (
+                <tr>
+                  <th scope="row">{from}</th>
+                  {accessModes.map((m) => {
+                    const a = cell(from, m.mode);
+                    return a ? (
+                      <td>
+                        <span class="access-time">{duration(a.minutes)}</span>
+                        {a.note && <span class="access-note">{a.note}</span>}
+                      </td>
+                    ) : (
+                      <td class="access-none">–</td>
+                    );
+                  })}
+                </tr>
               ))}
-            </ul>
-          </>
-        ))
+            </tbody>
+          </table>
+          {
+            transfer && (
+              <p class="access-transfer">
+                <Icon name="pin" size={18} />
+                <span>{transfer.note}</span>
+              </p>
+            )
+          }
+          <p class="note-small access-how">
+            {accessModes.map((m) => (
+              <>
+                <strong>{m.title}:</strong> {m.how}.{" "}
+              </>
+            ))}
+            {`Czasy orientacyjne${accessChecked ? `, sprawdzone ${plDate(accessChecked)}` : ""}. Źródła: `}
+            {accessSources.map(([host, url], i) => (
+              <>{i > 0 && ", "}<a href={url} rel="noopener">{host}</a></>
+            ))}.
+          </p>
+        </div>
       )
     }
   </section>

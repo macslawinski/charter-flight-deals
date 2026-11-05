@@ -144,13 +144,22 @@ source = "hotel_website"
 url = "https://www.hotelsaltic.pl/grzybowo/hotel/faq"
 verified_at = 2026-11-04
 
+[[feature]]
+key = "transfer"
+value = { from_station = true, from_airport = true, paid = true, station = "Kołobrzeg", station_km = 6, station_minutes = 15 }
+short = "Z dworca w Kołobrzegu i z lotniska, płatny"
+note = "Dworzec PKP Kołobrzeg jest ok. 6 km od hotelu (ok. 15 min autem). Hotel organizuje płatny przewóz z dworca i całodobowy transfer z lotniska Szczecin-Goleniów; ceny strona nie podaje, rezerwacja przez recepcję."
+source = "hotel_website"
+url = "https://www.hotelsaltic.pl/grzybowo/kontakt/transport"
+verified_at = 2026-11-05
+
 # --- Access: car (OSRM, free flow) -------------------------------------------------------------
 [[access]]
 from_kind = "city"
 from = "Gdańsk"
 mode = "car"
 minutes = 170
-note = "Ok. 250 km, bez korków i postojów."
+note = "250 km"
 url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.1654%2C15.5046"
 verified_at = 2026-11-05
 
@@ -159,7 +168,7 @@ from_kind = "city"
 from = "Poznań"
 mode = "car"
 minutes = 255
-note = "Ok. 380 km, bez korków i postojów."
+note = "380 km"
 url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.1654%2C15.5046"
 verified_at = 2026-11-05
 
@@ -168,7 +177,7 @@ from_kind = "city"
 from = "Wrocław"
 mode = "car"
 minutes = 350
-note = "Ok. 510 km, bez korków i postojów."
+note = "510 km"
 url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.1654%2C15.5046"
 verified_at = 2026-11-05
 
@@ -177,7 +186,7 @@ from_kind = "city"
 from = "Warszawa"
 mode = "car"
 minutes = 390
-note = "Ok. 590 km, bez korków i postojów."
+note = "590 km"
 url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.1654%2C15.5046"
 verified_at = 2026-11-05
 
@@ -186,7 +195,7 @@ from_kind = "city"
 from = "Katowice"
 mode = "car"
 minutes = 440
-note = "Ok. 690 km, bez korków i postojów."
+note = "690 km"
 url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.1654%2C15.5046"
 verified_at = 2026-11-05
 
@@ -195,7 +204,7 @@ from_kind = "city"
 from = "Kraków"
 mode = "car"
 minutes = 495
-note = "Ok. 760 km, bez korków i postojów."
+note = "760 km"
 url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.1654%2C15.5046"
 verified_at = 2026-11-05
 
@@ -205,7 +214,7 @@ from_kind = "city"
 from = "Gdańsk"
 mode = "train"
 minutes = 250
-note = "Z 1 przesiadką, do stacji Kołobrzeg (stamtąd ok. 15 min autem). Bezpośredni: 4 h 42 min."
+note = "1 przesiadka · bezpośredni 4 h 42 min"
 url = "https://rozklad-pkp.pl/"
 verified_at = 2026-11-05
 
@@ -214,7 +223,7 @@ from_kind = "city"
 from = "Poznań"
 mode = "train"
 minutes = 252
-note = "Bezpośredni, do stacji Kołobrzeg (stamtąd ok. 15 min autem)."
+note = "bezpośredni"
 url = "https://rozklad-pkp.pl/"
 verified_at = 2026-11-05
 
@@ -223,7 +232,7 @@ from_kind = "city"
 from = "Wrocław"
 mode = "train"
 minutes = 329
-note = "Z 1 przesiadką, do stacji Kołobrzeg (stamtąd ok. 15 min autem). Bezpośredni: 5 h 59 min."
+note = "1 przesiadka · bezpośredni 5 h 59 min"
 url = "https://rozklad-pkp.pl/"
 verified_at = 2026-11-05
 
@@ -232,7 +241,7 @@ from_kind = "city"
 from = "Warszawa"
 mode = "train"
 minutes = 400
-note = "Z 1 przesiadką, do stacji Kołobrzeg (stamtąd ok. 15 min autem). Bezpośredni: 7 h 08 min."
+note = "1 przesiadka · bezpośredni 7 h 08 min"
 url = "https://rozklad-pkp.pl/"
 verified_at = 2026-11-05
 
@@ -241,7 +250,7 @@ from_kind = "city"
 from = "Katowice"
 mode = "train"
 minutes = 480
-note = "Z 1 przesiadką, do stacji Kołobrzeg (stamtąd ok. 15 min autem). Bezpośredni: 8 h 52 min."
+note = "1 przesiadka · bezpośredni 8 h 52 min"
 url = "https://rozklad-pkp.pl/"
 verified_at = 2026-11-05
 
@@ -250,6 +259,6 @@ from_kind = "city"
 from = "Kraków"
 mode = "train"
 minutes = 555
-note = "Z 1 przesiadką, do stacji Kołobrzeg (stamtąd ok. 15 min autem). Bezpośredni: 9 h 21 min."
+note = "1 przesiadka · bezpośredni 9 h 21 min"
 url = "https://rozklad-pkp.pl/"
 verified_at = 2026-11-05
