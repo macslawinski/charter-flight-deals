@@ -1,0 +1,50 @@
+# Discovered via OpenStreetMap (node/9945645798 "Smålandia Czarodziejski Las Zabaw", © OpenStreetMap
+# contributors, ODbL): the Småland play room of IKEA Poznań. Facts from IKEA's own pages: store page
+# (hours), "IKEA dla Dzieci" and the IKEA Poznań Småland rules PDF (in force since 2023-07-14), read
+# 2026-11-05. Written in our words. Children 3-10 only, so not a venue for the under-3s.
+# Not stated: price (the rules mention no fee), parking specifics for families at this store.
+slug = "smalandia-ikea"
+city = "poznan"
+name = "Smålandia w IKEA Poznań"
+official_url = "https://www.ikea.com/pl/pl/stores/poznan/"
+address = "ul. Szwedzka 10 (IKEA), Poznań"
+lat = 52.3829292
+lon = 16.9879961
+osm = "node/9945645798"
+status = "draft"
+
+[[feature]]
+key = "age_range"
+value = { min_years = 3, max_years = 10, independent_toilet = true }
+short = "Od 3 do 10 lat"
+note = "Pokój zabaw przyjmuje dzieci od ukończonych 3 do 10 lat. Dziecko musi się swobodnie porozumiewać z personelem i samo korzystać z toalety. Personel może poprosić o dokument z datą urodzenia."
+source = "venue_website"
+url = "https://www.ikea.com/pl/pl/files/pdf/76/64/76645b88/ikeapoznan-regulamin-smaland.pdf"
+verified_at = 2026-11-05
+
+[[feature]]
+key = "supervision"
+value = { staff = true, max_minutes = 60, parent_stays_in_store = true, phone_required = true }
+short = "Personel pilnuje do 1 godziny"
+note = "Dzieckiem opiekuje się personel, najdłużej godzinę. Opiekun wypełnia formularz, zostaje w sklepie i odbiera telefon w czasie pobytu dziecka."
+source = "venue_website"
+url = "https://www.ikea.com/pl/pl/files/pdf/76/64/76645b88/ikeapoznan-regulamin-smaland.pdf"
+verified_at = 2026-11-05
+
+[[feature]]
+key = "socks_required"
+value = { required = true, applies_to = "children" }
+short = "Dzieci w skarpetkach, bez butów"
+note = "Dzieci wchodzą w skarpetkach, bez butów i okrycia wierzchniego. Nie wolno wnosić telefonów, zabawek ani jedzenia."
+source = "venue_website"
+url = "https://www.ikea.com/pl/pl/files/pdf/76/64/76645b88/ikeapoznan-regulamin-smaland.pdf"
+verified_at = 2026-11-05
+
+[[feature]]
+key = "opening_hours"
+value = { text = "pon.-pt. 14:00-20:00, sob. 09:00-20:30" }
+short = "Pon.–pt. 14–20, sob. 9–20:30"
+note = "Poniedziałek–piątek 14:00–20:00, sobota 9:00–20:30 (według strony sklepu IKEA Poznań)."
+source = "venue_website"
+url = "https://www.ikea.com/pl/pl/stores/poznan/"
+verified_at = 2026-11-05

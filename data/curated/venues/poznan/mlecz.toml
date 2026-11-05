@@ -1,7 +1,9 @@
 # Discovered via OpenStreetMap (node/12492719739, © OpenStreetMap contributors, ODbL); facts from the
 # venue's own pages (home FAQ, /regulamin/), read 2026-11-04. Written in our words.
-# Hours: the rules say 10-19 daily, OSM says Fr-Su until 20: kept as to_confirm.
-# Not stated: prices (no price list on the site), changing table, parking.
+# Hours: the rules say 10-19 daily, OSM says Mo-Th 10-19, Fr-Su 10-20; no hours elsewhere on the
+# site (re-checked 2026-11-05): kept as to_confirm. Price list appeared on /bawialnia-kawiarnia/
+# (2026-11-05); its baby discounts are laid out ambiguously (-50% 6-12 m, then "-70%" / "do 6
+# miesięcy" / "-100%"): kept as to_confirm. Not stated: changing table, parking.
 slug = "mlecz"
 city = "poznan"
 name = "Mlecz bawialnia i kawiarnia"
@@ -20,6 +22,26 @@ note = "Sala zabaw dla dzieci od 0 do 6 lat, urządzona głównie z myślą o m�
 source = "venue_website"
 url = "https://bawialniamlecz.pl/regulamin/"
 verified_at = 2026-11-04
+
+[[feature]]
+key = "price_child"
+value = { weekday_1h_pln = 30, weekend_1h_pln = 35, weekday_2h_pln = 45, weekend_2h_pln = 50, weekday_no_limit_pln = 55, weekend_no_limit_pln = 65 }
+short = "30 zł za godzinę (w tygodniu)"
+note = "1 godzina 30 zł, 2 godziny 45 zł, bez limitu 55 zł. W weekendy i święta: 35, 50 i 65 zł."
+source = "venue_website"
+url = "https://bawialniamlecz.pl/bawialnia-kawiarnia/"
+verified_at = 2026-11-05
+
+[[feature]]
+key = "infant_free"
+age_band = "0-1"
+value = { discount_pct_6_12_months = 50, discount_pct_under_6_months = "70 or 100" }
+short = "Niemowlęta taniej: 6–12 mies. −50%"
+note = "Dzieci 6–12 miesięcy płacą o 50% mniej. Dla dzieci do 6 miesięcy cennik pokazuje zniżkę 70% albo 100% (układ strony jest niejasny), więc zapytaj na miejscu."
+source = "venue_website"
+url = "https://bawialniamlecz.pl/bawialnia-kawiarnia/"
+verified_at = 2026-11-05
+to_confirm = true
 
 [[feature]]
 key = "opening_hours"
