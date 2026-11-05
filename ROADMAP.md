@@ -4,9 +4,9 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
 (Product A rules). Owner: **U** = user, **C** = Claude. Tick items off here when done.
 
 ## Step 1. This week: close open work (2026-11-05 … 11-08)
-- [ ] U: review and merge PR #7 (B redesign, Poznań playgrounds); pick a look on `/proby/` (A, B, C or a mix).
-- [ ] U: merge PR #8 (`min_history_days` = 7). Migration 010 is already applied in Supabase.
-- [ ] C: apply the chosen B look (one pass, mobile check, screenshots).
+- [x] U: review and merge PR #7 (B redesign, Poznań playgrounds).
+- [x] U: pick a look for B: **A, illustrated** (2026-11-05); `/proby/` removed.
+- [x] U: merge PR #8 (`min_history_days` = 7). Migration 010 is already applied in Supabase.
 - [ ] C: every morning `check-deals`: cron ran (the 00:17 UTC run may start hours late; the Itaka crawl
       runs only on that one, so a dropped run = an Itaka day missing), no parse failures, flights/day stable.
 
