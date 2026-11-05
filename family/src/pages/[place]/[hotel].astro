@@ -30,6 +30,19 @@ const stated = new Set(h.features.map((f) => f.key));
 const missing = all.filter((k) => !stated.has(k));
 const pct = Math.round((100 * stated.size) / all.length);
 const latest = h.features.map((f) => f.verified_at).sort().at(-1);
+const duration = (min: number) => `${Math.floor(min / 60)} h ${String(min % 60).padStart(2, "0")} min`;
+const ACCESS_MODES = [
+  { mode: "transfer", title: "Z lotniska", icon: "plane" },
+  { mode: "car", title: "Autem", icon: "car" },
+  { mode: "train", title: "Pociągiem", icon: "train" },
+] as const;
+for (const a of h.access) {
+  if (!ACCESS_MODES.some((m) => m.mode === a.mode)) throw new Error(`hotel ${h.slug}: no label for access mode ${a.mode}`);
+}
+const accessModes = ACCESS_MODES.map((m) => ({
+  ...m,
+  rows: h.access.filter((a) => a.mode === m.mode).sort((a, b) => a.minutes - b.minutes),
+})).filter((m) => m.rows.length > 0);
 const groups = FEATURE_GROUPS.map((g) => ({ ...g, keys: g.keys.filter((k) => stated.has(k)) })).filter(
   (g) => g.keys.length > 0,
 );
@@ -106,18 +119,31 @@ const groups = FEATURE_GROUPS.map((g) => ({ ...g, keys: g.keys.filter((k) => sta
     {
       h.access.length === 0 ? (
         <p class="note-small">
-          Czasy dojazdu autem i pociągiem z Warszawy, Poznania, Gdańska, Wrocławia, Krakowa i
-          Katowic jeszcze sprawdzamy.
+          Czasy dojazdu jeszcze sprawdzamy.
         </p>
       ) : (
-        <ul class="ask-list">
-          {h.access.map((a) => (
-            <li>
-              <Icon name={a.mode === "train" ? "train" : "car"} size={18} />
-              {a.from_code}: około {Math.floor(a.minutes / 60)} h {a.minutes % 60} min
-            </li>
-          ))}
-        </ul>
+        accessModes.map((m) => (
+          <>
+            <h3 style="margin:1.25rem 0 0.5rem">{m.title}</h3>
+            <ul class="ask-list">
+              {m.rows.map((a) => (
+                <li>
+                  <Icon name={m.icon} size={18} />
+                  <span>
+                    <strong>{a.from_code}</strong>: około {duration(a.minutes)}
+                    {a.note && <span class="note-small"> {a.note}</span>}
+                    {a.url && (
+                      <span class="note-small">
+                        {" "}
+                        <a href={a.url} rel="noopener">Źródło</a>, {plDate(a.verified_at)}
+                      </span>
+                    )}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </>
+        ))
       )
     }
   </section>
