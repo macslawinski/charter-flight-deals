@@ -30,7 +30,8 @@ const stated = new Set(h.features.map((f) => f.key));
 const missing = all.filter((k) => !stated.has(k));
 const pct = Math.round((100 * stated.size) / all.length);
 const latest = h.features.map((f) => f.verified_at).sort().at(-1);
-const duration = (min: number) => `${Math.floor(min / 60)} h ${String(min % 60).padStart(2, "0")} min`;
+const duration = (min: number) =>
+  min < 60 ? `${min} min` : `${Math.floor(min / 60)} h ${String(min % 60).padStart(2, "0")} min`;
 // How we measured each mode: one caption under the table instead of the same words in every row.
 const ACCESS_MODES = [
   { mode: "transfer", title: "Transferem", icon: "plane", how: "z lotniska, wg strony hotelu" },
@@ -50,6 +51,8 @@ const origins = [...new Set(
     .concat(h.access.map((a) => a.from_code)),
 )];
 const cell = (from: string, mode: string) => h.access.find((a) => a.from_code === from && a.mode === mode);
+const originLabel = (from: string) =>
+  h.access.some((a) => a.from_code === from && a.from_kind === "airport") ? `Lotnisko ${from}` : from;
 const accessSources = [...new Map(
   h.access.filter((a) => a.url).map((a) => [new URL(a.url!).hostname.replace(/^www\./, ""), a.url!]),
 )];
@@ -152,7 +155,7 @@ const groups = FEATURE_GROUPS.map((g) => ({ ...g, keys: g.keys.filter((k) => sta
             <tbody>
               {origins.map((from) => (
                 <tr>
-                  <th scope="row">{from}</th>
+                  <th scope="row">{originLabel(from)}</th>
                   {accessModes.map((m) => {
                     const a = cell(from, m.mode);
                     return a ? (
