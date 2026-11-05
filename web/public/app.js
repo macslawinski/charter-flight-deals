@@ -85,8 +85,8 @@ function renderStatus(data) {
     box.append(
       el("h2", {}, "Zbieramy historię cen"),
       el("p", {}, `Ceny sprawdzamy od ${s.first_snapshot_date ? fullDate.format(d(s.first_snapshot_date)) : "niedawna"}. ` +
-        "Okazję można ogłosić dopiero wtedy, gdy mamy z czym porównać dzisiejszą cenę: ceny z poprzednich dni dla co najmniej " +
-        `${data.params.min_baseline_flights} podobnych lotów. Pierwsze okazje pojawią się w ciągu kilku dni.`),
+        "Okazję można ogłosić dopiero wtedy, gdy mamy z czym porównać dzisiejszą cenę: ceny z co najmniej " +
+        `${data.params.min_history_days ?? 7} poprzednich dni dla co najmniej ${data.params.min_baseline_flights} podobnych lotów.`),
       progressRow("Dni historii", hist, window, `${hist} z ${window}`),
       progressRow("Trasy gotowe do porównania", s.segments_with_baseline ?? 0, s.segments_upcoming || 1,
         `${num.format(s.segments_with_baseline ?? 0)} z ${num.format(s.segments_upcoming ?? 0)}`),

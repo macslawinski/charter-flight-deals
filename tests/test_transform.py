@@ -30,8 +30,8 @@ def db() -> Iterator[psycopg.Connection[Any]]:
         c.close()
         pytest.skip("transform not applied locally (run scripts/db_local.py)")
     c.execute("""update pipeline_params set window_days = 30, discount_threshold = 0.15,
-                 min_baseline_flights = 5, baseline_stat = 'avg', default_min_stay_days = 3,
-                 include_one_way = false""")
+                 min_baseline_flights = 5, min_history_days = 7, baseline_stat = 'avg',
+                 default_min_stay_days = 3, include_one_way = false""")
     c.execute("""insert into destinations (iata, name, country, zone) values
                  ('XXL', 'Test long', 'Test', 'long'), ('XXS', 'Test short', 'Test', 'short')""")
     try:
@@ -136,6 +136,31 @@ def test_three_day_stay_is_fine_for_short_zone(db):
 def test_segment_with_too_few_flights_yields_no_deal(db):
     keys = segment(db, 4)
     db.execute("update price_snapshots set price_last = 400 where flight_key = %s and "
+               "snapshot_date = %s", (keys[0], D))
+    assert deals(db) == {}
+
+
+def test_segment_with_too_little_history_yields_no_deal(db):
+    # 010: 6 flights but only 6 days of history (< min_history_days 7): no deal yet ...
+    keys = [flight(db, i) for i in range(6)]
+    for k in keys:
+        history(db, k, 1600, days=6)
+        price(db, k, D, 1600)
+    db.execute("update price_snapshots set price_last = 1000 where flight_key = %s and "
+               "snapshot_date = %s", (keys[0], D))
+    assert deals(db) == {}
+    # ... one more day, even from a single flight in the segment, and the deal shows up.
+    price(db, keys[1], D - timedelta(days=7), 1600)
+    assert list(deals(db)) == [keys[0]]
+
+
+def test_history_outside_window_does_not_count(db):
+    keys = [flight(db, i) for i in range(6)]
+    for k in keys:
+        history(db, k, 1600, days=6)
+        price(db, k, D - timedelta(days=31), 1600)  # old day: outside the 30-day window
+        price(db, k, D, 1600)
+    db.execute("update price_snapshots set price_last = 1000 where flight_key = %s and "
                "snapshot_date = %s", (keys[0], D))
     assert deals(db) == {}
 

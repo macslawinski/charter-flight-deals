@@ -42,6 +42,13 @@ baseline as (
            count(*) as n_flights, sum(n_obs) as n_obs
     from per_flight
 ),
+hist as (  -- distinct snapshot dates of the segment inside the window (010)
+    select count(distinct s.snapshot_date) as n_days
+    from price_snapshots s
+    join eligible e using (flight_key)
+    cross join win
+    where s.snapshot_date between win.w_start and win.w_end
+),
 cur as (
     select price_last as current_price
     from price_snapshots
@@ -59,5 +66,6 @@ select t.flight_key, t.stay_days, t.min_stay,
              / nullif(case when p.baseline_stat = 'median' then b.b_median::numeric else b.b_avg end, 0)), 2)
              as discount_pct,
        b.n_flights, b.n_obs, (b.n_flights >= p.min_baseline_flights) as enough_flights,
+       hist.n_days, (hist.n_days >= p.min_history_days) as enough_history,
        win.w_start, win.w_end
-from target t, cur, baseline b, p, win;
+from target t, cur, baseline b, hist, p, win;

@@ -86,7 +86,10 @@ seg as (
     select e.operator, e.origin_iata, e.dest_iata, e.dep_month,
            count(distinct s.flight_key) filter (
                where s.snapshot_date between %(as_of)s - p.window_days and %(as_of)s - 1
-           ) as baseline_flights
+           ) as baseline_flights,
+           count(distinct s.snapshot_date) filter (
+               where s.snapshot_date between %(as_of)s - p.window_days and %(as_of)s - 1
+           ) as baseline_days
     from eligible_flights e
     cross join p
     left join price_snapshots s on s.flight_key = e.flight_key
@@ -94,7 +97,8 @@ seg as (
     group by e.operator, e.origin_iata, e.dest_iata, e.dep_month
 )
 select count(*) as segments,
-       count(*) filter (where baseline_flights >= (select min_baseline_flights from p)) as ready
+       count(*) filter (where baseline_flights >= (select min_baseline_flights from p)
+                          and baseline_days >= (select min_history_days from p)) as ready
 from seg
 """
 
@@ -137,7 +141,8 @@ def build_payload(conn: psycopg.Connection[Any], generated_at: datetime) -> dict
         status = cur.execute(_STATUS).fetchone() or {}
         operators = [_row(r) for r in cur.execute(_OPERATORS).fetchall()]
         params = cur.execute(
-            """select window_days, discount_threshold, min_baseline_flights, baseline_stat,
+            """select window_days, discount_threshold, min_baseline_flights, min_history_days,
+                      baseline_stat,
                       default_min_stay_days, include_one_way, market_stay_tolerance_days,
                       market_max_age_days from pipeline_params"""
         ).fetchone() or {}
