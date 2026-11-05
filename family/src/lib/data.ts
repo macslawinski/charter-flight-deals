@@ -97,12 +97,19 @@ export function short(f: Fact): string {
 // --- carriers ---------------------------------------------------------------------------------
 
 const CARRIERS: Record<string, { name: string; slug: string }> = {
+  "2W": { name: "World2Fly", slug: "world2fly" },
+  "3E": { name: "Electra Airways", slug: "electra-airways" },
+  A3: { name: "Aegean", slug: "aegean" },
+  BJ: { name: "Nouvelair", slug: "nouvelair" },
   E4: { name: "Enter Air", slug: "enter-air" },
   FR: { name: "Ryanair", slug: "ryanair" },
   LO: { name: "LOT", slug: "lot" },
+  NO: { name: "Neos", slug: "neos" },
   QS: { name: "Smartwings", slug: "smartwings" },
   RR: { name: "Buzz", slug: "buzz" },
+  SM: { name: "Air Cairo", slug: "air-cairo" },
   W6: { name: "Wizz Air", slug: "wizz-air" },
+  XC: { name: "Corendon", slug: "corendon" },
 };
 export const carrierName = (code: string) => must(CARRIERS, code, "carrier name").name;
 export const carrierSlug = (code: string) => must(CARRIERS, code, "carrier slug").slug;

@@ -1,0 +1,54 @@
+# Nouvelair: "Baggage" page (hand baggage, checked baggage tables, special baggage), read
+# 2026-11-05. The fare tables (Light / Easy / Easy Max) are for tickets bought from Nouvelair; on a
+# tour-operator charter the allowance is on the ticket. No infant fee or age rules are published there.
+carrier = "BJ"
+
+[[rule]]
+key = "infant_fee"
+age_band = "0-2"
+value = { amount_published = false }
+short = "Strona linii nie podaje opłaty"
+note = "Nouvelair nie podaje na stronie opłaty za niemowlę. Kupując lot w biurze podróży, cenę niemowlęcia sprawdź w biurze."
+source = "carrier_official"
+url = "https://www.nouvelair.com/en/bagage"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "infant_baggage"
+age_band = "0-2"
+value = { checked_kg = 10, cabin_allowance = false, all_fares = true }
+short = "10 kg rejestrowanego, bez podręcznego"
+note = "Niemowlę ma 10 kg bagażu rejestrowanego w każdej taryfie (na loty do Turcji: jedna sztuka do 10 kg). Osobnego bagażu podręcznego nie ma: jedzenie i pieluchy spakuj do bagażu rodzica, w jego limicie."
+source = "carrier_official"
+url = "https://www.nouvelair.com/en/bagage"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "stroller"
+age_band = "0-2"
+value = { free = true, cabin_if_max_cm = "55x35x25", replaces_adult_cabin_bag = true }
+short = "Wózek gratis, mały wejdzie na pokład"
+note = "Jeden wózek bezpłatnie. Do kabiny wejdzie tylko wózek typu YOYO albo parasolka do 55×35×25 cm, zamiast bagażu podręcznego dorosłego; drugą z tych rzeczy linia bezpłatnie przewiezie w luku."
+source = "carrier_official"
+url = "https://www.nouvelair.com/en/bagage"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "stroller"
+age_band = "2+"
+value = { free_until_age = 4, cabin_if_max_cm = "55x35x25", from_age_4_counts_as_checked_bag = true }
+short = "Wózek gratis do 4 lat"
+note = "Dziecko 2–4 lata: te same zasady, wózek YOYO lub parasolka może wejść do kabiny zamiast bagażu podręcznego dziecka. Od 4 lat wózek wlicza się do bagażu rejestrowanego."
+source = "carrier_official"
+url = "https://www.nouvelair.com/en/bagage"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "baby_food"
+age_band = "0-2"
+value = { journey_quantity = true }
+short = "Jedzenie na czas lotu w kabinie"
+note = "Jedzenie dla dziecka (stałe lub płynne) możesz wziąć do kabiny w ilości potrzebnej na czas podróży."
+source = "carrier_official"
+url = "https://www.nouvelair.com/en/bagage"
+verified_at = 2026-11-05

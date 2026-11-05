@@ -1,0 +1,90 @@
+# Neos: "Infants and children" information page, read 2026-11-05. No infant fee is published there.
+carrier = "NO"
+
+[[rule]]
+key = "infant_fee"
+age_band = "0-2"
+value = { amount_published = false }
+short = "Strona linii nie podaje opłaty"
+note = "Neos nie podaje na stronie o dzieciach opłaty za niemowlę. Kupując lot w biurze podróży, cenę niemowlęcia sprawdź w biurze."
+source = "carrier_official"
+url = "https://www.neosair.com/en/information/infants-and-children"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "infant_min_age"
+value = { min_days = 7 }
+short = "Od 1. tygodnia życia"
+note = "Zdrowy noworodek może lecieć Neos po pierwszym tygodniu życia."
+source = "carrier_official"
+url = "https://www.neosair.com/en/information/infants-and-children"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "infants_per_adult"
+age_band = "0-2"
+value = { max = 1 }
+short = "Jedno niemowlę na dorosłego"
+note = "Ze względów bezpieczeństwa jeden dorosły może lecieć tylko z jednym niemowlęciem."
+source = "carrier_official"
+url = "https://www.neosair.com/en/information/infants-and-children"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "lap_infant"
+age_band = "0-2"
+value = { allowed = true, own_seat = false, meal = false }
+short = "Na kolanach, bez posiłku"
+note = "Dziecko do 2 lat leci na kolanach: nie dostaje własnego miejsca ani posiłku na pokładzie."
+source = "carrier_official"
+url = "https://www.neosair.com/en/information/infants-and-children"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "infant_baggage"
+age_band = "0-2"
+value = { own_allowance = false, small_bag = true }
+short = "Bez bagażu, jedna mała torba"
+note = "Niemowlę nie ma limitu bagażu. Można zabrać jedną małą torbę (jak torba do wózka) z rzeczami potrzebnymi dziecku w podróży."
+source = "carrier_official"
+url = "https://www.neosair.com/en/information/infants-and-children"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "stroller"
+age_band = "0-2"
+value = { free = true, to_aircraft_door = true, cabin_if_max_cm = "55x40x20" }
+short = "Wózek gratis do drzwi samolotu"
+note = "Wózek zgłoś przy odprawie: dostaje zawieszkę, dowozisz go do drzwi samolotu i składasz do luku. Wózek w wymiarach bagażu podręcznego (55×40×20 cm) może trafić do schowka nad głową zamiast walizki kabinowej. Przewóz jest bezpłatny."
+source = "carrier_official"
+url = "https://www.neosair.com/en/information/infants-and-children"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "bassinet"
+age_band = "0-2"
+value = { available = true, dims_cm = "76x38x20", max_kg = 12, request_days_before = 4, economy_extra_supplement = true }
+short = "Kołyska na zamówienie, do 12 kg"
+note = "Każdy samolot ma kołyski (76×38×20 cm, do 12 kg). Zamów przy rezerwacji albo najpóźniej 4 dni przed wylotem, w biurze lub na czacie Neos; linia musi potwierdzić. Gdzie jest Economy Extra, płacisz jej dopłatę."
+source = "carrier_official"
+url = "https://www.neosair.com/en/information/infants-and-children"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "baby_food"
+age_band = "0-2"
+value = { above_liquid_limit = true }
+short = "Mleko i jedzenie ponad limit płynów"
+note = "Mleko, mleko w proszku, przegotowaną wodę w butelce i jedzenie dla dziecka weźmiesz w ilości na całą podróż, także ponad limit płynów. Miej je pod ręką do kontroli. W toaletach są przewijaki."
+source = "carrier_official"
+url = "https://www.neosair.com/en/information/infants-and-children"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "child_seating"
+value = { next_to_parent_under_age = 5, same_row_max_gap_under_age = 12, free = true }
+short = "Dziecko do 5 lat obok rodzica, gratis"
+note = "Neos bezpłatnie sadza dzieci do 14 lat blisko opiekuna: do 5 lat obok, 5–11 lat w tym samym rzędzie (najwyżej jedno miejsce przerwy), 12–13 lat najwyżej rząd dalej."
+source = "carrier_official"
+url = "https://www.neosair.com/en/information/infants-and-children"
+verified_at = 2026-11-05

@@ -18,7 +18,7 @@ def test_repo_curated_data_is_valid():
     assert cot.value["fee_pln_per_night"] == 60 and cot.age_band == "0-3"
     assert all(f.url and f.url.startswith("https://www.hotelsaltic.pl/") for f in saltic.features)
     rules = {c.carrier_iata: {(r.key, r.age_band): r for r in c.rules} for c in data.carriers}
-    assert set(rules) >= {"E4", "QS", "RR", "LO", "FR", "W6"}
+    assert set(rules) >= {"E4", "QS", "RR", "LO", "FR", "W6", "XC", "A3", "3E", "NO", "BJ", "2W", "SM"}
     assert rules["E4"][("infants_per_adult", "0-2")].value == {"max": 1}
     assert rules["LO"][("twins", "0-2")].value["one_adult_allowed"] is True
     # Every fee rule tells the parent where the price comes from: an amount or an explicit flag.

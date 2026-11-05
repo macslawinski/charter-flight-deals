@@ -1,0 +1,91 @@
+# Air Cairo: "Travel with Children" and "Baggage Allowance" pages, read 2026-11-05. The lap-infant
+# fee is not published there.
+carrier = "SM"
+
+[[rule]]
+key = "infant_fee"
+age_band = "0-2"
+value = { amount_published = false, second_infant_child_fare = true }
+short = "Strona linii nie podaje opłaty"
+note = "Air Cairo nie podaje na stronie opłaty za niemowlę na kolanach. Kupując lot w biurze podróży, cenę niemowlęcia sprawdź w biurze."
+source = "carrier_official"
+url = "https://aircairo.com/en-gl/travel-with-children/"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "infant_min_age"
+value = { min_days = 7 }
+short = "Od 7. dnia życia"
+note = "Linia przewozi zdrowe niemowlęta w wieku od 7 dni do 24 miesięcy. Weź akt urodzenia jako dowód wieku."
+source = "carrier_official"
+url = "https://aircairo.com/en-gl/travel-with-children/"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "infants_per_adult"
+age_band = "0-2"
+value = { max = 2, adult_min_age = 16, second_infant_own_seat_child_fare = true }
+short = "Dwoje niemowląt, drugie z miejscem"
+note = "Jeden dorosły (od 16 lat) może lecieć z dwojgiem niemowląt, ale za drugie płaci taryfę dziecka i ma ono własne miejsce."
+source = "carrier_official"
+url = "https://aircairo.com/en-gl/travel-with-children/"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "twins"
+age_band = "0-2"
+value = { one_adult_allowed = true, second_infant_child_fare = true, two_parents_cross_aisle = true }
+short = "Bliźnięta: drugie z biletem dziecka"
+note = "Z bliźniętami może lecieć jeden dorosły, jeśli drugie dziecko ma własne miejsce za taryfę dziecka. Rodzice lecący z dwojgiem niemowląt dostają miejsca po przeciwnych stronach przejścia."
+source = "carrier_official"
+url = "https://aircairo.com/en-gl/travel-with-children/"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "lap_infant"
+age_band = "0-2"
+value = { allowed = true, own_seat = false, turns_2_needs_child_ticket = true }
+short = "Na kolanach; po 2. urodzinach bilet"
+note = "Dziecko do 2 lat leci na kolanach, bez własnego miejsca. Jeśli skończy 2 lata przed lotem powrotnym lub w jego dniu, potrzebuje biletu dziecka z miejscem."
+source = "carrier_official"
+url = "https://aircairo.com/en-gl/travel-with-children/"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "infant_baggage"
+age_band = "0-2"
+value = { checked_kg = 10, checked_pieces = 1 }
+short = "10 kg bagażu rejestrowanego"
+note = "Niemowlę ma jedną sztukę bagażu rejestrowanego do 10 kg, a do tego bezpłatny wózek."
+source = "carrier_official"
+url = "https://aircairo.com/en-gl/baggage-allowance/"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "stroller"
+age_band = "0-2"
+value = { free = true, per_child = 1, small_to_aircraft_door = true, small_max_cm = "25.5x92", large_checkin_only = true }
+short = "Wózek gratis, mały do drzwi samolotu"
+note = "Jeden wózek na dziecko ponad limit bagażu. Mały składany (do 25,5 cm średnicy i 92 cm długości) nadasz przy bramce i odbierzesz przy drzwiach samolotu; duży tylko przy odprawie, a przy braku miejsca może nie polecieć."
+source = "carrier_official"
+url = "https://aircairo.com/en-gl/travel-with-children/"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "car_seat"
+age_band = "0-2"
+value = { own_seat_required = true, child_fare = true, min_age_months = 6, prior_arrangement = true }
+short = "Fotelik z biletem dziecka, od 6 mies."
+note = "Fotelik po wcześniejszym uzgodnieniu z linią, dla dziecka od 6 miesięcy do 2 lat, które ma bilet w taryfie dziecka. Obok musi siedzieć opiekun od 16 lat, a fotelik musi pasować do fotela samolotu."
+source = "carrier_official"
+url = "https://aircairo.com/en-gl/travel-with-children/"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "child_seating"
+value = { no_exit_row = true }
+short = "Nie przy wyjściu awaryjnym"
+note = "Pasażerowie z dziećmi lub niemowlętami nie mogą siedzieć przy wyjściach awaryjnych."
+source = "carrier_official"
+url = "https://aircairo.com/en-gl/travel-with-children/"
+verified_at = 2026-11-05

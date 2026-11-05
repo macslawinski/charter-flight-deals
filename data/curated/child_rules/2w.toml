@@ -1,0 +1,81 @@
+# World2Fly: "Children and infants" passenger page, read 2026-11-05. No infant fee is published there.
+carrier = "2W"
+
+[[rule]]
+key = "infant_fee"
+age_band = "0-2"
+value = { amount_published = false }
+short = "Strona linii nie podaje opłaty"
+note = "World2Fly nie podaje na stronie o dzieciach opłaty za niemowlę. Kupując lot w biurze podróży, cenę niemowlęcia sprawdź w biurze."
+source = "carrier_official"
+url = "https://www.w2fly.es/en-en/flight/passengers/children-infants"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "infant_min_age"
+value = { min_days = 15 }
+short = "Od 15. dnia życia"
+note = "Niemowlę to pasażer od 15 dni do 2 lat (liczy się dzień lotu); nie zajmuje własnego miejsca."
+source = "carrier_official"
+url = "https://www.w2fly.es/en-en/flight/passengers/children-infants"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "infant_baggage"
+age_band = "0-2"
+value = { extra_cabin_bag_kg = 10, dims_cm = "55x35x25" }
+short = "Dodatkowa torba do 10 kg"
+note = "Z niemowlęciem przysługuje dodatkowy bagaż podręczny do 10 kg (55×35×25 cm)."
+source = "carrier_official"
+url = "https://www.w2fly.es/en-en/flight/passengers/children-infants"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "baby_food"
+age_band = "0-2"
+value = { above_liquid_limit = true }
+short = "Jedzenie ponad limit 100 ml"
+note = "Jedzenie, przeciery, termos, butelkę i leki dla dziecka weźmiesz w bagażu podręcznym bez limitu 100 ml. Linia radzi jedzenie, którego nie trzeba podgrzewać na pokładzie."
+source = "carrier_official"
+url = "https://www.w2fly.es/en-en/flight/passengers/children-infants"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "stroller"
+age_band = "0-2"
+value = { to_gate = true, checkin_tag_required = true, return_at_baggage_claim = true }
+short = "Wózek do bramki, odbiór na taśmie"
+note = "Wózek nadajesz i oznaczasz przy odprawie, a oddajesz załodze przy bramce. Po przylocie odbierasz go z bagażem (czasem na taśmie bagażu specjalnego), nie przy drzwiach samolotu."
+source = "carrier_official"
+url = "https://www.w2fly.es/en-en/flight/passengers/children-infants"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "bassinet"
+age_band = "0-2"
+value = { available = true, free = true, on_request = true, request_hours_before = 72 }
+short = "Kołyska gratis, zamów 72 h przed"
+note = "Kołyska na pokładzie jest bezpłatna, w miarę dostępności. Napisz na special.requirements@w2fly.es z wiekiem dziecka, datami i kierunkiem, najpóźniej 72 godziny przed wylotem."
+source = "carrier_official"
+url = "https://www.w2fly.es/en-en/flight/passengers/children-infants"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "car_seat"
+age_band = "0-2"
+value = { own_seat_or_approval = true, min_age_months = 6, max_age_years = 3, certified = "EASA/FAA" }
+short = "Fotelik z miejscem, od 6 mies."
+note = "Fotelik (od 6 miesięcy do 3 lat) przez cały lot, także przy starcie i lądowaniu, jeśli dziecko ma wykupione miejsce lub dział Special Requests go zatwierdzi. Musi mieć homologację EASA lub FAA; weź certyfikaty na lotnisko."
+source = "carrier_official"
+url = "https://www.w2fly.es/en-en/flight/passengers/children-infants"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "priority_boarding"
+age_band = "0-2"
+value = { priority_checkin = true, priority_boarding = true }
+short = "Pierwszeństwo przy odprawie i wejściu"
+note = "Rodziny z dziećmi do 2 lat mają pierwszeństwo przy nadawaniu bagażu i wejściu na pokład."
+source = "carrier_official"
+url = "https://www.w2fly.es/en-en/flight/passengers/children-infants"
+verified_at = 2026-11-05
