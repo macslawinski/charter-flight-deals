@@ -88,7 +88,7 @@ tests/             # unit tests (parser) + SQL tests on synthetic data
 - `destinations` (IATA → name, country, zone, optional `min_stay_override`) and
   `zones` (zone → `min_sensible_stay_days`).
 - `pipeline_params` — single-row config: `window_days` (30), `discount_threshold` (0.15),
-  `min_baseline_flights` (5), `baseline_stat` ('avg' | 'median'), `default_min_stay_days`,
+  `min_baseline_flights` (5), `min_history_days` (7), `baseline_stat` ('avg' | 'median'), `default_min_stay_days`,
   `include_one_way` (false).
 - `deals` — materialized result per `as_of` date, used for export and deal history.
 
@@ -109,7 +109,9 @@ flights, so a shared baseline would count one flight twice.)
   pull the baseline down.
 - **One vote per flight**: average each flight's prices over the window first, then aggregate across
   flights (avg, plus median shown alongside). A flight seen 30 times must not outweigh one seen once.
-- No baseline (and no deal) if the segment has fewer than `min_baseline_flights` distinct flights.
+- No baseline (and no deal) if the segment has fewer than `min_baseline_flights` distinct flights,
+  or fewer than `min_history_days` (7) distinct snapshot dates in the window (since 2026-11-05,
+  migration 010: one day of history is a cross-section of other flights, not a price drop).
 
 **Deal rule**: `current_price <= baseline * (1 - discount_threshold)` and the flight departs after D.
 

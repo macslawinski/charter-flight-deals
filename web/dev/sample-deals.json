@@ -32,6 +32,7 @@
   "window_days": 30,
   "discount_threshold": 0.15,
   "min_baseline_flights": 5,
+  "min_history_days": 7,
   "baseline_stat": "avg",
   "default_min_stay_days": 3,
   "include_one_way": false,
