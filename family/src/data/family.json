@@ -1,6 +1,444 @@
 {
  "carriers": [
   {
+   "carrier_iata": "2W",
+   "rules": [
+    {
+     "age_band": "0-2",
+     "key": "infant_fee",
+     "note": "World2Fly nie podaje na stronie o dzieciach opłaty za niemowlę. Kupując lot w biurze podróży, cenę niemowlęcia sprawdź w biurze.",
+     "short": "Strona linii nie podaje opłaty",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.w2fly.es/en-en/flight/passengers/children-infants",
+     "value": {
+      "amount_published": false
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "infant_min_age",
+     "note": "Niemowlę to pasażer od 15 dni do 2 lat (liczy się dzień lotu); nie zajmuje własnego miejsca.",
+     "short": "Od 15. dnia życia",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.w2fly.es/en-en/flight/passengers/children-infants",
+     "value": {
+      "min_days": 15
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "infant_baggage",
+     "note": "Z niemowlęciem przysługuje dodatkowy bagaż podręczny do 10 kg (55×35×25 cm).",
+     "short": "Dodatkowa torba do 10 kg",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.w2fly.es/en-en/flight/passengers/children-infants",
+     "value": {
+      "dims_cm": "55x35x25",
+      "extra_cabin_bag_kg": 10
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "baby_food",
+     "note": "Jedzenie, przeciery, termos, butelkę i leki dla dziecka weźmiesz w bagażu podręcznym bez limitu 100 ml. Linia radzi jedzenie, którego nie trzeba podgrzewać na pokładzie.",
+     "short": "Jedzenie ponad limit 100 ml",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.w2fly.es/en-en/flight/passengers/children-infants",
+     "value": {
+      "above_liquid_limit": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "stroller",
+     "note": "Wózek nadajesz i oznaczasz przy odprawie, a oddajesz załodze przy bramce. Po przylocie odbierasz go z bagażem (czasem na taśmie bagażu specjalnego), nie przy drzwiach samolotu.",
+     "short": "Wózek do bramki, odbiór na taśmie",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.w2fly.es/en-en/flight/passengers/children-infants",
+     "value": {
+      "checkin_tag_required": true,
+      "return_at_baggage_claim": true,
+      "to_gate": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "bassinet",
+     "note": "Kołyska na pokładzie jest bezpłatna, w miarę dostępności. Napisz na special.requirements@w2fly.es z wiekiem dziecka, datami i kierunkiem, najpóźniej 72 godziny przed wylotem.",
+     "short": "Kołyska gratis, zamów 72 h przed",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.w2fly.es/en-en/flight/passengers/children-infants",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true,
+      "request_hours_before": 72
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "car_seat",
+     "note": "Fotelik (od 6 miesięcy do 3 lat) przez cały lot, także przy starcie i lądowaniu, jeśli dziecko ma wykupione miejsce lub dział Special Requests go zatwierdzi. Musi mieć homologację EASA lub FAA; weź certyfikaty na lotnisko.",
+     "short": "Fotelik z miejscem, od 6 mies.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.w2fly.es/en-en/flight/passengers/children-infants",
+     "value": {
+      "certified": "EASA/FAA",
+      "max_age_years": 3,
+      "min_age_months": 6,
+      "own_seat_or_approval": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "priority_boarding",
+     "note": "Rodziny z dziećmi do 2 lat mają pierwszeństwo przy nadawaniu bagażu i wejściu na pokład.",
+     "short": "Pierwszeństwo przy odprawie i wejściu",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.w2fly.es/en-en/flight/passengers/children-infants",
+     "value": {
+      "priority_boarding": true,
+      "priority_checkin": true
+     },
+     "verified_at": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "carrier_iata": "3E",
+   "rules": [
+    {
+     "age_band": "0-2",
+     "key": "infant_fee",
+     "note": "Electra lata tylko czarterowo: bilety sprzedają biura podróży i to one ustalają cenę niemowlęcia. Regulamin linii nie podaje opłaty.",
+     "short": "Cenę niemowlęcia ustala biuro",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.electra-airways.com/wp-content/uploads/2023/10/Conditions-of-carriage_19.07.pdf",
+     "value": {
+      "amount_published": false,
+      "set_by_tour_operator": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "infants_per_adult",
+     "note": "Niemowlę musi lecieć z osobą dorosłą od 18 lat, a jeden dorosły może mieć tylko jedno niemowlę. Dzieckiem do 2 lat jest dziecko, które nie skończyło 2 lat w dniu wylotu.",
+     "short": "Jedno niemowlę na dorosłego (18+)",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.electra-airways.com/wp-content/uploads/2023/10/Conditions-of-carriage_19.07.pdf",
+     "value": {
+      "adult_min_age": 18,
+      "max": 1
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "twins",
+     "note": "Z bliźniętami do 2 lat muszą lecieć dwie dorosłe osoby (jedno niemowlę na dorosłego).",
+     "short": "Bliźnięta: potrzeba dwóch dorosłych",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.electra-airways.com/wp-content/uploads/2023/10/Conditions-of-carriage_19.07.pdf",
+     "value": {
+      "one_adult_allowed": false
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "lap_infant",
+     "note": "Niemowlę leci na kolanach opiekuna, bez własnego miejsca i posiłku. Na jednym locie może być najwyżej 20 niemowląt.",
+     "short": "Na kolanach, bez posiłku",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.electra-airways.com/wp-content/uploads/2023/10/Conditions-of-carriage_19.07.pdf",
+     "value": {
+      "allowed": true,
+      "max_infants_per_flight": 20,
+      "meal": false,
+      "own_seat": false
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "infant_baggage",
+     "note": "Niemowlę ma 10 kg bezpłatnego bagażu.",
+     "short": "10 kg bagażu",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.electra-airways.com/wp-content/uploads/2023/10/Conditions-of-carriage_19.07.pdf",
+     "value": {
+      "checked_kg": 10
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "stroller",
+     "note": "Jeden wózek możesz mieć do wejścia do samolotu, potem trafia do luku. Regulamin nie mówi wprost, czy jest bezpłatny.",
+     "short": "Wózek do drzwi samolotu",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.electra-airways.com/wp-content/uploads/2023/10/Conditions-of-carriage_19.07.pdf",
+     "value": {
+      "hold": true,
+      "max": 1,
+      "to_aircraft_door": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "child_seating",
+     "note": "Niemowlę nie może siedzieć w rzędzie przy wyjściu awaryjnym.",
+     "short": "Nie przy wyjściu awaryjnym",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.electra-airways.com/wp-content/uploads/2023/10/Conditions-of-carriage_19.07.pdf",
+     "value": {
+      "no_exit_row": true
+     },
+     "verified_at": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "carrier_iata": "A3",
+   "rules": [
+    {
+     "age_band": "0-2",
+     "key": "infant_fee",
+     "note": "W taryfach Family, Comfort Flex i Business bilet niemowlęcia (do 24 miesięcy, na kolanach) ma 90% zniżki. Kupując lot w biurze podróży, cenę sprawdź w biurze.",
+     "short": "10% ceny dorosłego (taryfa Family)",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://en.aegeanair.com/travel-info/travelling-with-aegean/for-families/tickets-for-children_infants/",
+     "value": {
+      "discount_pct": 90,
+      "fare": "Family"
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "2+",
+     "key": "child_fare",
+     "note": "W taryfie Family bilet dziecka 2–11 lat ma 40% zniżki, w Comfort Flex i Business 20%. Od 12 lat obowiązuje bilet dorosłego.",
+     "short": "Dziecko 2–11 lat: 40% zniżki (Family)",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://en.aegeanair.com/travel-info/travelling-with-aegean/for-families/tickets-for-children_infants/",
+     "value": {
+      "discount_pct": 40,
+      "fare": "Family",
+      "max_age": 11,
+      "min_age": 2
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "infant_min_age",
+     "note": "Niemowlę młodsze niż 7 dni poleci tylko z zaświadczeniem lekarskim, że może podróżować i nie urodziło się przedwcześnie.",
+     "short": "Do 7. dnia życia z zaświadczeniem",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://en.aegeanair.com/travel-info/travelling-with-aegean/special-assistance/infants/",
+     "value": {
+      "doctor_note_under_days": 7,
+      "min_days": 0
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "infants_per_adult",
+     "note": "Jeden pasażer (od 16 lat) może lecieć z jednym niemowlęciem. Opiekun nie może jednocześnie mieć w kabinie zwierzęcia ani potrzebować pomocy w poruszaniu się.",
+     "short": "Jedno niemowlę na dorosłego (16+)",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://en.aegeanair.com/travel-info/travelling-with-aegean/for-families/traveling_with_infant",
+     "value": {
+      "adult_min_age": 16,
+      "max": 1
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "infant_baggage",
+     "note": "Niemowlę ma bezpłatnie jedną torbę do 6 kg (55×40×23 cm) z rzeczami do karmienia i przewijania. W Comfort Flex przysługuje mu też walizka do 23 kg, w Business do 32 kg.",
+     "short": "Torba do 6 kg w kabinie",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://en.aegeanair.com/travel-info/travelling-with-aegean/for-families/traveling_with_infant",
+     "value": {
+      "cabin_dims_cm": "55x40x23",
+      "cabin_kg": 6,
+      "checked_kg_comfort_flex": 23
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "stroller",
+     "note": "Wózek albo fotelik bezpłatnie: oddajesz go złożony przy wejściu do samolotu (musi być w pełni składany i oznaczony przy odprawie lub przy bramce), leci w luku. Dodatkowy fotelik zgłoś w call center jako bagaż specjalny.",
+     "short": "Wózek gratis do drzwi samolotu",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://en.aegeanair.com/travel-info/travelling-with-aegean/for-families/traveling_with_infant",
+     "value": {
+      "foldable_required": true,
+      "free": true,
+      "items": [
+       "stroller",
+       "car_seat"
+      ],
+      "to_aircraft_door": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "car_seat",
+     "note": "Fotelik na pokładzie tylko z wykupionym osobnym miejscem (podstawa maks. 40×40 cm); płacisz za miejsce, nie za fotelik. Miejsce i fotelik w kabinie załatwisz tylko przez call center Aegean albo biuro.",
+     "short": "Fotelik tylko z własnym miejscem",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://en.aegeanair.com/travel-info/travelling-with-aegean/for-families/traveling_with_infant",
+     "value": {
+      "book_via": "call_center_or_agent",
+      "max_base_cm": "40x40",
+      "not_aisle": true,
+      "own_seat_required": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "baby_food",
+     "note": "Mleko modyfikowane lub odciągnięte możesz wziąć w bagażu podręcznym (do 6 kg); kontrola bezpieczeństwa może je sprawdzić.",
+     "short": "Mleko w bagażu podręcznym",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://en.aegeanair.com/travel-info/travelling-with-aegean/special-assistance/infants/",
+     "value": {
+      "milk_in_cabin_kg": 6
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "child_seating",
+     "note": "Niemowlę nie może siedzieć w rzędzie przy wyjściu awaryjnym ani w rzędach tuż przed i za nim.",
+     "short": "Nie przy wyjściu awaryjnym",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://en.aegeanair.com/travel-info/travelling-with-aegean/for-families/traveling_with_infant",
+     "value": {
+      "no_exit_row": true,
+      "no_row_before_after_exit": true
+     },
+     "verified_at": "2026-11-05"
+    }
+   ]
+  },
+  {
+   "carrier_iata": "BJ",
+   "rules": [
+    {
+     "age_band": "0-2",
+     "key": "infant_fee",
+     "note": "Nouvelair nie podaje na stronie opłaty za niemowlę. Kupując lot w biurze podróży, cenę niemowlęcia sprawdź w biurze.",
+     "short": "Strona linii nie podaje opłaty",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.nouvelair.com/en/bagage",
+     "value": {
+      "amount_published": false
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "infant_baggage",
+     "note": "Niemowlę ma 10 kg bagażu rejestrowanego w każdej taryfie (na loty do Turcji: jedna sztuka do 10 kg). Osobnego bagażu podręcznego nie ma: jedzenie i pieluchy spakuj do bagażu rodzica, w jego limicie.",
+     "short": "10 kg rejestrowanego, bez podręcznego",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.nouvelair.com/en/bagage",
+     "value": {
+      "all_fares": true,
+      "cabin_allowance": false,
+      "checked_kg": 10
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "stroller",
+     "note": "Jeden wózek bezpłatnie. Do kabiny wejdzie tylko wózek typu YOYO albo parasolka do 55×35×25 cm, zamiast bagażu podręcznego dorosłego; drugą z tych rzeczy linia bezpłatnie przewiezie w luku.",
+     "short": "Wózek gratis, mały wejdzie na pokład",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.nouvelair.com/en/bagage",
+     "value": {
+      "cabin_if_max_cm": "55x35x25",
+      "free": true,
+      "replaces_adult_cabin_bag": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "2+",
+     "key": "stroller",
+     "note": "Dziecko 2–4 lata: te same zasady, wózek YOYO lub parasolka może wejść do kabiny zamiast bagażu podręcznego dziecka. Od 4 lat wózek wlicza się do bagażu rejestrowanego.",
+     "short": "Wózek gratis do 4 lat",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.nouvelair.com/en/bagage",
+     "value": {
+      "cabin_if_max_cm": "55x35x25",
+      "free_until_age": 4,
+      "from_age_4_counts_as_checked_bag": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "baby_food",
+     "note": "Jedzenie dla dziecka (stałe lub płynne) możesz wziąć do kabiny w ilości potrzebnej na czas podróży.",
+     "short": "Jedzenie na czas lotu w kabinie",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.nouvelair.com/en/bagage",
+     "value": {
+      "journey_quantity": true
+     },
+     "verified_at": "2026-11-05"
+    }
+   ]
+  },
+  {
    "carrier_iata": "E4",
    "rules": [
     {
@@ -382,6 +820,139 @@
    ]
   },
   {
+   "carrier_iata": "NO",
+   "rules": [
+    {
+     "age_band": "0-2",
+     "key": "infant_fee",
+     "note": "Neos nie podaje na stronie o dzieciach opłaty za niemowlę. Kupując lot w biurze podróży, cenę niemowlęcia sprawdź w biurze.",
+     "short": "Strona linii nie podaje opłaty",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.neosair.com/en/information/infants-and-children",
+     "value": {
+      "amount_published": false
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "infant_min_age",
+     "note": "Zdrowy noworodek może lecieć Neos po pierwszym tygodniu życia.",
+     "short": "Od 1. tygodnia życia",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.neosair.com/en/information/infants-and-children",
+     "value": {
+      "min_days": 7
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "infants_per_adult",
+     "note": "Ze względów bezpieczeństwa jeden dorosły może lecieć tylko z jednym niemowlęciem.",
+     "short": "Jedno niemowlę na dorosłego",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.neosair.com/en/information/infants-and-children",
+     "value": {
+      "max": 1
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "lap_infant",
+     "note": "Dziecko do 2 lat leci na kolanach: nie dostaje własnego miejsca ani posiłku na pokładzie.",
+     "short": "Na kolanach, bez posiłku",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.neosair.com/en/information/infants-and-children",
+     "value": {
+      "allowed": true,
+      "meal": false,
+      "own_seat": false
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "infant_baggage",
+     "note": "Niemowlę nie ma limitu bagażu. Można zabrać jedną małą torbę (jak torba do wózka) z rzeczami potrzebnymi dziecku w podróży.",
+     "short": "Bez bagażu, jedna mała torba",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.neosair.com/en/information/infants-and-children",
+     "value": {
+      "own_allowance": false,
+      "small_bag": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "stroller",
+     "note": "Wózek zgłoś przy odprawie: dostaje zawieszkę, dowozisz go do drzwi samolotu i składasz do luku. Wózek w wymiarach bagażu podręcznego (55×40×20 cm) może trafić do schowka nad głową zamiast walizki kabinowej. Przewóz jest bezpłatny.",
+     "short": "Wózek gratis do drzwi samolotu",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.neosair.com/en/information/infants-and-children",
+     "value": {
+      "cabin_if_max_cm": "55x40x20",
+      "free": true,
+      "to_aircraft_door": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "bassinet",
+     "note": "Każdy samolot ma kołyski (76×38×20 cm, do 12 kg). Zamów przy rezerwacji albo najpóźniej 4 dni przed wylotem, w biurze lub na czacie Neos; linia musi potwierdzić. Gdzie jest Economy Extra, płacisz jej dopłatę.",
+     "short": "Kołyska na zamówienie, do 12 kg",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.neosair.com/en/information/infants-and-children",
+     "value": {
+      "available": true,
+      "dims_cm": "76x38x20",
+      "economy_extra_supplement": true,
+      "max_kg": 12,
+      "request_days_before": 4
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "baby_food",
+     "note": "Mleko, mleko w proszku, przegotowaną wodę w butelce i jedzenie dla dziecka weźmiesz w ilości na całą podróż, także ponad limit płynów. Miej je pod ręką do kontroli. W toaletach są przewijaki.",
+     "short": "Mleko i jedzenie ponad limit płynów",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.neosair.com/en/information/infants-and-children",
+     "value": {
+      "above_liquid_limit": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "child_seating",
+     "note": "Neos bezpłatnie sadza dzieci do 14 lat blisko opiekuna: do 5 lat obok, 5–11 lat w tym samym rzędzie (najwyżej jedno miejsce przerwy), 12–13 lat najwyżej rząd dalej.",
+     "short": "Dziecko do 5 lat obok rodzica, gratis",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.neosair.com/en/information/infants-and-children",
+     "value": {
+      "free": true,
+      "next_to_parent_under_age": 5,
+      "same_row_max_gap_under_age": 12
+     },
+     "verified_at": "2026-11-05"
+    }
+   ]
+  },
+  {
    "carrier_iata": "QS",
    "rules": [
     {
@@ -633,6 +1204,143 @@
    ]
   },
   {
+   "carrier_iata": "SM",
+   "rules": [
+    {
+     "age_band": "0-2",
+     "key": "infant_fee",
+     "note": "Air Cairo nie podaje na stronie opłaty za niemowlę na kolanach. Kupując lot w biurze podróży, cenę niemowlęcia sprawdź w biurze.",
+     "short": "Strona linii nie podaje opłaty",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://aircairo.com/en-gl/travel-with-children/",
+     "value": {
+      "amount_published": false,
+      "second_infant_child_fare": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "infant_min_age",
+     "note": "Linia przewozi zdrowe niemowlęta w wieku od 7 dni do 24 miesięcy. Weź akt urodzenia jako dowód wieku.",
+     "short": "Od 7. dnia życia",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://aircairo.com/en-gl/travel-with-children/",
+     "value": {
+      "min_days": 7
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "infants_per_adult",
+     "note": "Jeden dorosły (od 16 lat) może lecieć z dwojgiem niemowląt, ale za drugie płaci taryfę dziecka i ma ono własne miejsce.",
+     "short": "Dwoje niemowląt, drugie z miejscem",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://aircairo.com/en-gl/travel-with-children/",
+     "value": {
+      "adult_min_age": 16,
+      "max": 2,
+      "second_infant_own_seat_child_fare": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "twins",
+     "note": "Z bliźniętami może lecieć jeden dorosły, jeśli drugie dziecko ma własne miejsce za taryfę dziecka. Rodzice lecący z dwojgiem niemowląt dostają miejsca po przeciwnych stronach przejścia.",
+     "short": "Bliźnięta: drugie z biletem dziecka",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://aircairo.com/en-gl/travel-with-children/",
+     "value": {
+      "one_adult_allowed": true,
+      "second_infant_child_fare": true,
+      "two_parents_cross_aisle": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "lap_infant",
+     "note": "Dziecko do 2 lat leci na kolanach, bez własnego miejsca. Jeśli skończy 2 lata przed lotem powrotnym lub w jego dniu, potrzebuje biletu dziecka z miejscem.",
+     "short": "Na kolanach; po 2. urodzinach bilet",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://aircairo.com/en-gl/travel-with-children/",
+     "value": {
+      "allowed": true,
+      "own_seat": false,
+      "turns_2_needs_child_ticket": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "infant_baggage",
+     "note": "Niemowlę ma jedną sztukę bagażu rejestrowanego do 10 kg, a do tego bezpłatny wózek.",
+     "short": "10 kg bagażu rejestrowanego",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://aircairo.com/en-gl/baggage-allowance/",
+     "value": {
+      "checked_kg": 10,
+      "checked_pieces": 1
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "stroller",
+     "note": "Jeden wózek na dziecko ponad limit bagażu. Mały składany (do 25,5 cm średnicy i 92 cm długości) nadasz przy bramce i odbierzesz przy drzwiach samolotu; duży tylko przy odprawie, a przy braku miejsca może nie polecieć.",
+     "short": "Wózek gratis, mały do drzwi samolotu",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://aircairo.com/en-gl/travel-with-children/",
+     "value": {
+      "free": true,
+      "large_checkin_only": true,
+      "per_child": 1,
+      "small_max_cm": "25.5x92",
+      "small_to_aircraft_door": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "car_seat",
+     "note": "Fotelik po wcześniejszym uzgodnieniu z linią, dla dziecka od 6 miesięcy do 2 lat, które ma bilet w taryfie dziecka. Obok musi siedzieć opiekun od 16 lat, a fotelik musi pasować do fotela samolotu.",
+     "short": "Fotelik z biletem dziecka, od 6 mies.",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://aircairo.com/en-gl/travel-with-children/",
+     "value": {
+      "child_fare": true,
+      "min_age_months": 6,
+      "own_seat_required": true,
+      "prior_arrangement": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "child_seating",
+     "note": "Pasażerowie z dziećmi lub niemowlętami nie mogą siedzieć przy wyjściach awaryjnych.",
+     "short": "Nie przy wyjściu awaryjnym",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://aircairo.com/en-gl/travel-with-children/",
+     "value": {
+      "no_exit_row": true
+     },
+     "verified_at": "2026-11-05"
+    }
+   ]
+  },
+  {
    "carrier_iata": "W6",
    "rules": [
     {
@@ -738,6 +1446,140 @@
       "same_as_adult": true
      },
      "verified_at": "2026-11-04"
+    }
+   ]
+  },
+  {
+   "carrier_iata": "XC",
+   "rules": [
+    {
+     "age_band": "0-2",
+     "key": "infant_fee",
+     "note": "Corendon nie podaje na swojej stronie opłaty za niemowlę. Kupując lot w biurze podróży, cenę niemowlęcia sprawdź w biurze.",
+     "short": "Strona linii nie podaje opłaty",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.corendonairlines.com/baggage-allowance/for-infants",
+     "value": {
+      "amount_published": false
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": null,
+     "key": "infant_min_age",
+     "note": "Linia nie przewozi niemowląt młodszych niż 8 dni.",
+     "short": "Od 8. dnia życia",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.corendonairlines.com/support-center/frequently-asked-questions/reservation",
+     "value": {
+      "min_days": 8
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "infant_baggage",
+     "note": "Niemowlę ma 10 kg bagażu na każdym locie. Własnego bagażu podręcznego nie ma, ale na pokład wejdzie jedna torba z pieluchami i jedzeniem w wymiarach bagażu podręcznego.",
+     "short": "10 kg bagażu rejestrowanego",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.corendonairlines.com/support-center/frequently-asked-questions/baggage-operations",
+     "value": {
+      "cabin_allowance": false,
+      "checked_kg": 10,
+      "diaper_bag": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "2+",
+     "key": "child_baggage",
+     "note": "Dziecko od 2 lat ma taki sam bagaż rejestrowany jak dorosły, zależnie od wykupionej taryfy.",
+     "short": "Od 2 lat bagaż jak dorosły",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.corendonairlines.com/support-center/frequently-asked-questions/baggage-operations",
+     "value": {
+      "same_as_adult": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "stroller",
+     "note": "Jeden wózek (dla bliźniąt wózek podwójny) albo fotelik na niemowlę leci bezpłatnie w luku; do kabiny nie wejdzie. Drugi wózek lub wózek i fotelik też są bezpłatne, ale ich waga wlicza się do bagażu dorosłych.",
+     "short": "Wózek lub fotelik gratis w luku",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.corendonairlines.com/baggage-allowance/for-infants",
+     "value": {
+      "cabin": false,
+      "free": true,
+      "hold": true,
+      "second_item_counts_to_adult_bag": true,
+      "twin_stroller_ok": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "car_seat",
+     "note": "Ze względów bezpieczeństwa foteliki dziecięce nie są dozwolone w kabinie i nie da się ich przymocować do fotela. Fotelik leci bezpłatnie w luku zamiast wózka.",
+     "short": "Fotelik tylko w luku",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.corendonairlines.com/baggage-allowance/for-infants",
+     "value": {
+      "cabin": false,
+      "hold_free": true
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "travel_cot",
+     "note": "Łóżeczko turystyczne można zabrać, ale jego waga wlicza się do bagażu.",
+     "short": "Łóżeczko wlicza się do bagażu",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.corendonairlines.com/baggage-allowance/for-infants",
+     "value": {
+      "counts_as_checked_bag": true,
+      "free": false
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "baby_food",
+     "note": "Załoga poda gorącą wodę do mleka w proszku. Gotowe jedzenie dla niemowlęcia: łącznie do 10 pojemników lub butelek, każdy do 100 ml.",
+     "short": "Gorąca woda do mleka na pokładzie",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.corendonairlines.com/baggage-allowance/for-infants",
+     "value": {
+      "container_max_ml": 100,
+      "hot_water": true,
+      "ready_food_max_containers": 10
+     },
+     "verified_at": "2026-11-05"
+    },
+    {
+     "age_band": "0-2",
+     "key": "child_seating",
+     "note": "Pasażer z niemowlęciem siedzi tylko przy oknie, bez miejsc z dodatkową przestrzenią na nogi. Z dziećmi poniżej 16 lat nie usiądziesz w rzędzie przy wyjściu awaryjnym.",
+     "short": "Z niemowlęciem tylko przy oknie",
+     "source": "carrier_official",
+     "to_confirm": false,
+     "url": "https://www.corendonairlines.com/support-center/frequently-asked-questions/special-conditions-faq",
+     "value": {
+      "no_exit_row_under_16": true,
+      "no_extra_legroom": true,
+      "window_only": true
+     },
+     "verified_at": "2026-11-05"
     }
    ]
   }

@@ -1,0 +1,74 @@
+# Electra Airways: Conditions of Carriage for Passengers and Baggage, effective 2022-01-01, updated
+# 2023-04-01, §11.5 (PDF linked from electra-airways.com/about-us, read 2026-11-05). Pure charter /
+# ACMI carrier: tickets are sold by tour operators, which set the infant price.
+carrier = "3E"
+
+[[rule]]
+key = "infant_fee"
+age_band = "0-2"
+value = { amount_published = false, set_by_tour_operator = true }
+short = "Cenę niemowlęcia ustala biuro"
+note = "Electra lata tylko czarterowo: bilety sprzedają biura podróży i to one ustalają cenę niemowlęcia. Regulamin linii nie podaje opłaty."
+source = "carrier_official"
+url = "https://www.electra-airways.com/wp-content/uploads/2023/10/Conditions-of-carriage_19.07.pdf"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "infants_per_adult"
+age_band = "0-2"
+value = { max = 1, adult_min_age = 18 }
+short = "Jedno niemowlę na dorosłego (18+)"
+note = "Niemowlę musi lecieć z osobą dorosłą od 18 lat, a jeden dorosły może mieć tylko jedno niemowlę. Dzieckiem do 2 lat jest dziecko, które nie skończyło 2 lat w dniu wylotu."
+source = "carrier_official"
+url = "https://www.electra-airways.com/wp-content/uploads/2023/10/Conditions-of-carriage_19.07.pdf"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "twins"
+age_band = "0-2"
+value = { one_adult_allowed = false }
+short = "Bliźnięta: potrzeba dwóch dorosłych"
+note = "Z bliźniętami do 2 lat muszą lecieć dwie dorosłe osoby (jedno niemowlę na dorosłego)."
+source = "carrier_official"
+url = "https://www.electra-airways.com/wp-content/uploads/2023/10/Conditions-of-carriage_19.07.pdf"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "lap_infant"
+age_band = "0-2"
+value = { allowed = true, own_seat = false, meal = false, max_infants_per_flight = 20 }
+short = "Na kolanach, bez posiłku"
+note = "Niemowlę leci na kolanach opiekuna, bez własnego miejsca i posiłku. Na jednym locie może być najwyżej 20 niemowląt."
+source = "carrier_official"
+url = "https://www.electra-airways.com/wp-content/uploads/2023/10/Conditions-of-carriage_19.07.pdf"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "infant_baggage"
+age_band = "0-2"
+value = { checked_kg = 10 }
+short = "10 kg bagażu"
+note = "Niemowlę ma 10 kg bezpłatnego bagażu."
+source = "carrier_official"
+url = "https://www.electra-airways.com/wp-content/uploads/2023/10/Conditions-of-carriage_19.07.pdf"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "stroller"
+age_band = "0-2"
+value = { to_aircraft_door = true, hold = true, max = 1 }
+short = "Wózek do drzwi samolotu"
+note = "Jeden wózek możesz mieć do wejścia do samolotu, potem trafia do luku. Regulamin nie mówi wprost, czy jest bezpłatny."
+source = "carrier_official"
+url = "https://www.electra-airways.com/wp-content/uploads/2023/10/Conditions-of-carriage_19.07.pdf"
+verified_at = 2026-11-05
+
+[[rule]]
+key = "child_seating"
+age_band = "0-2"
+value = { no_exit_row = true }
+short = "Nie przy wyjściu awaryjnym"
+note = "Niemowlę nie może siedzieć w rzędzie przy wyjściu awaryjnym."
+source = "carrier_official"
+url = "https://www.electra-airways.com/wp-content/uploads/2023/10/Conditions-of-carriage_19.07.pdf"
+verified_at = 2026-11-05

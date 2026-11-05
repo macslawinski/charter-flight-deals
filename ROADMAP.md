@@ -29,7 +29,9 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
 ## Step 4. B content, in parallel with A's waiting time
 - [x] C: Saltic access times by car and train from the 6 cities (2026-11-05: car = OSRM free flow,
       train = rozklad-pkp.pl to Kołobrzeg station, ≤1 change; page shows both with source).
-- [ ] C: more carriers' child rules: Corendon, Aegean, Electra, Neos, Nouvelair, World2Fly, Air Cairo.
+- [x] C: more carriers' child rules: Corendon, Aegean, Electra, Neos, Nouvelair, World2Fly, Air Cairo
+      (2026-11-05, official pages only; migration 011 adds NO/2W/3E to `airlines`). Infant fee is not
+      published by 6 of the 7 (only Aegean: 90% off in Family fare): the site says "check with the operator".
 - [ ] C: remaining Poznań playgrounds (Kinderlandia, Monsterkowo, Bawimy, Smålandia) where a price list exists;
       resolve the two "do potwierdzenia" facts (Fikołki Karta Malucha, Mlecz hours) — U may phone them.
 - [ ] C: Rodos + Crete-Heraklion hotels (PLAN.md B5), facts from hotel websites only.
