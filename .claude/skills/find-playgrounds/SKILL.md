@@ -36,7 +36,11 @@ check the address. OSM is a starting point, not the truth: names and website tag
 `website` tag can 404 because the venue was renamed; e.g. Kinderlandia became "Pobawimy się?").
 
 ## 3. Find each venue's own website
-- OSM `website` tag first; else a web search with name + city + "sala zabaw"; else guess a domain.
+- OSM `website` tag first (the script also shows `facebook=` and `operator=`: a venue with only a
+  Facebook page has no usable source); else a web search with name + city + "sala zabaw"; else guess
+  a domain.
+- A chain branch: check the chain's own location list. If the city is not there, the OSM object is
+  probably stale (closed); skip it, don't list it as "czeka na sprawdzenie".
 - **Verify it is the same venue**: the address or district on the site must match the OSM location.
   A guessed domain can be an unrelated business (monsterkowo.pl is a clothing shop).
 - Not a venue website (so not a source): a shopping-mall tenant page, Facebook/Instagram, Google Maps,

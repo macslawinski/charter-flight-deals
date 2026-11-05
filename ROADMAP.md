@@ -35,8 +35,10 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
 - [x] C: remaining Poznań playgrounds (2026-11-05): added Bawimy Jeżyce and Smålandia (IKEA, 3–10 lat).
       Kinderlandia is now "Pobawimy się?" (Galeria A2) and Monsterkowo (monsterkowo.pl is a shop): no own site
       with prices, skipped. Fikołki Karta Malucha resolved from /cennik/ (both clubs).
-- [ ] C: new Poznań leads from OSM (2026-11-05), not yet checked: Dino Lino, Strefa Zabaw Kinderplaneta,
-      Holiday Park Education & Fun. Use the `find-playgrounds` skill (also for other cities).
+- [x] C: new Poznań leads from OSM checked (2026-11-05), none added: Dino Lino has only Facebook (OSM);
+      Kinderplaneta's own site lists no Poznań location (probably closed, OSM node is stale);
+      "Holiday Park Education & Fun" has no tags beyond the name and no site found. Use the
+      `find-playgrounds` skill for other cities.
 - [ ] U (phone, optional): Mlecz hours (regulamin 10–19 daily vs. OSM Fr–Su until 20) and Mlecz under-6-month
       discount (page shows −70% / −100% ambiguously); Bawimy hours (OSM only).
 - [ ] C: Rodos + Crete-Heraklion hotels (PLAN.md B5), facts from hotel websites only.

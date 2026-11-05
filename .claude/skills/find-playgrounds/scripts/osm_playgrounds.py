@@ -96,8 +96,10 @@ def main() -> int:
         if osm in known:
             seen.add(osm)
         web = t.get("website") or t.get("contact:website")
+        fb = t.get("contact:facebook") or t.get("facebook")
+        extra = "".join(f" | {k}={v}" for k, v in (("facebook", fb), ("operator", t.get("operator"))) if v)
         line = (f"{status} | {osm} | {t.get('name')} | web={web} | {addr or '-'} | "
-                f"{lat},{lon} | hours={t.get('opening_hours')}")
+                f"{lat},{lon} | hours={t.get('opening_hours')}{extra}")
         rows.append((osm in known, t.get("name") or "", line))
     for _, _, line in sorted(rows):
         print(line)
