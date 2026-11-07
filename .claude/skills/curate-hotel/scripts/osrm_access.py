@@ -43,6 +43,29 @@ def route(lat1: float, lon1: float, lat2: float, lon2: float) -> tuple[float, fl
     raise SystemExit(f"OSRM failed: {last}")
 
 
+def car_section(lat: float, lon: float) -> str:
+    """The car [[access]] blocks for a hotel, fastest city first, with a section comment."""
+    rows = []
+    for city, (clat, clon) in CITIES.items():
+        minutes, km = route(clat, clon, lat, lon)
+        rows.append((round(minutes / 5) * 5, round(km / 10) * 10, city, clat, clon))
+        time.sleep(1)  # public server: be gentle
+    today = date.today().isoformat()
+    out = ["# --- Access: car (OSRM, free flow) " + "-" * 61]
+    for minutes, km, city, clat, clon in sorted(rows):
+        out.append(
+            f'[[access]]\nfrom_kind = "city"\nfrom = "{city}"\nmode = "car"\nminutes = {minutes}\n'
+            f'note = "{km} km"\nurl = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car'
+            f'&route={clat:.4f}%2C{clon:.4f}%3B{lat:.4f}%2C{lon:.4f}"\nverified_at = {today}\n'
+        )
+    return "\n".join(out)
+
+
+def station_desc(slat: float, slon: float, lat: float, lon: float) -> str:
+    minutes, km = route(slat, slon, lat, lon)
+    return f"~{km:.0f} km, ~{round(minutes / 5) * 5 or 5} min by car or taxi (OSRM)"
+
+
 def main() -> int:
     sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
     ap = argparse.ArgumentParser()
@@ -52,25 +75,8 @@ def main() -> int:
                     help="also print station -> hotel distance/time for the header comment")
     a = ap.parse_args()
     if a.station:
-        minutes, km = route(a.station[0], a.station[1], a.lat, a.lon)
-        print(f"# Station -> hotel: ~{km:.0f} km, ~{round(minutes / 5) * 5 or 5} min by car (OSRM free flow).")
-    rows = []
-    for city, (clat, clon) in CITIES.items():
-        minutes, km = route(clat, clon, a.lat, a.lon)
-        rows.append((round(minutes / 5) * 5, round(km / 10) * 10, city, clat, clon))
-        time.sleep(1)  # public server: be gentle
-    today = date.today().isoformat()
-    print("# --- Access: car (OSRM, free flow) " + "-" * 61)
-    for minutes, km, city, clat, clon in sorted(rows):
-        print(f"""[[access]]
-from_kind = "city"
-from = "{city}"
-mode = "car"
-minutes = {minutes}
-note = "{km} km"
-url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route={clat:.4f}%2C{clon:.4f}%3B{a.lat:.4f}%2C{a.lon:.4f}"
-verified_at = {today}
-""")
+        print(f"# Station -> hotel: {station_desc(a.station[0], a.station[1], a.lat, a.lon)}.")
+    print(car_section(a.lat, a.lon))
     return 0
 
 

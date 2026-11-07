@@ -77,7 +77,9 @@ Go down the scored list plus the search finds and decide per hotel:
   weddings, "dzieci do 3 lat" only in a price-list footnote, "baseny dla dzieci" meaning the resort
   next door, text copied from a sister hotel. Open the kids page before believing it.
 - **Unreadable but promising** (name or stars suggest a family resort): WebFetch; if that fails too,
-  keep it as "do sprawdzenia" (Claude in Chrome can read it later).
+  keep it as "do sprawdzenia". These are usually JavaScript-rendered sites: `curate-hotel` reads them
+  with Claude in Chrome from the start (Gwiazda Morza and Stella, 2026-11-07). A site that refuses
+  even `robots.txt` (403) is not "do sprawdzenia": record it as skipped.
 
 **Confirm each kept lead on its own site**: open the kids page and see at least one concrete
 **physical item or space for under-3s**: a cot, baby bath, bottle warmer, changing table, potty,

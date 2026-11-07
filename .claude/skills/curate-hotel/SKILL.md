@@ -65,8 +65,11 @@ otherwise the village is the place.
   "w sezonie") must say the season if given, or say it isn't.
 - **Live pages only**: use what the site shows on the day you check. Old promotions found by search
   that now 404 or are past their dates are not facts. Prefer permanent pages (dla dzieci, FAQ,
-  regulamin) over seasonal packages; if a fact exists only in a package page, say so and give its
-  validity ("w pakiecie jesiennym 2026").
+  regulamin) over seasonal packages. **Package-only facts** (a cot or free stay that appears only in
+  a "pakiet rodzinny" offer) are not hotel rules: mention them in the header ("Also on the site: in
+  the <name> package 2026 ...") and don't record them as features. A hotel whose only 0–3 items
+  are in packages → skip it (`skip_reason`), as with Bartan (2026-11-07). A rule printed in a
+  general policy box on an offer page (not tied to that package) may be recorded with `to_confirm = true`.
 - **Chains**: use a chain-wide page or document only if it names this location or is hosted under
   this location's path (e.g. `/download/golebiewski-karpacz/...`). A page covering several hotels at
   once ("nasze hotele w górach") is a pointer, not a fact: confirm on the location's own page, else
@@ -80,7 +83,10 @@ otherwise the village is the place.
 ## 3. Map to feature keys
 Read `references/features.md` (keys, what counts, value shapes). Essentials:
 - Only facts the site states. "Hotel przyjazny rodzinom" alone is not a fact.
-- `age_band` where the site gives an age (free stay to 3 → `0-3`; animations from 4 → `3+`).
+- `age_band` where the site gives an age (free stay to 3 → `0-3`; animations from 4 → `3+`). Allowed
+  bands are only `0-1`, `0-2`, `1-2`, `2-3`, `0-3`, `2+`, `3+` (`AGE_BANDS` in `ingest/curated.py`).
+  Another age (free stay "do 4 lat", "do 6 lat") → no `age_band`, put `max_age_years = 4` in the
+  value and the exact wording in the note.
 - Playroom / kids club / animations: the minimum age and whether a parent must stay is what matters
   to a 0–3 parent. If the site doesn't say, the note says "Minimalnego wieku strona nie podaje."
 - `source = "hotel_website"`, `url` = the exact page (or PDF) the fact is on, `verified_at` = today.
@@ -94,19 +100,28 @@ Read `references/features.md` (keys, what counts, value shapes). Essentials:
   1. the hotel's own map link ("Wyznacz trasę", a Google Maps `@lat,lon` or `?q=lat,lon` in the HTML);
   2. the lead's OSM centre (`OpenStreetMap way/…, ODbL`);
   3. OSM Nominatim search by name + town (`https://nominatim.openstreetmap.org/search?format=json&q=<name>, <town>`,
-     one request, check the address matches; ODbL).
-- **Car** (all six cities, one command, same method as Saltic):
+     one request, check the address matches; ODbL). Go straight here when the hotel's map is a
+     short link (goo.gl, maps.app.goo.gl) or an embedded widget without coordinates.
+- **Address** (street, number, postal code) only as the hotel's own site writes it. Never fill a
+  missing postal code or number from Nominatim, OSM or a guess: leave it out and add
+  "# the site gives no postal code" next to `address`.
+- **Access, one command per hotel or per group of hotels near the same station** (writes the blocks
+  into the files; refuses a file that already has `[[access]]`):
   ```
-  .venv/Scripts/python.exe .claude/skills/curate-hotel/scripts/osrm_access.py <lat> <lon>
+  .venv/Scripts/python.exe .claude/skills/curate-hotel/scripts/add_access.py <hotel.toml>... --station <lat> <lon> --train-from <hotel near that station.toml>
+  .venv/Scripts/python.exe .claude/skills/curate-hotel/scripts/add_access.py <hotel.toml> --station <lat> <lon> --train "Ustka" "Warszawa|352|1 przesiadka; Poznań|236|bezpośredni; ..." --train-date 2026-11-12
   ```
-  Paste its `[[access]]` blocks.
+  Car blocks come from OSRM (same method as Saltic; `osrm_access.py <lat> <lon>` alone just prints
+  them). Write the header line as `Station -> hotel: TBD`; `--station` replaces TBD with the OSRM
+  distance and time, so the header never disagrees with the route. No sensible train: leave out
+  `--train*` (car only).
 - **Train**: nearest station with regular long-distance trains (the hotel's dojazd page often names
   it). rozklad-pkp.pl in Chrome: a Thursday ~1 week ahead, departures 05:00–14:00, the fastest
   connection with at most one change, from each of the six cities; `note` = "bezpośredni" or
   "1 przesiadka · bezpośredni X h YY min" when a slower direct train exists; `url = "https://rozklad-pkp.pl/"`.
-  Train times belong to the station, so **reuse** them for every hotel near the same station (copy
-  the blocks from a hotel already curated there). Station → hotel distance/time (add
-  `--station <lat> <lon>` to the OSRM command) and how to get there (taxi, the hotel's transfer)
+  Train times belong to the station, so **reuse** them for every hotel near the same station
+  (`--train-from` a hotel already curated there; `Grep "Access: train to <Station>" data/curated/hotels`
+  finds one). Station → hotel distance/time and how to get there (taxi, the hotel's transfer)
   goes into the header comment and, if the hotel runs a transfer, into
   the `transfer` fact. No sensible train (station > ~25 km, or > 2 changes): skip train and say so
   in the header; don't invent a bus.
@@ -141,8 +156,15 @@ user's call. PLAN.md §4: a hotel page is meant to be published only with **≥ 
 (without `to_confirm`); if a hotel has fewer, say so in the report.
 
 When the hotel came from a lead, set the lead's `status = "curated"` in `hotel_leads/<voivodeship>.toml`.
-If its site turned out to have nothing concrete for 0–3, set `status = "skipped"` with `skip_reason`
-and don't write a hotel file.
+Skip a hotel (`status = "skipped"` + `skip_reason`, no hotel file) when:
+- its site has nothing concrete for 0–3 any more (kids page empty or just a heading, items gone);
+- its only 0–3 items are in packages (see §2);
+- robots.txt disallows the pages, or the site refuses even `robots.txt` (403/blocked): no
+  workaround, not even Chrome (Villa Verdi, 2026-11-07).
+Mention skipped hotels in the report and ROADMAP line.
+
+**Batches** ("kolejne 4 hotele"): read all sites first, write the TOMLs, then access per station
+(one `add_access.py` call per station group), mark the leads, ROADMAP, ship once per batch.
 
 ## 6. Re-verifying an existing hotel
 Re-read the same pages; update values, `verified_at`, and the header. Drop `to_confirm` only when the
@@ -150,14 +172,17 @@ site now settles it. A fact the site no longer states: remove it and mention tha
 message (the site would otherwise show something the hotel withdrew).
 
 ## 7. Ship
+Update `ROADMAP.md` first, then one command (validate, export, ruff, pyright, pytest, site build,
+Supabase upsert, commit of `ROADMAP.md` + `data/curated` + `family.json`, push; creates the branch
+if needed; stops at the first failure and prints its output):
 ```
-.venv/Scripts/python.exe -m ingest.curated --dry-run   # validates every curated file
-python scripts/export_family.py                         # data/curated -> family/src/data/family.json
-.venv/Scripts/python.exe -m pytest -q
-ruff check . ; pyright
-cd family; npm run build
-.venv/Scripts/python.exe -m ingest.curated               # load into Supabase (upsert of curated data)
+powershell -File .claude/skills/curate-hotel/scripts/ship.ps1 -Branch feat/<voivodeship>-hotels-<n> -Message "<Voivodeship> hotels batch <n>: A, B, C; skip D"
 ```
+Then open the PR with the GitHub connector (and merge it when the user asked for that). The steps
+by hand, if needed: `python -m ingest.curated --dry-run`, `python scripts/export_family.py`,
+`pytest -q`, `ruff check .`, `pyright`, `cd family; npm run build`, `python -m ingest.curated`.
+Note: the Bash/PowerShell cwd may reset to `family/`; the script resolves the repo root itself.
+
 A `CuratedError` names the file and field (unknown key, `short` > 60 chars, city not in the six,
 place missing in places.toml): fix the data, not the validator. Update `ROADMAP.md` (hotels added,
 leads left, facts "do potwierdzenia"). Branch `feat/<voivodeship>-hotels` (or the current hotels
