@@ -62,7 +62,12 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
 - [x] C: zachodniopomorskie hotels, batch 4 (2026-11-07): Gorzelanny (Dźwirzyno, 8 facts), Neptuno (Dźwirzyno,
       11), Aquarius SPA (Kołobrzeg, 13), Diva SPA (Kołobrzeg, 9). Trains: Kołobrzeg (reused). Diva's regulamin
       PDF is a scan without text, not used.
-- [ ] C: curate the remaining 8 zachodniopomorskie leads with `curate-hotel`.
+- [x] C: zachodniopomorskie hotels, batch 5 (2026-11-07): Trofana (Międzyzdroje, 6 facts), Wave (Międzyzdroje, 7),
+      Dworek Morski (Mielno, 9; address without house number, the site gives none), Imperiall (Sianożęty, 9).
+      Trains reused: Międzyzdroje (Wolin), Koszalin (Unitral), Ustronie Morskie (Wodnik).
+- [ ] C: curate the remaining 4 zachodniopomorskie leads with `curate-hotel`.
+- [ ] U (phone/e-mail, optional): Trofana free-stay age, playroom, parking; Wave cot fee, Kids Zone minimum age,
+      parking fee; Dworek Morski house number, free-stay age, cot fee.
 - [ ] U (phone/e-mail, optional): Neptuno free-stay age, cot fee, pool/brodzik; Diva free-stay rule, Kids Club
       minimum age, parking; Aquarius Klub Zabaw age and hours.
 - [ ] U (phone/e-mail, optional): Seaside Park free-stay age and cot fee; Wodnik free-stay rule for ages 1-3;

@@ -1,0 +1,188 @@
+# Facts from the hotel's own website (hotel-trofana.pl; robots.txt allows all, checked 2026-11-07):
+# /hotel/dzieci, home page. Written in our words.
+# Also on the site, no feature key for it: pram storage in the lobby; colouring books in the restaurant; bibs;
+# kettle, blanket and socket covers in the room; nappy bags and bathroom step; Summer Golf Kids Akademia (golf
+# lessons, "every age"); the kids page is titled "hotel z animacjami" and the home page names a "miejsce zabaw
+# dla dzieci", but neither describes them, so no animation or playroom fact is recorded.
+# Not stated (so not recorded yet): free-stay age, cot fee, bottle warmer, changing table, playroom details,
+# animation ages, brodzik, lift, parking.
+# Fewer than 8 verified facts: the site says little more for 0-3.
+#
+# Coordinates: the hotel's own Google Maps link.
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most one
+#   change, to Międzyzdroje station (times reused from Hotel Wolin, same station). Station -> hotel: ~1 km,
+#   ~5 min by car (OSRM) or a short walk.
+slug = "trofana-miedzyzdroje"
+place = "miedzyzdroje"
+name = "Hotel Trofana Wellness & SPA"
+official_url = "https://www.hotel-trofana.pl/"
+address = "ul. Zdrojowa 9, 72-500 Międzyzdroje"
+lat = 53.9297039  # the hotel's own Google Maps link
+lon = 14.44846
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true, bedding = true }
+short = "Na życzenie, z pościelą i kocykiem"
+note = "Łóżeczko dla małego dziecka na życzenie, z pościelą i kocykiem. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotel-trofana.pl/hotel/dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "high_chair"
+value = { available = true, where = "restaurant" }
+short = "W restauracji, są też śliniaki"
+note = "Krzesełka do karmienia dzieci i śliniaki."
+source = "hotel_website"
+url = "https://www.hotel-trofana.pl/hotel/dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Dania dla najmłodszych"
+note = "W menu restauracji są potrawy dla najmłodszych gości. O jedzeniu dla niemowląt strona nie wspomina."
+source = "hotel_website"
+url = "https://www.hotel-trofana.pl/hotel/dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "baby_bath"
+value = { available = true }
+short = "Jest w łazience"
+note = "Łazienki mają wanienkę do kąpieli dziecka (z ręcznikami i podestem). Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotel-trofana.pl/hotel/dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "potty"
+value = { available = true, toilet_seat_adapter = true }
+short = "Nocnik i nakładka na sedes"
+note = "W łazience nocnik i nakładka na sedes."
+source = "hotel_website"
+url = "https://www.hotel-trofana.pl/hotel/dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { distance_m = 250 }
+short = "Ok. 250 m do plaży i molo"
+note = "Ok. 250 m do plaży i molo."
+source = "hotel_website"
+url = "https://www.hotel-trofana.pl/"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 230
+note = "340 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.9297%2C14.4485"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 245
+note = "350 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.9297%2C14.4485"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 320
+note = "470 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.9297%2C14.4485"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 395
+note = "640 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.9297%2C14.4485"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 415
+note = "650 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.9297%2C14.4485"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 465
+note = "720 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.9297%2C14.4485"
+verified_at = 2026-11-07
+
+# --- Access: train to Międzyzdroje station (rozklad-pkp.pl, 2026-11-12) ---------------------------
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 189
+note = "1 przesiadka · bezpośredni 3 h 18 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 280
+note = "1 przesiadka · bezpośredni 5 h 13 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 349
+note = "1 przesiadka · bezpośredni 6 h 40 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "train"
+minutes = 378
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 448
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 511
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07

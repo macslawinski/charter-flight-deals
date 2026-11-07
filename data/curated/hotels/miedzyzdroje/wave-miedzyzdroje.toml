@@ -1,0 +1,197 @@
+# Facts from the hotel's own website (wavemiedzyzdroje.pl; robots.txt allows all but one plugin file,
+# checked 2026-11-07): /dla-dzieci/, /kontakt/, /apartamenty/, home page, Regulamin obiektu (PDF, 2026).
+# Written in our words.
+# Also on the site, no feature key for it: children under 13 must be under constant adult care and may use the
+# buffet only with an adult (regulamin); the resort is mostly apartments; Wave Beach Concept venue on the beach.
+# Not stated (so not recorded yet): cot fee, baby bath, bottle warmer, changing table, potty, high chair,
+# brodzik or kids' pool details, Kids Zone hours and minimum age, lift, beach distance, parking fee.
+# Fewer than 8 verified facts: the site says little more for 0-3.
+#
+# Coordinates: OpenStreetMap way/171601784 (ODbL); no map link with coordinates on the hotel's site.
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most one
+#   change, to Międzyzdroje station (times reused from Hotel Wolin, same station). Station -> hotel: ~2 km,
+#   ~5 min by car or taxi (OSRM).
+slug = "wave-miedzyzdroje"
+place = "miedzyzdroje"
+name = "Wave Międzyzdroje Resort & SPA"
+official_url = "https://wavemiedzyzdroje.pl/"
+address = "ul. Gryfa Pomorskiego 70, 72-500 Międzyzdroje"
+lat = 53.9259392  # OpenStreetMap way/171601784, ODbL
+lon = 14.4337753
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true }
+short = "Na życzenie"
+note = "Łóżeczka dla dzieci w pokojach na życzenie gości. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://wavemiedzyzdroje.pl/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "child_free_stay"
+age_band = "0-3"
+value = { free = true, sleeping_with_parents = true }
+short = "Do lat 3 bezpłatnie, bez osobnego łóżka"
+note = "Pobyt dzieci do lat 3 jest bezpłatny: wyżywienie jak w ofercie rodziców i ręczniki, ale bez osobnego miejsca do spania (regulamin obiektu, s. 6). Kwestii trzylatka strona nie rozstrzyga."
+source = "hotel_website"
+url = "https://wavemiedzyzdroje.pl/wp-content/uploads/2026/05/Regulamin-obiektu-Wave-Miedzyzdroje-Resort-SPA26.pdf"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Kilka pozycji dla maluchów"
+note = "W restauracji kilka pozycji przygotowanych z myślą o maluchach. O jedzeniu dla niemowląt strona nie wspomina."
+source = "hotel_website"
+url = "https://wavemiedzyzdroje.pl/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playroom"
+value = { available = true, age_zones = true }
+short = "Kids Zone ze strefami wiekowymi"
+note = "Kids Zone podzielona na strefy dla dzieci w różnym wieku. Godzin, minimalnego wieku i zasad opieki strona nie podaje."
+source = "hotel_website"
+url = "https://wavemiedzyzdroje.pl/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "W ogrodzie, maj–wrzesień też na plaży"
+note = "Zewnętrzny plac zabaw w ogrodzie resortu (m.in. mini ścianka wspinaczkowa); od maja do września także plac zabaw w Wave Beach Concept."
+source = "hotel_website"
+url = "https://wavemiedzyzdroje.pl/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, seasonal = true }
+short = "Święta, długie weekendy, ferie, wakacje"
+note = "W święta, długie weekendy, ferie i wakacje z dziećmi jest animatorka; od maja do września animacje w Wave Beach Concept. Przedziału wieku strona nie podaje."
+source = "hotel_website"
+url = "https://wavemiedzyzdroje.pl/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "parking"
+value = { paid = true, garage = true, reservation_required = true, max_height_m = 2 }
+short = "Płatny garaż, wymagana rezerwacja"
+note = "Ograniczona liczba płatnych miejsc w garażu podziemnym (niestrzeżony, monitorowany, do 2 m wysokości); wymagana rezerwacja. Kwoty strona nie podaje."
+source = "hotel_website"
+url = "https://wavemiedzyzdroje.pl/wp-content/uploads/2026/05/Regulamin-obiektu-Wave-Miedzyzdroje-Resort-SPA26.pdf"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 230
+note = "340 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.9259%2C14.4338"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 245
+note = "350 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.9259%2C14.4338"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 320
+note = "470 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.9259%2C14.4338"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 395
+note = "640 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.9259%2C14.4338"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 415
+note = "650 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.9259%2C14.4338"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 465
+note = "720 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.9259%2C14.4338"
+verified_at = 2026-11-07
+
+# --- Access: train to Międzyzdroje station (rozklad-pkp.pl, 2026-11-12) ---------------------------
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 189
+note = "1 przesiadka · bezpośredni 3 h 18 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 280
+note = "1 przesiadka · bezpośredni 5 h 13 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 349
+note = "1 przesiadka · bezpośredni 6 h 40 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "train"
+minutes = 378
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 448
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 511
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
