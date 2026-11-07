@@ -1,0 +1,222 @@
+# Facts from the hotel's own website (seasidepark.pl; robots.txt allows all, checked 2026-11-07):
+# /dla-dzieci, /hotel/qa (FAQ), home page. Written in our words.
+# Also on the site, no feature key for it: "Pokój Małego Pirata" themed room; animators take no
+# responsibility for the children (parents stay in charge); 25 m sports pool; pool Mon-Sat 10:00-22:00,
+# Sun 8:00-20:00; every child, of any age, must be included in the booking.
+# Not stated (so not recorded yet): free-stay age, cot fee, changing table, high chair, playroom minimum
+# age, animation ages, lift, toddler food, outdoor playground.
+#
+# Coordinates: the hotel's own "Zobacz na mapie" Google Maps link.
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most one
+#   change, to Kołobrzeg station (times reused from Saltic Grzybowo, same station). Station -> hotel:
+#   2.4 km (hotel FAQ), taxi.
+slug = "seaside-park-kolobrzeg"
+place = "kolobrzeg"
+name = "Seaside Park Hotel"
+official_url = "https://seasidepark.pl/"
+address = "ul. Wschodnia 20, 78-100 Kołobrzeg"
+lat = 54.188592  # the hotel's own Google Maps link
+lon = 15.605012
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true }
+short = "Turystyczne z pościelą, na życzenie"
+note = "Łóżeczko turystyczne z pościelą; najlepiej zamówić w recepcji lub dziale rezerwacji przed przyjazdem. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://seasidepark.pl/hotel/qa"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Dania dla dzieci"
+note = "Dania dla dzieci (np. pomidorowa, rosół z makaronem, frytki). O jedzeniu dla niemowląt strona nie wspomina."
+source = "hotel_website"
+url = "https://seasidepark.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true }
+short = "Jest"
+note = "Podgrzewacz do butelek wśród udogodnień dla dzieci. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://seasidepark.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "baby_bath"
+value = { available = true }
+short = "Jest"
+note = "Wanienka wśród udogodnień dla dzieci. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://seasidepark.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "potty"
+value = { available = true, toilet_seat_adapter = true }
+short = "Nakładka lub nocnik"
+note = "Nakładki toaletowe lub nocnik."
+source = "hotel_website"
+url = "https://seasidepark.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playroom"
+value = { available = true, open_24h = true }
+short = "Czynny całą dobę"
+note = "Pokój zabaw czynny całą dobę. Minimalnego wieku i zasad opieki strona nie podaje."
+source = "hotel_website"
+url = "https://seasidepark.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, year_round = true }
+short = "Cały rok, wg harmonogramu"
+note = "Animacje dla dzieci przez cały rok, według harmonogramu hotelu; animatorzy nie odpowiadają za opiekę nad dziećmi. Przedziału wieku strona nie podaje."
+source = "hotel_website"
+url = "https://seasidepark.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_pool"
+value = { available = true, depth_m_min = 0.35, depth_m_max = 0.55 }
+short = "Basen rekreacyjny 35–55 cm"
+note = "Mały basen rekreacyjny dla dzieci z zabawkami wodnymi, głębokość 0,35–0,55 m. Brodzika jako takiego strona nie wymienia."
+source = "hotel_website"
+url = "https://seasidepark.pl/hotel/qa"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { distance_m = 20 }
+short = "Ok. 20 m od plaży"
+note = "Hotel stoi ok. 20 m od plaży, przy ścieżce rowerowej w dzielnicy uzdrowiskowej."
+source = "hotel_website"
+url = "https://seasidepark.pl/hotel/qa"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "parking"
+value = { paid = true, fee_pln_per_day_low = 60, fee_pln_per_day_high = 70, high_season = "07-01..08-31", reservable = false }
+short = "60 zł/doba, lipiec–sierpień 70 zł"
+note = "Parking płatny 60 zł za dobę, w lipcu i sierpniu 70 zł; bez rezerwacji."
+source = "hotel_website"
+url = "https://seasidepark.pl/hotel/qa"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 165
+note = "250 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.1886%2C15.6050"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 250
+note = "380 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.1886%2C15.6050"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 345
+note = "510 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.1886%2C15.6050"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 385
+note = "580 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.1886%2C15.6050"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 435
+note = "690 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.1886%2C15.6050"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 485
+note = "760 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.1886%2C15.6050"
+verified_at = 2026-11-07
+
+# --- Access: train to Kołobrzeg station (rozklad-pkp.pl, 2026-11-12) ------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "train"
+minutes = 250
+note = "1 przesiadka · bezpośredni 4 h 42 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 252
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 329
+note = "1 przesiadka · bezpośredni 5 h 59 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 400
+note = "1 przesiadka · bezpośredni 7 h 08 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 480
+note = "1 przesiadka · bezpośredni 8 h 52 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 555
+note = "1 przesiadka · bezpośredni 9 h 21 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05

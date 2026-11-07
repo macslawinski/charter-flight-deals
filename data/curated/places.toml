@@ -44,6 +44,27 @@ region = "Bałtyk – Pomorze Zachodnie"
 kind = "domestic"
 
 [[place]]
+slug = "ustronie-morskie"
+name = "Ustronie Morskie"
+country = "Polska"
+region = "Bałtyk – Pomorze Zachodnie"
+kind = "domestic"
+
+[[place]]
+slug = "swinoujscie"
+name = "Świnoujście"
+country = "Polska"
+region = "Bałtyk – Pomorze Zachodnie"
+kind = "domestic"
+
+[[place]]
+slug = "niechorze"
+name = "Niechorze"
+country = "Polska"
+region = "Bałtyk – Pomorze Zachodnie"
+kind = "domestic"
+
+[[place]]
 slug = "darlowo"
 name = "Darłowo"
 country = "Polska"

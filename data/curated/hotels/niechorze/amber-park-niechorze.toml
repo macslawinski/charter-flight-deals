@@ -1,0 +1,186 @@
+# Facts from the hotel's own website (amber-park.pl; robots.txt allows all, checked 2026-11-07):
+# /hotel/dla-dzieci, /hotel/najczestsze-pytania (FAQ), Regulamin Zatoki Zabaw (PDF), home page.
+# Written in our words.
+# Also on the site, no feature key for it: outdoor heated pool 120 cm deep; spa zone 10:00-23:00; "2 dzieci
+# gratis" and free-parking only in dated packages (not recorded as rules); family rooms from 320 zł/night.
+# Not stated (so not recorded yet): cot, free-stay age, baby bath, bottle warmer, changing table, potty,
+# high chair, kids menu, playroom hours and minimum age, lift, parking fee (price list at reception).
+# Fewer than 8 verified facts: the site says little more for 0-3.
+#
+# Coordinates: the hotel's own Google Maps link.
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most one
+#   change, to Trzebiatów station. Station -> hotel: ~19 km, ~20 min by car or taxi (OSRM); no hotel transfer.
+slug = "amber-park-niechorze"
+place = "niechorze"
+name = "Amber Park Spa"
+official_url = "https://www.amber-park.pl/"
+address = "ul. Zaciszna 8, 72-350 Niechorze"
+lat = 54.089829  # the hotel's own Google Maps link
+lon = 15.056328
+status = "draft"
+
+[[feature]]
+key = "playroom"
+value = { available = true, count = 2, with_parent = true }
+short = "Dwie sale zabaw, dziecko z rodzicem"
+note = "Dwie sale zabaw z basenami z kulkami i zjeżdżalniami oraz kącik Bawinek w restauracji. Dzieci tylko pod stałą opieką rodzica lub dorosłego (regulamin Zatoki Zabaw). Godzin i minimalnego wieku strona nie podaje."
+source = "hotel_website"
+url = "https://u.profitroom.com/2020-amber-park-pl/uploads/RegulaminZATOKAZABAW.pdf"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "Zjeżdżalnie, huśtawka, wspinaczka"
+note = "Plac zabaw z dwiema zjeżdżalniami, wspinaczką, huśtawką i bocianim gniazdem."
+source = "hotel_website"
+url = "https://www.amber-park.pl/hotel/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, seasonal = true }
+short = "W wakacje"
+note = "W wakacje rozbudowany program animacji dla dzieci. Przedziału wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.amber-park.pl/hotel/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "paddling_pool"
+value = { indoor = true, heated = true, depth_cm = 40, water_temp_c = 36 }
+short = "Kryty, 40 cm, woda 36°C"
+note = "Kryty brodzik 3 × 6 m, głębokość 40 cm, woda 36°C; strefa basenowa czynna 10:00–23:00."
+source = "hotel_website"
+url = "https://www.amber-park.pl/hotel/najczestsze-pytania"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { distance_m = 500, beach_shuttle_summer = true }
+short = "Ok. 500 m, latem melex na plażę"
+note = "Plaża ok. 500 m od hotelu; latem bezpłatny melex dowozi gości na plażę i z powrotem."
+source = "hotel_website"
+url = "https://www.amber-park.pl/hotel/najczestsze-pytania"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "parking"
+value = { on_site = true }
+short = "Na terenie, cennik w recepcji"
+note = "Parking na terenie hotelu; cennik dostępny w recepcji (kwoty strona nie podaje)."
+source = "hotel_website"
+url = "https://www.amber-park.pl/hotel/najczestsze-pytania"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 205
+note = "290 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.0898%2C15.0563"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 255
+note = "360 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.0898%2C15.0563"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 350
+note = "490 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.0898%2C15.0563"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 420
+note = "660 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.0898%2C15.0563"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 440
+note = "670 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.0898%2C15.0563"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 490
+note = "740 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.0898%2C15.0563"
+verified_at = 2026-11-07
+
+# --- Access: train to Trzebiatów station (rozklad-pkp.pl, 2026-11-12) --------------------
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 224
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "train"
+minutes = 323
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 385
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 396
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 523
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 584
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
