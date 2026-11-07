@@ -1,0 +1,196 @@
+# Facts from the hotel's own website (lineamare.pl; robots.txt allows all, checked 2026-11-07):
+# /hotel-dla-dzieci, /linea-mare/najczesciej-zadawane-pytania-faq, /atrakcje/sala-zabaw-dla-dzieci,
+# /atrakcje/animacje-dla-dzieci, home page. Written in our words.
+# Also on the site, no feature key for it: Family Room / Family Room Plus (children sleep on a sofa bed,
+# corner sofa or extra bed depending on the room); a Game room open 10:00-22:00; family sauna; no
+# childcare ("parents look after children during animations"); wellness zone 9:00-21:00, adults 16+
+# only from 19:30.
+# Not stated (so not recorded yet): changing table, lift, toddler food, swim nappies rule, stroller
+# rental, playroom minimum age, animation age range.
+#
+# Coordinates: OpenStreetMap way/1193998792 centre (ODbL).
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not recorded. Nearest station with regular trains is Gryfice, ~31 km / ~35 min by car (OSRM);
+#   the hotel runs no transfer (helps to book a taxi or a private shuttle).
+slug = "linea-mare-pobierowo"
+place = "pobierowo"
+name = "Linea Mare"
+official_url = "https://www.lineamare.pl/"
+address = "ul. Karola Borka 6, 72-346 Pobierowo"
+lat = 54.055264  # OpenStreetMap way/1193998792 centre, ODbL
+lon = 14.917960
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true, fee_pln_per_night = 60 }
+short = "Z pościelą, 60 zł za dobę"
+note = "Łóżeczko z pościelą za dodatkową opłatą, 60 zł za dobę (hotel prosi o sprawdzenie aktualnej ceny przy rezerwacji)."
+source = "hotel_website"
+url = "https://www.lineamare.pl/linea-mare/najczesciej-zadawane-pytania-faq"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "child_free_stay"
+age_band = "0-3"
+value = { free = true, sleeping_with_parents = true }
+short = "Do 3 lat gratis (śpi z rodzicami)"
+note = "Dzieci do lat 3 nocują bezpłatnie, jeśli śpią na łóżku z rodzicami. Dla dzieci 4–12 lat cena zależy od oferty; roku między 3. a 4. urodzinami strona osobno nie opisuje."
+source = "hotel_website"
+url = "https://www.lineamare.pl/linea-mare/najczesciej-zadawane-pytania-faq"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "high_chair"
+value = { available = true }
+short = "Jest"
+note = "Krzesełka do karmienia wśród udogodnień dla najmłodszych."
+source = "hotel_website"
+url = "https://www.lineamare.pl/hotel-dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Kids menu w restauracji Albero"
+note = "W restauracji Albero jest Kids menu (pizze, makarony, desery dla dzieci). O jedzeniu dla niemowląt strona nie wspomina."
+source = "hotel_website"
+url = "https://www.lineamare.pl/hotel-dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true, on_request = true, free = true, subject_to_availability = true }
+short = "Bezpłatnie, w miarę dostępności"
+note = "Podgrzewacze do butelek wypożyczane bezpłatnie, w miarę dostępności; najlepiej zamówić wcześniej."
+source = "hotel_website"
+url = "https://www.lineamare.pl/linea-mare/najczesciej-zadawane-pytania-faq"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, on_request = true, free = true, subject_to_availability = true }
+short = "Bezpłatnie, w miarę dostępności"
+note = "Wanienki wypożyczane bezpłatnie, w miarę dostępności."
+source = "hotel_website"
+url = "https://www.lineamare.pl/linea-mare/najczesciej-zadawane-pytania-faq"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "potty"
+value = { available = true, on_request = true, free = true, subject_to_availability = true }
+short = "Nocnik bezpłatnie"
+note = "Nocniki wypożyczane bezpłatnie, w miarę dostępności."
+source = "hotel_website"
+url = "https://www.lineamare.pl/linea-mare/najczesciej-zadawane-pytania-faq"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playroom"
+value = { available = true, open = "08:00", close = "20:00" }
+short = "Codziennie 8:00–20:00"
+note = "Sala zabaw z miękkimi materacami, drewnianymi zabawkami, książeczkami i basenami z piłkami dla najmłodszych, 8:00–20:00. Hotel zakłada zabawę pod okiem rodziców; minimalnego wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.lineamare.pl/atrakcje/sala-zabaw-dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "Na zewnątrz"
+note = "Zewnętrzny plac zabaw."
+source = "hotel_website"
+url = "https://www.lineamare.pl/hotel-dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, free = true, parents_supervise = true }
+short = "W cenie oferty, rodzice pilnują"
+note = "Animacje według harmonogramu, bezpłatnie w ramach wykupionej oferty (zakres zależy od pakietu). W czasie animacji opiekę nad dziećmi sprawują rodzice. Przedziału wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.lineamare.pl/atrakcje/animacje-dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "paddling_pool"
+value = { indoor = true, outdoor = true, outdoor_seasonal = true }
+short = "W środku i przy basenie letnim"
+note = "Brodziki przy basenie wewnętrznym (strefa Aqua Mare) i przy zewnętrznym basenie letnim; basen zewnętrzny z podgrzewaną wodą działa zwykle od maja do października, zależnie od pogody."
+source = "hotel_website"
+url = "https://www.lineamare.pl/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { distance_m = 350 }
+short = "Ok. 350 m"
+note = "Do plaży w Pobierowie ok. 300–350 m, zależnie od trasy."
+source = "hotel_website"
+url = "https://www.lineamare.pl/linea-mare/najczesciej-zadawane-pytania-faq"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "parking"
+value = { paid = true, fee_pln_per_day = 40, limited = true }
+short = "Płatny, 40 zł za dobę"
+note = "Parking płatny, 40 zł za dobę (cenę warto sprawdzić przy rezerwacji); miejsc jest mało, hotel zaleca rezerwację."
+source = "hotel_website"
+url = "https://www.lineamare.pl/linea-mare/najczesciej-zadawane-pytania-faq"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 215
+note = "290 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.0553%2C14.9180"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 245
+note = "350 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.0553%2C14.9180"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 340
+note = "480 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.0553%2C14.9180"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 410
+note = "650 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.0553%2C14.9180"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 430
+note = "660 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.0553%2C14.9180"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 480
+note = "730 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.0553%2C14.9180"
+verified_at = 2026-11-07

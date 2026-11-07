@@ -1,0 +1,251 @@
+# Facts from the hotel's own website (unitral.pl; robots.txt allows all, checked 2026-11-07):
+# /dzieci (list + FAQ), /hotel-info, /regulamin. Written in our words.
+# Also on the site, no feature key for it: family SPA mornings (saunas and brine pool for families with
+# children at set hours, children up to 15 free with an adult); Kids SPA (ages given inconsistently:
+# "do 15 lat" vs "4-16 lat"); a nurse's room; family rooms and family studios; house rules: children
+# may not be left without an adult anywhere in the hotel.
+# Not stated (so not recorded yet): cot fee amount, free-stay age for small children, playroom hours
+# and minimum age, whether the brodzik is indoor/heated, lift, parking fee, toddler food (meals adapted
+# to individual dietary needs on request).
+#
+# Coordinates: the hotel's own Google Maps link on /dzieci.
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most
+#   one change, to Koszalin station. Station -> hotel: ~13 km, ~20 min by car or taxi (OSRM); the hotel
+#   runs no transfer (not mentioned on the site).
+slug = "unitral-mielno"
+place = "mielno"
+name = "Hotel Unitral Medical Spa"
+official_url = "https://www.unitral.pl/"
+address = "ul. Piastów 6, 76-032 Mielno"
+lat = 54.260693  # from the hotel's own Google Maps link
+lon = 16.057715
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true, paid = true }
+short = "Na życzenie, płatne"
+note = "Łóżeczko z materacem dla małych dzieci (z pościelą, poduszką i kocem) na życzenie, za dodatkową opłatą. Kwoty strona nie podaje."
+source = "hotel_website"
+url = "https://www.unitral.pl/dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "high_chair"
+value = { available = true, where = "restaurant" }
+short = "W restauracji"
+note = "Krzesełka do karmienia i naczynia dla dzieci w restauracji."
+source = "hotel_website"
+url = "https://www.unitral.pl/dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Stała karta kids menu"
+note = "Stała karta kids menu z lekkimi daniami dla dzieci; na życzenie kuchnia dostosowuje posiłki do indywidualnych potrzeb. Osobnego jedzenia dla niemowląt strona nie wymienia."
+source = "hotel_website"
+url = "https://www.unitral.pl/dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true, on_request = true }
+short = "W pokoju i w restauracji"
+note = "Podgrzewacz do butelek na życzenie w pokoju, jest też w restauracji."
+source = "hotel_website"
+url = "https://www.unitral.pl/dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, on_request = true }
+short = "Na życzenie"
+note = "Wanienka do kąpieli dziecka na życzenie do pokoju. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.unitral.pl/dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "changing_table"
+value = { available = true, on_request = true, where = "room" }
+short = "Na życzenie do pokoju"
+note = "Przewijak dla niemowląt na życzenie do pokoju."
+source = "hotel_website"
+url = "https://www.unitral.pl/dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "potty"
+value = { available = true, toilet_seat_adapter = true }
+short = "Nakładka na toaletę"
+note = "Nakładki na toaletę. Nocnika strona nie wymienia."
+source = "hotel_website"
+url = "https://www.unitral.pl/dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Sala zabaw z basenem kulkowym"
+note = "Sala zabaw z basenem kulkowym, piłkarzykami i stołem do tenisa. Godzin i minimalnego wieku strona nie podaje; według regulaminu dzieci nie mogą przebywać w hotelu bez opieki dorosłych."
+source = "hotel_website"
+url = "https://www.unitral.pl/dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playground"
+value = { available = true }
+short = "Jest"
+note = "Specjalnie zaprojektowany plac zabaw."
+source = "hotel_website"
+url = "https://www.unitral.pl/hotel-info"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, seasonal = true }
+short = "W wakacje, święta i długie weekendy"
+note = "Animacje prowadzi firma ANIMATRIA w wakacje, święta i długie weekendy; w wakacje w sali zabaw w trzech blokach dziennie, od poniedziałku do soboty. Przedziału wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.unitral.pl/dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "paddling_pool"
+value = { available = true }
+short = "Strefa brodzika dla najmłodszych"
+note = "W strefie basenowej jest strefa brodzika dla najmłodszych. Czy jest kryta i podgrzewana, strona nie podaje."
+source = "hotel_website"
+url = "https://www.unitral.pl/dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { distance_m = 150, stroller_access = true }
+short = "Ok. 150 m, zjazd dla wózków"
+note = "Zjazd na plażę ok. 150 m od hotelu, przystosowany dla wózków (do linii brzegowej ok. 200 m)."
+source = "hotel_website"
+url = "https://www.unitral.pl/dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "parking"
+value = { monitored = true }
+short = "Monitorowany"
+note = "Parking monitorowany. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.unitral.pl/hotel-info"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 145
+note = "210 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.2607%2C16.0577"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 250
+note = "270 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.2607%2C16.0577"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 355
+note = "440 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.2607%2C16.0577"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 370
+note = "550 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.2607%2C16.0577"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 435
+note = "730 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.2607%2C16.0577"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 480
+note = "800 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.2607%2C16.0577"
+verified_at = 2026-11-07
+
+# --- Access: train to Koszalin station (rozklad-pkp.pl, 2026-11-12) -------------------------------
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 181
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "train"
+minutes = 187
+note = "1 przesiadka · bezpośredni 3 h 17 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 294
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 351
+note = "1 przesiadka · bezpośredni 6 h 29 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 417
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 477
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07

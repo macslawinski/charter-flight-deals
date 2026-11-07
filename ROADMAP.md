@@ -49,7 +49,12 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
 - [x] C: hotel leads zachodniopomorskie (2026-11-07, `find-hotels`): 24 leads (+ Saltic curated), 0 do sprawdzenia,
       15 skipped (non-hotels: SOLEO, Natura, Holiday Park, Villa Mare, DUKAT sanatorium; hotels with nothing for 0–3).
       Not covered yet: Szczecin / inland lakes (no hotel with a confirmed 0–3 offer), 82 OSM sites the probe couldn't read.
-- [ ] C: curate the zachodniopomorskie leads with `curate-hotel` (start: Lidia Darłowo, Linea Mare, Unitral, Villa Hoff).
+- [x] C: zachodniopomorskie hotels, first batch (2026-11-07, `curate-hotel`): Lidia Spa (Darłowo), Linea Mare
+      (Pobierowo), Unitral (Mielno), Villa Hoff (Trzęsacz); car from the 6 cities, train only for Unitral
+      (Koszalin, 13 km); the others' stations are 26-31 km away (Sławno, Gryfice), so no train times.
+- [ ] C: curate the remaining 20 zachodniopomorskie leads with `curate-hotel`.
+- [ ] U (phone/e-mail, optional): Unitral and Villa Hoff cot fee amounts; Unitral free-stay age for small
+      children; Villa Hoff parking months/fee; whether Lidia/Unitral brodziki are heated.
 - [ ] C: project skill `reverify-child-rules` so re-checks of rules are repeatable.
 - [ ] C: venues migration (DB) once the venue format is stable.
 - [ ] Photos (optional): only with your permission per download (e.g. Unsplash), licence noted.

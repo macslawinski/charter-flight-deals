@@ -1,0 +1,194 @@
+# Facts from the hotel's own website (villahoff.pl; robots.txt allows all, checked 2026-11-07):
+# /villa-hoff/dla-dzieci, /villa-hoff/poradnik-gosci-villi-hoff (guest FAQ), home page. Written in our words.
+# Also on the site, no feature key for it: individual childcare on request (terms and price not given);
+# socket, drawer and door safety locks on request; 25 rooms plus cottages; indoor pool 9:00-22:00 all year
+# (main pool 1.7 m deep, for swimmers and parents); reception 8:00-22:00.
+# Not stated (so not recorded yet): cot fee amount, changing table, nocnik, baby monitor, playroom hours
+# and minimum age, animations, parking fee amount, stroller rental, toddler food.
+#
+# Coordinates: the hotel's own Google Maps place pin (home page).
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not recorded. Nearest station with regular trains is Gryfice, ~28 km / ~35 min by car (OSRM);
+#   the hotel runs no transfer (the site mentions only buses and the narrow-gauge railway in Trzęsacz).
+slug = "villa-hoff-trzesacz"
+place = "trzesacz"
+name = "Villa Hoff Wellness & Spa"
+official_url = "https://villahoff.pl/"
+address = "ul. Słoneczna 3, 72-344 Trzęsacz"
+lat = 54.076930  # the hotel's own Google Maps place pin
+lon = 14.994097
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true, paid = true }
+short = "Na życzenie, płatne"
+note = "Łóżeczka niemowlęce (turystyczne) na życzenie, za dodatkową opłatą. Kwoty strona nie podaje."
+source = "hotel_website"
+url = "https://villahoff.pl/villa-hoff/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "child_free_stay"
+age_band = "0-3"
+value = { free = true, meals_included = true, most_packages = true }
+short = "Do 3 lat gratis w większości pakietów"
+note = "W większości pakietów dzieci do lat 3 śpią i jedzą bezpłatnie (poradnik gości: dzieci do 3 lat nocują za darmo). Cen dla starszych dzieci strona nie podaje."
+source = "hotel_website"
+url = "https://villahoff.pl/villa-hoff/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "high_chair"
+value = { available = true, where = "restaurant" }
+short = "W restauracji"
+note = "Stabilne krzesełka do karmienia w restauracji."
+source = "hotel_website"
+url = "https://villahoff.pl/villa-hoff/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Jest menu dla dzieci"
+note = "Osobne menu dla dzieci. O jedzeniu dla niemowląt strona nie wspomina."
+source = "hotel_website"
+url = "https://villahoff.pl/villa-hoff/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true, on_request = true }
+short = "Na życzenie"
+note = "Podgrzewacze do butelek na życzenie."
+source = "hotel_website"
+url = "https://villahoff.pl/villa-hoff/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, on_request = true }
+short = "Na życzenie"
+note = "Wanienki do kąpieli na życzenie. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://villahoff.pl/villa-hoff/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "potty"
+value = { available = true, on_request = true, step_stool = true }
+short = "Stopnie pod umywalkę"
+note = "Na życzenie antypoślizgowe stopnie pod umywalkę. Nocnika ani nakładki strona nie wymienia."
+source = "hotel_website"
+url = "https://villahoff.pl/villa-hoff/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Sala zabaw z zabawkami"
+note = "Sala zabaw z zabawkami i książeczkami. Godzin, minimalnego wieku ani zasad opieki strona nie podaje."
+source = "hotel_website"
+url = "https://villahoff.pl/villa-hoff/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true, fenced = true }
+short = "Ogrodzony, z piaskownicą"
+note = "Ogrodzony plac zabaw na zewnątrz: huśtawki, zjeżdżalnie, konstrukcje do wspinania, piaskownica, rowerki."
+source = "hotel_website"
+url = "https://villahoff.pl/villa-hoff/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "paddling_pool"
+value = { indoor = true, depth_cm = 15 }
+short = "W krytym basenie, 15 cm"
+note = "Wydzielony brodzik o głębokości 15 cm obok jacuzzi, w krytej strefie basenowej czynnej codziennie 9:00–22:00 przez cały rok. Czy jest podgrzewany, strona nie podaje."
+source = "hotel_website"
+url = "https://villahoff.pl/villa-hoff/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "lift"
+value = { available = true }
+short = "Jest winda"
+note = "Budynek ma windę."
+source = "hotel_website"
+url = "https://villahoff.pl/villa-hoff/poradnik-gosci-villi-hoff"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { minutes = 2, distance_m = 100 }
+short = "Ok. 100 m, 2 minuty pieszo"
+note = "Około 100 m (2 minuty spacerem) do zejścia na plażę w Trzęsaczu."
+source = "hotel_website"
+url = "https://villahoff.pl/villa-hoff/poradnik-gosci-villi-hoff"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "parking"
+value = { private = true, seasonal_fee = true }
+short = "Prywatny, w części roku płatny"
+note = "Prywatny parking dla gości; w niektórych miesiącach płatny. Kwoty ani miesięcy strona nie podaje."
+source = "hotel_website"
+url = "https://villahoff.pl/villa-hoff/poradnik-gosci-villi-hoff"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 205
+note = "290 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.0769%2C14.9941"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 245
+note = "350 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.0769%2C14.9941"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 340
+note = "480 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.0769%2C14.9941"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 410
+note = "660 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.0769%2C14.9941"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 430
+note = "660 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.0769%2C14.9941"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 485
+note = "740 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.0769%2C14.9941"
+verified_at = 2026-11-07

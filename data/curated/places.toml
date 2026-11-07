@@ -21,3 +21,31 @@ name = "Grzybowo"
 country = "Polska"
 region = "Bałtyk – Pomorze Zachodnie"
 kind = "domestic"
+
+[[place]]
+slug = "darlowo"
+name = "Darłowo"
+country = "Polska"
+region = "Bałtyk – Pomorze Zachodnie"
+kind = "domestic"
+
+[[place]]
+slug = "mielno"
+name = "Mielno"
+country = "Polska"
+region = "Bałtyk – Pomorze Zachodnie"
+kind = "domestic"
+
+[[place]]
+slug = "pobierowo"
+name = "Pobierowo"
+country = "Polska"
+region = "Bałtyk – Pomorze Zachodnie"
+kind = "domestic"
+
+[[place]]
+slug = "trzesacz"
+name = "Trzęsacz"
+country = "Polska"
+region = "Bałtyk – Pomorze Zachodnie"
+kind = "domestic"
