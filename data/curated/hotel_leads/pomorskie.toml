@@ -48,7 +48,7 @@ lat = 54.3239062
 lon = 18.100988
 signals = ["brodzik", "sala zabaw", "plac zabaw"]
 why = "Strona dla dzieci: brodzik w basenie, sala zabaw i plac zabaw; o wyposażeniu dla niemowląt nic."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Bartan"
@@ -60,7 +60,8 @@ lat = 54.3437875
 lon = 18.8315695
 signals = ["kącik zabaw", "łóżeczko", "wanienka"]
 why = "Hotel w Sobieszewie: kącik zabaw przy restauracji; łóżeczko i wanienka w ofertach pakietowych."
-status = "lead"
+status = "skipped"
+skip_reason = "Re-checked 2026-11-07: permanent pages show only a kids corner by the restaurant and a seasonal mini playground; cot and baby bath appear only in package offers."
 
 [[lead]]
 name = "Grano Life Gdańsk"
@@ -165,7 +166,7 @@ lat = 54.3396027
 lon = 18.2085391
 signals = ["łóżeczko", "wanienka", "sala zabaw"]
 why = "Cennik: łóżeczko turystyczne 50 zł (bez pościeli), wanienka bezpłatnie; kulkownia (sala zabaw)."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Pod Orłem"
@@ -177,7 +178,7 @@ lat = 54.3354308
 lon = 18.2029471
 signals = ["łóżeczko", "wanienka"]
 why = "Strona dla dzieci: łóżeczko turystyczne i wanienka."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Kiston"
@@ -263,7 +264,7 @@ lat = 54.6079017
 lon = 18.3489102
 signals = ["sala zabaw", "brodzik"]
 why = "Sala zabaw Riverlandia, brodzik w strefie basenowej; o wyposażeniu dla niemowląt strona mówi mało."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Skipper"

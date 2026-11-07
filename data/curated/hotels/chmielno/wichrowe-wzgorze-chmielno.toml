@@ -1,0 +1,177 @@
+# Facts from the hotel's own website (wichrowe.info; robots.txt allows the pages used, checked 2026-11-07):
+# /dla-dzieci/, /o-nas, home page. Written in our words.
+# Also on the site, no feature key for it: big garden for games and sports; water equipment rental at the lake;
+# seasonal film screenings; horse-drawn carriage rides. Resort & Spa on Lake Kłodno with hotel rooms, restaurant
+# and wellness (pool, saunas, jacuzzi).
+# Not stated (so not recorded yet): free-stay age, cot, high chair, baby bath, bottle warmer, changing table,
+# potty, kids menu, toddler food, playroom hours and minimum age, brodzik depth and temperature, lift, parking.
+# Fewer than 8 verified facts: nothing about baby equipment on the site.
+#
+# Coordinates: OpenStreetMap node/4269538575 (ODbL).
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most one
+#   change, to Kartuzy station. Station -> hotel: ~10 km, ~15 min by car or taxi (OSRM).
+slug = "wichrowe-wzgorze-chmielno"
+place = "chmielno"
+name = "Wichrowe Wzgórze Resort & Spa"
+official_url = "https://wichrowe.info/"
+address = "ul. Wichrowe Wzgórze 13, 83-333 Chmielno"
+lat = 54.3239062  # OpenStreetMap node/4269538575, ODbL
+lon = 18.100988
+status = "draft"
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Wewnętrzny małpi gaj"
+note = "Wewnętrzna sala zabaw z małpim gajem. Godzin, minimalnego wieku i zasad opieki strona nie podaje."
+source = "hotel_website"
+url = "https://wichrowe.info/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "Na zewnątrz"
+note = "Zewnętrzny plac zabaw."
+source = "hotel_website"
+url = "https://wichrowe.info/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, seasonal = true, supervised = true }
+short = "Sezonowo, z opiekunem"
+note = "Sezonowo animacje z opiekunem. Przedziału wieku strona nie podaje."
+source = "hotel_website"
+url = "https://wichrowe.info/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "paddling_pool"
+value = { indoor = true }
+short = "Brodzik przy basenie"
+note = "Brodzik w basenie w strefie wellness. Głębokości i temperatury strona nie podaje."
+source = "hotel_website"
+url = "https://wichrowe.info/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { lake = true, own_beach = true }
+short = "Plaża nad Jeziorem Kłodno"
+note = "Plaża nad Jeziorem Kłodno ze sprzętem wodnym. Odległości strona nie podaje."
+source = "hotel_website"
+url = "https://wichrowe.info/dla-dzieci/"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 50
+note = "40 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.3239%2C18.1010"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 240
+note = "340 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.3239%2C18.1010"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 270
+note = "380 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.3239%2C18.1010"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 340
+note = "560 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.3239%2C18.1010"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 350
+note = "520 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.3239%2C18.1010"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 385
+note = "630 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.3239%2C18.1010"
+verified_at = 2026-11-07
+
+# --- Access: train to Kartuzy station (rozklad-pkp.pl, 2026-11-12) --------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "train"
+minutes = 64
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 247
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 259
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 338
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 411
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 412
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
