@@ -55,7 +55,13 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
 - [x] C: zachodniopomorskie hotels, second batch (2026-11-07): HAVET (Dźwirzyno), Factory Resort (Kołobrzeg),
       Hotel Wolin (Międzyzdroje, only 6 facts: below the 8-fact publishing threshold), Grand Laola (Pobierowo).
       Trains: Kołobrzeg (reused from Saltic) for HAVET and Factory, Międzyzdroje for Wolin; none for Laola.
-- [ ] C: curate the remaining 16 zachodniopomorskie leads with `curate-hotel`.
+- [x] C: zachodniopomorskie hotels, batch 3 (2026-11-07): Seaside Park (Kołobrzeg, 10 facts), Wodnik (Ustronie
+      Morskie, 7), Cesarskie Ogrody (Świnoujście, 7), Amber Park (Niechorze, 6). The last three are below the
+      8-fact threshold (their sites say little about 0-3). Trains: Kołobrzeg (reused), Ustronie Morskie,
+      Świnoujście PKP (Świnoujście Centrum needs 2-3 changes), Trzebiatów (19 km from Niechorze).
+- [ ] C: curate the remaining 12 zachodniopomorskie leads with `curate-hotel`.
+- [ ] U (phone/e-mail, optional): Seaside Park free-stay age and cot fee; Wodnik free-stay rule for ages 1-3;
+      Cesarskie Ogrody free-stay age and cot fee; Amber Park cot, high chair, playroom hours.
 - [ ] U (phone/e-mail, optional): HAVET cot fee; Factory free-stay conditions for under-3s (sentence cut off
       on the site); Hotel Wolin brodzik, playroom age, free-stay rule outside packages.
 - [ ] U (phone/e-mail, optional): Unitral and Villa Hoff cot fee amounts; Unitral free-stay age for small

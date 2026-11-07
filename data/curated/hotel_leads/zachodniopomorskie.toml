@@ -138,7 +138,7 @@ lat = 54.1893112
 lon = 15.6056392
 signals = ["łóżeczko", "wanienka", "podgrzewacz", "nocnik", "pokój zabaw"]
 why = "Łóżeczko turystyczne z pościelą, wanienka, podgrzewacz, nocnik; pokój zabaw czynny całą dobę."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Wave Międzyzdroje Resort & SPA"
@@ -223,7 +223,7 @@ lat = 54.0894799
 lon = 15.0571569
 signals = ["brodzik", "domek dla maluszków"]
 why = "Brodzik 40 cm dla maluchów, domek dla maluszków z mini zjeżdżalnią; sprzętu dla niemowląt strona nie wymienia."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Grand Laola Spa"
@@ -284,7 +284,7 @@ lat = 53.9159381
 lon = 14.238966
 signals = ["łóżeczko", "podgrzewacz", "sala zabaw"]
 why = "Łóżeczka dla maluchów i podgrzewacze do butelek; sala zabaw, menu dziecięce."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Villa Hoff Wellness & Spa"
@@ -308,7 +308,7 @@ lat = 54.2184334
 lon = 15.7626134
 signals = ["łóżeczko", "sala zabaw", "do 1 roku"]
 why = "Bezpłatne łóżeczko dla niemowląt; dzieci do 1 roku całkowicie gratis; sala zabaw."
-status = "lead"
+status = "curated"
 
 # --- checked and rejected ---
 
