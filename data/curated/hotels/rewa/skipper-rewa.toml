@@ -1,0 +1,186 @@
+# Facts from the hotel's own website (hotelskipper.pl; robots.txt allows the pages used, checked 2026-11-07):
+# /pokoje/pokoj-rodzinny/, hotel rules PDF (Regulamin Hotelowy 2022), home page. Written in our words.
+# Also on the site, no feature key for it: a first-aid kit for little ones with a contactless thermometer;
+# pool toys and noodles; dishes for children (linked menu). The Christmas 2026 family package repeats the
+# baby items and adds Christmas animations.
+# Not stated (so not recorded yet): high chair, bottle warmer, changing table, toddler food, playroom, regular
+# animation programme, brodzik, lift, parking fee.
+# Fewer than 8 verified facts.
+#
+# Coordinates: the hotel's own Google Maps link.
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most one
+#   change, to Rumia station. Station -> hotel: ~14 km, ~20 min by car or taxi (OSRM).
+slug = "skipper-rewa"
+place = "rewa"
+name = "Hotel Skipper"
+official_url = "https://www.hotelskipper.pl/"
+address = "ul. Sztormowa 2, Rewa"  # the site gives no postal code
+lat = 54.6334891  # the hotel's own Google Maps link
+lon = 18.5128921
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, paid = true, fee_pln_per_night = 20 }
+short = "Z materacem, 20 zł za dobę"
+note = "Łóżeczko z materacem, płatne 20 zł za dobę."
+source = "hotel_website"
+url = "https://www.hotelskipper.pl/pokoje/pokoj-rodzinny/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "child_free_stay"
+value = { free = true, sleeping_with_parents = true, max_children = 1, max_age_years = 6 }
+short = "Pierwsze dziecko do 6 lat gratis"
+note = "Pobyt bezpłatny dla dziecka do 6 lat śpiącego z rodzicami (pierwsze dziecko); za drugie dziecko 0–6 lat opłata jak za dostawkę dla 7–12 lat (regulamin hotelu)."
+source = "hotel_website"
+url = "https://www.hotelskipper.pl/wp-content/uploads/2022/04/Regulamin.Hotelowy-2022.pdf"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "baby_bath"
+value = { available = true }
+short = "Wanienka lub mata antypoślizgowa"
+note = "Wanienka albo mata antypoślizgowa. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelskipper.pl/pokoje/pokoj-rodzinny/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "potty"
+value = { available = true, toilet_seat_adapter = true, step_stool = true }
+short = "Nocnik, nakładka, podest"
+note = "Nocnik, nakładka na sedes i podest."
+source = "hotel_website"
+url = "https://www.hotelskipper.pl/pokoje/pokoj-rodzinny/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, on_request = true }
+short = "Zabawy z animatorem do zorganizowania"
+note = "Można zorganizować zabawy z animatorem; przy dobrej pogodzie warsztaty i animacje na plaży przy hotelu. Wieku i opłat strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelskipper.pl/pokoje/pokoj-rodzinny/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { distance_m = 15 }
+short = "15 m od morza"
+note = "Hotel 15 m od morza; z sali można wyjść prosto na plażę."
+source = "hotel_website"
+url = "https://www.hotelskipper.pl/"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 45
+note = "50 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.6335%2C18.5129"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 235
+note = "340 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.6335%2C18.5129"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 270
+note = "380 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.6335%2C18.5129"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 335
+note = "560 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.6335%2C18.5129"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 345
+note = "520 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.6335%2C18.5129"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 380
+note = "630 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.6335%2C18.5129"
+verified_at = 2026-11-07
+
+# --- Access: train to Rumia station (rozklad-pkp.pl, 2026-11-12) --------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "train"
+minutes = 33
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 200
+note = "1 przesiadka · bezpośredni 3 h 52 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 218
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 308
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 356
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 357
+note = "1 przesiadka · bezpośredni 7 h 27 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07

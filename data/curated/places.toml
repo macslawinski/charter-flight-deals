@@ -175,3 +175,24 @@ name = "Jastarnia"
 country = "Polska"
 region = "Bałtyk – Pomorze"
 kind = "domestic"
+
+[[place]]
+slug = "strzelinko"
+name = "Strzelinko"
+country = "Polska"
+region = "Bałtyk – Pomorze"
+kind = "domestic"
+
+[[place]]
+slug = "charzykowy"
+name = "Charzykowy"
+country = "Polska"
+region = "Bory Tucholskie"
+kind = "domestic"
+
+[[place]]
+slug = "rewa"
+name = "Rewa"
+country = "Polska"
+region = "Bałtyk – Pomorze"
+kind = "domestic"
