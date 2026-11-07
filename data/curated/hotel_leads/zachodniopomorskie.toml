@@ -28,7 +28,7 @@ lat = 54.1512745
 lon = 15.400362
 signals = ["łóżeczko", "krzesełko", "pokój zabaw", "do 3 lat"]
 why = "Łóżeczko turystyczne 100 zł/pobyt, krzesełka na życzenie, pokój zabaw; jedno dziecko do 3 lat gratis."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "HAVET Hotel Resort & Spa"
@@ -52,7 +52,7 @@ lat = 54.1606877
 lon = 15.4194821
 signals = ["łóżeczko", "wanienka", "podgrzewacz", "przewijak", "nocnik"]
 why = "Na życzenie: łóżeczka z pościelą, wanienki, podgrzewacze, przewijaki, nocniki; sale zabaw."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Saltic Resort & SPA"
@@ -77,7 +77,7 @@ lat = 54.183634
 lon = 15.5909435
 signals = ["brodzik", "przewijak", "sala zabaw"]
 why = "Brodzik i przewijak w Aquacenter, sala zabaw; strona rodzinna wymienia też łóżeczko, wanienkę, podgrzewacz (do potwierdzenia przy kuracji)."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Baltic Plaza MediSPA"
@@ -114,7 +114,7 @@ lat = 54.1843732
 lon = 15.5856499
 signals = ["łóżeczko", "podgrzewacz", "krzesełko", "kids club"]
 why = "Na życzenie łóżeczko z pościelą, podgrzewacz do butelek, nakładka na toaletę; krzesełka w restauracji; kids club."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Factory Resort"
