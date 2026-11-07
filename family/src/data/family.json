@@ -3566,6 +3566,462 @@
     {
      "from_code": "Gdańsk",
      "from_kind": "city",
+     "minutes": 80,
+     "mode": "car",
+     "note": "70 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.8322%2C18.3213",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 265,
+     "mode": "car",
+     "note": "370 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.8322%2C18.3213",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 300,
+     "mode": "car",
+     "note": "410 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.8322%2C18.3213",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 365,
+     "mode": "car",
+     "note": "590 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.8322%2C18.3213",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 375,
+     "mode": "car",
+     "note": "550 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.8322%2C18.3213",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 410,
+     "mode": "car",
+     "note": "660 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.8322%2C18.3213",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 78,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 238,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 279,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 382,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 392,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 403,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. Rozewska 40/42, 84-104 Jastrzębia Góra",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczka turystyczne za dodatkową opłatą; kwoty strona nie podaje.",
+     "short": "Turystyczne, za dodatkową opłatą",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.primaveraspa.pl/z-dziecmi",
+     "value": {
+      "available": true,
+      "paid": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_monitor",
+     "note": "Elektroniczna niania wśród udogodnień dla dzieci. Opłaty strona nie podaje.",
+     "short": "Jest",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.primaveraspa.pl/z-dziecmi",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Wysokie krzesełka i kącik zabaw w salach restauracyjnych.",
+     "short": "W salach restauracyjnych",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.primaveraspa.pl/z-dziecmi",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Menu przygotowane z myślą o dzieciach w każdym wieku. Osobnego jedzenia dla niemowląt strona nie opisuje.",
+     "short": "Menu dla dzieci w każdym wieku",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.primaveraspa.pl/z-dziecmi",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacze do butelek wśród udogodnień dla dzieci. Opłaty strona nie podaje.",
+     "short": "Jest",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.primaveraspa.pl/z-dziecmi",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienki do kąpieli wśród udogodnień dla dzieci. Opłaty strona nie podaje.",
+     "short": "Jest",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.primaveraspa.pl/z-dziecmi",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Nakładki na sedes i podnóżki dla dzieci. O nocniku strona nie wspomina.",
+     "short": "Nakładki na sedes i podnóżki",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.primaveraspa.pl/z-dziecmi",
+     "value": {
+      "step_stool": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Playland oraz kącik zabaw w restauracji. Godzin, minimalnego wieku i zasad opieki strona nie podaje.",
+     "short": "Playland i kącik zabaw w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.primaveraspa.pl/atrakcje",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Dwa nowoczesne place zabaw.",
+     "short": "Dwa place zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.primaveraspa.pl/z-dziecmi",
+     "value": {
+      "available": true,
+      "count": 2,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animacje dla dzieci w różnym wieku, także dla maluchów. Konkretnych przedziałów wieku i zasad opieki strona nie podaje.",
+     "short": "Dla maluchów i starszych",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.primaveraspa.pl/z-dziecmi",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Brodzik przy basenie: 30 cm głębokości, 3 małe zjeżdżalnie, woda 34°C. Jest też brodzik zewnętrzny (sezonu strona nie podaje).",
+     "short": "30 cm, 34°C, 3 małe zjeżdżalnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.primaveraspa.pl/atrakcje",
+     "value": {
+      "depth_cm": 30,
+      "heated": true,
+      "indoor": true,
+      "outdoor": true,
+      "water_temp_c": 34
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.8321993,
+   "lon": 18.321349,
+   "name": "Primavera Conference & Spa",
+   "official_url": "https://www.primaveraspa.pl/",
+   "place": "jastrzebia-gora",
+   "slug": "primavera-jastrzebia-gora",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 80,
+     "mode": "car",
+     "note": "80 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.2720%2C17.7491",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 250,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.2720%2C17.7491",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 295,
+     "mode": "car",
+     "note": "410 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.2720%2C17.7491",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 360,
+     "mode": "car",
+     "note": "460 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.2720%2C17.7491",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 360,
+     "mode": "car",
+     "note": "550 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.2720%2C17.7491",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 405,
+     "mode": "car",
+     "note": "620 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.2720%2C17.7491",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "Kistowo 26, 83-320 Sulęczyno",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko z materacem do pokoju na życzenie. Opłaty strona nie podaje.",
+     "short": "Z materacem, na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelkiston.pl/atrakcje/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_monitor",
+     "note": "Niania elektroniczna do pokoju na życzenie.",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelkiston.pl/atrakcje/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacz do butelek (i czajnik) do pokoju na życzenie.",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelkiston.pl/atrakcje/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka do pokoju na życzenie. Opłaty strona nie podaje.",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelkiston.pl/atrakcje/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Przewijak do pokoju na życzenie.",
+     "short": "Do pokoju na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelkiston.pl/atrakcje/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "where": "room"
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Nocnik i nakładka na sedes do pokoju na życzenie.",
+     "short": "Nocnik i nakładka, na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelkiston.pl/atrakcje/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Na życzenie można zorganizować zabawy z animatorem. Wieku i opłat strona nie podaje.",
+     "short": "Zabawy z animatorem do zorganizowania",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelkiston.pl/atrakcje/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_pool",
+     "note": "Pływalnia z dwoma torami 21 m (głęb. 1,5 m) połączona z wodnym placem zabaw dla dzieci. Brodzika strona hotelu wprost nie opisuje.",
+     "short": "Pływalnia z wodnym placem zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelkiston.pl/atrakcje/basen",
+     "value": {
+      "available": true,
+      "splash_park": true
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.272049,
+   "lon": 17.7491398,
+   "name": "Hotel Kiston",
+   "official_url": "https://www.hotelkiston.pl/",
+   "place": "kistowo",
+   "slug": "kiston-kistowo",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
      "minutes": 160,
      "mode": "car",
      "note": "240 km",
@@ -8213,6 +8669,293 @@
     {
      "from_code": "Gdańsk",
      "from_kind": "city",
+     "minutes": 35,
+     "mode": "car",
+     "note": "40 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.5726%2C18.3832",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 225,
+     "mode": "car",
+     "note": "330 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.5726%2C18.3832",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 260,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.5726%2C18.3832",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 325,
+     "mode": "car",
+     "note": "560 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.5726%2C18.3832",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 335,
+     "mode": "car",
+     "note": "510 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.5726%2C18.3832",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 370,
+     "mode": "car",
+     "note": "620 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.5726%2C18.3832",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 33,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 200,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 3 h 52 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 218,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 308,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 356,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 357,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 7 h 27 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. Grunwaldzka 7, 84-230 Rumia",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko dla dziecka do 2 lat na życzenie gościa, 40 zł za dobę (FAQ).",
+     "short": "Dla dziecka do 2 lat, 40 zł za dobę",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-faltom.com.pl/faq",
+     "value": {
+      "available": true,
+      "fee_pln_per_night": 40,
+      "on_request": true,
+      "paid": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "child_free_stay",
+     "note": "Dwoje dzieci do 7 lat śpiących na łóżku z rodzicami ze śniadaniem gratis, przy dwóch pełnopłatnych dorosłych (FAQ). Trzeba okazać dokument z datą urodzenia dziecka.",
+     "short": "Dwoje dzieci do 7 lat gratis, z rodzicami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-faltom.com.pl/faq",
+     "value": {
+      "free": true,
+      "max_age_years": 7,
+      "max_children": 2,
+      "sleeping_with_parents": true,
+      "with_two_full_paying_adults": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka do karmienia w restauracjach, do tego naczynia i plastikowe sztućce dla dzieci.",
+     "short": "W restauracjach",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-faltom.com.pl/hoteldladzieci",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Osobna karta menu dla dzieci w restauracji. O jedzeniu dla niemowląt strona nie wspomina.",
+     "short": "Karta dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-faltom.com.pl/hoteldladzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka do kąpieli bezpłatnie na życzenie.",
+     "short": "Bezpłatnie, na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-faltom.com.pl/hoteldladzieci",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Przewijak do pokoju bezpłatnie na życzenie; przewijak jest też w damskiej szatni basenu.",
+     "short": "Do pokoju na życzenie; też przy basenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-faltom.com.pl/hoteldladzieci",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true,
+      "where": "room, pool_changing_room"
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Klub Malucha na I piętrze (8:30–22:00) i pokój zabaw przy kręgielni. Regulamin: sala dla dzieci od 4 do 12 lat, dzieci pod ścisłą opieką rodziców.",
+     "short": "Klub Malucha 8:30–22:00, wg regulaminu 4–12 lat",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-faltom.com.pl/up/files/REGULAMIN_klubu_malucha.pdf",
+     "value": {
+      "available": true,
+      "close": "22:00",
+      "max_age_years": 12,
+      "min_age_years": 4,
+      "open": "08:30",
+      "parent_required": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Plac zabaw dla dzieci oraz sezonowy wodny plac zabaw z ciepłą wodą.",
+     "short": "Plac zabaw i wodny plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-faltom.com.pl/hoteldladzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animacje w soboty 11:00–16:00, w ferie i wakacje codziennie; obecność rodzica obowiązkowa. Przedziału wieku strona nie podaje.",
+     "short": "Soboty 11–16, w ferie i wakacje codziennie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-faltom.com.pl/animacje_dla_dzieci",
+     "value": {
+      "available": true,
+      "parent_required": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Brodzik 25 m² z płytką wodą i małą zjeżdżalnią, obok strefa wodna dla dzieci z ciepłą wodą. Temperatury brodzika strona nie podaje.",
+     "short": "Brodzik 25 m² z małą zjeżdżalnią",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-faltom.com.pl/hoteldladzieci",
+     "value": {
+      "area_m2": 25,
+      "indoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Bezpłatny monitorowany parking od ul. Piaskowej (przy basenie) albo ogrodzony, monitorowany całą dobę za 40 zł za dobę (FAQ).",
+     "short": "Bezpłatny przy basenie; ogrodzony 40 zł/doba",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-faltom.com.pl/faq",
+     "value": {
+      "free": true,
+      "guarded_paid_fee_pln_per_day": 40
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.5726313,
+   "lon": 18.3832129,
+   "name": "Hotel SPA Faltom",
+   "official_url": "https://www.hotel-faltom.com.pl/",
+   "place": "rumia",
+   "slug": "faltom-rumia",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
      "minutes": 160,
      "mode": "car",
      "note": "230 km",
@@ -8464,6 +9207,250 @@
    "official_url": "https://imperiall.pl/",
    "place": "sianozety",
    "slug": "imperiall-sianozety",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 20,
+     "mode": "car",
+     "note": "10 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.4378%2C18.5781",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 220,
+     "mode": "car",
+     "note": "320 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.4378%2C18.5781",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 245,
+     "mode": "car",
+     "note": "350 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.4378%2C18.5781",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 320,
+     "mode": "car",
+     "note": "550 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.4378%2C18.5781",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 330,
+     "mode": "car",
+     "note": "500 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.4378%2C18.5781",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 365,
+     "mode": "car",
+     "note": "610 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.4378%2C18.5781",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 11,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 160,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 184,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 274,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 315,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 5 h 20 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 321,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. Emilii Plater 1, 81-777 Sopot",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko turystyczne, dodatkowo płatne 80 zł za pobyt.",
+     "short": "Turystyczne, 80 zł za pobyt",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://villabaltica.com/rodziny-z-dziecmi/",
+     "value": {
+      "available": true,
+      "fee_pln_per_stay": 80,
+      "paid": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka do karmienia w restauracji.",
+     "short": "W restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://villabaltica.com/rodziny-z-dziecmi/",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Specjalne menu dziecięce w restauracji. O jedzeniu dla niemowląt strona nie wspomina.",
+     "short": "Specjalne menu dziecięce",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://villabaltica.com/rodziny-z-dziecmi/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacz do butelek wśród udogodnień dla rodzin. Opłaty strona nie podaje.",
+     "short": "Jest",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://villabaltica.com/rodziny-z-dziecmi/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka wśród udogodnień dla rodzin. Opłaty strona nie podaje.",
+     "short": "Jest",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://villabaltica.com/rodziny-z-dziecmi/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Nakładka na toaletę dla dziecka. O nocniku strona nie wspomina.",
+     "short": "Nakładka na toaletę",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://villabaltica.com/rodziny-z-dziecmi/",
+     "value": {
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala zabaw Baltiś na poziomie -1, połączona z restauracją: rodzice jedzą, mając dzieci na widoku. Klocki, kuchnia, rowerki. Godzin i minimalnego wieku strona nie podaje.",
+     "short": "Sala Baltiś obok restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://villabaltica.com/rodziny-z-dziecmi/",
+     "value": {
+      "available": true,
+      "parent_in_sight": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Zewnętrzny plac zabaw na terenie hotelu.",
+     "short": "Na terenie hotelu",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://villabaltica.com/rodziny-z-dziecmi/",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Plaża ok. 30 m od hotelu.",
+     "short": "Ok. 30 m do plaży",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://villabaltica.com/rodziny-z-dziecmi/",
+     "value": {
+      "distance_m": 30
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.4377698,
+   "lon": 18.5781104,
+   "name": "Villa Baltica",
+   "official_url": "https://villabaltica.com/",
+   "place": "sopot",
+   "slug": "villa-baltica-sopot",
    "status": "draft"
   },
   {
@@ -9633,6 +10620,30 @@
    "name": "Ustka",
    "region": "Bałtyk – Pomorze",
    "slug": "ustka"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Rumia",
+   "region": "Bałtyk – Pomorze",
+   "slug": "rumia"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Kistowo",
+   "region": "Kaszuby",
+   "slug": "kistowo"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Sopot",
+   "region": "Bałtyk – Pomorze",
+   "slug": "sopot"
   }
  ],
  "rule_keys": [

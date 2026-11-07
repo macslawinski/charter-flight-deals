@@ -140,3 +140,24 @@ name = "Ustka"
 country = "Polska"
 region = "Bałtyk – Pomorze"
 kind = "domestic"
+
+[[place]]
+slug = "rumia"
+name = "Rumia"
+country = "Polska"
+region = "Bałtyk – Pomorze"
+kind = "domestic"
+
+[[place]]
+slug = "kistowo"
+name = "Kistowo"
+country = "Polska"
+region = "Kaszuby"
+kind = "domestic"
+
+[[place]]
+slug = "sopot"
+name = "Sopot"
+country = "Polska"
+region = "Bałtyk – Pomorze"
+kind = "domestic"
