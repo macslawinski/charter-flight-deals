@@ -119,6 +119,37 @@ def test_playground_facts() -> None:
     assert recs["25"].name != "Plac zabaw"   # a named playground keeps its name
 
 
+def test_playgrounds_closed_in_either_gender_is_skipped() -> None:
+    b = bundle("poznan_playgrounds_sample.json")
+    one = next(f for f in b["data"]["features"] if str(f["id"]) == "1")
+    one["properties"]["dostep"] = "nieczynne"
+    assert "1" not in {r.external_id for r in poznan_playgrounds.parse_bundle(b).records}
+
+
+@pytest.mark.parametrize(("name", "kept"), [
+    ("stół do ping ponga", False), ("stół do gry w szachy", False), ("piłkarzyki", False),
+    ("stół do ping ponga i piłkarzyki", False), ("stół do ping ponga, stół do gry w szachy", False),
+    ("piaskownica", True), ("Plac zabaw", True), ("Plac zabaw ze stołem do ping ponga", True),
+])
+def test_playgrounds_skip_game_tables(name: str, kept: bool) -> None:
+    b = bundle("poznan_playgrounds_sample.json")
+    one = next(f for f in b["data"]["features"] if str(f["id"]) == "1")
+    one["properties"]["nazwa"] = name
+    assert ("1" in {r.external_id for r in poznan_playgrounds.parse_bundle(b).records}) is kept
+
+
+def test_playground_long_access_keeps_full_text_in_note() -> None:
+    b = bundle("poznan_playgrounds_sample.json")
+    one = next(f for f in b["data"]["features"] if str(f["id"]) == "1")
+    text = "7 dni w tyg. w okresie letnim w godz. 9-22 , w okresie zimowym w godz. 9-18 (ogrodzony)"
+    one["properties"]["dostep"] = text
+    rec = next(r for r in poznan_playgrounds.parse_bundle(b).records if r.external_id == "1")
+    access = {f.key: f for f in rec.facts}["access"]
+    assert len(access.short) <= 80 and access.short.endswith("…")
+    assert access.note == f"Dostęp: {text}"
+    assert {f.key: f for f in rec.facts}["price"].note is None
+
+
 def test_playgrounds_projection_change_fails() -> None:
     b = bundle("poznan_playgrounds_sample.json")
     b["data"]["features"][0]["geometry"]["coordinates"] = [357000.0, 506000.0]   # metres, not degrees

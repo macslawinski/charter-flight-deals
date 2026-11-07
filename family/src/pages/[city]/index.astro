@@ -1,0 +1,376 @@
+---
+// City map: public playgrounds and night/holiday care points (open data) plus the curated indoor
+// playgrounds, with category filters. Every fact on a place card shows its source and date.
+import Base from "../../layouts/Base.astro";
+import Icon from "../../components/Icon.astro";
+import { cityName, plDate } from "../../lib/data";
+import { CATEGORIES, TAGS, cityExports, cityMap, jsonForScript } from "../../lib/map";
+
+export function getStaticPaths() {
+  return cityExports.map((ex) => ({ params: { city: ex.city }, props: { ex } }));
+}
+const { ex } = Astro.props;
+const name = cityName(ex.city);
+const payload = cityMap(ex);
+const count = (cat: string) => payload.venues.filter((v) => v.cat === cat).length;
+const tagCount = (tag: string) => payload.venues.filter((v) => v.tags.includes(tag)).length;
+const cats = CATEGORIES.filter((c) => count(c.id) > 0);
+const nisoz = payload.venues.filter((v) => v.cat === "nisoz").sort((a, b) => a.name.localeCompare(b.name, "pl"));
+const ref = (i: number) => payload.refs[i]!;
+const inCity = name === "Poznań" ? "w Poznaniu" : `w mieście ${name}`;
+const clientCats = Object.fromEntries(CATEGORIES.map((c) => [c.id, { color: c.color, radius: c.radius, label: c.chip }]));
+---
+
+<Base title={`Z dzieckiem ${inCity}`} section="gdzie" description={`Place zabaw, bawialnie i nocna pomoc lekarska ${inCity} na jednej mapie, ze źródłami.`}>
+  <section class="page-hero map-hero">
+    <div>
+      <h1>Z dzieckiem {inCity}</h1>
+      <p class="lead">
+        Place zabaw, bawialnie i nocna pomoc lekarska na jednej mapie. Przy każdej informacji jest
+        źródło i data.
+      </p>
+    </div>
+  </section>
+
+  <form class="map-filters" aria-label="Co pokazać na mapie">
+    {
+      cats.map((c) => (
+        <fieldset class="map-group">
+          <legend class="visually-hidden">{c.chip}</legend>
+          <label class="chip chip-cat" style={`--dot:${c.color}`}>
+            <input type="checkbox" name="cat" value={c.id} checked />
+            <span>
+              <i class="dot" aria-hidden="true" />
+              {c.chip} ({count(c.id)})
+            </span>
+          </label>
+          {TAGS.filter((t) => t.cat === c.id && tagCount(t.id) > 0).map((t) => (
+            <label class="chip chip-tag">
+              <input type="checkbox" name="tag" value={t.id} data-cat={c.id} />
+              <span>
+                {t.chip} ({tagCount(t.id)})
+              </span>
+            </label>
+          ))}
+        </fieldset>
+      ))
+    }
+  </form>
+
+  <div class="map-layout">
+    <div class="map-box">
+      <div id="mapa" class="map" role="region" aria-label={`Mapa: ${name}`}></div>
+      <p class="note-small" id="map-status" aria-live="polite">Ładowanie mapy…</p>
+    </div>
+    <aside class="map-side">
+      <section id="miejsce" class="venue place-card" tabindex="-1" aria-live="polite">
+        <p class="note-small">Kliknij punkt na mapie albo wybierz miejsce z listy poniżej.</p>
+      </section>
+      <section class="nearby">
+        <h2 class="h-small">W tym widoku</h2>
+        <ol id="nearby" class="nearby-list"></ol>
+      </section>
+    </aside>
+  </div>
+
+  {
+    nisoz.length > 0 && (
+      <section class="nisoz">
+        <h2>Nocna i świąteczna pomoc lekarska {inCity}</h2>
+        <p class="note-small">Punkty z mapy NFZ na pacjent.gov.pl.</p>
+        <ul class="venues">
+          {nisoz.map((v) => (
+            <li class="venue">
+              <h3>{v.name}</h3>
+              {v.address && (
+                <p class="addr">
+                  <Icon name="pin" size={18} />
+                  {v.address}
+                </p>
+              )}
+              <ul class="venue-facts">
+                {v.facts.map((f) => (
+                  <li>
+                    <span>
+                      <strong>{f.label}:</strong> {f.note ?? f.short}
+                      <br />
+                      <span class="source">
+                        <Icon name="check" size={16} />
+                        {ref(f.ref).url ? (
+                          <a href={ref(f.ref).url!} rel="noopener" target="_blank">
+                            {ref(f.ref).text}
+                          </a>
+                        ) : (
+                          <span>{ref(f.ref).text}</span>
+                        )}
+                      </span>
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  <section class="map-sources">
+    <h2 class="h-small">Skąd są dane</h2>
+    <ul>
+      {
+        Object.values(ex.sources).map((s) => (
+          <li>
+            <a href={s.url} rel="noopener" target="_blank">{s.name}</a>. {s.attribution}.
+            Licencja: {s.licence}.
+            {s.data_as_of && <> Stan danych: {plDate(s.data_as_of)}.</>}
+            {s.imported_at && <> Pobrane: {plDate(s.imported_at)}.</>}
+          </li>
+        ))
+      }
+      <li>
+        Bawialnie: sprawdzone na stronach samych bawialni, lista i szczegóły na stronie
+        <a href={`/${ex.city}/bawialnie/`}>Bawialnie</a>.
+      </li>
+      <li>
+        Podkład mapy: <a href="https://www.openstreetmap.org/copyright">© autorzy OpenStreetMap</a> (licencja ODbL).
+      </li>
+    </ul>
+  </section>
+
+  <script type="application/json" id="mapa-dane" set:html={jsonForScript({ ...payload, cats: clientCats })} />
+</Base>
+
+<script>
+  import L from "leaflet";
+  import "leaflet/dist/leaflet.css";
+  import type { MapPayload, MapVenue } from "../../lib/map";
+
+  type Payload = MapPayload & { cats: Record<string, { color: string; radius: number; label: string }> };
+  const dataEl = document.getElementById("mapa-dane");
+  const status = document.getElementById("map-status")!;
+  const card = document.getElementById("miejsce")!;
+  const nearby = document.getElementById("nearby")!;
+  const form = document.querySelector<HTMLFormElement>(".map-filters")!;
+  const d = JSON.parse(dataEl!.textContent!) as Payload;
+
+  const map = L.map("mapa", { preferCanvas: true }).setView(d.center, 12);
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  }).addTo(map);
+  const layer = L.layerGroup().addTo(map);
+  const renderer = L.canvas({ padding: 0.5 });
+
+  const el = <K extends keyof HTMLElementTagNameMap>(tag: K, text?: string, cls?: string) => {
+    const e = document.createElement(tag);
+    if (text) e.textContent = text;
+    if (cls) e.className = cls;
+    return e;
+  };
+  const sourceLine = (i: number, prefix = "") => {
+    const r = d.refs[i]!;
+    const line = el("span", undefined, "source");
+    if (r.url) {
+      const a = el("a", prefix + r.text);
+      a.href = r.url;
+      a.rel = "noopener";
+      a.target = "_blank";
+      line.append(a);
+    } else line.append(el("span", prefix + r.text));
+    return line;
+  };
+
+  let selected: string | null = null;
+  const markers = new Map<string, { v: MapVenue; m: L.CircleMarker }>();
+  const styleOf = (v: MapVenue, on = false) => ({
+    renderer,
+    radius: d.cats[v.cat]!.radius + (on ? 4 : 0),
+    color: on ? "#17204a" : "#ffffff",
+    weight: on ? 3 : 1.5,
+    fillColor: d.cats[v.cat]!.color,
+    fillOpacity: 0.9,
+  });
+
+  function show(v: MapVenue, focus: boolean) {
+    const prev = selected ? markers.get(selected) : undefined;
+    if (prev) prev.m.setStyle(styleOf(prev.v));
+    const m = markers.get(v.id)?.m;
+    if (m) {
+      m.setStyle(styleOf(v, true));
+      m.bringToFront();
+    }
+    selected = v.id;
+    card.replaceChildren();
+    card.append(el("span", d.cats[v.cat]!.label, "tag-small"), el("h3", v.name));
+    if (v.address) card.append(el("p", v.address, "addr"));
+    const ul = el("ul", undefined, "venue-facts");
+    for (const f of v.facts) {
+      const li = el("li");
+      const body = el("span");
+      body.append(el("strong", `${f.label}: `), f.short);
+      if (f.ask) body.append(" ", el("span", "do potwierdzenia", "badge-ask"));
+      if (f.note && f.note !== f.short) {
+        const more = el("details", undefined, "more-info");
+        more.append(el("summary", "Więcej"), el("p", f.note));
+        body.append(more);
+      } else body.append(el("br"));
+      body.append(sourceLine(f.ref));
+      li.append(body);
+      ul.append(li);
+    }
+    card.append(ul);
+    if (v.loc !== null) card.append(sourceLine(v.loc, "Położenie na mapie: "));
+    if (v.url) {
+      const a = el("a", "Strona miejsca");
+      a.href = v.url;
+      a.rel = "noopener";
+      card.append(a);
+    }
+    if (focus) card.focus({ preventScroll: true });
+    card.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  }
+
+  for (const v of d.venues) {
+    if (v.lat === null || v.lon === null) continue;
+    const m = L.circleMarker([v.lat, v.lon], styleOf(v));
+    m.bindTooltip(v.name);
+    m.on("click", () => show(v, false));
+    markers.set(v.id, { v, m });
+  }
+
+  function visible(): MapVenue[] {
+    const fd = new FormData(form);
+    const cats = new Set(fd.getAll("cat") as string[]);
+    const tags = [...form.querySelectorAll<HTMLInputElement>("input[name=tag]:checked")];
+    return [...markers.values()]
+      .map((x) => x.v)
+      .filter((v) => cats.has(v.cat) && tags.every((t) => t.dataset.cat !== v.cat || v.tags.includes(t.value)));
+  }
+
+  // 1 miejsce, 2–4 miejsca (but 12–14 miejsc), 5+ miejsc.
+  const places = (n: number) => {
+    const few = n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14);
+    return `${n} ${n === 1 ? "miejsce" : few ? "miejsca" : "miejsc"}`;
+  };
+
+  function listNearby(shown: MapVenue[]) {
+    const b = map.getBounds();
+    const c = map.getCenter();
+    const inView = shown
+      .filter((v) => b.contains([v.lat!, v.lon!]))
+      .map((v) => ({ v, dist: c.distanceTo([v.lat!, v.lon!]) }))
+      .sort((a, z) => a.dist - z.dist);
+    nearby.replaceChildren();
+    for (const { v } of inView.slice(0, 12)) {
+      const btn = el("button", v.name, "link-button");
+      btn.type = "button";
+      btn.addEventListener("click", () => {
+        map.panTo([v.lat!, v.lon!]);
+        show(v, true);
+      });
+      const li = el("li");
+      li.append(btn, el("span", ` ${d.cats[v.cat]!.label}`, "note-small"));
+      nearby.append(li);
+    }
+    status.textContent =
+      `Na mapie: ${places(shown.length)}, w tym widoku ${inView.length}.` +
+      (inView.length > 12 ? " Lista pokazuje 12 najbliżej środka mapy." : "");
+  }
+
+  function apply() {
+    const shown = visible();
+    layer.clearLayers();
+    for (const v of shown) layer.addLayer(markers.get(v.id)!.m);
+    listNearby(shown);
+  }
+  form.addEventListener("change", apply);
+  map.on("moveend", () => listNearby(visible()));
+  apply();
+</script>
+
+<style>
+  .map-filters {
+    display: grid;
+    gap: 0.6rem;
+    margin-block: 0.5rem 1rem;
+  }
+  .map-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .chip-tag span {
+    font-weight: 400;
+    padding: 0.4rem 0.8rem;
+    border-width: 1.5px;
+  }
+  .dot {
+    display: inline-block;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background: var(--dot);
+    margin-right: 0.4rem;
+    vertical-align: -0.05rem;
+    box-shadow: 0 0 0 2px var(--white);
+  }
+  .map-layout {
+    display: grid;
+    gap: 1rem;
+  }
+  @media (min-width: 56rem) {
+    .map-layout {
+      grid-template-columns: minmax(0, 1fr) 22rem;
+      align-items: start;
+    }
+  }
+  .map {
+    height: clamp(22rem, 62vh, 40rem);
+    border-radius: var(--r-panel);
+    border: 2px solid var(--navy);
+    overflow: hidden;
+    background: var(--sky-deep);
+  }
+  .map-side {
+    display: grid;
+    gap: 1rem;
+  }
+  .place-card:focus {
+    outline: 3px solid var(--coral);
+    outline-offset: 3px;
+  }
+  .h-small {
+    font-size: 1.2rem;
+  }
+  .nearby-list {
+    margin: 0;
+    padding-left: 1.3rem;
+    display: grid;
+    gap: 0.3rem;
+  }
+  .link-button {
+    background: none;
+    border: 0;
+    padding: 0;
+    font: inherit;
+    font-weight: 700;
+    color: var(--navy);
+    text-decoration: underline;
+    cursor: pointer;
+    text-align: left;
+  }
+  .nisoz,
+  .map-sources {
+    margin-top: 2.5rem;
+  }
+  .map-sources ul {
+    padding-left: 1.2rem;
+    display: grid;
+    gap: 0.4rem;
+    font-size: 0.95rem;
+  }
+</style>

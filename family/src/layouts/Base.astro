@@ -8,7 +8,7 @@ import Icon from "../components/Icon.astro";
 interface Props {
   title: string;
   description?: string;
-  section?: "linie" | "hotele" | "bawialnie";
+  section?: "linie" | "hotele" | "bawialnie" | "gdzie";
 }
 const { title, description, section } = Astro.props;
 const full = title === "Pieluchy i paszporty" ? title : `${title} | Pieluchy i paszporty`;
@@ -16,6 +16,7 @@ const nav = [
   { href: "/linie/", label: "Linie lotnicze", id: "linie" },
   { href: "/", label: "Hotele", id: "hotele" },
   { href: "/poznan/bawialnie/", label: "Bawialnie", id: "bawialnie" },
+  { href: "/poznan/", label: "Mapa Poznania", id: "gdzie" },
 ];
 ---
 
@@ -61,8 +62,9 @@ const nav = [
         <p>
           Wersja testowa, niepubliczna. Stronę prowadzi autor serwisu
           <a href="https://charter-flight-deals.vercel.app/">Czarterowe okazje</a>. Nie mamy umów z
-          opisanymi liniami, hotelami ani bawialniami. Lista bawialni korzysta z danych
-          <a href="https://www.openstreetmap.org/copyright">© OpenStreetMap</a>.
+          opisanymi liniami, hotelami ani bawialniami. Lista bawialni i podkład mapy korzystają z danych
+          <a href="https://www.openstreetmap.org/copyright">© OpenStreetMap</a>; mapa Poznania także z
+          danych Miasta Poznań i NFZ (szczegóły pod mapą).
         </p>
       </div>
     </footer>

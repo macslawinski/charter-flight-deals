@@ -1,7 +1,8 @@
 """Poznań public playgrounds from the city map service (GeoJSON, layer "Place zabaw i gier").
 
 The layer mixes playgrounds and sports pitches, public and closed ones. We keep only
-`rodzaj == "plac gier i zabaw"`, `typ == "ogólnodostępne"` and not `dostep == "nieczynny"`.
+`rodzaj == "plac gier i zabaw"`, `typ == "ogólnodostępne"` and not closed (`dostep` "nieczynny"/"nieczynne"),
+minus points that are only game tables (ping-pong, chess, table football).
 Points only: the data has no street addresses.
 """
 
@@ -28,6 +29,27 @@ def _s(p: dict[str, Any], key: str) -> str:
     return "" if v is None else " ".join(str(v).split())
 
 
+def _closed(p: dict[str, Any]) -> bool:
+    # The source writes both 'nieczynny' and 'nieczynne'.
+    return _s(p, "dostep").casefold().startswith("nieczynn")
+
+
+# Points named only after a game table ("stół do ping ponga", "stół do gry w szachy", "piłkarzyki")
+# are in the layer too; they are not playgrounds for children 0-6. Sandboxes etc. stay.
+_GAME_TABLE = re.compile(r"^(stół do (ping ponga|gry w szachy)|piłkarzyki)([ ,]+(i |stół do )?"
+                         r"(ping ponga|gry w szachy|piłkarzyki))*$")
+
+
+def _game_table(p: dict[str, Any]) -> bool:
+    return bool(_GAME_TABLE.match(_s(p, "nazwa").casefold()))
+
+
+def _fact(key: str, value: dict[str, Any], text: str) -> OpenFact:
+    """A fact whose one-liner may be cut at 80 chars: the full text then goes into the note."""
+    cut = short(text)
+    return OpenFact(key, value, cut, text if cut != text else None)
+
+
 def _facts(p: dict[str, Any]) -> tuple[OpenFact, ...]:
     facts: list[OpenFact] = []
     access = _s(p, "dostep")
@@ -36,14 +58,14 @@ def _facts(p: dict[str, Any]) -> tuple[OpenFact, ...]:
             hours = access.replace(" ", "").replace("-", "–")
             facts.append(OpenFact("opening_hours", {"text": access}, short(f"Otwarte {hours}")))
         else:
-            facts.append(OpenFact("access", {"text": access, "unrestricted": access == "bez ograniczeń"},
-                                  short(f"Dostęp: {access}")))
+            facts.append(_fact("access", {"text": access, "unrestricted": access == "bez ograniczeń"},
+                               f"Dostęp: {access}"))
     paid = _s(p, "platnosc")
     if paid in {"tak", "nie"}:
         facts.append(OpenFact("price", {"free": paid == "nie"}, "Bezpłatny" if paid == "nie" else "Płatny"))
     manager = _s(p, "opiekun")
     if manager not in UNKNOWN:
-        facts.append(OpenFact("managed_by", {"name": manager}, short(f"Zarządca: {manager}")))
+        facts.append(_fact("managed_by", {"name": manager}, f"Zarządca: {manager}"))
     equipment = {key: True for src, (key, _) in EQUIPMENT.items() if _s(p, src) == "tak"}
     if equipment:
         labels = [label for src, (_, label) in EQUIPMENT.items() if _s(p, src) == "tak"]
@@ -69,7 +91,7 @@ def parse(geojson: Any, data_url: str) -> ImportBatch:
         if not isinstance(p, dict) or not isinstance(geom, dict):
             raise ParseError(f"Poznań playgrounds feature {i}: missing properties or geometry")
         if (_s(p, "rodzaj") != "plac gier i zabaw" or _s(p, "typ") != "ogólnodostępne"
-                or _s(p, "dostep") == "nieczynny"):
+                or _closed(p) or _game_table(p)):
             skipped += 1
             continue
         ext = str(f.get("id") or "").strip()
