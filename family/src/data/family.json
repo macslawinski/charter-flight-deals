@@ -3372,6 +3372,486 @@
     {
      "from_code": "Gdańsk",
      "from_kind": "city",
+     "minutes": 170,
+     "mode": "car",
+     "note": "250 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.1697%2C15.5288",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 255,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.1697%2C15.5288",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 350,
+     "mode": "car",
+     "note": "510 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.1697%2C15.5288",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 390,
+     "mode": "car",
+     "note": "590 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.1697%2C15.5288",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 440,
+     "mode": "car",
+     "note": "690 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.1697%2C15.5288",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 490,
+     "mode": "car",
+     "note": "760 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.1697%2C15.5288",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 250,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 4 h 42 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 252,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 329,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 5 h 59 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 400,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 7 h 08 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 480,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 8 h 52 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 555,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 9 h 21 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    }
+   ],
+   "address": "ul. Plażowa 1, 78-100 Kołobrzeg",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko turystyczne z kompletem pościeli na życzenie, płatne według cennika (kwoty strona nie podaje). Opis z pakietu rodzinnego.",
+     "short": "Turystyczne z pościelą, płatne",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.balticplaza.eu/oferty-specjalne/szczegoly-pakietu?OfferID=826182",
+     "value": {
+      "available": true,
+      "bedding": true,
+      "on_request": true,
+      "paid": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka do karmienia w hotelowej restauracji. Opis z pakietu rodzinnego.",
+     "short": "W restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.balticplaza.eu/oferty-specjalne/szczegoly-pakietu?OfferID=826182",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Specjalne menu dziecięce. Opis z pakietu rodzinnego; o jedzeniu dla niemowląt strona nie wspomina.",
+     "short": "Specjalne menu dziecięce",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.balticplaza.eu/oferty-specjalne/szczegoly-pakietu?OfferID=826182",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacz do butelek na życzenie. Opis z pakietu rodzinnego; opłaty strona nie podaje.",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.balticplaza.eu/oferty-specjalne/szczegoly-pakietu?OfferID=826182",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka na życzenie. Opis z pakietu rodzinnego; opłaty strona nie podaje.",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.balticplaza.eu/oferty-specjalne/szczegoly-pakietu?OfferID=826182",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala zabaw. Godzin, minimalnego wieku i zasad opieki strona nie podaje.",
+     "short": "Jest sala zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.balticplaza.eu/oferty-specjalne/szczegoly-pakietu?OfferID=826182",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Zewnętrzny plac zabaw Piracka Łódź.",
+     "short": "Piracka Łódź, na zewnątrz",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.balticplaza.eu/oferty-specjalne/szczegoly-pakietu?OfferID=826182",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.169697,
+   "lon": 15.528761,
+   "name": "Baltic Plaza MediSPA & Fit",
+   "official_url": "https://www.balticplaza.eu/",
+   "place": "kolobrzeg",
+   "slug": "baltic-plaza-kolobrzeg",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 170,
+     "mode": "car",
+     "note": "250 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.1692%2C15.5274",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 255,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.1692%2C15.5274",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 350,
+     "mode": "car",
+     "note": "510 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.1692%2C15.5274",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 390,
+     "mode": "car",
+     "note": "590 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.1692%2C15.5274",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 440,
+     "mode": "car",
+     "note": "690 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.1692%2C15.5274",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 490,
+     "mode": "car",
+     "note": "760 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.1692%2C15.5274",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 250,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 4 h 42 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 252,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 329,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 5 h 59 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 400,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 7 h 08 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 480,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 8 h 52 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 555,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 9 h 21 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    }
+   ],
+   "address": "ul. Wylotowa 45, 78-100 Kołobrzeg",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko turystyczne z pościelą na życzenie, płatne według cennika (kwoty strona nie podaje).",
+     "short": "Turystyczne z pościelą, płatne",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.blueandgreenhotels.pl/morze/dzieci",
+     "value": {
+      "available": true,
+      "bedding": true,
+      "on_request": true,
+      "paid": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka do karmienia.",
+     "short": "Jest",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.blueandgreenhotels.pl/morze/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Menu à la carte przygotowane z myślą o najmłodszych. O jedzeniu dla niemowląt strona nie wspomina.",
+     "short": "Karta dla najmłodszych",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.blueandgreenhotels.pl/morze/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacz do butelek na życzenie. Opłaty strona nie podaje.",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.blueandgreenhotels.pl/morze/dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka na życzenie. Opłaty strona nie podaje.",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.blueandgreenhotels.pl/morze/dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Kolorowa sala zabaw ze stolikami do rysowania i zabawkami. Godzin, minimalnego wieku i zasad opieki strona nie podaje.",
+     "short": "Stoliki do rysowania i zabawki",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.blueandgreenhotels.pl/morze/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Zewnętrzny plac zabaw.",
+     "short": "Zewnętrzny",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.blueandgreenhotels.pl/morze/dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animacje w wakacje i długie weekendy; plan wcześniej na stronie i Facebooku. Przedziału wieku strona nie podaje.",
+     "short": "Wakacje i długie weekendy",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.blueandgreenhotels.pl/morze/dzieci",
+     "value": {
+      "available": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Do szerokiej plaży ok. 500 m, ok. 5 minut spacerem.",
+     "short": "Ok. 5 minut pieszo (500 m)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.blueandgreenhotels.pl/morze",
+     "value": {
+      "distance_m": 500,
+      "minutes": 5
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking monitorowany. Opłaty strona nie podaje.",
+     "short": "Monitorowany",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.blueandgreenhotels.pl/morze",
+     "value": {
+      "monitored": true
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.1692458,
+   "lon": 15.5274408,
+   "name": "Blue & Green Baltic Hotel",
+   "official_url": "https://www.blueandgreenhotels.pl/morze",
+   "place": "kolobrzeg",
+   "slug": "blue-green-baltic-kolobrzeg",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
      "minutes": 165,
      "mode": "car",
      "note": "240 km",
@@ -5662,6 +6142,171 @@
     {
      "from_code": "Gdańsk",
      "from_kind": "city",
+     "minutes": 190,
+     "mode": "car",
+     "note": "260 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.1468%2C15.3015",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 260,
+     "mode": "car",
+     "note": "370 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.1468%2C15.3015",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 355,
+     "mode": "car",
+     "note": "500 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.1468%2C15.3015",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 415,
+     "mode": "car",
+     "note": "600 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.1468%2C15.3015",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 445,
+     "mode": "car",
+     "note": "680 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.1468%2C15.3015",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 495,
+     "mode": "car",
+     "note": "750 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.1468%2C15.3015",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 224,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 323,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 385,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 396,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 523,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 584,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. Nadmorska 13, 72-330 Mrzeżyno",
+   "features": [
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Słoneczna sala zabaw z zabawkami: lalki, koparki, klocki, układanki, huśtawki. Godzin, minimalnego wieku i zasad opieki strona nie podaje.",
+     "short": "Lalki, klocki, huśtawki",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelzalewski.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Plac zabaw przy Bistro, z ławkami i stolikami dla rodziców.",
+     "short": "Z ławkami i stolikami dla rodziców",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelzalewski.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true,
+      "parent_seating": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "W aquaparku brodzik dla dzieci i wodny plac zabaw. Głębokości i temperatury strona nie podaje.",
+     "short": "Brodzik i wodny plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelzalewski.pl/aquapark-zjezdzalnie-sauny-laznie",
+     "value": {
+      "available": true,
+      "indoor": true,
+      "water_playground": true
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.1468353,
+   "lon": 15.3015099,
+   "name": "Hotel Zalewski",
+   "official_url": "https://www.hotelzalewski.pl/",
+   "place": "mrzezyno",
+   "slug": "zalewski-mrzezyno",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
      "minutes": 205,
      "mode": "car",
      "note": "290 km",
@@ -6318,6 +6963,189 @@
    "official_url": "https://www.lineamare.pl/",
    "place": "pobierowo",
    "slug": "linea-mare-pobierowo",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 205,
+     "mode": "car",
+     "note": "290 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.0957%2C15.1042",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 260,
+     "mode": "car",
+     "note": "360 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.0957%2C15.1042",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 350,
+     "mode": "car",
+     "note": "490 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.0957%2C15.1042",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 425,
+     "mode": "car",
+     "note": "660 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.0957%2C15.1042",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 445,
+     "mode": "car",
+     "note": "670 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.0957%2C15.1042",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 495,
+     "mode": "car",
+     "note": "750 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.0957%2C15.1042",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 224,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 323,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 385,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 396,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 523,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 584,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. Wojska Polskiego 3, 72-351 Pogorzelica",
+   "features": [
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Dwie sale zabaw (w tym sala animacyjna z animatorami) i nowa strefa: sala z basenem kulkowym i ścianką, strefa z zabawkami sensorycznymi. Godzin, minimalnego wieku i zasad opieki strona nie podaje.",
+     "short": "2 sale, basen kulkowy, zabawki sensoryczne",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.sandraspa.pl/dzieci/sale-zabaw",
+     "value": {
+      "available": true,
+      "ball_pit": true,
+      "count": 2,
+      "sensory_toys": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Zewnętrzny plac zabaw z urządzeniami dopasowanymi do wieku dzieci (przedziałów strona nie podaje).",
+     "short": "Zewnętrzny",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.sandraspa.pl/dzieci/sale-zabaw",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Programy animacyjne dla dzieci w terminach specjalnych, w sezonie letnim i w ferie. Przedziału wieku strona nie podaje.",
+     "short": "Latem, w ferie i terminy specjalne",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.sandraspa.pl/dzieci/atrakcje-i-udogodnienia",
+     "value": {
+      "available": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "W aquaparku płytkie baseny dla dzieci, wewnętrzne i zewnętrzne, woda 31–33°C. Głębokości strona nie podaje.",
+     "short": "Płytkie baseny, woda 31–33°C",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.sandraspa.pl/dzieci/aquapark-dla-dzieci",
+     "value": {
+      "available": true,
+      "indoor": true,
+      "outdoor": true,
+      "water_temp_c_max": 33,
+      "water_temp_c_min": 31
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.095701,
+   "lon": 15.1042383,
+   "name": "Sandra SPA",
+   "official_url": "https://www.sandraspa.pl/",
+   "place": "pogorzelica",
+   "slug": "sandra-spa-pogorzelica",
    "status": "draft"
   },
   {
@@ -7733,6 +8561,22 @@
    "name": "Sianożęty",
    "region": "Bałtyk – Pomorze Zachodnie",
    "slug": "sianozety"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Mrzeżyno",
+   "region": "Bałtyk – Pomorze Zachodnie",
+   "slug": "mrzezyno"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Pogorzelica",
+   "region": "Bałtyk – Pomorze Zachodnie",
+   "slug": "pogorzelica"
   }
  ],
  "rule_keys": [

@@ -65,7 +65,14 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
 - [x] C: zachodniopomorskie hotels, batch 5 (2026-11-07): Trofana (Międzyzdroje, 6 facts), Wave (Międzyzdroje, 7),
       Dworek Morski (Mielno, 9; address without house number, the site gives none), Imperiall (Sianożęty, 9).
       Trains reused: Międzyzdroje (Wolin), Koszalin (Unitral), Ustronie Morskie (Wodnik).
-- [ ] C: curate the remaining 4 zachodniopomorskie leads with `curate-hotel`.
+- [x] C: zachodniopomorskie hotels, batch 6 (2026-11-07): Blue & Green Baltic (Kołobrzeg, 10 facts), Baltic Plaza
+      (Kołobrzeg, 7, all from a family package page: no permanent kids page), Zalewski (Mrzeżyno, 3), Sandra SPA
+      (Pogorzelica, 4). Trains: Kołobrzeg (reused), Trzebiatów (reused from Amber Park). All 25 zachodniopomorskie
+      leads are now curated; 10 of the 25 hotels have fewer than 8 facts.
+- [ ] U: decide which zachodniopomorskie hotels to publish (all are `draft`); those under 8 facts need a phone or
+      e-mail round first, or stay off the site.
+- [ ] U (phone/e-mail, optional): Zalewski and Sandra cot, high chair, free-stay age; Baltic Plaza free stay
+      outside packages, beach distance.
 - [ ] U (phone/e-mail, optional): Trofana free-stay age, playroom, parking; Wave cot fee, Kids Zone minimum age,
       parking fee; Dworek Morski house number, free-stay age, cot fee.
 - [ ] U (phone/e-mail, optional): Neptuno free-stay age, cot fee, pool/brodzik; Diva free-stay rule, Kids Club

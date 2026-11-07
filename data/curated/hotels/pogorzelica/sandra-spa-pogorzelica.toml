@@ -1,0 +1,171 @@
+# Facts from the hotel's own website (sandraspa.pl; robots.txt allows all, checked 2026-11-07):
+# /dzieci, /dzieci/atrakcje-i-udogodnienia, /dzieci/sale-zabaw, /dzieci/aquapark-dla-dzieci, home page.
+# Written in our words.
+# Also on the site, no feature key for it: bowling, Game Room and interactive play room; swimming lessons;
+# "2 dzieci gratis" (one under 3 sleeping with parents, one under 14 on an extra bed) only in offers for selected
+# rooms (not recorded as a rule).
+# Not stated (so not recorded yet): cot, baby bath, bottle warmer, changing table, potty, high chair, kids menu,
+# playroom hours, minimum age and whether a parent must stay, animation ages, brodzik depth, lift, beach distance,
+# parking.
+# Fewer than 8 verified facts: the site says little more for 0-3.
+#
+# Coordinates: the hotel's own Google Maps link.
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most one
+#   change, to Trzebiatów station (times reused from Amber Park Niechorze, same station). Station -> hotel:
+#   ~18 km, ~20 min by car or taxi (OSRM); no hotel transfer stated.
+slug = "sandra-spa-pogorzelica"
+place = "pogorzelica"
+name = "Sandra SPA"
+official_url = "https://www.sandraspa.pl/"
+address = "ul. Wojska Polskiego 3, 72-351 Pogorzelica"
+lat = 54.095701  # the hotel's own Google Maps link
+lon = 15.1042383
+status = "draft"
+
+[[feature]]
+key = "playroom"
+value = { available = true, count = 2, ball_pit = true, sensory_toys = true }
+short = "2 sale, basen kulkowy, zabawki sensoryczne"
+note = "Dwie sale zabaw (w tym sala animacyjna z animatorami) i nowa strefa: sala z basenem kulkowym i ścianką, strefa z zabawkami sensorycznymi. Godzin, minimalnego wieku i zasad opieki strona nie podaje."
+source = "hotel_website"
+url = "https://www.sandraspa.pl/dzieci/sale-zabaw"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "Zewnętrzny"
+note = "Zewnętrzny plac zabaw z urządzeniami dopasowanymi do wieku dzieci (przedziałów strona nie podaje)."
+source = "hotel_website"
+url = "https://www.sandraspa.pl/dzieci/sale-zabaw"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, seasonal = true }
+short = "Latem, w ferie i terminy specjalne"
+note = "Programy animacyjne dla dzieci w terminach specjalnych, w sezonie letnim i w ferie. Przedziału wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.sandraspa.pl/dzieci/atrakcje-i-udogodnienia"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "paddling_pool"
+value = { available = true, indoor = true, outdoor = true, water_temp_c_min = 31, water_temp_c_max = 33 }
+short = "Płytkie baseny, woda 31–33°C"
+note = "W aquaparku płytkie baseny dla dzieci, wewnętrzne i zewnętrzne, woda 31–33°C. Głębokości strona nie podaje."
+source = "hotel_website"
+url = "https://www.sandraspa.pl/dzieci/aquapark-dla-dzieci"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 205
+note = "290 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.0957%2C15.1042"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 260
+note = "360 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.0957%2C15.1042"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 350
+note = "490 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.0957%2C15.1042"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 425
+note = "660 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.0957%2C15.1042"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 445
+note = "670 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.0957%2C15.1042"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 495
+note = "750 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.0957%2C15.1042"
+verified_at = 2026-11-07
+
+# --- Access: train to Trzebiatów station (rozklad-pkp.pl, 2026-11-12) --------------------
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 224
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "train"
+minutes = 323
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 385
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 396
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 523
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 584
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
