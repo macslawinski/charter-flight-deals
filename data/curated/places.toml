@@ -231,3 +231,10 @@ name = "Reda"
 country = "Polska"
 region = "Bałtyk – Pomorze"
 kind = "domestic"
+
+[[place]]
+slug = "wladyslawowo"
+name = "Władysławowo"
+country = "Polska"
+region = "Bałtyk – Pomorze"
+kind = "domestic"

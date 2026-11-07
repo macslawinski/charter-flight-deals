@@ -14985,6 +14985,289 @@
    "place": "ustronie-morskie",
    "slug": "wodnik-ustronie-morskie",
    "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 70,
+     "mode": "car",
+     "note": "70 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.7983%2C18.4078",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 260,
+     "mode": "car",
+     "note": "360 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.7983%2C18.4078",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 295,
+     "mode": "car",
+     "note": "400 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.7983%2C18.4078",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 360,
+     "mode": "car",
+     "note": "590 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.7983%2C18.4078",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 370,
+     "mode": "car",
+     "note": "540 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.7983%2C18.4078",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 405,
+     "mode": "car",
+     "note": "650 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.7983%2C18.4078",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 78,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 238,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 279,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 382,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 392,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 403,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. Hryniewieckiego 12A, 84-120 Władysławowo",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczka dla maluchów do dyspozycji gości. Opłaty strona nie podaje.",
+     "short": "Łóżeczka dla maluchów",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.gwiazdamorza.com/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "child_free_stay",
+     "note": "Dzieci do 4 lat: pobyt całkowicie bezpłatny. Dzieci 5–14 lat płacą 50% ceny dorosłego za wyżywienie.",
+     "short": "Do 4 lat całkowicie bezpłatnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.gwiazdamorza.com/dla-dzieci",
+     "value": {
+      "free": true,
+      "max_age_years": 4
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Foteliki do karmienia do dyspozycji gości.",
+     "short": "Foteliki do karmienia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.gwiazdamorza.com/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Specjalne menu dla dzieci w każdej restauracji. O jedzeniu dla niemowląt strona nie wspomina.",
+     "short": "W każdej restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.gwiazdamorza.com/dla-dzieci",
+     "value": {
+      "all_restaurants": true,
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacze do butelek do dyspozycji gości. Opłaty strona nie podaje.",
+     "short": "Jest",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.gwiazdamorza.com/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka do kąpieli do dyspozycji gości. Opłaty strona nie podaje.",
+     "short": "Jest",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.gwiazdamorza.com/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Stopnie ułatwiające dzieciom dostęp. O nocniku i nakładce strona nie wspomina.",
+     "short": "Stopnie ułatwiające dostęp",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.gwiazdamorza.com/dla-dzieci",
+     "value": {
+      "step_stool": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala zabaw „Podwodny Świat” w budynku hotelu: łódź podwodna, basen z kulkami, zjeżdżalnia, mini ścianka wspinaczkowa. Godzin i minimalnego wieku strona nie podaje.",
+     "short": "Podwodny Świat: kulki, zjeżdżalnia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.gwiazdamorza.com/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Plac zabaw w prywatnym parku tuż przy hotelu.",
+     "short": "W prywatnym parku przy hotelu",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.gwiazdamorza.com/dla-dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animacje przez cały rok, 5 dni w tygodniu (plan na stronie). Przedziału wieku strona nie podaje.",
+     "short": "Cały rok, 5 dni w tygodniu",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.gwiazdamorza.com/dla-dzieci",
+     "value": {
+      "available": true,
+      "days_per_week": 5,
+      "year_round": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Wewnętrzny brodzik w strefie basenowej. Głębokości i temperatury strona nie podaje.",
+     "short": "Wewnętrzny brodzik",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.gwiazdamorza.com/dla-dzieci",
+     "value": {
+      "indoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Hotel tuż przy plaży. Odległości w metrach ani minutach strona nie podaje.",
+     "short": "Tuż przy plaży",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.gwiazdamorza.com/dla-dzieci",
+     "value": {
+      "next_to_beach": true
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.798257,
+   "lon": 18.4078115,
+   "name": "Gwiazda Morza Resort SPA & Sport",
+   "official_url": "https://www.gwiazdamorza.com/",
+   "place": "wladyslawowo",
+   "slug": "gwiazda-morza-wladyslawowo",
+   "status": "draft"
   }
  ],
  "places": [
@@ -15251,6 +15534,14 @@
    "name": "Reda",
    "region": "Bałtyk – Pomorze",
    "slug": "reda"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Władysławowo",
+   "region": "Bałtyk – Pomorze",
+   "slug": "wladyslawowo"
   }
  ],
  "rule_keys": [
