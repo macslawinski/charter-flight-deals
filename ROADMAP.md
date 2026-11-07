@@ -149,8 +149,12 @@ model: `docs/family-data-model.md`; sources: `docs/family-data-sources.md`.
 - [ ] U: answer the open questions in the three docs (TODOs) and below.
 
 ### E1. MVP: open data + "Gdzie z dzieckiem" for Poznań
-- [ ] C: resolve the source TODOs (nurseries register URL/export, GIS bathing sites, NFZ Umowy API for NiŚOZ,
-      Poznań city services) and update `docs/family-data-sources.md` statuses.
+- [x] C: source check (2026-11-07, `docs/family-data-sources.md`): NiŚOZ = static JSON on pacjent.gov.pl (821
+      points, best source); Poznań playgrounds = city map GeoJSON (2,335 places); nurseries register = app
+      without export (`rejestrzlobkow.mrpips.gov.pl`); GIS bathing sites = HTML behind bot protection (no scraper);
+      Poznań open data platform has no pools, rinks or culture venues; RSPO API host not resolving.
+- [ ] U: decide on the source questions at the end of `docs/family-data-sources.md` (requests to MRiPS / GIS /
+      city of Poznań; licences of the NiŚOZ file and the playground GeoJSON).
 - [ ] C: migration(s): `venue_categories`, `data_sources`, `import_runs`, `venues`, `venue_category_links`,
       `fact_keys`, `venue_facts`, `fact_source` enum values (after U approves the draft model).
 - [ ] C: move the Poznań playground TOMLs onto `venues` / `venue_facts` (loader in `ingest.curated`).
