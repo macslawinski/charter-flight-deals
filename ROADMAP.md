@@ -140,6 +140,44 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
 - [ ] C: SEO basics for B (sitemap, JSON-LD), remove `noindex` only on your go.
 - [ ] U: switch Vercel protection off per site when ready (both now `ssoProtection: all`).
 
+## Extension: parents' service (B grows to ages 0–6, three sections)
+Decided 2026-11-07: an extension of B (same `family/` site, same Supabase). Product: `docs/family-product.md`;
+model: `docs/family-data-model.md`; sources: `docs/family-data-sources.md`.
+
+### E0. Documentation (2026-11-07)
+- [x] C: product, data model, data sources, this roadmap section; CLAUDE.md section.
+- [ ] U: answer the open questions in the three docs (TODOs) and below.
+
+### E1. MVP: open data + "Gdzie z dzieckiem" for Poznań
+- [ ] C: resolve the source TODOs (nurseries register URL/export, GIS bathing sites, NFZ Umowy API for NiŚOZ,
+      Poznań city services) and update `docs/family-data-sources.md` statuses.
+- [ ] C: migration(s): `venue_categories`, `data_sources`, `import_runs`, `venues`, `venue_category_links`,
+      `fact_keys`, `venue_facts`, `fact_source` enum values (after U approves the draft model).
+- [ ] C: move the Poznań playground TOMLs onto `venues` / `venue_facts` (loader in `ingest.curated`).
+- [ ] C: idempotent importers in `ingest/opendata/` (nurseries, bathing sites, NiŚOZ), with `--dry-run` and
+      `--from-file`, fixtures and tests (re-run = no duplicates; vanished record = `retired`).
+- [ ] C: scheduling in Actions within the minutes budget (open data changes slowly: weekly or monthly).
+- [ ] C: Poznań section 1 curation: pools/aquaparks, ice rinks, sledding, zoo/farms, rope parks, culture,
+      birthday venues (venues' own sites, OSM for discovery).
+- [ ] C: site: map + shared filters, category pages, source + verified date on every fact (frontend-design).
+- [ ] U: route and home page decision (today `/` is the hotel finder).
+
+### E2. Hotels ("Wyjazdy")
+- [ ] Hotels in Poland under "Wyjazdy" (existing curated data; foreign hotels stay hidden). Mostly UI and
+      shared fact keys; the curation backlog stays in Step 4.
+
+### E3. Airlines and airports
+- [ ] Airline child rules under "Wyjazdy" (existing `/linie/`); airport family facts (play areas, family lanes,
+      stroller handover); children's documents, EHIC, car-seat laws abroad.
+- [ ] "Niezbędnik rodzica" topics (benefits, deadlines, vaccinations, recalls, car-seat tests): TODO: which
+      stage? The brief lists them in the product but not in a stage.
+
+### Backlog (needs your go)
+- E-mail agent that asks hotels/venues for missing data and updates facts from replies (`venue_submitted` /
+  `hotel_written` sources; GDPR and consent to check).
+- Monetization: donations, affiliate links (`PLAN.md` Phase 2; Vercel Hobby terms).
+- User accounts, comments, ratings: out of scope (conflicts with "just facts").
+
 ## Later (on hold, needs your go)
 - Affiliates and ads (Phase 2), family deal alerts (changes A's "no notifications" scope).
 - Parent surveys and the B2B badge (Phase 3).

@@ -149,6 +149,22 @@ Cold start is expected: the first deals appear only after enough history accumul
 - Before calling something done: `ruff check .`, `pyright`, `pytest`, and for SQL changes run them against real data
   in Supabase and sanity-check a few results by hand.
 
+## Product B extension: parents' service (since 2026-11-07, docs only so far)
+Product B (`family/`, `PLAN.md`) grows into a service for parents of children aged **0–6** in Poland, UI in
+Polish, three sections: "Gdzie z dzieckiem" (map + filters, MVP: Poznań), "Wyjazdy" (B's hotels, airlines,
+airports, documents), "Niezbędnik rodzica" (care, nurseries, benefits, vaccinations, recalls). Same site, same
+Supabase project, same migration series.
+- **"Just facts"**: no opinions, reviews or marketing copy. Every record and every fact has a **source** (URL or
+  "submitted by the venue") and a **last-verified date**, both visible to users; unclear facts are
+  `to_confirm`, never guessed.
+- Where it lives: curated places in `data/curated/venues/<city>/`, open-data importers in `ingest/opendata/`
+  (planned), pages in `family/`.
+- **Open-data importers are idempotent**: upsert on `(source_id, external_id)`, a vanished record becomes
+  `retired` (not deleted), raw responses kept, `--dry-run` / `--from-file` like the other ingest CLIs.
+- Out of scope for now: accounts, comments, ratings, the e-mail agent for hotels, monetization.
+- Docs: [product](docs/family-product.md) · [data model](docs/family-data-model.md) ·
+  [data sources](docs/family-data-sources.md) · steps in `ROADMAP.md` ("Extension: parents' service").
+
 ## Definition of done for the PoC
 - Cron run collects r.pl flight-only offers reliably for 2+ weeks without manual fixes.
 - Deals view returns plausible results with the proof fields filled.
