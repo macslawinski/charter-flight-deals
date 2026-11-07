@@ -1,0 +1,212 @@
+# Facts from the hotel's own website (hotelplatan.gda.pl; robots.txt allows all but WordPress admin paths,
+# checked 2026-11-07): /dla-dzieci/. Written in our words.
+# Also on the site, no feature key for it: kettle, extra towel, electronic thermometer and socket guards on
+# request; children 7-10 can have an extra bed in selected rooms for a fee. The hotel is in the south of Gdańsk;
+# the site points to Tricity beaches as a trip (no distance).
+# Not stated (so not recorded yet): fees for baby items, changing table, toddler food, playroom hours and
+# minimum age, animations, pool or brodzik, lift, parking fee.
+#
+# Coordinates: the hotel's own Google Maps link.
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most one
+#   change, to Gdańsk Główny. Station -> hotel: ~8 km, ~10 min by car or taxi (OSRM).
+slug = "platan-gdansk"
+place = "gdansk"
+name = "Hotel Platan"
+official_url = "https://hotelplatan.gda.pl/"
+address = "ul. Niepołomicka 36, Gdańsk"  # the page gives no postal code
+lat = 54.3098555  # the hotel's own Google Maps link
+lon = 18.597908
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true, playpen = true }
+short = "Kojec z pościelą, na życzenie"
+note = "Na życzenie kojec z kolorową pościelą do pokoju. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://hotelplatan.gda.pl/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "child_free_stay"
+value = { free = true, in_parents_room = true, max_age_years = 6 }
+short = "Do 6 lat bez opłat w pokoju rodziców"
+note = "Dzieci do 6 lat w pokoju z rodzicami bez dodatkowych opłat. Liczby dzieci i wyżywienia strona nie precyzuje."
+source = "hotel_website"
+url = "https://hotelplatan.gda.pl/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "high_chair"
+value = { available = true }
+short = "Jest"
+note = "Krzesełka do karmienia."
+source = "hotel_website"
+url = "https://hotelplatan.gda.pl/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Specjalne menu dziecięce"
+note = "Specjalne menu dziecięce. O jedzeniu dla niemowląt strona nie wspomina."
+source = "hotel_website"
+url = "https://hotelplatan.gda.pl/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true, on_request = true }
+short = "Na życzenie"
+note = "Podgrzewacz do butelek do pokoju na życzenie."
+source = "hotel_website"
+url = "https://hotelplatan.gda.pl/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, on_request = true }
+short = "Na życzenie"
+note = "Wanienka do pokoju na życzenie."
+source = "hotel_website"
+url = "https://hotelplatan.gda.pl/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "potty"
+value = { on_request = true, toilet_seat_adapter = true }
+short = "Nakładka na toaletę, na życzenie"
+note = "Nakładka na toaletę na życzenie. O nocniku strona nie wspomina."
+source = "hotel_website"
+url = "https://hotelplatan.gda.pl/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playroom"
+value = { available = true, where = "restaurant" }
+short = "Kącik zabaw w restauracji"
+note = "Kącik zabaw dla maluchów w Restauracji Zacisze. Godzin i minimalnego wieku strona nie podaje."
+source = "hotel_website"
+url = "https://hotelplatan.gda.pl/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true, fenced = true }
+short = "Ogrodzony, w ogrodzie"
+note = "Bezpieczny, ogrodzony plac zabaw w ogrodzie hotelu."
+source = "hotel_website"
+url = "https://hotelplatan.gda.pl/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "parking"
+value = { available = true }
+short = "Na terenie hotelu"
+note = "Parking na terenie obiektu. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://hotelplatan.gda.pl/dla-dzieci/"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 10
+note = "10 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.3099%2C18.5979"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 200
+note = "300 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.3099%2C18.5979"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 230
+note = "340 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.3099%2C18.5979"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 300
+note = "520 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.3099%2C18.5979"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 305
+note = "480 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.3099%2C18.5979"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 340
+note = "590 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.3099%2C18.5979"
+verified_at = 2026-11-07
+
+# --- Access: train to Gdańsk Główny station (rozklad-pkp.pl, 2026-11-12) --------------------
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 145
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 169
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 259
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 300
+note = "1 przesiadka · bezpośredni 5 h 04 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 305
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07

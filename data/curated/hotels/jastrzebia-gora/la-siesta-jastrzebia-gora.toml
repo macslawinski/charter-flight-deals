@@ -1,0 +1,249 @@
+# Facts from the hotel's own website (lasiesta.pl; robots.txt allows the pages used, checked 2026-11-07):
+# /hotel-przyjazny-rodzinie, /warunki-rezerwacji, home page. Written in our words.
+# Also on the site, no feature key for it: virtual games corner (Xbox, Kinect) in the playroom; sandpit,
+# trampoline and garden swing outside; brine pool 40 m², 1.35 m deep (no brodzik); children under 10 get a
+# discount when staying with two full-paying adults; games and animator activities in many packages.
+# Not stated (so not recorded yet): toddler food, potty, playroom hours and minimum age, animation outside
+# packages, lift, parking fee.
+#
+# Coordinates: the hotel's own Google Maps link.
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most one
+#   change, to Władysławowo station. Station -> hotel: ~8 km, ~10 min by car or taxi (OSRM).
+slug = "la-siesta-jastrzebia-gora"
+place = "jastrzebia-gora"
+name = "Hotel La Siesta"
+official_url = "https://www.lasiesta.pl/"
+address = "Droga Rybacka 58, 84-104 Jastrzębia Góra"
+lat = 54.833066  # the hotel's own Google Maps link
+lon = 18.30605
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, paid = true, fee_pln = 15, reservation_required = true }
+short = "15 zł, po wcześniejszej rezerwacji"
+note = "Łóżeczko dla dziecka za 15 zł, po wcześniejszej rezerwacji (warunki rezerwacji; strona nie mówi, czy za dobę, czy za pobyt)."
+source = "hotel_website"
+url = "https://www.lasiesta.pl/warunki-rezerwacji"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "child_free_stay"
+age_band = "0-3"
+value = { free = true, sleeping_with_parents = true, max_children = 1, with_two_full_paying_adults = true, no_services = true }
+short = "Jedno dziecko do 3 lat gratis, bez świadczeń"
+note = "Jedno dziecko do lat 3 śpiące z rodzicami, przy dwóch pełnopłatnych osobach, nocuje bezpłatnie bez świadczeń; drugie dziecko do 3 lat płaci jak dziecko 3–6 lat. Trzeba okazać dokument z wiekiem dziecka."
+source = "hotel_website"
+url = "https://www.lasiesta.pl/warunki-rezerwacji"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "baby_monitor"
+value = { available = true, rental = true }
+short = "Monitor snu do wypożyczenia"
+note = "Zestaw do monitoringu snu dziecka do wypożyczenia. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.lasiesta.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "high_chair"
+value = { available = true }
+short = "Krzesełka dla maluchów"
+note = "Krzesełka dla maluchów."
+source = "hotel_website"
+url = "https://www.lasiesta.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Specjalne menu dla dzieci"
+note = "Specjalne menu dla dzieci. O jedzeniu dla niemowląt strona nie wspomina."
+source = "hotel_website"
+url = "https://www.lasiesta.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true }
+short = "Jest"
+note = "Podgrzewacz do butelek. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.lasiesta.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "baby_bath"
+value = { available = true }
+short = "Jest"
+note = "Wanienka do kąpieli dziecka. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.lasiesta.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "changing_table"
+value = { available = true }
+short = "Jest"
+note = "Przewijak wśród udogodnień dla dzieci."
+source = "hotel_website"
+url = "https://www.lasiesta.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "potty"
+value = { step_stool = true }
+short = "Podest dla dzieci"
+note = "Podest dla dzieci. O nocniku i nakładce strona nie wspomina."
+source = "hotel_website"
+url = "https://www.lasiesta.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playroom"
+value = { available = true, supervised_at_set_hours = true }
+short = "Zjeżdżalnia-latarnia, animator w godzinach"
+note = "Sala zabaw dla maluchów: miękka wykładzina, zjeżdżalnia w kształcie latarni morskiej, mini ścianka, „morze poduszek”; w wyznaczonych godzinach z animatorem. Godzin i minimalnego wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.lasiesta.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "Drabinki, mosty, piaskownica"
+note = "Zewnętrzny plac zabaw z drabinkami i mostami; obok piaskownica, trampolina i huśtawka ogrodowa."
+source = "hotel_website"
+url = "https://www.lasiesta.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { distance_m = 100 }
+short = "Ok. 100 m do plaży"
+note = "Ok. 100 m do plaży."
+source = "hotel_website"
+url = "https://www.lasiesta.pl/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "parking"
+value = { available = true, monitored = true, closed_at_night = true }
+short = "Monitorowany, zamykany na noc"
+note = "Parking hotelowy monitorowany, zamykany na noc. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.lasiesta.pl/warunki-rezerwacji"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 80
+note = "70 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.8331%2C18.3060"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 265
+note = "360 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.8331%2C18.3060"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 300
+note = "410 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.8331%2C18.3060"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 365
+note = "590 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.8331%2C18.3060"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 375
+note = "540 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.8331%2C18.3060"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 410
+note = "660 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.8331%2C18.3060"
+verified_at = 2026-11-07
+
+# --- Access: train to Władysławowo station (rozklad-pkp.pl, 2026-11-12) --------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "train"
+minutes = 78
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 238
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 279
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 382
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 392
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 403
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
