@@ -46,7 +46,7 @@ const clientCats = Object.fromEntries(CATEGORIES.map((c) => [c.id, { color: c.co
           </label>
           {TAGS.filter((t) => t.cat === c.id && tagCount(t.id) > 0).map((t) => (
             <label class="chip chip-tag">
-              <input type="checkbox" name="tag" value={t.id} data-cat={c.id} />
+              <input type="checkbox" name="tag" value={t.id} data-cat={c.id} data-group={t.group} />
               <span>
                 {t.chip} ({tagCount(t.id)})
               </span>
@@ -242,10 +242,17 @@ const clientCats = Object.fromEntries(CATEGORIES.map((c) => [c.id, { color: c.co
   function visible(): MapVenue[] {
     const fd = new FormData(form);
     const cats = new Set(fd.getAll("cat") as string[]);
-    const tags = [...form.querySelectorAll<HTMLInputElement>("input[name=tag]:checked")];
+    // Checked tags per category and group: OR inside a group, AND across groups.
+    const groups = new Map<string, Map<string, string[]>>();
+    for (const t of form.querySelectorAll<HTMLInputElement>("input[name=tag]:checked")) {
+      const byGroup = groups.get(t.dataset.cat!) ?? new Map<string, string[]>();
+      byGroup.set(t.dataset.group!, [...(byGroup.get(t.dataset.group!) ?? []), t.value]);
+      groups.set(t.dataset.cat!, byGroup);
+    }
     return [...markers.values()]
       .map((x) => x.v)
-      .filter((v) => cats.has(v.cat) && tags.every((t) => t.dataset.cat !== v.cat || v.tags.includes(t.value)));
+      .filter((v) => cats.has(v.cat) &&
+        [...(groups.get(v.cat)?.values() ?? [])].every((ids) => ids.some((id) => v.tags.includes(id))));
   }
 
   // 1 miejsce, 2–4 miejsca (but 12–14 miejsc), 5+ miejsc.

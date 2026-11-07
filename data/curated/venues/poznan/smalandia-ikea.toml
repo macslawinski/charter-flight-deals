@@ -11,7 +11,7 @@ address = "ul. Szwedzka 10 (IKEA), Poznań"
 lat = 52.3829292
 lon = 16.9879961
 osm = "node/9945645798"
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "age_range"

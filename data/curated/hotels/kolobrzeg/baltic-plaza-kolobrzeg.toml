@@ -22,7 +22,7 @@ official_url = "https://www.balticplaza.eu/"
 address = "ul. Plażowa 1, 78-100 Kołobrzeg"
 lat = 54.169697  # the hotel's own Google Maps link
 lon = 15.528761
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

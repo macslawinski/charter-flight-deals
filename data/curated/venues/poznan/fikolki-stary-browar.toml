@@ -10,7 +10,7 @@ address = "ul. Półwiejska 42 (Stary Browar), 61-888 Poznań"
 lat = 52.402821
 lon = 16.924838
 osm = "way/1504245766"
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "age_range"

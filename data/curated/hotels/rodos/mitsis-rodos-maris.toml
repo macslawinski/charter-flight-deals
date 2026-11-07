@@ -16,7 +16,7 @@ official_url = "https://www.mitsis.com/en/hotels/rodos-maris"
 address = "Kiotari, 851 09 Rodos"
 lat = 36.054225
 lon = 27.971797
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

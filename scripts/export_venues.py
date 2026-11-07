@@ -1,11 +1,12 @@
-"""Export published open-data venues of one city from the DB to family/src/data/map/<city>.json.
+"""Export published venues of one city (open data + curated) from the DB to family/src/data/map/<city>.json.
 
     python scripts/export_venues.py --city poznan [--database-url URL] [--out PATH]
 
 The family site never reads the DB: its Vercel build reads this committed file. Every fact carries a
 reference (source, exact URL, verified date) so the page can show where it comes from; references are
-deduplicated into `refs` to keep the file small. Source names, licences, attributions and the date of
-the latest successful import come from `data_sources` / `import_runs`. Only status 'published'.
+deduplicated into `refs` to keep the file small. Names, licences, attributions and the date of the
+latest successful import of open-data sources come from `data_sources` / `import_runs` (`sources`);
+curated venues (source 'curated') carry their references per fact. Only status 'published'.
 """
 
 from __future__ import annotations
@@ -31,8 +32,9 @@ OUT_DIR = REPO_ROOT / "family" / "src" / "data" / "map"
 # Site slug -> `venues.locality`. Add a city here when its data is ready.
 CITIES = {"poznan": "Poznań"}
 # Display order of facts on a place card; keys not listed go last, alphabetically.
-FACT_ORDER = ["opening_hours", "access", "price", "equipment", "age_range", "service_mode", "phone",
-              "notes", "managed_by"]
+FACT_ORDER = ["age_range", "toddler_zone", "infant_free", "toddler_classes", "opening_hours", "access",
+              "price", "price_child", "price_adult", "equipment", "socks_required", "cafe", "changing_table",
+              "parking", "supervision", "service_mode", "phone", "notes", "managed_by"]
 
 
 def _order(key: str) -> tuple[int, str]:
@@ -45,8 +47,9 @@ def build(conn: psycopg.Connection[Any], city: str) -> dict[str, Any]:
         """select v.id, v.source_id, v.external_id, v.name, v.address, v.lat::float8, v.lon::float8,
                   v.official_url, v.location_source_url, v.location_verified_at,
                   array(select l.category from venue_category_links l
-                        where l.venue_id = v.id order by l.category)
-           from venues v
+                        where l.venue_id = v.id order by l.category),
+                  s.kind
+           from venues v join data_sources s on s.id = v.source_id
            where v.status = 'published' and v.locality = %s
            order by v.source_id, v.external_id""",
         (locality,),
@@ -72,12 +75,19 @@ def build(conn: psycopg.Connection[Any], city: str) -> dict[str, Any]:
         return ref_ix[key]
 
     out_venues = []
-    for (vid, src, ext, name, address, lat, lon, url, loc_url, loc_verified, cats) in venues:
+    def loc_ref(src: str, kind: str, url: str, verified: Any) -> int:
+        # Open data: the import itself. Curated: the OpenStreetMap object, else the venue's own page.
+        if kind == "open_data":
+            return ref(src, "open_data", url, verified)
+        return ref(None, "osm" if url.startswith("https://www.openstreetmap.org/") else "venue_website",
+                   url, verified)
+
+    for (vid, src, ext, name, address, lat, lon, url, loc_url, loc_verified, cats, kind) in venues:
         vf = sorted(facts.get(vid, []), key=lambda f: (_order(f[0]), f[2] or ""))
         out_venues.append({
             "id": f"{src}:{ext}", "source": src, "name": name, "address": address,
             "lat": lat, "lon": lon, "official_url": url, "categories": list(cats),
-            "location_ref": ref(src, "open_data", loc_url, loc_verified) if loc_url and loc_verified else None,
+            "location_ref": loc_ref(src, kind, loc_url, loc_verified) if loc_url and loc_verified else None,
             "facts": [{"key": k, "value": v, "short": s, "note": n, "to_confirm": ask,
                        "ref": ref(src if t == "open_data" else None, t, u, d)}
                       for (k, v, s, n, t, u, d, ask) in vf],
@@ -95,7 +105,7 @@ def build(conn: psycopg.Connection[Any], city: str) -> dict[str, Any]:
                left join lateral (select data_as_of, finished_at from import_runs i
                                   where i.source_id = s.id and i.status = 'ok'
                                   order by i.finished_at desc limit 1) r on true
-               where s.id = any(%s) order by s.id""",
+               where s.id = any(%s) and s.kind = 'open_data' order by s.id""",
             (used_sources,),
         )
     }

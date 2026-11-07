@@ -14,7 +14,7 @@ official_url = "https://www.hotelsaltic.pl/grzybowo"
 address = "ul. Nadmorska 36C, 78-132 Grzybowo"
 lat = 54.1653895  # from the hotel's own "Wyznacz trasę" map link
 lon = 15.5045583
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

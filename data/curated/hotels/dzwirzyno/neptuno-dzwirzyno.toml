@@ -20,7 +20,7 @@ official_url = "https://www.neptuno.pl/"
 address = "ul. Wyzwolenia 25, 78-131 Dźwirzyno"
 lat = 54.160896  # the hotel's own Google Maps link
 lon = 15.4196
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

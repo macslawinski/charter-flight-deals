@@ -18,7 +18,7 @@ official_url = "https://www.astorhotel.pl/"
 address = "ul. Rozewska 38, 84-104 Jastrzębia Góra"
 lat = 54.8326268  # the hotel's own Google Maps link
 lon = 18.3181304
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

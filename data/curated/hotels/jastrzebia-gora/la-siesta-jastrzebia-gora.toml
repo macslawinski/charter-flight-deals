@@ -18,7 +18,7 @@ official_url = "https://www.lasiesta.pl/"
 address = "Droga Rybacka 58, 84-104 Jastrzębia Góra"
 lat = 54.833066  # the hotel's own Google Maps link
 lon = 18.30605
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

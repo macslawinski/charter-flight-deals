@@ -19,7 +19,7 @@ official_url = "https://www.laola.pl/"
 address = "ul. Grunwaldzka 10, 72-346 Pobierowo"
 lat = 54.056622  # the hotel's own Google Maps link
 lon = 14.914034
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

@@ -19,7 +19,7 @@ official_url = "https://wichrowe.info/"
 address = "ul. Wichrowe Wzgórze 13, 83-333 Chmielno"
 lat = 54.3239062  # OpenStreetMap node/4269538575, ODbL
 lon = 18.100988
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "playroom"

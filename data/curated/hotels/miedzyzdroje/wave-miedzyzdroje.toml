@@ -20,7 +20,7 @@ official_url = "https://wavemiedzyzdroje.pl/"
 address = "ul. Gryfa Pomorskiego 70, 72-500 Międzyzdroje"
 lat = 53.9259392  # OpenStreetMap way/171601784, ODbL
 lon = 14.4337753
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

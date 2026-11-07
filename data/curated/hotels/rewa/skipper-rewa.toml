@@ -19,7 +19,7 @@ official_url = "https://www.hotelskipper.pl/"
 address = "ul. Sztormowa 2, Rewa"  # the site gives no postal code
 lat = 54.6334891  # the hotel's own Google Maps link
 lon = 18.5128921
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

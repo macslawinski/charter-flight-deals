@@ -21,7 +21,7 @@ official_url = "https://dworekmorski.pl/"
 address = "ul. Bolesława Chrobrego, 76-032 Mielno"
 lat = 54.2604914  # OpenStreetMap node/10711674121, ODbL
 lon = 16.0649192
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

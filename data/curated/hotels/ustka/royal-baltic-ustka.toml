@@ -18,7 +18,7 @@ official_url = "https://www.royal-baltic.pl/"
 address = "ul. Wczasowa 26, 76-270 Ustka"
 lat = 54.587365  # the hotel's own Google Maps link
 lon = 16.88368
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

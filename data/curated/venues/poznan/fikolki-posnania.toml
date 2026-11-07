@@ -9,7 +9,7 @@ address = "ul. Pleszewska 1 (Posnania, 2. piętro), 61-136 Poznań"
 lat = 52.398157
 lon = 16.954928
 osm = "node/11048021117"
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "age_range"

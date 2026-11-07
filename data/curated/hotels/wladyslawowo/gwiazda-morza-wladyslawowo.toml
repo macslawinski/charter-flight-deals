@@ -19,7 +19,7 @@ official_url = "https://www.gwiazdamorza.com/"
 address = "ul. Hryniewieckiego 12A, 84-120 Władysławowo"
 lat = 54.798257  # OpenStreetMap way/166342506 (Nominatim), ODbL
 lon = 18.4078115
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

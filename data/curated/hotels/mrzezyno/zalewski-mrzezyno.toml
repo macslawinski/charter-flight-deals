@@ -21,7 +21,7 @@ official_url = "https://www.hotelzalewski.pl/"
 address = "ul. Nadmorska 13, 72-330 Mrzeżyno"
 lat = 54.1468353  # the hotel's own Google Maps link
 lon = 15.3015099
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "playroom"

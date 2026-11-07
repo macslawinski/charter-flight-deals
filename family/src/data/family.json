@@ -1850,7 +1850,7 @@
    "official_url": "https://hotel77.pl/",
    "place": "chalupy",
    "slug": "hotel-77-chalupy",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -2109,7 +2109,7 @@
    "official_url": "https://hotelnotera.pl/",
    "place": "charzykowy",
    "slug": "notera-charzykowy",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -2300,7 +2300,7 @@
    "official_url": "https://wichrowe.info/",
    "place": "chmielno",
    "slug": "wichrowe-wzgorze-chmielno",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -2589,7 +2589,7 @@
    "official_url": "https://www.hotel-lidia.pl/",
    "place": "darlowo",
    "slug": "lidia-spa-darlowo",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -2824,7 +2824,7 @@
    "official_url": "https://gorzelanny.pl/hotel-dzwirzyno/",
    "place": "dzwirzyno",
    "slug": "gorzelanny-dzwirzyno",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -3131,7 +3131,7 @@
    "official_url": "https://www.havethotel.pl/",
    "place": "dzwirzyno",
    "slug": "havet-dzwirzyno",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -3408,7 +3408,7 @@
    "official_url": "https://www.neptuno.pl/",
    "place": "dzwirzyno",
    "slug": "neptuno-dzwirzyno",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -3656,7 +3656,7 @@
    "official_url": "https://www.granohotels.pl/grano-life-gdansk",
    "place": "gdansk",
    "slug": "grano-life-gdansk",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -3909,7 +3909,7 @@
    "official_url": "https://hotelplatan.gda.pl/",
    "place": "gdansk",
    "slug": "platan-gdansk",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -4128,7 +4128,7 @@
    "official_url": "https://www.zamek-gniew.pl/",
    "place": "gniew",
    "slug": "zamek-gniew",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -4469,7 +4469,7 @@
    "official_url": "https://www.hotelsaltic.pl/grzybowo",
    "place": "grzybowo",
    "slug": "saltic-resort-spa-grzybowo",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -4675,7 +4675,7 @@
    "official_url": "https://hoteljastarnia.com.pl/",
    "place": "jastarnia",
    "slug": "hotel-jastarnia",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -4935,7 +4935,7 @@
    "official_url": "https://www.astorhotel.pl/",
    "place": "jastrzebia-gora",
    "slug": "astor-jastrzebia-gora",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -5238,7 +5238,7 @@
    "official_url": "https://www.lasiesta.pl/",
    "place": "jastrzebia-gora",
    "slug": "la-siesta-jastrzebia-gora",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -5512,7 +5512,7 @@
    "official_url": "https://www.primaveraspa.pl/",
    "place": "jastrzebia-gora",
    "slug": "primavera-jastrzebia-gora",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -5745,7 +5745,7 @@
    "official_url": "https://www.hotel-jurata.com.pl/pl/",
    "place": "jurata",
    "slug": "best-western-jurata",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -5953,7 +5953,7 @@
    "official_url": "https://hotelkaszuby.pl/",
    "place": "kartuzy",
    "slug": "milosz-kartuzy",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -6120,7 +6120,7 @@
    "official_url": "https://www.hotel-podorlem.com/",
    "place": "kartuzy",
    "slug": "pod-orlem-kartuzy",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -6302,7 +6302,7 @@
    "official_url": "https://www.hotelkiston.pl/",
    "place": "kistowo",
    "slug": "kiston-kistowo",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -6611,7 +6611,7 @@
    "official_url": "https://www.aquariusspa.pl/",
    "place": "kolobrzeg",
    "slug": "aquarius-spa-kolobrzeg",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -6831,7 +6831,7 @@
    "official_url": "https://www.balticplaza.eu/",
    "place": "kolobrzeg",
    "slug": "baltic-plaza-kolobrzeg",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -7091,7 +7091,7 @@
    "official_url": "https://www.blueandgreenhotels.pl/morze",
    "place": "kolobrzeg",
    "slug": "blue-green-baltic-kolobrzeg",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -7339,7 +7339,7 @@
    "official_url": "https://hoteldivaspa.pl/",
    "place": "kolobrzeg",
    "slug": "diva-spa-kolobrzeg",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -7617,7 +7617,7 @@
    "official_url": "https://www.factoryresort.pl/",
    "place": "kolobrzeg",
    "slug": "factory-resort-kolobrzeg",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -7879,7 +7879,7 @@
    "official_url": "https://seasidepark.pl/",
    "place": "kolobrzeg",
    "slug": "seaside-park-kolobrzeg",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -8017,7 +8017,7 @@
    "official_url": "https://www.lyttosbeach.gr/",
    "place": "kreta-heraklion",
    "slug": "lyttos-beach",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -8197,7 +8197,7 @@
    "official_url": "https://www.mitsis.com/en/hotels/rinela-beach",
    "place": "kreta-heraklion",
    "slug": "mitsis-selection-rinela",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -8412,7 +8412,7 @@
    "official_url": "https://www.hotelleba.com.pl/",
    "place": "leba",
    "slug": "leba-hotel-spa",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -8564,7 +8564,7 @@
    "official_url": "https://www.hotelnadmorskileba.pl/",
    "place": "leba",
    "slug": "nadmorski-leba",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -8762,7 +8762,7 @@
    "official_url": "https://wodnikleba.pl/",
    "place": "leba",
    "slug": "wodnik-leba",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -8973,7 +8973,7 @@
    "official_url": "https://www.hotelwolin.pl/",
    "place": "miedzyzdroje",
    "slug": "hotel-wolin-miedzyzdroje",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -9177,7 +9177,7 @@
    "official_url": "https://www.hotel-trofana.pl/",
    "place": "miedzyzdroje",
    "slug": "trofana-miedzyzdroje",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -9398,7 +9398,7 @@
    "official_url": "https://wavemiedzyzdroje.pl/",
    "place": "miedzyzdroje",
    "slug": "wave-miedzyzdroje",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -9645,7 +9645,7 @@
    "official_url": "https://dworekmorski.pl/",
    "place": "mielno",
    "slug": "dworek-morski-mielno",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -9946,7 +9946,7 @@
    "official_url": "https://www.unitral.pl/",
    "place": "mielno",
    "slug": "unitral-mielno",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -10111,7 +10111,7 @@
    "official_url": "https://www.hotelzalewski.pl/",
    "place": "mrzezyno",
    "slug": "zalewski-mrzezyno",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -10319,7 +10319,7 @@
    "official_url": "https://www.amber-park.pl/",
    "place": "niechorze",
    "slug": "amber-park-niechorze",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -10516,7 +10516,7 @@
    "official_url": "https://www.laola.pl/",
    "place": "pobierowo",
    "slug": "grand-laola-pobierowo",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -10774,7 +10774,7 @@
    "official_url": "https://www.lineamare.pl/",
    "place": "pobierowo",
    "slug": "linea-mare-pobierowo",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -10957,7 +10957,7 @@
    "official_url": "https://www.sandraspa.pl/",
    "place": "pogorzelica",
    "slug": "sandra-spa-pogorzelica",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -11140,7 +11140,7 @@
    "official_url": "https://www.hotelriverstyle.pl/",
    "place": "reda",
    "slug": "river-style-reda",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -11348,7 +11348,7 @@
    "official_url": "https://www.hotelskipper.pl/",
    "place": "rewa",
    "slug": "skipper-rewa",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -11552,7 +11552,7 @@
    "official_url": "https://www.mitsis.com/en/hotels/rodos-maris",
    "place": "rodos",
    "slug": "mitsis-rodos-maris",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -11707,7 +11707,7 @@
    "official_url": "https://www.mitsis.com/en/hotels/rodos-village",
    "place": "rodos",
    "slug": "mitsis-rodos-village",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -11994,7 +11994,7 @@
    "official_url": "https://www.hotel-faltom.com.pl/",
    "place": "rumia",
    "slug": "faltom-rumia",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -12252,7 +12252,7 @@
    "official_url": "https://imperiall.pl/",
    "place": "sianozety",
    "slug": "imperiall-sianozety",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -12496,7 +12496,7 @@
    "official_url": "https://villabaltica.com/",
    "place": "sopot",
    "slug": "villa-baltica-sopot",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -12828,7 +12828,7 @@
    "official_url": "https://www.dolinacharlotty.pl/",
    "place": "strzelinko",
    "slug": "dolina-charlotty-strzelinko",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -13044,7 +13044,7 @@
    "official_url": "https://www.cesarskieogrody.pl/",
    "place": "swinoujscie",
    "slug": "cesarskie-ogrody-swinoujscie",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -13295,7 +13295,7 @@
    "official_url": "https://villahoff.pl/",
    "place": "trzesacz",
    "slug": "villa-hoff-trzesacz",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -13474,7 +13474,7 @@
    "official_url": "https://forestustka.pl/",
    "place": "ustka",
    "slug": "forest-family-resort-ustka",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -13780,7 +13780,7 @@
    "official_url": "https://www.grandlubicz.pl/",
    "place": "ustka",
    "slug": "grand-lubicz-ustka",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -13991,7 +13991,7 @@
    "official_url": "https://www.hotel-ustka.eu/",
    "place": "ustka",
    "slug": "hotel-ustka",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -14225,7 +14225,7 @@
    "official_url": "https://jantar-ustka.pl/",
    "place": "ustka",
    "slug": "jantar-ustka",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -14445,7 +14445,7 @@
    "official_url": "https://www.hotel-lubicz.pl/",
    "place": "ustka",
    "slug": "lubicz-ustka",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -14768,7 +14768,7 @@
    "official_url": "https://www.royal-baltic.pl/",
    "place": "ustka",
    "slug": "royal-baltic-ustka",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -14984,7 +14984,7 @@
    "official_url": "https://www.wodnik.pl/",
    "place": "ustronie-morskie",
    "slug": "wodnik-ustronie-morskie",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -15267,7 +15267,7 @@
    "official_url": "https://www.gwiazdamorza.com/",
    "place": "wladyslawowo",
    "slug": "gwiazda-morza-wladyslawowo",
-   "status": "draft"
+   "status": "published"
   }
  ],
  "places": [
@@ -15683,7 +15683,7 @@
    "official_url": "https://bawialniabawimy.pl/",
    "osm": "node/12545941282",
    "slug": "bawimy-jezyce",
-   "status": "draft"
+   "status": "published"
   },
   {
    "address": "ul. Smardzewska, 60-161 Poznań",
@@ -15728,7 +15728,7 @@
    "official_url": "https://www.centrummadagaskar.pl/",
    "osm": "way/165076478",
    "slug": "madagaskar",
-   "status": "draft"
+   "status": "published"
   },
   {
    "address": "ul. Pleszewska 1 (Posnania, 2. piętro), 61-136 Poznań",
@@ -15844,7 +15844,7 @@
    "official_url": "https://fikolki.pl/ch-posnania-poznan/",
    "osm": "node/11048021117",
    "slug": "fikolki-posnania",
-   "status": "draft"
+   "status": "published"
   },
   {
    "address": "ul. Półwiejska 42 (Stary Browar), 61-888 Poznań",
@@ -15972,7 +15972,7 @@
    "official_url": "https://fikolki.pl/stary-browar/",
    "osm": "way/1504245766",
    "slug": "fikolki-stary-browar",
-   "status": "draft"
+   "status": "published"
   },
   {
    "address": "ul. Bolesława Krzywoustego 68 (Giant Meble), Poznań",
@@ -16098,7 +16098,7 @@
    "official_url": "https://krainapiratow.pl/",
    "osm": "node/1982842819",
    "slug": "kraina-piratow",
-   "status": "draft"
+   "status": "published"
   },
   {
    "address": "ul. Stanisława Barańczaka 1/47 LU3, 60-537 Poznań",
@@ -16211,7 +16211,7 @@
    "official_url": "https://bawialniamlecz.pl/",
    "osm": "node/12492719739",
    "slug": "mlecz",
-   "status": "draft"
+   "status": "published"
   },
   {
    "address": "ul. Szwedzka 10 (IKEA), Poznań",
@@ -16282,7 +16282,7 @@
    "official_url": "https://www.ikea.com/pl/pl/stores/poznan/",
    "osm": "node/9945645798",
    "slug": "smalandia-ikea",
-   "status": "draft"
+   "status": "published"
   }
  ]
 }

@@ -4,7 +4,8 @@
     python -m ingest.curated [--database-url URL]
 
 The files are the source of truth: a run replaces places, hotels (with their features and access
-times) and child rules with what the files say. Validation is strict and fails loudly, because a
+times) and child rules with what the files say, and upserts venues (source 'curated') into
+venues / venue_facts; a venue whose file is gone becomes 'retired'. Validation is strict and fails loudly, because a
 wrong fee or a "verified" fact without a source is worse for a parent than a missing one.
 """
 
@@ -45,8 +46,16 @@ RULE_KEYS = {
     "infant_baggage", "child_baggage", "child_fare", "child_seating",
 }
 ACCESS_CITIES = {"Warszawa", "Poznań", "Gdańsk", "Wrocław", "Kraków", "Katowice"}
-# Indoor playgrounds ("bawialnie"): TOML + site only for now, no DB table yet (PLAN.md 3a).
+# Indoor playgrounds ("bawialnie"): loaded into venues / venue_facts (013) under source 'curated'.
 VENUE_CITIES = {"poznan": "Poznań"}
+VENUE_SOURCE_ID = "curated"
+VENUE_CATEGORY = "sala_zabaw"  # every curated venue is an indoor playground for now
+# age_band -> (age_min_months, age_max_months) for venue_facts; None = open end.
+BAND_MONTHS: dict[str, tuple[int | None, int | None]] = {
+    "0-1": (0, 12), "0-2": (0, 24), "1-2": (12, 24), "2-3": (24, 36), "0-3": (0, 36),
+    "2+": (24, None), "3+": (36, None),
+}
+CARD_SHORT_MAX = 80  # venue_facts.short_pl check
 VENUE_KEYS = {
     "age_range", "toddler_zone", "infant_free", "price_child", "price_adult", "opening_hours",
     "cafe", "parking", "socks_required", "supervision", "toddler_classes", "changing_table",
@@ -197,6 +206,14 @@ def _fact(d: Any, where: str, keys: set[str], sources: set[str] = SOURCES) -> Fa
                 source, url, verified, to_confirm, short)
 
 
+def card_short(f: Fact) -> str:
+    """One-line headline: the curated `short`, else the note's first sentence (as family/src/lib/data.ts)."""
+    if f.short:
+        return f.short
+    m = re.match(r"^.*?[.!?](\s|$)", f.note or "")
+    return (m.group(0) if m else f.note or "").strip()
+
+
 def _access(d: Any, where: str) -> Access:
     if not isinstance(d, dict):
         raise CuratedError(f"{where}: expected a table")
@@ -320,6 +337,16 @@ def load(root: Path = CURATED) -> Curated:
         feats = [_fact(f, f"{where} feature[{i}]", VENUE_KEYS, VENUE_SOURCES)
                  for i, f in enumerate(v.get("feature", []))]
         _unique(feats, lambda f: (f.key, f.age_band), where)
+        if not feats:
+            raise CuratedError(f"{where}: a venue needs at least one feature")
+        for f in feats:  # venue_facts constraints, checked here so a bad file fails before any write
+            if f.url is None:
+                raise CuratedError(f"{where} {f.key}: venue facts need a url")
+            if not 1 <= len(card_short(f)) <= CARD_SHORT_MAX:
+                raise CuratedError(f"{where} {f.key}: needs 'short' or a 'note' with a first sentence "
+                                   f"of 1-{CARD_SHORT_MAX} chars")
+        if osm is None and _get(v, "official_url", str, where, required=False) is None:
+            raise CuratedError(f"{where}: a venue needs 'osm' or 'official_url' (location source)")
         venues.append(Venue(
             slug=_slug(_get(v, "slug", str, where), where), city=city,
             name=_get(v, "name", str, where), status=status,
@@ -380,7 +407,61 @@ def save(conn: psycopg.Connection[Any], data: Curated) -> dict[str, int]:
             )
             n_rules += 1
     return {"places": len(data.places), "hotels": len(data.hotels), "features": n_feat,
-            "access": n_acc, "child_rules": n_rules}
+            "access": n_acc, "child_rules": n_rules, **save_venues(conn, data.venues)}
+
+
+def save_venues(conn: psycopg.Connection[Any], venues: tuple[Venue, ...],
+                today: date | None = None) -> dict[str, int]:
+    """Upsert curated venues on (source 'curated', slug) and replace their facts and category.
+
+    Venues are keyed rows shared with open data (ids may be referenced later), so they are upserted,
+    not deleted: a file that disappears turns its venue 'retired'. Status always comes from the file.
+    """
+    today = today or date.today()
+    n_facts = 0
+    for v in venues:
+        loc_url = f"https://www.openstreetmap.org/{v.osm}" if v.osm else v.official_url
+        row = conn.execute(
+            """insert into venues (source_id, external_id, slug, name, locality, address, lat, lon,
+                   official_url, location_source_url, location_verified_at, first_seen_at, last_seen_at,
+                   status)
+               values (%(src)s, %(slug)s, %(slug)s, %(name)s, %(loc)s, %(addr)s, %(lat)s, %(lon)s,
+                       %(url)s, %(loc_url)s, %(loc_at)s, %(today)s, %(today)s, %(status)s)
+               on conflict (source_id, external_id) do update set
+                   slug = excluded.slug, name = excluded.name, locality = excluded.locality,
+                   address = excluded.address, lat = excluded.lat, lon = excluded.lon,
+                   official_url = excluded.official_url,
+                   location_source_url = excluded.location_source_url,
+                   location_verified_at = excluded.location_verified_at,
+                   last_seen_at = excluded.last_seen_at, status = excluded.status
+               returning id""",
+            {"src": VENUE_SOURCE_ID, "slug": v.slug, "name": v.name, "loc": VENUE_CITIES[v.city],
+             "addr": v.address, "lat": v.lat, "lon": v.lon, "url": v.official_url, "loc_url": loc_url,
+             # the location was read when the venue was first curated: the oldest fact date
+             "loc_at": min(f.verified_at for f in v.features), "today": today, "status": v.status},
+        ).fetchone()
+        assert row is not None
+        vid = row[0]
+        conn.execute("delete from venue_category_links where venue_id = %s", (vid,))
+        conn.execute("insert into venue_category_links (venue_id, category) values (%s, %s)",
+                     (vid, VENUE_CATEGORY))
+        conn.execute("delete from venue_facts where venue_id = %s", (vid,))
+        for f in v.features:
+            age_min, age_max = BAND_MONTHS[f.age_band] if f.age_band else (None, None)
+            conn.execute(
+                """insert into venue_facts (venue_id, fact_key, age_min_months, age_max_months, value,
+                       short_pl, note_pl, source_type, source_url, verified_at, to_confirm)
+                   values (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)""",
+                (vid, f.key, age_min, age_max, Jsonb(f.value), card_short(f), f.note, f.source, f.url,
+                 f.verified_at, f.to_confirm),
+            )
+        n_facts += len(v.features)
+    retired = conn.execute(
+        """update venues set status = 'retired'
+           where source_id = %s and status <> 'retired' and not (external_id = any(%s))""",
+        (VENUE_SOURCE_ID, [v.slug for v in venues]),
+    ).rowcount
+    return {"venues": len(venues), "venue_facts": n_facts, "venues_retired": retired}
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -395,7 +476,7 @@ def main(argv: list[str] | None = None) -> int:
     except CuratedError as e:
         log.error("invalid curated data: %s", e)
         return 1
-    log.info("valid: %d places, %d hotels, %d carriers with rules, %d venues (site only)",
+    log.info("valid: %d places, %d hotels, %d carriers with rules, %d venues",
              len(data.places), len(data.hotels), len(data.carriers), len(data.venues))
     if args.dry_run:
         return 0

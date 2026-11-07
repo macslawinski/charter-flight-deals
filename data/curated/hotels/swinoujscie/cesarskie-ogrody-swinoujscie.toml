@@ -21,7 +21,7 @@ official_url = "https://www.cesarskieogrody.pl/"
 address = "ul. Stanisława Wyspiańskiego 34a, 72-600 Świnoujście"
 lat = 53.915938  # OpenStreetMap node/1668472169, ODbL
 lon = 14.238966
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

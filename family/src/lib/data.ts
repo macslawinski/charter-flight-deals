@@ -295,8 +295,9 @@ export const VENUE_ORDER = [
 ];
 
 // A venue is "for the youngest" only when its own site says so, never by guess.
-export function forToddlers(v: Venue): boolean {
-  return v.features.some((f) => {
+export const forToddlers = (v: Venue) => toddlerFacts(v.features);
+export function toddlerFacts(facts: { key: string; value: Value }[]): boolean {
+  return facts.some((f) => {
     if (["toddler_zone", "infant_free", "toddler_classes"].includes(f.key)) return true;
     if (f.key === "age_range") return f.value.min === "infant" || f.value.min_years === 0;
     return false;

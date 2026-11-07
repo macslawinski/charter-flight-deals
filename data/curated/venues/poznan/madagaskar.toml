@@ -9,7 +9,7 @@ address = "ul. Smardzewska, 60-161 Poznań"
 lat = 52.389891
 lon = 16.859353
 osm = "way/165076478"
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "price_child"

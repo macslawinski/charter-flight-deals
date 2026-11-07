@@ -19,7 +19,7 @@ official_url = "https://www.hotelwolin.pl/"
 address = "ul. Nowomyśliwska 76, 72-500 Międzyzdroje"
 lat = 53.921420  # OpenStreetMap relation/20639286 centre, ODbL
 lon = 14.437879
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

@@ -19,7 +19,7 @@ official_url = "https://www.hotelkiston.pl/"
 address = "Kistowo 26, 83-320 Sulęczyno"
 lat = 54.272049  # the hotel's own map link
 lon = 17.7491398
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

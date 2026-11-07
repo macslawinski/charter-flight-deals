@@ -9,7 +9,7 @@ address = "ul. Bolesława Krzywoustego 68 (Giant Meble), Poznań"
 lat = 52.377095
 lon = 16.979014
 osm = "node/1982842819"
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "age_range"

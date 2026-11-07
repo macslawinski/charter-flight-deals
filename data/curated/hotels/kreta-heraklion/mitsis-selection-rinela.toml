@@ -18,7 +18,7 @@ official_url = "https://www.mitsis.com/en/hotels/rinela-beach"
 address = "Kokkini Hani, 715 00 Kreta"
 lat = 35.330857
 lon = 25.263414
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

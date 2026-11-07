@@ -72,8 +72,8 @@ def test_duplicate_fact_is_rejected(tree):
 
 def test_unknown_field_is_rejected(tree):
     path = _hotel_file(tree)
-    path.write_text(path.read_text(encoding="utf-8").replace('status = "draft"',
-                                                             'status = "draft"\nstars = 5'),
+    path.write_text(path.read_text(encoding="utf-8").replace('status = "published"',
+                                                             'status = "published"\nstars = 5'),
                     encoding="utf-8")
     with pytest.raises(CuratedError, match="unknown field"):
         curated.load(tree)
@@ -152,3 +152,43 @@ def test_save_round_trip(db):  # noqa: F811
     assert db.execute("""select r.value->>'amount_eur' from child_rules r
                          where r.carrier_iata = 'FR' and r.rule_key = 'infant_fee'""").fetchone() == ("25",)
     assert curated.save(db, data) == counts  # idempotent: files are the source of truth
+
+
+def test_venues_round_trip_and_retire(db):  # noqa: F811
+    data = curated.load()
+    counts = curated.save_venues(db, data.venues)
+    assert counts == {"venues": len(data.venues), "venue_facts": sum(len(v.features) for v in data.venues),
+                      "venues_retired": 0}
+    row = db.execute(
+        """select v.source_id, v.external_id, v.locality, v.status, v.location_source_url,
+                  array(select category from venue_category_links where venue_id = v.id)
+           from venues v where v.slug = 'mlecz'""").fetchone()
+    assert row == ("curated", "mlecz", "Poznań", "published",
+                   "https://www.openstreetmap.org/node/12492719739", ["sala_zabaw"])
+    # age_band "0-1" lands in the numeric month columns; to_confirm and the source survive.
+    assert db.execute(
+        """select f.age_min_months, f.age_max_months, f.to_confirm, f.source_type::text, f.short_pl
+           from venue_facts f join venues v on v.id = f.venue_id
+           where v.slug = 'mlecz' and f.fact_key = 'infant_free'""").fetchone() == (
+        0, 12, True, "venue_website", "Niemowlęta taniej: 6–12 mies. −50%")
+    first_id = db.execute("select id from venues where slug = 'mlecz'").fetchone()
+    # A removed file retires its venue (never deletes it); the others keep their ids.
+    rest = tuple(v for v in data.venues if v.slug != "mlecz")
+    assert curated.save_venues(db, rest)["venues_retired"] == 1
+    assert db.execute("select id, status from venues where slug = 'mlecz'").fetchone() == (*first_id, "retired")
+    curated.save_venues(db, data.venues)
+    assert db.execute("select status from venues where slug = 'mlecz'").fetchone() == ("published",)
+
+
+def test_card_short_falls_back_to_first_sentence():
+    f = curated.Fact("cafe", None, {}, "Kawiarnia jest. Druga część.", "venue_website", "https://x.pl",
+                     curated.date(2026, 11, 4), False)
+    assert curated.card_short(f) == "Kawiarnia jest."
+
+
+def test_venue_fact_without_url_is_rejected(tree):
+    path = tree / "venues" / "poznan" / "mlecz.toml"
+    _append(path, '\n[[feature]]\nkey = "parking"\nvalue = { available = true }\nshort = "Parking"\n'
+                  'source = "own_visit"\nverified_at = 2026-11-04\n')
+    with pytest.raises(CuratedError, match="need a url"):
+        curated.load(tree)

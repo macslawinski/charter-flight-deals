@@ -69,6 +69,22 @@ def test_build_exports_published_city_venues_with_refs(conn: psycopg.Connection[
     assert json.loads(export_venues.render(doc)) == doc
 
 
+def test_build_includes_curated_venues_with_their_own_refs(conn: psycopg.Connection[Any]) -> None:
+    from ingest import curated
+
+    data = curated.load()
+    curated.save_venues(conn, data.venues, today=date(2026, 11, 7))
+    doc = export_venues.build(conn, "poznan")
+    mlecz = next(v for v in doc["venues"] if v["id"] == "curated:mlecz")
+    assert mlecz["categories"] == ["sala_zabaw"] and mlecz["facts"][0]["key"] == "age_range"
+    loc = doc["refs"][mlecz["location_ref"]]
+    assert loc == {"src": None, "type": "osm", "url": "https://www.openstreetmap.org/node/12492719739",
+                   "verified_at": "2026-11-04"}
+    assert {doc["refs"][f["ref"]]["type"] for f in mlecz["facts"]} == {"venue_website"}
+    assert "curated" not in doc["sources"]                 # the site lists open-data sources only
+    assert {"infant_free", "price_child", "socks_required"} <= set(doc["fact_labels"])
+
+
 def _committed() -> dict[str, Any]:
     if not COMMITTED.exists():
         pytest.skip("no committed map export yet")
@@ -85,7 +101,7 @@ def test_committed_export_is_consistent() -> None:
     ids = [v["id"] for v in doc["venues"]]
     assert len(ids) == len(set(ids))
     for v in doc["venues"]:
-        assert v["source"] in doc["sources"]
+        assert v["source"] in doc["sources"] or v["source"] == "curated"
         assert v["categories"] and set(v["categories"]) <= set(doc["categories"])
         assert v["lat"] is None or 52.2 < v["lat"] < 52.6
         for f in v["facts"]:

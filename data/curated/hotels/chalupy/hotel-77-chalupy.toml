@@ -16,7 +16,7 @@ official_url = "https://hotel77.pl/"
 address = "ul. Kaperska 77, 84-120 Chałupy"
 lat = 54.7573703  # OpenStreetMap way/167246980, ODbL
 lon = 18.5162856
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

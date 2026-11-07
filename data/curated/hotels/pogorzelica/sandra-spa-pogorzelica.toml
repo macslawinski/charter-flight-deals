@@ -22,7 +22,7 @@ official_url = "https://www.sandraspa.pl/"
 address = "ul. Wojska Polskiego 3, 72-351 Pogorzelica"
 lat = 54.095701  # the hotel's own Google Maps link
 lon = 15.1042383
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "playroom"

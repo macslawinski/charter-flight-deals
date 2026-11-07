@@ -19,7 +19,7 @@ official_url = "https://www.amber-park.pl/"
 address = "ul. Zaciszna 8, 72-350 Niechorze"
 lat = 54.089829  # the hotel's own Google Maps link
 lon = 15.056328
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "playroom"

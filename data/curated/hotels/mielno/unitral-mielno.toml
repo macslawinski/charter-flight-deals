@@ -21,7 +21,7 @@ official_url = "https://www.unitral.pl/"
 address = "ul. Piastów 6, 76-032 Mielno"
 lat = 54.260693  # from the hotel's own Google Maps link
 lon = 16.057715
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

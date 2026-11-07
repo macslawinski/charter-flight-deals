@@ -1,8 +1,8 @@
-// City map ("Gdzie z dzieckiem"): open-data venues from src/data/map/<city>.json (written by
-// scripts/export_venues.py from the DB) plus the curated indoor playgrounds from family.json.
-// Everything is resolved at build time into one compact payload for the client-side map; a
-// category, tag or source without a label here fails the build.
-import { data, forToddlers, plDate, short, sourceLabel, venueLabel, type Value } from "./data";
+// City map ("Gdzie z dzieckiem"): open-data and curated venues from src/data/map/<city>.json
+// (written by scripts/export_venues.py from the DB). Everything is resolved at build time into one
+// compact payload for the client-side map; a category, tag or source without a label here fails
+// the build.
+import { plDate, sourceLabel, toddlerFacts, type Value } from "./data";
 
 interface ExportRef {
   src: string | null;
@@ -73,17 +73,19 @@ export const CATEGORIES: { id: string; chip: string; color: string; radius: numb
 const CAT_IDS = CATEGORIES.map((c) => c.id);
 
 // Narrowing filters inside one category. Ids are stable (they may go into the URL later).
-export const TAGS: { id: string; cat: string; chip: string; test: (facts: ExportFact[]) => boolean }[] = [
-  { id: "unrestricted", cat: "plac_zabaw", chip: "Dostęp bez ograniczeń",
+// Checked tags of the same group are OR-ed ("tyrolka or pumptrack"), different groups are AND-ed
+// ("unrestricted access and any of the chosen equipment").
+export const TAGS: { id: string; cat: string; group: string; chip: string; test: (facts: ExportFact[]) => boolean }[] = [
+  { id: "unrestricted", cat: "plac_zabaw", group: "access", chip: "Dostęp bez ograniczeń",
     test: (fs) => fs.some((f) => f.key === "access" && f.value.unrestricted === true) },
   ...(
     [["zipline", "Tyrolka"], ["rope_course", "Elementy linowe"], ["natural", "Plac naturalny"],
      ["pumptrack", "Pumptrack"]] as const
   ).map(([id, chip]) => ({
-    id, cat: "plac_zabaw", chip,
+    id, cat: "plac_zabaw", group: "equipment", chip,
     test: (fs: ExportFact[]) => fs.some((f) => f.key === "equipment" && f.value[id] === true),
   })),
-  { id: "toddler", cat: "sala_zabaw", chip: "Z ofertą dla 0–3 lat", test: () => false }, // curated venues: set from forToddlers() in cityMap()
+  { id: "toddler", cat: "sala_zabaw", group: "age", chip: "Z ofertą dla 0–3 lat", test: toddlerFacts },
 ];
 
 export interface MapRef {
@@ -128,7 +130,8 @@ export function cityMap(ex: CityExport): MapPayload {
     }
     return seen.get(key)!;
   };
-  // Open data: "publisher, data z <data_as_of>, pobrane <date>". Curated: "strona bawialni, sprawdzone <date>".
+  // Open data: "publisher, data z <data_as_of>, pobrane <date>". Curated: "strona bawialni, sprawdzone <date>"
+  // (location: "OpenStreetMap, sprawdzone <date>").
   const openRef = (r: ExportRef) => {
     if (r.type !== "open_data" || !r.src) return ref(`${sourceLabel(r.type)}, sprawdzone ${plDate(r.verified_at)}`, r.url);
     const asOf = must(ex.sources, r.src, "source").data_as_of;
@@ -159,28 +162,6 @@ export function cityMap(ex: CityExport): MapPayload {
       }),
     };
   });
-
-  // Curated indoor playgrounds of this city (facts from the venues' own websites).
-  for (const v of data.venues.filter((x) => x.city === ex.city)) {
-    venues.push({
-      id: `curated:${v.slug}`,
-      name: v.name,
-      address: v.address,
-      lat: v.lat,
-      lon: v.lon,
-      cat: "sala_zabaw",
-      tags: forToddlers(v) ? ["toddler"] : [],
-      url: v.official_url,
-      loc: v.osm ? ref("OpenStreetMap", `https://www.openstreetmap.org/${v.osm}`) : null,
-      facts: v.features.map((f) => ({
-        label: venueLabel(f.key),
-        short: short(f),
-        note: f.note,
-        ask: f.to_confirm,
-        ref: ref(`${sourceLabel(f.source)}, sprawdzone ${plDate(f.verified_at)}`, f.url),
-      })),
-    });
-  }
   return { center: must(CENTERS, ex.city, "map centre"), refs, venues };
 }
 

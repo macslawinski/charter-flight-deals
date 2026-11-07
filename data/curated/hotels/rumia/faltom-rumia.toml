@@ -19,7 +19,7 @@ official_url = "https://www.hotel-faltom.com.pl/"
 address = "ul. Grunwaldzka 7, 84-230 Rumia"
 lat = 54.5726313  # OpenStreetMap node/5421282803, ODbL
 lon = 18.3832129
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"
