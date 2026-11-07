@@ -105,7 +105,7 @@ lat = 54.6984941
 lon = 18.6760641
 signals = ["kącik zabaw", "łóżeczko", "plac zabaw"]
 why = "Strona dla dzieci: kącik zabaw (z regulaminem), plac zabaw, łóżeczko."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Astor"
@@ -153,7 +153,7 @@ lat = 54.6805485
 lon = 18.7223537
 signals = ["łóżeczko", "krzesełko", "wanienka", "sala zabaw", "do 3 lat gratis"]
 why = "Strona dla dzieci: łóżeczka, wysokie krzesełka, wanienki, sala zabaw; do 3 lat nocleg ze śniadaniem gratis."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Miłosz"
@@ -213,7 +213,7 @@ lat = 54.7654019
 lon = 17.5735776
 signals = ["wanienka", "podgrzewacz", "brodzik", "kids klub"]
 why = "Bezpłatnie na życzenie: wanienka, nakładka, podest, podgrzewacz do butelek i słoików; Kids Klub, brodzik."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Nadmorski"
@@ -225,7 +225,7 @@ lat = 54.7653579
 lon = 17.5720123
 signals = ["łóżeczko", "wanienka", "krzesełko", "pokój zabaw"]
 why = "Bezpłatnie na życzenie: wanienki, łóżeczka turystyczne, krzesełka; pokój zabaw z małpim gajem."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Villa Verdi Pleasure & SPA"
