@@ -16,7 +16,7 @@ lat = 54.4376126
 lon = 16.3770613
 signals = ["łóżeczko", "wanienka", "podgrzewacz", "przewijak", "krzesełko", "brodzik", "sala zabaw"]
 why = "Wanienka, podgrzewacz, przewijak i krzesełko bezpłatnie; łóżeczko 30 zł/noc; osobny brodzik dla najmłodszych; sala zabaw."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Gorzelanny"
@@ -199,7 +199,7 @@ lat = 54.2604655
 lon = 16.0574404
 signals = ["łóżeczko", "wanienka", "podgrzewacz", "przewijak", "krzesełko", "brodzik"]
 why = "Łóżeczko (płatne), wanienka, podgrzewacz, przewijak na życzenie; krzesełka; strefa brodzika dla najmłodszych."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Zalewski"
@@ -248,7 +248,7 @@ lat = 54.055264
 lon = 14.9179599
 signals = ["łóżeczko", "wanienka", "nocnik", "podgrzewacz", "krzesełko", "brodzik"]
 why = "Wanienki, nocniki, podgrzewacze bezpłatnie; łóżeczko płatne; krzesełka; brodziki przy basenie wewnętrznym i zewnętrznym."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Sandra SPA"
@@ -296,7 +296,7 @@ lat = 54.0769361
 lon = 14.9941445
 signals = ["łóżeczko", "wanienka", "podgrzewacz", "krzesełko", "brodzik"]
 why = "Łóżeczka (płatne), wanienki, podgrzewacze na życzenie; krzesełka; brodzik 15 cm; dzieci do 3 lat gratis w większości pakietów."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Wodnik"
