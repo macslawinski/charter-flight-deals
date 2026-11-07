@@ -1,0 +1,194 @@
+# Facts from the hotel's own website (hotel-lubicz.pl; robots.txt allows all, checked 2026-11-07):
+# /hotel/hotel-przyjazny-rodzinie, home page. Written in our words. The hotel asks to request room equipment
+# when booking. Its informator hotelowy PDF is a scan without text, not used.
+# Also on the site, no feature key for it: toys and colouring books in the restaurant while waiting for meals;
+# swimming lessons and aqua aerobics (the pool itself is not described).
+# Not stated (so not recorded yet): free-stay age, fees for any baby item, kids menu, toddler food, potty,
+# playroom hours and minimum age, animations, brodzik, lift, beach distance, parking.
+#
+# Coordinates: OpenStreetMap way/271142612 (ODbL); the hotel's map link is a short link without coordinates.
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most one
+#   change, to Ustka station. Station -> hotel: ~1 km, ~5 min by car (OSRM) or a short walk.
+slug = "lubicz-ustka"
+place = "ustka"
+name = "Hotel Lubicz"
+official_url = "https://www.hotel-lubicz.pl/"
+address = "ul. Grunwaldzka 14, 76-270 Ustka"
+lat = 54.581017  # OpenStreetMap way/271142612, ODbL
+lon = 16.8679014
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true }
+short = "Do pokoju; zgłosić przy rezerwacji"
+note = "Łóżeczko dla małego dziecka w pokoju; dodatkowe wyposażenie hotel prosi zgłaszać przy rezerwacji. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotel-lubicz.pl/hotel/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "high_chair"
+value = { available = true, where = "restaurant" }
+short = "W restauracji"
+note = "Krzesełka dla maluchów w hotelowej restauracji."
+source = "hotel_website"
+url = "https://www.hotel-lubicz.pl/hotel/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true, where = "room, restaurant" }
+short = "W pokoju; w restauracji też do słoiczków"
+note = "Podgrzewacz do butelek w pokoju; w restauracji podgrzewacz do butelek i słoiczków. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotel-lubicz.pl/hotel/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "baby_bath"
+value = { available = true }
+short = "W łazience"
+note = "Wanienka do kąpieli dziecka w łazience. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotel-lubicz.pl/hotel/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "changing_table"
+value = { available = true, where = "public_toilets", room_rental = true }
+short = "Toaleta z przewijakiem; też do pokoju"
+note = "Toaleta z przewijakiem w hotelu; przewijak można też wypożyczyć do pokoju. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotel-lubicz.pl/hotel/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Kącik zabaw"
+note = "Kącik zabaw dla dzieci w hotelu. Godzin, minimalnego wieku i zasad opieki strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotel-lubicz.pl/hotel/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "stroller_rental"
+value = { available = true, pram = true, buggy = true }
+short = "Gondola lub spacerówka"
+note = "Wózek dziecięcy do wypożyczenia, w wersji z gondolą albo spacerówka. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotel-lubicz.pl/hotel/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 115
+note = "150 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.5810%2C16.8679"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 300
+note = "290 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.5810%2C16.8679"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 340
+note = "490 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.5810%2C16.8679"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 405
+note = "470 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.5810%2C16.8679"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 405
+note = "670 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.5810%2C16.8679"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 450
+note = "740 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.5810%2C16.8679"
+verified_at = 2026-11-07
+
+# --- Access: train to Ustka station (rozklad-pkp.pl, 2026-11-12) --------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "train"
+minutes = 159
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 236
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 352
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 372
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 451
+note = "1 przesiadka · bezpośredni 9 h 34 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 505
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07

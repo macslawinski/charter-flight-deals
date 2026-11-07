@@ -333,7 +333,7 @@ lat = 54.5844201
 lon = 16.869326
 signals = ["łóżeczko", "podgrzewacz", "elektroniczna niania", "wanienka"]
 why = "Dla najmłodszych: łóżeczka, podgrzewacze do butelek, nawilżacze, zabezpieczenia kontaktów; wanienka i niania na stronach hotelu."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Lubicz"
@@ -345,7 +345,7 @@ lat = 54.581017
 lon = 16.8679014
 signals = ["łóżeczko", "podgrzewacz", "wanienka", "krzesełko", "przewijak"]
 why = "Hotel przyjazny rodzinie: łóżeczko, podgrzewacz do butelek i słoiczków, wanienka, krzesełka, toaleta z przewijakiem."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Jantar"
@@ -354,7 +354,7 @@ official_url = "https://jantar-ustka.pl/"
 kids_url = "https://jantar-ustka.pl/oferta-dla-rodzin/"
 signals = ["brodzik", "łóżeczko"]
 why = "Oferta dla rodzin: strefa basenowa z brodzikiem dla dzieci; łóżeczko w ofercie."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Ustka"
@@ -366,7 +366,7 @@ lat = 54.5885345
 lon = 16.8833509
 signals = ["sala zabaw", "kącik małego niejadka", "do 2 lat gratis"]
 why = "Sala zabaw z małymi zjeżdżalniami i domkami, kącik małego niejadka w bufecie, maluchy do 2 lat gratis."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Royal Baltic"

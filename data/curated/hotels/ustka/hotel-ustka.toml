@@ -1,0 +1,186 @@
+# Facts from the hotel's own website (hotel-ustka.eu; robots.txt allows all, checked 2026-11-07):
+# /atrakcje-hotel, /regulamin, home page. Written in our words.
+# Also on the site, no feature key for it: the attractions page mentions a free stay for little ones under 2 and
+# discounts for children under 10, without saying whether this is a standing rule or an offer (not recorded);
+# the price list mentions children's equipment for hire without details; benches for parents by the playground.
+# Not stated (so not recorded yet): cot, high chair, baby bath, bottle warmer, changing table, potty, kids menu
+# outside the season, playroom hours and minimum age, pool or brodzik, lift, parking fee for hotel guests.
+# Fewer than 8 verified facts: the site says little about baby equipment.
+#
+# Coordinates: OpenStreetMap way/434636081 (ODbL); the hotel's map link is a short link without coordinates.
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most one
+#   change, to Ustka station. Station -> hotel: ~2 km, ~5 min by car or taxi (OSRM).
+slug = "hotel-ustka"
+place = "ustka"
+name = "Hotel Ustka"
+official_url = "https://www.hotel-ustka.eu/"
+address = "ul. Wczasowa 25, 76-270 Ustka"
+lat = 54.5885345  # OpenStreetMap way/434636081, ODbL
+lon = 16.8833509
+status = "draft"
+
+[[feature]]
+key = "toddler_food"
+value = { available = true, baby_corner = true, seasonal = true }
+short = "Kącik małego niejadka (wakacje, ferie)"
+note = "W wakacje i ferie w bufecie „kącik małego niejadka” dla dzieci."
+source = "hotel_website"
+url = "https://www.hotel-ustka.eu/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playroom"
+value = { available = true, free = true, parent_required = true }
+short = "Bezpłatna, dzieci pod opieką dorosłych"
+note = "Sala zabaw z małymi zjeżdżalniami, domkami, jeździkami i klockami; bezpłatna, dzieci tylko pod opieką dorosłych (regulamin). Godzin i minimalnego wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotel-ustka.eu/regulamin"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true, parent_required = true }
+short = "Duży, z ławkami dla rodziców"
+note = "Plac zabaw ze zjeżdżalniami, drabinkami, huśtawkami i drewnianymi domkami; dzieci pod opieką dorosłych."
+source = "hotel_website"
+url = "https://www.hotel-ustka.eu/atrakcje-hotel"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, free = true, seasonal = true, parent_required = true }
+short = "W wakacje i ferie, bezpłatnie"
+note = "Animacje i zajęcia plastyczne tylko w wakacje i ferie zimowe, bezpłatne, dla dzieci w różnym wieku; dzieci pod opieką dorosłych (regulamin)."
+source = "hotel_website"
+url = "https://www.hotel-ustka.eu/regulamin"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { distance_m = 50 }
+short = "Ok. 50 m leśną ścieżką"
+note = "Ok. 50 m do plaży, krótki spacer leśną ścieżką."
+source = "hotel_website"
+url = "https://www.hotel-ustka.eu/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "parking"
+value = { paid = true, guarded = false, monitored = true }
+short = "Płatny, monitorowany, niestrzeżony"
+note = "Parking hotelowy płatny, monitorowany, niestrzeżony (regulamin). Stawki dla gości hotelu strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotel-ustka.eu/regulamin"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 120
+note = "150 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.5885%2C16.8834"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 305
+note = "290 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.5885%2C16.8834"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 345
+note = "490 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.5885%2C16.8834"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 410
+note = "470 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.5885%2C16.8834"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 410
+note = "670 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.5885%2C16.8834"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 450
+note = "740 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.5885%2C16.8834"
+verified_at = 2026-11-07
+
+# --- Access: train to Ustka station (rozklad-pkp.pl, 2026-11-12) --------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "train"
+minutes = 159
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 236
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 352
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 372
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 451
+note = "1 przesiadka · bezpośredni 9 h 34 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 505
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
