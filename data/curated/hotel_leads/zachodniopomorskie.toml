@@ -150,7 +150,7 @@ lat = 53.9259392
 lon = 14.4337753
 signals = ["łóżeczko", "krzesełko", "kids zone"]
 why = "Łóżeczka na życzenie, wysokie krzesła i dania dla maluszków w restauracji; Kids Zone podzielona wiekowo."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Trofana Wellness & SPA"
@@ -162,7 +162,7 @@ lat = 53.9300642
 lon = 14.4479743
 signals = ["łóżeczko", "wanienka", "nocnik", "krzesełko"]
 why = "Na życzenie łóżeczko, wanienka i nocnik; krzesełka w restauracji."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Wolin"
@@ -187,7 +187,7 @@ lat = 54.2604914
 lon = 16.0649192
 signals = ["brodzik", "łóżeczko"]
 why = "Bezpieczny brodzik dla najmłodszych, dania dla najmłodszych; łóżeczko turystyczne mieści się w pokojach (opłaty strona nie podaje)."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Unitral Medical Spa"
@@ -272,7 +272,7 @@ lat = 54.2095679
 lon = 15.7309638
 signals = ["basen dla małych dzieci", "sala zabaw z kącikiem rodzica"]
 why = "Wydzielony basen dla małych dzieci (mało chloru), sala zabaw Joonglaland z kącikiem dla rodzica."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Spa Cesarskie Ogrody"

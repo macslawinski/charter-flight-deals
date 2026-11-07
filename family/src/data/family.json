@@ -4687,6 +4687,678 @@
   {
    "access": [
     {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 230,
+     "mode": "car",
+     "note": "340 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.9297%2C14.4485",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 245,
+     "mode": "car",
+     "note": "350 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.9297%2C14.4485",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 320,
+     "mode": "car",
+     "note": "470 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.9297%2C14.4485",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 395,
+     "mode": "car",
+     "note": "640 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.9297%2C14.4485",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 415,
+     "mode": "car",
+     "note": "650 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.9297%2C14.4485",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 465,
+     "mode": "car",
+     "note": "720 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.9297%2C14.4485",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 189,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 3 h 18 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 280,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 5 h 13 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 349,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 6 h 40 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 378,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 448,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 511,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. Zdrojowa 9, 72-500 Międzyzdroje",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko dla małego dziecka na życzenie, z pościelą i kocykiem. Opłaty strona nie podaje.",
+     "short": "Na życzenie, z pościelą i kocykiem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-trofana.pl/hotel/dzieci",
+     "value": {
+      "available": true,
+      "bedding": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka do karmienia dzieci i śliniaki.",
+     "short": "W restauracji, są też śliniaki",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-trofana.pl/hotel/dzieci",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "W menu restauracji są potrawy dla najmłodszych gości. O jedzeniu dla niemowląt strona nie wspomina.",
+     "short": "Dania dla najmłodszych",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-trofana.pl/hotel/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Łazienki mają wanienkę do kąpieli dziecka (z ręcznikami i podestem). Opłaty strona nie podaje.",
+     "short": "Jest w łazience",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-trofana.pl/hotel/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "W łazience nocnik i nakładka na sedes.",
+     "short": "Nocnik i nakładka na sedes",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-trofana.pl/hotel/dzieci",
+     "value": {
+      "available": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Ok. 250 m do plaży i molo.",
+     "short": "Ok. 250 m do plaży i molo",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-trofana.pl/",
+     "value": {
+      "distance_m": 250
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 53.9297039,
+   "lon": 14.44846,
+   "name": "Hotel Trofana Wellness & SPA",
+   "official_url": "https://www.hotel-trofana.pl/",
+   "place": "miedzyzdroje",
+   "slug": "trofana-miedzyzdroje",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 230,
+     "mode": "car",
+     "note": "340 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.9259%2C14.4338",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 245,
+     "mode": "car",
+     "note": "350 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.9259%2C14.4338",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 320,
+     "mode": "car",
+     "note": "470 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.9259%2C14.4338",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 395,
+     "mode": "car",
+     "note": "640 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.9259%2C14.4338",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 415,
+     "mode": "car",
+     "note": "650 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.9259%2C14.4338",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 465,
+     "mode": "car",
+     "note": "720 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.9259%2C14.4338",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 189,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 3 h 18 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 280,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 5 h 13 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 349,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 6 h 40 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 378,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 448,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 511,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. Gryfa Pomorskiego 70, 72-500 Międzyzdroje",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczka dla dzieci w pokojach na życzenie gości. Opłaty strona nie podaje.",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://wavemiedzyzdroje.pl/dla-dzieci/",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": "0-3",
+     "key": "child_free_stay",
+     "note": "Pobyt dzieci do lat 3 jest bezpłatny: wyżywienie jak w ofercie rodziców i ręczniki, ale bez osobnego miejsca do spania (regulamin obiektu, s. 6). Kwestii trzylatka strona nie rozstrzyga.",
+     "short": "Do lat 3 bezpłatnie, bez osobnego łóżka",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://wavemiedzyzdroje.pl/wp-content/uploads/2026/05/Regulamin-obiektu-Wave-Miedzyzdroje-Resort-SPA26.pdf",
+     "value": {
+      "free": true,
+      "sleeping_with_parents": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "W restauracji kilka pozycji przygotowanych z myślą o maluchach. O jedzeniu dla niemowląt strona nie wspomina.",
+     "short": "Kilka pozycji dla maluchów",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://wavemiedzyzdroje.pl/dla-dzieci/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Kids Zone podzielona na strefy dla dzieci w różnym wieku. Godzin, minimalnego wieku i zasad opieki strona nie podaje.",
+     "short": "Kids Zone ze strefami wiekowymi",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://wavemiedzyzdroje.pl/dla-dzieci/",
+     "value": {
+      "age_zones": true,
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Zewnętrzny plac zabaw w ogrodzie resortu (m.in. mini ścianka wspinaczkowa); od maja do września także plac zabaw w Wave Beach Concept.",
+     "short": "W ogrodzie, maj–wrzesień też na plaży",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://wavemiedzyzdroje.pl/dla-dzieci/",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "W święta, długie weekendy, ferie i wakacje z dziećmi jest animatorka; od maja do września animacje w Wave Beach Concept. Przedziału wieku strona nie podaje.",
+     "short": "Święta, długie weekendy, ferie, wakacje",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://wavemiedzyzdroje.pl/dla-dzieci/",
+     "value": {
+      "available": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Ograniczona liczba płatnych miejsc w garażu podziemnym (niestrzeżony, monitorowany, do 2 m wysokości); wymagana rezerwacja. Kwoty strona nie podaje.",
+     "short": "Płatny garaż, wymagana rezerwacja",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://wavemiedzyzdroje.pl/wp-content/uploads/2026/05/Regulamin-obiektu-Wave-Miedzyzdroje-Resort-SPA26.pdf",
+     "value": {
+      "garage": true,
+      "max_height_m": 2,
+      "paid": true,
+      "reservation_required": true
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 53.9259392,
+   "lon": 14.4337753,
+   "name": "Wave Międzyzdroje Resort & SPA",
+   "official_url": "https://wavemiedzyzdroje.pl/",
+   "place": "miedzyzdroje",
+   "slug": "wave-miedzyzdroje",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 145,
+     "mode": "car",
+     "note": "210 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.2605%2C16.0649",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 250,
+     "mode": "car",
+     "note": "270 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.2605%2C16.0649",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 355,
+     "mode": "car",
+     "note": "440 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.2605%2C16.0649",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 370,
+     "mode": "car",
+     "note": "550 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.2605%2C16.0649",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 435,
+     "mode": "car",
+     "note": "730 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.2605%2C16.0649",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 480,
+     "mode": "car",
+     "note": "800 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.2605%2C16.0649",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 181,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 187,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 3 h 17 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 294,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 351,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 6 h 29 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 417,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 477,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. Bolesława Chrobrego, 76-032 Mielno",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczka dziecięce wśród udogodnień dla rodzin (FAQ). Opłaty strona nie podaje.",
+     "short": "Jest",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://dworekmorski.pl/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka do karmienia wśród udogodnień dla rodzin (FAQ).",
+     "short": "Jest",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://dworekmorski.pl/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Szef kuchni przygotował specjalne menu dziecięce. O jedzeniu dla niemowląt strona nie wspomina.",
+     "short": "Specjalne menu dziecięce",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://dworekmorski.pl/wczasy-dla-rodzin/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Kącik zabaw dla dzieci, np. gdy rodzice są w SPA. Godzin, minimalnego wieku i zasad opieki strona nie podaje.",
+     "short": "Kącik zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://dworekmorski.pl/hotel-z-basenem/",
+     "value": {
+      "available": true,
+      "corner": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Plac zabaw w ogrodzie (FAQ).",
+     "short": "W ogrodzie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://dworekmorski.pl/",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Wydzielony brodzik w krytej strefie basenowej, dzieci kąpią się pod okiem rodziców. Głębokości i temperatury strona nie podaje.",
+     "short": "Wydzielony brodzik przy krytym basenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://dworekmorski.pl/hotel-z-basenem/",
+     "value": {
+      "available": true,
+      "indoor": true,
+      "separate": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "lift",
+     "note": "Hotel ma windę i pokoje dla osób z ograniczoną sprawnością (FAQ).",
+     "short": "Jest",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://dworekmorski.pl/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Plaża ok. 300 m, ok. 5 minut; blisko, więc spacer z wózkiem jest łatwy.",
+     "short": "Ok. 5 minut (300 m)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://dworekmorski.pl/",
+     "value": {
+      "distance_m": 300,
+      "minutes": 5
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking dozorowany i monitorowany, płatny 30 zł za dobę.",
+     "short": "Dozorowany, 30 zł/doba",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://dworekmorski.pl/",
+     "value": {
+      "fee_pln_per_day": 30,
+      "guarded": true,
+      "monitored": true,
+      "paid": true
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.2604914,
+   "lon": 16.0649192,
+   "name": "Dworek Morski SPA & Wellness",
+   "official_url": "https://dworekmorski.pl/",
+   "place": "mielno",
+   "slug": "dworek-morski-mielno",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
      "from_code": "Gdańsk",
      "from_kind": "city",
      "minutes": 145,
@@ -6010,6 +6682,264 @@
   {
    "access": [
     {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 160,
+     "mode": "car",
+     "note": "230 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.2087%2C15.7304",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 260,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.2087%2C15.7304",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 355,
+     "mode": "car",
+     "note": "520 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.2087%2C15.7304",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 385,
+     "mode": "car",
+     "note": "570 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.2087%2C15.7304",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 445,
+     "mode": "car",
+     "note": "700 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.2087%2C15.7304",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 490,
+     "mode": "car",
+     "note": "820 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.2087%2C15.7304",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 226,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 5 h 06 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 238,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 4 h 25 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 328,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 387,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 6 h 55 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 467,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 534,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 10 h 13 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. Północna 6, Sianożęty, 78-111 Ustronie Morskie",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko turystyczne dla niemowląt z kompletem pościeli, 50 zł za pobyt; trzeba zarezerwować wcześniej.",
+     "short": "50 zł za pobyt, z pościelą",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://imperiall.pl/pokoje-apartament-domki",
+     "value": {
+      "available": true,
+      "bedding": true,
+      "fee_pln_per_stay": 50,
+      "paid": true,
+      "reservation_required": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": "0-3",
+     "key": "child_free_stay",
+     "note": "Dzieci, które w dniu wymeldowania nie skończyły 3 lat, mają pobyt z wyżywieniem bezpłatnie (bez lunchu), śpiąc z rodzicami, bez pościeli i ręcznika; maksymalnie dwoje (regulamin §3).",
+     "short": "Do 3 lat gratis z wyżywieniem, maks. 2",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://imperiall.pl/regulamin",
+     "value": {
+      "free": true,
+      "max_children": 2,
+      "sleeping_with_parents": true,
+      "with_meals": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Na śniadaniach i obiadokolacjach dania dla dzieci, np. spaghetti, nuggetsy, fileciki rybne. O jedzeniu dla niemowląt strona nie wspomina.",
+     "short": "Spaghetti, nuggetsy, rybka",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://imperiall.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala zabaw Joonglaland z zabawkami, grami edukacyjnymi i kącikiem dla rodzica. Dzieci poniżej 5 lat przyprowadza i odbiera rodzic (regulamin §10). Godzin strona nie podaje.",
+     "short": "Joonglaland, do 5 lat z rodzicem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://imperiall.pl/regulamin",
+     "value": {
+      "available": true,
+      "parent_corner": true,
+      "under_5_with_parent": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Dwa zewnętrzne place zabaw.",
+     "short": "Dwa place zabaw na zewnątrz",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://imperiall.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "count": 2,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Zajęcia animacyjne według harmonogramu obiektu (na stronie plan na wakacje 2026). Przedziału wieku strona nie podaje.",
+     "short": "Wg harmonogramu obiektu",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://imperiall.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Kryty brodzik 0,5 m (wydzielony basen dla małych dzieci, woda o małej zawartości chloru) oraz sezonowy brodzik zewnętrzny: koło o średnicy 6 m, głębokość 50 cm, woda latem do 30°C (panele słoneczne). Ratownik na basenach.",
+     "short": "Kryty 50 cm; latem zewnętrzny do 30°C",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://imperiall.pl/atrakcje-basen",
+     "value": {
+      "depth_cm": 50,
+      "indoor": true,
+      "outdoor_depth_cm": 50,
+      "outdoor_seasonal": true,
+      "outdoor_water_temp_c_max": 30
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Ok. 100 m od szerokiej piaszczystej plaży.",
+     "short": "Ok. 100 m do plaży",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://imperiall.pl/",
+     "value": {
+      "distance_m": 100
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking monitorowany 40 zł za dobę, hala garażowa Imperiall Apart 60 zł za dobę; ograniczona liczba miejsc, konieczna rezerwacja.",
+     "short": "40 zł/doba, garaż 60 zł, rezerwacja",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://imperiall.pl/pokoje-apartament-domki",
+     "value": {
+      "fee_pln_per_day": 40,
+      "garage_fee_pln_per_day": 60,
+      "monitored": true,
+      "paid": true,
+      "reservation_required": true
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.208707,
+   "lon": 15.730386,
+   "name": "Imperiall Resort & MediSpa",
+   "official_url": "https://imperiall.pl/",
+   "place": "sianozety",
+   "slug": "imperiall-sianozety",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
      "from_code": "Poznań",
      "from_kind": "city",
      "minutes": 245,
@@ -6795,6 +7725,14 @@
    "name": "Trzęsacz",
    "region": "Bałtyk – Pomorze Zachodnie",
    "slug": "trzesacz"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Sianożęty",
+   "region": "Bałtyk – Pomorze Zachodnie",
+   "slug": "sianozety"
   }
  ],
  "rule_keys": [

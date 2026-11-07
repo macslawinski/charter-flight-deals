@@ -1,0 +1,213 @@
+# Facts from the hotel's own website (imperiall.pl; robots.txt allows all, checked 2026-11-07):
+# /dla-dzieci, /atrakcje-basen, /pokoje-apartament-domki, /regulamin, home page. Written in our words.
+# Also on the site, no feature key for it: Tropicoland playroom (summer only, extra fee); lifeguard at both pools;
+# children under 12 must be under constant care (regulamin §6); day pool tickets for non-guests free for 0-2.
+# Not stated (so not recorded yet): baby bath, bottle warmer, changing table, potty, high chair, toddler food,
+# Joonglaland hours and minimum age (its own rules are an annex not on the site), animation ages, lift.
+#
+# Coordinates: the hotel's own Google Maps link.
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most one
+#   change, to Ustronie Morskie station (times reused from Hotel Wodnik, same station). Station -> hotel:
+#   ~3 km, ~5 min by car or taxi (OSRM).
+slug = "imperiall-sianozety"
+place = "sianozety"
+name = "Imperiall Resort & MediSpa"
+official_url = "https://imperiall.pl/"
+address = "ul. Północna 6, Sianożęty, 78-111 Ustronie Morskie"
+lat = 54.208707  # the hotel's own Google Maps link
+lon = 15.730386
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, paid = true, fee_pln_per_stay = 50, bedding = true, reservation_required = true }
+short = "50 zł za pobyt, z pościelą"
+note = "Łóżeczko turystyczne dla niemowląt z kompletem pościeli, 50 zł za pobyt; trzeba zarezerwować wcześniej."
+source = "hotel_website"
+url = "https://imperiall.pl/pokoje-apartament-domki"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "child_free_stay"
+age_band = "0-3"
+value = { free = true, sleeping_with_parents = true, max_children = 2, with_meals = true }
+short = "Do 3 lat gratis z wyżywieniem, maks. 2"
+note = "Dzieci, które w dniu wymeldowania nie skończyły 3 lat, mają pobyt z wyżywieniem bezpłatnie (bez lunchu), śpiąc z rodzicami, bez pościeli i ręcznika; maksymalnie dwoje (regulamin §3)."
+source = "hotel_website"
+url = "https://imperiall.pl/regulamin"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Spaghetti, nuggetsy, rybka"
+note = "Na śniadaniach i obiadokolacjach dania dla dzieci, np. spaghetti, nuggetsy, fileciki rybne. O jedzeniu dla niemowląt strona nie wspomina."
+source = "hotel_website"
+url = "https://imperiall.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playroom"
+value = { available = true, parent_corner = true, under_5_with_parent = true }
+short = "Joonglaland, do 5 lat z rodzicem"
+note = "Sala zabaw Joonglaland z zabawkami, grami edukacyjnymi i kącikiem dla rodzica. Dzieci poniżej 5 lat przyprowadza i odbiera rodzic (regulamin §10). Godzin strona nie podaje."
+source = "hotel_website"
+url = "https://imperiall.pl/regulamin"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true, count = 2 }
+short = "Dwa place zabaw na zewnątrz"
+note = "Dwa zewnętrzne place zabaw."
+source = "hotel_website"
+url = "https://imperiall.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_animation"
+value = { available = true }
+short = "Wg harmonogramu obiektu"
+note = "Zajęcia animacyjne według harmonogramu obiektu (na stronie plan na wakacje 2026). Przedziału wieku strona nie podaje."
+source = "hotel_website"
+url = "https://imperiall.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "paddling_pool"
+value = { indoor = true, depth_cm = 50, outdoor_seasonal = true, outdoor_depth_cm = 50, outdoor_water_temp_c_max = 30 }
+short = "Kryty 50 cm; latem zewnętrzny do 30°C"
+note = "Kryty brodzik 0,5 m (wydzielony basen dla małych dzieci, woda o małej zawartości chloru) oraz sezonowy brodzik zewnętrzny: koło o średnicy 6 m, głębokość 50 cm, woda latem do 30°C (panele słoneczne). Ratownik na basenach."
+source = "hotel_website"
+url = "https://imperiall.pl/atrakcje-basen"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { distance_m = 100 }
+short = "Ok. 100 m do plaży"
+note = "Ok. 100 m od szerokiej piaszczystej plaży."
+source = "hotel_website"
+url = "https://imperiall.pl/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "parking"
+value = { paid = true, monitored = true, fee_pln_per_day = 40, garage_fee_pln_per_day = 60, reservation_required = true }
+short = "40 zł/doba, garaż 60 zł, rezerwacja"
+note = "Parking monitorowany 40 zł za dobę, hala garażowa Imperiall Apart 60 zł za dobę; ograniczona liczba miejsc, konieczna rezerwacja."
+source = "hotel_website"
+url = "https://imperiall.pl/pokoje-apartament-domki"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 160
+note = "230 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.2087%2C15.7304"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 260
+note = "280 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.2087%2C15.7304"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 355
+note = "520 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.2087%2C15.7304"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 385
+note = "570 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.2087%2C15.7304"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 445
+note = "700 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.2087%2C15.7304"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 490
+note = "820 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.2087%2C15.7304"
+verified_at = 2026-11-07
+
+# --- Access: train to Ustronie Morskie station (rozklad-pkp.pl, 2026-11-12) --------------------
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 226
+note = "1 przesiadka · bezpośredni 5 h 06 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "train"
+minutes = 238
+note = "1 przesiadka · bezpośredni 4 h 25 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 328
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 387
+note = "1 przesiadka · bezpośredni 6 h 55 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 467
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 534
+note = "1 przesiadka · bezpośredni 10 h 13 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07

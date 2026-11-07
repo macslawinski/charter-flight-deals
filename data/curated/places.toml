@@ -91,3 +91,10 @@ name = "Trzęsacz"
 country = "Polska"
 region = "Bałtyk – Pomorze Zachodnie"
 kind = "domestic"
+
+[[place]]
+slug = "sianozety"
+name = "Sianożęty"
+country = "Polska"
+region = "Bałtyk – Pomorze Zachodnie"
+kind = "domestic"

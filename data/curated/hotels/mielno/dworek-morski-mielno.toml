@@ -1,0 +1,215 @@
+# Facts from the hotel's own website (dworekmorski.pl; robots.txt allows the pages used, checked 2026-11-07):
+# /wczasy-dla-rodzin/, /hotel-z-basenem/ (with FAQ), home page FAQ. Written in our words.
+# The site calls the place both "hotel" and "pensjonat"; it has rooms and apartments, an indoor pool and SPA,
+# and OpenStreetMap tags it as a 4-star hotel, so it is kept under the hotels-only rule.
+# Also on the site, no feature key for it: the rooms are big enough for a travel cot; Lake Jamno right next to it;
+# rooms adapted for guests with reduced mobility.
+# Not stated (so not recorded yet): free-stay age, cot fee, baby bath, bottle warmer, changing table, potty,
+# animations, playroom hours and age, brodzik depth and temperature.
+#
+# Coordinates: OpenStreetMap node/10711674121 (ODbL). Address: the site gives none; street from OpenStreetMap
+# (Nominatim reverse geocoding), no house number.
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most one
+#   change, to Koszalin station (times reused from Unitral Mielno, same station). Station -> hotel: ~14 km,
+#   ~20 min by car or taxi (OSRM).
+slug = "dworek-morski-mielno"
+place = "mielno"
+name = "Dworek Morski SPA & Wellness"
+official_url = "https://dworekmorski.pl/"
+address = "ul. Bolesława Chrobrego, 76-032 Mielno"
+lat = 54.2604914  # OpenStreetMap node/10711674121, ODbL
+lon = 16.0649192
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true }
+short = "Jest"
+note = "Łóżeczka dziecięce wśród udogodnień dla rodzin (FAQ). Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://dworekmorski.pl/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "high_chair"
+value = { available = true }
+short = "Jest"
+note = "Krzesełka do karmienia wśród udogodnień dla rodzin (FAQ)."
+source = "hotel_website"
+url = "https://dworekmorski.pl/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Specjalne menu dziecięce"
+note = "Szef kuchni przygotował specjalne menu dziecięce. O jedzeniu dla niemowląt strona nie wspomina."
+source = "hotel_website"
+url = "https://dworekmorski.pl/wczasy-dla-rodzin/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playroom"
+value = { available = true, corner = true }
+short = "Kącik zabaw"
+note = "Kącik zabaw dla dzieci, np. gdy rodzice są w SPA. Godzin, minimalnego wieku i zasad opieki strona nie podaje."
+source = "hotel_website"
+url = "https://dworekmorski.pl/hotel-z-basenem/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "W ogrodzie"
+note = "Plac zabaw w ogrodzie (FAQ)."
+source = "hotel_website"
+url = "https://dworekmorski.pl/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "paddling_pool"
+value = { available = true, indoor = true, separate = true }
+short = "Wydzielony brodzik przy krytym basenie"
+note = "Wydzielony brodzik w krytej strefie basenowej, dzieci kąpią się pod okiem rodziców. Głębokości i temperatury strona nie podaje."
+source = "hotel_website"
+url = "https://dworekmorski.pl/hotel-z-basenem/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "lift"
+value = { available = true }
+short = "Jest"
+note = "Hotel ma windę i pokoje dla osób z ograniczoną sprawnością (FAQ)."
+source = "hotel_website"
+url = "https://dworekmorski.pl/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { minutes = 5, distance_m = 300 }
+short = "Ok. 5 minut (300 m)"
+note = "Plaża ok. 300 m, ok. 5 minut; blisko, więc spacer z wózkiem jest łatwy."
+source = "hotel_website"
+url = "https://dworekmorski.pl/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "parking"
+value = { paid = true, guarded = true, monitored = true, fee_pln_per_day = 30 }
+short = "Dozorowany, 30 zł/doba"
+note = "Parking dozorowany i monitorowany, płatny 30 zł za dobę."
+source = "hotel_website"
+url = "https://dworekmorski.pl/"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 145
+note = "210 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.2605%2C16.0649"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 250
+note = "270 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.2605%2C16.0649"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 355
+note = "440 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.2605%2C16.0649"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 370
+note = "550 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.2605%2C16.0649"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 435
+note = "730 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.2605%2C16.0649"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 480
+note = "800 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.2605%2C16.0649"
+verified_at = 2026-11-07
+
+# --- Access: train to Koszalin station (rozklad-pkp.pl, 2026-11-12) -------------------------------
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 181
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "train"
+minutes = 187
+note = "1 przesiadka · bezpośredni 3 h 17 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 294
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 351
+note = "1 przesiadka · bezpośredni 6 h 29 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 417
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 477
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
