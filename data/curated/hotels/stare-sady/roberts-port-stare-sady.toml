@@ -1,0 +1,174 @@
+# Facts from the hotel's own website (hotel-port.pl; robots.txt allows all, checked 2026-11-07):
+# /hotel-przyjazny-rodzinie, /regulamin, /spa/basen, home page, /kontakt/dane-kontaktowe. Written in our words.
+# Also on the site, no feature key for it: on the shore of Lake Tałty with use of the lake bathing area
+# (distance not given); "+2 DZIECI GRATIS" room offer (package, terms not shown).
+# Not stated (so not recorded yet): cot fee, high chair, kids' menu, food for babies, parking, lift,
+# stroller rental, conditions of the free stay under 4.
+#
+# Coordinates: the hotel's own map link (/kontakt/dane-kontaktowe, q=53.8377533,21.5481148).
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet (nearest station Mikołajki, few trains outside summer).
+slug = "roberts-port-stare-sady"
+place = "stare-sady"
+name = "Hotel Robert's Port"
+official_url = "https://www.hotel-port.pl/"
+address = "Stare Sady 4, 11-730 Mikołajki"
+lat = 53.8377533
+lon = 21.5481148
+status = "published"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true }
+short = "Na życzenie"
+note = "Łóżeczko dla dziecka dostarczane do pokoju na życzenie. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotel-port.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "child_free_stay"
+value = { free = true, max_age_years = 4 }
+short = "Dzieci do 4 lat bezpłatnie"
+note = "Strona główna: dzieci do lat 4 mieszkają bezpłatnie. Warunków (np. spanie z rodzicami, wyżywienie) strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotel-port.pl/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "baby_monitor"
+value = { available = true, on_request = true, paid = true }
+short = "Na życzenie, za dopłatą"
+note = "Elektroniczna niania do pokoju na życzenie, za dopłatą (kwoty strona nie podaje)."
+source = "hotel_website"
+url = "https://www.hotel-port.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true, on_request = true }
+short = "Na życzenie"
+note = "Podgrzewacz do butelek do pokoju na życzenie."
+source = "hotel_website"
+url = "https://www.hotel-port.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, on_request = true }
+short = "Na życzenie"
+note = "Wanienka do pokoju na życzenie."
+source = "hotel_website"
+url = "https://www.hotel-port.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "changing_table"
+value = { available = true, on_request = true, where = "room" }
+short = "Do pokoju na życzenie"
+note = "Przewijak do pokoju na życzenie."
+source = "hotel_website"
+url = "https://www.hotel-port.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "potty"
+value = { available = true, on_request = true }
+short = "Na życzenie"
+note = "Nocnik do pokoju na życzenie."
+source = "hotel_website"
+url = "https://www.hotel-port.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playroom"
+value = { available = true, supervised = true, with_parent_under_years = 5, open = "09:00", close = "20:00", close_fri_sat = "21:00" }
+short = "Klub Malucha 9–20, pod 5 lat z dorosłym"
+note = "Klub Malucha z małpim gajem (tunele, zjeżdżalnie, baseny z kulkami), pod okiem animatorów; niedziela–czwartek 9:00–20:00, piątek–sobota 9:00–21:00. Regulamin: dziecko poniżej 5 lat powinno być w klubie z osobą dorosłą."
+source = "hotel_website"
+url = "https://www.hotel-port.pl/regulamin"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true, count = 2 }
+short = "Dwa place zabaw"
+note = "Dwa place zabaw na zewnątrz, dostosowane do wieku dzieci."
+source = "hotel_website"
+url = "https://www.hotel-port.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_animation"
+value = { available = true }
+short = "Codzienne animacje"
+note = "Codzienne zabawy z animatorkami. Wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotel-port.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "paddling_pool"
+age_band = "3+"
+value = { indoor = true, heated = true, depth_cm = 50, water_c = "30-32", slide = true, min_age_years = 3 }
+short = "Brodzik dla dzieci od 3 lat"
+note = "Brodzik przy basenie: głębokość 50 cm, woda 30–32 °C, zjeżdżalnia w kształcie słonia. Strona podaje, że brodzik jest dla dzieci w wieku 3+."
+source = "hotel_website"
+url = "https://www.hotel-port.pl/spa/basen"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 200
+note = "270 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.8378%2C21.5481"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 210
+note = "250 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.8378%2C21.5481"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 370
+note = "450 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.8378%2C21.5481"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 385
+note = "570 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.8378%2C21.5481"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 405
+note = "560 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.8378%2C21.5481"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 420
+note = "600 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.8378%2C21.5481"
+verified_at = 2026-11-07

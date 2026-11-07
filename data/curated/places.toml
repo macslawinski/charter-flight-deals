@@ -238,3 +238,31 @@ name = "Władysławowo"
 country = "Polska"
 region = "Bałtyk – Pomorze"
 kind = "domestic"
+
+[[place]]
+slug = "stare-sady"
+name = "Stare Sady"
+country = "Polska"
+region = "Mazury"
+kind = "domestic"
+
+[[place]]
+slug = "warchaly"
+name = "Warchały"
+country = "Polska"
+region = "Mazury"
+kind = "domestic"
+
+[[place]]
+slug = "ogonki"
+name = "Ogonki"
+country = "Polska"
+region = "Mazury"
+kind = "domestic"
+
+[[place]]
+slug = "mortegi"
+name = "Mortęgi"
+country = "Polska"
+region = "Pojezierze Iławskie"
+kind = "domestic"

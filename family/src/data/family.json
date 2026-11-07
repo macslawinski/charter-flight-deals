@@ -9953,6 +9953,170 @@
     {
      "from_code": "Gdańsk",
      "from_kind": "city",
+     "minutes": 125,
+     "mode": "car",
+     "note": "170 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.4561%2C19.7267",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 180,
+     "mode": "car",
+     "note": "200 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.4561%2C19.7267",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 240,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.4561%2C19.7267",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 300,
+     "mode": "car",
+     "note": "460 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.4561%2C19.7267",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 335,
+     "mode": "car",
+     "note": "490 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.4561%2C19.7267",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 345,
+     "mode": "car",
+     "note": "530 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.4561%2C19.7267",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "Mortęgi 3, 14-260 Lubawa",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko turystyczne wśród udogodnień dla dzieci. Opłaty ani warunków strona nie podaje.",
+     "short": "Łóżeczko turystyczne",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://palacmortegi.pl/pobyt-z-dziecmi/atrakcje-dla-dzieci",
+     "value": {
+      "available": true,
+      "travel_cot": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Menu dla dzieci, kącik dla dzieci i kolorowanki w restauracji.",
+     "short": "Menu i kącik dla dzieci w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://palacmortegi.pl/pobyt-z-dziecmi/atrakcje-dla-dzieci",
+     "value": {
+      "available": true,
+      "kids_corner": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka wśród udogodnień dla dzieci. Opłaty strona nie podaje.",
+     "short": "Wanienka",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://palacmortegi.pl/pobyt-z-dziecmi/atrakcje-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Nocnik i nakładki na toaletę wśród udogodnień dla dzieci.",
+     "short": "Nocnik i nakładki na toaletę",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://palacmortegi.pl/pobyt-z-dziecmi/atrakcje-dla-dzieci",
+     "value": {
+      "available": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala zabaw w Domu Magdaleny: zabawki i książeczki dla dzieci w różnym wieku, basen z piłeczkami dla najmłodszych. Godzin ani opieki strona nie podaje.",
+     "short": "Sala zabaw z basenem z piłeczkami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://palacmortegi.pl/pobyt-z-dziecmi/atrakcje-dla-dzieci",
+     "value": {
+      "available": true,
+      "ball_pool": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Dwa place zabaw, osobno dla młodszych i dla starszych dzieci.",
+     "short": "Dwa place zabaw: dla młodszych i starszych",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://palacmortegi.pl/pobyt-z-dziecmi/atrakcje-dla-dzieci",
+     "value": {
+      "available": true,
+      "count": 2
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Basen z brodzikiem i akcesoriami do wody. Czy jest kryty i od jakiego wieku, strona nie podaje.",
+     "short": "Basen z brodzikiem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://palacmortegi.pl/pobyt-z-dziecmi/atrakcje-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 53.456102,
+   "lon": 19.726742,
+   "name": "Pałac Mortęgi Hotel & SPA",
+   "official_url": "https://palacmortegi.pl/",
+   "place": "mortegi",
+   "slug": "palac-mortegi",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
      "minutes": 190,
      "mode": "car",
      "note": "260 km",
@@ -10319,6 +10483,208 @@
    "official_url": "https://www.amber-park.pl/",
    "place": "niechorze",
    "slug": "amber-park-niechorze",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 235,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.1761%2C21.8116",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 235,
+     "mode": "car",
+     "note": "310 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.1761%2C21.8116",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 400,
+     "mode": "car",
+     "note": "490 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.1761%2C21.8116",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 410,
+     "mode": "car",
+     "note": "600 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.1761%2C21.8116",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 430,
+     "mode": "car",
+     "note": "580 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.1761%2C21.8116",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 445,
+     "mode": "car",
+     "note": "630 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.1761%2C21.8116",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. Sztynorcka 6, Ogonki, 11-600 Węgorzewo",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko z materacem i pościelą dla małego dziecka. Opłaty strona nie podaje.",
+     "short": "Z materacem i pościelą",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.ognistyptak.pl/ognisty-ptak/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "bedding": true,
+      "mattress": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka do karmienia wśród udogodnień dla rodzin.",
+     "short": "Krzesełka do karmienia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.ognistyptak.pl/ognisty-ptak/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Menu dla dzieci w restauracji.",
+     "short": "Menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.ognistyptak.pl/ognisty-ptak/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka do kąpieli wśród udogodnień dla rodzin. Opłaty strona nie podaje.",
+     "short": "Wanienka do kąpieli",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.ognistyptak.pl/ognisty-ptak/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Pokój zabaw (gry, zabawki, książki) i sala z dwupoziomowym małpim gajem (basen z kulkami, zjeżdżalnia). Wieku ani opieki strona nie podaje.",
+     "short": "Sala zabaw z dwupoziomowym małpim gajem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.ognistyptak.pl/ognisty-ptak/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "ball_pool": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Nowoczesny plac zabaw.",
+     "short": "Nowoczesny plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.ognistyptak.pl/ognisty-ptak/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Programy animacyjne dla dzieci i młodzieży. Wieku strona nie podaje.",
+     "short": "Animacje dla dzieci i młodzieży",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.ognistyptak.pl/ognisty-ptak/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Brodzik dla dzieci z atrakcjami wodnymi. Czy jest kryty, strona nie podaje.",
+     "short": "Brodzik z atrakcjami wodnymi",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.ognistyptak.pl/ognisty-ptak/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "water_play": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Prywatna plaża z koszami i leżakami; w sezonie zjeżdżalnia dla dzieci do jeziora. Odległości strona nie podaje.",
+     "short": "Prywatna plaża nad jeziorem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.ognistyptak.pl/ognisty-ptak/hotel-przyjazny-rodzinie",
+     "value": {
+      "own_beach": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Hotel ma parking (osobny regulamin parkingu). Opłat strona nie podaje.",
+     "short": "Parking przy hotelu",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.ognistyptak.pl/ognisty-ptak/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.1760712,
+   "lon": 21.8116131,
+   "name": "Hotel Ognisty Ptak",
+   "official_url": "https://www.ognistyptak.pl/",
+   "place": "ogonki",
+   "slug": "ognisty-ptak-ogonki",
    "status": "published"
   },
   {
@@ -12496,6 +12862,238 @@
    "official_url": "https://villabaltica.com/",
    "place": "sopot",
    "slug": "villa-baltica-sopot",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 200,
+     "mode": "car",
+     "note": "270 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.8378%2C21.5481",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 210,
+     "mode": "car",
+     "note": "250 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.8378%2C21.5481",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 370,
+     "mode": "car",
+     "note": "450 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.8378%2C21.5481",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 385,
+     "mode": "car",
+     "note": "570 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.8378%2C21.5481",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 405,
+     "mode": "car",
+     "note": "560 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.8378%2C21.5481",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 420,
+     "mode": "car",
+     "note": "600 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.8378%2C21.5481",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "Stare Sady 4, 11-730 Mikołajki",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko dla dziecka dostarczane do pokoju na życzenie. Opłaty strona nie podaje.",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-port.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "child_free_stay",
+     "note": "Strona główna: dzieci do lat 4 mieszkają bezpłatnie. Warunków (np. spanie z rodzicami, wyżywienie) strona nie podaje.",
+     "short": "Dzieci do 4 lat bezpłatnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-port.pl/",
+     "value": {
+      "free": true,
+      "max_age_years": 4
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_monitor",
+     "note": "Elektroniczna niania do pokoju na życzenie, za dopłatą (kwoty strona nie podaje).",
+     "short": "Na życzenie, za dopłatą",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-port.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "paid": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacz do butelek do pokoju na życzenie.",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-port.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka do pokoju na życzenie.",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-port.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Przewijak do pokoju na życzenie.",
+     "short": "Do pokoju na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-port.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "where": "room"
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Nocnik do pokoju na życzenie.",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-port.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Klub Malucha z małpim gajem (tunele, zjeżdżalnie, baseny z kulkami), pod okiem animatorów; niedziela–czwartek 9:00–20:00, piątek–sobota 9:00–21:00. Regulamin: dziecko poniżej 5 lat powinno być w klubie z osobą dorosłą.",
+     "short": "Klub Malucha 9–20, pod 5 lat z dorosłym",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-port.pl/regulamin",
+     "value": {
+      "available": true,
+      "close": "20:00",
+      "close_fri_sat": "21:00",
+      "open": "09:00",
+      "supervised": true,
+      "with_parent_under_years": 5
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Dwa place zabaw na zewnątrz, dostosowane do wieku dzieci.",
+     "short": "Dwa place zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-port.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "count": 2,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Codzienne zabawy z animatorkami. Wieku strona nie podaje.",
+     "short": "Codzienne animacje",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-port.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": "3+",
+     "key": "paddling_pool",
+     "note": "Brodzik przy basenie: głębokość 50 cm, woda 30–32 °C, zjeżdżalnia w kształcie słonia. Strona podaje, że brodzik jest dla dzieci w wieku 3+.",
+     "short": "Brodzik dla dzieci od 3 lat",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-port.pl/spa/basen",
+     "value": {
+      "depth_cm": 50,
+      "heated": true,
+      "indoor": true,
+      "min_age_years": 3,
+      "slide": true,
+      "water_c": "30-32"
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 53.8377533,
+   "lon": 21.5481148,
+   "name": "Hotel Robert's Port",
+   "official_url": "https://www.hotel-port.pl/",
+   "place": "stare-sady",
+   "slug": "roberts-port-stare-sady",
    "status": "published"
   },
   {
@@ -14989,6 +15587,226 @@
   {
    "access": [
     {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 155,
+     "mode": "car",
+     "note": "190 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.5384%2C20.8033",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 155,
+     "mode": "car",
+     "note": "200 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.5384%2C20.8033",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 320,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.5384%2C20.8033",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 325,
+     "mode": "car",
+     "note": "460 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.5384%2C20.8033",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 350,
+     "mode": "car",
+     "note": "490 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.5384%2C20.8033",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 360,
+     "mode": "car",
+     "note": "490 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.5384%2C20.8033",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. Brajnicka 1, Warchały, 12-122 Jedwabno",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko z materacem dla małego dziecka na życzenie. Opłaty strona nie podaje.",
+     "short": "Z materacem, na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://naturamazur.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "mattress": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełko do karmienia wśród udogodnień dla rodzin.",
+     "short": "Krzesełko do karmienia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://naturamazur.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Specjalne menu dla dzieci w restauracji Poezja Smaków.",
+     "short": "Menu dla dzieci w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://naturamazur.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacz do butelek na życzenie.",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://naturamazur.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka do kąpieli dziecka na życzenie.",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://naturamazur.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Nocnik albo nakładka na sedes na życzenie.",
+     "short": "Nocnik lub nakładka na sedes",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://naturamazur.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala zabaw dla dzieci. Minimalnego wieku, godzin ani opieki strona nie podaje.",
+     "short": "Sala zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://naturamazur.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Plac zabaw na świeżym powietrzu.",
+     "short": "Plac zabaw na zewnątrz",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://naturamazur.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Codzienne gry i zabawy z animatorami w wakacje, święta i długie weekendy. Wieku strona nie podaje.",
+     "short": "W wakacje, święta i długie weekendy",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://naturamazur.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Basen rekreacyjny i brodzik dla dzieci. Wieku, temperatury ani czy jest kryty strona nie podaje.",
+     "short": "Brodzik przy basenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://naturamazur.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Hotel nad samym brzegiem jeziora Świętajno, z bezpośrednim dostępem do piaszczystej plaży.",
+     "short": "Własna plaża nad jeziorem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://naturamazur.pl/",
+     "value": {
+      "lake": "Świętajno",
+      "on_beach": true
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 53.538372,
+   "lon": 20.80334,
+   "name": "Natura Mazur Hotel & SPA",
+   "official_url": "https://naturamazur.pl/",
+   "place": "warchaly",
+   "slug": "natura-mazur-warchaly",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
      "from_code": "Gdańsk",
      "from_kind": "city",
      "minutes": 70,
@@ -15542,6 +16360,38 @@
    "name": "Władysławowo",
    "region": "Bałtyk – Pomorze",
    "slug": "wladyslawowo"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Stare Sady",
+   "region": "Mazury",
+   "slug": "stare-sady"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Warchały",
+   "region": "Mazury",
+   "slug": "warchaly"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Ogonki",
+   "region": "Mazury",
+   "slug": "ogonki"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Mortęgi",
+   "region": "Pojezierze Iławskie",
+   "slug": "mortegi"
   }
  ],
  "rule_keys": [

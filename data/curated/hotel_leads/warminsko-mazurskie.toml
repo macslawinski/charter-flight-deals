@@ -1,0 +1,306 @@
+# Leads for Product B: hotels in województwo warmińsko-mazurskie whose own website shows an offer for
+# children 0-3. Discovered via OpenStreetMap (tourism=hotel, leisure=resort; (c) OpenStreetMap
+# contributors, ODbL) and web search pointing to the hotels' own sites; each lead confirmed on its own
+# kids page. Not facts: the curate-hotel skill reads the facts.
+voivodeship = "warminsko-mazurskie"
+checked_at = 2026-11-07
+covered = ["całe województwo (311 obiektów w OSM, 147 stron sprawdzonych), 2026-11-07"]
+
+[[lead]]
+name = "Hotel Młyn"
+town = "Elbląg"
+official_url = "https://www.hotelmlyn.com.pl/"
+kids_url = "https://www.hotelmlyn.com.pl/pl/p/8/dla-dzieci-i-doroslych"
+osm = "node/11136243681"
+lat = 54.17338
+lon = 19.424966
+signals = ["łóżeczko", "wanienka", "krzesełko", "przewijak", "brodzik"]
+why = "Łóżeczko i wanienka w pokoju, krzesełka i przewijak w restauracji, brodzik z małą zjeżdżalnią."
+status = "lead"
+
+[[lead]]
+name = "Hotel Giżycko"
+town = "Giżycko"
+official_url = "https://hotel-gizycko.pl/"
+kids_url = "https://hotel-gizycko.pl/pokoj-rodzinny"
+osm = "node/9238859302"
+lat = 54.035636
+lon = 21.768095
+signals = ["łóżeczko turystyczne", "wanienka", "nocnik"]
+why = "Na życzenie (po uzgodnieniu z recepcją): łóżeczko turystyczne z pościelą, wanienka, nocnik."
+status = "lead"
+
+[[lead]]
+name = "Hotel St. Bruno"
+town = "Giżycko"
+official_url = "https://www.hotelstbruno.pl/"
+kids_url = "https://www.hotelstbruno.pl/dzieci/atrakcje-dla-dzieci/"
+osm = "way/256677482"
+lat = 54.0356
+lon = 21.760122
+signals = ["przewijak", "brodzik", "sala zabaw"]
+why = "Toaleta z przewijakiem, brodzik w strefie basenowej, sala zabaw (wiek nie podany)."
+status = "lead"
+
+[[lead]]
+name = "GrandHotel Tiffi"
+town = "Iława"
+official_url = "https://grandhotel.tiffi.com/"
+kids_url = "https://grandhotel.tiffi.com/atrakcje/"
+osm = "node/5997078722"
+lat = 53.602822
+lon = 19.559233
+signals = ["kącik sensoryczny dla najmłodszych"]
+why = "Tiffilandia: kącik sensoryczny z miękkimi matami dla najmłodszych; reszta (łóżeczko, brodzik) do sprawdzenia."
+status = "lead"
+
+[[lead]]
+name = "Port 110"
+town = "Iława"
+official_url = "http://port110.pl/"
+osm = "way/232154795"
+lat = 53.598422
+lon = 19.556839
+signals = []
+why = "Do sprawdzenia: sonda widziała łóżeczko, przewijak i krzesełko na stronie /hotel/dzieci, WebFetch nie łączy się (błąd TLS); czytać w Chrome."
+status = "lead"
+
+[[lead]]
+name = "Siedlisko Morena"
+town = "Jeziorowskie"
+official_url = "https://www.siedliskomorena.pl/"
+kids_url = "https://www.siedliskomorena.pl/dla-dzieci"
+osm = "node/2572260038"
+lat = 53.913202
+lon = 22.227854
+signals = ["łóżeczko", "wanienka", "podgrzewacz", "przewijak", "krzesełko", "brodzik"]
+why = "Łóżeczko z pościelą, wanienka, podgrzewacz do butelek, przewijaki w pokojach, krzesełka, brodzik z fontanną."
+status = "lead"
+
+[[lead]]
+name = "Mikołajki Resort Hotel & Spa"
+town = "Jora Wielka"
+signals = []
+why = "Do sprawdzenia: rodzinny resort (portale: brodzik, Kulkolandia); własnej strony hotelu nie znaleziono (mikolajkiresort.pl to portal o mieście)."
+status = "lead"
+
+[[lead]]
+name = "Kadyny Folwark Hotel & SPA"
+town = "Kadyny"
+official_url = "https://kadyny.com.pl/"
+kids_url = "https://kadyny.com.pl/dzieci"
+osm = "way/232071416"
+lat = 54.297214
+lon = 19.490428
+signals = ["łóżeczko", "wanienka", "krzesełko"]
+why = "Łóżeczko z pościelą, wanienka na życzenie (gdy łazienka bez wanny), krzesełko w restauracji."
+status = "lead"
+
+[[lead]]
+name = "Kosewo 78 Family Hotel & SPA"
+town = "Kosewo"
+official_url = "https://kosewo78.pl/"
+kids_url = "https://kosewo78.pl/regulamin/"
+osm = "way/375561494"
+lat = 53.82993
+lon = 21.378381
+signals = ["łóżeczko bezpłatnie"]
+why = "Regulamin: łóżeczko do pokoju na życzenie nieodpłatnie (w miarę dostępności); hotel rodzinny, reszta do sprawdzenia."
+status = "lead"
+
+[[lead]]
+name = "Hotel Gołębiewski Mikołajki"
+town = "Mikołajki"
+official_url = "https://www.golebiewski.pl/mikolajki"
+kids_url = "https://www.golebiewski.pl/mikolajki/dzieci"
+osm = "way/375547562"
+lat = 53.804599
+lon = 21.558021
+signals = ["łóżeczko turystyczne", "wanienka", "brodzik", "sala zabaw"]
+why = "Łóżeczko turystyczne i wanienka na życzenie, brodzik z ciepłą wodą i piaskownicą w Tropikanie, sala zabaw z małpim gajem."
+status = "lead"
+
+[[lead]]
+name = "Hotel Mikołajki"
+town = "Mikołajki"
+official_url = "https://www.hotelmikolajki.pl/"
+kids_url = "https://www.hotelmikolajki.pl/hotel/dzieci"
+osm = "way/375551351"
+lat = 53.797737
+lon = 21.568886
+signals = ["brodzik", "sala zabaw"]
+why = "Brodzik dla najmłodszych, sala zabaw 7–22 codziennie; łóżeczka strona nie wymienia."
+status = "lead"
+
+[[lead]]
+name = "Pałac Mortęgi Hotel & SPA"
+town = "Mortęgi"
+official_url = "https://palacmortegi.pl/"
+kids_url = "https://palacmortegi.pl/pobyt-z-dziecmi/atrakcje-dla-dzieci"
+osm = "node/5006688559"
+lat = 53.456102
+lon = 19.726742
+signals = ["łóżeczko turystyczne", "wanienka", "nocnik", "brodzik"]
+why = "Łóżeczko turystyczne, wanienka, nocnik, nakładki na toaletę, basen z brodzikiem, basen z piłeczkami dla najmłodszych."
+status = "curated"
+
+[[lead]]
+name = "Hotel Mrągowo Resort & SPA"
+town = "Mrągowo"
+official_url = "https://mragoworesort.pl/"
+kids_url = "https://mragoworesort.pl/dla-dzieci/"
+osm = "way/375871287"
+lat = 53.874211
+lon = 21.322405
+signals = ["łóżeczko drewniane", "krzesełko", "brodzik", "sala zabaw"]
+why = "Drewniane łóżeczko dla niemowląt na życzenie, krzesełka do karmienia, brodzik dla najmłodszych, sala zabaw."
+status = "lead"
+
+[[lead]]
+name = "Przystań Hotel & SPA"
+town = "Olsztyn"
+official_url = "https://www.hotelprzystan.com/"
+kids_url = "https://www.hotelprzystan.com/familyandfriends"
+osm = "way/307133146"
+lat = 53.781751
+lon = 20.450412
+signals = ["basen dla maluchów", "sala zabaw"]
+why = "Sekcja Maluchy: basen z podgrzewaną wodą i zabawkami pod okiem ratownika, sala zabaw, menu dla dzieci; łóżeczko do sprawdzenia."
+status = "lead"
+
+[[lead]]
+name = "Hotel Mazurski Raj"
+town = "Piaski"
+official_url = "https://www.mazurskiraj.pl/"
+kids_url = "https://www.mazurskiraj.pl/dla-dzieci"
+osm = "node/3801984916"
+lat = 53.686072
+lon = 21.582248
+signals = ["łóżeczko", "krzesełko", "brodzik"]
+why = "Łóżeczka na życzenie, krzesełka w restauracjach, płytki brodzik z wodnym placem zabaw dla najmłodszych."
+status = "lead"
+
+[[lead]]
+name = "Hotel Joseph Conrad"
+town = "Pisz"
+official_url = "https://hotelconrad.pl/"
+osm = "node/1857311549"
+lat = 53.639195
+lon = 21.823188
+signals = []
+why = "Do sprawdzenia: sonda widziała łóżeczko i 'do 3 lat' w FAQ, strona renderowana JS (WebFetch widzi tylko tytuł); czytać w Chrome."
+status = "lead"
+
+[[lead]]
+name = "Warmia Park"
+town = "Pluski"
+official_url = "https://www.warmiapark.pl/"
+kids_url = "https://www.warmiapark.pl/7,hotel_dla_rodzin_z_dziecmi_mazury_pluski_olsztyn"
+osm = "node/3620664709"
+lat = 53.613107
+lon = 20.415795
+signals = ["łóżeczko", "wanienka", "krzesełko"]
+why = "Łóżeczko z pościelą i wanienka na życzenie, krzesełka do karmienia, dzieci do 4 lat bezpłatnie (sonda dostała 403, WebFetch czyta)."
+status = "lead"
+
+[[lead]]
+name = "Hotel Anders"
+town = "Stare Jabłonki"
+official_url = "https://www.hotelanders.pl/"
+kids_url = "https://www.hotelanders.pl/dla-dzieci"
+osm = "way/356651141"
+lat = 53.687954
+lon = 20.099133
+signals = ["łóżeczko", "wanienka", "krzesełko", "przewijak"]
+why = "Łóżeczko i wanienki przez recepcję, krzesełko w restauracji, toaleta z przewijakiem, sala zabaw 7–22 (Mini Klub od 4 lat)."
+status = "lead"
+
+[[lead]]
+name = "Hotel Robert's Port"
+town = "Stare Sady"
+official_url = "https://www.hotel-port.pl/"
+kids_url = "https://www.hotel-port.pl/hotel-przyjazny-rodzinie"
+osm = "node/7860496107"
+lat = 53.836782
+lon = 21.546774
+signals = ["łóżeczko", "przewijak", "podgrzewacz", "wanienka", "brodzik", "klub malucha"]
+why = "Łóżeczko, przewijak, podgrzewacz do butelek, wanienka; klub malucha z małpim gajem, brodzik; dzieci do 4 lat bezpłatnie."
+status = "curated"
+
+[[lead]]
+name = "Natura Mazur Hotel & SPA"
+town = "Warchały"
+official_url = "https://naturamazur.pl/"
+kids_url = "https://naturamazur.pl/hotel-przyjazny-rodzinie"
+osm = "way/824299197"
+lat = 53.538372
+lon = 20.80334
+signals = ["łóżeczko", "podgrzewacz", "wanienka", "nocnik", "krzesełko"]
+why = "Łóżeczko z materacem i pościelą, podgrzewacz do butelek, wanienka, nocnik lub nakładka, krzesełko do karmienia."
+status = "curated"
+
+[[lead]]
+name = "Hotel Ognisty Ptak"
+town = "Węgorzewo"
+official_url = "https://www.ognistyptak.pl/"
+kids_url = "https://www.ognistyptak.pl/ognisty-ptak/hotel-przyjazny-rodzinie"
+osm = "node/3327151763"
+lat = 54.175492
+lon = 21.807285
+signals = ["łóżeczko", "wanienka", "krzesełko", "brodzik"]
+why = "Łóżeczko z materacem i pościelą, wanienka, krzesełka do karmienia, brodzik z atrakcjami wodnymi, Toddler Club w sezonie."
+status = "curated"
+
+[[lead]]
+name = "Masuria Hotel & SPA"
+town = "Worliny"
+official_url = "https://hotelmasuria.pl/"
+kids_url = "https://hotelmasuria.pl/dla-dzieci/"
+osm = "node/1061552164"
+lat = 53.784155
+lon = 20.127379
+signals = ["strefa maluszków z brodzikiem", "pokój zabaw"]
+why = "Wydzielona strefa dla maluszków z brodzikiem i fontanną, pokój zabaw dla najmłodszych; sonda widziała 'nie ma możliwości wstawienia ... łóżeczka' (w których pokojach: do sprawdzenia)."
+status = "lead"
+
+[[lead]]
+name = "Dr Irena Eris Wzgórza Dylewskie"
+town = "Wysoka Wieś"
+official_url = "https://www.drirenaerisspa.pl/wzgorza-dylewskie"
+kids_url = "https://www.drirenaerisspa.pl/wzgorza-dylewskie/hotel/dzieci-w-hotelu"
+osm = "node/3620664707"
+lat = 53.543946
+lon = 19.94157
+signals = ["łóżeczko", "krzesełko", "pieluszki", "basen dla dzieci"]
+why = "Łóżeczko na życzenie, krzesełka w restauracji, pieluszki w SPA; pobyt dzieci do ukończenia 3 lat bezpłatny."
+status = "lead"
+
+[[lead]]
+name = "Zalesie Mazury Active Spa"
+town = "Zalesie"
+official_url = "https://www.zalesiemazury.pl/"
+kids_url = "https://www.zalesiemazury.pl/dzieci/baby-club"
+osm = "node/4162583291"
+lat = 53.830512
+lon = 20.738063
+signals = ["Baby Club 4 mies.–3 lata", "sala do drzemek z łóżeczkami"]
+why = "Baby Club dla dzieci od 4 miesięcy do 3 lat, 11 godzin dziennie, w cenie pobytów pakietowych; reszta (łóżeczko w pokoju) do sprawdzenia."
+status = "lead"
+
+[[lead]]
+name = "Lake Hill Mazury Resort & SPA"
+town = "Ostróda"
+official_url = "https://www.lakehillmazury.pl/"
+kids_url = "https://www.lakehillmazury.pl/hotel/dla-dzieci"
+osm = "way/1307846391"
+status = "skipped"
+skip_reason = "Strona dla dzieci (duża sala zabaw, kids club) bez niczego konkretnego dla 0-3: łóżeczka, brodzika ani wieku sali nie podaje (2026-11-07)."
+
+[[lead]]
+name = "Hotel Marina Club"
+town = "Siła"
+official_url = "https://www.hotelmarinaclub.pl/"
+kids_url = "https://www.hotelmarinaclub.pl/dla-dzieci"
+osm = "way/1532806667"
+status = "skipped"
+skip_reason = "Strona dla dzieci: animacje i sala z mega klockami, nic dla 0-3 (2026-11-07)."

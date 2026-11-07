@@ -102,6 +102,13 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       `/hotele/porownaj/?h=…` compares 2–4 hotels side by side. Foreign hotels (Rodos, Heraklion) hidden
       for now: `SHOW_FOREIGN_HOTELS` in `family/src/lib/data.ts`, data stays in the export.
 - [x] U (2026-11-07): publish all hotels (58 `published`; foreign ones stay hidden by `SHOW_FOREIGN_HOTELS`).
+      New hotels are written `published` from now on.
+- [x] C: hotel leads warmińsko-mazurskie (2026-11-07, `find-hotels`): 24 leads, 3 do sprawdzenia (Port 110,
+      Joseph Conrad: JS/TLS, read in Chrome; Mikołajki Resort Jora Wielka: own site not found); skipped
+      Lake Hill Mazury, Marina Club (nothing for 0-3).
+- [x] C: warmińsko-mazurskie hotels, batch 1 (2026-11-07): Robert's Port (Stare Sady, 11 facts; brodzik
+      only 3+), Natura Mazur (Warchały, 11), Ognisty Ptak (Ogonki, 10), Pałac Mortęgi (7: under 8). Car
+      access only; train for Mazury still to do (rozklad-pkp.pl). 20 leads left.
 - [x] ~~U: decide which pomorskie hotels to publish (all are `draft`);~~ superseded above; those under 8 facts need a phone or e-mail
       round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Kiston cot fee, free-stay age, brodzik; Primavera cot fee, Playland age;

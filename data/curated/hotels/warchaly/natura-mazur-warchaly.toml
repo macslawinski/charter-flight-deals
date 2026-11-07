@@ -1,0 +1,173 @@
+# Facts from the hotel's own website (naturamazur.pl; robots.txt allows all, checked 2026-11-07):
+# /hotel-przyjazny-rodzinie, home page, /warunki-rezerwacji. Written in our words.
+# Also on the site, no feature key for it: Kids SPA treatments from age 7; water bikes, kayaks and boats in
+# summer.
+# Not stated (so not recorded yet): cot fee, free-stay age, changing table, baby monitor, food for babies,
+# playroom ages/hours/supervision, parking, lift.
+#
+# Coordinates: OpenStreetMap way/824299197 (centre; (c) OpenStreetMap contributors, ODbL).
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet (nearest stations Szczytno / Olsztyn).
+slug = "natura-mazur-warchaly"
+place = "warchaly"
+name = "Natura Mazur Hotel & SPA"
+official_url = "https://naturamazur.pl/"
+address = "ul. Brajnicka 1, Warchały, 12-122 Jedwabno"
+lat = 53.538372
+lon = 20.80334
+status = "published"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true, mattress = true }
+short = "Z materacem, na życzenie"
+note = "Łóżeczko z materacem dla małego dziecka na życzenie. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://naturamazur.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "high_chair"
+value = { available = true }
+short = "Krzesełko do karmienia"
+note = "Krzesełko do karmienia wśród udogodnień dla rodzin."
+source = "hotel_website"
+url = "https://naturamazur.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Menu dla dzieci w restauracji"
+note = "Specjalne menu dla dzieci w restauracji Poezja Smaków."
+source = "hotel_website"
+url = "https://naturamazur.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true, on_request = true }
+short = "Na życzenie"
+note = "Podgrzewacz do butelek na życzenie."
+source = "hotel_website"
+url = "https://naturamazur.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, on_request = true }
+short = "Na życzenie"
+note = "Wanienka do kąpieli dziecka na życzenie."
+source = "hotel_website"
+url = "https://naturamazur.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "potty"
+value = { available = true, on_request = true, toilet_seat_adapter = true }
+short = "Nocnik lub nakładka na sedes"
+note = "Nocnik albo nakładka na sedes na życzenie."
+source = "hotel_website"
+url = "https://naturamazur.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Sala zabaw"
+note = "Sala zabaw dla dzieci. Minimalnego wieku, godzin ani opieki strona nie podaje."
+source = "hotel_website"
+url = "https://naturamazur.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "Plac zabaw na zewnątrz"
+note = "Plac zabaw na świeżym powietrzu."
+source = "hotel_website"
+url = "https://naturamazur.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, seasonal = true }
+short = "W wakacje, święta i długie weekendy"
+note = "Codzienne gry i zabawy z animatorami w wakacje, święta i długie weekendy. Wieku strona nie podaje."
+source = "hotel_website"
+url = "https://naturamazur.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "paddling_pool"
+value = { available = true }
+short = "Brodzik przy basenie"
+note = "Basen rekreacyjny i brodzik dla dzieci. Wieku, temperatury ani czy jest kryty strona nie podaje."
+source = "hotel_website"
+url = "https://naturamazur.pl/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { on_beach = true, lake = "Świętajno" }
+short = "Własna plaża nad jeziorem"
+note = "Hotel nad samym brzegiem jeziora Świętajno, z bezpośrednim dostępem do piaszczystej plaży."
+source = "hotel_website"
+url = "https://naturamazur.pl/"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 155
+note = "190 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.5384%2C20.8033"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 155
+note = "200 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.5384%2C20.8033"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 320
+note = "380 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.5384%2C20.8033"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 325
+note = "460 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.5384%2C20.8033"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 350
+note = "490 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.5384%2C20.8033"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 360
+note = "490 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.5384%2C20.8033"
+verified_at = 2026-11-07
