@@ -112,3 +112,31 @@ name = "Pogorzelica"
 country = "Polska"
 region = "Bałtyk – Pomorze Zachodnie"
 kind = "domestic"
+
+[[place]]
+slug = "chalupy"
+name = "Chałupy"
+country = "Polska"
+region = "Bałtyk – Pomorze"
+kind = "domestic"
+
+[[place]]
+slug = "jastrzebia-gora"
+name = "Jastrzębia Góra"
+country = "Polska"
+region = "Bałtyk – Pomorze"
+kind = "domestic"
+
+[[place]]
+slug = "leba"
+name = "Łeba"
+country = "Polska"
+region = "Bałtyk – Pomorze"
+kind = "domestic"
+
+[[place]]
+slug = "ustka"
+name = "Ustka"
+country = "Polska"
+region = "Bałtyk – Pomorze"
+kind = "domestic"

@@ -1,0 +1,222 @@
+# Facts from the hotel's own website (astorhotel.pl; robots.txt allows all, checked 2026-11-07):
+# /z-dziecmi, /basen-i-atrakcje, home page. Written in our words.
+# Also on the site, no feature key for it: outdoor water zone for children from 3 years with parents
+# (Mon-Sat 10:00-17:00, weather permitting); a service at 25 zł per child per hour for non-hotel guests (the page
+# doesn't say which); family sauna. The hotel belongs to the Primavera group.
+# Not stated (so not recorded yet): free-stay age, cot fee, bottle warmer, potty, toddler food, playroom minimum
+# age and hours (the page lists hours without saying which service they belong to), brodzik depth, lift, parking.
+#
+# Coordinates: the hotel's own Google Maps link.
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most one
+#   change, to Władysławowo station. Station -> hotel: ~7 km, ~10 min by car or taxi (OSRM).
+slug = "astor-jastrzebia-gora"
+place = "jastrzebia-gora"
+name = "Hotel Astor"
+official_url = "https://www.astorhotel.pl/"
+address = "ul. Rozewska 38, 84-104 Jastrzębia Góra"
+lat = 54.8326268  # the hotel's own Google Maps link
+lon = 18.3181304
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, limited = true }
+short = "Do wypożyczenia, liczba ograniczona"
+note = "Łóżeczko do wypożyczenia; liczba łóżeczek ograniczona. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.astorhotel.pl/z-dziecmi"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "high_chair"
+value = { available = true }
+short = "Jest"
+note = "Krzesełko do jedzenia dla dziecka."
+source = "hotel_website"
+url = "https://www.astorhotel.pl/z-dziecmi"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Specjalne menu dla dzieci"
+note = "Specjalne menu dla dzieci (informacja w recepcji i restauracji). O jedzeniu dla niemowląt strona nie wspomina."
+source = "hotel_website"
+url = "https://www.astorhotel.pl/z-dziecmi"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "baby_bath"
+value = { available = true }
+short = "Informacja w recepcji"
+note = "Wanienka do kąpieli; szczegóły w recepcji."
+source = "hotel_website"
+url = "https://www.astorhotel.pl/z-dziecmi"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "changing_table"
+value = { available = true, rental = true }
+short = "Do wypożyczenia"
+note = "Przewijak dla małych dzieci do wypożyczenia; szczegóły w recepcji."
+source = "hotel_website"
+url = "https://www.astorhotel.pl/z-dziecmi"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Sala zabaw Fun&Jungle"
+note = "Duża sala zabaw Fun&Jungle. Minimalnego wieku i zasad opieki strona nie podaje."
+source = "hotel_website"
+url = "https://www.astorhotel.pl/z-dziecmi"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true, count = 2 }
+short = "Dwa place zabaw na zewnątrz"
+note = "Dwa zewnętrzne place zabaw."
+source = "hotel_website"
+url = "https://www.astorhotel.pl/z-dziecmi"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_animation"
+age_band = "0-3"
+value = { available = true, year_round = true, toddler_classes = true, parent_required = true }
+short = "Zajęcia 6 mies.–3 lata z rodzicami"
+note = "Animacje przez cały rok, 6 dni w tygodniu, dla dzieci w różnym wieku; osobne zajęcia dla maluchów od 6. miesiąca do 3 lat razem z rodzicami (plan animacji na stronie)."
+source = "hotel_website"
+url = "https://www.astorhotel.pl/z-dziecmi"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "paddling_pool"
+value = { available = true, indoor = true }
+short = "Brodzik przy basenie"
+note = "Basen z jacuzzi i brodzikiem dla dzieci. Głębokości i temperatury strona nie podaje."
+source = "hotel_website"
+url = "https://www.astorhotel.pl/z-dziecmi"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { distance_m = 100 }
+short = "Ok. 100 m do zejścia na plażę"
+note = "Ok. 100 m do zejścia na plażę."
+source = "hotel_website"
+url = "https://www.astorhotel.pl/"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 80
+note = "70 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.8326%2C18.3181"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 265
+note = "370 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.8326%2C18.3181"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 300
+note = "410 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.8326%2C18.3181"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 365
+note = "590 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.8326%2C18.3181"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 375
+note = "550 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.8326%2C18.3181"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 410
+note = "660 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.8326%2C18.3181"
+verified_at = 2026-11-07
+
+# --- Access: train to Władysławowo station (rozklad-pkp.pl, 2026-11-12) --------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "train"
+minutes = 78
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 238
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 279
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 382
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 392
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 403
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07

@@ -1,0 +1,258 @@
+# Facts from the hotel's own website (royal-baltic.pl; robots.txt allows all, checked 2026-11-07):
+# /dla_dzieci, /faq. Written in our words.
+# Also on the site, no feature key for it: family room with billiards, table tennis and table football (free);
+# anti-slip mats and a poncho for small children on request; Baby SPA offer; bathroom steps; some offers give a
+# free extra bed to one child under 9.
+# Not stated (so not recorded yet): changing table, toddler food, Kidsplay minimum age and whether a parent must
+# stay, animation ages, brodzik depth.
+#
+# Coordinates: the hotel's own Google Maps link.
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most one
+#   change, to Ustka station. Station -> hotel: ~2 km, ~5 min by car or taxi (OSRM).
+slug = "royal-baltic-ustka"
+place = "ustka"
+name = "Hotel Royal Baltic"
+official_url = "https://www.royal-baltic.pl/"
+address = "ul. Wczasowa 26, 76-270 Ustka"
+lat = 54.587365  # the hotel's own Google Maps link
+lon = 16.88368
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true, paid = true, fee_pln_per_night_from = 20 }
+short = "Na życzenie, od 20 zł za dobę"
+note = "Kompletne łóżeczko dla małego dziecka na życzenie, płatne od 20 zł za dobę (FAQ)."
+source = "hotel_website"
+url = "https://royal-baltic.pl/faq"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "child_free_stay"
+age_band = "0-2"
+value = { free = true, sleeping_with_parents = true }
+short = "Do lat 2 gratis, śpiąc z rodzicami"
+note = "Pobyt bezpłatny dla dzieci do lat 2 śpiących z rodzicami (FAQ). Starsze dzieci: zniżki wg cennika lub pakietu."
+source = "hotel_website"
+url = "https://royal-baltic.pl/faq"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "high_chair"
+value = { available = true, free = true, where = "restaurant" }
+short = "Bezpłatnie w restauracji"
+note = "Krzesełka do karmienia w restauracji, bezpłatnie."
+source = "hotel_website"
+url = "https://royal-baltic.pl/faq"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Bajkowe Menu z Krainy Czarów"
+note = "Specjalne menu dla dzieci („Bajkowe Menu z Krainy Czarów”). O jedzeniu dla niemowląt strona nie wspomina."
+source = "hotel_website"
+url = "https://royal-baltic.pl/dla_dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true }
+short = "W pokoju i w restauracji"
+note = "Podgrzewacz do butelek w pokoju (na życzenie) i w restauracji."
+source = "hotel_website"
+url = "https://royal-baltic.pl/dla_dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, on_request = true }
+short = "Na życzenie"
+note = "Wanienka do kąpieli do pokoju na życzenie. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://royal-baltic.pl/faq"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "potty"
+value = { available = true, toilet_seat_adapter = true }
+short = "Nocnik i nakładka na sedes"
+note = "Nocniki i nakładka na sedes do pokoju."
+source = "hotel_website"
+url = "https://royal-baltic.pl/faq"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playroom"
+value = { available = true, count = 2, free = true, hours = "09:00-21:00" }
+short = "Dwie sale, 9:00–21:00, bezpłatnie"
+note = "Dwie sale zabaw: Kidsplay Royal Blue (multimedia, 9:00–21:00, bezpłatnie) i Kidsplay Royal Green dla młodszych dzieci. Minimalnego wieku i zasad opieki strona nie podaje."
+source = "hotel_website"
+url = "https://royal-baltic.pl/dla_dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true, count = 2 }
+short = "Dwa na zewnątrz"
+note = "Dwa zewnętrzne place zabaw."
+source = "hotel_website"
+url = "https://royal-baltic.pl/faq"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, seasonal = true }
+short = "W wybranych terminach"
+note = "Animacje w wybranych terminach (sezonowo). Przedziału wieku strona nie podaje."
+source = "hotel_website"
+url = "https://royal-baltic.pl/faq"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "paddling_pool"
+value = { available = true, indoor = true, warm = true }
+short = "Brodzik z ciepłą wodą"
+note = "Basen z bezpiecznym brodzikiem z ciepłą wodą. Głębokości i temperatury strona nie podaje."
+source = "hotel_website"
+url = "https://royal-baltic.pl/faq"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "lift"
+value = { available = true }
+short = "Jest"
+note = "Hotel ma windę i podjazdy (FAQ)."
+source = "hotel_website"
+url = "https://royal-baltic.pl/faq"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { distance_m = 300 }
+short = "Ok. 300 m ścieżką do morza"
+note = "Ok. 300 m do brzegu morza ścieżką spacerową."
+source = "hotel_website"
+url = "https://royal-baltic.pl/faq"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "parking"
+value = { paid = true, guarded = false, fee_pln_per_day_min = 30, fee_pln_per_day_max = 50 }
+short = "Niestrzeżony, 30–50 zł/doba"
+note = "Parking niestrzeżony, płatny 30–50 zł za dobę zależnie od sezonu i oferty."
+source = "hotel_website"
+url = "https://royal-baltic.pl/faq"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 120
+note = "150 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.5874%2C16.8837"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 305
+note = "290 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.5874%2C16.8837"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 345
+note = "490 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.5874%2C16.8837"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 410
+note = "470 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.5874%2C16.8837"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 410
+note = "670 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.5874%2C16.8837"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 450
+note = "740 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.5874%2C16.8837"
+verified_at = 2026-11-07
+
+# --- Access: train to Ustka station (rozklad-pkp.pl, 2026-11-12) --------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "train"
+minutes = 159
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 236
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 352
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 372
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 451
+note = "1 przesiadka · bezpośredni 9 h 34 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 505
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
