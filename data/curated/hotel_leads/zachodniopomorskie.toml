@@ -1,0 +1,438 @@
+# Leads for Product B: hotels in województwo zachodniopomorskie whose own website shows an offer for
+# children 0-3. Discovered via OpenStreetMap (tourism=hotel, leisure=resort; (c) OpenStreetMap
+# contributors, ODbL) and web search pointing to the hotels' own sites; each lead confirmed on its own
+# kids page. Not facts: the curate-hotel skill reads the facts.
+voivodeship = "zachodniopomorskie"
+checked_at = 2026-11-07
+covered = ["całe województwo (668 obiektów w OSM, 344 strony sprawdzone), 2026-11-07"]
+
+[[lead]]
+name = "Lidia Spa"
+town = "Darłowo"
+official_url = "https://www.hotel-lidia.pl/"
+kids_url = "https://www.hotel-lidia.pl/dzieci"
+osm = "node/1420849667"
+lat = 54.4376126
+lon = 16.3770613
+signals = ["łóżeczko", "wanienka", "podgrzewacz", "przewijak", "krzesełko", "brodzik", "sala zabaw"]
+why = "Wanienka, podgrzewacz, przewijak i krzesełko bezpłatnie; łóżeczko 30 zł/noc; osobny brodzik dla najmłodszych; sala zabaw."
+status = "lead"
+
+[[lead]]
+name = "Gorzelanny"
+town = "Dźwirzyno"
+official_url = "https://gorzelanny.pl/hotel-dzwirzyno/"
+kids_url = "https://gorzelanny.pl/hotel-dzwirzyno/dla-dzieci/"
+osm = "way/1303545551"
+lat = 54.1512745
+lon = 15.400362
+signals = ["łóżeczko", "krzesełko", "pokój zabaw", "do 3 lat"]
+why = "Łóżeczko turystyczne 100 zł/pobyt, krzesełka na życzenie, pokój zabaw; jedno dziecko do 3 lat gratis."
+status = "lead"
+
+[[lead]]
+name = "HAVET Hotel Resort & Spa"
+town = "Dźwirzyno"
+official_url = "https://www.havethotel.pl/"
+kids_url = "https://www.havethotel.pl/dla-dzieci"
+osm = "node/4322749753"
+lat = 54.1617286
+lon = 15.4225246
+signals = ["podgrzewacz", "przewijak", "nakładka na toaletę", "brodzik", "kids club"]
+why = "Podgrzewacze butelek, przewijaki, nakładki na toaletę; basen z brodzikiem dla maluchów; kids club."
+status = "lead"
+
+[[lead]]
+name = "Neptuno Resort"
+town = "Dźwirzyno"
+official_url = "https://www.neptuno.pl/"
+kids_url = "https://www.neptuno.pl/wakacje-nad-morzem-z-dzieckiem"
+osm = "node/2885047114"
+lat = 54.1606877
+lon = 15.4194821
+signals = ["łóżeczko", "wanienka", "podgrzewacz", "przewijak", "nocnik"]
+why = "Na życzenie: łóżeczka z pościelą, wanienki, podgrzewacze, przewijaki, nocniki; sale zabaw."
+status = "lead"
+
+[[lead]]
+name = "Saltic Resort & SPA"
+town = "Grzybowo"
+official_url = "https://www.hotelsaltic.pl/"
+kids_url = "https://www.hotelsaltic.pl/grzybowo/pakiety/pakiet-rodzinny-nad-morzem"
+osm = "node/6704220785"
+lat = 54.1656584
+lon = 15.5044158
+signals = ["łóżeczko", "wanienka", "podgrzewacz", "przewijak", "nocnik", "krzesełko", "brodzik"]
+why = "Już opracowany: data/curated/hotels/grzybowo/saltic-resort-spa-grzybowo.toml."
+status = "curated"
+
+[[lead]]
+name = "Aquarius SPA"
+town = "Kołobrzeg"
+official_url = "https://www.aquariusspa.pl/"
+kids_url = "https://www.aquariusspa.pl/hotel-aquarius-spa/dla-dzieci"
+evidence_urls = ["https://www.aquariusspa.pl/pl/hotel-dla-rodzin-z-dziecmi/"]
+osm = "node/1379289444"
+lat = 54.183634
+lon = 15.5909435
+signals = ["brodzik", "przewijak", "sala zabaw"]
+why = "Brodzik i przewijak w Aquacenter, sala zabaw; strona rodzinna wymienia też łóżeczko, wanienkę, podgrzewacz (do potwierdzenia przy kuracji)."
+status = "lead"
+
+[[lead]]
+name = "Baltic Plaza MediSPA"
+town = "Kołobrzeg"
+official_url = "https://www.balticplaza.eu/"
+kids_url = "https://www.balticplaza.eu/oferty-specjalne/szczegoly-pakietu?OfferID=826182"
+osm = "node/1662698981"
+lat = 54.1697902
+lon = 15.5284669
+signals = ["łóżeczko", "wanienka", "podgrzewacz", "krzesełko", "sala zabaw"]
+why = "Tylko w pakiecie 'Rodzinne Ferie': łóżeczko (wg cennika), wanienka, podgrzewacz, krzesełka, sala zabaw; brak stałej strony dla dzieci."
+status = "lead"
+
+[[lead]]
+name = "Blue & Green Baltic Hotel"
+town = "Kołobrzeg"
+official_url = "https://www.blueandgreenhotels.pl/morze/"
+kids_url = "https://www.blueandgreenhotels.pl/morze/dzieci"
+osm = "node/10175216689"
+lat = 54.1692458
+lon = 15.5274408
+signals = ["łóżeczko", "wanienka", "podgrzewacz", "krzesełko", "sala zabaw"]
+why = "Na życzenie łóżeczko z pościelą (płatne wg cennika), wanienka, podgrzewacz; krzesełka w restauracji; sala zabaw dla maluchów."
+status = "lead"
+
+[[lead]]
+name = "Diva Spa"
+town = "Kołobrzeg"
+official_url = "https://hoteldivaspa.pl/"
+kids_url = "https://hoteldivaspa.pl/dla-rodziny/udogodnienia-dla-rodzin"
+evidence_urls = ["https://hoteldivaspa.pl/dla-rodziny/kids-club"]
+osm = "node/1420165753"
+lat = 54.1843732
+lon = 15.5856499
+signals = ["łóżeczko", "podgrzewacz", "krzesełko", "kids club"]
+why = "Na życzenie łóżeczko z pościelą, podgrzewacz do butelek, nakładka na toaletę; krzesełka w restauracji; kids club."
+status = "lead"
+
+[[lead]]
+name = "Factory Resort"
+town = "Kołobrzeg"
+official_url = "https://www.factoryresort.pl/"
+kids_url = "https://www.factoryresort.pl/resort-nad-morzem-dla-dzieci"
+osm = "node/7734339032"
+lat = 54.1827087
+lon = 15.5830789
+signals = ["łóżeczko", "wanienka", "nocnik", "brodzik", "pieluchy kąpielowe"]
+why = "Łóżeczko 20 zł/dobę; wanienka, nocnik, nakładka na sedes bezpłatnie; brodzik dla najmłodszych."
+status = "lead"
+
+[[lead]]
+name = "Seaside Park Hotel"
+town = "Kołobrzeg"
+official_url = "https://seasidepark.pl/"
+kids_url = "https://seasidepark.pl/dla-dzieci"
+osm = "way/639930379"
+lat = 54.1893112
+lon = 15.6056392
+signals = ["łóżeczko", "wanienka", "podgrzewacz", "nocnik", "pokój zabaw"]
+why = "Łóżeczko turystyczne z pościelą, wanienka, podgrzewacz, nocnik; pokój zabaw czynny całą dobę."
+status = "lead"
+
+[[lead]]
+name = "Wave Międzyzdroje Resort & SPA"
+town = "Międzyzdroje"
+official_url = "https://wavemiedzyzdroje.pl/"
+kids_url = "https://wavemiedzyzdroje.pl/dla-dzieci/"
+osm = "way/171601784"
+lat = 53.9259392
+lon = 14.4337753
+signals = ["łóżeczko", "krzesełko", "kids zone"]
+why = "Łóżeczka na życzenie, wysokie krzesła i dania dla maluszków w restauracji; Kids Zone podzielona wiekowo."
+status = "lead"
+
+[[lead]]
+name = "Hotel Trofana Wellness & SPA"
+town = "Międzyzdroje"
+official_url = "https://www.hotel-trofana.pl/"
+kids_url = "https://www.hotel-trofana.pl/hotel/dzieci"
+osm = "node/1417970447"
+lat = 53.9300642
+lon = 14.4479743
+signals = ["łóżeczko", "wanienka", "nocnik", "krzesełko"]
+why = "Na życzenie łóżeczko, wanienka i nocnik; krzesełka w restauracji."
+status = "lead"
+
+[[lead]]
+name = "Hotel Wolin"
+town = "Międzyzdroje"
+official_url = "https://www.hotelwolin.pl/"
+kids_url = "https://www.hotelwolin.pl/dla-dzieci/wyposazenie-pokoi"
+evidence_urls = ["https://www.hotelwolin.pl/dla-dzieci"]
+osm = "relation/20639286"
+lat = 53.9214198
+lon = 14.4378787
+signals = ["łóżeczko", "wanienka", "krzesełko", "sala zabaw"]
+why = "Bezpłatnie na życzenie: łóżeczko z pościelą, krzesełko do karmienia, wanienka; sala zabaw."
+status = "lead"
+
+[[lead]]
+name = "Dworek Morski SPA & Wellness"
+town = "Mielno"
+official_url = "https://dworekmorski.pl/"
+kids_url = "https://dworekmorski.pl/wczasy-dla-rodzin/"
+osm = "node/10711674121"
+lat = 54.2604914
+lon = 16.0649192
+signals = ["brodzik", "łóżeczko"]
+why = "Bezpieczny brodzik dla najmłodszych, dania dla najmłodszych; łóżeczko turystyczne mieści się w pokojach (opłaty strona nie podaje)."
+status = "lead"
+
+[[lead]]
+name = "Unitral Medical Spa"
+town = "Mielno"
+official_url = "https://www.unitral.pl/"
+kids_url = "https://www.unitral.pl/dzieci"
+osm = "node/1420128955"
+lat = 54.2604655
+lon = 16.0574404
+signals = ["łóżeczko", "wanienka", "podgrzewacz", "przewijak", "krzesełko", "brodzik"]
+why = "Łóżeczko (płatne), wanienka, podgrzewacz, przewijak na życzenie; krzesełka; strefa brodzika dla najmłodszych."
+status = "lead"
+
+[[lead]]
+name = "Hotel Zalewski"
+town = "Mrzeżyno"
+official_url = "https://www.hotelzalewski.pl/"
+kids_url = "https://www.hotelzalewski.pl/hotel/dla-dzieci"
+osm = "way/588677688"
+lat = 54.1468599
+lon = 15.3004489
+signals = ["brodzik", "sala zabaw"]
+why = "Brodziki dla najmłodszych w aquaparku, sala zabaw; sprzętu dla niemowląt strona dla dzieci nie wymienia."
+status = "lead"
+
+[[lead]]
+name = "Amber Park Spa"
+town = "Niechorze"
+official_url = "https://www.amber-park.pl/"
+kids_url = "https://www.amber-park.pl/hotel/dla-dzieci"
+osm = "way/314686946"
+lat = 54.0894799
+lon = 15.0571569
+signals = ["brodzik", "domek dla maluszków"]
+why = "Brodzik 40 cm dla maluchów, domek dla maluszków z mini zjeżdżalnią; sprzętu dla niemowląt strona nie wymienia."
+status = "lead"
+
+[[lead]]
+name = "Grand Laola Spa"
+town = "Pobierowo"
+official_url = "https://www.laola.pl/"
+kids_url = "https://www.laola.pl/dla-dzieci"
+osm = "node/8360413326"
+lat = 54.0566565
+lon = 14.9141195
+signals = ["łóżeczko", "wanienka", "krzesełko", "do 3 lat"]
+why = "Łóżeczka i wanienki do wypożyczenia, krzesełka i naczynia dziecięce; dzieci do 3 lat gratis we wszystkich ofertach."
+status = "lead"
+
+[[lead]]
+name = "Linea Mare"
+town = "Pobierowo"
+official_url = "https://www.lineamare.pl/"
+kids_url = "https://www.lineamare.pl/hotel-dla-dzieci"
+evidence_urls = ["https://www.lineamare.pl/linea-mare/najczesciej-zadawane-pytania-faq"]
+osm = "way/1193998792"
+lat = 54.055264
+lon = 14.9179599
+signals = ["łóżeczko", "wanienka", "nocnik", "podgrzewacz", "krzesełko", "brodzik"]
+why = "Wanienki, nocniki, podgrzewacze bezpłatnie; łóżeczko płatne; krzesełka; brodziki przy basenie wewnętrznym i zewnętrznym."
+status = "lead"
+
+[[lead]]
+name = "Sandra SPA"
+town = "Pogorzelica"
+official_url = "https://www.sandraspa.pl/"
+kids_url = "https://www.sandraspa.pl/dzieci/atrakcje-i-udogodnienia"
+osm = "way/209819437"
+lat = 54.0967472
+lon = 15.0996234
+signals = ["brodzik", "aquapark dla dzieci", "do 3 lat"]
+why = "Brodziki dla dzieci w aquaparku; dziecko do 3 lat śpiące z rodzicami w pakietach; sprzęt dla niemowląt do sprawdzenia przy kuracji."
+status = "lead"
+
+[[lead]]
+name = "Imperiall Resort & MediSpa"
+town = "Sianożęty"
+official_url = "https://imperiall.pl/"
+kids_url = "https://imperiall.pl/dla-dzieci"
+osm = "way/958581871"
+lat = 54.2095679
+lon = 15.7309638
+signals = ["basen dla małych dzieci", "sala zabaw z kącikiem rodzica"]
+why = "Wydzielony basen dla małych dzieci (mało chloru), sala zabaw Joonglaland z kącikiem dla rodzica."
+status = "lead"
+
+[[lead]]
+name = "Hotel Spa Cesarskie Ogrody"
+town = "Świnoujście"
+official_url = "https://www.cesarskieogrody.pl/"
+kids_url = "https://www.cesarskieogrody.pl/inspiracje/dla-dzieci"
+osm = "node/1668472169"
+lat = 53.9159381
+lon = 14.238966
+signals = ["łóżeczko", "podgrzewacz", "sala zabaw"]
+why = "Łóżeczka dla maluchów i podgrzewacze do butelek; sala zabaw, menu dziecięce."
+status = "lead"
+
+[[lead]]
+name = "Villa Hoff Wellness & Spa"
+town = "Trzęsacz"
+official_url = "https://villahoff.pl/"
+kids_url = "https://villahoff.pl/villa-hoff/dla-dzieci"
+osm = "way/382901950"
+lat = 54.0769361
+lon = 14.9941445
+signals = ["łóżeczko", "wanienka", "podgrzewacz", "krzesełko", "brodzik"]
+why = "Łóżeczka (płatne), wanienki, podgrzewacze na życzenie; krzesełka; brodzik 15 cm; dzieci do 3 lat gratis w większości pakietów."
+status = "lead"
+
+[[lead]]
+name = "Hotel Wodnik"
+town = "Ustronie Morskie"
+official_url = "https://www.wodnik.pl/"
+kids_url = "https://www.wodnik.pl/dzieci"
+osm = "node/2923583294"
+lat = 54.2184334
+lon = 15.7626134
+signals = ["łóżeczko", "sala zabaw", "do 1 roku"]
+why = "Bezpłatne łóżeczko dla niemowląt; dzieci do 1 roku całkowicie gratis; sala zabaw."
+status = "lead"
+
+# --- checked and rejected ---
+
+[[lead]]
+name = "SOLEO Family Resort"
+town = "Rewal"
+official_url = "https://soleo-resort.pl/"
+kids_url = "https://soleo-resort.pl/atrakcje/dzieci"
+osm = "way/609331912"
+status = "skipped"
+skip_reason = "Domki i apartamenty, nie hotel (bardzo dobra oferta 0-3: łóżeczko, wanienka, nocnik, krzesełko, brodzik 0,4 m)."
+
+[[lead]]
+name = "Natura Resort"
+town = "Pogorzelica"
+official_url = "https://naturaresort.pl/"
+osm = "way/300392402"
+status = "skipped"
+skip_reason = "Apartamenty, nie hotel (brodzik, Klub Malucha)."
+
+[[lead]]
+name = "Holiday Park & Resort Mielno"
+town = "Mielno"
+official_url = "https://holidaypark.pl/mielno"
+osm = "way/828756369"
+status = "skipped"
+skip_reason = "Domki/apartamenty sieci Holiday Park, nie hotel."
+
+[[lead]]
+name = "Villa Mare"
+town = "Grzybowo"
+official_url = "https://villamare.com.pl/"
+osm = "node/3050283173"
+status = "skipped"
+skip_reason = "Pensjonat z apartamentami, nie hotel (łóżeczko, wanienka, krzesełko na życzenie)."
+
+[[lead]]
+name = "Sanatorium Uzdrowiskowe DUKAT Medical SPA"
+town = "Dąbki"
+official_url = "https://www.dukatspa.pl/"
+kids_url = "https://www.dukatspa.pl/dzieci"
+osm = "way/1307755075"
+status = "skipped"
+skip_reason = "Sanatorium, nie hotel - do decyzji (łóżeczko płatne, wanienka i podgrzewacz gratis, krzesełka)."
+
+[[lead]]
+name = "Leśna Polana"
+town = "Ustronie Morskie"
+official_url = "https://lesna-polana.pl/"
+osm = "node/2977399536"
+status = "skipped"
+skip_reason = "Ośrodek rehabilitacyjny; na stronie dla dzieci nic konkretnego dla 0-3 poza 'do 1 roku gratis'."
+
+[[lead]]
+name = "Marena Wellness & Spa"
+town = "Międzywodzie"
+official_url = "https://www.marenaspa.pl/"
+kids_url = "https://www.marenaspa.pl/dzieci"
+osm = "node/3627770513"
+status = "skipped"
+skip_reason = "Strona dla dzieci: tylko pokój zabaw bez wieku, żadnego sprzętu dla 0-3."
+
+[[lead]]
+name = "Hotel Lambert"
+town = "Ustronie Morskie"
+official_url = "https://www.lambert-hotel.pl/"
+kids_url = "https://www.lambert-hotel.pl/dzieci"
+osm = "node/2923583292"
+status = "skipped"
+skip_reason = "Strona dla dzieci: mały pokój zabaw i animacje dla pływających; nic dla 0-3."
+
+[[lead]]
+name = "Hotel SKAL"
+town = "Ustronie Morskie"
+official_url = "https://www.skal-hotel.pl/"
+kids_url = "https://www.skal-hotel.pl/hotel/dziecko-w-hotelu"
+osm = "node/4342202363"
+status = "skipped"
+skip_reason = "Strona 'Dziecko w hotelu' bez konkretów dla 0-3."
+
+[[lead]]
+name = "Glar Conference & SPA"
+town = "Wisełka"
+official_url = "https://www.hotelglar.pl/"
+osm = "way/1128302926"
+status = "skipped"
+skip_reason = "Brak strony dla dzieci; sygnały tylko w pakiecie feryjnym."
+
+[[lead]]
+name = "Ikar Plaza"
+town = "Kołobrzeg"
+official_url = "https://www.ikar-plaza.pl/"
+kids_url = "https://www.ikar-plaza.pl/hotel-ikar-plaza/dzieci-ikar-plaza"
+osm = "node/1721650042"
+status = "skipped"
+skip_reason = "Bawialnia bez wieku, płytka część basenu 90 cm, kids spa 4-12; nic dla 0-3."
+
+[[lead]]
+name = "SeaPark Wellness & Spa"
+town = "Kołobrzeg"
+official_url = "https://seaparkhotel.pl/"
+osm = "node/1684775648"
+status = "skipped"
+skip_reason = "Pakiet rodzinny bez sprzętu dla 0-3."
+
+[[lead]]
+name = "Jantar Medical Spa"
+town = "Dziwnówek"
+official_url = "https://dziwnowek.com.pl/"
+osm = "node/5191416605"
+status = "skipped"
+skip_reason = "Kids club bez wieku, nic dla 0-3."
+
+[[lead]]
+name = "Maximus Spa"
+town = "Dziwnówek"
+official_url = "https://www.maximus-spa.pl/"
+osm = "way/337475494"
+status = "skipped"
+skip_reason = "Kącik zabaw i animacje sezonowe; nic dla 0-3."
+
+[[lead]]
+name = "Radisson Blu Resort Świnoujście"
+town = "Świnoujście"
+official_url = "https://zdrojowahotels.pl/radisson-blu-resort-swinoujscie"
+status = "skipped"
+skip_reason = "Zdrojowa (też Hilton, Marine, Diune, Radisson Kołobrzeg): kids club bez wieku, do 4 lat gratis; sprzętu dla 0-3 strony nie wymieniają."
