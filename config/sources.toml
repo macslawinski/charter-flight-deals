@@ -71,3 +71,36 @@ max_delay_seconds = 1.5
 horizon_days = 120          # only segments departing within this many days (coverage beyond is thin)
 max_segments_per_run = 40   # rotation: deal segments first, then the least recently fetched
 limit = 1000                # fares per response
+
+# --- Open data for the parents' service (Product B), see docs/family-data-sources.md -------------
+# Run: python -m ingest.opendata --source <name>. Two requests per run at most.
+
+# NFZ night and holiday care points (NiŚOZ). The pacjent.gov.pl map page names its data file in the
+# HTML ("map_points_file": "/sites/pacjent/files/dane/Mapa-Nocna-...-DD.MM.YYYY.json"); the file name
+# changes with each update, so every run reads the page first. Treated as public information
+# (decision 2026-11-07). ~820 rows, ~550 real points; the rest are empty filler rows.
+[sources.nfz_nisoz]
+operator = "nfz_nisoz"
+enabled = true
+method = "GET"
+url = "https://pacjent.gov.pl"
+headers = { "User-Agent" = "pieluchy-i-paszporty/0.1 (family info PoC)" }
+max_requests_per_run = 6
+
+[sources.nfz_nisoz.payload]
+page_path = "/nocna-i-swiateczna-opieka-zdrowotna"
+min_records = 400           # fewer real points = truncated or changed file: fail, retire nothing
+
+# Poznań playgrounds: GeoJSON behind the city map (Plan Poznania, layer "Place zabaw i gier" of the
+# "Oświata" map). Not in the city's open data catalogue; used with the city's attribution rule
+# (decision 2026-11-07). Only public playgrounds ("plac gier i zabaw", "ogólnodostępne", not closed).
+[sources.poznan_place_zabaw]
+operator = "poznan_place_zabaw"
+enabled = true
+method = "GET"
+url = "https://www.poznan.pl/mim/plan/map_service.html?mtype=education&co=miejsca2021"
+headers = { "User-Agent" = "pieluchy-i-paszporty/0.1 (family info PoC)", "Accept" = "application/json" }
+max_requests_per_run = 3
+
+[sources.poznan_place_zabaw.payload]
+min_records = 500           # ~800 public playgrounds as of 2026-11-07

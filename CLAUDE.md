@@ -158,7 +158,8 @@ Supabase project, same migration series.
   "submitted by the venue") and a **last-verified date**, both visible to users; unclear facts are
   `to_confirm`, never guessed.
 - Where it lives: curated places in `data/curated/venues/<city>/`, open-data importers in `ingest/opendata/`
-  (planned), pages in `family/`.
+  (`python -m ingest.opendata --source nfz_nisoz|poznan_place_zabaw`, tables from migration 012), pages in
+  `family/`.
 - **Open-data importers are idempotent**: upsert on `(source_id, external_id)`, a vanished record becomes
   `retired` (not deleted), raw responses kept, `--dry-run` / `--from-file` like the other ingest CLIs.
 - Out of scope for now: accounts, comments, ratings, the e-mail agent for hotels, monetization.
