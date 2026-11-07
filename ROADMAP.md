@@ -155,11 +155,15 @@ model: `docs/family-data-model.md`; sources: `docs/family-data-sources.md`.
       Poznań open data platform has no pools, rinks or culture venues; RSPO API host not resolving.
 - [ ] U: decide on the source questions at the end of `docs/family-data-sources.md` (requests to MRiPS / GIS /
       city of Poznań; licences of the NiŚOZ file and the playground GeoJSON).
-- [ ] C: migration(s): `venue_categories`, `data_sources`, `import_runs`, `venues`, `venue_category_links`,
-      `fact_keys`, `venue_facts`, `fact_source` enum values (after U approves the draft model).
+- [x] U (2026-11-07): NiŚOZ file = public information; Poznań playground GeoJSON used; data requests to
+      MRiPS / GIS / the city later.
+- [x] C: migration 012 (`venues`, `venue_facts`, `data_sources`, `import_runs`, …) and importers
+      `python -m ingest.opendata --source nfz_nisoz|poznan_place_zabaw` (2026-11-07): 551 NiŚOZ points
+      nationwide (7 in Poznań), 804 public Poznań playgrounds; re-runs are idempotent, tested.
+- [ ] C: run both imports into Supabase; schedule them in Actions (weekly is enough; minutes budget).
+- [ ] C: export venues to `family/src/data/` and a first page (NiŚOZ + playgrounds for Poznań).
 - [ ] C: move the Poznań playground TOMLs onto `venues` / `venue_facts` (loader in `ingest.curated`).
-- [ ] C: idempotent importers in `ingest/opendata/` (nurseries, bathing sites, NiŚOZ), with `--dry-run` and
-      `--from-file`, fixtures and tests (re-run = no duplicates; vanished record = `retired`).
+- [ ] C: nurseries and bathing sites: by hand for Poznań until MRiPS / GIS provide files (no scraper).
 - [ ] C: scheduling in Actions within the minutes budget (open data changes slowly: weekly or monthly).
 - [ ] C: Poznań section 1 curation: pools/aquaparks, ice rinks, sledding, zoo/farms, rope parks, culture,
       birthday venues (venues' own sites, OSM for discovery).

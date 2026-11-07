@@ -1,7 +1,15 @@
 # Data model: parents' service (Product B extension)
 
-Status: **draft for review**, 2026-11-07. Nothing here is migrated yet. Product context:
+Status: 2026-11-07, **migration `012_venues_core.sql` implements the core** (`venue_categories`,
+`data_sources`, `import_runs`, `venues`, `venue_category_links`, `fact_keys`, `venue_facts`, new `fact_source`
+values), with two importers in `ingest/opendata/`. The SQL below is the original draft; where they differ, the
+migration wins (e.g. `venues` has `locality`/`voivodeship` instead of `city`/`teryt`, `data_sources` has
+`auto_publish`, raw downloads go to the existing `raw_fetches` with `operator` = source id). Product context:
 `docs/family-product.md`. Sources: `docs/family-data-sources.md`.
+
+Decisions taken in the implementation (2026-11-07): official sources publish on import
+(`data_sources.auto_publish`), OSM-discovered places will not; a human-set status survives re-imports,
+except `retired`, which is lifted when a record comes back.
 
 ## Principles
 
