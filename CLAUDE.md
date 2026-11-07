@@ -149,7 +149,7 @@ Cold start is expected: the first deals appear only after enough history accumul
 - Before calling something done: `ruff check .`, `pyright`, `pytest`, and for SQL changes run them against real data
   in Supabase and sanity-check a few results by hand.
 
-## Product B extension: parents' service (since 2026-11-07, docs only so far)
+## Product B extension: parents' service (since 2026-11-07)
 Product B (`family/`, `PLAN.md`) grows into a service for parents of children aged **0–6** in Poland, UI in
 Polish, three sections: "Gdzie z dzieckiem" (map + filters, MVP: Poznań), "Wyjazdy" (B's hotels, airlines,
 airports, documents), "Niezbędnik rodzica" (care, nurseries, benefits, vaccinations, recalls). Same site, same
@@ -159,7 +159,8 @@ Supabase project, same migration series.
   `to_confirm`, never guessed.
 - Where it lives: curated places in `data/curated/venues/<city>/`, open-data importers in `ingest/opendata/`
   (`python -m ingest.opendata --source nfz_nisoz|poznan_place_zabaw`, tables from migration 012), pages in
-  `family/`.
+  `family/`. The site never reads the DB: `python scripts/export_venues.py --city poznan` writes the committed
+  `family/src/data/map/poznan.json` for the map page `/poznan/` (re-run after each import).
 - **Open-data importers are idempotent**: upsert on `(source_id, external_id)`, a vanished record becomes
   `retired` (not deleted), raw responses kept, `--dry-run` / `--from-file` like the other ingest CLIs.
 - Out of scope for now: accounts, comments, ratings, the e-mail agent for hotels, monetization.

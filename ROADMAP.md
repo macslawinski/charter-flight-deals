@@ -160,8 +160,11 @@ model: `docs/family-data-model.md`; sources: `docs/family-data-sources.md`.
 - [x] C: migration 012 (`venues`, `venue_facts`, `data_sources`, `import_runs`, …) and importers
       `python -m ingest.opendata --source nfz_nisoz|poznan_place_zabaw` (2026-11-07): 551 NiŚOZ points
       nationwide (7 in Poznań), 804 public Poznań playgrounds; re-runs are idempotent, tested.
-- [ ] C: run both imports into Supabase; schedule them in Actions (weekly is enough; minutes budget).
-- [ ] C: export venues to `family/src/data/` and a first page (NiŚOZ + playgrounds for Poznań).
+- [x] C: run both imports into Supabase (2026-11-07). Closed playgrounds ("nieczynne") and game-table-only
+      points (ping-pong, chess, table football) are filtered out: 727 playgrounds left.
+- [x] C: `python scripts/export_venues.py --city poznan` (DB → committed `family/src/data/map/poznan.json`)
+      and the map page `/poznan/` (Leaflet + OSM tiles; playgrounds, NiŚOZ, curated bawialnie; filters;
+      source and date under every fact). Re-run the export after each import.
 - [ ] C: move the Poznań playground TOMLs onto `venues` / `venue_facts` (loader in `ingest.curated`).
 - [ ] C: nurseries and bathing sites: by hand for Poznań until MRiPS / GIS provide files (no scraper).
 - [ ] C: scheduling in Actions within the minutes budget (open data changes slowly: weekly or monthly).
