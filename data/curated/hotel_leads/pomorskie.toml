@@ -141,7 +141,7 @@ lat = 54.8319153
 lon = 18.3212688
 signals = ["brodzik", "brodzik zewnętrzny", "sala zabaw Playland", "łóżeczko"]
 why = "Brodzik kryty i zewnętrzny, sala zabaw Playland, park wodny; łóżeczko i krzesełka wśród udogodnień."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Best Western Hotel Jurata"
@@ -189,7 +189,7 @@ lat = 54.2725018
 lon = 17.749729
 signals = ["łóżeczko", "podgrzewacz", "wanienka", "nocnik", "brodzik"]
 why = "Strona dla dzieci: łóżeczko z materacem, podgrzewacz, wanienka, nocnik, nakładka; brodzik z ciepłą wodą."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Morski Widok"
@@ -285,7 +285,7 @@ lat = 54.5726313
 lon = 18.3832129
 signals = ["Klub Malucha", "brodzik", "wanienka", "przewijak"]
 why = "Klub Malucha z małpim gajem czynny 8:30-22:00, basen z brodzikiem, wanienka, przewijak, podest."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Villa Baltica"
@@ -297,7 +297,7 @@ lat = 54.4377698
 lon = 18.5781104
 signals = ["łóżeczko", "wanienka", "podgrzewacz", "krzesełko", "sala zabaw"]
 why = "Hotel ok. 30 m od plaży: łóżeczko, wanienka, podgrzewacz na życzenie, menu dziecięce, krzesełka, sala zabaw „Baltiś”."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Dolina Charlotty Resort & SPA"
