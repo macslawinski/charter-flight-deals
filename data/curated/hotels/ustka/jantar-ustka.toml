@@ -1,0 +1,203 @@
+# Facts from the hotel's own website (jantar-ustka.pl; robots.txt allows all, checked 2026-11-07):
+# /faq/, /oferta-dla-rodzin/, /regulaminy/. Written in our words.
+# Also on the site, no feature key for it: children's bikes and bike seats; in the family offer (minimum
+# 5 nights) a free soup 13:00-14:00 for children under 14 and a "Kids Zone".
+# Not stated (so not recorded yet): cot fee, high chair, kids menu, toddler food, baby bath, bottle warmer,
+# changing table, potty, playroom hours and minimum age, animation ages, brodzik depth and temperature, beach
+# distance in metres (the family page says "a few steps").
+#
+# Coordinates: OpenStreetMap relation/19560310 via Nominatim (ODbL), matching the address.
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most one
+#   change, to Ustka station. Station -> hotel: ~2 km, ~5 min by car or taxi (OSRM).
+slug = "jantar-ustka"
+place = "ustka"
+name = "Hotel Jantar"
+official_url = "https://jantar-ustka.pl/"
+address = "ul. Wczasowa 14, 76-270 Ustka"
+lat = 54.5865478  # OpenStreetMap relation/19560310 (Nominatim), ODbL
+lon = 16.8757641
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true }
+short = "Dla dzieci 0–2 lat"
+note = "Dziecko 0–2 lat może spać z rodzicami albo w łóżeczku dziecięcym (FAQ). Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://jantar-ustka.pl/faq/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "child_free_stay"
+value = { free = true, max_age_years = 6 }
+short = "Do 6 lat nocleg gratis"
+note = "Dziecko do 6 lat nocuje bezpłatnie; w wieku 0–2 śpi z rodzicami albo w łóżeczku (FAQ). Od 15 lat cena jak za dorosłego."
+source = "hotel_website"
+url = "https://jantar-ustka.pl/faq/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Wewnętrzna sala zabaw"
+note = "Wewnętrzna sala zabaw. Godzin i minimalnego wieku strona nie podaje; regulamin: dzieci poniżej 13 lat pod stałym nadzorem rodziców."
+source = "hotel_website"
+url = "https://jantar-ustka.pl/faq/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "Na zewnątrz"
+note = "Zewnętrzny plac zabaw."
+source = "hotel_website"
+url = "https://jantar-ustka.pl/faq/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, seasonal = true }
+short = "Codziennie w ferie i wakacje"
+note = "Animacje dla dzieci codziennie w ferie zimowe i wakacje. Przedziału wieku strona nie podaje."
+source = "hotel_website"
+url = "https://jantar-ustka.pl/faq/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "paddling_pool"
+value = { indoor = true, free = true }
+short = "W strefie wellness, bez opłat"
+note = "Brodzik dla dzieci w strefie wellness, bezpłatnie i bez limitu czasu dla gości hotelu. Głębokości i temperatury strona nie podaje."
+source = "hotel_website"
+url = "https://jantar-ustka.pl/faq/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "lift"
+value = { available = true }
+short = "Jest"
+note = "Hotel ma windę (FAQ)."
+source = "hotel_website"
+url = "https://jantar-ustka.pl/faq/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "parking"
+value = { paid = true, guarded = false, fee_pln_per_day_low = 25, fee_pln_per_day_high = 50, reservation_required = true }
+short = "25 zł/doba, latem 50 zł; rezerwacja"
+note = "Parking monitorowany, niestrzeżony: 25 zł za dobę, w sezonie wakacyjnym 50 zł; miejsce trzeba zarezerwować (FAQ, regulamin)."
+source = "hotel_website"
+url = "https://jantar-ustka.pl/faq/"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 120
+note = "150 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.5865%2C16.8758"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 305
+note = "290 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.5865%2C16.8758"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 340
+note = "490 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.5865%2C16.8758"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 405
+note = "470 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.5865%2C16.8758"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 405
+note = "670 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.5865%2C16.8758"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 450
+note = "740 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.5865%2C16.8758"
+verified_at = 2026-11-07
+
+# --- Access: train to Ustka station (rozklad-pkp.pl, 2026-11-12) --------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "train"
+minutes = 159
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 236
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 352
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 372
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 451
+note = "1 przesiadka · bezpośredni 9 h 34 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 505
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07

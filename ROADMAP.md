@@ -81,11 +81,15 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
 - [x] C: pomorskie hotels, batch 3 (2026-11-07): Best Western Jurata (8 facts), Hotel Jastarnia (6), Łeba Hotel &
       Spa (10), Nadmorski (Łeba, 6). Trains: Jurata, Jastarnia; none for Łeba. Łeba Hotel's free stay to 3 is
       for September-June only.
-- [ ] C: curate the remaining 21 pomorskie leads with `curate-hotel`.
+- [x] C: pomorskie hotels, batch 4 (2026-11-07, all Ustka): Grand Lubicz (13 facts), Lubicz (7), Jantar (8, free
+      stay to 6), Hotel Ustka (6). Trains: Ustka (reused).
+- [ ] C: curate the remaining 17 pomorskie leads with `curate-hotel`.
 - [ ] U (phone/e-mail, optional): Kiston cot fee, free-stay age, brodzik; Primavera cot fee, Playland age;
       Villa Baltica free-stay age, playroom hours; Faltom whether under-4s may use Klub Malucha with a parent.
 - [ ] U (phone/e-mail, optional): Hotel Jastarnia free-stay age, high chair, baby items; Nadmorski free-stay age,
       Kids Club age; BW Jurata cot fee and parking fee; Łeba Hotel free stay in July-August, cot.
+- [ ] U (phone/e-mail, optional): Hotel Ustka free stay under 2 (rule or offer?), cot, baby items; Lubicz fees,
+      free-stay age, pool/brodzik; Grand Lubicz free-stay age; Jantar cot fee, high chair.
 - [ ] U: decide which zachodniopomorskie hotels to publish (all are `draft`); those under 8 facts need a phone or
       e-mail round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Zalewski and Sandra cot, high chair, free-stay age; Baltic Plaza free stay

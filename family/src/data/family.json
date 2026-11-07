@@ -10734,6 +10734,977 @@
      "minutes": 120,
      "mode": "car",
      "note": "150 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.5844%2C16.8693",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 300,
+     "mode": "car",
+     "note": "290 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.5844%2C16.8693",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 340,
+     "mode": "car",
+     "note": "490 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.5844%2C16.8693",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 405,
+     "mode": "car",
+     "note": "470 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.5844%2C16.8693",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 405,
+     "mode": "car",
+     "note": "670 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.5844%2C16.8693",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 450,
+     "mode": "car",
+     "note": "740 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.5844%2C16.8693",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 159,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 236,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 352,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 372,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 451,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 9 h 34 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 505,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. Wczasowa 4, 76-270 Ustka",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na życzenie gości z małymi dziećmi łóżeczko wstawiane do pokoju nieodpłatnie (informator hotelowy).",
+     "short": "Bezpłatnie, na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://wa-uploads.profitroom.com/grandlubiczuzdrowiskoustka3/16594377578315_informator%20Hotelowy1%20PL.pdf",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_monitor",
+     "note": "Elektroniczne nianie wśród artykułów dla dzieci. Opłaty strona nie podaje.",
+     "short": "Jest",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.grandlubicz.pl/dla-najmlodszych-grand-lubicz/animacje",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Specjalnie przygotowane menu dla dzieci i wydzielone miejsce dla najmłodszych w restauracji. O jedzeniu dla niemowląt strona nie wspomina.",
+     "short": "Specjalne menu, kącik w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.grandlubicz.pl/hotel-grand-lubicz/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacze do butelek wśród artykułów dla dzieci. Opłaty strona nie podaje.",
+     "short": "Jest",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.grandlubicz.pl/hotel-grand-lubicz/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka do pokoju nieodpłatnie na życzenie (informator hotelowy).",
+     "short": "Bezpłatnie, na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://wa-uploads.profitroom.com/grandlubiczuzdrowiskoustka3/16594377578315_informator%20Hotelowy1%20PL.pdf",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Przewijak wśród artykułów dla dzieci. Gdzie dokładnie, strona nie podaje.",
+     "short": "Jest",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.grandlubicz.pl/dla-najmlodszych-grand-lubicz/animacje",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Nocniczki, nakładki na toaletę i stopnie ułatwiające dostęp do zlewu i toalety.",
+     "short": "Nocniczki, nakładki, stopnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.grandlubicz.pl/dla-najmlodszych-grand-lubicz/animacje",
+     "value": {
+      "available": true,
+      "step_stool": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Interaktywna sala zabaw na III piętrze, codziennie 7:00–22:00, dla dzieci do 12 lat; przez cały czas pod opieką rodzica (regulamin bawialni 2025). Minimalnego wieku regulamin nie podaje.",
+     "short": "7:00–22:00, dzieci pod opieką rodzica",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://wa-uploads.profitroom.com/grandlubiczuzdrowiskoustka3/17442910220213_Regulamin%20-%20Poko%CC%81j%20zabaw_2025.pdf",
+     "value": {
+      "available": true,
+      "close": "22:00",
+      "max_age_years": 12,
+      "open": "07:00",
+      "parent_required": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Plac zabaw na zewnątrz hotelu.",
+     "short": "Na zewnątrz",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.grandlubicz.pl/dla-najmlodszych-grand-lubicz/na-zewnatrz",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Goście z dziećmi dostają tygodniowy program animacji; zajęcia pod okiem opiekunek. Przedziału wieku strona nie podaje.",
+     "short": "Tygodniowy program animacji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.grandlubicz.pl/dla-najmlodszych-grand-lubicz/animacje",
+     "value": {
+      "available": true,
+      "supervised": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Brodzik dla dzieci z atrakcjami wodnymi w aquaparku hotelu. Głębokości i temperatury strona nie podaje.",
+     "short": "Brodzik z atrakcjami wodnymi",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.grandlubicz.pl/aquapark/kompleks-basenow",
+     "value": {
+      "indoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "lift",
+     "note": "Windy z holu przy recepcji głównej (informator hotelowy).",
+     "short": "Jest",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://wa-uploads.profitroom.com/grandlubiczuzdrowiskoustka3/16594377578315_informator%20Hotelowy1%20PL.pdf",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking płatny i niestrzeżony, 50 zł za dobę; garaż 80 zł za dobę (regulamin parkingu). Hotel nie gwarantuje miejsca.",
+     "short": "Niestrzeżony 50 zł/doba, garaż 80 zł",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://u.profitroom.com/2018-grandlubicz2-pl/uploads/Regulamin-Parking2022.pdf",
+     "value": {
+      "fee_pln_per_day": 50,
+      "garage_fee_pln_per_day": 80,
+      "guarded": false,
+      "paid": true
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.5844201,
+   "lon": 16.869326,
+   "name": "Hotel Grand Lubicz",
+   "official_url": "https://www.grandlubicz.pl/",
+   "place": "ustka",
+   "slug": "grand-lubicz-ustka",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 120,
+     "mode": "car",
+     "note": "150 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.5885%2C16.8834",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 305,
+     "mode": "car",
+     "note": "290 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.5885%2C16.8834",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 345,
+     "mode": "car",
+     "note": "490 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.5885%2C16.8834",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 410,
+     "mode": "car",
+     "note": "470 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.5885%2C16.8834",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 410,
+     "mode": "car",
+     "note": "670 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.5885%2C16.8834",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 450,
+     "mode": "car",
+     "note": "740 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.5885%2C16.8834",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 159,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 236,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 352,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 372,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 451,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 9 h 34 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 505,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. Wczasowa 25, 76-270 Ustka",
+   "features": [
+    {
+     "age_band": null,
+     "key": "toddler_food",
+     "note": "W wakacje i ferie w bufecie „kącik małego niejadka” dla dzieci.",
+     "short": "Kącik małego niejadka (wakacje, ferie)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-ustka.eu/",
+     "value": {
+      "available": true,
+      "baby_corner": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala zabaw z małymi zjeżdżalniami, domkami, jeździkami i klockami; bezpłatna, dzieci tylko pod opieką dorosłych (regulamin). Godzin i minimalnego wieku strona nie podaje.",
+     "short": "Bezpłatna, dzieci pod opieką dorosłych",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-ustka.eu/regulamin",
+     "value": {
+      "available": true,
+      "free": true,
+      "parent_required": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Plac zabaw ze zjeżdżalniami, drabinkami, huśtawkami i drewnianymi domkami; dzieci pod opieką dorosłych.",
+     "short": "Duży, z ławkami dla rodziców",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-ustka.eu/atrakcje-hotel",
+     "value": {
+      "available": true,
+      "outdoor": true,
+      "parent_required": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animacje i zajęcia plastyczne tylko w wakacje i ferie zimowe, bezpłatne, dla dzieci w różnym wieku; dzieci pod opieką dorosłych (regulamin).",
+     "short": "W wakacje i ferie, bezpłatnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-ustka.eu/regulamin",
+     "value": {
+      "available": true,
+      "free": true,
+      "parent_required": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Ok. 50 m do plaży, krótki spacer leśną ścieżką.",
+     "short": "Ok. 50 m leśną ścieżką",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-ustka.eu/",
+     "value": {
+      "distance_m": 50
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking hotelowy płatny, monitorowany, niestrzeżony (regulamin). Stawki dla gości hotelu strona nie podaje.",
+     "short": "Płatny, monitorowany, niestrzeżony",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-ustka.eu/regulamin",
+     "value": {
+      "guarded": false,
+      "monitored": true,
+      "paid": true
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.5885345,
+   "lon": 16.8833509,
+   "name": "Hotel Ustka",
+   "official_url": "https://www.hotel-ustka.eu/",
+   "place": "ustka",
+   "slug": "hotel-ustka",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 120,
+     "mode": "car",
+     "note": "150 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.5865%2C16.8758",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 305,
+     "mode": "car",
+     "note": "290 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.5865%2C16.8758",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 340,
+     "mode": "car",
+     "note": "490 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.5865%2C16.8758",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 405,
+     "mode": "car",
+     "note": "470 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.5865%2C16.8758",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 405,
+     "mode": "car",
+     "note": "670 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.5865%2C16.8758",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 450,
+     "mode": "car",
+     "note": "740 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.5865%2C16.8758",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 159,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 236,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 352,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 372,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 451,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 9 h 34 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 505,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. Wczasowa 14, 76-270 Ustka",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Dziecko 0–2 lat może spać z rodzicami albo w łóżeczku dziecięcym (FAQ). Opłaty strona nie podaje.",
+     "short": "Dla dzieci 0–2 lat",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://jantar-ustka.pl/faq/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "child_free_stay",
+     "note": "Dziecko do 6 lat nocuje bezpłatnie; w wieku 0–2 śpi z rodzicami albo w łóżeczku (FAQ). Od 15 lat cena jak za dorosłego.",
+     "short": "Do 6 lat nocleg gratis",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://jantar-ustka.pl/faq/",
+     "value": {
+      "free": true,
+      "max_age_years": 6
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Wewnętrzna sala zabaw. Godzin i minimalnego wieku strona nie podaje; regulamin: dzieci poniżej 13 lat pod stałym nadzorem rodziców.",
+     "short": "Wewnętrzna sala zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://jantar-ustka.pl/faq/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Zewnętrzny plac zabaw.",
+     "short": "Na zewnątrz",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://jantar-ustka.pl/faq/",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animacje dla dzieci codziennie w ferie zimowe i wakacje. Przedziału wieku strona nie podaje.",
+     "short": "Codziennie w ferie i wakacje",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://jantar-ustka.pl/faq/",
+     "value": {
+      "available": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Brodzik dla dzieci w strefie wellness, bezpłatnie i bez limitu czasu dla gości hotelu. Głębokości i temperatury strona nie podaje.",
+     "short": "W strefie wellness, bez opłat",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://jantar-ustka.pl/faq/",
+     "value": {
+      "free": true,
+      "indoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "lift",
+     "note": "Hotel ma windę (FAQ).",
+     "short": "Jest",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://jantar-ustka.pl/faq/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking monitorowany, niestrzeżony: 25 zł za dobę, w sezonie wakacyjnym 50 zł; miejsce trzeba zarezerwować (FAQ, regulamin).",
+     "short": "25 zł/doba, latem 50 zł; rezerwacja",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://jantar-ustka.pl/faq/",
+     "value": {
+      "fee_pln_per_day_high": 50,
+      "fee_pln_per_day_low": 25,
+      "guarded": false,
+      "paid": true,
+      "reservation_required": true
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.5865478,
+   "lon": 16.8757641,
+   "name": "Hotel Jantar",
+   "official_url": "https://jantar-ustka.pl/",
+   "place": "ustka",
+   "slug": "jantar-ustka",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 115,
+     "mode": "car",
+     "note": "150 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.5810%2C16.8679",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 300,
+     "mode": "car",
+     "note": "290 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.5810%2C16.8679",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 340,
+     "mode": "car",
+     "note": "490 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.5810%2C16.8679",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 405,
+     "mode": "car",
+     "note": "470 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.5810%2C16.8679",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 405,
+     "mode": "car",
+     "note": "670 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.5810%2C16.8679",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 450,
+     "mode": "car",
+     "note": "740 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.5810%2C16.8679",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 159,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 236,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 352,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 372,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 451,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 9 h 34 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 505,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. Grunwaldzka 14, 76-270 Ustka",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko dla małego dziecka w pokoju; dodatkowe wyposażenie hotel prosi zgłaszać przy rezerwacji. Opłaty strona nie podaje.",
+     "short": "Do pokoju; zgłosić przy rezerwacji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-lubicz.pl/hotel/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka dla maluchów w hotelowej restauracji.",
+     "short": "W restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-lubicz.pl/hotel/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacz do butelek w pokoju; w restauracji podgrzewacz do butelek i słoiczków. Opłaty strona nie podaje.",
+     "short": "W pokoju; w restauracji też do słoiczków",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-lubicz.pl/hotel/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "where": "room, restaurant"
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka do kąpieli dziecka w łazience. Opłaty strona nie podaje.",
+     "short": "W łazience",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-lubicz.pl/hotel/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Toaleta z przewijakiem w hotelu; przewijak można też wypożyczyć do pokoju. Opłaty strona nie podaje.",
+     "short": "Toaleta z przewijakiem; też do pokoju",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-lubicz.pl/hotel/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "room_rental": true,
+      "where": "public_toilets"
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Kącik zabaw dla dzieci w hotelu. Godzin, minimalnego wieku i zasad opieki strona nie podaje.",
+     "short": "Kącik zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-lubicz.pl/hotel/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "stroller_rental",
+     "note": "Wózek dziecięcy do wypożyczenia, w wersji z gondolą albo spacerówka. Opłaty strona nie podaje.",
+     "short": "Gondola lub spacerówka",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-lubicz.pl/hotel/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "buggy": true,
+      "pram": true
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.581017,
+   "lon": 16.8679014,
+   "name": "Hotel Lubicz",
+   "official_url": "https://www.hotel-lubicz.pl/",
+   "place": "ustka",
+   "slug": "lubicz-ustka",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 120,
+     "mode": "car",
+     "note": "150 km",
      "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.5874%2C16.8837",
      "verified_at": "2026-11-07"
     },
