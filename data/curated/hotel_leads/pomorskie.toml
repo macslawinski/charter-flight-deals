@@ -1,0 +1,443 @@
+# Leads for Product B: hotels in województwo pomorskie whose own website shows an offer for children
+# 0-3. Discovered via OpenStreetMap (tourism=hotel, leisure=resort; (c) OpenStreetMap contributors,
+# ODbL) and web search pointing to the hotels' own sites; each lead confirmed on its own kids page.
+# Not facts: the curate-hotel skill reads the facts.
+voivodeship = "pomorskie"
+checked_at = 2026-11-07
+covered = ["całe województwo (OSM: 678 hotels/resorts, 290 sites probed), 2026-11-07"]
+
+[[lead]]
+name = "Hotel 77"
+town = "Chałupy"
+official_url = "https://hotel77.pl/"
+kids_url = "https://hotel77.pl/dla-dzieci/"
+osm = "way/167246980"
+lat = 54.7573703
+lon = 18.5162856
+signals = ["łóżeczko", "wanienka", "podgrzewacz", "przewijak", "elektroniczna niania", "krzesełko"]
+why = "Strona dla dzieci: łóżeczko 20 zł/doba, wanienka, podgrzewacz, przewijak, elektroniczna niania, krzesełko w restauracji."
+status = "lead"
+
+[[lead]]
+name = "Stella Resort & SPA"
+town = "Chłapowo"
+official_url = "https://stellaresort.pl/"
+signals = []
+why = "Do sprawdzenia: strona głównie w JS, sonda nic nie odczytała; resort sprzedawany jako rodzinny."
+status = "lead"
+
+[[lead]]
+name = "Notera Hotel SPA"
+town = "Charzykowy"
+official_url = "https://hotelnotera.pl/"
+kids_url = "https://hotelnotera.pl/dla-dzieci/"
+osm = "way/523334205"
+lat = 53.7419291
+lon = 17.5122603
+signals = ["łóżeczko", "podgrzewacz", "wanienka", "krzesełko", "sala zabaw"]
+why = "Strona dla dzieci: łóżeczko, podgrzewacz do butelek, wanienka, krzesełka, sala zabaw z regulaminem."
+status = "lead"
+
+[[lead]]
+name = "Wichrowe Wzgórze"
+town = "Chmielno"
+official_url = "https://wichrowe.info/"
+kids_url = "https://wichrowe.info/dla-dzieci/"
+osm = "node/4269538575"
+lat = 54.3239062
+lon = 18.100988
+signals = ["brodzik", "sala zabaw", "plac zabaw"]
+why = "Strona dla dzieci: brodzik w basenie, sala zabaw i plac zabaw; o wyposażeniu dla niemowląt nic."
+status = "lead"
+
+[[lead]]
+name = "Hotel Bartan"
+town = "Gdańsk"
+official_url = "https://www.hotelbartan.pl/"
+kids_url = "https://www.hotelbartan.pl/hotel/hotel-w-gdansku"
+osm = "way/115086371"
+lat = 54.3437875
+lon = 18.8315695
+signals = ["kącik zabaw", "łóżeczko", "wanienka"]
+why = "Hotel w Sobieszewie: kącik zabaw przy restauracji; łóżeczko i wanienka w ofertach pakietowych."
+status = "lead"
+
+[[lead]]
+name = "Grano Life Gdańsk"
+town = "Gdańsk"
+official_url = "https://www.granohotels.pl/grano-life-gdansk"
+kids_url = "https://www.granohotels.pl/grano-life-gdansk/dzieci"
+signals = ["sala zabaw", "krzesełko", "wanienka", "nocnik", "przewijak", "podgrzewacz"]
+why = "Strona dla dzieci tej lokalizacji: sala zabaw, krzesełka, wanienki, nocniki, przewijaki, podgrzewacze do butelek."
+status = "lead"
+
+[[lead]]
+name = "Hotel Platan"
+town = "Gdańsk"
+official_url = "https://hotelplatan.gda.pl/"
+kids_url = "https://hotelplatan.gda.pl/dla-dzieci/"
+osm = "node/12638677948"
+lat = 54.3095682
+lon = 18.5987069
+signals = ["wanienka", "podgrzewacz", "krzesełko", "kącik zabaw"]
+why = "Strona dla dzieci: wanienka, nakładka na toaletę, podgrzewacz, krzesełka, kącik zabaw dla maluchów w restauracji."
+status = "lead"
+
+[[lead]]
+name = "Hotel Zamek Gniew"
+town = "Gniew"
+official_url = "https://www.zamek-gniew.pl/"
+kids_url = "https://www.zamek-gniew.pl/hotel/hotel-z-sala-i-placem-zabaw-dla-dzieci"
+osm = "way/192583614"
+lat = 53.8335415
+lon = 18.8294015
+signals = ["sala zabaw dla najmłodszych", "kącik zabaw", "plac zabaw"]
+why = "Sala zabaw „Pysiolandia” i osobna sala dla najmłodszych, kącik i plac zabaw (dwa budynki hotelu)."
+status = "lead"
+
+[[lead]]
+name = "Hotel Jastarnia"
+town = "Jastarnia"
+official_url = "https://hoteljastarnia.com.pl/"
+kids_url = "https://hoteljastarnia.com.pl/dla-dzieci"
+osm = "way/224283671"
+lat = 54.6984941
+lon = 18.6760641
+signals = ["kącik zabaw", "łóżeczko", "plac zabaw"]
+why = "Strona dla dzieci: kącik zabaw (z regulaminem), plac zabaw, łóżeczko."
+status = "lead"
+
+[[lead]]
+name = "Hotel Astor"
+town = "Jastrzębia Góra"
+official_url = "https://www.astorhotel.pl/"
+kids_url = "https://www.astorhotel.pl/z-dziecmi"
+osm = "way/203758844"
+lat = 54.8325653
+lon = 18.3176048
+signals = ["brodzik", "sala zabaw", "zajęcia 0-3", "łóżeczko"]
+why = "Brodzik, sala zabaw Fun&Jungle, zajęcia dla maluchów od 6 mies. do 3 lat z rodzicami."
+status = "lead"
+
+[[lead]]
+name = "Hotel La Siesta"
+town = "Jastrzębia Góra"
+official_url = "https://www.lasiesta.pl/"
+kids_url = "https://www.lasiesta.pl/galeria/dla-dzieci"
+osm = "node/2393547422"
+lat = 54.8330729
+lon = 18.3059989
+signals = ["sala zabaw dla maluchów", "łóżeczko", "wanienka", "podgrzewacz", "przewijak"]
+why = "Sala zabaw dostosowana do maluchów (zjeżdżalnia-latarnia); łóżeczko, wanienka, podgrzewacz, przewijak na stronach hotelu."
+status = "lead"
+
+[[lead]]
+name = "Primavera Conference & Spa"
+town = "Jastrzębia Góra"
+official_url = "https://primaveraspa.pl/"
+kids_url = "https://primaveraspa.pl/atrakcje"
+osm = "way/120085423"
+lat = 54.8319153
+lon = 18.3212688
+signals = ["brodzik", "brodzik zewnętrzny", "sala zabaw Playland", "łóżeczko"]
+why = "Brodzik kryty i zewnętrzny, sala zabaw Playland, park wodny; łóżeczko i krzesełka wśród udogodnień."
+status = "lead"
+
+[[lead]]
+name = "Best Western Hotel Jurata"
+town = "Jurata"
+official_url = "https://www.hotel-jurata.com.pl/pl/"
+kids_url = "https://www.hotel-jurata.com.pl/pl/dzieci-w-hotelu/"
+osm = "way/906077352"
+lat = 54.6805485
+lon = 18.7223537
+signals = ["łóżeczko", "krzesełko", "wanienka", "sala zabaw", "do 3 lat gratis"]
+why = "Strona dla dzieci: łóżeczka, wysokie krzesełka, wanienki, sala zabaw; do 3 lat nocleg ze śniadaniem gratis."
+status = "lead"
+
+[[lead]]
+name = "Miłosz"
+town = "Kartuzy"
+official_url = "https://hotelkaszuby.pl/"
+kids_url = "https://hotelkaszuby.pl/cennik"
+osm = "node/8293270861"
+lat = 54.3396027
+lon = 18.2085391
+signals = ["łóżeczko", "wanienka", "sala zabaw"]
+why = "Cennik: łóżeczko turystyczne 50 zł (bez pościeli), wanienka bezpłatnie; kulkownia (sala zabaw)."
+status = "lead"
+
+[[lead]]
+name = "Hotel Pod Orłem"
+town = "Kartuzy"
+official_url = "https://www.hotel-podorlem.com/"
+kids_url = "https://www.hotel-podorlem.com/hotel-pod-orlem-kartuzy-noclegi-na-kaszubach-restauracja/dzieci"
+osm = "node/4041317723"
+lat = 54.3354308
+lon = 18.2029471
+signals = ["łóżeczko", "wanienka"]
+why = "Strona dla dzieci: łóżeczko turystyczne i wanienka."
+status = "lead"
+
+[[lead]]
+name = "Hotel Kiston"
+town = "Kistowo"
+official_url = "https://www.hotelkiston.pl/"
+kids_url = "https://www.hotelkiston.pl/atrakcje/dla-dzieci"
+osm = "way/487529411"
+lat = 54.2725018
+lon = 17.749729
+signals = ["łóżeczko", "podgrzewacz", "wanienka", "nocnik", "brodzik"]
+why = "Strona dla dzieci: łóżeczko z materacem, podgrzewacz, wanienka, nocnik, nakładka; brodzik z ciepłą wodą."
+status = "lead"
+
+[[lead]]
+name = "Hotel Morski Widok"
+town = "Krynica Morska"
+official_url = "https://www.morskiwidok.com.pl/"
+kids_url = "https://www.morskiwidok.com.pl/hotel/dla-dzieci"
+osm = "node/8997134202"
+lat = 54.3868441
+lon = 19.4453882
+signals = ["sala zabaw", "łóżeczko", "wanienka", "podgrzewacz", "nocnik"]
+why = "Strona dla dzieci: sala zabaw; łóżeczko, wanienka, podgrzewacz, nocnik."
+status = "lead"
+
+[[lead]]
+name = "Łeba Hotel & Spa"
+town = "Łeba"
+official_url = "https://www.hotelleba.com.pl/"
+kids_url = "https://www.hotelleba.com.pl/hotel/hotel-dzieciom"
+osm = "way/292291728"
+lat = 54.7654019
+lon = 17.5735776
+signals = ["wanienka", "podgrzewacz", "brodzik", "kids klub"]
+why = "Bezpłatnie na życzenie: wanienka, nakładka, podest, podgrzewacz do butelek i słoików; Kids Klub, brodzik."
+status = "lead"
+
+[[lead]]
+name = "Hotel Nadmorski"
+town = "Łeba"
+official_url = "https://www.hotelnadmorskileba.pl/"
+kids_url = "https://www.hotelnadmorskileba.pl/dla-dzieci"
+osm = "way/292291727"
+lat = 54.7653579
+lon = 17.5720123
+signals = ["łóżeczko", "wanienka", "krzesełko", "pokój zabaw"]
+why = "Bezpłatnie na życzenie: wanienki, łóżeczka turystyczne, krzesełka; pokój zabaw z małpim gajem."
+status = "lead"
+
+[[lead]]
+name = "Villa Verdi Pleasure & SPA"
+town = "Łeba"
+official_url = "https://villaverdi.pl/"
+kids_url = "https://villaverdi.pl/"
+osm = "node/6260603922"
+lat = 54.7642357
+lon = 17.5646285
+signals = ["brodzik", "łóżeczko"]
+why = "Kryty basen z brodzikiem dla dzieci; strona wspomina łóżeczko turystyczne. Mało szczegółów dla 0-3."
+status = "lead"
+
+[[lead]]
+name = "Hotel Wodnik"
+town = "Łeba"
+official_url = "https://wodnikleba.pl/"
+kids_url = "https://wodnikleba.pl/przyjazni-rodzinie"
+osm = "node/9939596605"
+lat = 54.7650436
+lon = 17.565113
+signals = ["łóżeczko", "podgrzewacz", "przewijak", "wanienka", "maty do brodzika"]
+why = "Strona „przyjaźni rodzinie”: łóżeczka, podgrzewacze, przewijaki, wanienki, maty do brodzika, krzesełko do łazienki."
+status = "lead"
+
+[[lead]]
+name = "River Style Hotel & SPA"
+town = "Reda"
+official_url = "https://www.hotelriverstyle.pl/"
+kids_url = "https://www.hotelriverstyle.pl/dla-dzieci"
+osm = "way/258560404"
+lat = 54.6079017
+lon = 18.3489102
+signals = ["sala zabaw", "brodzik"]
+why = "Sala zabaw Riverlandia, brodzik w strefie basenowej; o wyposażeniu dla niemowląt strona mówi mało."
+status = "lead"
+
+[[lead]]
+name = "Hotel Skipper"
+town = "Rewa"
+official_url = "https://www.hotelskipper.pl/"
+kids_url = "https://www.hotelskipper.pl/oferty-specjalne/rodzinne-boze-narodzenie-2026-tylko-15-metrow-od-morza/"
+osm = "way/578835900"
+lat = 54.6334909
+lon = 18.5128665
+signals = ["łóżeczko", "wanienka", "nocnik"]
+why = "W ofercie rodzinnej: łóżeczko z materacem 20 zł/doba, wanienka, nocnik, nakładka, podest (sprawdzić, czy poza pakietem)."
+status = "lead"
+
+[[lead]]
+name = "Hotel Faltom"
+town = "Rumia"
+official_url = "https://www.hotel-faltom.com.pl/"
+kids_url = "https://www.hotel-faltom.com.pl/hoteldladzieci"
+osm = "node/5421282803"
+lat = 54.5726313
+lon = 18.3832129
+signals = ["Klub Malucha", "brodzik", "wanienka", "przewijak"]
+why = "Klub Malucha z małpim gajem czynny 8:30-22:00, basen z brodzikiem, wanienka, przewijak, podest."
+status = "lead"
+
+[[lead]]
+name = "Villa Baltica"
+town = "Sopot"
+official_url = "https://villabaltica.com/"
+kids_url = "https://villabaltica.com/rodziny-z-dziecmi/"
+osm = "node/2659039610"
+lat = 54.4377698
+lon = 18.5781104
+signals = ["łóżeczko", "wanienka", "podgrzewacz", "krzesełko", "sala zabaw"]
+why = "Hotel ok. 30 m od plaży: łóżeczko, wanienka, podgrzewacz na życzenie, menu dziecięce, krzesełka, sala zabaw „Baltiś”."
+status = "lead"
+
+[[lead]]
+name = "Dolina Charlotty Resort & SPA"
+town = "Strzelinko"
+official_url = "https://www.dolinacharlotty.pl/"
+kids_url = "https://www.dolinacharlotty.pl/oferty-pobytowe/szczegoly-oferty?OfferID=1038842"
+osm = "way/281586546"
+lat = 54.524455
+lon = 16.9521396
+signals = ["brodzik", "łóżeczko", "do 3 lat gratis"]
+why = "Brodzik w strefie wellness, łóżeczko do zamówienia, dzieci do 3 lat śpiące z rodzicami gratis (strona oferty)."
+status = "lead"
+
+[[lead]]
+name = "Forest Family Resort"
+town = "Ustka"
+official_url = "https://forestustka.pl/"
+kids_url = "https://forestustka.pl/dla-dzieci/"
+osm = "node/2977772835"
+lat = 54.5870712
+lon = 16.8695759
+signals = ["kryta sala zabaw", "małpi gaj"]
+why = "Kryta sala zabaw Funlandia (bezpłatna dla gości) i małpi gaj; o wyposażeniu dla niemowląt nic."
+status = "lead"
+
+[[lead]]
+name = "Hotel Grand Lubicz"
+town = "Ustka"
+official_url = "https://www.grandlubicz.pl/"
+kids_url = "https://www.grandlubicz.pl/dla-najmlodszych-grand-lubicz/animacje"
+osm = "way/272001745"
+lat = 54.5844201
+lon = 16.869326
+signals = ["łóżeczko", "podgrzewacz", "elektroniczna niania", "wanienka"]
+why = "Dla najmłodszych: łóżeczka, podgrzewacze do butelek, nawilżacze, zabezpieczenia kontaktów; wanienka i niania na stronach hotelu."
+status = "lead"
+
+[[lead]]
+name = "Hotel Lubicz"
+town = "Ustka"
+official_url = "https://www.hotel-lubicz.pl/"
+kids_url = "https://www.hotel-lubicz.pl/hotel/hotel-przyjazny-rodzinie"
+osm = "way/271142612"
+lat = 54.581017
+lon = 16.8679014
+signals = ["łóżeczko", "podgrzewacz", "wanienka", "krzesełko", "przewijak"]
+why = "Hotel przyjazny rodzinie: łóżeczko, podgrzewacz do butelek i słoiczków, wanienka, krzesełka, toaleta z przewijakiem."
+status = "lead"
+
+[[lead]]
+name = "Hotel Jantar"
+town = "Ustka"
+official_url = "https://jantar-ustka.pl/"
+kids_url = "https://jantar-ustka.pl/oferta-dla-rodzin/"
+signals = ["brodzik", "łóżeczko"]
+why = "Oferta dla rodzin: strefa basenowa z brodzikiem dla dzieci; łóżeczko w ofercie."
+status = "lead"
+
+[[lead]]
+name = "Hotel Ustka"
+town = "Ustka"
+official_url = "https://www.hotel-ustka.eu/"
+kids_url = "https://www.hotel-ustka.eu/atrakcje-hotel"
+osm = "way/434636081"
+lat = 54.5885345
+lon = 16.8833509
+signals = ["sala zabaw", "kącik małego niejadka", "do 2 lat gratis"]
+why = "Sala zabaw z małymi zjeżdżalniami i domkami, kącik małego niejadka w bufecie, maluchy do 2 lat gratis."
+status = "lead"
+
+[[lead]]
+name = "Royal Baltic"
+town = "Ustka"
+official_url = "https://www.royal-baltic.pl/"
+kids_url = "https://royal-baltic.pl/dla_dzieci"
+osm = "way/271552145"
+lat = 54.5873113
+lon = 16.8833139
+signals = ["łóżeczko", "podgrzewacz", "wanienka", "krzesełko", "brodzik"]
+why = "Strona dla dzieci: kompletne łóżeczko, podgrzewacz, wanienka, krzesełko do karmienia, brodzik, sala zabaw."
+status = "lead"
+
+[[lead]]
+name = "Gwiazda Morza Resort SPA & Sport"
+town = "Władysławowo"
+official_url = "https://www.gwiazdamorza.com/"
+signals = []
+why = "Do sprawdzenia: duży resort rodzinny, strona w JS; sonda i proste pobranie nie odczytały oferty dla dzieci."
+status = "lead"
+
+[[lead]]
+name = "Hotel White"
+town = "Krynica Morska"
+official_url = "https://krynicamorskahotele.pl/"
+osm = "way/231139884"
+status = "skipped"
+skip_reason = "Strona dla dzieci: tylko plac zabaw (statek, trampolina), nic dla 0-3."
+
+[[lead]]
+name = "Hotel Faleza"
+town = "Jastrzębia Góra"
+official_url = "https://www.faleza.pl/"
+osm = "way/203804145"
+status = "skipped"
+skip_reason = "Strona atrakcji nie wymienia niczego dla 0-3 (sonda trafiła na pojedyncze słowa)."
+
+[[lead]]
+name = "Kozi Gród"
+town = "Pomlewo"
+official_url = "https://www.kozigrod.pl/"
+osm = "way/911592489"
+status = "skipped"
+skip_reason = "Tylko „do 3 lat gratis” w pakiecie i plac/kącik zabaw; brak wyposażenia dla 0-3 na stronie."
+
+[[lead]]
+name = "Business Faltom"
+town = "Rumia"
+official_url = "https://www.faltombusiness.pl/"
+osm = "way/258617688"
+status = "skipped"
+skip_reason = "Hotel biznesowy; pakiet rodzinny odsyła do Klubu Malucha (siostrzany Hotel Faltom jest leadem)."
+
+[[lead]]
+name = "Hotel Villa Aqua"
+town = "Sopot"
+official_url = "https://www.villaaqua.pl/"
+osm = "way/171004150"
+status = "skipped"
+skip_reason = "Strona „dla dzieci” to ogólny poradnik, nie opis obiektu; obiekt apartamentowy."
+
+[[lead]]
+name = "Hotel Dom Zdrojowy"
+town = "Jastarnia"
+official_url = "https://www.domzdrojowy.pl/"
+status = "skipped"
+skip_reason = "Domena na sprzedaż; nie znaleziono własnej strony hotelu."
+
+[[lead]]
+name = "Jurata (juratahotel.pl)"
+town = "Jurata"
+official_url = "https://juratahotel.pl/"
+status = "skipped"
+skip_reason = "Portal lokalny o Juracie, nie strona hotelu."
