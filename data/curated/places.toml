@@ -161,3 +161,17 @@ name = "Sopot"
 country = "Polska"
 region = "Bałtyk – Pomorze"
 kind = "domestic"
+
+[[place]]
+slug = "jurata"
+name = "Jurata"
+country = "Polska"
+region = "Bałtyk – Pomorze"
+kind = "domestic"
+
+[[place]]
+slug = "jastarnia"
+name = "Jastarnia"
+country = "Polska"
+region = "Bałtyk – Pomorze"
+kind = "domestic"

@@ -3306,6 +3306,212 @@
     {
      "from_code": "Gdańsk",
      "from_kind": "city",
+     "minutes": 95,
+     "mode": "car",
+     "note": "90 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.6985%2C18.6761",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 280,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.6985%2C18.6761",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 315,
+     "mode": "car",
+     "note": "420 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.6985%2C18.6761",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 380,
+     "mode": "car",
+     "note": "600 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.6985%2C18.6761",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 390,
+     "mode": "car",
+     "note": "560 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.6985%2C18.6761",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 425,
+     "mode": "car",
+     "note": "670 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.6985%2C18.6761",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 101,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 261,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 303,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 406,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 415,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 426,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. Portowa 35, 84-140 Jastarnia",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Regulamin hotelu wymienia wypożyczenie łóżeczka dziecięcego. Opłaty strona nie podaje.",
+     "short": "Do wypożyczenia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hoteljastarnia.com.pl/regulamin",
+     "value": {
+      "available": true,
+      "rental": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Kącik zabaw z zabawkami dla dzieci od 0 do 12 lat, czynny do 22:00. Dzieci do 4 lat tylko pod opieką i w obecności opiekuna (regulamin kącika).",
+     "short": "Kącik zabaw do 22:00; do 4 lat z opiekunem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hoteljastarnia.com.pl/regulamin-kacika-zabaw",
+     "value": {
+      "available": true,
+      "close": "22:00",
+      "with_parent_under_years": 4
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Plac zabaw przed budynkiem, tuż obok ogródka restauracji.",
+     "short": "Przed hotelem, obok ogródka restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hoteljastarnia.com.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "lift",
+     "note": "Hotel ma windę; dzieci poniżej 12 lat korzystają z niej tylko z dorosłym (regulamin).",
+     "short": "Jest",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hoteljastarnia.com.pl/regulamin",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Ok. 600 m do Morza Bałtyckiego; hotel sąsiaduje z mariną i plażą Zatoki Gdańskiej (port ok. 200 m).",
+     "short": "Ok. 600 m do morza, zatoka obok",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hoteljastarnia.com.pl/",
+     "value": {
+      "distance_m": 600
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking hotelowy monitorowany, niestrzeżony (regulamin). Opłaty strona nie podaje.",
+     "short": "Monitorowany, niestrzeżony",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hoteljastarnia.com.pl/regulamin",
+     "value": {
+      "available": true,
+      "guarded": false,
+      "monitored": true
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.6984941,
+   "lon": 18.6760641,
+   "name": "Hotel Jastarnia",
+   "official_url": "https://hoteljastarnia.com.pl/",
+   "place": "jastarnia",
+   "slug": "hotel-jastarnia",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
      "minutes": 80,
      "mode": "car",
      "note": "70 km",
@@ -3833,6 +4039,239 @@
    "official_url": "https://www.primaveraspa.pl/",
    "place": "jastrzebia-gora",
    "slug": "primavera-jastrzebia-gora",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 100,
+     "mode": "car",
+     "note": "90 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.6805%2C18.7224",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 285,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.6805%2C18.7224",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 320,
+     "mode": "car",
+     "note": "430 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.6805%2C18.7224",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 385,
+     "mode": "car",
+     "note": "610 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.6805%2C18.7224",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 395,
+     "mode": "car",
+     "note": "560 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.6805%2C18.7224",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 430,
+     "mode": "car",
+     "note": "670 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.6805%2C18.7224",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 105,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 265,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 308,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 411,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 419,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 430,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. Świętopełka 11, 84-141 Jurata",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczka dla dzieci na życzenie gościa (FAQ). Opłaty strona nie podaje.",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-jurata.com.pl/pl/faq/",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": "0-3",
+     "key": "child_free_stay",
+     "note": "Dzieci do lat 3 śpiące z rodzicami nocują bezpłatnie ze śniadaniem (najwyżej 2 dzieci i 2 dorosłych w pokoju). Dzieci 3–12 lat: płatna dostawka, śniadanie -50%; strona nie mówi, który przedział obejmuje trzylatka.",
+     "short": "Do lat 3 gratis ze śniadaniem, z rodzicami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-jurata.com.pl/pl/dzieci-w-hotelu/",
+     "value": {
+      "breakfast_included": true,
+      "free": true,
+      "max_children": 2,
+      "sleeping_with_parents": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Wysokie krzesełka dla dzieci wśród udogodnień hotelu.",
+     "short": "Wysokie krzesełka",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-jurata.com.pl/pl/dzieci-w-hotelu/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienki wśród udogodnień dla dzieci. Opłaty strona nie podaje.",
+     "short": "Jest",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-jurata.com.pl/pl/dzieci-w-hotelu/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Pokój zabaw z zabawkami, pluszakami, książkami i grami. Godzin, minimalnego wieku i zasad opieki strona nie podaje.",
+     "short": "Pokój zabaw z zabawkami i grami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-jurata.com.pl/pl/dzieci-w-hotelu/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Zewnętrzny plac zabaw.",
+     "short": "Na zewnątrz",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-jurata.com.pl/pl/dzieci-w-hotelu/",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animacje dla dzieci w wybranych terminach (FAQ). Przedziału wieku strona nie podaje.",
+     "short": "W wybranych terminach",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-jurata.com.pl/pl/faq/",
+     "value": {
+      "available": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Ok. 250 m do plaży, ok. 5 minut spacerem leśną ścieżką.",
+     "short": "Ok. 250 m, 5 min leśną ścieżką",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-jurata.com.pl/pl/",
+     "value": {
+      "distance_m": 250,
+      "minutes": 5
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.6805485,
+   "lon": 18.7223537,
+   "name": "Best Western Hotel Jurata",
+   "official_url": "https://www.hotel-jurata.com.pl/pl/",
+   "place": "jurata",
+   "slug": "best-western-jurata",
    "status": "draft"
   },
   {
@@ -5910,6 +6349,373 @@
    "official_url": "https://www.mitsis.com/en/hotels/rinela-beach",
    "place": "kreta-heraklion",
    "slug": "mitsis-selection-rinela",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 95,
+     "mode": "car",
+     "note": "110 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.7654%2C17.5736",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 285,
+     "mode": "car",
+     "note": "400 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.7654%2C17.5736",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 315,
+     "mode": "car",
+     "note": "450 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.7654%2C17.5736",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 385,
+     "mode": "car",
+     "note": "630 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.7654%2C17.5736",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 390,
+     "mode": "car",
+     "note": "580 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.7654%2C17.5736",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 425,
+     "mode": "car",
+     "note": "700 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.7654%2C17.5736",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. Nadmorska 9B, 84-360 Łeba",
+   "features": [
+    {
+     "age_band": "0-3",
+     "key": "child_free_stay",
+     "note": "Pobyt dziecka do 3. roku życia śpiącego z rodzicami, z wyżywieniem, bezpłatny we wrześniu–czerwcu, bez pakietów świątecznych. O lipcu i sierpniu strona nie pisze.",
+     "short": "Do 3 lat gratis z wyżywieniem, IX–VI",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelleba.com.pl/hotel/hotel-dzieciom",
+     "value": {
+      "excludes_holiday_packages": true,
+      "free": true,
+      "meals_included": true,
+      "season": "09-01..06-30",
+      "sleeping_with_parents": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Specjalne menu dziecięce: zależnie od formy pobytu z karty albo w bufecie z kolorową zastawą.",
+     "short": "Kids Menu: z karty lub w bufecie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelleba.com.pl/hotel/hotel-dzieciom",
+     "value": {
+      "available": true,
+      "kids_buffet": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacz do butelek i słoików bezpłatnie na życzenie.",
+     "short": "Do butelek i słoików, bezpłatnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelleba.com.pl/hotel/hotel-dzieciom",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka bezpłatnie na życzenie.",
+     "short": "Bezpłatnie, na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelleba.com.pl/hotel/hotel-dzieciom",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Miejsce do przewijania w ogólnodostępnej toalecie.",
+     "short": "W ogólnodostępnej toalecie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelleba.com.pl/hotel/hotel-dzieciom",
+     "value": {
+      "available": true,
+      "where": "public_toilets"
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Nakładka na toaletę i podest dla dzieci bezpłatnie na życzenie. O nocniku strona nie wspomina.",
+     "short": "Nakładka i podest, bezpłatnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelleba.com.pl/hotel/hotel-dzieciom",
+     "value": {
+      "free": true,
+      "on_request": true,
+      "step_stool": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Kids Klub z salą zabaw, biblioteczką i kącikiem czytelniczym. Godzin i minimalnego wieku strona nie podaje; regulamin hotelu wymaga stałego nadzoru opiekunów w miejscach ogólnodostępnych.",
+     "short": "Kids Klub: sala zabaw i biblioteczka",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelleba.com.pl/hotel/hotel-dzieciom",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animacje, zabawy i warsztaty przez całe lato (lipiec–sierpień) i w wybranych ofertach w ciągu roku. Przedziału wieku strona nie podaje.",
+     "short": "Latem (VII–VIII) i w wybranych ofertach",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelleba.com.pl/hotel/hotel-dzieciom",
+     "value": {
+      "available": true,
+      "season": "07-01..08-31",
+      "seasonal": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Wydzielony brodzik z zabawkami wodnymi przy 17-metrowym basenie, woda 30°C. Głębokości strona nie podaje.",
+     "short": "Wydzielony brodzik, 30°C",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelleba.com.pl/basen-i-spa",
+     "value": {
+      "heated": true,
+      "indoor": true,
+      "water_temp_c": 30
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Ok. 150 m do szerokiej, piaszczystej plaży.",
+     "short": "Ok. 150 m do plaży",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelleba.com.pl/hotel/hotel-dzieciom",
+     "value": {
+      "distance_m": 150
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.7654019,
+   "lon": 17.5735776,
+   "name": "Łeba Hotel & Spa",
+   "official_url": "https://www.hotelleba.com.pl/",
+   "place": "leba",
+   "slug": "leba-hotel-spa",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 95,
+     "mode": "car",
+     "note": "110 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.7654%2C17.5739",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 285,
+     "mode": "car",
+     "note": "400 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.7654%2C17.5739",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 315,
+     "mode": "car",
+     "note": "450 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.7654%2C17.5739",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 385,
+     "mode": "car",
+     "note": "630 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.7654%2C17.5739",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 390,
+     "mode": "car",
+     "note": "580 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.7654%2C17.5739",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 425,
+     "mode": "car",
+     "note": "700 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.7654%2C17.5739",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. Nadmorska 9C, 84-360 Łeba",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczka turystyczne bezpłatnie na życzenie rodziców.",
+     "short": "Turystyczne, bezpłatnie na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelnadmorskileba.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka do karmienia bezpłatnie na życzenie rodziców.",
+     "short": "Bezpłatnie, na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelnadmorskileba.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Specjalnie przygotowywane menu wśród udogodnień dla najmłodszych gości. Szczegółów strona nie podaje.",
+     "short": "Specjalnie przygotowane menu",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelnadmorskileba.pl/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienki bezpłatnie na życzenie rodziców.",
+     "short": "Bezpłatnie, na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelnadmorskileba.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Kids Club: pokój zabaw z kącikiem do kolorowania, małpim gajem z przeszkodami i basenem z piłeczkami. Godzin, minimalnego wieku i zasad opieki strona nie podaje.",
+     "short": "Kids Club z małpim gajem i piłeczkami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelnadmorskileba.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Niespełna 150 m do szerokiej plaży.",
+     "short": "Niespełna 150 m do plaży",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelnadmorskileba.pl/",
+     "value": {
+      "distance_m": 150
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.7653542,
+   "lon": 17.5739117,
+   "name": "Hotel Nadmorski",
+   "official_url": "https://www.hotelnadmorskileba.pl/",
+   "place": "leba",
+   "slug": "nadmorski-leba",
    "status": "draft"
   },
   {
@@ -10644,6 +11450,22 @@
    "name": "Sopot",
    "region": "Bałtyk – Pomorze",
    "slug": "sopot"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Jurata",
+   "region": "Bałtyk – Pomorze",
+   "slug": "jurata"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Jastarnia",
+   "region": "Bałtyk – Pomorze",
+   "slug": "jastarnia"
   }
  ],
  "rule_keys": [

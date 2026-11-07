@@ -1,0 +1,130 @@
+# Facts from the hotel's own website (hotelnadmorskileba.pl; robots.txt allows all, checked 2026-11-07):
+# /dla-dzieci, home page. Written in our words.
+# Also on the site, no feature key for it: TV with Polish children's channels in the Kids Club; "miejsce zabaw dla
+# dzieci" in the amenities list (not said whether outdoors); own car park (no details).
+# Not stated (so not recorded yet): free-stay age, bottle warmer, changing table, potty, toddler food, Kids Club
+# hours and minimum age, animations, pool or brodzik, lift, parking fee.
+# Fewer than 8 verified facts: the site says little about 0-3.
+#
+# Coordinates: the hotel's own Google Maps link (contact page).
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: none. rozklad-pkp.pl finds no trains to Łeba on Thursday 2026-11-12 (the station is not served that
+#   day), and Lębork, the nearest served station, is ~28 km away.
+slug = "nadmorski-leba"
+place = "leba"
+name = "Hotel Nadmorski"
+official_url = "https://www.hotelnadmorskileba.pl/"
+address = "ul. Nadmorska 9C, 84-360 Łeba"
+lat = 54.7653542  # the hotel's own Google Maps link
+lon = 17.5739117
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, free = true, on_request = true }
+short = "Turystyczne, bezpłatnie na życzenie"
+note = "Łóżeczka turystyczne bezpłatnie na życzenie rodziców."
+source = "hotel_website"
+url = "https://www.hotelnadmorskileba.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "high_chair"
+value = { available = true, free = true, on_request = true }
+short = "Bezpłatnie, na życzenie"
+note = "Krzesełka do karmienia bezpłatnie na życzenie rodziców."
+source = "hotel_website"
+url = "https://www.hotelnadmorskileba.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Specjalnie przygotowane menu"
+note = "Specjalnie przygotowywane menu wśród udogodnień dla najmłodszych gości. Szczegółów strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelnadmorskileba.pl/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, free = true, on_request = true }
+short = "Bezpłatnie, na życzenie"
+note = "Wanienki bezpłatnie na życzenie rodziców."
+source = "hotel_website"
+url = "https://www.hotelnadmorskileba.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Kids Club z małpim gajem i piłeczkami"
+note = "Kids Club: pokój zabaw z kącikiem do kolorowania, małpim gajem z przeszkodami i basenem z piłeczkami. Godzin, minimalnego wieku i zasad opieki strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelnadmorskileba.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { distance_m = 150 }
+short = "Niespełna 150 m do plaży"
+note = "Niespełna 150 m do szerokiej plaży."
+source = "hotel_website"
+url = "https://www.hotelnadmorskileba.pl/"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 95
+note = "110 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.7654%2C17.5739"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 285
+note = "400 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.7654%2C17.5739"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 315
+note = "450 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.7654%2C17.5739"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 385
+note = "630 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.7654%2C17.5739"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 390
+note = "580 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.7654%2C17.5739"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 425
+note = "700 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.7654%2C17.5739"
+verified_at = 2026-11-07

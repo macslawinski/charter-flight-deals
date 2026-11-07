@@ -78,9 +78,14 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
 - [x] C: pomorskie hotels, batch 2 (2026-11-07): Faltom (Rumia, 11 facts), Kiston (Kistowo, 8), Villa Baltica
       (Sopot, 9), Primavera (Jastrzębia Góra, 11). Trains: Rumia, Sopot, Władysławowo (reused); none for Kiston
       (Kościerzyna ~30 km). Faltom's Klub Malucha is for 4-12 by its rules.
-- [ ] C: curate the remaining 25 pomorskie leads with `curate-hotel`.
+- [x] C: pomorskie hotels, batch 3 (2026-11-07): Best Western Jurata (8 facts), Hotel Jastarnia (6), Łeba Hotel &
+      Spa (10), Nadmorski (Łeba, 6). Trains: Jurata, Jastarnia; none for Łeba. Łeba Hotel's free stay to 3 is
+      for September-June only.
+- [ ] C: curate the remaining 21 pomorskie leads with `curate-hotel`.
 - [ ] U (phone/e-mail, optional): Kiston cot fee, free-stay age, brodzik; Primavera cot fee, Playland age;
       Villa Baltica free-stay age, playroom hours; Faltom whether under-4s may use Klub Malucha with a parent.
+- [ ] U (phone/e-mail, optional): Hotel Jastarnia free-stay age, high chair, baby items; Nadmorski free-stay age,
+      Kids Club age; BW Jurata cot fee and parking fee; Łeba Hotel free stay in July-August, cot.
 - [ ] U: decide which zachodniopomorskie hotels to publish (all are `draft`); those under 8 facts need a phone or
       e-mail round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Zalewski and Sandra cot, high chair, free-stay age; Baltic Plaza free stay
