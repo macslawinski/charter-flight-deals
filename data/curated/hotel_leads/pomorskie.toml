@@ -36,7 +36,7 @@ lat = 53.7419291
 lon = 17.5122603
 signals = ["łóżeczko", "podgrzewacz", "wanienka", "krzesełko", "sala zabaw"]
 why = "Strona dla dzieci: łóżeczko, podgrzewacz do butelek, wanienka, krzesełka, sala zabaw z regulaminem."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Wichrowe Wzgórze"
@@ -273,7 +273,7 @@ lat = 54.6334909
 lon = 18.5128665
 signals = ["łóżeczko", "wanienka", "nocnik"]
 why = "W ofercie rodzinnej: łóżeczko z materacem 20 zł/doba, wanienka, nocnik, nakładka, podest (sprawdzić, czy poza pakietem)."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Faltom"
@@ -309,7 +309,7 @@ lat = 54.524455
 lon = 16.9521396
 signals = ["brodzik", "łóżeczko", "do 3 lat gratis"]
 why = "Brodzik w strefie wellness, łóżeczko do zamówienia, dzieci do 3 lat śpiące z rodzicami gratis (strona oferty)."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Forest Family Resort"
@@ -321,7 +321,7 @@ lat = 54.5870712
 lon = 16.8695759
 signals = ["kryta sala zabaw", "małpi gaj"]
 why = "Kryta sala zabaw Funlandia (bezpłatna dla gości) i małpi gaj; o wyposażeniu dla niemowląt nic."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Grand Lubicz"

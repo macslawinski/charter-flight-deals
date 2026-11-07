@@ -1857,6 +1857,265 @@
     {
      "from_code": "Gdańsk",
      "from_kind": "city",
+     "minutes": 130,
+     "mode": "car",
+     "note": "130 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.7420%2C17.5100",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 185,
+     "mode": "car",
+     "note": "220 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.7420%2C17.5100",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 280,
+     "mode": "car",
+     "note": "410 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.7420%2C17.5100",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 295,
+     "mode": "car",
+     "note": "390 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.7420%2C17.5100",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 340,
+     "mode": "car",
+     "note": "520 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.7420%2C17.5100",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 385,
+     "mode": "car",
+     "note": "580 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.7420%2C17.5100",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 109,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 2 h 19 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 165,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 259,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 272,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 374,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 424,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. Wczasowa 1, 89-606 Charzykowy",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko dla niemowlaka w wyposażeniu dodatkowym dla rodzin. Opłaty strona nie podaje.",
+     "short": "Łóżeczko dla niemowlaka",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelnotera.pl/dla-dzieci/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka dziecięce w wyposażeniu dodatkowym dla rodzin.",
+     "short": "Jest",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelnotera.pl/dla-dzieci/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacz do butelek w wyposażeniu dodatkowym dla rodzin. Opłaty strona nie podaje.",
+     "short": "Jest",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelnotera.pl/dla-dzieci/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka w wyposażeniu dodatkowym dla rodzin. Opłaty strona nie podaje.",
+     "short": "Jest",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelnotera.pl/dla-dzieci/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Nakładka na toaletę i podest łazienkowy. O nocniku strona nie wspomina.",
+     "short": "Nakładka na toaletę i podest",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelnotera.pl/dla-dzieci/",
+     "value": {
+      "step_stool": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Cztery strefy zabaw: Strefa Malucha (zabawki edukacyjne, gry sensoryczne, podłoga interaktywna), strefa kreatywności z klockami XXL, strefa energii do wspinania i zjeżdżania, strefa gier. Godzin i minimalnego wieku strona nie podaje; regulamin hotelu: dzieci do 12 lat pod stałym nadzorem.",
+     "short": "Cztery strefy, w tym Strefa Malucha",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelnotera.pl/dla-dzieci/",
+     "value": {
+      "available": true,
+      "count": 4
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Place zabaw na terenie hotelu, wykorzystujące naturalne ukształtowanie terenu.",
+     "short": "Place zabaw w naturalnym terenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelnotera.pl/dla-dzieci/",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animatorzy prowadzą warsztaty kreatywne, zajęcia integracyjne i zabawy tematyczne, także wyprawy w okolicy. Przedziału wieku i harmonogramu strona nie podaje.",
+     "short": "Warsztaty, zabawy, wycieczki",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelnotera.pl/dla-dzieci/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_pool",
+     "note": "Płytki basen dla dzieci ze zjeżdżalnią, pod okiem ratownika; w cenie pobytu. Głębokości i minimalnego wieku strona nie podaje.",
+     "short": "Płytki basen ze zjeżdżalnią, ratownik",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelnotera.pl/hotel/regulaminy-i-standardy/",
+     "value": {
+      "available": true,
+      "lifeguard": true,
+      "shallow": true,
+      "slide": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking monitorowany. Opłaty strona nie podaje.",
+     "short": "Monitorowany",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelnotera.pl/hotel/regulaminy-i-standardy/",
+     "value": {
+      "available": true,
+      "monitored": true
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 53.7420355,
+   "lon": 17.5100131,
+   "name": "Notera Hotel SPA",
+   "official_url": "https://hotelnotera.pl/",
+   "place": "charzykowy",
+   "slug": "notera-charzykowy",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
      "minutes": 135,
      "mode": "car",
      "note": "190 km",
@@ -9114,6 +9373,214 @@
   {
    "access": [
     {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 45,
+     "mode": "car",
+     "note": "50 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.6335%2C18.5129",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 235,
+     "mode": "car",
+     "note": "340 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.6335%2C18.5129",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 270,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.6335%2C18.5129",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 335,
+     "mode": "car",
+     "note": "560 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.6335%2C18.5129",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 345,
+     "mode": "car",
+     "note": "520 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.6335%2C18.5129",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 380,
+     "mode": "car",
+     "note": "630 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.6335%2C18.5129",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 33,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 200,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 3 h 52 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 218,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 308,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 356,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 357,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 7 h 27 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. Sztormowa 2, Rewa",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko z materacem, płatne 20 zł za dobę.",
+     "short": "Z materacem, 20 zł za dobę",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelskipper.pl/pokoje/pokoj-rodzinny/",
+     "value": {
+      "available": true,
+      "fee_pln_per_night": 20,
+      "paid": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "child_free_stay",
+     "note": "Pobyt bezpłatny dla dziecka do 6 lat śpiącego z rodzicami (pierwsze dziecko); za drugie dziecko 0–6 lat opłata jak za dostawkę dla 7–12 lat (regulamin hotelu).",
+     "short": "Pierwsze dziecko do 6 lat gratis",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelskipper.pl/wp-content/uploads/2022/04/Regulamin.Hotelowy-2022.pdf",
+     "value": {
+      "free": true,
+      "max_age_years": 6,
+      "max_children": 1,
+      "sleeping_with_parents": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka albo mata antypoślizgowa. Opłaty strona nie podaje.",
+     "short": "Wanienka lub mata antypoślizgowa",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelskipper.pl/pokoje/pokoj-rodzinny/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Nocnik, nakładka na sedes i podest.",
+     "short": "Nocnik, nakładka, podest",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelskipper.pl/pokoje/pokoj-rodzinny/",
+     "value": {
+      "available": true,
+      "step_stool": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Można zorganizować zabawy z animatorem; przy dobrej pogodzie warsztaty i animacje na plaży przy hotelu. Wieku i opłat strona nie podaje.",
+     "short": "Zabawy z animatorem do zorganizowania",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelskipper.pl/pokoje/pokoj-rodzinny/",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Hotel 15 m od morza; z sali można wyjść prosto na plażę.",
+     "short": "15 m od morza",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelskipper.pl/",
+     "value": {
+      "distance_m": 15
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.6334891,
+   "lon": 18.5128921,
+   "name": "Hotel Skipper",
+   "official_url": "https://www.hotelskipper.pl/",
+   "place": "rewa",
+   "slug": "skipper-rewa",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
      "from_code": "RHO",
      "from_kind": "airport",
      "minutes": 75,
@@ -10262,6 +10729,338 @@
   {
    "access": [
     {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 110,
+     "mode": "car",
+     "note": "140 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.5246%2C16.9524",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 295,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.5246%2C16.9524",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 335,
+     "mode": "car",
+     "note": "480 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.5246%2C16.9524",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 400,
+     "mode": "car",
+     "note": "460 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.5246%2C16.9524",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 400,
+     "mode": "car",
+     "note": "660 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.5246%2C16.9524",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 440,
+     "mode": "car",
+     "note": "730 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.5246%2C16.9524",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 125,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 221,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 302,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 5 h 30 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 346,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 5 h 57 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 428,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 445,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 8 h 10 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "Strzelinko 14, 76-200 Słupsk",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko turystyczne na życzenie rodziców; warto zamówić przed przyjazdem. Opłaty strona nie podaje.",
+     "short": "Turystyczne, na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.dolinacharlotty.pl/poznaj-doline/dzieci-w-hotelu",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": "0-3",
+     "key": "child_free_stay",
+     "note": "Dzieci do lat 3 śpiące z rodzicami przebywają bezpłatnie (zasady pobytu na stronie oferty rodzinnej). Strona nie mówi, czy dotyczy to wszystkich ofert.",
+     "short": "Do lat 3 gratis, śpiąc z rodzicami",
+     "source": "hotel_website",
+     "to_confirm": true,
+     "url": "https://www.dolinacharlotty.pl/oferty-pobytowe/szczegoly-oferty?OfferID=1038842",
+     "value": {
+      "free": true,
+      "sleeping_with_parents": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_monitor",
+     "note": "O elektroniczną nianię można zapytać w recepcji.",
+     "short": "Do zapytania w recepcji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.dolinacharlotty.pl/poznaj-doline/dzieci-w-hotelu",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka dziecięce w restauracji.",
+     "short": "W restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.dolinacharlotty.pl/poznaj-doline/dzieci-w-hotelu",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Menu dla najmłodszych w restauracji; w wybranych pakietach bufet ma osobne propozycje dla dzieci.",
+     "short": "Menu dla najmłodszych",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.dolinacharlotty.pl/poznaj-doline/dzieci-w-hotelu",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacz do butelek na życzenie do pokoju i w restauracji.",
+     "short": "Na życzenie; też w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.dolinacharlotty.pl/poznaj-doline/dzieci-w-hotelu",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "where": "room, restaurant"
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka i mata antypoślizgowa na życzenie rodziców.",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.dolinacharlotty.pl/poznaj-doline/dzieci-w-hotelu",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Na terenie obiektu jest toaleta z przewijakiem.",
+     "short": "Toaleta z przewijakiem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.dolinacharlotty.pl/poznaj-doline/dzieci-w-hotelu",
+     "value": {
+      "available": true,
+      "where": "public_toilets"
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Nocnik i podest łazienkowy na życzenie.",
+     "short": "Nocnik i podest, na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.dolinacharlotty.pl/poznaj-doline/dzieci-w-hotelu",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "step_stool": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Dwie sale zabaw w głównym budynku: zabawki, małpi gaj z basenem z piłeczkami, jeździki; do tego sala gier. Godzin i minimalnego wieku strona nie podaje.",
+     "short": "Dwie sale, małpi gaj, piłeczki",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.dolinacharlotty.pl/atrakcje/szczegoly-atrakcji/pokoje-zabaw",
+     "value": {
+      "available": true,
+      "count": 2
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Zewnętrzny plac zabaw przed hotelem.",
+     "short": "Przed hotelem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.dolinacharlotty.pl/poznaj-doline/dzieci-w-hotelu",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animacje w wybranych pakietach rodzinnych i ofertach sezonowych (np. ferie). Program i wiek zależą od terminu.",
+     "short": "W wybranych pakietach i sezonach",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.dolinacharlotty.pl/poznaj-doline/dzieci-w-hotelu",
+     "value": {
+      "available": true,
+      "packages_only": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Brodzik dla dzieci w strefie wellness, w cenie pobytu; czynna 7:00–21:00 (ostatnia godzina tylko dla dorosłych).",
+     "short": "W strefie wellness, w cenie pobytu",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.dolinacharlotty.pl/poznaj-doline/faq",
+     "value": {
+      "free": true,
+      "indoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "stroller_rental",
+     "note": "O wózek spacerowy można zapytać w recepcji. Opłaty strona nie podaje.",
+     "short": "Wózek spacerowy, pytać w recepcji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.dolinacharlotty.pl/poznaj-doline/dzieci-w-hotelu",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Bezpłatny parking przy hotelu (FAQ).",
+     "short": "Bezpłatny",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.dolinacharlotty.pl/poznaj-doline/faq",
+     "value": {
+      "free": true
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.524631,
+   "lon": 16.952397,
+   "name": "Dolina Charlotty Resort & SPA",
+   "official_url": "https://www.dolinacharlotty.pl/",
+   "place": "strzelinko",
+   "slug": "dolina-charlotty-strzelinko",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
      "from_code": "Poznań",
      "from_kind": "city",
      "minutes": 245,
@@ -10724,6 +11523,185 @@
    "official_url": "https://villahoff.pl/",
    "place": "trzesacz",
    "slug": "villa-hoff-trzesacz",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 120,
+     "mode": "car",
+     "note": "150 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.5871%2C16.8696",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 305,
+     "mode": "car",
+     "note": "290 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.5871%2C16.8696",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 340,
+     "mode": "car",
+     "note": "490 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.5871%2C16.8696",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 405,
+     "mode": "car",
+     "note": "470 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.5871%2C16.8696",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 405,
+     "mode": "car",
+     "note": "670 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.5871%2C16.8696",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 450,
+     "mode": "car",
+     "note": "740 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.5871%2C16.8696",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 159,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 236,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 352,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 372,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 451,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 9 h 34 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 505,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. Kościuszki 19, 76-270 Ustka",
+   "features": [
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Kryta sala zabaw Funlandia (małpi gaj z basenem z kulkami, zjeżdżalnią, tunelami i trampoliną), bez limitu i bezpłatnie dla gości; obok sala Montessori dla maluchów. Godzin, minimalnego wieku i zasad opieki strona nie podaje.",
+     "short": "Funlandia i sala Montessori, bezpłatnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://forestustka.pl/dla-dzieci/",
+     "value": {
+      "available": true,
+      "free": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Duże piaskownice z mini placem zabaw na prywatnej wydmie i duży plac zabaw z tyrolką.",
+     "short": "Piaskownice na wydmie, plac z tyrolką",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://forestustka.pl/dla-dzieci/",
+     "value": {
+      "available": true,
+      "count": 2,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "W lipcu i sierpniu zajęcia z animatorem od poniedziałku do piątku przez cały dzień. Przedziału wieku strona nie podaje.",
+     "short": "Lipiec–sierpień, pon.–pt. cały dzień",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://forestustka.pl/dla-dzieci/",
+     "value": {
+      "available": true,
+      "season": "07-01..08-31",
+      "seasonal": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Plaża tuż przy hotelu, za prywatną wydmą.",
+     "short": "Plaża tuż przy hotelu",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://forestustka.pl/dla-dzieci/",
+     "value": {
+      "next_to_hotel": true
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.5870712,
+   "lon": 16.8695759,
+   "name": "Forest Family Resort",
+   "official_url": "https://forestustka.pl/",
+   "place": "ustka",
+   "slug": "forest-family-resort-ustka",
    "status": "draft"
   },
   {
@@ -12437,6 +13415,30 @@
    "name": "Jastarnia",
    "region": "Bałtyk – Pomorze",
    "slug": "jastarnia"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Strzelinko",
+   "region": "Bałtyk – Pomorze",
+   "slug": "strzelinko"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Charzykowy",
+   "region": "Bory Tucholskie",
+   "slug": "charzykowy"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Rewa",
+   "region": "Bałtyk – Pomorze",
+   "slug": "rewa"
   }
  ],
  "rule_keys": [

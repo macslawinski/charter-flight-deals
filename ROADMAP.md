@@ -83,13 +83,18 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       for September-June only.
 - [x] C: pomorskie hotels, batch 4 (2026-11-07, all Ustka): Grand Lubicz (13 facts), Lubicz (7), Jantar (8, free
       stay to 6), Hotel Ustka (6). Trains: Ustka (reused).
-- [ ] C: curate the remaining 17 pomorskie leads with `curate-hotel`.
+- [x] C: pomorskie hotels, batch 5 (2026-11-07): Forest Family Resort (Ustka, 4 facts: play areas only), Dolina
+      Charlotty (Strzelinko, 14 + free stay to 3 to confirm), Notera (Charzykowy, 10), Skipper (Rewa, 6). Trains:
+      Ustka, Słupsk (11 km), Chojnice (9 km), Rumia (14 km).
+- [ ] C: curate the remaining 13 pomorskie leads with `curate-hotel`.
 - [ ] U (phone/e-mail, optional): Kiston cot fee, free-stay age, brodzik; Primavera cot fee, Playland age;
       Villa Baltica free-stay age, playroom hours; Faltom whether under-4s may use Klub Malucha with a parent.
 - [ ] U (phone/e-mail, optional): Hotel Jastarnia free-stay age, high chair, baby items; Nadmorski free-stay age,
       Kids Club age; BW Jurata cot fee and parking fee; Łeba Hotel free stay in July-August, cot.
 - [ ] U (phone/e-mail, optional): Hotel Ustka free stay under 2 (rule or offer?), cot, baby items; Lubicz fees,
       free-stay age, pool/brodzik; Grand Lubicz free-stay age; Jantar cot fee, high chair.
+- [ ] U (phone/e-mail, optional): Forest cot and baby items, free-stay age; Dolina Charlotty whether free stay to 3
+      applies to all offers; Notera free-stay age, play zone rules; Skipper high chair, playroom, parking.
 - [ ] U: decide which zachodniopomorskie hotels to publish (all are `draft`); those under 8 facts need a phone or
       e-mail round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Zalewski and Sandra cot, high chair, free-stay age; Baltic Plaza free stay

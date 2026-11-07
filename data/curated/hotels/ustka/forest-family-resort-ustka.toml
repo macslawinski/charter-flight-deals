@@ -1,0 +1,168 @@
+# Facts from the hotel's own website (forestustka.pl; robots.txt allows all but /wp-admin/, checked 2026-11-07):
+# /dla-dzieci/, /kontakt/. Written in our words.
+# Also on the site, no feature key for it: Sala Montessori for the youngest (themed play houses, a mini monkey
+# grove, Duplo); giant sandpits with a mini playground on the resort's private dune; a big playground with a
+# zip line.
+# Not stated (so not recorded yet): free-stay age, cot, high chair, baby bath, bottle warmer, changing table,
+# potty, kids menu, toddler food, Funlandia hours and minimum age, animation ages, pool or brodzik, lift, parking.
+# Fewer than 8 verified facts: the site describes play areas but no baby equipment.
+#
+# Coordinates: OpenStreetMap node/2977772835 (ODbL).
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most one
+#   change, to Ustka station. Station -> hotel: ~1 km, ~5 min by car (OSRM) or a short walk.
+slug = "forest-family-resort-ustka"
+place = "ustka"
+name = "Forest Family Resort"
+official_url = "https://forestustka.pl/"
+address = "ul. Kościuszki 19, 76-270 Ustka"
+lat = 54.5870712  # OpenStreetMap node/2977772835, ODbL
+lon = 16.8695759
+status = "draft"
+
+[[feature]]
+key = "playroom"
+value = { available = true, free = true }
+short = "Funlandia i sala Montessori, bezpłatnie"
+note = "Kryta sala zabaw Funlandia (małpi gaj z basenem z kulkami, zjeżdżalnią, tunelami i trampoliną), bez limitu i bezpłatnie dla gości; obok sala Montessori dla maluchów. Godzin, minimalnego wieku i zasad opieki strona nie podaje."
+source = "hotel_website"
+url = "https://forestustka.pl/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true, count = 2 }
+short = "Piaskownice na wydmie, plac z tyrolką"
+note = "Duże piaskownice z mini placem zabaw na prywatnej wydmie i duży plac zabaw z tyrolką."
+source = "hotel_website"
+url = "https://forestustka.pl/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, seasonal = true, season = "07-01..08-31" }
+short = "Lipiec–sierpień, pon.–pt. cały dzień"
+note = "W lipcu i sierpniu zajęcia z animatorem od poniedziałku do piątku przez cały dzień. Przedziału wieku strona nie podaje."
+source = "hotel_website"
+url = "https://forestustka.pl/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { next_to_hotel = true }
+short = "Plaża tuż przy hotelu"
+note = "Plaża tuż przy hotelu, za prywatną wydmą."
+source = "hotel_website"
+url = "https://forestustka.pl/dla-dzieci/"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 120
+note = "150 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.5871%2C16.8696"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 305
+note = "290 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.5871%2C16.8696"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 340
+note = "490 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.5871%2C16.8696"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 405
+note = "470 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.5871%2C16.8696"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 405
+note = "670 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.5871%2C16.8696"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 450
+note = "740 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.5871%2C16.8696"
+verified_at = 2026-11-07
+
+# --- Access: train to Ustka station (rozklad-pkp.pl, 2026-11-12) --------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "train"
+minutes = 159
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 236
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 352
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 372
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 451
+note = "1 przesiadka · bezpośredni 9 h 34 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 505
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
