@@ -1,0 +1,159 @@
+# Facts from the hotel's own website (laola.pl; robots.txt allows all, checked 2026-11-07):
+# /dla-dzieci, /resort-spa-nad-morzem, family rooms page, /kontakt, home page. Written in our words.
+# Also on the site, no feature key for it: children's tableware and cutlery; blankets for children to rent;
+# pool complex 9:00-21:00, adults only from 20:00; airport transfers (Goleniów, Berlin) - the page still
+# lists Berlin-Tegel, so it looks outdated and is not recorded as a fact; kids' birthday parties with an
+# animator in the bowling club.
+# Not stated (so not recorded yet): cot fee, bottle warmer, changing table, potty, brodzik (only ball pools
+# in the playroom), playroom hours and minimum age, animations, lift, beach distance in metres.
+#
+# Coordinates: the hotel's own Google Maps link on the home page.
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not recorded. Nearest station with regular trains is Gryfice, ~30 km (same as Linea Mare);
+#   no hotel transfer from a station is stated.
+slug = "grand-laola-pobierowo"
+place = "pobierowo"
+name = "Grand Laola Spa"
+official_url = "https://www.laola.pl/"
+address = "ul. Grunwaldzka 10, 72-346 Pobierowo"
+lat = 54.056622  # the hotel's own Google Maps link
+lon = 14.914034
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true }
+short = "Do wypożyczenia"
+note = "Łóżeczka dla niemowląt do wypożyczenia. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.laola.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "child_free_stay"
+age_band = "0-3"
+value = { free = true, all_offers = true }
+short = "Do 3 lat gratis we wszystkich ofertach"
+note = "Dzieci do lat 3 gratis we wszystkich ofertach. Zasad dla starszych dzieci strona dla dzieci nie podaje."
+source = "hotel_website"
+url = "https://www.laola.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "high_chair"
+value = { available = true, where = "restaurant" }
+short = "W restauracji"
+note = "Krzesełka w restauracji, do tego sztućce i naczynia dla dzieci."
+source = "hotel_website"
+url = "https://www.laola.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_menu"
+value = { available = true, kids_buffet = true }
+short = "Bufet dziecięcy i kids menu"
+note = "Specjalny bufet dziecięcy oraz karta kids menu. O jedzeniu dla niemowląt strona nie wspomina."
+source = "hotel_website"
+url = "https://www.laola.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, on_request = true }
+short = "Do wypożyczenia"
+note = "Wanienki do wypożyczenia. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.laola.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playroom"
+value = { available = true, parent_area = true }
+short = "Laolalandia, z kącikiem dla rodzica"
+note = "Sala zabaw Laolalandia przy kawiarni: dwie zjeżdżalnie, dwa baseny z kulkami, tor przeszkód, siatka do wspinania i miejsce dla rodziców. Godzin i minimalnego wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.laola.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "Na zewnątrz, przy strefie chillout"
+note = "Plac zabaw na zewnątrz, połączony ze strefą chillout dla rodziców."
+source = "hotel_website"
+url = "https://www.laola.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { near_beach = true }
+short = "Tuż przy plaży"
+note = "Według hotelu zaraz po wyjściu z obiektu jest się nad brzegiem morza; odległości w metrach strona nie podaje."
+source = "hotel_website"
+url = "https://www.laola.pl/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "parking"
+value = { paid = true, fee_pln_per_day_low = 35, fee_pln_per_day_high = 50, underground_fee_pln_per_day_low = 50, underground_fee_pln_per_day_high = 70, high_season = "06-23..09-15" }
+short = "35 zł/doba, w sezonie 50 zł"
+note = "Parking zewnętrzny 35 zł za dobę, podziemny (przy apartamentach) 50 zł; od 23.06 do 15.09 odpowiednio 50 i 70 zł za dobę."
+source = "hotel_website"
+url = "https://www.laola.pl/pokoje-i-apartamenty-nad-morzem-wolne-pokoje-pobierowo-grand-laola-spa-pobierowo/luksusowe-pokoje-rodzinne-nad-morzem-grand-laola-spa-pobierowo"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 215
+note = "300 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.0566%2C14.9140"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 250
+note = "350 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.0566%2C14.9140"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 340
+note = "480 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.0566%2C14.9140"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 415
+note = "650 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.0566%2C14.9140"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 435
+note = "660 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.0566%2C14.9140"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 485
+note = "730 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.0566%2C14.9140"
+verified_at = 2026-11-07

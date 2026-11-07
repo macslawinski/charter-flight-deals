@@ -23,6 +23,27 @@ region = "Bałtyk – Pomorze Zachodnie"
 kind = "domestic"
 
 [[place]]
+slug = "dzwirzyno"
+name = "Dźwirzyno"
+country = "Polska"
+region = "Bałtyk – Pomorze Zachodnie"
+kind = "domestic"
+
+[[place]]
+slug = "kolobrzeg"
+name = "Kołobrzeg"
+country = "Polska"
+region = "Bałtyk – Pomorze Zachodnie"
+kind = "domestic"
+
+[[place]]
+slug = "miedzyzdroje"
+name = "Międzyzdroje"
+country = "Polska"
+region = "Bałtyk – Pomorze Zachodnie"
+kind = "domestic"
+
+[[place]]
 slug = "darlowo"
 name = "Darłowo"
 country = "Polska"

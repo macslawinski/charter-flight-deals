@@ -52,7 +52,12 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
 - [x] C: zachodniopomorskie hotels, first batch (2026-11-07, `curate-hotel`): Lidia Spa (Darłowo), Linea Mare
       (Pobierowo), Unitral (Mielno), Villa Hoff (Trzęsacz); car from the 6 cities, train only for Unitral
       (Koszalin, 13 km); the others' stations are 26-31 km away (Sławno, Gryfice), so no train times.
-- [ ] C: curate the remaining 20 zachodniopomorskie leads with `curate-hotel`.
+- [x] C: zachodniopomorskie hotels, second batch (2026-11-07): HAVET (Dźwirzyno), Factory Resort (Kołobrzeg),
+      Hotel Wolin (Międzyzdroje, only 6 facts: below the 8-fact publishing threshold), Grand Laola (Pobierowo).
+      Trains: Kołobrzeg (reused from Saltic) for HAVET and Factory, Międzyzdroje for Wolin; none for Laola.
+- [ ] C: curate the remaining 16 zachodniopomorskie leads with `curate-hotel`.
+- [ ] U (phone/e-mail, optional): HAVET cot fee; Factory free-stay conditions for under-3s (sentence cut off
+      on the site); Hotel Wolin brodzik, playroom age, free-stay rule outside packages.
 - [ ] U (phone/e-mail, optional): Unitral and Villa Hoff cot fee amounts; Unitral free-stay age for small
       children; Villa Hoff parking months/fee; whether Lidia/Unitral brodziki are heated.
 - [ ] C: project skill `reverify-child-rules` so re-checks of rules are repeatable.
