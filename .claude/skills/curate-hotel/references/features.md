@@ -33,6 +33,9 @@ hotels already curated (Saltic, Mitsis, Lyttos). `short` ≤ 60 chars (one line 
 Notes
 - `free = true` for an item means the site says it is free. If no fee is mentioned, leave the fee out
   and say "Opłaty strona nie podaje" in the note; don't write `free = true`.
+- `age_band` takes only `0-1`, `0-2`, `1-2`, `2-3`, `0-3`, `2+`, `3+`. For any other age the site
+  states (free stay to 4, playroom from 2.5 years), leave `age_band` out and put the age in the value:
+  `{ free = true, max_age_years = 4 }`, `{ available = true, min_age_years = 2.5 }`.
 - One fact per `(key, age_band)`. Two different rules for the same key (e.g. free stay 0–2, half price
   2–3): two facts with different `age_band`.
 - `beach_walk_minutes` is about the sea or a lake. A mountain hotel simply has none; don't put ski-lift
