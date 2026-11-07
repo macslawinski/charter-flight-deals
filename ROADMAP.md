@@ -96,7 +96,8 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       to 4, cot, baby bath, bottle warmer, playroom, brodzik, animations all year). Train: Władysławowo. Skipped
       Stella (kids page empty). All 40 pomorskie leads processed: 29 curated, 11 skipped.
 - [ ] U (phone/e-mail, optional): Gwiazda Morza baby-item fees, playroom minimum age, brodzik depth.
-- [x] C: hotel curation parked (2026-11-07, user); site features instead. `/hotele/` is now a finder (origin
+- [x] C: hotel curation parked (2026-11-07, user); site features instead. The home page `/` is now the hotel finder (`/hotele/` redirects there; the
+      airline checker moved to `/linie/`) (origin
       city + car/train + max time, region, "hotel podaje" filters, sort, state in the URL) and
       `/hotele/porownaj/?h=…` compares 2–4 hotels side by side. Foreign hotels (Rodos, Heraklion) hidden
       for now: `SHOW_FOREIGN_HOTELS` in `family/src/lib/data.ts`, data stays in the export.
