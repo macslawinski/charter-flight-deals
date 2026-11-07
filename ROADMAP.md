@@ -69,6 +69,9 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       (Kołobrzeg, 7, all from a family package page: no permanent kids page), Zalewski (Mrzeżyno, 3), Sandra SPA
       (Pogorzelica, 4). Trains: Kołobrzeg (reused), Trzebiatów (reused from Amber Park). All 25 zachodniopomorskie
       leads are now curated; 10 of the 25 hotels have fewer than 8 facts.
+- [x] C: hotel leads pomorskie (2026-11-07, `find-hotels`): 31 leads, 2 do sprawdzenia (Gwiazda Morza, Stella:
+      JS sites), 7 skipped. Not covered yet: Belmar Park, Maloves, Lech Resort, Aubrecht Country (no own site found
+      or unreadable), 57 OSM sites the probe couldn't read; guest houses/ośrodki left out (Sargus, Magra, Adler).
 - [ ] U: decide which zachodniopomorskie hotels to publish (all are `draft`); those under 8 facts need a phone or
       e-mail round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Zalewski and Sandra cot, high chair, free-stay age; Baltic Plaza free stay
