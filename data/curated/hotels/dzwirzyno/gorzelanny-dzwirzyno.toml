@@ -1,0 +1,204 @@
+# Facts from the hotel's own website (gorzelanny.pl/hotel-dzwirzyno; robots.txt disallows only /wp-admin/,
+# checked 2026-11-07): /dla-dzieci/, /spa/, home page, Regulamin pobytu (PDF). Written in our words.
+# Also on the site, no feature key for it: 100 m from Lake Resko; indoor pool 12 x 6 m with a water slide and two
+# jacuzzis, outdoor pool open in the summer holidays; beach carts for rent; children 4-12 pay 50% of the adult price.
+# Not stated (so not recorded yet): baby bath, bottle warmer, changing table, potty, brodzik, playroom hours and
+# minimum age, animation ages, lift, outdoor playground, toddler food.
+#
+# Coordinates: OpenStreetMap way/1303545551 (ODbL); the hotel's site has no map link with coordinates.
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most one
+#   change, to Kołobrzeg station (times reused from Saltic Grzybowo, same station). Station -> hotel: ~15 km,
+#   ~20 min by car or taxi (OSRM); no hotel transfer stated.
+slug = "gorzelanny-dzwirzyno"
+place = "dzwirzyno"
+name = "Hotel Gorzelanny"
+official_url = "https://gorzelanny.pl/hotel-dzwirzyno/"
+address = "ul. Jachtowa 42, 78-131 Dźwirzyno"
+lat = 54.1512745  # OpenStreetMap way/1303545551, ODbL
+lon = 15.400362
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, paid = true, fee_pln_per_stay = 100 }
+short = "Turystyczne, 100 zł za pobyt"
+note = "Turystyczne łóżeczka niemowlęce do wypożyczenia w recepcji, 100 zł za cały pobyt."
+source = "hotel_website"
+url = "https://gorzelanny.pl/hotel-dzwirzyno/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "child_free_stay"
+age_band = "0-3"
+value = { free = true, max_children = 1 }
+short = "Jedno dziecko do lat 3 gratis"
+note = "Bezpłatny pobyt dla jednego dziecka do lat 3; dzieci 4–12 lat mają 50% zniżki od ceny dorosłego. Kwestii dziecka między 3. a 4. urodzinami strona nie rozstrzyga."
+source = "hotel_website"
+url = "https://gorzelanny.pl/hotel-dzwirzyno/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "high_chair"
+value = { available = true, on_request = true }
+short = "Na życzenie"
+note = "Krzesełka do karmienia na życzenie."
+source = "hotel_website"
+url = "https://gorzelanny.pl/hotel-dzwirzyno/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Jest menu dziecięce"
+note = "W restauracji jest specjalne menu dziecięce. O jedzeniu dla niemowląt strona nie wspomina."
+source = "hotel_website"
+url = "https://gorzelanny.pl/hotel-dzwirzyno/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Domek i zjeżdżalnia, poziom -1"
+note = "Pokój zabaw na poziomie -1, m.in. plastikowy domek i zjeżdżalnia. Godzin, minimalnego wieku i zasad opieki strona nie podaje."
+source = "hotel_website"
+url = "https://gorzelanny.pl/hotel-dzwirzyno/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, year_round = true, daily_in_summer = true }
+short = "Cały rok, w wakacje codziennie"
+note = "Program animacji przez cały rok, w wakacje codzienne animacje (plan w recepcji). Przedziału wieku strona nie podaje."
+source = "hotel_website"
+url = "https://gorzelanny.pl/hotel-dzwirzyno/dla-dzieci/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { distance_m = 900 }
+short = "Ok. 900 m do plaży"
+note = "Ok. 900 m do plaży nad Bałtykiem; jezioro Resko ok. 100 m od hotelu."
+source = "hotel_website"
+url = "https://gorzelanny.pl/hotel-dzwirzyno/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "parking"
+value = { paid = true, guarded = true, fee_pln_per_day_min = 35, fee_pln_per_day_max = 45 }
+short = "Strzeżony, 35–45 zł/doba"
+note = "Parking strzeżony (regulamin pobytu, s. 2), 35–45 zł za dobę zależnie od sezonu."
+source = "hotel_website"
+url = "https://gorzelanny.pl/hotel-dzwirzyno/dla-dzieci/"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 180
+note = "260 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.1513%2C15.4004"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 265
+note = "390 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.1513%2C15.4004"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 360
+note = "520 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.1513%2C15.4004"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 400
+note = "600 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.1513%2C15.4004"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 450
+note = "700 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.1513%2C15.4004"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 505
+note = "770 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.1513%2C15.4004"
+verified_at = 2026-11-07
+
+# --- Access: train to Kołobrzeg station (rozklad-pkp.pl, 2026-11-12) ------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "train"
+minutes = 250
+note = "1 przesiadka · bezpośredni 4 h 42 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 252
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 329
+note = "1 przesiadka · bezpośredni 5 h 59 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 400
+note = "1 przesiadka · bezpośredni 7 h 08 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 480
+note = "1 przesiadka · bezpośredni 8 h 52 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 555
+note = "1 przesiadka · bezpośredni 9 h 21 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05

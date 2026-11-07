@@ -1903,6 +1903,241 @@
     {
      "from_code": "Gdańsk",
      "from_kind": "city",
+     "minutes": 180,
+     "mode": "car",
+     "note": "260 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.1513%2C15.4004",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 265,
+     "mode": "car",
+     "note": "390 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.1513%2C15.4004",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 360,
+     "mode": "car",
+     "note": "520 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.1513%2C15.4004",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 400,
+     "mode": "car",
+     "note": "600 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.1513%2C15.4004",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 450,
+     "mode": "car",
+     "note": "700 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.1513%2C15.4004",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 505,
+     "mode": "car",
+     "note": "770 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.1513%2C15.4004",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 250,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 4 h 42 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 252,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 329,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 5 h 59 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 400,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 7 h 08 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 480,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 8 h 52 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 555,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 9 h 21 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    }
+   ],
+   "address": "ul. Jachtowa 42, 78-131 Dźwirzyno",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Turystyczne łóżeczka niemowlęce do wypożyczenia w recepcji, 100 zł za cały pobyt.",
+     "short": "Turystyczne, 100 zł za pobyt",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://gorzelanny.pl/hotel-dzwirzyno/dla-dzieci/",
+     "value": {
+      "available": true,
+      "fee_pln_per_stay": 100,
+      "paid": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": "0-3",
+     "key": "child_free_stay",
+     "note": "Bezpłatny pobyt dla jednego dziecka do lat 3; dzieci 4–12 lat mają 50% zniżki od ceny dorosłego. Kwestii dziecka między 3. a 4. urodzinami strona nie rozstrzyga.",
+     "short": "Jedno dziecko do lat 3 gratis",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://gorzelanny.pl/hotel-dzwirzyno/dla-dzieci/",
+     "value": {
+      "free": true,
+      "max_children": 1
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka do karmienia na życzenie.",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://gorzelanny.pl/hotel-dzwirzyno/dla-dzieci/",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "W restauracji jest specjalne menu dziecięce. O jedzeniu dla niemowląt strona nie wspomina.",
+     "short": "Jest menu dziecięce",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://gorzelanny.pl/hotel-dzwirzyno/dla-dzieci/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Pokój zabaw na poziomie -1, m.in. plastikowy domek i zjeżdżalnia. Godzin, minimalnego wieku i zasad opieki strona nie podaje.",
+     "short": "Domek i zjeżdżalnia, poziom -1",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://gorzelanny.pl/hotel-dzwirzyno/dla-dzieci/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Program animacji przez cały rok, w wakacje codzienne animacje (plan w recepcji). Przedziału wieku strona nie podaje.",
+     "short": "Cały rok, w wakacje codziennie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://gorzelanny.pl/hotel-dzwirzyno/dla-dzieci/",
+     "value": {
+      "available": true,
+      "daily_in_summer": true,
+      "year_round": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Ok. 900 m do plaży nad Bałtykiem; jezioro Resko ok. 100 m od hotelu.",
+     "short": "Ok. 900 m do plaży",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://gorzelanny.pl/hotel-dzwirzyno/",
+     "value": {
+      "distance_m": 900
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking strzeżony (regulamin pobytu, s. 2), 35–45 zł za dobę zależnie od sezonu.",
+     "short": "Strzeżony, 35–45 zł/doba",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://gorzelanny.pl/hotel-dzwirzyno/dla-dzieci/",
+     "value": {
+      "fee_pln_per_day_max": 45,
+      "fee_pln_per_day_min": 35,
+      "guarded": true,
+      "paid": true
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.1512745,
+   "lon": 15.400362,
+   "name": "Hotel Gorzelanny",
+   "official_url": "https://gorzelanny.pl/hotel-dzwirzyno/",
+   "place": "dzwirzyno",
+   "slug": "gorzelanny-dzwirzyno",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
      "minutes": 175,
      "mode": "car",
      "note": "250 km",
@@ -2203,6 +2438,283 @@
    "official_url": "https://www.havethotel.pl/",
    "place": "dzwirzyno",
    "slug": "havet-dzwirzyno",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 175,
+     "mode": "car",
+     "note": "250 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.1609%2C15.4196",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 260,
+     "mode": "car",
+     "note": "390 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.1609%2C15.4196",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 355,
+     "mode": "car",
+     "note": "520 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.1609%2C15.4196",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 400,
+     "mode": "car",
+     "note": "590 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.1609%2C15.4196",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 445,
+     "mode": "car",
+     "note": "690 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.1609%2C15.4196",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 500,
+     "mode": "car",
+     "note": "770 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.1609%2C15.4196",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 250,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 4 h 42 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 252,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 329,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 5 h 59 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 400,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 7 h 08 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 480,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 8 h 52 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 555,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 9 h 21 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    }
+   ],
+   "address": "ul. Wyzwolenia 25, 78-131 Dźwirzyno",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko na życzenie rodziców, razem z innym wyposażeniem dla maluchów. Opłaty strona nie podaje.",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.neptuno.pl/wakacje-nad-morzem-z-dzieckiem",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Specjalne menu dla dzieci. O jedzeniu dla niemowląt strona nie wspomina.",
+     "short": "Specjalne menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.neptuno.pl/wakacje-nad-morzem-z-dzieckiem",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacz do butelek na życzenie rodziców. Opłaty strona nie podaje.",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.neptuno.pl/wakacje-nad-morzem-z-dzieckiem",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka na życzenie rodziców. Opłaty strona nie podaje.",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.neptuno.pl/wakacje-nad-morzem-z-dzieckiem",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Przewijak na życzenie rodziców. Opłaty strona nie podaje.",
+     "short": "Do pokoju, na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.neptuno.pl/wakacje-nad-morzem-z-dzieckiem",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "where": "room"
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Nocnik na życzenie rodziców.",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.neptuno.pl/wakacje-nad-morzem-z-dzieckiem",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Trzy strefy zabaw dla dzieci; od 11:00 zabawy z animatorem w sali zabaw lub na plaży. Dzieci poniżej 12 lat pod stałą opieką dorosłych (regulamin). Minimalnego wieku strona nie podaje.",
+     "short": "3 strefy zabaw, animator od 11:00",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.neptuno.pl/kontakt/Q&A",
+     "value": {
+      "animator_from": "11:00",
+      "available": true,
+      "count": 3
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Plac zabaw z nowymi, atestowanymi urządzeniami.",
+     "short": "Nowe, atestowane urządzenia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.neptuno.pl/wakacje-nad-morzem-z-dzieckiem",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Codzienne animacje dla dzieci według ustalonego programu; latem (lipiec–sierpień) raz w tygodniu bezpłatne przedstawienie cyrkowe. Przedziału wieku strona nie podaje.",
+     "short": "Codziennie, wg programu",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.neptuno.pl/wakacje-nad-morzem-z-dzieckiem",
+     "value": {
+      "available": true,
+      "daily": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Ok. 150 m do brzegu morza (Q&A); na stronie głównej podano „100 m od morza”.",
+     "short": "Ok. 150 m do morza",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.neptuno.pl/kontakt/Q&A",
+     "value": {
+      "distance_m": 150
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking na ponad 80 samochodów; warto wykupić miejsce wcześniej. Opłaty strona nie podaje.",
+     "short": "Ponad 80 miejsc, warto zarezerwować",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.neptuno.pl/kontakt/Q&A",
+     "value": {
+      "on_site": true,
+      "reservable": true,
+      "spaces": 80
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.160896,
+   "lon": 15.4196,
+   "name": "Neptuno Resort & Spa",
+   "official_url": "https://www.neptuno.pl/",
+   "place": "dzwirzyno",
+   "slug": "neptuno-dzwirzyno",
    "status": "draft"
   },
   {
@@ -2544,6 +3056,563 @@
    "official_url": "https://www.hotelsaltic.pl/grzybowo",
    "place": "grzybowo",
    "slug": "saltic-resort-spa-grzybowo",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 160,
+     "mode": "car",
+     "note": "240 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.1836%2C15.5909",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 250,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.1836%2C15.5909",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 345,
+     "mode": "car",
+     "note": "510 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.1836%2C15.5909",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 385,
+     "mode": "car",
+     "note": "580 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.1836%2C15.5909",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 435,
+     "mode": "car",
+     "note": "680 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.1836%2C15.5909",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 485,
+     "mode": "car",
+     "note": "760 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.1836%2C15.5909",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 250,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 4 h 42 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 252,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 329,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 5 h 59 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 400,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 7 h 08 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 480,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 8 h 52 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 555,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 9 h 21 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    }
+   ],
+   "address": "ul. Kasprowicza 24, 78-100 Kołobrzeg",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Bezpłatne wypożyczenie łóżeczka z pościelą; prosimy zgłosić przy rezerwacji.",
+     "short": "Bezpłatnie, z pościelą",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.aquariusspa.pl/pl/najczesciej-zadawane-pytania-dotyczace-pobytu-w-hotelu/",
+     "value": {
+      "available": true,
+      "bedding": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_monitor",
+     "note": "Elektroniczna niania do bezpłatnego wypożyczenia; zgłosić przy rezerwacji.",
+     "short": "Bezpłatnie, na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.aquariusspa.pl/pl/najczesciej-zadawane-pytania-dotyczace-pobytu-w-hotelu/",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Dania przygotowane dla najmłodszych, z bufetu lub z karty. O jedzeniu dla niemowląt strona nie wspomina.",
+     "short": "Dania dla najmłodszych",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.aquariusspa.pl/pl/hotel-dla-rodzin-z-dziecmi/udogodneinia-dla-dzieci-w-hotelu-aquarius-spa/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacz do pokarmów do bezpłatnego wypożyczenia; zgłosić przy rezerwacji.",
+     "short": "Bezpłatnie, na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.aquariusspa.pl/pl/najczesciej-zadawane-pytania-dotyczace-pobytu-w-hotelu/",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka do bezpłatnego wypożyczenia; zgłosić przy rezerwacji.",
+     "short": "Bezpłatnie, na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.aquariusspa.pl/pl/najczesciej-zadawane-pytania-dotyczace-pobytu-w-hotelu/",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Przewijak i kojec w szatni basenowej.",
+     "short": "W szatni basenowej",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.aquariusspa.pl/pl/hotel-dla-rodzin-z-dziecmi/udogodneinia-dla-dzieci-w-hotelu-aquarius-spa/",
+     "value": {
+      "available": true,
+      "where": "pool_changing_room"
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Klub Zabaw na parterze przy kawiarni, z przeszklonymi ścianami, żeby rodzice mogli zerkać z kawiarni. Zasady (godziny, wiek) są w regulaminie w klubie; strona ich nie podaje.",
+     "short": "Klub Zabaw, przeszklony, przy kawiarni",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.aquariusspa.pl/pl/najczesciej-zadawane-pytania-dotyczace-pobytu-w-hotelu/",
+     "value": {
+      "available": true,
+      "glass_walls": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Nowoczesny plac zabaw w hotelowym ogrodzie.",
+     "short": "W hotelowym ogrodzie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.aquariusspa.pl/pl/najczesciej-zadawane-pytania-dotyczace-pobytu-w-hotelu/",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": "0-3",
+     "key": "kids_animation",
+     "note": "Animacje według harmonogramu w recepcji. Dzieci do lat 3 muszą być na animacjach z opiekunem; animator nie przewija i nie karmi (regulamin hotelowy, s. 6).",
+     "short": "Do lat 3 tylko z opiekunem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.aquariusspa.pl/wp-content/uploads/regulamin/Regulamin-Hotelowy-PL.pdf",
+     "value": {
+      "available": true,
+      "parent_required": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Brodzik w Aquacenter; strefa dla dzieci ma wodę 31°C (FAQ). Głębokości strona nie podaje.",
+     "short": "Brodzik w Aquacenter, woda 31°C",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.aquariusspa.pl/pl/najczesciej-zadawane-pytania-dotyczace-pobytu-w-hotelu/",
+     "value": {
+      "available": true,
+      "indoor": true,
+      "water_temp_c": 31
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "lift",
+     "note": "Hotel ma windy (FAQ wspomina „główne windy” na piętrach I–III).",
+     "short": "Jest",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.aquariusspa.pl/pl/najczesciej-zadawane-pytania-dotyczace-pobytu-w-hotelu/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Do plaży ok. 280 m, ok. 5 minut spacerem.",
+     "short": "Ok. 5 minut pieszo (280 m)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.aquariusspa.pl/pl/najczesciej-zadawane-pytania-dotyczace-pobytu-w-hotelu/",
+     "value": {
+      "distance_m": 280,
+      "minutes": 5
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking przed hotelem 60 zł za dobę, garaż podziemny 70 zł za dobę; oba niestrzeżone, bez gwarancji miejsca.",
+     "short": "60 zł/doba, garaż 70 zł",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.aquariusspa.pl/pl/najczesciej-zadawane-pytania-dotyczace-pobytu-w-hotelu/",
+     "value": {
+      "fee_pln_per_day": 60,
+      "paid": true,
+      "underground_fee_pln_per_day": 70
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.183634,
+   "lon": 15.5909435,
+   "name": "Hotel Aquarius SPA",
+   "official_url": "https://www.aquariusspa.pl/",
+   "place": "kolobrzeg",
+   "slug": "aquarius-spa-kolobrzeg",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 165,
+     "mode": "car",
+     "note": "240 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.1841%2C15.5857",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 250,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.1841%2C15.5857",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 345,
+     "mode": "car",
+     "note": "510 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.1841%2C15.5857",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 385,
+     "mode": "car",
+     "note": "580 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.1841%2C15.5857",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 435,
+     "mode": "car",
+     "note": "690 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.1841%2C15.5857",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 485,
+     "mode": "car",
+     "note": "760 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.1841%2C15.5857",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 250,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 4 h 42 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 252,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 329,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 5 h 59 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 400,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 7 h 08 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 480,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 8 h 52 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 555,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 9 h 21 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-05"
+    }
+   ],
+   "address": "ul. Kościuszki 16, 78-100 Kołobrzeg",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko z pościelą do pokoju na życzenie. Opłaty strona nie podaje.",
+     "short": "Z pościelą, na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hoteldivaspa.pl/dla-rodziny/udogodnienia-dla-rodzin",
+     "value": {
+      "available": true,
+      "bedding": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka dziecięce w restauracji.",
+     "short": "W restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hoteldivaspa.pl/dla-rodziny/udogodnienia-dla-rodzin",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja ma specjalne menu dla dzieci. O jedzeniu dla niemowląt strona nie wspomina.",
+     "short": "Specjalne menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hoteldivaspa.pl/dla-rodziny/udogodnienia-dla-rodzin",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacz do butelek do pokoju na życzenie. Opłaty strona nie podaje.",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hoteldivaspa.pl/dla-rodziny/udogodnienia-dla-rodzin",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Nakładka na toaletę na życzenie. Nocnika strona nie wymienia.",
+     "short": "Nakładka na toaletę",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hoteldivaspa.pl/dla-rodziny/udogodnienia-dla-rodzin",
+     "value": {
+      "on_request": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Kids Club: przestronny pokój zabaw z grami i zabawkami, nad bezpieczeństwem czuwają animatorki. Godzin, minimalnego wieku i tego, czy rodzic musi zostać, strona nie podaje.",
+     "short": "Kids Club z animatorkami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hoteldivaspa.pl/dla-rodziny/kids-club",
+     "value": {
+      "animators": true,
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animacje dla najmłodszych w wakacje, ferie i sezonowo. Przedziału wieku strona nie podaje.",
+     "short": "Wakacje, ferie i sezonowo",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hoteldivaspa.pl/dla-rodziny/udogodnienia-dla-rodzin",
+     "value": {
+      "available": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Brodzik dla najmłodszych w strefie basenowej (strona basenu); strona udogodnień wymienia płytki basen z ciepłą wodą. Głębokości i temperatury strona nie podaje.",
+     "short": "Brodzik i płytki basen z ciepłą wodą",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hoteldivaspa.pl/spa-wellness/basen-spa",
+     "value": {
+      "available": true,
+      "indoor": true,
+      "warm": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Hotel ok. 250 m od morza, w parku.",
+     "short": "Ok. 250 m do morza",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hoteldivaspa.pl/",
+     "value": {
+      "distance_m": 250
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.1841125,
+   "lon": 15.5857048,
+   "name": "Hotel Diva SPA",
+   "official_url": "https://hoteldivaspa.pl/",
+   "place": "kolobrzeg",
+   "slug": "diva-spa-kolobrzeg",
    "status": "draft"
   },
   {
