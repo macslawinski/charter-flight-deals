@@ -72,6 +72,10 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
 - [x] C: hotel leads pomorskie (2026-11-07, `find-hotels`): 31 leads, 2 do sprawdzenia (Gwiazda Morza, Stella:
       JS sites), 7 skipped. Not covered yet: Belmar Park, Maloves, Lech Resort, Aubrecht Country (no own site found
       or unreadable), 57 OSM sites the probe couldn't read; guest houses/ośrodki left out (Sargus, Magra, Adler).
+- [x] C: pomorskie hotels, batch 1 (2026-11-07): Hotel 77 (Chałupy, 9 facts), Astor (Jastrzębia Góra, 10),
+      Wodnik (Łeba, 9), Royal Baltic (Ustka, 14). Trains: Chałupy, Władysławowo (for Jastrzębia Góra, 7 km), Ustka;
+      none for Łeba (rozklad-pkp.pl shows no trains to Łeba on the test day; Lębork is ~28 km).
+- [ ] C: curate the remaining 29 pomorskie leads with `curate-hotel`.
 - [ ] U: decide which zachodniopomorskie hotels to publish (all are `draft`); those under 8 facts need a phone or
       e-mail round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Zalewski and Sandra cot, high chair, free-stay age; Baltic Plaza free stay

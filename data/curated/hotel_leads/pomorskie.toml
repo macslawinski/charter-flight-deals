@@ -16,7 +16,7 @@ lat = 54.7573703
 lon = 18.5162856
 signals = ["łóżeczko", "wanienka", "podgrzewacz", "przewijak", "elektroniczna niania", "krzesełko"]
 why = "Strona dla dzieci: łóżeczko 20 zł/doba, wanienka, podgrzewacz, przewijak, elektroniczna niania, krzesełko w restauracji."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Stella Resort & SPA"
@@ -117,7 +117,7 @@ lat = 54.8325653
 lon = 18.3176048
 signals = ["brodzik", "sala zabaw", "zajęcia 0-3", "łóżeczko"]
 why = "Brodzik, sala zabaw Fun&Jungle, zajęcia dla maluchów od 6 mies. do 3 lat z rodzicami."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel La Siesta"
@@ -249,7 +249,7 @@ lat = 54.7650436
 lon = 17.565113
 signals = ["łóżeczko", "podgrzewacz", "przewijak", "wanienka", "maty do brodzika"]
 why = "Strona „przyjaźni rodzinie”: łóżeczka, podgrzewacze, przewijaki, wanienki, maty do brodzika, krzesełko do łazienki."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "River Style Hotel & SPA"
@@ -378,7 +378,7 @@ lat = 54.5873113
 lon = 16.8833139
 signals = ["łóżeczko", "podgrzewacz", "wanienka", "krzesełko", "brodzik"]
 why = "Strona dla dzieci: kompletne łóżeczko, podgrzewacz, wanienka, krzesełko do karmienia, brodzik, sala zabaw."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Gwiazda Morza Resort SPA & Sport"
