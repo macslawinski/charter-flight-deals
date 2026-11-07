@@ -196,3 +196,17 @@ name = "Rewa"
 country = "Polska"
 region = "Bałtyk – Pomorze"
 kind = "domestic"
+
+[[place]]
+slug = "gdansk"
+name = "Gdańsk"
+country = "Polska"
+region = "Bałtyk – Pomorze"
+kind = "domestic"
+
+[[place]]
+slug = "gniew"
+name = "Gniew"
+country = "Polska"
+region = "Kociewie"
+kind = "domestic"

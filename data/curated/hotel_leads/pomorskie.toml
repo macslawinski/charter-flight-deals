@@ -69,7 +69,7 @@ official_url = "https://www.granohotels.pl/grano-life-gdansk"
 kids_url = "https://www.granohotels.pl/grano-life-gdansk/dzieci"
 signals = ["sala zabaw", "krzesełko", "wanienka", "nocnik", "przewijak", "podgrzewacz"]
 why = "Strona dla dzieci tej lokalizacji: sala zabaw, krzesełka, wanienki, nocniki, przewijaki, podgrzewacze do butelek."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Platan"
@@ -81,7 +81,7 @@ lat = 54.3095682
 lon = 18.5987069
 signals = ["wanienka", "podgrzewacz", "krzesełko", "kącik zabaw"]
 why = "Strona dla dzieci: wanienka, nakładka na toaletę, podgrzewacz, krzesełka, kącik zabaw dla maluchów w restauracji."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Zamek Gniew"
@@ -93,7 +93,7 @@ lat = 53.8335415
 lon = 18.8294015
 signals = ["sala zabaw dla najmłodszych", "kącik zabaw", "plac zabaw"]
 why = "Sala zabaw „Pysiolandia” i osobna sala dla najmłodszych, kącik i plac zabaw (dwa budynki hotelu)."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Jastarnia"
@@ -129,7 +129,7 @@ lat = 54.8330729
 lon = 18.3059989
 signals = ["sala zabaw dla maluchów", "łóżeczko", "wanienka", "podgrzewacz", "przewijak"]
 why = "Sala zabaw dostosowana do maluchów (zjeżdżalnia-latarnia); łóżeczko, wanienka, podgrzewacz, przewijak na stronach hotelu."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Primavera Conference & Spa"
@@ -201,7 +201,8 @@ lat = 54.3868441
 lon = 19.4453882
 signals = ["sala zabaw", "łóżeczko", "wanienka", "podgrzewacz", "nocnik"]
 why = "Strona dla dzieci: sala zabaw; łóżeczko, wanienka, podgrzewacz, nocnik."
-status = "lead"
+status = "skipped"
+skip_reason = "Re-checked 2026-11-07: the kids page now shows only a playroom and a garden playground; no baby items (cot, bath, warmer) on any page, free children only in the ferie 2027 offer."
 
 [[lead]]
 name = "Łeba Hotel & Spa"
@@ -237,7 +238,8 @@ lat = 54.7642357
 lon = 17.5646285
 signals = ["brodzik", "łóżeczko"]
 why = "Kryty basen z brodzikiem dla dzieci; strona wspomina łóżeczko turystyczne. Mało szczegółów dla 0-3."
-status = "lead"
+status = "skipped"
+skip_reason = "Re-checked 2026-11-07: the site (robots.txt included) answers 403 to automated requests, so robots.txt could not be checked; few 0-3 details anyway."
 
 [[lead]]
 name = "Hotel Wodnik"
