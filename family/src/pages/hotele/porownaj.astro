@@ -1,5 +1,5 @@
 ---
-// Side-by-side comparison of 2-4 hotels picked on /hotele/ (?h=slug,slug). The page is static: a
+// Side-by-side comparison of 2-4 hotels picked in the finder on / (?h=slug,slug). The page is static: a
 // compact JSON of all visible hotels is embedded and the table is built in the browser.
 import Base from "../../layouts/Base.astro";
 import Icon from "../../components/Icon.astro";
@@ -38,7 +38,7 @@ const payload = {
 ---
 
 <Base title="Porównanie hoteli" section="hotele" description="Wybrane hotele obok siebie: co podają dla dziecka do 3 lat i ile jedzie się z Twojego miasta.">
-  <p class="crumb"><a href="/hotele/">Wszystkie hotele</a></p>
+  <p class="crumb"><a href="/">Wszystkie hotele</a></p>
   <section class="page-hero">
     <div>
       <h1>Porównanie hoteli</h1>
@@ -49,7 +49,7 @@ const payload = {
   <p class="draft" data-none>
     <Icon name="info" />
     <span>
-      Wybierz od 2 do 4 hoteli na <a href="/hotele/">liście hoteli</a> (przycisk „Porównaj” na karcie),
+      Wybierz od 2 do 4 hoteli na <a href="/">liście hoteli</a> (przycisk „Porównaj” na karcie),
       a potem wróć tutaj.
     </span>
   </p>

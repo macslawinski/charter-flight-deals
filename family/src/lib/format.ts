@@ -16,7 +16,7 @@ export const CITY_FROM: Record<string, string> = {
 
 export const MODE_LABEL: Record<string, string> = { car: "Autem", train: "Pociągiem" };
 
-// Comparison selection, shared by /hotele/ and /hotele/porownaj/ (per tab, survives back/forward).
+// Comparison selection, shared by the finder on / and /hotele/porownaj/ (per tab, survives back/forward).
 export const COMPARE_MAX = 4;
 const KEY = "porownaj";
 export function loadCompare(): string[] {

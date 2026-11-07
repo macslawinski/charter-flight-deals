@@ -1,6 +1,10 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "astro",
+  "redirects": [
+    { "source": "/hotele", "destination": "/", "permanent": true },
+    { "source": "/hotele/", "destination": "/", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)",

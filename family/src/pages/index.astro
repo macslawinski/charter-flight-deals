@@ -1,6 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
-import Checker from "../components/Checker.astro";
+import HotelFinder from "../components/HotelFinder.astro";
 import Icon from "../components/Icon.astro";
 import Illustration from "../components/Illustration.astro";
 import { carriers, data, hotels } from "../lib/data";
@@ -8,34 +8,27 @@ import { carriers, data, hotels } from "../lib/data";
 const venues = data.venues.length;
 ---
 
-<Base title="Pieluchy i paszporty" description="Podróże z dzieckiem do 3 lat: zasady linii lotniczych, hotele i bawialnie, sprawdzone u źródła.">
-  <section class="hero">
+<Base title="Pieluchy i paszporty" section="hotele" description="Hotele dla rodzin z dzieckiem do 3 lat: łóżeczko, brodzik, bawialnia i dojazd z Twojego miasta, sprawdzone u źródła.">
+  <section class="page-hero">
     <div>
-      <h1>Wakacje z maluchem bez zgadywania</h1>
+      <h1>Hotele dla rodzin z maluchem</h1>
       <p class="lead">
-        Wózek, fotelik, opłata za niemowlę, łóżeczko w hotelu. Krótkie odpowiedzi, każda ze
-        źródłem.
+        {hotels.length} hoteli. Łóżeczko, brodzik, bawialnia, dojazd z Twojego miasta. Tylko to, co
+        hotel sam podaje, i lista pytań, które warto mu zadać.
       </p>
     </div>
-    <Illustration name="hero" />
+    <Illustration name="beach" />
   </section>
 
-  <Checker />
+  <HotelFinder />
 
-  <h2>Co jeszcze sprawdziliśmy</h2>
+  <h2 class="section">Co jeszcze sprawdziliśmy</h2>
   <div class="doors">
     <a class="door sea" href="/linie/">
       <Illustration name="plane" />
       <div>
         <h3>Linie lotnicze</h3>
-        <p>{carriers.length} przewoźników obok siebie: wózek, bagaż, fotelik.</p>
-      </div>
-    </a>
-    <a class="door sun" href="/hotele/">
-      <Illustration name="beach" />
-      <div>
-        <h3>Hotele</h3>
-        <p>{hotels.length} hoteli: filtruj po dojeździe z Twojego miasta i tym, co mają dla malucha.</p>
+        <p>{carriers.length} przewoźników obok siebie: opłata za niemowlę, wózek, bagaż, fotelik.</p>
       </div>
     </a>
     <a class="door coral" href="/poznan/bawialnie/">
