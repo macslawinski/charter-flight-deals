@@ -692,6 +692,266 @@ details.more-info p {
   margin: 0.8rem 0 0;
 }
 
+/* --- hotel finder and comparison ------------------------------------------------------------- */
+[hidden] {
+  display: none !important;
+}
+.finder {
+  background: var(--white);
+  border-radius: var(--r-panel);
+  padding: clamp(1rem, 3vw, 1.75rem);
+  margin-block: 0.5rem 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+.finder fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+.finder legend {
+  font-weight: 700;
+  margin-bottom: 0.45rem;
+}
+.finder .chip span {
+  padding: 0.35rem 0.85rem;
+  font-size: 0.95rem;
+}
+.finder .chip input:disabled + span {
+  opacity: 0.45;
+  cursor: default;
+}
+.finder-trip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+}
+.finder-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.5rem;
+  border-top: 2px solid var(--line);
+  padding-top: 1rem;
+}
+.finder-count {
+  margin: 0;
+  font-weight: 700;
+  margin-right: auto;
+}
+.finder-sort {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+.finder-sort select {
+  font: inherit;
+  color: var(--navy);
+  background: var(--sky);
+  border: 2px solid var(--navy);
+  border-radius: 12px;
+  padding: 0.3rem 0.5rem;
+}
+.link-button {
+  font: inherit;
+  font-weight: 700;
+  color: var(--sea);
+  background: none;
+  border: 0;
+  padding: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.hotel-list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(19rem, 100%), 1fr));
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.hotel-card {
+  display: grid;
+  align-content: start;
+  gap: 0.6rem;
+  background: var(--white);
+  border-radius: var(--r-tile);
+  padding: 1.1rem 1.2rem;
+}
+.hotel-card h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+.hotel-card h3 a {
+  color: inherit;
+}
+.hotel-card .note-small {
+  margin: 0;
+}
+.hotel-trip,
+.hotel-free {
+  display: flex;
+  gap: 0.45rem;
+  align-items: flex-start;
+  margin: 0;
+  font-weight: 700;
+}
+.hotel-trip .icon,
+.hotel-free .icon {
+  flex: none;
+  margin-top: 0.15rem;
+  color: var(--sea);
+}
+.hotel-trip.muted {
+  font-weight: 400;
+  color: var(--muted);
+}
+.hotel-free {
+  font-weight: 400;
+}
+.hotel-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.hotel-foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  border-top: 1px solid var(--line);
+  padding-top: 0.6rem;
+  margin-top: auto;
+}
+.compare-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+.compare-toggle input {
+  width: 1.15rem;
+  height: 1.15rem;
+  accent-color: var(--navy);
+}
+.compare-toggle:has(input:disabled) {
+  opacity: 0.45;
+  cursor: default;
+}
+.finder-empty {
+  background: var(--white);
+  border-radius: var(--r-tile);
+  padding: 1rem 1.2rem;
+}
+.compare-bar {
+  position: fixed;
+  inset: auto 0 0 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  background: var(--navy);
+  color: var(--white);
+  padding: 0.75rem max(1rem, calc((100vw - var(--wide)) / 2));
+}
+.compare-bar p {
+  margin: 0;
+}
+.compare-bar .note-small,
+.compare-bar .link-button {
+  color: var(--sky-deep);
+}
+.compare-bar > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.button {
+  display: inline-block;
+  background: var(--sun);
+  color: var(--navy);
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.5rem 1.2rem;
+  text-decoration: none;
+}
+.button[aria-disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+body.has-compare-bar {
+  padding-bottom: 5rem;
+}
+.compare-from {
+  margin-bottom: 1rem;
+}
+.compare-wrap {
+  overflow-x: auto;
+  background: var(--white);
+  border-radius: var(--r-panel);
+  padding: 0.5rem 1rem 1rem;
+}
+.compare-wrap + .note-small {
+  margin-top: 1rem;
+}
+.compare-table {
+  border-collapse: collapse;
+  min-width: 100%;
+}
+.compare-table th,
+.compare-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.6rem 0.75rem;
+  min-width: 11rem;
+}
+.compare-table tbody tr + tr > * {
+  border-top: 1px solid var(--line);
+}
+.compare-table thead th {
+  font-size: 1.05rem;
+}
+.compare-table thead th a {
+  color: inherit;
+  display: block;
+}
+.compare-where {
+  display: block;
+  font-weight: 400;
+}
+.compare-table thead .link-button {
+  font-size: 0.85rem;
+}
+.compare-table tbody th[scope="row"] {
+  position: sticky;
+  left: 0;
+  background: var(--white);
+  font-size: 0.95rem;
+  min-width: 9rem;
+}
+.compare-table .compare-group {
+  padding-top: 1.4rem;
+  font: 700 1.1rem/1.2 var(--display);
+  border-top: 0 !important;
+}
+.compare-table td.none {
+  color: var(--muted);
+  font-style: italic;
+}
+.compare-table td.strong {
+  font-weight: 700;
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     scroll-behavior: auto !important;

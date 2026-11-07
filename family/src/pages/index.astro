@@ -3,9 +3,8 @@ import Base from "../layouts/Base.astro";
 import Checker from "../components/Checker.astro";
 import Icon from "../components/Icon.astro";
 import Illustration from "../components/Illustration.astro";
-import { carriers, data } from "../lib/data";
+import { carriers, data, hotels } from "../lib/data";
 
-const hotel = data.hotels[0];
 const venues = data.venues.length;
 ---
 
@@ -36,7 +35,7 @@ const venues = data.venues.length;
       <Illustration name="beach" />
       <div>
         <h3>Hotele</h3>
-        <p>{hotel ? `${hotel.name}: łóżeczko, brodzik, bawialnia.` : "Wkrótce."}</p>
+        <p>{hotels.length} hoteli: filtruj po dojeździe z Twojego miasta i tym, co mają dla malucha.</p>
       </div>
     </a>
     <a class="door coral" href="/poznan/bawialnie/">

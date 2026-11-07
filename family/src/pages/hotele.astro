@@ -1,41 +1,365 @@
 ---
+// Hotel finder: every hotel is rendered at build time (sorted by how much it describes), the
+// filters are a small script on top. Without JavaScript the full list still works.
 import Base from "../layouts/Base.astro";
+import Icon from "../components/Icon.astro";
 import Illustration from "../components/Illustration.astro";
-import { FEATURE_GROUPS, data } from "../lib/data";
+import {
+  FEATURE_GROUPS,
+  HOTEL_FILTERS,
+  ORIGIN_CITIES,
+  hotels as visible,
+  placeOf,
+  placeRegion,
+  short,
+  type Hotel,
+} from "../lib/data";
+import { duration } from "../lib/format";
 
 const total = FEATURE_GROUPS.flatMap((g) => g.keys).length;
-const places = data.places
-  .map((p) => ({ ...p, hotels: data.hotels.filter((h) => h.place === p.slug) }))
-  .filter((p) => p.hotels.length > 0);
+const described = (h: Hotel) => new Set(h.features.map((f) => f.key)).size;
+const hotels = [...visible]
+  .sort((a, b) => described(b) - described(a) || a.name.localeCompare(b.name, "pl"))
+  .map((h) => {
+    const place = placeOf(h);
+    const access: Record<string, Record<string, number>> = {};
+    for (const a of h.access.filter((a) => a.from_kind === "city")) {
+      (access[a.mode] ??= {})[a.from_code] = a.minutes;
+    }
+    const airport = h.access.find((a) => a.from_kind === "airport" && a.mode === "car");
+    return {
+      h,
+      place,
+      region: placeRegion(place),
+      access,
+      trip: airport ? `Lot do ${airport.from_code}, potem ${duration(airport.minutes)} autem` : null,
+      free: h.features.find((f) => f.key === "child_free_stay" && f.value.free === true),
+      tags: HOTEL_FILTERS.filter((f) => f.id !== "darmowy" && f.test(h)),
+      matches: HOTEL_FILTERS.filter((f) => f.test(h)).map((f) => f.id),
+      n: described(h),
+    };
+  });
+const regions = [...new Set(hotels.map((x) => x.region))].map((r) => ({
+  r,
+  n: hotels.filter((x) => x.region === r).length,
+}));
+const count = (id: string) => hotels.filter((x) => x.matches.includes(id)).length;
+const LIMITS = [3, 4, 5, 6];
 ---
 
-<Base title="Hotele dla rodzin z maluchem" section="hotele" description="Hotele sprawdzone pod kątem dzieci do 3 lat.">
+<Base title="Hotele dla rodzin z maluchem" section="hotele" description="Hotele sprawdzone pod kątem dzieci do 3 lat: filtruj po dojeździe i tym, co hotel ma dla malucha.">
   <section class="page-hero">
     <div>
       <h1>Hotele dla rodzin z maluchem</h1>
-      <p class="lead">Tylko to, co hotel sam podaje, i lista pytań, które warto mu zadać.</p>
+      <p class="lead">
+        {hotels.length} hoteli. Tylko to, co hotel sam podaje, i lista pytań, które warto mu zadać.
+      </p>
     </div>
     <Illustration name="beach" />
   </section>
-  {
-    places.map((p) => (
-      <section class="section" aria-labelledby={p.slug}>
-        <h2 id={p.slug}>{p.name}</h2>
-        {p.region && <p class="note-small">{p.region}</p>}
-        <div class="doors">
-          {p.hotels.map((h) => (
-            <a class="door sun" href={`/${p.slug}/${h.slug}/`}>
-              <Illustration name="beach" />
-              <div>
-                <h3>{h.name}</h3>
-                <p>
-                  {new Set(h.features.map((f) => f.key)).size} z {total} rzeczy dla malucha opisane
-                </p>
-              </div>
-            </a>
+
+  <form class="finder" id="finder" hidden onsubmit="return false">
+    <fieldset>
+      <legend>Skąd jedziesz?</legend>
+      <div class="chips">
+        <label class="chip"><input type="radio" name="z" value="" checked /><span>Bez znaczenia</span></label>
+        {ORIGIN_CITIES.map((c) => (
+          <label class="chip"><input type="radio" name="z" value={c} /><span>{c}</span></label>
+        ))}
+      </div>
+    </fieldset>
+    <div class="finder-trip" data-needs-city hidden>
+      <fieldset>
+        <legend>Czym?</legend>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="m" value="car" checked /><span>Autem</span></label>
+          <label class="chip"><input type="radio" name="m" value="train" /><span>Pociągiem</span></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Najwyżej w drodze</legend>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="t" value="" checked /><span>Bez limitu</span></label>
+          {LIMITS.map((h) => (
+            <label class="chip"><input type="radio" name="t" value={String(h * 60)} /><span>do {h} h</span></label>
           ))}
         </div>
-      </section>
-    ))
-  }
+      </fieldset>
+    </div>
+    <fieldset>
+      <legend>Gdzie?</legend>
+      <div class="chips">
+        {regions.map(({ r, n }) => (
+          <label class="chip"><input type="checkbox" name="r" value={r} /><span>{r} ({n})</span></label>
+        ))}
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Hotel podaje na swojej stronie</legend>
+      <div class="chips">
+        {HOTEL_FILTERS.map((f) => (
+          <label class="chip"><input type="checkbox" name="f" value={f.id} /><span>{f.label} ({count(f.id)})</span></label>
+        ))}
+      </div>
+    </fieldset>
+    <div class="finder-bar">
+      <p class="finder-count" aria-live="polite" data-count></p>
+      <label class="finder-sort">
+        Kolejność
+        <select name="s">
+          <option value="opis">Najlepiej opisane</option>
+          <option value="czas" data-needs-city disabled>Najkrótszy dojazd</option>
+          <option value="nazwa">Nazwa A–Z</option>
+        </select>
+      </label>
+      <button type="button" class="link-button" data-reset>Wyczyść filtry</button>
+    </div>
+  </form>
+
+  <ul class="hotel-list" id="hotele">
+    {
+      hotels.map((x) => (
+        <li
+          class="hotel-card"
+          data-slug={x.h.slug}
+          data-name={x.h.name}
+          data-region={x.region}
+          data-f={x.matches.join(" ")}
+          data-n={x.n}
+          data-access={JSON.stringify(x.access)}
+        >
+          <div>
+            <h3>
+              <a href={`/${x.place.slug}/${x.h.slug}/`}>{x.h.name}</a>
+            </h3>
+            <p class="note-small">
+              {x.place.name}, {x.region}
+            </p>
+          </div>
+          <p class="hotel-trip" data-trip data-default={x.trip ?? ""} hidden={!x.trip}>
+            <Icon name={x.trip ? "plane" : "car"} size={18} />
+            <span>{x.trip}</span>
+          </p>
+          {x.free && (
+            <p class="hotel-free">
+              <Icon name="bed" size={18} />
+              <span>
+                {short(x.free)}
+                {x.free.to_confirm && <> <span class="badge-ask">do potwierdzenia</span></>}
+              </span>
+            </p>
+          )}
+          {x.tags.length > 0 && (
+            <ul class="hotel-tags" aria-label="Hotel podaje">
+              {x.tags.map((t) => (
+                <li class="tag-small">
+                  <Icon name={t.icon} size={16} />
+                  {t.label}
+                </li>
+              ))}
+            </ul>
+          )}
+          <div class="hotel-foot">
+            <span class="note-small">
+              {x.n} z {total} rzeczy dla malucha opisane
+            </span>
+            <label class="compare-toggle" hidden>
+              <input type="checkbox" data-compare value={x.h.slug} />
+              <span>Porównaj</span>
+            </label>
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+  <p class="finder-empty" data-empty hidden>
+    Żaden hotel nie spełnia wszystkich warunków. Odznacz któryś filtr albo
+    <button type="button" class="link-button" data-reset>wyczyść wszystkie</button>.
+  </p>
+
+  <div class="compare-bar" data-compare-bar hidden>
+    <p>
+      <strong data-compare-count></strong>
+      <span class="note-small" data-compare-hint></span>
+    </p>
+    <div>
+      <button type="button" class="link-button" data-compare-clear>Wyczyść</button>
+      <a class="button" href="/hotele/porownaj/" data-compare-go>Porównaj</a>
+    </div>
+  </div>
+
+  <p class="note-small" style="margin-top:2rem">
+    Filtry działają tylko na tym, co hotel napisał na swojej stronie. Jeśli hotel czegoś nie podaje,
+    nie znaczy to, że tego nie ma: zapytaj przed rezerwacją. Czasy dojazdu z miast są orientacyjne
+    (autem bez korków, pociągiem do najbliższej stacji). Wszystkie opisy są jeszcze w przygotowaniu.
+  </p>
 </Base>
+
+<script>
+  import { CITY_FROM, COMPARE_MAX, MODE_LABEL, duration, loadCompare, saveCompare } from "../lib/format";
+
+  const form = document.querySelector<HTMLFormElement>("#finder")!;
+  const list = document.querySelector<HTMLUListElement>("#hotele")!;
+  const cards = [...list.querySelectorAll<HTMLLIElement>(".hotel-card")];
+  const initialOrder = [...cards];
+  const info = new Map(
+    cards.map((c) => [
+      c,
+      {
+        access: JSON.parse(c.dataset.access ?? "{}") as Record<string, Record<string, number>>,
+        feats: new Set((c.dataset.f ?? "").split(" ").filter(Boolean)),
+      },
+    ]),
+  );
+  const PARAMS = ["z", "m", "t", "r", "f", "s"] as const;
+
+  // URL -> form (unknown values are ignored, so an old link can't break the page).
+  const url = new URLSearchParams(location.search);
+  for (const name of PARAMS) {
+    const wanted = url.getAll(name).flatMap((v) => v.split(","));
+    if (wanted.length === 0) continue;
+    for (const el of form.querySelectorAll<HTMLInputElement>(`input[name="${name}"]`)) {
+      el.checked = wanted.includes(el.value);
+    }
+    const sel = form.querySelector<HTMLSelectElement>(`select[name="${name}"]`);
+    if (sel && [...sel.options].some((o) => o.value === wanted[0])) sel.value = wanted[0];
+  }
+  for (const name of ["z", "m", "t"]) {
+    // A radio group needs one checked option; fall back to the first if the URL had junk.
+    const group = [...form.querySelectorAll<HTMLInputElement>(`input[name="${name}"]`)];
+    if (!group.some((el) => el.checked)) group[0].checked = true;
+  }
+
+  const minutesOf = (c: HTMLLIElement, mode: string, city: string) => info.get(c)!.access[mode]?.[city];
+
+  function apply(updateUrl: boolean) {
+    const fd = new FormData(form);
+    const city = String(fd.get("z") ?? "");
+    const mode = String(fd.get("m") ?? "car");
+    const max = Number(fd.get("t") || 0);
+    const regions = fd.getAll("r").map(String);
+    const feats = fd.getAll("f").map(String);
+    const sortSel = form.querySelector<HTMLSelectElement>('select[name="s"]')!;
+
+    for (const el of form.querySelectorAll<HTMLElement>("[data-needs-city]")) {
+      if (el instanceof HTMLOptionElement) el.disabled = !city;
+      else el.hidden = !city;
+    }
+    if (!city && sortSel.value === "czas") sortSel.value = "opis";
+    const sort = sortSel.value;
+
+    let shown = 0;
+    for (const c of cards) {
+      const { feats: has } = info.get(c)!;
+      const min = city ? minutesOf(c, mode, city) : undefined;
+      const ok =
+        (regions.length === 0 || regions.includes(c.dataset.region ?? "")) &&
+        feats.every((f) => has.has(f)) &&
+        (!max || (min !== undefined && min <= max));
+      c.hidden = !ok;
+      if (ok) shown++;
+
+      const trip = c.querySelector<HTMLElement>("[data-trip]")!;
+      const text = trip.querySelector("span")!;
+      const def = trip.dataset.default ?? "";
+      if (city && min !== undefined) {
+        text.textContent = `${MODE_LABEL[mode]} z ${CITY_FROM[city]}: ${duration(min)}`;
+        trip.classList.remove("muted");
+      } else if (city && !def) {
+        text.textContent = `${MODE_LABEL[mode]} z ${CITY_FROM[city]}: nie sprawdziliśmy`;
+        trip.classList.add("muted");
+      } else {
+        text.textContent = def;
+        trip.classList.remove("muted");
+      }
+      trip.hidden = !text.textContent;
+    }
+
+    const ordered = [...initialOrder];
+    if (sort === "nazwa") ordered.sort((a, b) => (a.dataset.name ?? "").localeCompare(b.dataset.name ?? "", "pl"));
+    if (sort === "czas") {
+      const t = (c: HTMLLIElement) => minutesOf(c, mode, city) ?? Infinity;
+      ordered.sort((a, b) => t(a) - t(b));
+    }
+    list.append(...ordered);
+
+    form.querySelector("[data-count]")!.textContent =
+      shown === cards.length ? `Wszystkie hotele: ${cards.length}` : `Pasuje ${shown} z ${cards.length} hoteli`;
+    document.querySelector<HTMLElement>("[data-empty]")!.hidden = shown > 0;
+
+    if (updateUrl) {
+      const q = new URLSearchParams();
+      if (city) {
+        q.set("z", city);
+        if (mode !== "car") q.set("m", mode);
+        if (max) q.set("t", String(max));
+      }
+      if (regions.length) q.set("r", regions.join(","));
+      if (feats.length) q.set("f", feats.join(","));
+      if (sort !== "opis") q.set("s", sort);
+      const qs = q.toString();
+      history.replaceState(null, "", qs ? `?${qs}` : location.pathname);
+    }
+  }
+
+  let lastCity = new FormData(form).get("z");
+  form.addEventListener("change", () => {
+    // Picking a city is a strong hint the trip length matters: sort by it once.
+    const city = new FormData(form).get("z");
+    const sortSel = form.querySelector<HTMLSelectElement>('select[name="s"]')!;
+    if (city && !lastCity && sortSel.value === "opis") sortSel.value = "czas";
+    lastCity = city;
+    apply(true);
+  });
+  for (const b of document.querySelectorAll("[data-reset]")) {
+    b.addEventListener("click", () => {
+      form.reset();
+      lastCity = "";
+      apply(true);
+    });
+  }
+  form.hidden = false;
+  apply(false);
+
+  // --- comparison ---
+  const bar = document.querySelector<HTMLElement>("[data-compare-bar]")!;
+  const boxes = cards.map((c) => c.querySelector<HTMLInputElement>("[data-compare]")!);
+  const known = new Set(boxes.map((b) => b.value));
+  let picked = loadCompare().filter((s) => known.has(s));
+
+  function renderCompare() {
+    for (const b of boxes) {
+      b.checked = picked.includes(b.value);
+      b.disabled = !b.checked && picked.length >= COMPARE_MAX;
+      b.closest("label")!.hidden = false;
+    }
+    bar.hidden = picked.length === 0;
+    bar.querySelector("[data-compare-count]")!.textContent = `Wybrane: ${picked.length} z ${COMPARE_MAX}`;
+    bar.querySelector("[data-compare-hint]")!.textContent =
+      picked.length < 2 ? " Zaznacz jeszcze co najmniej jeden hotel." : "";
+    const go = bar.querySelector<HTMLAnchorElement>("[data-compare-go]")!;
+    go.href = `/hotele/porownaj/?h=${picked.map(encodeURIComponent).join(",")}`;
+    go.toggleAttribute("aria-disabled", picked.length < 2);
+    document.body.classList.toggle("has-compare-bar", picked.length > 0);
+    saveCompare(picked);
+  }
+  for (const b of boxes) {
+    b.addEventListener("change", () => {
+      picked = b.checked ? [...picked, b.value].slice(0, COMPARE_MAX) : picked.filter((s) => s !== b.value);
+      renderCompare();
+    });
+  }
+  bar.querySelector("[data-compare-clear]")!.addEventListener("click", () => {
+    picked = [];
+    renderCompare();
+  });
+  bar.querySelector("[data-compare-go]")!.addEventListener("click", (e) => {
+    if (picked.length < 2) e.preventDefault();
+  });
+  // Back/forward cache restores the old page: re-read the selection made on the compare page.
+  addEventListener("pageshow", () => {
+    picked = loadCompare().filter((s) => known.has(s));
+    renderCompare();
+  });
+  renderCompare();
+</script>

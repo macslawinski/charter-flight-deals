@@ -2,6 +2,7 @@
 // icons. Every lookup that misses throws: a new key without a label must fail the build, not render
 // a raw key to parents.
 import raw from "../data/family.json";
+import { CITY_FROM, MODE_LABEL } from "./format";
 
 export type Value = Record<string, unknown>;
 
@@ -232,6 +233,44 @@ export const FEATURE_GROUPS: { title: string; keys: string[] }[] = [
   { title: "Okolica", keys: ["beach_walk_minutes", "parking", "transfer"] },
 ];
 
+// --- hotel finder -----------------------------------------------------------------------------
+
+// Region chip for a place: domestic places have a region, flight places only a country.
+export const placeRegion = (p: Place) => p.region ?? p.country;
+export const placeOf = (h: Hotel) => must(Object.fromEntries(data.places.map((p) => [p.slug, p])), h.place, "place");
+
+// Hotels the site shows. Foreign (flight) places are hidden for now (user, 2026-11-07): their data
+// stays in family.json, the pages are just not built. Flip to true to bring them back.
+const SHOW_FOREIGN_HOTELS = false;
+export const hotels = data.hotels.filter((h) => SHOW_FOREIGN_HOTELS || placeOf(h).kind === "domestic");
+
+// A hotel "has" something only when its own fact says so; an explicit "no" never counts.
+const has = (h: Hotel, key: string, ok: (v: Value) => boolean = (v) => v.available !== false) =>
+  h.features.some((f) => f.key === key && ok(f.value));
+const num = (v: unknown) => (typeof v === "number" ? v : Infinity);
+const nearBeach = (v: Value) =>
+  v.on_beach === true || v.own_beach === true || num(v.distance_m) <= 300 ||
+  (v.distance_m === undefined && num(v.minutes) <= 5);
+
+// "Must have" filters. Ids go into the URL, so keep them stable.
+export const HOTEL_FILTERS: { id: string; label: string; icon: string; test: (h: Hotel) => boolean }[] = [
+  { id: "darmowy", label: "Maluch za darmo", icon: "bed", test: (h) => has(h, "child_free_stay", (v) => v.free === true) },
+  { id: "lozeczko", label: "Łóżeczko", icon: "cot", test: (h) => has(h, "cot") },
+  { id: "wanienka", label: "Wanienka", icon: "bath", test: (h) => has(h, "baby_bath") },
+  { id: "krzeselko", label: "Krzesełko", icon: "chair", test: (h) => has(h, "high_chair") },
+  { id: "bawialnia", label: "Bawialnia", icon: "blocks", test: (h) => has(h, "playroom") },
+  { id: "plac", label: "Plac zabaw", icon: "slide", test: (h) => has(h, "playground") },
+  { id: "brodzik", label: "Brodzik lub basen dla dzieci", icon: "wave", test: (h) => has(h, "paddling_pool") || has(h, "kids_pool") },
+  { id: "winda", label: "Winda lub bez schodów", icon: "lift", test: (h) => has(h, "lift") || has(h, "step_free_access") },
+  { id: "plaza", label: "Plaża do 300 m", icon: "umbrella", test: (h) => has(h, "beach_walk_minutes", nearBeach) },
+  { id: "parking", label: "Parking", icon: "parking", test: (h) => has(h, "parking") },
+];
+
+// Origin cities of the access times (car/train), sorted for the chips.
+export const ORIGIN_CITIES = [
+  ...new Set(hotels.flatMap((h) => h.access.filter((a) => a.from_kind === "city").map((a) => a.from_code))),
+].sort((a, b) => a.localeCompare(b, "pl"));
+
 // --- indoor playgrounds -----------------------------------------------------------------------
 
 const VENUE_FEATURES: Record<string, { label: string; icon: string }> = {
@@ -275,6 +314,10 @@ export const cityName = (slug: string) => must(data.venue_cities, slug, "city");
     throw new Error("TOPICS out of sync with rule_keys");
   }
   if (!same(VENUE_ORDER, data.venue_keys)) throw new Error("VENUE_ORDER out of sync with venue_keys");
+  for (const c of ORIGIN_CITIES) must(CITY_FROM, c, "genitive of origin city (lib/format.ts)");
+  for (const h of data.hotels) {
+    for (const a of h.access) if (a.from_kind === "city") must(MODE_LABEL, a.mode, "access mode label");
+  }
 }
 
 const dateFmt = new Intl.DateTimeFormat("pl-PL", {
