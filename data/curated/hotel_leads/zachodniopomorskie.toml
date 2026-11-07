@@ -89,7 +89,7 @@ lat = 54.1697902
 lon = 15.5284669
 signals = ["łóżeczko", "wanienka", "podgrzewacz", "krzesełko", "sala zabaw"]
 why = "Tylko w pakiecie 'Rodzinne Ferie': łóżeczko (wg cennika), wanienka, podgrzewacz, krzesełka, sala zabaw; brak stałej strony dla dzieci."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Blue & Green Baltic Hotel"
@@ -101,7 +101,7 @@ lat = 54.1692458
 lon = 15.5274408
 signals = ["łóżeczko", "wanienka", "podgrzewacz", "krzesełko", "sala zabaw"]
 why = "Na życzenie łóżeczko z pościelą (płatne wg cennika), wanienka, podgrzewacz; krzesełka w restauracji; sala zabaw dla maluchów."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Diva Spa"
@@ -211,7 +211,7 @@ lat = 54.1468599
 lon = 15.3004489
 signals = ["brodzik", "sala zabaw"]
 why = "Brodziki dla najmłodszych w aquaparku, sala zabaw; sprzętu dla niemowląt strona dla dzieci nie wymienia."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Amber Park Spa"
@@ -260,7 +260,7 @@ lat = 54.0967472
 lon = 15.0996234
 signals = ["brodzik", "aquapark dla dzieci", "do 3 lat"]
 why = "Brodziki dla dzieci w aquaparku; dziecko do 3 lat śpiące z rodzicami w pakietach; sprzęt dla niemowląt do sprawdzenia przy kuracji."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Imperiall Resort & MediSpa"

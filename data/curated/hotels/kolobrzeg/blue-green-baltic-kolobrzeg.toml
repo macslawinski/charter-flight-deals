@@ -1,0 +1,222 @@
+# Facts from the hotel's own website (blueandgreenhotels.pl/morze; robots.txt allows all, checked 2026-11-07):
+# /morze/dzieci, /morze/spa/basen, /morze (home). Written in our words.
+# Also on the site, no feature key for it: socket, furniture and window guards on request; pool 11 x 3 m,
+# 135 cm deep, 29°C, ozone-treated (no brodzik); day pool tickets free for under-3s; "dzieci GRATIS" only in a
+# winter-holiday offer without stated ages (not recorded). Baltic Plaza next door belongs to the same company.
+# Not stated (so not recorded yet): free-stay rule, cot fee amount (price list not on the site), changing table,
+# potty, toddler food, playroom hours and minimum age, animation ages, lift, parking fee.
+#
+# Coordinates: OpenStreetMap node/10175216689 (ODbL).
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most one
+#   change, to Kołobrzeg station (times reused from Saltic Grzybowo, same station). Station -> hotel: ~4 km,
+#   ~5 min by car or taxi (OSRM).
+slug = "blue-green-baltic-kolobrzeg"
+place = "kolobrzeg"
+name = "Blue & Green Baltic Hotel"
+official_url = "https://www.blueandgreenhotels.pl/morze"
+address = "ul. Wylotowa 45, 78-100 Kołobrzeg"
+lat = 54.1692458  # OpenStreetMap node/10175216689, ODbL
+lon = 15.5274408
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true, paid = true, bedding = true }
+short = "Turystyczne z pościelą, płatne"
+note = "Łóżeczko turystyczne z pościelą na życzenie, płatne według cennika (kwoty strona nie podaje)."
+source = "hotel_website"
+url = "https://www.blueandgreenhotels.pl/morze/dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "high_chair"
+value = { available = true }
+short = "Jest"
+note = "Krzesełka do karmienia."
+source = "hotel_website"
+url = "https://www.blueandgreenhotels.pl/morze/dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Karta dla najmłodszych"
+note = "Menu à la carte przygotowane z myślą o najmłodszych. O jedzeniu dla niemowląt strona nie wspomina."
+source = "hotel_website"
+url = "https://www.blueandgreenhotels.pl/morze/dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true, on_request = true }
+short = "Na życzenie"
+note = "Podgrzewacz do butelek na życzenie. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.blueandgreenhotels.pl/morze/dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, on_request = true }
+short = "Na życzenie"
+note = "Wanienka na życzenie. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.blueandgreenhotels.pl/morze/dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Stoliki do rysowania i zabawki"
+note = "Kolorowa sala zabaw ze stolikami do rysowania i zabawkami. Godzin, minimalnego wieku i zasad opieki strona nie podaje."
+source = "hotel_website"
+url = "https://www.blueandgreenhotels.pl/morze/dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "Zewnętrzny"
+note = "Zewnętrzny plac zabaw."
+source = "hotel_website"
+url = "https://www.blueandgreenhotels.pl/morze/dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, seasonal = true }
+short = "Wakacje i długie weekendy"
+note = "Animacje w wakacje i długie weekendy; plan wcześniej na stronie i Facebooku. Przedziału wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.blueandgreenhotels.pl/morze/dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { minutes = 5, distance_m = 500 }
+short = "Ok. 5 minut pieszo (500 m)"
+note = "Do szerokiej plaży ok. 500 m, ok. 5 minut spacerem."
+source = "hotel_website"
+url = "https://www.blueandgreenhotels.pl/morze"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "parking"
+value = { monitored = true }
+short = "Monitorowany"
+note = "Parking monitorowany. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.blueandgreenhotels.pl/morze"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 170
+note = "250 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.1692%2C15.5274"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 255
+note = "380 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.1692%2C15.5274"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 350
+note = "510 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.1692%2C15.5274"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 390
+note = "590 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.1692%2C15.5274"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 440
+note = "690 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.1692%2C15.5274"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 490
+note = "760 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.1692%2C15.5274"
+verified_at = 2026-11-07
+
+# --- Access: train to Kołobrzeg station (rozklad-pkp.pl, 2026-11-12) ------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "train"
+minutes = 250
+note = "1 przesiadka · bezpośredni 4 h 42 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 252
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 329
+note = "1 przesiadka · bezpośredni 5 h 59 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 400
+note = "1 przesiadka · bezpośredni 7 h 08 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 480
+note = "1 przesiadka · bezpośredni 8 h 52 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 555
+note = "1 przesiadka · bezpośredni 9 h 21 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05

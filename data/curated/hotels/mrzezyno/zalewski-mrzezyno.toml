@@ -1,0 +1,161 @@
+# Facts from the hotel's own website (hotelzalewski.pl; robots.txt allows all, checked 2026-11-07):
+# /hotel/dla-dzieci, /aquapark-zjezdzalnie-sauny-laznie, Regulamin hotelu (PDF). Written in our words.
+# Also on the site, no feature key for it: bowling with bumpers for small children; arcade corner; children under
+# 13 must be under constant adult care (regulamin, s. 3); "pobyt dziecka gratis" only in dated offers (not
+# recorded); the parking regulations are an image only.
+# Not stated (so not recorded yet): cot, free-stay age, baby bath, bottle warmer, changing table, potty, high
+# chair, kids menu, playroom hours and age, animations, brodzik depth and temperature, lift, beach distance,
+# parking fee.
+# Fewer than 8 verified facts: the site says little more for 0-3.
+#
+# Coordinates: the hotel's own Google Maps link.
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most one
+#   change, to Trzebiatów station (times reused from Amber Park Niechorze, same station). Station -> hotel:
+#   ~12 km, ~15 min by car or taxi (OSRM); no hotel transfer stated.
+slug = "zalewski-mrzezyno"
+place = "mrzezyno"
+name = "Hotel Zalewski"
+official_url = "https://www.hotelzalewski.pl/"
+address = "ul. Nadmorska 13, 72-330 Mrzeżyno"
+lat = 54.1468353  # the hotel's own Google Maps link
+lon = 15.3015099
+status = "draft"
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Lalki, klocki, huśtawki"
+note = "Słoneczna sala zabaw z zabawkami: lalki, koparki, klocki, układanki, huśtawki. Godzin, minimalnego wieku i zasad opieki strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelzalewski.pl/hotel/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true, parent_seating = true }
+short = "Z ławkami i stolikami dla rodziców"
+note = "Plac zabaw przy Bistro, z ławkami i stolikami dla rodziców."
+source = "hotel_website"
+url = "https://www.hotelzalewski.pl/hotel/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "paddling_pool"
+value = { available = true, indoor = true, water_playground = true }
+short = "Brodzik i wodny plac zabaw"
+note = "W aquaparku brodzik dla dzieci i wodny plac zabaw. Głębokości i temperatury strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelzalewski.pl/aquapark-zjezdzalnie-sauny-laznie"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 190
+note = "260 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.1468%2C15.3015"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 260
+note = "370 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.1468%2C15.3015"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 355
+note = "500 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.1468%2C15.3015"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 415
+note = "600 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.1468%2C15.3015"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 445
+note = "680 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.1468%2C15.3015"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 495
+note = "750 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.1468%2C15.3015"
+verified_at = 2026-11-07
+
+# --- Access: train to Trzebiatów station (rozklad-pkp.pl, 2026-11-12) --------------------
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 224
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "train"
+minutes = 323
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 385
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 396
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 523
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 584
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07

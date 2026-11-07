@@ -98,3 +98,17 @@ name = "Sianożęty"
 country = "Polska"
 region = "Bałtyk – Pomorze Zachodnie"
 kind = "domestic"
+
+[[place]]
+slug = "mrzezyno"
+name = "Mrzeżyno"
+country = "Polska"
+region = "Bałtyk – Pomorze Zachodnie"
+kind = "domestic"
+
+[[place]]
+slug = "pogorzelica"
+name = "Pogorzelica"
+country = "Polska"
+region = "Bałtyk – Pomorze Zachodnie"
+kind = "domestic"
