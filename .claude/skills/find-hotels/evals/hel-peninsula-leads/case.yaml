@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: hel-peninsula-leads
+expected_outcome: |
+  A leads file for pomorskie limited to the Hel peninsula towns, each lead confirmed on the hotel's own kids page with a concrete 0-3 item, no aggregator sources, honest count if fewer than 20.

@@ -334,8 +334,10 @@ Sources: [Booking ends direct affiliates (Affiverse)](https://www.affiversemedia
 ## 8. Open questions
 
 1. ~~Destinations~~: **Rodos + Crete-Heraklion + Polish hotels** (first: Saltic Resort & Spa, Grzybowo).
-   Polish hotels: **Baltic coast only** at first; access times **by car and by train** from Warszawa, Poznań,
-   Gdańsk, Wrocław, Kraków and Katowice.
+   Polish hotels: ~~Baltic coast only at first~~ **any voivodeship** (decision 2026-11-05; discovery per
+   województwo with the `find-hotels` skill, facts with `curate-hotel`), **hotels only** (no guest houses,
+   apartments or cottages for now), each with a concrete offer for 0–3 on its own site; access times
+   **by car and by train** from Warszawa, Poznań, Gdańsk, Wrocław, Kraków and Katowice.
 2. ~~Hosting~~: **deferred**. Private and without ads/affiliates, Vercel Hobby is fine; revisit before monetizing.
 3. ~~Permission emails~~: **before going public** (both sites private for now). Still open: should they also ask
    about using hotel facts (and later an affiliate deal)?
