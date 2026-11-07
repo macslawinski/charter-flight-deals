@@ -350,3 +350,11 @@ Sources: [Booking ends direct affiliates (Affiverse)](https://www.affiversemedia
 8. ~~Hotel questionnaire~~: **not for now**. Data comes from the hotels' own websites (§3).
 9. ~~Repo visibility~~: publishing the curated data with the repo is **fine**.
 10. ~~Timeline~~: **B in parallel** with A's cold start (A mostly waits for history to accumulate).
+
+---
+
+## 9. Extension (2026-11-07): parents' service, ages 0–6
+
+B grows into a "just facts" service for parents with three sections ("Gdzie z dzieckiem", "Wyjazdy",
+"Niezbędnik rodzica"), same site and database. Details: `docs/family-product.md`, `docs/family-data-model.md`,
+`docs/family-data-sources.md`; steps in `ROADMAP.md` ("Extension: parents' service").
