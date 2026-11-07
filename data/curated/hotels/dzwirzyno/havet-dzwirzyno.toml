@@ -1,0 +1,251 @@
+# Facts from the hotel's own website (havethotel.pl; robots.txt allows all, checked 2026-11-07):
+# /dla-dzieci, /regulaminy (hotel and parking rules, inline), /kontakt, home page. Written in our words.
+# Also on the site, no feature key for it: socket covers and anti-slip mats; Kids Club Akwarium is 200 m2
+# (climbing wall, ball pool, foam blocks, XBOX room); creative workshops adjusted to age.
+# Not stated (so not recorded yet): cot fee (a cot exists: the free stay ends if the child uses one),
+# baby bath, high chair, playroom hours and minimum age, whether the brodzik is indoor/heated, lift,
+# parking fee amount, toddler food.
+#
+# Coordinates: the hotel's own "Sprawdź dojazd" Google Maps link.
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most one
+#   change, to Kołobrzeg station (times reused from Saltic Grzybowo, same station). Station -> hotel:
+#   ~12 km, ~15 min by car (OSRM); the hotel's door-to-door transfer from Kołobrzeg costs 150 zł (up to 4 people).
+slug = "havet-dzwirzyno"
+place = "dzwirzyno"
+name = "HAVET Hotel Resort & Spa"
+official_url = "https://www.havethotel.pl/"
+address = "ul. Wyzwolenia 29, 78-131 Dźwirzyno"
+lat = 54.161946  # the hotel's own Google Maps link
+lon = 15.422500
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true }
+short = "Jest, opłaty strona nie podaje"
+note = "Strona wspomina osobne łóżeczko (przy zasadach bezpłatnego pobytu), ale nie opisuje go ani nie podaje ceny."
+source = "hotel_website"
+url = "https://www.havethotel.pl/dla-dzieci"
+verified_at = 2026-11-07
+to_confirm = true
+
+[[feature]]
+key = "child_free_stay"
+age_band = "0-3"
+value = { free = true, sleeping_with_parents = true, max_children = 1, no_cot = true }
+short = "Do 3 lat gratis (bez łóżeczka)"
+note = "Pobyt jednego dziecka do 3. roku życia w pokoju rodziców jest bezpłatny, jeśli śpi w łóżku z rodzicami i nie korzysta z osobnego łóżeczka ani dostawki."
+source = "hotel_website"
+url = "https://www.havethotel.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Jest menu dla dzieci"
+note = "Specjalne menu dla dzieci w restauracji. O jedzeniu dla niemowląt strona nie wspomina."
+source = "hotel_website"
+url = "https://www.havethotel.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true }
+short = "Jest"
+note = "Podgrzewacze do butelek wśród udogodnień dla dzieci. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.havethotel.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "changing_table"
+value = { available = true }
+short = "Jest"
+note = "Przewijaki dla niemowląt wśród udogodnień dla dzieci (wymienione też w opisie apartamentów)."
+source = "hotel_website"
+url = "https://www.havethotel.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "potty"
+value = { available = true, toilet_seat_adapter = true, step_stool = true }
+short = "Nakładki na toaletę i stopnie"
+note = "Nakładki na toaletę i stopnie dla dzieci. Nocnika strona nie wymienia."
+source = "hotel_website"
+url = "https://www.havethotel.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playroom"
+value = { available = true, size_m2 = 200 }
+short = "Kids Club Akwarium, 200 m²"
+note = "Kids Club Akwarium: 200 m² ze ścianką wspinaczkową, łodzią z kulkami, klockami z pianki i salką z konsolą. Godzin, minimalnego wieku i zasad opieki strona nie podaje."
+source = "hotel_website"
+url = "https://www.havethotel.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true, fenced = true }
+short = "Ogrodzony, z piaskownicą"
+note = "Ogrodzony plac zabaw na zewnątrz: piaskownica, zjeżdżalnia, huśtawka, trampolina."
+source = "hotel_website"
+url = "https://www.havethotel.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, seasonal = true }
+short = "W wakacje i ferie zimowe"
+note = "Program animacji dla dzieci w wakacje i ferie zimowe. Przedziału wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.havethotel.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "paddling_pool"
+value = { available = true }
+short = "Basen dla dzieci z brodzikiem"
+note = "Basen dla dzieci z brodzikiem dla maluchów. Czy jest kryty i podgrzewany, strona dla dzieci nie podaje (strefa wodna hotelu ma przeszklony basen)."
+source = "hotel_website"
+url = "https://www.havethotel.pl/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { on_beach = true }
+short = "Bezpośrednio przy plaży"
+note = "Hotel stoi bezpośrednio przy szerokiej, piaszczystej plaży."
+source = "hotel_website"
+url = "https://www.havethotel.pl/"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "parking"
+value = { paid = true }
+short = "Płatny wg cennika w recepcji"
+note = "Parking płatny; wysokość opłaty określa cennik dostępny w recepcji (kwoty strona nie podaje)."
+source = "hotel_website"
+url = "https://www.havethotel.pl/regulaminy"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "transfer"
+value = { from_station = true, from_airport = true, paid = true, station = "Kołobrzeg", fee_pln = 150, max_people = 4, station_km = 12, station_minutes = 15 }
+short = "Door to door, z Kołobrzegu 150 zł"
+note = "Hotel oferuje płatny przewóz door to door; z Kołobrzegu 150 zł (do 4 osób), z lotniska w Gdańsku 900 zł. Dworzec PKP Kołobrzeg jest ok. 12 km od hotelu (ok. 15 min autem)."
+source = "hotel_website"
+url = "https://www.havethotel.pl/kontakt"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 175
+note = "250 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.1619%2C15.4225"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 260
+note = "390 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.1619%2C15.4225"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 355
+note = "520 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.1619%2C15.4225"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 395
+note = "590 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.1619%2C15.4225"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 445
+note = "690 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.1619%2C15.4225"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 500
+note = "770 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.1619%2C15.4225"
+verified_at = 2026-11-07
+
+# --- Access: train to Kołobrzeg station (rozklad-pkp.pl, 2026-11-12) ------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "train"
+minutes = 250
+note = "1 przesiadka · bezpośredni 4 h 42 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 252
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 329
+note = "1 przesiadka · bezpośredni 5 h 59 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 400
+note = "1 przesiadka · bezpośredni 7 h 08 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 480
+note = "1 przesiadka · bezpośredni 8 h 52 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 555
+note = "1 przesiadka · bezpośredni 9 h 21 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-05

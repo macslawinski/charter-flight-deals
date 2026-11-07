@@ -40,7 +40,7 @@ lat = 54.1617286
 lon = 15.4225246
 signals = ["podgrzewacz", "przewijak", "nakładka na toaletę", "brodzik", "kids club"]
 why = "Podgrzewacze butelek, przewijaki, nakładki na toaletę; basen z brodzikiem dla maluchów; kids club."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Neptuno Resort"
@@ -126,7 +126,7 @@ lat = 54.1827087
 lon = 15.5830789
 signals = ["łóżeczko", "wanienka", "nocnik", "brodzik", "pieluchy kąpielowe"]
 why = "Łóżeczko 20 zł/dobę; wanienka, nocnik, nakładka na sedes bezpłatnie; brodzik dla najmłodszych."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Seaside Park Hotel"
@@ -175,7 +175,7 @@ lat = 53.9214198
 lon = 14.4378787
 signals = ["łóżeczko", "wanienka", "krzesełko", "sala zabaw"]
 why = "Bezpłatnie na życzenie: łóżeczko z pościelą, krzesełko do karmienia, wanienka; sala zabaw."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Dworek Morski SPA & Wellness"
@@ -235,7 +235,7 @@ lat = 54.0566565
 lon = 14.9141195
 signals = ["łóżeczko", "wanienka", "krzesełko", "do 3 lat"]
 why = "Łóżeczka i wanienki do wypożyczenia, krzesełka i naczynia dziecięce; dzieci do 3 lat gratis we wszystkich ofertach."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Linea Mare"
