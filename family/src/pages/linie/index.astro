@@ -1,5 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
+import Checker from "../../components/Checker.astro";
 import FactTile from "../../components/FactTile.astro";
 import Icon from "../../components/Icon.astro";
 import Illustration from "../../components/Illustration.astro";
@@ -26,6 +27,8 @@ const topics = TOPICS.map((t) => ({
     </div>
     <Illustration name="plane" />
   </section>
+
+  <Checker />
 
   <nav aria-label="Tematy">
     <ul class="toc">

@@ -5,18 +5,19 @@ import Icon from "../../components/Icon.astro";
 import Illustration from "../../components/Illustration.astro";
 import {
   FEATURE_GROUPS,
-  data,
   featureIcon,
   featureLabel,
+  hotels,
+  placeOf,
   plDate,
   type Hotel,
   type Place,
 } from "../../lib/data";
+import { duration } from "../../lib/format";
 
 export function getStaticPaths() {
-  return data.hotels.map((h) => {
-    const place = data.places.find((p) => p.slug === h.place);
-    if (!place) throw new Error(`hotel ${h.slug}: unknown place ${h.place}`);
+  return hotels.map((h) => {
+    const place = placeOf(h);
     return { params: { place: place.slug, hotel: h.slug }, props: { h, place } };
   });
 }
@@ -30,8 +31,6 @@ const stated = new Set(h.features.map((f) => f.key));
 const missing = all.filter((k) => !stated.has(k));
 const pct = Math.round((100 * stated.size) / all.length);
 const latest = h.features.map((f) => f.verified_at).sort().at(-1);
-const duration = (min: number) =>
-  min < 60 ? `${min} min` : `${Math.floor(min / 60)} h ${String(min % 60).padStart(2, "0")} min`;
 // How we measured each mode: one caption under the table instead of the same words in every row.
 const ACCESS_MODES = [
   { mode: "transfer", title: "Transferem", icon: "plane", how: "z lotniska, wg strony hotelu" },
@@ -64,7 +63,7 @@ const groups = FEATURE_GROUPS.map((g) => ({ ...g, keys: g.keys.filter((k) => sta
 ---
 
 <Base title={`${h.name} z dzieckiem`} section="hotele" description={`Co ${h.name} oferuje dzieciom do 3 lat, ze źródłami.`}>
-  <p class="crumb"><a href="/hotele/">Wszystkie hotele</a></p>
+  <p class="crumb"><a href="/">Wszystkie hotele</a></p>
   <section class="page-hero">
     <div>
       <h1>{h.name}</h1>
