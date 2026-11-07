@@ -24,7 +24,8 @@ town = "Chłapowo"
 official_url = "https://stellaresort.pl/"
 signals = []
 why = "Do sprawdzenia: strona głównie w JS, sonda nic nie odczytała; resort sprzedawany jako rodzinny."
-status = "lead"
+status = "skipped"
+skip_reason = "Kids page is only a heading and the hotel rules say nothing about children; nothing concrete for 0-3 on the site (checked 2026-11-07)."
 
 [[lead]]
 name = "Notera Hotel SPA"
@@ -389,7 +390,7 @@ town = "Władysławowo"
 official_url = "https://www.gwiazdamorza.com/"
 signals = []
 why = "Do sprawdzenia: duży resort rodzinny, strona w JS; sonda i proste pobranie nie odczytały oferty dla dzieci."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel White"

@@ -92,7 +92,12 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
 - [x] C: pomorskie hotels, batch 7 (2026-11-07): Wichrowe Wzgórze (Chmielno, 5 facts), Miłosz (Kartuzy, 6, free
       stay to 4), Pod Orłem (Kartuzy, 3: free cot, bath, WC seat), River Style (Reda, 4: two brodziki 30/50 cm).
       Trains: Kartuzy, Reda. Skipped Bartan (cot and bath only in packages).
-- [ ] C: last 2 pomorskie leads, Gwiazda Morza and Stella (JS sites, need Chrome).
+- [x] C: pomorskie hotels, batch 8 (2026-11-07, read in Chrome): Gwiazda Morza (Władysławowo, 12 facts: free stay
+      to 4, cot, baby bath, bottle warmer, playroom, brodzik, animations all year). Train: Władysławowo. Skipped
+      Stella (kids page empty). All 40 pomorskie leads processed: 29 curated, 11 skipped.
+- [ ] U (phone/e-mail, optional): Gwiazda Morza baby-item fees, playroom minimum age, brodzik depth.
+- [ ] U: decide which pomorskie hotels to publish (all are `draft`); those under 8 facts need a phone or e-mail
+      round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Kiston cot fee, free-stay age, brodzik; Primavera cot fee, Playland age;
       Villa Baltica free-stay age, playroom hours; Faltom whether under-4s may use Klub Malucha with a parent.
 - [ ] U (phone/e-mail, optional): Hotel Jastarnia free-stay age, high chair, baby items; Nadmorski free-stay age,

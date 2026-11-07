@@ -1,0 +1,240 @@
+# Facts from the hotel's own website (gwiazdamorza.com; robots.txt allows all, checked 2026-11-07):
+# /dla-dzieci (JavaScript page, read in Chrome). Written in our words.
+# Also on the site, no feature key for it: children 5-14 pay 50% of the adult price for meals; corner and socket
+# guards and children's bathrobes; SPA treatments for babies and children (baby massage); family sauna sessions;
+# mini climbing wall in the playroom; family rooms and apartments with kitchenettes; animation plan for
+# 01.09-30.11.2026 (Mon, Tue, Thu, Fri from 13:00, Sat from 11:00).
+# Not stated (so not recorded yet): fees for baby items, changing table, toddler food, playroom hours and minimum
+# age, animation ages, brodzik depth and temperature, lift, parking, beach distance in metres.
+#
+# Coordinates: OpenStreetMap way/166342506 via Nominatim (ODbL); the hotel's map links are short links.
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most one
+#   change, to Władysławowo station. Station -> hotel: ~1 km, ~5 min by car or taxi (OSRM) or a short walk.
+slug = "gwiazda-morza-wladyslawowo"
+place = "wladyslawowo"
+name = "Gwiazda Morza Resort SPA & Sport"
+official_url = "https://www.gwiazdamorza.com/"
+address = "ul. Hryniewieckiego 12A, 84-120 Władysławowo"
+lat = 54.798257  # OpenStreetMap way/166342506 (Nominatim), ODbL
+lon = 18.4078115
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true }
+short = "Łóżeczka dla maluchów"
+note = "Łóżeczka dla maluchów do dyspozycji gości. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.gwiazdamorza.com/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "child_free_stay"
+value = { free = true, max_age_years = 4 }
+short = "Do 4 lat całkowicie bezpłatnie"
+note = "Dzieci do 4 lat: pobyt całkowicie bezpłatny. Dzieci 5–14 lat płacą 50% ceny dorosłego za wyżywienie."
+source = "hotel_website"
+url = "https://www.gwiazdamorza.com/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "high_chair"
+value = { available = true }
+short = "Foteliki do karmienia"
+note = "Foteliki do karmienia do dyspozycji gości."
+source = "hotel_website"
+url = "https://www.gwiazdamorza.com/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_menu"
+value = { available = true, all_restaurants = true }
+short = "W każdej restauracji"
+note = "Specjalne menu dla dzieci w każdej restauracji. O jedzeniu dla niemowląt strona nie wspomina."
+source = "hotel_website"
+url = "https://www.gwiazdamorza.com/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true }
+short = "Jest"
+note = "Podgrzewacze do butelek do dyspozycji gości. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.gwiazdamorza.com/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "baby_bath"
+value = { available = true }
+short = "Jest"
+note = "Wanienka do kąpieli do dyspozycji gości. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.gwiazdamorza.com/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "potty"
+value = { step_stool = true }
+short = "Stopnie ułatwiające dostęp"
+note = "Stopnie ułatwiające dzieciom dostęp. O nocniku i nakładce strona nie wspomina."
+source = "hotel_website"
+url = "https://www.gwiazdamorza.com/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Podwodny Świat: kulki, zjeżdżalnia"
+note = "Sala zabaw „Podwodny Świat” w budynku hotelu: łódź podwodna, basen z kulkami, zjeżdżalnia, mini ścianka wspinaczkowa. Godzin i minimalnego wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.gwiazdamorza.com/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "W prywatnym parku przy hotelu"
+note = "Plac zabaw w prywatnym parku tuż przy hotelu."
+source = "hotel_website"
+url = "https://www.gwiazdamorza.com/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, year_round = true, days_per_week = 5 }
+short = "Cały rok, 5 dni w tygodniu"
+note = "Animacje przez cały rok, 5 dni w tygodniu (plan na stronie). Przedziału wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.gwiazdamorza.com/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "paddling_pool"
+value = { indoor = true }
+short = "Wewnętrzny brodzik"
+note = "Wewnętrzny brodzik w strefie basenowej. Głębokości i temperatury strona nie podaje."
+source = "hotel_website"
+url = "https://www.gwiazdamorza.com/dla-dzieci"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { next_to_beach = true }
+short = "Tuż przy plaży"
+note = "Hotel tuż przy plaży. Odległości w metrach ani minutach strona nie podaje."
+source = "hotel_website"
+url = "https://www.gwiazdamorza.com/dla-dzieci"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 70
+note = "70 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.7983%2C18.4078"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 260
+note = "360 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.7983%2C18.4078"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 295
+note = "400 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.7983%2C18.4078"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 360
+note = "590 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.7983%2C18.4078"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 370
+note = "540 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.7983%2C18.4078"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 405
+note = "650 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.7983%2C18.4078"
+verified_at = 2026-11-07
+
+# --- Access: train to Władysławowo station (rozklad-pkp.pl, 2026-11-12) --------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "train"
+minutes = 78
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 238
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 279
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 382
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 392
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 403
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-07
