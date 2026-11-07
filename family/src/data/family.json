@@ -2116,6 +2116,197 @@
     {
      "from_code": "Gdańsk",
      "from_kind": "city",
+     "minutes": 50,
+     "mode": "car",
+     "note": "40 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.3239%2C18.1010",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 240,
+     "mode": "car",
+     "note": "340 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.3239%2C18.1010",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 270,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.3239%2C18.1010",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 340,
+     "mode": "car",
+     "note": "560 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.3239%2C18.1010",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 350,
+     "mode": "car",
+     "note": "520 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.3239%2C18.1010",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 385,
+     "mode": "car",
+     "note": "630 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.3239%2C18.1010",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 64,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 247,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 259,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 338,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 411,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 412,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. Wichrowe Wzgórze 13, 83-333 Chmielno",
+   "features": [
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Wewnętrzna sala zabaw z małpim gajem. Godzin, minimalnego wieku i zasad opieki strona nie podaje.",
+     "short": "Wewnętrzny małpi gaj",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://wichrowe.info/dla-dzieci/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Zewnętrzny plac zabaw.",
+     "short": "Na zewnątrz",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://wichrowe.info/dla-dzieci/",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Sezonowo animacje z opiekunem. Przedziału wieku strona nie podaje.",
+     "short": "Sezonowo, z opiekunem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://wichrowe.info/dla-dzieci/",
+     "value": {
+      "available": true,
+      "seasonal": true,
+      "supervised": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Brodzik w basenie w strefie wellness. Głębokości i temperatury strona nie podaje.",
+     "short": "Brodzik przy basenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://wichrowe.info/dla-dzieci/",
+     "value": {
+      "indoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Plaża nad Jeziorem Kłodno ze sprzętem wodnym. Odległości strona nie podaje.",
+     "short": "Plaża nad Jeziorem Kłodno",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://wichrowe.info/dla-dzieci/",
+     "value": {
+      "lake": true,
+      "own_beach": true
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.3239062,
+   "lon": 18.100988,
+   "name": "Wichrowe Wzgórze Resort & Spa",
+   "official_url": "https://wichrowe.info/",
+   "place": "chmielno",
+   "slug": "wichrowe-wzgorze-chmielno",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
      "minutes": 135,
      "mode": "car",
      "note": "190 km",
@@ -5554,6 +5745,381 @@
    "official_url": "https://www.hotel-jurata.com.pl/pl/",
    "place": "jurata",
    "slug": "best-western-jurata",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 40,
+     "mode": "car",
+     "note": "30 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.3395%2C18.2085",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 225,
+     "mode": "car",
+     "note": "330 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.3395%2C18.2085",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 255,
+     "mode": "car",
+     "note": "370 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.3395%2C18.2085",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 325,
+     "mode": "car",
+     "note": "550 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.3395%2C18.2085",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 335,
+     "mode": "car",
+     "note": "510 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.3395%2C18.2085",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 370,
+     "mode": "car",
+     "note": "620 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.3395%2C18.2085",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 64,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 247,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 259,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 338,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 411,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 412,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. 3 Maja 36, 83-300 Kartuzy",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko turystyczne do wynajęcia za 50 zł, bez pościeli (cennik; strona nie mówi, czy za dobę, czy za pobyt).",
+     "short": "Turystyczne, 50 zł, bez pościeli",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelkaszuby.pl/cennik",
+     "value": {
+      "available": true,
+      "bedding_included": false,
+      "fee_pln": 50,
+      "paid": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "child_free_stay",
+     "note": "Dzieci do lat 4 nocujące w łóżku z rodzicami: pobyt i śniadanie bezpłatnie. Powyżej 4 lat pełna opłata (cennik).",
+     "short": "Do lat 4 gratis, w łóżku z rodzicami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelkaszuby.pl/cennik",
+     "value": {
+      "breakfast_free": true,
+      "free": true,
+      "max_age_years": 4,
+      "sleeping_with_parents": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka do kąpieli bezpłatnie (cennik).",
+     "short": "Bezpłatnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelkaszuby.pl/cennik",
+     "value": {
+      "available": true,
+      "free": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Kulkownia, czyli sala zabaw dla dzieci. Godzin i minimalnego wieku strona nie podaje.",
+     "short": "Kulkownia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelkaszuby.pl/cennik",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Basen rekreacyjny 5 × 10 m z wodą 30–32°C i brodzikiem. Głębokości brodzika strona nie podaje.",
+     "short": "Brodzik przy basenie 30–32°C",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelkaszuby.pl/",
+     "value": {
+      "indoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking częściowo monitorowany. Opłaty strona nie podaje.",
+     "short": "Częściowo monitorowany",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelkaszuby.pl/cennik",
+     "value": {
+      "available": true,
+      "partly_monitored": true
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.339485,
+   "lon": 18.208524,
+   "name": "Hotel Miłosz",
+   "official_url": "https://hotelkaszuby.pl/",
+   "place": "kartuzy",
+   "slug": "milosz-kartuzy",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 40,
+     "mode": "car",
+     "note": "30 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.3354%2C18.2029",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 225,
+     "mode": "car",
+     "note": "330 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.3354%2C18.2029",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 260,
+     "mode": "car",
+     "note": "370 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.3354%2C18.2029",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 325,
+     "mode": "car",
+     "note": "550 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.3354%2C18.2029",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 335,
+     "mode": "car",
+     "note": "510 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.3354%2C18.2029",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 370,
+     "mode": "car",
+     "note": "620 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.3354%2C18.2029",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 64,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 247,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 259,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 338,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 411,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 412,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. 3 Maja 10, 83-300 Kartuzy",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko turystyczne do pokoju bezpłatnie na życzenie.",
+     "short": "Turystyczne, bezpłatnie na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-podorlem.com/hotel-pod-orlem-kartuzy-noclegi-na-kaszubach-restauracja/dzieci",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka do pokoju bezpłatnie na życzenie.",
+     "short": "Bezpłatnie, na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-podorlem.com/hotel-pod-orlem-kartuzy-noclegi-na-kaszubach-restauracja/dzieci",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Nakładka na WC do pokoju bezpłatnie na życzenie. O nocniku strona nie wspomina.",
+     "short": "Nakładka na WC, bezpłatnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-podorlem.com/hotel-pod-orlem-kartuzy-noclegi-na-kaszubach-restauracja/dzieci",
+     "value": {
+      "free": true,
+      "on_request": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.3354308,
+   "lon": 18.2029471,
+   "name": "Hotel Pod Orłem",
+   "official_url": "https://www.hotel-podorlem.com/",
+   "place": "kartuzy",
+   "slug": "pod-orlem-kartuzy",
    "status": "draft"
   },
   {
@@ -10400,6 +10966,189 @@
      "from_kind": "city",
      "minutes": 45,
      "mode": "car",
+     "note": "40 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.6086%2C18.3497",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 230,
+     "mode": "car",
+     "note": "340 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.6086%2C18.3497",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 265,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.6086%2C18.3497",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 330,
+     "mode": "car",
+     "note": "560 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.6086%2C18.3497",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 340,
+     "mode": "car",
+     "note": "520 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.6086%2C18.3497",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 375,
+     "mode": "car",
+     "note": "630 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.6086%2C18.3497",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 38,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 207,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 223,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 313,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 361,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 362,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "address": "ul. Pucka 10B, 84-240 Reda",
+   "features": [
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala zabaw Riverlandia dla najmłodszych. Godzin, minimalnego wieku i zasad opieki strona nie podaje; regulamin: dzieci do 10 lat pod opieką dorosłych.",
+     "short": "Sala zabaw Riverlandia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelriverstyle.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Zewnętrzny plac zabaw.",
+     "short": "Na zewnątrz",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelriverstyle.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Dwa brodziki dla najmłodszych: 30 cm i 50 cm głębokości, z grzybkiem wodnym; woda 31,5–32°C.",
+     "short": "Dwa brodziki 30 i 50 cm, 31,5–32°C",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelriverstyle.pl/dla-dzieci/baseny",
+     "value": {
+      "count": 2,
+      "depth_cm": [
+       30,
+       50
+      ],
+      "heated": true,
+      "indoor": true,
+      "water_temp_c": 32
+     },
+     "verified_at": "2026-11-07"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Bezpłatny monitorowany parking hotelowy (regulamin).",
+     "short": "Bezpłatny, monitorowany",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://u.profitroom.com/2020-hotelriverstyle-pl/uploads/RegulaminHotelRiverStyleSpa2024_2.pdf",
+     "value": {
+      "free": true,
+      "monitored": true
+     },
+     "verified_at": "2026-11-07"
+    }
+   ],
+   "lat": 54.6085854,
+   "lon": 18.3496666,
+   "name": "River Style Hotel & SPA",
+   "official_url": "https://www.hotelriverstyle.pl/",
+   "place": "reda",
+   "slug": "river-style-reda",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 45,
+     "mode": "car",
      "note": "50 km",
      "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.6335%2C18.5129",
      "verified_at": "2026-11-07"
@@ -14478,6 +15227,30 @@
    "name": "Gniew",
    "region": "Kociewie",
    "slug": "gniew"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Chmielno",
+   "region": "Kaszuby",
+   "slug": "chmielno"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Kartuzy",
+   "region": "Kaszuby",
+   "slug": "kartuzy"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Reda",
+   "region": "Bałtyk – Pomorze",
+   "slug": "reda"
   }
  ],
  "rule_keys": [

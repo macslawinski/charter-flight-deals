@@ -210,3 +210,24 @@ name = "Gniew"
 country = "Polska"
 region = "Kociewie"
 kind = "domestic"
+
+[[place]]
+slug = "chmielno"
+name = "Chmielno"
+country = "Polska"
+region = "Kaszuby"
+kind = "domestic"
+
+[[place]]
+slug = "kartuzy"
+name = "Kartuzy"
+country = "Polska"
+region = "Kaszuby"
+kind = "domestic"
+
+[[place]]
+slug = "reda"
+name = "Reda"
+country = "Polska"
+region = "Bałtyk – Pomorze"
+kind = "domestic"

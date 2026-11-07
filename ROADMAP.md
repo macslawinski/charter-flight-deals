@@ -89,7 +89,10 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
 - [x] C: pomorskie hotels, batch 6 (2026-11-07): La Siesta (Jastrzębia Góra, 13 facts), Zamek Gniew (7), Grano Life
       (Gdańsk, 10), Platan (Gdańsk, 10). Trains: Władysławowo, Pelplin (16 km from Gniew), Gdańsk Główny. Skipped:
       Morski Widok (no baby items left on the site), Villa Verdi (site answers 403, robots.txt unreadable).
-- [ ] C: curate the remaining 7 pomorskie leads with `curate-hotel` (Gwiazda Morza and Stella need Chrome).
+- [x] C: pomorskie hotels, batch 7 (2026-11-07): Wichrowe Wzgórze (Chmielno, 5 facts), Miłosz (Kartuzy, 6, free
+      stay to 4), Pod Orłem (Kartuzy, 3: free cot, bath, WC seat), River Style (Reda, 4: two brodziki 30/50 cm).
+      Trains: Kartuzy, Reda. Skipped Bartan (cot and bath only in packages).
+- [ ] C: last 2 pomorskie leads, Gwiazda Morza and Stella (JS sites, need Chrome).
 - [ ] U (phone/e-mail, optional): Kiston cot fee, free-stay age, brodzik; Primavera cot fee, Playland age;
       Villa Baltica free-stay age, playroom hours; Faltom whether under-4s may use Klub Malucha with a parent.
 - [ ] U (phone/e-mail, optional): Hotel Jastarnia free-stay age, high chair, baby items; Nadmorski free-stay age,
@@ -100,6 +103,8 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       applies to all offers; Notera free-stay age, play zone rules; Skipper high chair, playroom, parking.
 - [ ] U (phone/e-mail, optional): La Siesta whether the 15 zł cot fee is per night; Zamek Gniew free-stay age;
       Grano Life free-stay rule outside offers; Platan cot/playpen fee.
+- [ ] U (phone/e-mail, optional): Wichrowe Wzgórze and River Style baby items and free-stay age; Miłosz whether
+      the 50 zł cot fee is per night; Pod Orłem free-stay age, high chair.
 - [ ] U: decide which zachodniopomorskie hotels to publish (all are `draft`); those under 8 facts need a phone or
       e-mail round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Zalewski and Sandra cot, high chair, free-stay age; Baltic Plaza free stay
