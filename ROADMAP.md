@@ -46,6 +46,10 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       car time from the airport (OSRM). Skipped: Lindos Imperial and Aldemar Knossos Royal (no working
       official site found), Kipriotis Village (Kos, not our place). None states a free stay for 0–3.
 - [ ] C (optional): more Greek hotels once the first batch is reviewed (more family resorts sold by r.pl/Itaka).
+- [x] C: hotel leads zachodniopomorskie (2026-11-07, `find-hotels`): 24 leads (+ Saltic curated), 0 do sprawdzenia,
+      15 skipped (non-hotels: SOLEO, Natura, Holiday Park, Villa Mare, DUKAT sanatorium; hotels with nothing for 0–3).
+      Not covered yet: Szczecin / inland lakes (no hotel with a confirmed 0–3 offer), 82 OSM sites the probe couldn't read.
+- [ ] C: curate the zachodniopomorskie leads with `curate-hotel` (start: Lidia Darłowo, Linea Mare, Unitral, Villa Hoff).
 - [ ] C: project skill `reverify-child-rules` so re-checks of rules are repeatable.
 - [ ] C: venues migration (DB) once the venue format is stable.
 - [ ] Photos (optional): only with your permission per download (e.g. Unsplash), licence noted.
