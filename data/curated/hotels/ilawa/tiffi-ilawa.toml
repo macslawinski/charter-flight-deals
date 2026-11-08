@@ -1,0 +1,129 @@
+# Facts from the hotel's own website (grandhotel.tiffi.com; robots.txt allows all, checked 2026-11-08):
+# /faq/, /atrakcje/, /tiffilandia/, /spa/, Regulamin GHT 2024 (PDF). Written in our words.
+# Also on the site, no feature key for it: sledges in winter; Tiffilandia for non-guests 100 zł per child. The
+# hotel is on the shore of Lake Jeziorak (no beach stated). Train to Iława: about 1 h from Gdańsk, 1 h 40 min from
+# Warszawa (FAQ).
+# Not stated (so not recorded yet): cot fee, free-stay age, baby bath, high chair, changing table, potty, bottle
+# warmer, baby monitor, playroom ages/hours/supervision, brodzik rules, lift, parking fee.
+#
+# Coordinates: OpenStreetMap node/5997078722 ((c) OpenStreetMap contributors, ODbL).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet (Iława Główna).
+slug = "tiffi-ilawa"
+place = "ilawa"
+name = "GrandHotel Tiffi"
+official_url = "https://grandhotel.tiffi.com/"
+address = "ul. Dąbrowskiego 9, 14-200 Iława"
+lat = 53.602822
+lon = 19.559233
+status = "published"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true }
+short = "Na życzenie"
+note = "Łóżeczka dziecięce na życzenie. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://grandhotel.tiffi.com/faq/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Dania dla dzieci"
+note = "Restauracje hotelu mają dania przygotowane dla dzieci."
+source = "hotel_website"
+url = "https://grandhotel.tiffi.com/faq/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true, size_m2 = 300, baby_corner = true }
+short = "Tiffilandia 300 m², kącik sensoryczny"
+note = "Tiffilandia, wielopoziomowa sala zabaw (300 m²) z torem przeszkód, ścianką i trampolinami; dla najmłodszych kącik sensoryczny z miękkimi matami. Strona pisze o animatorach, którzy opiekują się dziećmi; minimalnego wieku, godzin ani tego, czy rodzic musi zostać, nie podaje."
+source = "hotel_website"
+url = "https://grandhotel.tiffi.com/tiffilandia/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, seasonal = true }
+short = "W wybranych terminach"
+note = "Animacje, warsztaty i zajęcia dla dzieci w wybranych terminach. Wieku strona nie podaje."
+source = "hotel_website"
+url = "https://grandhotel.tiffi.com/faq/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "paddling_pool"
+value = { available = true, slide = true, water_playground = true }
+short = "Aqua Fun: brodzik ze zjeżdżalnią"
+note = "Tiffi Aqua Fun, strefa wodna dla najmłodszych: kolorowy brodzik ze zjeżdżalnią i wodny plac zabaw. Godzin, temperatury ani zasad dla małych dzieci strona nie podaje."
+source = "hotel_website"
+url = "https://grandhotel.tiffi.com/spa/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { paid = true }
+short = "Płatny, wg cennika w recepcji"
+note = "Parking na terenie hotelu płatny według cennika w recepcji (kwoty strona nie podaje)."
+source = "hotel_website"
+url = "https://grandhotel.tiffi.com/wp-content/uploads/2024/08/Regulamin-GHT-2024.pdf"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 120
+note = "170 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.6028%2C19.5592"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 180
+note = "240 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.6028%2C19.5592"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 225
+note = "280 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.6028%2C19.5592"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 315
+note = "490 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.6028%2C19.5592"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 335
+note = "460 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.6028%2C19.5592"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 360
+note = "550 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.6028%2C19.5592"
+verified_at = 2026-11-08

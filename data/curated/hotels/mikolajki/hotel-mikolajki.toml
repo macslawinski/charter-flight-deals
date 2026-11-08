@@ -1,0 +1,121 @@
+# Facts from the hotel's own website (hotelmikolajki.pl; robots.txt allows all but /admin, checked 2026-11-08):
+# /hotel/dzieci, /hotel/atrakcje-i-udogodnienia, /spa/basen-w-hotelu-mikolajki, /hotel/regulamin, /kontakt.
+# Written in our words.
+# Also on the site, no feature key for it: kids' SPA treatments for ages 4-14; bike hire and lake cruises. Hotel
+# rules: children stay under their parents' care at all times, also during animations (they are not childcare).
+# Not stated (so not recorded yet): cot, free-stay age, baby bath, high chair, kids' menu, changing table, potty,
+# bottle warmer, baby monitor, lift, beach distance.
+#
+# Coordinates: OpenStreetMap way/375551351 (centre; (c) OpenStreetMap contributors, ODbL); the site's map is a
+# popup without coordinates.
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet (Mikołajki station has few trains outside summer).
+slug = "hotel-mikolajki"
+place = "mikolajki"
+name = "Hotel Mikołajki"
+official_url = "https://www.hotelmikolajki.pl/"
+address = "Al. Spacerowa 11, 11-730 Mikołajki"
+lat = 53.797737
+lon = 21.568886
+status = "published"
+
+[[feature]]
+key = "playroom"
+value = { available = true, open = "07:00", close = "22:00", free = true, with_parent = true }
+short = "7:00–22:00, bez dopłat"
+note = "Przestronna sala zabaw codziennie 7:00–22:00, bez dodatkowych opłat. Według regulaminu dzieci są zawsze pod opieką rodziców. Minimalnego wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelmikolajki.pl/hotel/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "Plac zabaw"
+note = "Dzieci mogą bawić się na placu zabaw."
+source = "hotel_website"
+url = "https://www.hotelmikolajki.pl/hotel/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, seasonal = true, fee_pln_per_day = 50 }
+short = "50 zł/dzień, w wybranych terminach"
+note = "Animacje z animatorami w wybranych terminach, 50 zł za dzień za dziecko; dziecko pozostaje pod opieką rodzica, który musi być pod telefonem. Wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelmikolajki.pl/hotel/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "paddling_pool"
+value = { available = true, heated = true, depth_m = 0.4, slide = true }
+short = "Ciepły brodzik 40 cm, zjeżdżalnia-słoń"
+note = "Brodzik dla najmłodszych w SPA & Wellness Decus Aquae: głębokość 0,40 m (strona basenu); ciepła woda (stopni strona nie podaje) i zjeżdżalnia w kształcie słonia (strona dla dzieci)."
+source = "hotel_website"
+url = "https://www.hotelmikolajki.pl/spa/basen-w-hotelu-mikolajki"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { paid = true, fee_pln_per_day = 85, monitored = true, guarded = false }
+short = "85 zł/doba, monitorowany"
+note = "Dwa monitorowane, niestrzeżone parkingi, 85 zł za dobę: górny przy hotelu i dolny ok. 80 m od budynku."
+source = "hotel_website"
+url = "https://www.hotelmikolajki.pl/hotel/atrakcje-i-udogodnienia"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 195
+note = "270 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.7977%2C21.5689"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 200
+note = "250 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.7977%2C21.5689"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 360
+note = "450 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.7977%2C21.5689"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 375
+note = "570 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.7977%2C21.5689"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 395
+note = "550 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.7977%2C21.5689"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 410
+note = "590 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.7977%2C21.5689"
+verified_at = 2026-11-08

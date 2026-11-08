@@ -1,0 +1,148 @@
+# Facts from the hotel's own website (hotelstbruno.pl; robots.txt allows all, checked 2026-11-08):
+# /dzieci/atrakcje-dla-dzieci/, /dzieci/bawialnie-zamkowa/, /hotel/faq/. Written in our words.
+# Also on the site, no feature key for it: individual childcare can be ordered through reception; kids' SPA;
+# cooking workshops for children; a dry ball pool and swimming toys. "2 dzieci do 6 lat - pobyt bezpłatny" appears
+# only in offers (bon turystyczny answer, winter holiday 2027), not as a hotel rule. Lake Niegocin a few
+# minutes' walk away (no beach stated).
+# Not stated (so not recorded yet): free-stay age as a rule, baby bath, high chair, kids' menu, bottle warmer,
+# potty, baby monitor, brodzik details.
+#
+# Coordinates: OpenStreetMap way/256677482 (centre; (c) OpenStreetMap contributors, ODbL).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet (Giżycko station).
+slug = "st-bruno-gizycko"
+place = "gizycko"
+name = "Hotel St. Bruno"
+official_url = "https://www.hotelstbruno.pl/"
+address = "ul. Św. Brunona 1, 11-500 Giżycko"
+lat = 54.0356
+lon = 21.760122
+status = "published"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true, free = true, subject_to_availability = true }
+short = "Bezpłatnie, zgłosić przed przyjazdem"
+note = "Łóżeczka dziecięce bezpłatnie; jest ich niewiele, więc najlepiej zgłosić je w recepcji przed przyjazdem."
+source = "hotel_website"
+url = "https://www.hotelstbruno.pl/hotel/faq/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "changing_table"
+value = { available = true, where = "public_toilets" }
+short = "Toaleta z przewijakiem"
+note = "W hotelu jest toaleta z przewijakiem."
+source = "hotel_website"
+url = "https://www.hotelstbruno.pl/dzieci/atrakcje-dla-dzieci/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true, min_age_years = 2, max_age_years = 6 }
+short = "Bawialnia zamkowa, 2–6 lat"
+note = "Bawialnia zamkowa dla dzieci od 2 do 6 lat, z zabawkami, mega klockami i piłkarzykami; w soboty 10:00–12:00 zajęcia z animatorem. Godzin otwarcia ani tego, czy rodzic musi zostać, strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelstbruno.pl/dzieci/bawialnie-zamkowa/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "Trampolina, zjeżdżalnie, piaskownica"
+note = "Kolorowy plac zabaw na terenie zielonym: trampolina, zjeżdżalnie, piaskownica, dmuchany zamek."
+source = "hotel_website"
+url = "https://www.hotelstbruno.pl/dzieci/atrakcje-dla-dzieci/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, seasonal = true }
+short = "Soboty 10–12, w wakacje codziennie"
+note = "W soboty 10:00–12:00 zajęcia z animatorem w bawialni, w wakacje animacje codziennie. Wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelstbruno.pl/dzieci/bawialnie-zamkowa/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "paddling_pool"
+value = { available = true }
+short = "Brodzik w strefie wellness"
+note = "Brodzik i basen w strefie wellness. Głębokości, temperatury ani zasad dla małych dzieci strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelstbruno.pl/dzieci/atrakcje-dla-dzieci/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "lift"
+value = { available = true, where = "all_wings" }
+short = "Windy w każdym skrzydle"
+note = "Windy w każdym skrzydle hotelu."
+source = "hotel_website"
+url = "https://www.hotelstbruno.pl/hotel/faq/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { paid = true, fee_pln_per_day = 30, monitored = true, guarded = false }
+short = "30 zł/doba, monitorowany"
+note = "Parking monitorowany, niestrzeżony, 30 zł za dobę."
+source = "hotel_website"
+url = "https://www.hotelstbruno.pl/hotel/faq/"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 215
+note = "260 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.0356%2C21.7601"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 215
+note = "290 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.0356%2C21.7601"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 380
+note = "470 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.0356%2C21.7601"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 395
+note = "580 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.0356%2C21.7601"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 410
+note = "570 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.0356%2C21.7601"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 430
+note = "610 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.0356%2C21.7601"
+verified_at = 2026-11-08
