@@ -434,3 +434,31 @@ name = "Szczawnica"
 country = "Polska"
 region = "Pieniny"
 kind = "domestic"
+
+[[place]]
+slug = "wisla"
+name = "Wisła"
+country = "Polska"
+region = "Beskidy"
+kind = "domestic"
+
+[[place]]
+slug = "szczyrk"
+name = "Szczyrk"
+country = "Polska"
+region = "Beskidy"
+kind = "domestic"
+
+[[place]]
+slug = "ustron"
+name = "Ustroń"
+country = "Polska"
+region = "Beskidy"
+kind = "domestic"
+
+[[place]]
+slug = "lgota-murowana"
+name = "Lgota Murowana"
+country = "Polska"
+region = "Jura Krakowsko-Częstochowska"
+kind = "domestic"
