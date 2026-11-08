@@ -8,11 +8,12 @@ import Icon from "../components/Icon.astro";
 interface Props {
   title: string;
   description?: string;
-  section?: "linie" | "hotele" | "bawialnie" | "gdzie";
+  section?: "wyjazdy" | "linie" | "hotele" | "bawialnie" | "gdzie";
 }
 const { title, description, section } = Astro.props;
 const full = title === "Pieluchy i paszporty" ? title : `${title} | Pieluchy i paszporty`;
 const nav = [
+  { href: "/wyjazdy/", label: "Wyjazdy", id: "wyjazdy" },
   { href: "/linie/", label: "Linie lotnicze", id: "linie" },
   { href: "/", label: "Hotele", id: "hotele" },
   { href: "/poznan/bawialnie/", label: "Bawialnie", id: "bawialnie" },

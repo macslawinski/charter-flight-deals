@@ -281,8 +281,11 @@ model: `docs/family-data-model.md`; sources: `docs/family-data-sources.md`.
 - [ ] U: route and home page decision (today `/` is the hotel finder).
 
 ### E2. Hotels ("Wyjazdy")
-- [ ] Hotels in Poland under "Wyjazdy" (existing curated data; foreign hotels stay hidden). Mostly UI and
-      shared fact keys; the curation backlog stays in Step 4.
+- [x] C (2026-11-08): hub `/wyjazdy/` (nav "Wyjazdy"): hotels in Poland grouped by landscape (`TRIP_GROUPS` in
+      `family/src/lib/data.ts`; a region without a group fails the build), each link opens the finder on `/` with
+      `?r=` / `&f=` set; airline door. `/` stays the hotel finder until the home page decision.
+- [ ] Hotels in Poland under "Wyjazdy": move the finder itself once routes are decided (shared fact keys); the
+      curation backlog stays in Step 4.
 
 ### E3. Airlines and airports
 - [ ] Airline child rules under "Wyjazdy" (existing `/linie/`); airport family facts (play areas, family lanes,

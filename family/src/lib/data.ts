@@ -266,6 +266,27 @@ export const HOTEL_FILTERS: { id: string; label: string; icon: string; test: (h:
   { id: "parking", label: "Parking", icon: "parking", test: (h) => has(h, "parking") },
 ];
 
+// "Wyjazdy" hub: landscape groups over the place regions. Every shown region must belong to a group
+// (checked at build time below), so a new region fails the build instead of silently disappearing.
+export const TRIP_GROUPS: {
+  id: string;
+  title: string;
+  tone: "sea" | "sun" | "coral";
+  icon: string;
+  regions: string[];
+}[] = [
+  { id: "morze", title: "Nad morzem", tone: "sea", icon: "umbrella",
+    regions: ["Bałtyk – Pomorze", "Bałtyk – Pomorze Zachodnie", "Zalew Wiślany"] },
+  { id: "gory", title: "W górach", tone: "sun", icon: "mountain",
+    regions: ["Tatry i Podhale", "Beskidy", "Gorce", "Pieniny"] },
+  { id: "jeziora", title: "Jeziora i lasy", tone: "sea", icon: "tree",
+    regions: ["Mazury", "Warmia", "Pojezierze Iławskie", "Kaszuby", "Bory Tucholskie", "Kociewie"] },
+  { id: "jura", title: "Jura i Małopolska", tone: "coral", icon: "castle",
+    regions: ["Jura Krakowsko-Częstochowska", "Małopolska"] },
+];
+const GROUP_OF = Object.fromEntries(TRIP_GROUPS.flatMap((g) => g.regions.map((r) => [r, g.id])));
+export const tripGroupOf = (h: Hotel) => must(GROUP_OF, placeRegion(placeOf(h)), "trip group of region");
+
 // Origin cities of the access times (car/train), sorted for the chips.
 export const ORIGIN_CITIES = [
   ...new Set(hotels.flatMap((h) => h.access.filter((a) => a.from_kind === "city").map((a) => a.from_code))),
