@@ -37,7 +37,8 @@ if ($current -ne $Branch) {
     git checkout -q -b $Branch
     if ($LASTEXITCODE -ne 0) { Write-Output "FAIL branch $Branch"; exit 1 }
 }
-git add ROADMAP.md data/curated family/src/data/family.json
+# data.ts holds TRIP_GROUPS: a new place region without its group breaks the Vercel build.
+git add ROADMAP.md data/curated family/src/data/family.json family/src/lib/data.ts
 git diff --cached --quiet
 if ($LASTEXITCODE -eq 0) { Write-Output 'FAIL commit: nothing staged (no data changes?)'; exit 1 }
 git commit -q -m $Message
