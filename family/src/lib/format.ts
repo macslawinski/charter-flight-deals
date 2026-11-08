@@ -16,6 +16,17 @@ export const CITY_FROM: Record<string, string> = {
 
 export const MODE_LABEL: Record<string, string> = { car: "Autem", train: "Pociągiem" };
 
+// Venue filters (lib/map.ts TAGS), shared by the map and the category list pages: checked tag ids by
+// group; a venue matches when every group has at least one of its tags (OR inside a group, AND across).
+export const matchesTags = (tags: string[], checked: Map<string, string[]>) =>
+  [...checked.values()].every((ids) => ids.some((id) => tags.includes(id)));
+
+export function checkedTags(inputs: Iterable<HTMLInputElement>): Map<string, string[]> {
+  const groups = new Map<string, string[]>();
+  for (const t of inputs) if (t.checked) groups.set(t.dataset.group!, [...(groups.get(t.dataset.group!) ?? []), t.value]);
+  return groups;
+}
+
 // Facts past their re-verification date (PLAN.md §3). The exports give each fact a `due` date
 // (ingest/staleness.py); source lines carry it as data-due, and the browser compares it with today,
 // so a page built months ago still flags old facts without a rebuild.

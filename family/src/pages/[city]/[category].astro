@@ -1,0 +1,141 @@
+---
+// One map category as a list (baseny, lodowiska, zoo, teatr, stok, muzea, nocna pomoc): the same places,
+// facts, sources and filter chips as the map /<city>/, readable without the map. Categories without a
+// `list` in lib/map.ts (playgrounds: hundreds of points; bawialnie: own page) get no list page.
+import Base from "../../layouts/Base.astro";
+import Icon from "../../components/Icon.astro";
+import MapVenueCard from "../../components/MapVenueCard.astro";
+import { cityName } from "../../lib/data";
+import { CATEGORIES, TAGS, cityExports, cityMap, type Category, type MapPayload } from "../../lib/map";
+
+export function getStaticPaths() {
+  return cityExports.flatMap((ex) => {
+    const payload = cityMap(ex);
+    return CATEGORIES.filter((c) => c.list && payload.venues.some((v) => v.cat === c.id)).map((c) => ({
+      params: { city: ex.city, category: c.list!.slug },
+      props: { city: ex.city, cat: c, payload },
+    }));
+  });
+}
+interface Props {
+  city: string;
+  cat: Category;
+  payload: MapPayload;
+}
+const { city, cat, payload } = Astro.props;
+const list = cat.list!;
+const name = cityName(city);
+const inCity = name === "Poznań" ? "w Poznaniu" : `w mieście ${name}`;
+const venues = payload.venues.filter((v) => v.cat === cat.id).sort((a, b) => a.name.localeCompare(b.name, "pl"));
+const tags = TAGS.filter((t) => t.cat === cat.id)
+  .map((t) => ({ ...t, n: venues.filter((v) => v.tags.includes(t.id)).length }))
+  .filter((t) => t.n > 0);
+const others = CATEGORIES.filter((c) => c.list && c.id !== cat.id && payload.venues.some((v) => v.cat === c.id));
+const mapHref = `/${city}/?kat=${cat.id}`;
+---
+
+<Base title={`${list.title} ${inCity}`} section="gdzie" description={`${list.title} ${inCity} dla rodzin z małymi dziećmi: ${list.lead}`}>
+  <p class="crumb"><a href={`/${city}/`}>Mapa: z dzieckiem {inCity}</a></p>
+  <section class="page-hero">
+    <div>
+      <h1>{list.title} {inCity}</h1>
+      <p class="lead">{list.lead}</p>
+    </div>
+  </section>
+
+  <div class="filter cat-filter">
+    {
+      tags.map((t) => (
+        <label class="chip">
+          <input type="checkbox" name="tag" value={t.id} data-group={t.group} />
+          <span>
+            {t.chip} ({t.n})
+          </span>
+        </label>
+      ))
+    }
+    <span class="note-small" id="cat-count" aria-live="polite">{venues.length} miejsc na liście</span>
+    <a class="map-link" id="map-link" href={mapHref} data-base={mapHref}>
+      <Icon name="pin" size={18} />
+      Zobacz na mapie
+    </a>
+  </div>
+
+  <ul class="venues" id="cat-list">
+    {venues.map((v) => <MapVenueCard v={v} refs={payload.refs} />)}
+  </ul>
+  <p class="note-small" id="cat-empty" hidden>Żadne miejsce nie spełnia wszystkich wybranych warunków.</p>
+
+  <section class="cat-more">
+    <h2 class="h-small">Inne listy {inCity}</h2>
+    <ul class="cat-links">
+      <li><a href={`/${city}/bawialnie/`}>Bawialnie</a></li>
+      {others.map((c) => <li><a href={`/${city}/${c.list!.slug}/`}>{c.list!.title}</a></li>)}
+      <li><a href={`/${city}/`}>Wszystko na mapie, z placami zabaw</a></li>
+    </ul>
+    <p class="note-small">
+      Każda informacja ma link do źródła i datę sprawdzenia. Przed wyjściem sprawdź godziny i ceny u źródła.
+    </p>
+  </section>
+</Base>
+
+<script>
+  import { checkedTags, matchesTags } from "../../lib/format";
+
+  const inputs = [...document.querySelectorAll<HTMLInputElement>(".cat-filter input[name=tag]")];
+  const items = [...document.querySelectorAll<HTMLElement>("#cat-list > .venue")];
+  const count = document.getElementById("cat-count")!;
+  const empty = document.getElementById("cat-empty")!;
+  const mapLink = document.getElementById("map-link") as HTMLAnchorElement;
+
+  // 1 miejsce, 2–4 miejsca (but 12–14 miejsc), 5+ miejsc.
+  const places = (n: number) => {
+    const few = n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14);
+    return `${n} ${n === 1 ? "miejsce" : few ? "miejsca" : "miejsc"}`;
+  };
+
+  function apply() {
+    const checked = checkedTags(inputs);
+    let shown = 0;
+    for (const li of items) {
+      const ok = matchesTags((li.dataset.tags ?? "").split(" ").filter(Boolean), checked);
+      li.hidden = !ok;
+      if (ok) shown++;
+    }
+    count.textContent = checked.size ? `${places(shown)} z ${items.length}` : `${places(items.length)} na liście`;
+    empty.hidden = shown > 0;
+    const on = inputs.filter((i) => i.checked).map((i) => i.value);
+    mapLink.href = mapLink.dataset.base! + (on.length ? `&tag=${on.join(",")}` : "");
+  }
+  for (const i of inputs) i.addEventListener("change", apply);
+  apply();
+</script>
+
+<style>
+  .cat-filter {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .map-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-weight: 700;
+  }
+  .venue[hidden] {
+    display: none;
+  }
+  .cat-more {
+    margin-top: 2.5rem;
+  }
+  .h-small {
+    font-size: 1.2rem;
+  }
+  .cat-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.2rem;
+    padding: 0;
+    list-style: none;
+  }
+</style>

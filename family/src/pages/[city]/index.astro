@@ -2,9 +2,9 @@
 // City map: public playgrounds and night/holiday care points (open data) plus the curated indoor
 // playgrounds, with category filters. Every fact on a place card shows its source and date.
 import Base from "../../layouts/Base.astro";
-import Icon from "../../components/Icon.astro";
+import MapVenueCard from "../../components/MapVenueCard.astro";
 import { cityName, plDate } from "../../lib/data";
-import { CATEGORIES, TAGS, cityExports, cityMap, jsonForScript } from "../../lib/map";
+import { CATEGORIES, TAGS, category, cityExports, cityMap, jsonForScript } from "../../lib/map";
 
 export function getStaticPaths() {
   return cityExports.map((ex) => ({ params: { city: ex.city }, props: { ex } }));
@@ -16,9 +16,17 @@ const count = (cat: string) => payload.venues.filter((v) => v.cat === cat).lengt
 const tagCount = (tag: string) => payload.venues.filter((v) => v.tags.includes(tag)).length;
 const cats = CATEGORIES.filter((c) => count(c.id) > 0);
 const nisoz = payload.venues.filter((v) => v.cat === "nisoz").sort((a, b) => a.name.localeCompare(b.name, "pl"));
-const ref = (i: number) => payload.refs[i]!;
 const inCity = name === "Poznań" ? "w Poznaniu" : `w mieście ${name}`;
-const clientCats = Object.fromEntries(CATEGORIES.map((c) => [c.id, { color: c.color, radius: c.radius, label: c.chip }]));
+// List page per category (lib/map.ts `list`; bawialnie have their own page).
+const listHref = (id: string) => {
+  if (id === "sala_zabaw") return `/${ex.city}/bawialnie/`;
+  const slug = category(id).list?.slug;
+  return slug ? `/${ex.city}/${slug}/` : null;
+};
+const lists = cats.filter((c) => listHref(c.id));
+const clientCats = Object.fromEntries(
+  CATEGORIES.map((c) => [c.id, { color: c.color, radius: c.radius, label: c.chip, list: listHref(c.id) }]),
+);
 ---
 
 <Base title={`Z dzieckiem ${inCity}`} section="gdzie" description={`Place zabaw, bawialnie, baseny, lodowiska, zoo, teatr dla dzieci i nocna pomoc lekarska ${inCity} na jednej mapie, ze źródłami.`}>
@@ -57,6 +65,10 @@ const clientCats = Object.fromEntries(CATEGORIES.map((c) => [c.id, { color: c.co
       ))
     }
   </form>
+  <nav class="map-lists" aria-label="Listy miejsc">
+    <span class="note-small">Bez mapy, jako lista:</span>
+    {lists.map((c) => <a href={listHref(c.id)!}>{c.list?.title ?? "Bawialnie"}</a>)}
+  </nav>
 
   <div class="map-layout">
     <div class="map-box">
@@ -80,37 +92,7 @@ const clientCats = Object.fromEntries(CATEGORIES.map((c) => [c.id, { color: c.co
         <h2>Nocna i świąteczna pomoc lekarska {inCity}</h2>
         <p class="note-small">Punkty z mapy NFZ na pacjent.gov.pl.</p>
         <ul class="venues">
-          {nisoz.map((v) => (
-            <li class="venue">
-              <h3>{v.name}</h3>
-              {v.address && (
-                <p class="addr">
-                  <Icon name="pin" size={18} />
-                  {v.address}
-                </p>
-              )}
-              <ul class="venue-facts">
-                {v.facts.map((f) => (
-                  <li>
-                    <span>
-                      <strong>{f.label}:</strong> {f.note ?? f.short}
-                      <br />
-                      <span class="source" data-due={ref(f.ref).due}>
-                        <Icon name="check" size={16} />
-                        {ref(f.ref).url ? (
-                          <a href={ref(f.ref).url!} rel="noopener" target="_blank">
-                            {ref(f.ref).text}
-                          </a>
-                        ) : (
-                          <span>{ref(f.ref).text}</span>
-                        )}
-                      </span>
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))}
+          {nisoz.map((v) => <MapVenueCard v={v} refs={payload.refs} />)}
         </ul>
       </section>
     )
@@ -150,9 +132,11 @@ const clientCats = Object.fromEntries(CATEGORIES.map((c) => [c.id, { color: c.co
   import L from "leaflet";
   import "leaflet/dist/leaflet.css";
   import type { MapPayload, MapVenue } from "../../lib/map";
-  import { flagStale } from "../../lib/format";
+  import { checkedTags, flagStale, matchesTags } from "../../lib/format";
 
-  type Payload = MapPayload & { cats: Record<string, { color: string; radius: number; label: string }> };
+  type Payload = MapPayload & {
+    cats: Record<string, { color: string; radius: number; label: string; list: string | null }>;
+  };
   const dataEl = document.getElementById("mapa-dane");
   const status = document.getElementById("map-status")!;
   const card = document.getElementById("miejsce")!;
@@ -235,6 +219,14 @@ const clientCats = Object.fromEntries(CATEGORIES.map((c) => [c.id, { color: c.co
       a.rel = "noopener";
       card.append(a);
     }
+    const list = d.cats[v.cat]!.list;
+    if (list) {
+      const p = el("p", undefined, "note-small");
+      const a = el("a", `Wszystkie: ${d.cats[v.cat]!.label.toLowerCase()}, jako lista`);
+      a.href = list;
+      p.append(a);
+      card.append(p);
+    }
     if (focus) card.focus({ preventScroll: true });
     card.scrollIntoView({ block: "nearest", behavior: "smooth" });
   }
@@ -250,17 +242,33 @@ const clientCats = Object.fromEntries(CATEGORIES.map((c) => [c.id, { color: c.co
   function visible(): MapVenue[] {
     const fd = new FormData(form);
     const cats = new Set(fd.getAll("cat") as string[]);
-    // Checked tags per category and group: OR inside a group, AND across groups.
-    const groups = new Map<string, Map<string, string[]>>();
-    for (const t of form.querySelectorAll<HTMLInputElement>("input[name=tag]:checked")) {
-      const byGroup = groups.get(t.dataset.cat!) ?? new Map<string, string[]>();
-      byGroup.set(t.dataset.group!, [...(byGroup.get(t.dataset.group!) ?? []), t.value]);
-      groups.set(t.dataset.cat!, byGroup);
-    }
+    // Checked tags per category (OR inside a group, AND across groups; same rule as the list pages).
+    const tags = [...form.querySelectorAll<HTMLInputElement>("input[name=tag]")];
+    const byCat = new Map([...cats].map((c) => [c, checkedTags(tags.filter((t) => t.dataset.cat === c))]));
     return [...markers.values()]
       .map((x) => x.v)
-      .filter((v) => cats.has(v.cat) &&
-        [...(groups.get(v.cat)?.values() ?? [])].every((ids) => ids.some((id) => v.tags.includes(id))));
+      .filter((v) => cats.has(v.cat) && matchesTags(v.tags, byCat.get(v.cat)!));
+  }
+
+  // Deep link from a list page: /<city>/?kat=basen&tag=paddling shows only those categories and tags.
+  const params = new URLSearchParams(location.search);
+  const wantCats = params.get("kat")?.split(",").filter(Boolean) ?? [];
+  const wantTags = params.get("tag")?.split(",").filter(Boolean) ?? [];
+  if (wantCats.length) {
+    for (const i of form.querySelectorAll<HTMLInputElement>("input[name=cat]")) i.checked = wantCats.includes(i.value);
+  }
+  for (const i of form.querySelectorAll<HTMLInputElement>("input[name=tag]")) {
+    if (wantTags.includes(i.value)) i.checked = true;
+  }
+  const fitTo = wantCats.length
+    ? d.venues.filter((v) => wantCats.includes(v.cat) && v.lat !== null && v.lon !== null)
+    : [];
+  if (fitTo.length > 1) {
+    map.invalidateSize();
+    map.fitBounds(L.latLngBounds(fitTo.map((v) => [v.lat!, v.lon!] as [number, number])), {
+      padding: [30, 30],
+      animate: false,
+    });
   }
 
   // 1 miejsce, 2–4 miejsca (but 12–14 miejsc), 5+ miejsc.
@@ -332,6 +340,13 @@ const clientCats = Object.fromEntries(CATEGORIES.map((c) => [c.id, { color: c.co
     margin-right: 0.4rem;
     vertical-align: -0.05rem;
     box-shadow: 0 0 0 2px var(--white);
+  }
+  .map-lists {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.3rem 1rem;
+    margin-block: -0.25rem 1rem;
   }
   .map-layout {
     display: grid;
