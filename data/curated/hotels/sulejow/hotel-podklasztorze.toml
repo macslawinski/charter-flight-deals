@@ -17,7 +17,7 @@ official_url = "https://www.hotelpodklasztorze.pl/"
 address = "ul. Władysława Jagiełły 1, 97-330 Sulejów"
 lat = 51.36497  # OpenStreetMap node/683182942, ODbL
 lon = 19.87967
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

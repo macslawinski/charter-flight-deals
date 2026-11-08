@@ -16,7 +16,7 @@ official_url = "https://www.hotelnowagdynia.pl/"
 address = "ul. Sosnowa 1, 95-100 Zgierz"
 lat = 51.83131  # OpenStreetMap node/4674774883, ODbL
 lon = 19.41771
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

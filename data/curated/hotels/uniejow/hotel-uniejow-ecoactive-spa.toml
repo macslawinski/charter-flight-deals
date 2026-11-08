@@ -15,7 +15,7 @@ official_url = "https://www.hoteluniejow.pl/"
 address = "ul. Bł. Bogumiła 32, 99-210 Uniejów"
 lat = 51.97169  # OpenStreetMap way/385608010, ODbL
 lon = 18.79399
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

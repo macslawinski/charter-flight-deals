@@ -17,7 +17,7 @@ official_url = "https://hotelvitalia.pl/"
 address = "ul. Dominicka 24, Boszkowo-Letnisko, 64-140 Włoszakowice"
 lat = 51.95182  # OpenStreetMap node/3294985008, ODbL
 lon = 16.33151
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

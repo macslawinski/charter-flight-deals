@@ -16,7 +16,7 @@ official_url = "https://www.sielanka.pl/"
 address = "ul. Łąkowa 1, 05-660 Warka"
 lat = 51.7696381  # from the hotel's own map link
 lon = 21.1709156
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "playroom"

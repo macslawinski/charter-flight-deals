@@ -16,7 +16,7 @@ official_url = "https://www.hotel.bialowieza.pl/"
 address = "ul. Stoczek 218 B, 17-230 Białowieża"
 lat = 52.69703  # OpenStreetMap way/166477698, ODbL
 lon = 23.87789
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "kids_menu"

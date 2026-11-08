@@ -16,7 +16,7 @@ official_url = "https://mosznazamek.pl/"
 address = "ul. Zamkowa 1, Moszna, 47-370 Zielina"
 lat = 50.44079  # OpenStreetMap way/73054209, ODbL
 lon = 17.76793
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "high_chair"

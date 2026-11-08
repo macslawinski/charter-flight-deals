@@ -16,7 +16,7 @@ official_url = "https://indigowarsaw.com/"
 address = "ul. Smolna 40, 00-375 Warszawa"
 lat = 52.23273  # OpenStreetMap way/28126423, ODbL
 lon = 21.02125
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

@@ -15,7 +15,7 @@ official_url = "https://lawendowetermy.pl/"
 address = "ul. Jakuba Świnki 10, 99-210 Uniejów"
 lat = 51.96216  # OpenStreetMap way/171253107, ODbL
 lon = 18.78973
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "playroom"

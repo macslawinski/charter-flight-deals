@@ -16,7 +16,7 @@ official_url = "https://www.sobieniekrolewskie.pl/"
 address = "Sobienie Szlacheckie 64, 08-443 Sobienie Jeziory"
 lat = 51.9354401  # from the hotel's own map link
 lon = 21.3074547
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "playroom"

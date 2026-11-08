@@ -16,7 +16,7 @@ official_url = "https://www.artis-loft.pl/"
 address = "ul. Boczna 18, 96-325 Radziejowice-Parcel"
 lat = 51.99108  # OpenStreetMap way/698933208, ODbL
 lon = 20.54453
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

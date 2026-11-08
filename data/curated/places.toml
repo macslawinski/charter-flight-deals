@@ -874,3 +874,10 @@ name = "Pokrzywna"
 country = "Polska"
 region = "Góry Opawskie"
 kind = "domestic"
+
+[[place]]
+slug = "lubniewice"
+name = "Lubniewice"
+country = "Polska"
+region = "Pojezierze Lubuskie"
+kind = "domestic"

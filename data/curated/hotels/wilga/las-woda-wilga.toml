@@ -17,7 +17,7 @@ official_url = "https://www.las-woda.pl/"
 address = "ul. Spokojna 1, 08-470 Wilga"
 lat = 51.84372  # from the hotel's own map link
 lon = 21.436896
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

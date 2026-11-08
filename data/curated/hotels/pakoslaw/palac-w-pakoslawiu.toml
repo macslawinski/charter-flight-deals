@@ -17,7 +17,7 @@ official_url = "https://palacpakoslaw.pl/"
 address = "ul. Parkowa 14, 63-920 Pakosław"
 lat = 51.61778  # OpenStreetMap way/275563123, ODbL
 lon = 17.05949
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

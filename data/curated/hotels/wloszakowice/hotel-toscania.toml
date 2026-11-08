@@ -16,7 +16,7 @@ official_url = "https://hoteltoscania.pl/"
 address = "ul. Spokojna 4a, 64-140 Włoszakowice"
 lat = 51.92859  # OpenStreetMap way/428781437, ODbL
 lon = 16.36756
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

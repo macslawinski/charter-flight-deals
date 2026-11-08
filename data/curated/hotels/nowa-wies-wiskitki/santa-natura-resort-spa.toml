@@ -16,7 +16,7 @@ official_url = "https://www.santanatura.pl/"
 address = "Nowa Wieś 31, 96-315 Wiskitki"
 lat = 52.0626844  # from the hotel's own map link
 lon = 20.2664467
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "playground"

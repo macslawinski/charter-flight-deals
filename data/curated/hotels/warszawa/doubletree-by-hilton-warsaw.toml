@@ -16,7 +16,7 @@ official_url = "https://www.doubletreewarsaw.pl/"
 address = "ul. Skalnicowa 21, 04-797 Warszawa"
 lat = 52.1859856  # from the hotel's own map link
 lon = 21.1416035
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

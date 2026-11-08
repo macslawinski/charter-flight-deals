@@ -229,7 +229,7 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       Panorama Mszczonów (8), Łochów (8). Under 8: Skansen Sierpc (6), DoubleTree (6), Domaniowski (5), Sielanka
       (5), Kawallo (4), Santa Natura (3), Sobienie (3), Indigo (3). Skipped B&B Julinek Park (not a hotel). Car
       access only; train not checked. Lead left: Holiday Inn Józefów (no own kids page found).
-- [ ] U: decide which mazowieckie hotels to publish (all `draft`).
+- [x] U: decide which mazowieckie hotels to publish — user decision 2026-11-08: all published (incl. hotels under 8 facts).
 - [x] C: hotel leads kujawsko-pomorskie (2026-11-08, find-hotels): 7 leads, 0 do sprawdzenia, 6 skipped
       (`hotel_leads/kujawsko-pomorskie.toml`). Few family hotels in this voivodeship (OSM 299, probed 127).
       Strongest: Cukrownia Żnin, Herbarium, Pałac Romantyczny, Villa Park; weakest: Poledno.
@@ -238,7 +238,7 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       Herbarium (9), Cukrownia Żnin (8). Under 8: Copernicus Toruń (6), Pałac Romantyczny (5), Villa Park (4 +
       3 do potwierdzenia: free stay to 3, brodzik, paid parking, all only on a package page), Poledno (1).
       Skipped Przystań Bydgoszcz (obiekt noclegowy, not a hotel). Car access only; train not checked. No leads left.
-- [ ] U: decide which kujawsko-pomorskie hotels to publish (all `draft`).
+- [x] U: decide which kujawsko-pomorskie hotels to publish — user decision 2026-11-08: all published (incl. hotels under 8 facts).
 - [x] C: hotel leads wielkopolskie (2026-11-08, find-hotels): 10 leads, 1 do sprawdzenia (Moran, redirect loop:
       read in Chrome), 7 skipped (`hotel_leads/wielkopolskie.toml`). OSM 489, probed 281 (84 unreadable).
       Strongest: Barczyzna, Vitalia (Boszkowo), Pałac Pakosław, DeSilva Poznań; weakest: Grand Royal, Trzy Jeziora.
@@ -247,7 +247,7 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       Barczyzna (10). Under 8: DeSilva Poznań (7 + parking do potwierdzenia), Toscania (7), Pakosław (6),
       Kortowo (6), Vitalia (6). Skipped Moran (read in Chrome: animations from 5, nothing for 0-3), Grand Royal
       and Trzy Jeziora (0-3 items only in family packages). Car access only; train not checked. No leads left.
-- [ ] U: decide which wielkopolskie hotels to publish (all `draft`).
+- [x] U: decide which wielkopolskie hotels to publish — user decision 2026-11-08: all published (incl. hotels under 8 facts).
 - [x] C: lubelskie hotels, batch 1 (2026-11-08, published; leads in `hotel_leads/lubelskie.toml`): Zamek Janów
       Podlaski (9: free stay to 5, cot, bath, changing table, brodziki), Arche Nałęczów (7: brodzik until 19:00,
       playroom from 4, bottle warming), Trzy Korony Puławy (7: free cot, bath, changing table, free stay to 4),
@@ -266,15 +266,19 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       stay to 3, playroom), Stacja Nowa Gdynia Zgierz (7 + aquapark brodzik do potwierdzenia), Hotel Uniejów
       ecoActive (6), Lawendowe Termy Uniejów (3). Skipped Holiday Inn Łódź (package only), Stara Wieś (cottages),
       Aparthotel Termy Uniejów. Car access only; train not checked. No leads left.
-- [ ] U: decide which łódzkie hotels to publish (all `draft`).
+- [x] U: decide which łódzkie hotels to publish — user decision 2026-11-08: all published (incl. hotels under 8 facts).
 - [x] C: hotel leads podlaskie + opolskie (2026-11-08): OSM 153 / 112 objects + web search; 8 leads, all curated
       as `draft` (car access only, train not checked). Podlaskie: Hotel Warszawa Augustów (11 facts), Gołębiewski
       Białystok (5), Hotel Białowieski (5), Hotel Podlasie (4). Opolskie: Szara Willa Opole (10), Zamek Moszna (5 +
       1 do potwierdzenia: Pokój Rodzica = przewijak?), Dębowe Wzgórze (5), Weneda Opole (3). Skipped: Ibis Styles
       and Mercure (chain pages), Logos Augustów, Dworek Tryumf, Karczma Dobarz, Leśny Białystok, Borowinowy Zdrój,
       Biała Akacja, Antonio, DeSilva Opole. New trip groups "Podlasie i Augustów", "Opolszczyzna i Góry Opawskie".
-- [ ] U: decide which podlaskie / opolskie hotels to publish (all `draft`; Warszawa and Szara Willa reach 8 facts).
-- [ ] C: still no hotels in lubuskie.
+- [x] U: decide which podlaskie / opolskie hotels to publish — user decision 2026-11-08: all published (incl. hotels under 8 facts).
+- [x] C: hotel leads lubuskie (2026-11-08): OSM 205 objects (94 with a site, 88 probed) + web search; only 1 lead:
+      Hotel Woiński Spa, Lubniewice (2 facts + brodzik do potwierdzenia), published. Skipped Grand Boutique Rzepin
+      (business hotel, only a paid cot), Qubus Gorzów (chain package), Pałac Wiechlice, Ruben Hotel, Pałac Mierzęcin,
+      Winny Dworek, Pałac Brühla. Leftover: Kormoran Niesulice (holiday centre, not a hotel). New trip group
+      "Ziemia Lubuska". All 16 voivodeships now have hotels.
 - [ ] C: train access for the Karkonosze / Bieszczady hotels (Jelenia Góra, Kłodzko, Zagórz stations).
 - [ ] U (phone/e-mail, optional): Tremonti free-stay age (6 vs 3); Skalny SPA brodzik; Artus cot fee; Czarny
       Kamień cot fee; Arłamów cot fee and free-stay rule; most: playroom minimum age.

@@ -17,7 +17,7 @@ official_url = "https://www.desilva.pl/poznan/"
 address = "ul. Piekary 5, 61-823 Poznań"
 lat = 52.40523  # OpenStreetMap way/130277765, ODbL
 lon = 16.92789
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

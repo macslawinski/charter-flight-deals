@@ -18,7 +18,7 @@ official_url = "https://www.copernicustorunhotel.com/"
 address = "Bulwar Filadelfijski 11, 87-100 Toruń"
 lat = 53.00776  # the hotel's own map link
 lon = 18.59632
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

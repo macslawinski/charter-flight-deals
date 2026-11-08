@@ -16,7 +16,7 @@ official_url = "https://www.kawallo.pl/"
 address = "Leonów 7a, 09-533 Słubice"
 lat = 52.3983727  # from the hotel's own map link
 lon = 19.9286957
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "playroom"
