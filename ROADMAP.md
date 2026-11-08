@@ -115,6 +115,13 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       Mini Klub from 4, no brodzik). Car access only; train still to do. 16 leads left.
 - [ ] U (phone/e-mail, optional): cot fee and free-stay age at Morena, Gołębiewski Mikołajki and Anders
       (none of the three sites states them); Młyn free-stay age.
+- [x] C: warmińsko-mazurskie hotels, batch 3 (2026-11-08): Mrągowo Resort (8 facts: cot 60 zł/pobyt, playroom
+      from 1 with a parent, brodzik), Mazurski Raj (Piaski, 9: indoor brodzik with mini slides, own beach),
+      Kadyny Folwark (10: under 3 free, cot paid, no lift, beach ~1 km), Dr Irena Eris Wzgórza Dylewskie
+      (Wysoka Wieś, 9: free stay to 3rd birthday incl. meals, free cot, kids' pool). Skipped Warmia Park
+      (robots.txt blocks AI agents incl. Claude). Car access only. 11 leads left.
+- [ ] U (phone/e-mail, optional): Kadyny cot fee amount; Mazurski Raj and Mrągowo free-stay age; Mazurski Raj
+      Kraina Kłobuka minimum age and whether a parent must stay.
 - [x] ~~U: decide which pomorskie hotels to publish (all are `draft`);~~ superseded above; those under 8 facts need a phone or e-mail
       round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Kiston cot fee, free-stay age, brodzik; Primavera cot fee, Playland age;

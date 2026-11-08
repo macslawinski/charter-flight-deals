@@ -294,3 +294,31 @@ name = "Stare Jabłonki"
 country = "Polska"
 region = "Mazury"
 kind = "domestic"
+
+[[place]]
+slug = "mragowo"
+name = "Mrągowo"
+country = "Polska"
+region = "Mazury"
+kind = "domestic"
+
+[[place]]
+slug = "piaski"
+name = "Piaski (Ruciane-Nida)"
+country = "Polska"
+region = "Mazury"
+kind = "domestic"
+
+[[place]]
+slug = "kadyny"
+name = "Kadyny"
+country = "Polska"
+region = "Zalew Wiślany"
+kind = "domestic"
+
+[[place]]
+slug = "wysoka-wies"
+name = "Wysoka Wieś"
+country = "Polska"
+region = "Mazury"
+kind = "domestic"
