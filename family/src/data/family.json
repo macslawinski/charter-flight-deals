@@ -1614,6 +1614,251 @@
     {
      "from_code": "Kraków",
      "from_kind": "city",
+     "minutes": 90,
+     "mode": "car",
+     "note": "100 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.3885%2C20.0992",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 125,
+     "mode": "car",
+     "note": "170 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.3885%2C20.0992",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 240,
+     "mode": "car",
+     "note": "360 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.3885%2C20.0992",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 280,
+     "mode": "car",
+     "note": "400 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.3885%2C20.0992",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 360,
+     "mode": "car",
+     "note": "550 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.3885%2C20.0992",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 420,
+     "mode": "car",
+     "note": "690 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.3885%2C20.0992",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "Środkowa 181, 34-405 Białka Tatrzańska",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Do pokoju można bezpłatnie zamówić łóżeczko (FAQ na stronie dla rodzin).",
+     "short": "Bezpłatne łóżeczko na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelbania.pl/hotel-z-animacjami-dla-dzieci-w-gorach",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_monitor",
+     "note": "Do pokoju można bezpłatnie zamówić nianię elektroniczną (FAQ).",
+     "short": "Bezpłatna niania elektroniczna",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelbania.pl/hotel-z-animacjami-dla-dzieci-w-gorach",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W restauracjach są wysokie krzesełka (FAQ).",
+     "short": "Wysokie krzesełka w restauracjach",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelbania.pl/hotel-z-animacjami-dla-dzieci-w-gorach",
+     "value": {
+      "available": true,
+      "where": "restaurants"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "W restauracjach jest dedykowane menu dla dzieci (FAQ).",
+     "short": "Menu dla dzieci w restauracjach",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelbania.pl/hotel-z-animacjami-dla-dzieci-w-gorach",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Do pokoju można bezpłatnie zamówić podgrzewacz do butelek (FAQ).",
+     "short": "Bezpłatny podgrzewacz do butelek",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelbania.pl/hotel-z-animacjami-dla-dzieci-w-gorach",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Do pokoju można bezpłatnie zamówić wanienkę (FAQ).",
+     "short": "Bezpłatna wanienka na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelbania.pl/hotel-z-animacjami-dla-dzieci-w-gorach",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "W całym resorcie są ogólnodostępne przewijaki (FAQ).",
+     "short": "Ogólnodostępne przewijaki w resorcie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelbania.pl/hotel-z-animacjami-dla-dzieci-w-gorach",
+     "value": {
+      "available": true,
+      "where": "public_toilets"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Do pokoju można bezpłatnie zamówić podest (FAQ). Nocnika strona nie wymienia.",
+     "short": "Podest do łazienki na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelbania.pl/hotel-z-animacjami-dla-dzieci-w-gorach",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true,
+      "step_stool": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Górska Kraina na 1. piętrze: Małpi Gaj, basen z kulkami, kącik kreatywny, ścianka wspinaczkowa; dzieci mogą się tam bawić pod opieką animatorów w godzinach otwarcia (godzin strona nie podaje). W lobby mini sala zabaw. Minimalnego wieku strona nie podaje; dla najmłodszych hotel poleca zamówienie opiekunki.",
+     "short": "Górska Kraina z basenem z kulkami + sala w lobby",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelbania.pl/hotel-z-animacjami-dla-dzieci-w-gorach",
+     "value": {
+      "available": true,
+      "supervised": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Codziennie 9:00–18:00 dedykowany animator zapewnia dzieciom opiekę i zabawę; program zależy od sezonu (dostępny w recepcji). Animacje dla dzieci w różnym wieku; minimalnego wieku strona nie podaje.",
+     "short": "Animator codziennie 9:00–18:00",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelbania.pl/hotel-z-animacjami-dla-dzieci-w-gorach",
+     "value": {
+      "available": true,
+      "close": "18:00",
+      "open": "09:00"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Ogród Zabaw (ponad 10 000 m²) czynny latem codziennie 10:00–18:00, zależnie od pogody: ogromna piaskownica, zadaszony tor z jeździkami dla maluchów (płatny), karuzela, poducha i inne atrakcje (część płatna).",
+     "short": "Ogród Zabaw latem 10–18, piaskownica, jeździki",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelbania.pl/hotel-z-animacjami-dla-dzieci-w-gorach",
+     "value": {
+      "available": true,
+      "close": "18:00",
+      "open": "10:00",
+      "outdoor": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_pool",
+     "note": "W Termie Bania rodzinna Strefa Zabawy (ok. 400 m²): pięć basenów z wodą termalną do 36°C, wodny plac zabaw z gejzerami i grzybkami, dmuchane zjeżdżalnie. Czy wejście jest w cenie pobytu, ta strona nie podaje.",
+     "short": "Strefa Zabawy w Termie: baseny i wodny plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelbania.pl/hotel-z-animacjami-dla-dzieci-w-gorach",
+     "value": {
+      "available": true,
+      "splash_park": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.3885399,
+   "lon": 20.0992181,
+   "name": "Hotel Bania Thermal & Ski",
+   "official_url": "https://hotelbania.pl/",
+   "place": "bialka-tatrzanska",
+   "slug": "bania-bialka-tatrzanska",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
      "minutes": 100,
      "mode": "car",
      "note": "110 km",
@@ -10324,6 +10569,147 @@
     {
      "from_code": "Kraków",
      "from_kind": "city",
+     "minutes": 5,
+     "mode": "car",
+     "note": "poniżej 1 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.0639%2C19.9294",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 55,
+     "mode": "car",
+     "note": "80 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.0639%2C19.9294",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 170,
+     "mode": "car",
+     "note": "270 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.0639%2C19.9294",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 200,
+     "mode": "car",
+     "note": "300 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.0639%2C19.9294",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 290,
+     "mode": "car",
+     "note": "460 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.0639%2C19.9294",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 350,
+     "mode": "car",
+     "note": "600 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.0639%2C19.9294",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Józefa Szujskiego 4, 31-123 Kraków",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko dziecięce bezpłatnie na życzenie; liczba ograniczona, potrzebę trzeba zgłosić zaraz po rezerwacji (FAQ oferty dla rodzin).",
+     "short": "Bezpłatne łóżeczko na życzenie (ograniczona liczba)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://grandascot.pl/oferty/oferta-dla-rodzin-z-dziecmi/",
+     "value": {
+      "available": true,
+      "free": true,
+      "limited": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja Four ma kids menu.",
+     "short": "Kids menu w restauracji Four",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://grandascot.pl/oferty/oferta-dla-rodzin-z-dziecmi/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka dziecięca bezpłatnie na życzenie (strona apartamentu Family Suite i FAQ oferty dla rodzin).",
+     "short": "Bezpłatna wanienka na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://grandascot.pl/apartamenty/family-suite/",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "W hotelu jest bawialnia (kącik zabaw) dla najmłodszych. Minimalnego wieku, godzin ani tego, czy rodzic musi zostać, strona nie podaje.",
+     "short": "Bawialnia / kącik zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://grandascot.pl/oferty/oferta-dla-rodzin-z-dziecmi/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Podziemny garaż pod budynkiem, 120 zł za dobę, wymaga wcześniejszej rezerwacji (najlepiej razem z pokojem).",
+     "short": "Garaż podziemny 120 zł/doba, z rezerwacją",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://grandascot.pl/udogodnienia-w-hotelu/parking-w-krakowie/",
+     "value": {
+      "fee_pln_per_day": 120,
+      "garage": true,
+      "paid": true,
+      "reservation_required": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.0639091,
+   "lon": 19.9293605,
+   "name": "Grand Ascot Hotel",
+   "official_url": "https://grandascot.pl/",
+   "place": "krakow",
+   "slug": "grand-ascot-krakow",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
      "minutes": 10,
      "mode": "car",
      "note": "10 km",
@@ -18322,6 +18708,114 @@
   {
    "access": [
     {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 120,
+     "mode": "car",
+     "note": "120 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.4282%2C20.4775",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 155,
+     "mode": "car",
+     "note": "200 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.4282%2C20.4775",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 270,
+     "mode": "car",
+     "note": "390 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.4282%2C20.4775",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 305,
+     "mode": "car",
+     "note": "420 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.4282%2C20.4775",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 385,
+     "mode": "car",
+     "note": "570 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.4282%2C20.4775",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 445,
+     "mode": "car",
+     "note": "710 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.4282%2C20.4775",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "Park Dolny 10, 34-460 Szczawnica",
+   "features": [
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Na najmłodszych czeka nowocześnie, oryginalnie wyposażona bawialnia. Minimalnego wieku, godzin ani tego, czy rodzic musi zostać, strona nie podaje.",
+     "short": "Bawialnia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelmaria-szczawnica.pl/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "W strefie Wellness brodzik dla dzieci z atrakcjami; dzieci pod opieką dorosłych. Głębokości ani temperatury strona nie podaje.",
+     "short": "Brodzik z atrakcjami w strefie Wellness",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelmaria-szczawnica.pl/spa-and-wellness",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Przy hotelu monitorowany, darmowy parking dla gości (FAQ na stronie głównej).",
+     "short": "Bezpłatny parking monitorowany",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelmaria-szczawnica.pl/",
+     "value": {
+      "free": true,
+      "monitored": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.4282368,
+   "lon": 20.4774711,
+   "name": "Hotel Maria",
+   "official_url": "https://www.hotelmaria-szczawnica.pl/",
+   "place": "szczawnica",
+   "slug": "maria-szczawnica",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
      "from_code": "Gdańsk",
      "from_kind": "city",
      "minutes": 205,
@@ -23524,6 +24018,22 @@
    "name": "Jerzmanowice",
    "region": "Jura Krakowsko-Częstochowska",
    "slug": "jerzmanowice"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Białka Tatrzańska",
+   "region": "Tatry i Podhale",
+   "slug": "bialka-tatrzanska"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Szczawnica",
+   "region": "Pieniny",
+   "slug": "szczawnica"
   }
  ],
  "rule_keys": [

@@ -15,7 +15,7 @@ lat = 49.3885399
 lon = 20.0992181
 signals = []
 why = "Do sprawdzenia: duży resort rodzinny (sale zabaw, przedszkole narciarskie, basen); sonda widziała łóżeczko, wanienkę i podgrzewacz na /bania-kids, WebFetch ich nie widzi (treść w JS?); czytać w Chrome."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Bukovina"
@@ -99,7 +99,7 @@ lat = 50.0639091
 lon = 19.9293605
 signals = ["łóżeczko", "wanienka"]
 why = "Bezpłatne łóżeczko i wanienka na życzenie (zaznaczyć przy rezerwacji), kącik zabaw w hotelu."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Swing"
@@ -134,7 +134,8 @@ lat = 49.4251305
 lon = 20.95286
 signals = []
 why = "Do sprawdzenia: portale piszą o sali zabaw, miniklubie i łóżeczku; strona hotelu ma błędny certyfikat TLS (WebFetch się nie łączy); czytać w Chrome."
-status = "lead"
+status = "skipped"
+skip_reason = "Strona hotelu niedostępna: błędny certyfikat TLS, przez http też brak odpowiedzi, robots.txt nie do sprawdzenia; bez obchodzenia ostrzeżenia o certyfikacie (2026-11-08)."
 
 [[lead]]
 name = "Piastun SPA & Wellness"
@@ -181,7 +182,7 @@ lat = 49.4282368
 lon = 20.4774711
 signals = ["brodzik", "bawialnia"]
 why = "Brodzik dla dzieci w strefie SPA, bawialnia i kącik zabaw; łóżeczka strona główna nie wymienia."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Bachleda Hotel Kasprowy"

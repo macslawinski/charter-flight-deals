@@ -420,3 +420,17 @@ name = "Jerzmanowice"
 country = "Polska"
 region = "Jura Krakowsko-Częstochowska"
 kind = "domestic"
+
+[[place]]
+slug = "bialka-tatrzanska"
+name = "Białka Tatrzańska"
+country = "Polska"
+region = "Tatry i Podhale"
+kind = "domestic"
+
+[[place]]
+slug = "szczawnica"
+name = "Szczawnica"
+country = "Polska"
+region = "Pieniny"
+kind = "domestic"
