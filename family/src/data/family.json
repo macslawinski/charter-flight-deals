@@ -3415,6 +3415,239 @@
     {
      "from_code": "Gdańsk",
      "from_kind": "city",
+     "minutes": 50,
+     "mode": "car",
+     "note": "60 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.1736%2C19.4249",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 195,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.1736%2C19.4249",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 240,
+     "mode": "car",
+     "note": "350 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.1736%2C19.4249",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 340,
+     "mode": "car",
+     "note": "580 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.1736%2C19.4249",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 345,
+     "mode": "car",
+     "note": "530 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.1736%2C19.4249",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 380,
+     "mode": "car",
+     "note": "650 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.1736%2C19.4249",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Kościuszki 132, 82-300 Elbląg",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko niemowlęce za 15 zł za dobę; trzeba je zarezerwować wcześniej.",
+     "short": "15 zł/doba, rezerwacja wcześniej",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelmlyn.com.pl/pl/p/49/faq-pytania-i-odpowiedzi",
+     "value": {
+      "available": true,
+      "fee_pln_per_night": 15,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka do karmienia w restauracji.",
+     "short": "Krzesełka w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelmlyn.com.pl/pl/p/8/dla-dzieci-i-doroslych",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja ma menu dla dzieci.",
+     "short": "Menu dla dzieci w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelmlyn.com.pl/pl/p/8/dla-dzieci-i-doroslych",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka wśród rzeczy dostępnych w pokoju. Opłaty strona nie podaje.",
+     "short": "Wanienka w pokoju",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelmlyn.com.pl/pl/p/8/dla-dzieci-i-doroslych",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Przewijak w restauracji.",
+     "short": "Przewijak w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelmlyn.com.pl/pl/p/8/dla-dzieci-i-doroslych",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Nocnik wśród rzeczy dostępnych w pokoju. Opłaty strona nie podaje.",
+     "short": "Nocnik w pokoju",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelmlyn.com.pl/pl/p/8/dla-dzieci-i-doroslych",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Pokój zabaw przy recepcji, także dla dzieci czekających na posiłek w restauracji. Minimalnego wieku, godzin ani opieki strona nie podaje.",
+     "short": "Pokój zabaw przy recepcji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelmlyn.com.pl/pl/p/8/dla-dzieci-i-doroslych",
+     "value": {
+      "available": true,
+      "where": "reception"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Przy hotelu niewielki plac zabaw: trampolina, huśtawki, zjeżdżalnie, slackline. Obok hotelu duży publiczny plac zabaw w Parku Dolinka.",
+     "short": "Mały plac zabaw z trampoliną",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelmlyn.com.pl/pl/p/49/faq-pytania-i-odpowiedzi",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Brodzik z małą zjeżdżalnią i parasolem wodnym w hotelowym Aqua SPA (czynne w dni robocze 13:00–22:00, w wakacje od 11:00, w weekendy 8:00–22:00). Regulamin: dzieci do 12 lat tylko z dorosłym, dzieci do 2 lat w pieluchomajtkach do pływania pod kąpielówkami. Temperatury wody strona nie podaje.",
+     "short": "Brodzik ze zjeżdżalnią w Aqua SPA",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelmlyn.com.pl/pl/aquaspa/",
+     "value": {
+      "available": true,
+      "slide": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "lift",
+     "note": "W budynkach hotelu są windy, na zewnątrz podjazdy.",
+     "short": "Windy w budynkach",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelmlyn.com.pl/pl/p/49/faq-pytania-i-odpowiedzi",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "stroller_rental",
+     "note": "Hotel bezpłatnie pożycza wózek-spacerówkę.",
+     "short": "Wózek-spacerówka bezpłatnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelmlyn.com.pl/pl/p/49/faq-pytania-i-odpowiedzi",
+     "value": {
+      "available": true,
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking dla gości 25 zł za dobę; wszystkie parkingi przy hotelu są płatne. Czy jest strzeżony, strona nie podaje.",
+     "short": "25 zł/doba",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelmlyn.com.pl/pl/p/49/faq-pytania-i-odpowiedzi",
+     "value": {
+      "fee_pln_per_day": 25,
+      "paid": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 54.1735775,
+   "lon": 19.4248562,
+   "name": "Hotel Młyn",
+   "official_url": "https://www.hotelmlyn.com.pl/",
+   "place": "elblag",
+   "slug": "mlyn-elblag",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
      "minutes": 5,
      "mode": "car",
      "note": "0 km",
@@ -5512,6 +5745,214 @@
    "official_url": "https://www.primaveraspa.pl/",
    "place": "jastrzebia-gora",
    "slug": "primavera-jastrzebia-gora",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 185,
+     "mode": "car",
+     "note": "260 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.9132%2C22.2279",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 265,
+     "mode": "car",
+     "note": "330 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.9132%2C22.2279",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 355,
+     "mode": "car",
+     "note": "560 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.9132%2C22.2279",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 360,
+     "mode": "car",
+     "note": "580 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.9132%2C22.2279",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 380,
+     "mode": "car",
+     "note": "560 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.9132%2C22.2279",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 395,
+     "mode": "car",
+     "note": "600 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.9132%2C22.2279",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "Jeziorowskie 11a, 19-330 Stare Juchy",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na życzenie łóżeczko z pościelą w pokoju rodziców. Opłaty strona nie podaje.",
+     "short": "Z pościelą, na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.siedliskomorena.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "bedding": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka dziecięce w restauracji.",
+     "short": "Krzesełka w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.siedliskomorena.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Specjalnie przygotowane menu dla dzieci, domowe dania.",
+     "short": "Osobne menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.siedliskomorena.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka do kąpieli na życzenie, do tego podest do kąpieli. Opłaty strona nie podaje.",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.siedliskomorena.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Strona wymienia przewijaki wśród rzeczy, z których można korzystać w pokojach.",
+     "short": "Przewijak w pokoju",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.siedliskomorena.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "rooms"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Nocnik na życzenie.",
+     "short": "Nocnik na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.siedliskomorena.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala zabaw w hotelu dla maluchów i przedszkolaków. Minimalnego wieku, godzin ani opieki strona nie podaje.",
+     "short": "Sala zabaw dla maluchów",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.siedliskomorena.pl/atrakcje",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Ogrodzony plac zabaw tuż przy basenie zewnętrznym: zjeżdżalnia, huśtawki, drabinki, piaskownica, trampolina.",
+     "short": "Ogrodzony, przy basenie zewnętrznym",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.siedliskomorena.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "fenced": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animacje i pokazy dla dzieci (np. robienie lizaków, warsztaty). Wieku ani terminów strona nie podaje.",
+     "short": "Animacje i pokazy",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.siedliskomorena.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Brodzik z fontanną dla najmłodszych obok głębszej wody dla starszych; strona opisuje go przy basenie zewnętrznym, podgrzewanym w okresie letnim. Temperatury i godzin strona nie podaje.",
+     "short": "Brodzik z fontanną przy basenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.siedliskomorena.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "fountain": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 53.913202,
+   "lon": 22.227854,
+   "name": "Siedlisko Morena",
+   "official_url": "https://www.siedliskomorena.pl/",
+   "place": "jeziorowskie",
+   "slug": "siedlisko-morena-jeziorowskie",
    "status": "published"
   },
   {
@@ -9953,6 +10394,251 @@
     {
      "from_code": "Gdańsk",
      "from_kind": "city",
+     "minutes": 195,
+     "mode": "car",
+     "note": "260 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.8047%2C21.5585",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 200,
+     "mode": "car",
+     "note": "250 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.8047%2C21.5585",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 360,
+     "mode": "car",
+     "note": "450 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.8047%2C21.5585",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 375,
+     "mode": "car",
+     "note": "570 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.8047%2C21.5585",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 395,
+     "mode": "car",
+     "note": "550 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.8047%2C21.5585",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 410,
+     "mode": "car",
+     "note": "590 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.8047%2C21.5585",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Mrągowska 34, 11-730 Mikołajki",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na życzenie łóżeczko turystyczne z pościelą. Opłaty strona nie podaje.",
+     "short": "Turystyczne z pościelą, na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.golebiewski.pl/mikolajki/dzieci",
+     "value": {
+      "available": true,
+      "bedding": true,
+      "on_request": true,
+      "travel_cot": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka dziecięce w restauracji, w cenie pobytu.",
+     "short": "W restauracji, w cenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.golebiewski.pl/mikolajki/info",
+     "value": {
+      "available": true,
+      "free": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Menu dla dzieci; do tego warsztaty kulinarne dla dzieci.",
+     "short": "Menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.golebiewski.pl/mikolajki/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "W Restauracji Czerwonej jest mikrofalówka do podgrzewania posiłków dla dzieci.",
+     "short": "Mikrofalówka w Restauracji Czerwonej",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.golebiewski.pl/mikolajki/dzieci",
+     "value": {
+      "available": true,
+      "microwave": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka na życzenie. Opłaty strona nie podaje.",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.golebiewski.pl/mikolajki/dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Nocnik na życzenie.",
+     "short": "Nocnik na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.golebiewski.pl/mikolajki/dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Klub dla dzieci z salą zabaw (małpi gaj, baseny z kulkami, klocki), tylko dla gości hotelu, codziennie 9:00–19:00; w dniach 06.12–14.12.2026 9:00–17:00. Dzieci przebywają pod opieką dorosłych. Minimalnego wieku strona nie podaje.",
+     "short": "Klub 9:00–19:00, dzieci z dorosłym",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.golebiewski.pl/mikolajki/dzieci",
+     "value": {
+      "available": true,
+      "close": "19:00",
+      "guests_only": true,
+      "open": "09:00",
+      "with_parent": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Plac zabaw Tagolandia, strona zaprasza na niego w okresie wiosenno-letnim.",
+     "short": "Tagolandia, wiosną i latem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.golebiewski.pl/mikolajki/dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Zajęcia dla dzieci w różnych grupach wiekowych; w wakacje, ferie i święta dodatkowy program. Od jakiego wieku, strona nie podaje.",
+     "short": "Zajęcia; więcej w wakacje i ferie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.golebiewski.pl/mikolajki/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Park wodny Tropikana, bezpłatny dla gości hotelu: brodzik z ciepłą wodą (ok. 35–36°C) i piaskownicą, zjeżdżalnie dla najmłodszych; latem także brodzik i piaskownica na zewnątrz. Dzieci do 14 lat tylko pod opieką dorosłych. Godziny 01.09–30.12.2026 (bez świąt i długich weekendów): pn–pt 11:00–16:00, sb–nd 9:00–16:00, codziennie 16:00–21:00.",
+     "short": "Ciepły brodzik z piaskownicą, 35–36°C",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.golebiewski.pl/mikolajki/park-wodny",
+     "value": {
+      "heated": true,
+      "indoor": true,
+      "outdoor": true,
+      "outdoor_seasonal": true,
+      "sandpit": true,
+      "water_temp_c": "35-36"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Plaża 100 m od hotelu.",
+     "short": "Plaża 100 m",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.golebiewski.pl/mikolajki/info",
+     "value": {
+      "distance_m": 100
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking płatny, 50 zł za samochód za dobę; miejsc nie można rezerwować. Czy jest strzeżony, strona nie podaje.",
+     "short": "50 zł/doba, bez rezerwacji miejsc",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.golebiewski.pl/mikolajki/info",
+     "value": {
+      "fee_pln_per_day": 50,
+      "paid": true,
+      "reservable": false
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 53.8046646,
+   "lon": 21.5584602,
+   "name": "Hotel Gołębiewski Mikołajki",
+   "official_url": "https://www.golebiewski.pl/mikolajki",
+   "place": "mikolajki",
+   "slug": "golebiewski-mikolajki",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
      "minutes": 125,
      "mode": "car",
      "note": "170 km",
@@ -12862,6 +13548,219 @@
    "official_url": "https://villabaltica.com/",
    "place": "sopot",
    "slug": "villa-baltica-sopot",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 95,
+     "mode": "car",
+     "note": "140 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.6880%2C20.0991",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 150,
+     "mode": "car",
+     "note": "210 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.6880%2C20.0991",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 260,
+     "mode": "car",
+     "note": "320 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.6880%2C20.0991",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 325,
+     "mode": "car",
+     "note": "480 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.6880%2C20.0991",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 350,
+     "mode": "car",
+     "note": "520 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.6880%2C20.0991",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 360,
+     "mode": "car",
+     "note": "510 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.6880%2C20.0991",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Spacerowa 2, 14-133 Stare Jabłonki",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko dla dziecka można zamówić przez recepcję. Opłaty strona nie podaje.",
+     "short": "Do zamówienia w recepcji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelanders.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_monitor",
+     "note": "Elektroniczną nianię z czujnikiem ruchu można wypożyczyć w recepcji. Opłaty strona nie podaje.",
+     "short": "Z czujnikiem ruchu, w recepcji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelanders.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "motion_sensor": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełko do karmienia w restauracji.",
+     "short": "W restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelanders.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Osobne menu dla dzieci w Restauracji Pałacowej (na stronie jako PDF).",
+     "short": "Osobne menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelanders.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienki do kąpieli dla dzieci zamawia się w recepcji. Opłaty strona nie podaje.",
+     "short": "Przez recepcję",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelanders.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Ogólnodostępna toaleta z przewijakiem obok klubu nocnego, poziom -1.",
+     "short": "W toalecie na poziomie -1",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelanders.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "public_toilets"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Pokój Zabaw z Małpim Gajem codziennie 7:00–22:00, w cenie pobytu; dzieci są w nim pod opieką dorosłych. Drugi małpi gaj w sali kręgielni, 7:00–21:00, tylko z rodzicami lub opiekunami. Minimalnego wieku strona nie podaje.",
+     "short": "Małpi gaj 7:00–22:00, z dorosłym",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelanders.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "close": "22:00",
+      "free": true,
+      "open": "07:00",
+      "with_parent": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Plac zabaw na terenie rekreacyjnym obok budynku restauracji, dostępny głównie wiosną, latem i jesienią.",
+     "short": "Głównie od wiosny do jesieni",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelanders.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": "3+",
+     "key": "kids_animation",
+     "note": "Mini Klub z animatorami dla dzieci od 4 lat, w cenie pobytu; działa w wakacje, ferie, święta i wybrane weekendy, w godzinach z programu pobytu.",
+     "short": "Mini Klub od 4 lat, w wakacje i ferie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelanders.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "min_age_years": 4,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking przy hotelu jest płatny i niestrzeżony (regulamin parkingu). Stawki strona nie podaje.",
+     "short": "Płatny, niestrzeżony",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://wa-uploads.profitroom.com/hotelanders/1769610186873_HotelAndersRegulaminParkingu.pdf",
+     "value": {
+      "guarded": false,
+      "paid": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 53.687954,
+   "lon": 20.099133,
+   "name": "Hotel Anders",
+   "official_url": "https://www.hotelanders.pl/",
+   "place": "stare-jablonki",
+   "slug": "anders-stare-jablonki",
    "status": "published"
   },
   {
@@ -16392,6 +17291,38 @@
    "name": "Mortęgi",
    "region": "Pojezierze Iławskie",
    "slug": "mortegi"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Elbląg",
+   "region": "Zalew Wiślany",
+   "slug": "elblag"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Jeziorowskie",
+   "region": "Mazury",
+   "slug": "jeziorowskie"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Mikołajki",
+   "region": "Mazury",
+   "slug": "mikolajki"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Stare Jabłonki",
+   "region": "Mazury",
+   "slug": "stare-jablonki"
   }
  ],
  "rule_keys": [

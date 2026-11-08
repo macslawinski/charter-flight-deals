@@ -16,7 +16,7 @@ lat = 54.17338
 lon = 19.424966
 signals = ["łóżeczko", "wanienka", "krzesełko", "przewijak", "brodzik"]
 why = "Łóżeczko i wanienka w pokoju, krzesełka i przewijak w restauracji, brodzik z małą zjeżdżalnią."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Giżycko"
@@ -75,7 +75,7 @@ lat = 53.913202
 lon = 22.227854
 signals = ["łóżeczko", "wanienka", "podgrzewacz", "przewijak", "krzesełko", "brodzik"]
 why = "Łóżeczko z pościelą, wanienka, podgrzewacz do butelek, przewijaki w pokojach, krzesełka, brodzik z fontanną."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Mikołajki Resort Hotel & Spa"
@@ -118,7 +118,7 @@ lat = 53.804599
 lon = 21.558021
 signals = ["łóżeczko turystyczne", "wanienka", "brodzik", "sala zabaw"]
 why = "Łóżeczko turystyczne i wanienka na życzenie, brodzik z ciepłą wodą i piaskownicą w Tropikanie, sala zabaw z małpim gajem."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Mikołajki"
@@ -213,7 +213,7 @@ lat = 53.687954
 lon = 20.099133
 signals = ["łóżeczko", "wanienka", "krzesełko", "przewijak"]
 why = "Łóżeczko i wanienki przez recepcję, krzesełko w restauracji, toaleta z przewijakiem, sala zabaw 7–22 (Mini Klub od 4 lat)."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Robert's Port"

@@ -1,0 +1,169 @@
+# Facts from the hotel's own website (hotelanders.pl; robots.txt allows all, checked 2026-11-08):
+# /dla-dzieci, /spa-wellness/hotel-z-basenem-mazury, /kontakt, /hotel/wazne-informacje, the parking and pool
+# regulations (PDFs on wa-uploads.profitroom.com/hotelanders). Written in our words.
+# Also on the site, no feature key for it: paid babysitting on request; children's bikes and bikes with child
+# seats for hire (10 zł per bike per hour); a paediatrician's phone number at reception; nappy bags in the room,
+# disposable bibs and plastic dishes in the restaurant. Pool (indoor per the photo caption, 07:00-21:00, free
+# for guests); pool rules: children under 7 only with supervision, under 3 only in swim nappies; no brodzik
+# mentioned. "Dziecko do lat 12 gratis" appears only in dated offers (Nov-Dec 2026), not as a hotel rule.
+# Not stated (so not recorded yet): cot fee, free-stay age, bottle warmer, potty, paddling pool, lift, parking fee.
+#
+# Coordinates: OpenStreetMap way/356651141 (centre; (c) OpenStreetMap contributors, ODbL); the hotel's map link
+# is a short link without coordinates.
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet (nearest station Stare Jabłonki, regional line Olsztyn-Iława).
+slug = "anders-stare-jablonki"
+place = "stare-jablonki"
+name = "Hotel Anders"
+official_url = "https://www.hotelanders.pl/"
+address = "ul. Spacerowa 2, 14-133 Stare Jabłonki"
+lat = 53.687954
+lon = 20.099133
+status = "published"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true }
+short = "Do zamówienia w recepcji"
+note = "Łóżeczko dla dziecka można zamówić przez recepcję. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelanders.pl/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_monitor"
+value = { available = true, on_request = true, motion_sensor = true }
+short = "Z czujnikiem ruchu, w recepcji"
+note = "Elektroniczną nianię z czujnikiem ruchu można wypożyczyć w recepcji. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelanders.pl/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "high_chair"
+value = { available = true, where = "restaurant" }
+short = "W restauracji"
+note = "Krzesełko do karmienia w restauracji."
+source = "hotel_website"
+url = "https://www.hotelanders.pl/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Osobne menu dla dzieci"
+note = "Osobne menu dla dzieci w Restauracji Pałacowej (na stronie jako PDF)."
+source = "hotel_website"
+url = "https://www.hotelanders.pl/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, on_request = true }
+short = "Przez recepcję"
+note = "Wanienki do kąpieli dla dzieci zamawia się w recepcji. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelanders.pl/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "changing_table"
+value = { available = true, where = "public_toilets" }
+short = "W toalecie na poziomie -1"
+note = "Ogólnodostępna toaleta z przewijakiem obok klubu nocnego, poziom -1."
+source = "hotel_website"
+url = "https://www.hotelanders.pl/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true, open = "07:00", close = "22:00", free = true, with_parent = true }
+short = "Małpi gaj 7:00–22:00, z dorosłym"
+note = "Pokój Zabaw z Małpim Gajem codziennie 7:00–22:00, w cenie pobytu; dzieci są w nim pod opieką dorosłych. Drugi małpi gaj w sali kręgielni, 7:00–21:00, tylko z rodzicami lub opiekunami. Minimalnego wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelanders.pl/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true, seasonal = true }
+short = "Głównie od wiosny do jesieni"
+note = "Plac zabaw na terenie rekreacyjnym obok budynku restauracji, dostępny głównie wiosną, latem i jesienią."
+source = "hotel_website"
+url = "https://www.hotelanders.pl/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_animation"
+age_band = "3+"
+value = { available = true, min_age_years = 4, seasonal = true }
+short = "Mini Klub od 4 lat, w wakacje i ferie"
+note = "Mini Klub z animatorami dla dzieci od 4 lat, w cenie pobytu; działa w wakacje, ferie, święta i wybrane weekendy, w godzinach z programu pobytu."
+source = "hotel_website"
+url = "https://www.hotelanders.pl/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { paid = true, guarded = false }
+short = "Płatny, niestrzeżony"
+note = "Parking przy hotelu jest płatny i niestrzeżony (regulamin parkingu). Stawki strona nie podaje."
+source = "hotel_website"
+url = "https://wa-uploads.profitroom.com/hotelanders/1769610186873_HotelAndersRegulaminParkingu.pdf"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 95
+note = "140 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.6880%2C20.0991"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 150
+note = "210 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.6880%2C20.0991"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 260
+note = "320 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.6880%2C20.0991"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 325
+note = "480 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.6880%2C20.0991"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 350
+note = "520 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.6880%2C20.0991"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 360
+note = "510 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.6880%2C20.0991"
+verified_at = 2026-11-08

@@ -1,0 +1,183 @@
+# Facts from the hotel's own website (golebiewski.pl, pages under /mikolajki/; robots.txt allows all, checked
+# 2026-11-08): /mikolajki/dzieci, /mikolajki/info, /mikolajki/park-wodny, /mikolajki/kontakt. Written in our words.
+# Also on the site, no feature key for it: stroller storage in every room; anti-slip shower mat and disposable
+# nappy bags on request; a shop at the water park selling nappies; pony walks for the youngest with a parent;
+# a farm with animals (10:00-16:00). Kids' buffet between meals only for guests who bought that offer.
+# Not stated (so not recorded yet): cot fee, free-stay age, changing table, baby monitor, food for babies,
+# lift, animation ages.
+#
+# Coordinates: the hotel's own "Dojazd" map link on /mikolajki/dzieci.
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet (Mikołajki station has few trains outside summer).
+slug = "golebiewski-mikolajki"
+place = "mikolajki"
+name = "Hotel Gołębiewski Mikołajki"
+official_url = "https://www.golebiewski.pl/mikolajki"
+address = "ul. Mrągowska 34, 11-730 Mikołajki"
+lat = 53.8046646
+lon = 21.5584602
+status = "published"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true, bedding = true, travel_cot = true }
+short = "Turystyczne z pościelą, na życzenie"
+note = "Na życzenie łóżeczko turystyczne z pościelą. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.golebiewski.pl/mikolajki/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "high_chair"
+value = { available = true, where = "restaurant", free = true }
+short = "W restauracji, w cenie"
+note = "Krzesełka dziecięce w restauracji, w cenie pobytu."
+source = "hotel_website"
+url = "https://www.golebiewski.pl/mikolajki/info"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Menu dla dzieci"
+note = "Menu dla dzieci; do tego warsztaty kulinarne dla dzieci."
+source = "hotel_website"
+url = "https://www.golebiewski.pl/mikolajki/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true, microwave = true }
+short = "Mikrofalówka w Restauracji Czerwonej"
+note = "W Restauracji Czerwonej jest mikrofalówka do podgrzewania posiłków dla dzieci."
+source = "hotel_website"
+url = "https://www.golebiewski.pl/mikolajki/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, on_request = true }
+short = "Na życzenie"
+note = "Wanienka na życzenie. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.golebiewski.pl/mikolajki/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "potty"
+value = { available = true, on_request = true }
+short = "Nocnik na życzenie"
+note = "Nocnik na życzenie."
+source = "hotel_website"
+url = "https://www.golebiewski.pl/mikolajki/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true, open = "09:00", close = "19:00", with_parent = true, guests_only = true }
+short = "Klub 9:00–19:00, dzieci z dorosłym"
+note = "Klub dla dzieci z salą zabaw (małpi gaj, baseny z kulkami, klocki), tylko dla gości hotelu, codziennie 9:00–19:00; w dniach 06.12–14.12.2026 9:00–17:00. Dzieci przebywają pod opieką dorosłych. Minimalnego wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.golebiewski.pl/mikolajki/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true, seasonal = true }
+short = "Tagolandia, wiosną i latem"
+note = "Plac zabaw Tagolandia, strona zaprasza na niego w okresie wiosenno-letnim."
+source = "hotel_website"
+url = "https://www.golebiewski.pl/mikolajki/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_animation"
+value = { available = true }
+short = "Zajęcia; więcej w wakacje i ferie"
+note = "Zajęcia dla dzieci w różnych grupach wiekowych; w wakacje, ferie i święta dodatkowy program. Od jakiego wieku, strona nie podaje."
+source = "hotel_website"
+url = "https://www.golebiewski.pl/mikolajki/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "paddling_pool"
+value = { indoor = true, outdoor = true, outdoor_seasonal = true, heated = true, water_temp_c = "35-36", sandpit = true }
+short = "Ciepły brodzik z piaskownicą, 35–36°C"
+note = "Park wodny Tropikana, bezpłatny dla gości hotelu: brodzik z ciepłą wodą (ok. 35–36°C) i piaskownicą, zjeżdżalnie dla najmłodszych; latem także brodzik i piaskownica na zewnątrz. Dzieci do 14 lat tylko pod opieką dorosłych. Godziny 01.09–30.12.2026 (bez świąt i długich weekendów): pn–pt 11:00–16:00, sb–nd 9:00–16:00, codziennie 16:00–21:00."
+source = "hotel_website"
+url = "https://www.golebiewski.pl/mikolajki/park-wodny"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { distance_m = 100 }
+short = "Plaża 100 m"
+note = "Plaża 100 m od hotelu."
+source = "hotel_website"
+url = "https://www.golebiewski.pl/mikolajki/info"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { paid = true, fee_pln_per_day = 50, reservable = false }
+short = "50 zł/doba, bez rezerwacji miejsc"
+note = "Parking płatny, 50 zł za samochód za dobę; miejsc nie można rezerwować. Czy jest strzeżony, strona nie podaje."
+source = "hotel_website"
+url = "https://www.golebiewski.pl/mikolajki/info"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 195
+note = "260 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.8047%2C21.5585"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 200
+note = "250 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.8047%2C21.5585"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 360
+note = "450 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.8047%2C21.5585"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 375
+note = "570 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.8047%2C21.5585"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 395
+note = "550 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.8047%2C21.5585"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 410
+note = "590 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.8047%2C21.5585"
+verified_at = 2026-11-08

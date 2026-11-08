@@ -266,3 +266,31 @@ name = "Mortęgi"
 country = "Polska"
 region = "Pojezierze Iławskie"
 kind = "domestic"
+
+[[place]]
+slug = "elblag"
+name = "Elbląg"
+country = "Polska"
+region = "Zalew Wiślany"
+kind = "domestic"
+
+[[place]]
+slug = "jeziorowskie"
+name = "Jeziorowskie"
+country = "Polska"
+region = "Mazury"
+kind = "domestic"
+
+[[place]]
+slug = "mikolajki"
+name = "Mikołajki"
+country = "Polska"
+region = "Mazury"
+kind = "domestic"
+
+[[place]]
+slug = "stare-jablonki"
+name = "Stare Jabłonki"
+country = "Polska"
+region = "Mazury"
+kind = "domestic"

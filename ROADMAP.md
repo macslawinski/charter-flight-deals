@@ -109,6 +109,12 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
 - [x] C: warmińsko-mazurskie hotels, batch 1 (2026-11-07): Robert's Port (Stare Sady, 11 facts; brodzik
       only 3+), Natura Mazur (Warchały, 11), Ognisty Ptak (Ogonki, 10), Pałac Mortęgi (7: under 8). Car
       access only; train for Mazury still to do (rozklad-pkp.pl). 20 leads left.
+- [x] C: warmińsko-mazurskie hotels, batch 2 (2026-11-08): Hotel Młyn (Elbląg, 12 facts: cot 15 zł/doba,
+      free stroller, brodzik), Siedlisko Morena (Jeziorowskie, 10; regulamin PDF is text-as-graphics, unread),
+      Gołębiewski Mikołajki (12: brodzik 35–36°C, kids' club 9–19 with a parent), Anders (Stare Jabłonki, 10;
+      Mini Klub from 4, no brodzik). Car access only; train still to do. 16 leads left.
+- [ ] U (phone/e-mail, optional): cot fee and free-stay age at Morena, Gołębiewski Mikołajki and Anders
+      (none of the three sites states them); Młyn free-stay age.
 - [x] ~~U: decide which pomorskie hotels to publish (all are `draft`);~~ superseded above; those under 8 facts need a phone or e-mail
       round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Kiston cot fee, free-stay age, brodzik; Primavera cot fee, Playland age;
