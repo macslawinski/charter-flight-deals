@@ -1,0 +1,29 @@
+# Gdańsk: the airport has no page for families; facts from its news items and the allowed-items page,
+# read 2026-11-08. Written in our words.
+# Not stated: a family lane at security, stroller handling, free airport strollers, a baby changing room
+# as such (the "komfortki" are built mainly for passengers with disabilities).
+iata = "GDN"
+name = "Port Lotniczy Gdańsk im. Lecha Wałęsy"
+city = "Gdańsk"
+official_url = "https://www.airport.gdansk.pl/"
+
+[[fact]]
+key = "play_area"
+short = "Plac zabaw w strefie odlotów: samolot, wieża ze zjeżdżalnią, ekrany dotykowe"
+note = "Otwarty w lipcu 2025 (komunikat lotniska z 18.07.2025). Komunikat nie podaje, w której strefie odlotów (Schengen czy Non-Schengen)."
+url = "https://www.airport.gdansk.pl/aktualnosci/nowy-plac-zabaw-na-lotnisku"
+verified_at = 2026-11-08
+
+[[fact]]
+key = "parent_room"
+short = "Cztery „komfortki” z przewijakiem lub leżanką, m.in. w hali odlotów Schengen i strefie Non-Schengen"
+note = "Pomieszczenia są pomyślane głównie dla osób z niepełnosprawnością i ich opiekunów (podnośnik, leżanka); komunikat ze stycznia 2026 nie mówi wprost o przewijaku dla niemowląt."
+url = "https://www.airport.gdansk.pl/aktualnosci/komfortki-na-gdanskim-lotnisku"
+verified_at = 2026-11-08
+to_confirm = true
+
+[[fact]]
+key = "baby_food"
+short = "Jedzenie dla niemowląt nie podlega limitowi 100 ml, ale jest sprawdzane przy kontroli"
+url = "https://www.airport.gdansk.pl/przed-podroza/praktyczne-wskazowki/bagaz/przedmioty-dozwolone-i-zakazane"
+verified_at = 2026-11-08

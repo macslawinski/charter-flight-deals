@@ -4,7 +4,9 @@
 import Base from "../../layouts/Base.astro";
 import Icon from "../../components/Icon.astro";
 import Illustration from "../../components/Illustration.astro";
-import { HOTEL_FILTERS, TRIP_GROUPS, carriers, hotels, placeOf, placeRegion, tripGroupOf } from "../../lib/data";
+import { HOTEL_FILTERS, TRIP_GROUPS, carriers, data, hotels, placeOf, placeRegion, tripGroupOf } from "../../lib/data";
+
+const airports = data.airports;
 
 const finder = (regions: string[], filter?: string) => {
   const q = new URLSearchParams({ r: regions.join(",") });
@@ -99,6 +101,12 @@ const hotelWord = (n: number) =>
       <div>
         <h3>Dokumenty dziecka</h3>
         <p>Dowód, paszport, EKUZ i zgoda drugiego rodzica: opłaty, terminy, kto musi przyjść. Ze stron urzędowych.</p>
+      </div>
+    </a>
+    <a class="door sun" href="/wyjazdy/lotniska/">
+      <div>
+        <h3>Lotniska z dzieckiem</h3>
+        <p>{airports.length} polskich lotnisk: plac zabaw, przewijak, kontrola z maluchem, wózek. Ze stron samych lotnisk.</p>
       </div>
     </a>
   </div>

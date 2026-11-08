@@ -258,3 +258,43 @@ def test_essential_unknown_topic_and_empty_group_are_rejected(tree):
     _append(_docs(tree), '\n[[group]]\nid = "pusta"\ntitle = "Pusta"\nicon = "info"\n')
     with pytest.raises(CuratedError, match="group 'pusta' has no facts"):
         curated.load(tree)
+
+
+# --- airports (facts from the airport's own site, exported to the site only) ----------------
+
+AIRPORT_FACT = """
+[[fact]]
+key = "{key}"
+short = "Test."
+url = "{url}"
+verified_at = 2026-11-04
+"""
+
+
+def test_airports_load_from_their_own_sites():
+    airports = {a.iata: a for a in curated.load().airports}
+    assert set(airports) == set(curated.AIRPORT_DOMAINS)
+    for a in airports.values():
+        domain = curated.AIRPORT_DOMAINS[a.iata]
+        assert all(domain in f.url for f in a.facts)
+        assert [f.key for f in a.facts] == sorted((f.key for f in a.facts), key=curated.AIRPORT_KEYS.index)
+    krk = {f.key: f for f in airports["KRK"].facts}
+    assert "do 2 lat" in krk["family_security"].short
+
+
+@pytest.mark.parametrize("key, url, error", [
+    ("lounge", "https://www.airport.gdansk.pl/x", "unknown key 'lounge'"),
+    ("stroller", "https://www.gdansk-lotnisko.info/x", "page on airport.gdansk.pl"),
+    ("stroller", "https://airport.gdansk.pl.evil.com/x", "page on airport.gdansk.pl"),
+    ("baby_food", "https://www.airport.gdansk.pl/x", "duplicate"),
+])
+def test_bad_airport_fact_is_rejected(tree, key, url, error):
+    _append(tree / "airports" / "gdn.toml", AIRPORT_FACT.format(key=key, url=url))
+    with pytest.raises(CuratedError, match=error):
+        curated.load(tree)
+
+
+def test_airport_file_name_must_match_code(tree):
+    shutil.copy(tree / "airports" / "gdn.toml", tree / "airports" / "gda.toml")
+    with pytest.raises(CuratedError, match="file name must be the airport code"):
+        curated.load(tree)

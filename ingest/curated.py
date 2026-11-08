@@ -71,6 +71,14 @@ SHORT_MAX = 60  # one line on a phone card
 ESSENTIAL_TOPICS = {"travel_documents"}
 ESSENTIAL_SHORT_MAX = 160
 _OFFICIAL_URL = re.compile(r"^https://([a-z0-9-]+\.)*gov\.pl(/|$)")
+# Polish departure airports from a parent's point of view: facts only from the airport's own site.
+AIRPORT_DOMAINS = {
+    "WAW": "lotnisko-chopina.pl", "KRK": "krakowairport.pl", "KTW": "katowice-airport.com",
+    "GDN": "airport.gdansk.pl", "POZ": "poznanairport.pl", "WRO": "airport.wroclaw.pl",
+}
+# Display order on the page; labels live in family/src/lib/data.ts.
+AIRPORT_KEYS = ("play_area", "parent_room", "family_security", "baby_food", "stroller",
+                "airport_stroller")
 _SLUG = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 
 
@@ -184,12 +192,33 @@ class Essential:
 
 
 @dataclass(frozen=True)
+class AirportFact:
+    key: str
+    short: str       # one or two sentences, our own words
+    url: str         # a page on the airport's own domain
+    verified_at: date
+    note: str | None = None
+    to_confirm: bool = False
+
+
+@dataclass(frozen=True)
+class Airport:
+    """A departure airport's facilities for families: exported to the site, not to the DB."""
+    iata: str
+    name: str
+    city: str
+    official_url: str
+    facts: tuple[AirportFact, ...]
+
+
+@dataclass(frozen=True)
 class Curated:
     places: tuple[Place, ...]
     hotels: tuple[Hotel, ...]
     carriers: tuple[CarrierRules, ...]
     venues: tuple[Venue, ...] = ()
     essentials: tuple[Essential, ...] = ()
+    airports: tuple[Airport, ...] = ()
 
 
 # --- validation helpers ---------------------------------------------------------------------
@@ -409,7 +438,52 @@ def load(root: Path = CURATED) -> Curated:
     _unique(venues, lambda v: v.slug, "venues")
 
     essentials = [_essential(path, root) for path in sorted((root / "essentials").glob("*.toml"))]
-    return Curated(tuple(places), tuple(hotels), tuple(carriers), tuple(venues), tuple(essentials))
+    airports = [_airport(path, root) for path in sorted((root / "airports").glob("*.toml"))]
+    return Curated(tuple(places), tuple(hotels), tuple(carriers), tuple(venues), tuple(essentials),
+                   tuple(airports))
+
+
+def _on_domain(v: str, domain: str, where: str) -> str:
+    host = re.match(r"^https://([^/]+)(/|$)", v)
+    if not host or not (host[1] == domain or host[1].endswith("." + domain)):
+        raise CuratedError(f"{where}: url must be an https page on {domain}, got {v!r}")
+    return v
+
+
+def _airport(path: Path, root: Path) -> Airport:
+    where = str(path.relative_to(root))
+    a = _read(path)
+    _no_extra(a, {"iata", "name", "city", "official_url", "fact"}, where)
+    iata = _get(a, "iata", str, where)
+    if iata not in AIRPORT_DOMAINS:
+        raise CuratedError(f"{where}: iata {iata!r} not in {sorted(AIRPORT_DOMAINS)}")
+    if path.stem != iata.lower():
+        raise CuratedError(f"{where}: file name must be the airport code ({iata.lower()}.toml)")
+    domain = AIRPORT_DOMAINS[iata]
+    facts: list[AirportFact] = []
+    for i, f in enumerate(a.get("fact", [])):
+        w = f"{where} fact[{i}]"
+        _no_extra(f, {"key", "short", "note", "url", "verified_at", "to_confirm"}, w)
+        key = _get(f, "key", str, w)
+        if key not in AIRPORT_KEYS:
+            raise CuratedError(f"{w}: unknown key {key!r}, expected one of {list(AIRPORT_KEYS)}")
+        short = _get(f, "short", str, w)
+        if not 1 <= len(short) <= ESSENTIAL_SHORT_MAX:
+            raise CuratedError(f"{w}: 'short' must be 1-{ESSENTIAL_SHORT_MAX} chars")
+        verified = _get(f, "verified_at", date, w)
+        if verified > date.today():
+            raise CuratedError(f"{w}: verified_at {verified} is in the future")
+        facts.append(AirportFact(
+            key=key, short=short, url=_on_domain(_get(f, "url", str, w), domain, w),
+            verified_at=verified, note=_get(f, "note", str, w, required=False),
+            to_confirm=bool(_get(f, "to_confirm", bool, w, required=False)),
+        ))
+    _unique(facts, lambda f: f.key, where)
+    if not facts:
+        raise CuratedError(f"{where}: an airport needs at least one fact")
+    facts.sort(key=lambda f: AIRPORT_KEYS.index(f.key))
+    return Airport(iata, _get(a, "name", str, where), _get(a, "city", str, where),
+                   _on_domain(_get(a, "official_url", str, where), domain, where), tuple(facts))
 
 
 def _official(v: str, where: str) -> str:
@@ -583,9 +657,9 @@ def main(argv: list[str] | None = None) -> int:
     except CuratedError as e:
         log.error("invalid curated data: %s", e)
         return 1
-    log.info("valid: %d places, %d hotels, %d carriers with rules, %d venues, %d essential topics",
-             len(data.places), len(data.hotels), len(data.carriers), len(data.venues),
-             len(data.essentials))
+    log.info("valid: %d places, %d hotels, %d carriers with rules, %d venues, %d essential topics, "
+             "%d airports", len(data.places), len(data.hotels), len(data.carriers), len(data.venues),
+             len(data.essentials), len(data.airports))
     if args.dry_run:
         return 0
     url = args.database_url or load_settings().database_url

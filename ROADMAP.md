@@ -295,8 +295,12 @@ model: `docs/family-data-model.md`; sources: `docs/family-data-sources.md`.
 ### E3. Airlines and airports
 - [x] C (2026-11-08): `/wyjazdy/dokumenty/`: child's ID card, passport, EKUZ, other parent's consent; 28 facts from
       `*.gov.pl` pages (`data/curated/essentials/travel_documents.toml`). Re-verify yearly (fees, e-Doręczenia).
-- [ ] Airline child rules under "Wyjazdy" (existing `/linie/`); airport family facts (play areas, family lanes,
-      stroller handover); car-seat laws abroad.
+- [x] C (2026-11-08): `/wyjazdy/lotniska/`: WAW, KRK, KTW, GDN, POZ, WRO (play area, changing/feeding, security
+      with a child, baby food, own stroller, airport strollers); facts only from the airport's own domain
+      (`data/curated/airports/<iata>.toml`, enforced by the loader); what a site does not say is listed as such.
+      GDN has no family page (news items only; "komfortki" to confirm). POZ and WRO block plain HTTP clients:
+      read in a browser. Re-verify every 6 months.
+- [ ] Car-seat laws abroad.
 - [ ] "Niezbędnik rodzica" topics (benefits, deadlines, vaccinations, recalls, car-seat tests): TODO: which
       stage? The brief lists them in the product but not in a stage.
 

@@ -1,0 +1,32 @@
+# Wrocław Airport: "Poradnik przed odlotem", section "Dziecko w podróży" (and "Kontrola bezpieczeństwa"),
+# read 2026-11-08 in a browser (the site blocks plain HTTP clients). Written in our words.
+# Not stated: a separate family lane at security, free airport strollers.
+iata = "WRO"
+name = "Port Lotniczy Wrocław"
+city = "Wrocław"
+official_url = "https://airport.wroclaw.pl/pasazer/odlatuje/poradnik-przed-odlotem/"
+
+[[fact]]
+key = "play_area"
+short = "Kącik dla dzieci w hali odlotów, za odprawą i kontrolą bezpieczeństwa"
+url = "https://airport.wroclaw.pl/pasazer/odlatuje/poradnik-przed-odlotem/"
+verified_at = 2026-11-08
+
+[[fact]]
+key = "parent_room"
+short = "Pokoje dla rodziców z małymi dziećmi, do przewinięcia i umycia dziecka"
+url = "https://airport.wroclaw.pl/pasazer/odlatuje/poradnik-przed-odlotem/"
+verified_at = 2026-11-08
+
+[[fact]]
+key = "baby_food"
+short = "Jedzenie i picie dla dziecka na podróż nie musi być w torebce na płyny, ale przechodzi kontrolę"
+note = "W części o kontroli bezpieczeństwa lotnisko pisze też, że limity płynów nie dotyczą niemowląt do 12. miesiąca życia."
+url = "https://airport.wroclaw.pl/pasazer/odlatuje/poradnik-przed-odlotem/"
+verified_at = 2026-11-08
+
+[[fact]]
+key = "stroller"
+short = "Wózek nadasz przy odprawie albo zostawisz przed samolotem; trafia do luku"
+url = "https://airport.wroclaw.pl/pasazer/odlatuje/poradnik-przed-odlotem/"
+verified_at = 2026-11-08
