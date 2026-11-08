@@ -9456,6 +9456,214 @@
   {
    "access": [
     {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 10,
+     "mode": "car",
+     "note": "10 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.0889%2C19.9810",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 55,
+     "mode": "car",
+     "note": "80 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.0889%2C19.9810",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 170,
+     "mode": "car",
+     "note": "270 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.0889%2C19.9810",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 195,
+     "mode": "car",
+     "note": "290 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.0889%2C19.9810",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 290,
+     "mode": "car",
+     "note": "460 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.0889%2C19.9810",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 350,
+     "mode": "car",
+     "note": "600 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.0889%2C19.9810",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Dobrego Pasterza 124, 31-416 Kraków",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na życzenie gości pokój wyposaża się w łóżeczko dziecięce. Opłaty strona nie podaje.",
+     "short": "Łóżeczko na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelswing.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Restauracja Quickstep ma krzesełka do karmienia.",
+     "short": "Krzesełka w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelswing.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja Quickstep ma osobne menu dla najmłodszych.",
+     "short": "Osobne menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelswing.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka do pokoju na życzenie.",
+     "short": "Wanienka na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelswing.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Na życzenie nocnik, nakładka na toaletę i podstawka pod umywalkę.",
+     "short": "Nocnik, nakładka, podstawka na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelswing.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "step_stool": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Kącik zabaw w lobby, naprzeciwko recepcji przy windach, czynny całą dobę 7 dni w tygodniu, urządzony przede wszystkim z myślą o małych dzieciach. O opiece strona nie pisze.",
+     "short": "Kącik zabaw całą dobę, przy recepcji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelswing.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "open_24h": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Latem w zewnętrznej strefie Stacja Parkowa jest wodny brodzik i wodny plac zabaw. Wieku, głębokości ani opłat strona nie podaje.",
+     "short": "Wodny brodzik latem w Stacji Parkowej",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelswing.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "outdoor": true,
+      "outdoor_seasonal": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_pool",
+     "note": "W Parku Wodnym w Krakowie są strefy dla najmłodszych. Wejście nie jest wliczone w standardowy pobyt: wariant „Pobyt z Parkiem Wodnym” albo bilety w recepcji w specjalnych cenach.",
+     "short": "Park Wodny obok (wejście płatne)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelswing.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "paid": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "lift",
+     "note": "Strona wspomina windy przy recepcji (obok kącika zabaw).",
+     "short": "Windy",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelswing.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Strona dla rodzin pisze o dużym parkingu. Opłaty strona nie podaje.",
+     "short": "Duży parking",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelswing.pl/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.08885,
+   "lon": 19.981048,
+   "name": "Hotel Swing",
+   "official_url": "https://www.hotelswing.pl/",
+   "place": "krakow",
+   "slug": "swing-krakow",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
      "from_code": "HER",
      "from_kind": "airport",
      "minutes": 25,
@@ -13504,6 +13712,210 @@
    "official_url": "https://www.mazurskiraj.pl/",
    "place": "piaski",
    "slug": "mazurski-raj-piaski",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 130,
+     "mode": "car",
+     "note": "140 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.4319%2C20.7081",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 170,
+     "mode": "car",
+     "note": "220 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.4319%2C20.7081",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 285,
+     "mode": "car",
+     "note": "410 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.4319%2C20.7081",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 310,
+     "mode": "car",
+     "note": "420 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.4319%2C20.7081",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 405,
+     "mode": "car",
+     "note": "590 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.4319%2C20.7081",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 460,
+     "mode": "car",
+     "note": "730 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.4319%2C20.7081",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Juliusza Korwina Gąsiorowskiego 5, 33-350 Piwniczna-Zdrój",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Strona dla dzieci wymienia wygodne łóżeczka. Opłaty strona nie podaje.",
+     "short": "Łóżeczka dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelpiwniczna.pl/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Menu dla dzieci w Restauracji Czarna Owca.",
+     "short": "Menu dla dzieci w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelpiwniczna.pl/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacze do butelek na życzenie. Opłaty strona nie podaje.",
+     "short": "Podgrzewacz do butelek na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelpiwniczna.pl/dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienki do kąpieli na życzenie.",
+     "short": "Wanienka na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelpiwniczna.pl/dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Nocniki i nakładki na toaletę na życzenie.",
+     "short": "Nocnik i nakładka na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelpiwniczna.pl/dzieci",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "W hotelu jest sala zabaw. Minimalnego wieku, godzin ani tego, czy rodzic musi zostać, strona nie podaje (regulamin: dzieci do 12 lat zawsze pod nadzorem opiekunów).",
+     "short": "Sala zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelpiwniczna.pl/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Przy hotelu jest zewnętrzny plac zabaw.",
+     "short": "Zewnętrzny plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelpiwniczna.pl/dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Strona dla dzieci wymienia animacje. Wieku ani terminów strona nie podaje.",
+     "short": "Animacje",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelpiwniczna.pl/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Brodzik w strefie HedoniSPA. Głębokości ani temperatury strona nie podaje; dzieci korzystają ze SPA tylko z opiekunem, a w pieluchach tylko w pieluchach do pływania (regulamin HedoniSPA).",
+     "short": "Brodzik w HedoniSPA",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelpiwniczna.pl/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Hotel ma parking monitorowany, niestrzeżony (regulamin hotelu, s. 4). Opłaty strona nie podaje.",
+     "short": "Parking monitorowany, niestrzeżony",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://u.profitroom.com/hotelpiwniczna.pl/uploads/RegulaminHotelu_1.pdf",
+     "value": {
+      "guarded": false,
+      "monitored": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.4319303,
+   "lon": 20.7080882,
+   "name": "Hotel Piwniczna SPA & Conference",
+   "official_url": "https://www.hotelpiwniczna.pl/",
+   "place": "piwniczna-zdroj",
+   "slug": "piwniczna-spa",
    "status": "published"
   },
   {
@@ -19687,6 +20099,382 @@
      "minutes": 100,
      "mode": "car",
      "note": "110 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.2958%2C19.9646",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 135,
+     "mode": "car",
+     "note": "180 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.2958%2C19.9646",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 250,
+     "mode": "car",
+     "note": "370 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.2958%2C19.9646",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 290,
+     "mode": "car",
+     "note": "400 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.2958%2C19.9646",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 370,
+     "mode": "car",
+     "note": "560 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.2958%2C19.9646",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 430,
+     "mode": "car",
+     "note": "700 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.2958%2C19.9646",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Jagiellońska 29, 34-500 Zakopane",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Certyfikowane łóżeczka turystyczne bezpłatnie na życzenie.",
+     "short": "Bezpłatne łóżeczko turystyczne na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelaquarion.pl/hotel/dzieci",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Specjalny bufet dziecięcy w restauracji Górna Stacja.",
+     "short": "Bufet dziecięcy",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelaquarion.pl/hotel/dzieci",
+     "value": {
+      "available": true,
+      "kids_buffet": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacze do butelek bezpłatnie na życzenie.",
+     "short": "Bezpłatny podgrzewacz do butelek",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelaquarion.pl/hotel/dzieci",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienki do kąpieli bezpłatnie na życzenie.",
+     "short": "Bezpłatna wanienka na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelaquarion.pl/hotel/dzieci",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala gier i zabaw dla młodszych i starszych dzieci, ze strefą malucha, pod okiem animatorów. Minimalnego wieku, godzin ani tego, czy rodzic musi zostać, strona nie podaje.",
+     "short": "Sala zabaw ze strefą malucha",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelaquarion.pl/hotel/dzieci",
+     "value": {
+      "available": true,
+      "toddler_zone": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "W sali gier i zabaw zajęcia prowadzą doświadczeni animatorzy. Wieku ani godzin strona nie podaje.",
+     "short": "Animatorzy w sali zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelaquarion.pl/hotel/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "W Termach Zakopiańskich, połączonych z hotelem wewnętrznym łącznikiem, jest brodzik dla dzieci; pływalnie czynne 9:00–22:00. Dostęp do Term goście wykupują w recepcji. Głębokości ani temperatury strona nie podaje.",
+     "short": "Brodzik w Termach (wejście płatne)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelaquarion.pl/wellness/termy-zakopianskie",
+     "value": {
+      "available": true,
+      "indoor": true,
+      "paid": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.2957999,
+   "lon": 19.9646473,
+   "name": "Hotel Aquarion Family & Friends",
+   "official_url": "https://www.hotelaquarion.pl/",
+   "place": "zakopane",
+   "slug": "aquarion-zakopane",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 105,
+     "mode": "car",
+     "note": "110 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.2842%2C19.9907",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 140,
+     "mode": "car",
+     "note": "180 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.2842%2C19.9907",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 255,
+     "mode": "car",
+     "note": "370 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.2842%2C19.9907",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 295,
+     "mode": "car",
+     "note": "410 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.2842%2C19.9907",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 375,
+     "mode": "car",
+     "note": "560 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.2842%2C19.9907",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 430,
+     "mode": "car",
+     "note": "700 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.2842%2C19.9907",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Oswalda Balzera 35, 34-500 Zakopane",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Regulamin: łóżeczko dziecięce można dostawić w każdej kategorii pokoju, opłata jednorazowa 50 zł. Strona dla rodzin wymienia łóżeczka turystyczne z materacem i pościelą wśród bezpłatnych dodatków, więc opłata jest do potwierdzenia.",
+     "short": "Łóżeczko 50 zł jednorazowo",
+     "source": "hotel_website",
+     "to_confirm": true,
+     "url": "https://www.goldhotel.eu/hotel/regulamin",
+     "value": {
+      "available": true,
+      "fee_pln_per_stay": 50
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "child_free_stay",
+     "note": "Regulamin: dziecko w wieku do 4 lat nie płaci za pobyt, jeśli śpi na istniejącym łóżku; za dzieci powyżej 4 lat opłata jak za osobę dorosłą.",
+     "short": "Do 4 lat gratis w łóżku rodziców",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.goldhotel.eu/hotel/regulamin",
+     "value": {
+      "free": true,
+      "max_age_years": 4,
+      "sleeping_with_parents": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka dla maluchów wśród bezpłatnych dodatków dla rodzin.",
+     "short": "Krzesełka dla maluchów",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.goldhotel.eu/hotel/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Menu dla dzieci.",
+     "short": "Menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.goldhotel.eu/hotel/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacz do butelek i słoiczków wśród bezpłatnych dodatków dla rodzin.",
+     "short": "Podgrzewacz do butelek i słoiczków",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.goldhotel.eu/hotel/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka do kąpieli dla dziecka wśród bezpłatnych dodatków dla rodzin.",
+     "short": "Wanienka",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.goldhotel.eu/hotel/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Przewijak w formie nakładki na łóżko lub stolik, wśród bezpłatnych dodatków dla rodzin.",
+     "short": "Nakładka-przewijak na łóżko lub stolik",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.goldhotel.eu/hotel/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "free": true,
+      "where": "room"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Nocnik i nakładka na WC wśród bezpłatnych dodatków dla rodzin.",
+     "short": "Nocnik i nakładka na WC",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.goldhotel.eu/hotel/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true,
+      "free": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala zabaw z zabawkami dla dzieci w różnym wieku. Minimalnego wieku ani godzin strona nie podaje.",
+     "short": "Sala zabaw z zabawkami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.goldhotel.eu/hotel/hotel-przyjazny-rodzinie",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Bezpłatny parking obok hotelu (regulamin); hotel nie odpowiada za auto ani rzeczy w nim zostawione.",
+     "short": "Bezpłatny parking obok hotelu",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.goldhotel.eu/hotel/regulamin",
+     "value": {
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.2842178,
+   "lon": 19.9907303,
+   "name": "Gold Hotel",
+   "official_url": "https://www.goldhotel.eu/",
+   "place": "zakopane",
+   "slug": "gold-hotel-zakopane",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 100,
+     "mode": "car",
+     "note": "110 km",
      "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.2990%2C19.9588",
      "verified_at": "2026-11-08"
     },
@@ -20646,6 +21434,22 @@
    "name": "Poręba Wielka",
    "region": "Gorce",
    "slug": "poreba-wielka"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Piwniczna-Zdrój",
+   "region": "Beskidy",
+   "slug": "piwniczna-zdroj"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Kraków",
+   "region": "Małopolska",
+   "slug": "krakow"
   }
  ],
  "rule_keys": [

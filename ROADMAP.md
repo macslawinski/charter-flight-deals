@@ -144,6 +144,13 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       apartments), Stamary (Zakopane, 10: free cot, brodzik with toys). Car access only. 20 leads left.
 - [ ] U (phone/e-mail, optional): Bukovina cot fee and Klub Malucha hours; Czarny Potok free-stay age and Kids
       Club minimum age; Górski Raj free-stay age and parking; Stamary free-stay age and parking fee.
+- [x] C: małopolskie hotels, batch 2 (2026-11-08): Gold Hotel (Zakopane, 10 facts: under 4 free in parents'
+      bed, potty, changing pad; cot 50 zł in the regulamin vs. "free extras" on the family page: to confirm),
+      Swing (Kraków, 10: 24/7 play corner, potty and step stool, Park Wodny next door, paid), Piwniczna (10:
+      brodzik in HedoniSPA, playroom, monitored parking), Aquarion (Zakopane, 7: under 8; free cot, bath and
+      warmer, toddler zone, Termy brodzik paid). Car access only. 16 leads left.
+- [ ] U (phone/e-mail, optional): Gold cot fee (50 zł or free); Aquarion free-stay age, high chair, parking fee;
+      Swing and Piwniczna cot fee and free-stay age.
 - [x] ~~U: decide which pomorskie hotels to publish (all are `draft`);~~ superseded above; those under 8 facts need a phone or e-mail
       round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Kiston cot fee, free-stay age, brodzik; Primavera cot fee, Playland age;

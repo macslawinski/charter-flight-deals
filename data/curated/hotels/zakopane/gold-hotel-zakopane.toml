@@ -1,0 +1,165 @@
+# Facts from the hotel's own website (goldhotel.eu; robots.txt has no Disallow, checked 2026-11-08):
+# /hotel/hotel-przyjazny-rodzinie, /hotel/regulamin, /kontakt. Written in our words.
+# Also on the site, no feature key for it: stroller storage; saunarium and ski room; children over 4 pay as
+# adults; an extra bed for a child aged 0-4 for a one-off 50 zł (not in the 2-person Standard room).
+# Not stated (so not recorded yet): baby monitor, lift, pool or brodzik (none mentioned), playroom age and
+# hours, playground.
+#
+# Coordinates: the hotel's own map link on /kontakt (google.com/maps/search/?api=1&query=49.2842178,19.9907303).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet (Zakopane station).
+slug = "gold-hotel-zakopane"
+place = "zakopane"
+name = "Gold Hotel"
+official_url = "https://www.goldhotel.eu/"
+address = "ul. Oswalda Balzera 35, 34-500 Zakopane"
+lat = 49.2842178
+lon = 19.9907303
+status = "published"
+
+[[feature]]
+key = "cot"
+value = { available = true, fee_pln_per_stay = 50 }
+short = "Łóżeczko 50 zł jednorazowo"
+note = "Regulamin: łóżeczko dziecięce można dostawić w każdej kategorii pokoju, opłata jednorazowa 50 zł. Strona dla rodzin wymienia łóżeczka turystyczne z materacem i pościelą wśród bezpłatnych dodatków, więc opłata jest do potwierdzenia."
+source = "hotel_website"
+url = "https://www.goldhotel.eu/hotel/regulamin"
+verified_at = 2026-11-08
+to_confirm = true
+
+[[feature]]
+key = "child_free_stay"
+value = { free = true, sleeping_with_parents = true, max_age_years = 4 }
+short = "Do 4 lat gratis w łóżku rodziców"
+note = "Regulamin: dziecko w wieku do 4 lat nie płaci za pobyt, jeśli śpi na istniejącym łóżku; za dzieci powyżej 4 lat opłata jak za osobę dorosłą."
+source = "hotel_website"
+url = "https://www.goldhotel.eu/hotel/regulamin"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "high_chair"
+value = { available = true }
+short = "Krzesełka dla maluchów"
+note = "Krzesełka dla maluchów wśród bezpłatnych dodatków dla rodzin."
+source = "hotel_website"
+url = "https://www.goldhotel.eu/hotel/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Menu dla dzieci"
+note = "Menu dla dzieci."
+source = "hotel_website"
+url = "https://www.goldhotel.eu/hotel/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true, free = true }
+short = "Podgrzewacz do butelek i słoiczków"
+note = "Podgrzewacz do butelek i słoiczków wśród bezpłatnych dodatków dla rodzin."
+source = "hotel_website"
+url = "https://www.goldhotel.eu/hotel/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, free = true }
+short = "Wanienka"
+note = "Wanienka do kąpieli dla dziecka wśród bezpłatnych dodatków dla rodzin."
+source = "hotel_website"
+url = "https://www.goldhotel.eu/hotel/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "changing_table"
+value = { available = true, free = true, where = "room" }
+short = "Nakładka-przewijak na łóżko lub stolik"
+note = "Przewijak w formie nakładki na łóżko lub stolik, wśród bezpłatnych dodatków dla rodzin."
+source = "hotel_website"
+url = "https://www.goldhotel.eu/hotel/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "potty"
+value = { available = true, free = true, toilet_seat_adapter = true }
+short = "Nocnik i nakładka na WC"
+note = "Nocnik i nakładka na WC wśród bezpłatnych dodatków dla rodzin."
+source = "hotel_website"
+url = "https://www.goldhotel.eu/hotel/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Sala zabaw z zabawkami"
+note = "Sala zabaw z zabawkami dla dzieci w różnym wieku. Minimalnego wieku ani godzin strona nie podaje."
+source = "hotel_website"
+url = "https://www.goldhotel.eu/hotel/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { free = true }
+short = "Bezpłatny parking obok hotelu"
+note = "Bezpłatny parking obok hotelu (regulamin); hotel nie odpowiada za auto ani rzeczy w nim zostawione."
+source = "hotel_website"
+url = "https://www.goldhotel.eu/hotel/regulamin"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 105
+note = "110 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.2842%2C19.9907"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 140
+note = "180 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.2842%2C19.9907"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 255
+note = "370 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.2842%2C19.9907"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 295
+note = "410 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.2842%2C19.9907"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 375
+note = "560 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.2842%2C19.9907"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 430
+note = "700 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.2842%2C19.9907"
+verified_at = 2026-11-08
