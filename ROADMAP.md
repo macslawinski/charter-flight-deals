@@ -233,7 +233,9 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       on the site); Hotel Wolin brodzik, playroom age, free-stay rule outside packages.
 - [ ] U (phone/e-mail, optional): Unitral and Villa Hoff cot fee amounts; Unitral free-stay age for small
       children; Villa Hoff parking months/fee; whether Lidia/Unitral brodziki are heated.
-- [ ] C: project skill `reverify-child-rules` so re-checks of rules are repeatable.
+- [x] C (2026-11-08): project skill `reverify-facts` (all curated facts, not only child rules) and
+      `scripts/stale_facts.py` (12 months; 6 for fees/prices, venues, airports). First facts expire 2027-05-04.
+- [ ] C: show "do ponownego sprawdzenia" on the site for expired facts (PLAN.md §3), and a monthly reminder.
 - [ ] C: venues migration (DB) once the venue format is stable.
 - [ ] Photos (optional): only with your permission per download (e.g. Unsplash), licence noted.
 
