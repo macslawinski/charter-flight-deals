@@ -1,0 +1,259 @@
+# Leads for Product B: hotels in województwo mazowieckie whose own website shows an offer for children
+# 0-3. Discovered via OpenStreetMap (tourism=hotel, leisure=resort; (c) OpenStreetMap contributors,
+# ODbL) and web search pointing to the hotels' own sites; each lead confirmed on its own kids page.
+# Not facts: the curate-hotel skill reads the facts.
+voivodeship = "mazowieckie"
+checked_at = 2026-11-08
+covered = ["całe województwo (OSM 555 obiektów, probe top 300 stron) + web search, 2026-11-08"]
+
+[[lead]]
+name = "Hotel Warszawianka"
+town = "Jachranka"
+official_url = "https://www.warszawianka.pl/"
+kids_url = "https://www.warszawianka.pl/mali-rzadza"
+evidence_urls = ["https://www.warszawianka.pl/woda-sport/woda"]
+osm = "node/11649427157"
+lat = 52.48481
+lon = 20.96951
+signals = ["przewijak", "brodzik", "sala zabaw"]
+why = "Brodzik ze zjeżdżalnią i parasolem wodnym, przewijaki na życzenie, sala KIDDI ROOM dla dzieci do 150 cm (z opiekunem)."
+status = "curated"
+
+[[lead]]
+name = "B&B Julinek Park"
+town = "Julinek"
+official_url = "https://www.bbjulinek.pl/"
+kids_url = "https://www.bbjulinek.pl/dzieci"
+osm = "way/500669303"
+lat = 52.27457
+lon = 20.59602
+signals = ["łóżeczko", "wanienka", "podgrzewacz", "nocnik", "elektroniczna niania", "sala zabaw"]
+why = "Łóżeczko, wanienka, podgrzewacz, nocnik z nakładką, niania elektryczna na życzenie; dzieci do 3 lat gratis. Nazwa B&B, ale restauracja i pokoje rodzinne."
+status = "skipped"
+skip_reason = "B&B (regulamin: obiekt noclegowy), nie hotel; reguła tylko hotele. Mocna oferta 0-3: łóżeczko, wanienka, podgrzewacz, nocnik, niania, do 3 lat gratis."
+
+[[lead]]
+name = "Hotel BoniFaCio SPA & Sport Resort"
+town = "Kępa"
+official_url = "https://www.hotelbonifacio.pl/"
+kids_url = "https://www.hotelbonifacio.pl/dla-dzieci"
+osm = "node/9733531055"
+lat = 52.71496
+lon = 20.40881
+signals = ["brodzik", "strefa malucha"]
+why = "Brodzik dla maluchów, Strefa Malucha (weekendy i wakacje); łóżeczko i krzesełko do sprawdzenia na podstronie udogodnień."
+status = "curated"
+
+[[lead]]
+name = "Pałac Domaniowski Resort & Conference"
+town = "Konary"
+official_url = "https://www.palacdomaniowski.pl/"
+kids_url = "https://www.palacdomaniowski.pl/hotel-z-atrakcjami-dla-dzieci"
+osm = "node/3582887412"
+lat = 51.41492
+lon = 20.84609
+signals = ["łóżeczko", "krzesełko", "menu dziecięce"]
+why = "Łóżeczka i krzesełka do karmienia na życzenie, menu dziecięce; brak brodzika i sali dla maluchów."
+status = "curated"
+
+[[lead]]
+name = "Hotel Pałac Alexandrinum"
+town = "Krubki-Górki"
+official_url = "https://www.palac-alexandrinum.pl/"
+kids_url = "https://www.palac-alexandrinum.pl/hotel/dzieci-w-hotelu"
+osm = "way/764289372"
+lat = 52.29784
+lon = 21.38714
+signals = ["łóżeczko", "wanienka", "podgrzewacz", "krzesełko", "brodzik", "sala zabaw"]
+why = "Łóżeczko, wanienka, podgrzewacz do butelek i słoiczków, foteliki do karmienia, brodzik z podgrzewaną wodą, pokój zabaw."
+status = "curated"
+
+[[lead]]
+name = "Hotel Kawallo"
+town = "Leonów"
+official_url = "https://www.kawallo.pl/"
+kids_url = "https://www.kawallo.pl/o-hotelu/atrakcje"
+evidence_urls = ["https://www.kawallo.pl/spawellness/strefa-basenowa"]
+osm = "node/4343094646"
+lat = 52.39977
+lon = 19.90489
+signals = ["brodzik", "sala zabaw"]
+why = "Brodzik dla dzieci z kurtyną wodną, sala zabaw Leśna Kryjówka, plac zabaw; łóżeczka nie wymienione."
+status = "curated"
+
+[[lead]]
+name = "Arche Pałac i Folwark Łochów"
+town = "Łochów"
+official_url = "https://www.palacifolwarklochow.pl/"
+kids_url = "https://www.palacifolwarklochow.pl/o-nas/dzieci-w-hotelu"
+osm = "node/5985103111"
+lat = 52.51526
+lon = 21.69932
+signals = ["łóżeczko", "wanienka", "przewijak", "krzesełko", "brodzik", "sala zabaw"]
+why = "Łóżeczko i wanienka w pokoju, przewijak, krzesełka, bezpieczny brodzik dla maluchów, sala zabaw; dzieci do 4 lat gratis."
+status = "curated"
+
+[[lead]]
+name = "Hotel Panorama"
+town = "Mszczonów"
+official_url = "https://www.hotelpanorama.pl/"
+kids_url = "https://www.hotelpanorama.pl/hotel/panorama-kids-hotel-z-atrakcjami-dla-dzieci-pod-warszawa/udogodnienia-w-hotelu"
+evidence_urls = ["https://www.hotelpanorama.pl/hotel/panorama-kids-hotel-z-atrakcjami-dla-dzieci-pod-warszawa/sala-zabaw"]
+osm = "way/428872858"
+lat = 51.9741
+lon = 20.53936
+signals = ["łóżeczko", "przewijak", "krzesełko", "sala zabaw"]
+why = "Bezpłatne łóżeczka, ogólnodostępny przewijak, krzesełka, Misiowa Sala dla niemowląt (otwierana na życzenie) w strefie Panorama KIDS."
+status = "curated"
+
+[[lead]]
+name = "Santa Natura Resort & SPA"
+town = "Nowa Wieś"
+official_url = "https://www.santanatura.pl/"
+kids_url = "https://www.santanatura.pl/hotel/atrakcje-dla-dzieci"
+osm = "way/892736508"
+lat = 52.06294
+lon = 20.26581
+signals = ["brodzik", "plac zabaw"]
+why = "Brodzik dla dzieci, drewniany plac zabaw z piaskownicą; łóżeczka i sali zabaw strona nie wymienia."
+status = "curated"
+
+[[lead]]
+name = "Artis Loft Hotel"
+town = "Radziejowice-Parcel"
+official_url = "https://www.artis-loft.pl/"
+kids_url = "https://www.artis-loft.pl/dzieci"
+osm = "way/698933208"
+lat = 51.99108
+lon = 20.54453
+signals = ["łóżeczko", "wanienka", "podgrzewacz", "przewijak", "nocnik", "krzesełko", "sala zabaw"]
+why = "Łóżeczko z pościelą, wanienka, nocnik na życzenie, podgrzewacz i krzesełka w restauracji, przewijak, sala zabaw; do 3 lat gratis."
+status = "curated"
+
+[[lead]]
+name = "Hotel Skansen Conference & SPA"
+town = "Sierpc"
+official_url = "https://www.hotelskansen.pl/"
+kids_url = "https://www.hotelskansen.pl/rodzinnie"
+evidence_urls = ["https://www.hotelskansen.pl/atrakcje"]
+osm = "relation/9595176"
+lat = 52.86496
+lon = 19.63188
+signals = ["brodzik", "sala zabaw", "menu dla najmłodszych"]
+why = "Brodzik dla dzieci z kurtyną wodną i gejzerem, place zabaw wewnętrzne i zewnętrzne, menu dla najmłodszych."
+status = "curated"
+
+[[lead]]
+name = "Hotel Sobienie Królewskie"
+town = "Sobienie Szlacheckie"
+official_url = "https://www.sobieniekrolewskie.pl/"
+kids_url = "https://www.sobieniekrolewskie.pl/obiekt/dla-dzieci"
+osm = "way/1056504266"
+lat = 51.93584
+lon = 21.32707
+signals = ["sala zabaw", "pieluszki kąpielowe"]
+why = "Kids Room z basenem z piłkami, pieluszki kąpielowe na recepcji; brak brodzika i sprzętu dla niemowląt na stronie (najsłabszy lead)."
+status = "curated"
+
+[[lead]]
+name = "Hotel Sielanka nad Pilicą"
+town = "Warka"
+official_url = "https://www.sielanka.pl/"
+kids_url = "https://www.sielanka.pl/dla-dzieci"
+osm = "node/3812946394"
+lat = 51.76998
+lon = 21.17154
+signals = ["brodzik", "sala zabaw", "plac zabaw"]
+why = "Bezpieczny brodzik w strefie basenowej, sala zabaw Pasikonik (animator od 4 lat), plac zabaw, mini zoo."
+status = "curated"
+
+[[lead]]
+name = "DoubleTree by Hilton Warsaw"
+town = "Warszawa"
+official_url = "https://www.doubletreewarsaw.pl/"
+kids_url = "https://www.doubletreewarsaw.pl/poznaj-hotel/dla-dzieci"
+osm = "way/656626613"
+lat = 52.18564
+lon = 21.14122
+signals = ["brodzik", "kids club", "menu dziecięce"]
+why = "Brodzik w strefie wellness, Kids Club, menu dla dzieci; łóżeczka nie wymienione."
+status = "curated"
+
+[[lead]]
+name = "Hotel Indigo Warsaw - Nowy Świat"
+town = "Warszawa"
+official_url = "https://indigowarsaw.com/"
+kids_url = "https://indigowarsaw.com/hotel-przyjazny-dzieciom/"
+osm = "way/28126423"
+lat = 52.23273
+lon = 21.02125
+signals = ["łóżeczko", "przewijak", "elektroniczna niania"]
+why = "Hotel w centrum: łóżeczka, przewijak, elektroniczna niania; bez basenu i sali zabaw."
+status = "curated"
+
+[[lead]]
+name = "Las Woda Park Rekreacyjno-Biznesowy"
+town = "Wilga"
+official_url = "https://www.las-woda.pl/"
+kids_url = "https://www.las-woda.pl/hotel/hotel-z-sala-zabaw-dla-dzieci"
+evidence_urls = ["https://www.las-woda.pl/hotel/atrakcje-hotel-las-woda/basen-zewnetrzny", "https://www.las-woda.pl/hotel/atrakcje-hotel-las-woda/sala-zabaw-hotel-las-woda"]
+osm = "way/787689278"
+lat = 51.84386
+lon = 21.43696
+signals = ["brodzik", "sala zabaw"]
+why = "Wydzielony brodzik przy basenie zewnętrznym (sezon letni), sala zabaw z małpim gajem; probe widział też łóżeczko i wanienkę do potwierdzenia."
+status = "curated"
+[[lead]]
+name = "Holiday Inn Resort Warszawa Józefów"
+town = "Józefów"
+official_url = "https://www.ihg.com/holidayinnresorts/hotels/pl/pl/jozefow/wrsjo/hoteldetail"
+why = "Do sprawdzenia: resort rodzinny z basenem, ale własnej strony z ofertą dla dzieci nie znaleziono (tylko IHG)."
+status = "lead"
+
+[[lead]]
+name = "EVA Park Life & SPA"
+town = "Konstancin-Jeziorna"
+official_url = "https://evapark.pl/"
+osm = "way/426547339"
+status = "skipped"
+skip_reason = "Własna strona nie ma nic dla dzieci (portale piszą o brodziku, strona hotelu nie)."
+
+[[lead]]
+name = "Hotel Czardasz"
+town = "Płock"
+official_url = "https://www.hotelczardasz.pl/"
+osm = "way/350088771"
+status = "skipped"
+skip_reason = "Hotel SPA bez oferty dla maluchów na stronie (tylko urodziny dla dzieci)."
+
+[[lead]]
+name = "Koszary Arche Hotel"
+town = "Góra Kalwaria"
+official_url = "https://koszaryarchehotel.pl/"
+osm = "way/611152409"
+status = "skipped"
+skip_reason = "Brak sprzętu i miejsc dla dzieci 0-3 na stronie (tylko warsztaty pizzy, baby shower)."
+
+[[lead]]
+name = "Mercure Wiązowna Brant"
+town = "Majdan"
+official_url = "https://all.accor.com/hotel/B895/index.pl.shtml"
+osm = "way/269183924"
+status = "skipped"
+skip_reason = "Tylko strona Accor; pokój zabaw bez wieku, brak łóżeczek/brodzika w opisie."
+
+[[lead]]
+name = "Hotel Narvil Conference & Spa"
+town = "Serock"
+official_url = "https://www.hotelnarvil.pl/"
+osm = "node/3052781258"
+status = "skipped"
+skip_reason = "Narvilandia (tory przeszkód, Xbox) bez wieku i bez sprzętu dla niemowląt; wrócić, jeśli strona doda strefę malucha."
+
+[[lead]]
+name = "Hotel Windsor"
+town = "Jachranka"
+official_url = "https://windsorhotel.pl/"
+osm = "way/220173628"
+status = "skipped"
+skip_reason = "Hotel konferencyjny, brak oferty dla dzieci na stronie."

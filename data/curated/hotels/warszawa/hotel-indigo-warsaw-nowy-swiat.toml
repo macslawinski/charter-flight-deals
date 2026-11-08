@@ -1,0 +1,92 @@
+# Facts from the hotel's own website (indigowarsaw.com; robots.txt allows all, checked 2026-11-08):
+# /hotel-przyjazny-dzieciom/, /kontakt/. Written in our words.
+# Also on the site, no feature key for it: connecting rooms for larger families; city-centre location
+# (Trakt Królewski, Centrum Nauki Kopernik, Teatr Małego Widza nearby).
+# Not stated (so not recorded yet): cot fee, free-stay ages, high chair, kids menu, baby bath, bottle warmer,
+# potty, playroom, lift, parking.
+#
+# Coordinates: OpenStreetMap way/28126423 (ODbL).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet (Warszawa Centralna / Śródmieście nearby).
+slug = "hotel-indigo-warsaw-nowy-swiat"
+place = "warszawa"
+name = "Hotel Indigo Warsaw – Nowy Świat"
+official_url = "https://indigowarsaw.com/"
+address = "ul. Smolna 40, 00-375 Warszawa"
+lat = 52.23273  # OpenStreetMap way/28126423, ODbL
+lon = 21.02125
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true }
+short = "Łóżeczka dziecięce"
+note = "Hotel udostępnia łóżeczka dziecięce i dostawki. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://indigowarsaw.com/hotel-przyjazny-dzieciom/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_monitor"
+value = { available = true }
+short = "Elektroniczna niania"
+note = "Można skorzystać z elektronicznej niani."
+source = "hotel_website"
+url = "https://indigowarsaw.com/hotel-przyjazny-dzieciom/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "changing_table"
+value = { available = true }
+short = "Jest przewijak"
+note = "Można skorzystać z przewijaka; gdzie stoi, strona nie podaje."
+source = "hotel_website"
+url = "https://indigowarsaw.com/hotel-przyjazny-dzieciom/"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 190
+note = "310 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B52.2327%2C21.0212"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 195
+note = "300 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B52.2327%2C21.0212"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 205
+note = "300 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B52.2327%2C21.0212"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 230
+note = "360 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B52.2327%2C21.0212"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 235
+note = "340 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B52.2327%2C21.0212"
+verified_at = 2026-11-08

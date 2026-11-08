@@ -1,0 +1,128 @@
+# Facts from the hotel's own website (doubletreewarsaw.pl; robots.txt allows all, checked 2026-11-08):
+# /poznaj-hotel/dla-dzieci, /kontakt, regulamin hotelu PDF (z dn. 1.08.2026, linked from /poznaj-hotel/regulaminy).
+# Written in our words.
+# Also on the site, no feature key for it: underground and front car parks (fee not stated).
+# Not stated (so not recorded yet): free-stay ages, baby bath, bottle warmer, changing table, potty, lift,
+# Kids Club hours / minimum age, paddling pool hours, parking fee.
+#
+# Coordinates: the hotel's own map link.
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet.
+slug = "doubletree-by-hilton-warsaw"
+place = "warszawa"
+name = "DoubleTree by Hilton Warsaw"
+official_url = "https://www.doubletreewarsaw.pl/"
+address = "ul. Skalnicowa 21, 04-797 Warszawa"
+lat = 52.1859856  # from the hotel's own map link
+lon = 21.1416035
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true, free = true }
+short = "Bezpłatnie na życzenie"
+note = "Na życzenie gościa z małymi dziećmi hotel bezpłatnie wstawia łóżeczko do pokoju (regulamin hotelu)."
+source = "hotel_website"
+url = "https://wa-uploads.profitroom.com/doubletreebyhiltonhotelconferencecentrewarsaw/17872196265373_Regulamin%20z%20dn.1.08.2026r..pdf"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true, kids_buffet = true }
+short = "Menu i bufet dla dzieci"
+note = "Bufet dla dzieci podczas śniadań i brunchów oraz menu dla dzieci w Restauracji Garden. O jedzeniu dla niemowląt strona nie wspomina."
+source = "hotel_website"
+url = "https://www.doubletreewarsaw.pl/poznaj-hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Kids Club"
+note = "Wewnętrzny Kids Club z przestrzenią do zabawy. Godzin, minimalnego wieku i opieki strona nie podaje."
+source = "hotel_website"
+url = "https://www.doubletreewarsaw.pl/poznaj-hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "W hotelowym ogrodzie"
+note = "Zewnętrzny plac zabaw w hotelowym ogrodzie."
+source = "hotel_website"
+url = "https://www.doubletreewarsaw.pl/poznaj-hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, weekends = true, supervised = true }
+short = "W weekendy"
+note = "W weekendy animacje z animatorami (rodzice mogą w tym czasie iść do SPA); przedziału wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.doubletreewarsaw.pl/poznaj-hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "paddling_pool"
+value = { indoor = true }
+short = "W strefie Wellness"
+note = "Brodzik dla dzieci w strefie Wellness. Godzin i wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.doubletreewarsaw.pl/poznaj-hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 15
+note = "10 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B52.1860%2C21.1416"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 195
+note = "330 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B52.1860%2C21.1416"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 200
+note = "340 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B52.1860%2C21.1416"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 205
+note = "300 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B52.1860%2C21.1416"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 235
+note = "370 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B52.1860%2C21.1416"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 245
+note = "350 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B52.1860%2C21.1416"
+verified_at = 2026-11-08

@@ -574,3 +574,101 @@ name = "Bielawa"
 country = "Polska"
 region = "Góry Sowie"
 kind = "domestic"
+
+[[place]]
+slug = "jachranka"
+name = "Jachranka"
+country = "Polska"
+region = "Mazowsze"
+kind = "domestic"
+
+[[place]]
+slug = "kepa-sochocin"
+name = "Kępa (gm. Sochocin)"
+country = "Polska"
+region = "Mazowsze"
+kind = "domestic"
+
+[[place]]
+slug = "konary"
+name = "Konary"
+country = "Polska"
+region = "Mazowsze"
+kind = "domestic"
+
+[[place]]
+slug = "krubki-gorki"
+name = "Krubki-Górki"
+country = "Polska"
+region = "Mazowsze"
+kind = "domestic"
+
+[[place]]
+slug = "leonow"
+name = "Leonów"
+country = "Polska"
+region = "Mazowsze"
+kind = "domestic"
+
+[[place]]
+slug = "lochow"
+name = "Łochów"
+country = "Polska"
+region = "Mazowsze"
+kind = "domestic"
+
+[[place]]
+slug = "mszczonow"
+name = "Mszczonów"
+country = "Polska"
+region = "Mazowsze"
+kind = "domestic"
+
+[[place]]
+slug = "nowa-wies-wiskitki"
+name = "Nowa Wieś (gm. Wiskitki)"
+country = "Polska"
+region = "Mazowsze"
+kind = "domestic"
+
+[[place]]
+slug = "radziejowice-parcel"
+name = "Radziejowice-Parcel"
+country = "Polska"
+region = "Mazowsze"
+kind = "domestic"
+
+[[place]]
+slug = "sierpc"
+name = "Sierpc"
+country = "Polska"
+region = "Mazowsze"
+kind = "domestic"
+
+[[place]]
+slug = "sobienie-szlacheckie"
+name = "Sobienie Szlacheckie"
+country = "Polska"
+region = "Mazowsze"
+kind = "domestic"
+
+[[place]]
+slug = "warka"
+name = "Warka"
+country = "Polska"
+region = "Mazowsze"
+kind = "domestic"
+
+[[place]]
+slug = "warszawa"
+name = "Warszawa"
+country = "Polska"
+region = "Mazowsze"
+kind = "domestic"
+
+[[place]]
+slug = "wilga"
+name = "Wilga"
+country = "Polska"
+region = "Mazowsze"
+kind = "domestic"
