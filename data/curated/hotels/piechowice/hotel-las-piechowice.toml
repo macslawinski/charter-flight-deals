@@ -6,7 +6,10 @@
 # Coordinates: OpenStreetMap way/298335942 centre ((c) OpenStreetMap contributors, ODbL).
 # Access (checked 2026-11-08):
 # - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
-# - train: not checked yet.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most one
+#   change, to Jelenia Góra station. Station -> hotel: ~18 km, ~20 min by car or taxi (OSRM).
+#   Piechowice station is closer (~4 km), on the line beyond Jelenia Góra (as Szklarska Poręba, which that day
+#   has no connection with at most one change from Kraków, Gdańsk or Katowice), so the times are to Jelenia Góra.
 slug = "hotel-las-piechowice"
 place = "piechowice"
 name = "Hotel LAS"
@@ -97,4 +100,59 @@ mode = "car"
 minutes = 415
 note = "580 km"
 url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.8358%2C15.5644"
+verified_at = 2026-11-08
+
+# --- Access: train to Jelenia Góra station (rozklad-pkp.pl, 2026-11-12) --------------------
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 117
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 224
+note = "1 przesiadka · bezpośredni 3 h 54 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 248
+note = "1 przesiadka · bezpośredni 5 h 37 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 311
+note = "1 przesiadka · bezpośredni 6 h 44 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 377
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "train"
+minutes = 419
+note = "1 przesiadka · bezpośredni 7 h 09 min"
+url = "https://rozklad-pkp.pl/"
 verified_at = 2026-11-08

@@ -6,7 +6,9 @@
 # Coordinates: OpenStreetMap way/292559433 centre ((c) OpenStreetMap contributors, ODbL).
 # Access (checked 2026-11-08):
 # - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
-# - train: not checked yet.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most one
+#   change, to Zagórz station. Station -> hotel: ~26 km, ~30 min by car or taxi (OSRM).
+#   Gdańsk: no connection with at most one change departing 05:00-14:00 that day (at best 3 changes), so not listed.
 slug = "skalny-spa-polanczyk"
 place = "polanczyk"
 name = "Hotel Skalny SPA Bieszczady"
@@ -134,4 +136,50 @@ mode = "car"
 minutes = 560
 note = "870 km"
 url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.3704%2C22.4286"
+verified_at = 2026-11-08
+
+# --- Access: train to Zagórz station (rozklad-pkp.pl, 2026-11-12) --------------------
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 277
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 421
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 491
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 509
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 626
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
 verified_at = 2026-11-08

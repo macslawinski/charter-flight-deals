@@ -111,6 +111,11 @@ Read `references/features.md` (keys, what counts, value shapes). Essentials:
   .venv/Scripts/python.exe .claude/skills/curate-hotel/scripts/add_access.py <hotel.toml>... --station <lat> <lon> --train-from <hotel near that station.toml>
   .venv/Scripts/python.exe .claude/skills/curate-hotel/scripts/add_access.py <hotel.toml> --station <lat> <lon> --train "Ustka" "Warszawa|352|1 przesiadka; Poznań|236|bezpośredni; ..." --train-date 2026-11-12
   ```
+  Hotel already has car blocks ("train: not checked yet"): add `--train-only --station <lat> <lon>` (and
+  optionally `--train-note "<why this station / which city is missing>"`); it appends only the train section
+  and rewrites the `# - train:` header line.
+  rozklad-pkp.pl takes the query in the URL (`/pl/tp?REQ0JourneyStopsS0G=<from>&REQ0JourneyStopsZ0G=<to>&date=
+  DD.MM.YY&time=HH:MM&start=start`); "Katowice" is ambiguous, add `REQ0JourneyStopsS0ID=A=1@O=Katowice@L=5100020@`.
   Car blocks come from OSRM (same method as Saltic; `osrm_access.py <lat> <lon>` alone just prints
   them). Write the header line as `Station -> hotel: TBD`; `--station` replaces TBD with the OSRM
   distance and time, so the header never disagrees with the route. No sensible train: leave out

@@ -6,7 +6,10 @@
 # Coordinates: OpenStreetMap way/1085326475 centre ((c) OpenStreetMap contributors, ODbL).
 # Access (checked 2026-11-08):
 # - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
-# - train: not checked yet.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most one
+#   change, to Jelenia Góra station. Station -> hotel: ~22 km, ~30 min by car or taxi (OSRM).
+#   Szklarska Poręba Górna station is closer (~1-2 km), but that day Kraków, Gdańsk and Katowice have no
+#   connection to it with at most one change, so the times are to Jelenia Góra.
 slug = "bergo-szklarska-poreba"
 place = "szklarska-poreba"
 name = "Bergo Resort & Spa"
@@ -168,4 +171,59 @@ mode = "car"
 minutes = 420
 note = "580 km"
 url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.8201%2C15.5222"
+verified_at = 2026-11-08
+
+# --- Access: train to Jelenia Góra station (rozklad-pkp.pl, 2026-11-12) --------------------
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 117
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 224
+note = "1 przesiadka · bezpośredni 3 h 54 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 248
+note = "1 przesiadka · bezpośredni 5 h 37 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 311
+note = "1 przesiadka · bezpośredni 6 h 44 min"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 377
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "train"
+minutes = 419
+note = "1 przesiadka · bezpośredni 7 h 09 min"
+url = "https://rozklad-pkp.pl/"
 verified_at = 2026-11-08

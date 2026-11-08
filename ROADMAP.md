@@ -279,7 +279,12 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       (business hotel, only a paid cot), Qubus Gorzów (chain package), Pałac Wiechlice, Ruben Hotel, Pałac Mierzęcin,
       Winny Dworek, Pałac Brühla. Leftover: Kormoran Niesulice (holiday centre, not a hotel). New trip group
       "Ziemia Lubuska". All 16 voivodeships now have hotels.
-- [ ] C: train access for the Karkonosze / Bieszczady hotels (Jelenia Góra, Kłodzko, Zagórz stations).
+- [x] C (2026-11-08): train access for 15 Karkonosze / Kłodzko / Bieszczady hotels (rozklad-pkp.pl, Thu 2026-11-12):
+      Karpacz, Staniszów, Szklarska Poręba, Piechowice -> Jelenia Góra (Szklarska Poręba Górna has no ≤1-change
+      connection from Kraków, Gdańsk, Katowice in November); Polanica-Zdrój -> Kłodzko Główne; Polańczyk, Myczkowce
+      -> Zagórz (no Gdańsk: 3 changes). Arłamów: car only (stations 30-35 km).
+- [ ] C (optional): train access for the other ~100 hotels still marked "train: not checked yet"
+      (Zakopane, Kraków, Mazury, Szczyrk/Wisła...): `add_access.py --train-only`.
 - [ ] U (phone/e-mail, optional): Tremonti free-stay age (6 vs 3); Skalny SPA brodzik; Artus cot fee; Czarny
       Kamień cot fee; Arłamów cot fee and free-stay rule; most: playroom minimum age.
 - [x] ~~U: decide which pomorskie hotels to publish (all are `draft`);~~ superseded above; those under 8 facts need a phone or e-mail
