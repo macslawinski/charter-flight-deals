@@ -1,0 +1,123 @@
+# Facts from the hotel's own website (hotel-amber.pl; robots.txt allows all, checked 2026-11-08):
+# /pokoje/pokoj-rodzinny-amber (Hotel Amber's family room), /hotel/pobyt-z-dzieckiem. Written in our words.
+# The domain covers Amber Boutique Hotels (Hotel Amber and Amber Design); only facts from Hotel Amber's own
+# room page are recorded.
+# Also on the site, no feature key for it (group page "pobyt z dzieckiem", not tied to one hotel): non-slip
+# shower mat, board games and puzzles, children under 12 at 25% off; extra charges are paid at the hotel.
+# The hotel regulamin PDF linked from the room page returns 404 (unread).
+# Not stated (so not recorded yet): baby bath, kids' menu, changing table, potty, baby monitor, playroom,
+# parking fee (only a "Pobyt + Parking" package).
+#
+# Coordinates: the site's map link (50.0655403, 19.9337578); OpenStreetMap way/139442261 agrees.
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet (Kraków Główny).
+slug = "amber-krakow"
+place = "krakow"
+name = "Hotel Amber"
+official_url = "https://www.hotel-amber.pl/"
+address = "Garbarska 8-10, 31-131 Kraków"
+lat = 50.0655403
+lon = 19.9337578
+status = "published"
+
+[[feature]]
+key = "cot"
+age_band = "0-2"
+value = { available = true, on_request = true, fee_pln_per_night = 50, max_count = 1 }
+short = "Łóżeczko 50 zł/doba (do 2 lat)"
+note = "Jedno dziecko do lat 2 na łóżeczku niemowlęcym: 50 zł za dobę; najwyżej 1 łóżeczko w pokoju; opłatę reguluje się w hotelu."
+source = "hotel_website"
+url = "https://www.hotel-amber.pl/pokoje/pokoj-rodzinny-amber"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "child_free_stay"
+value = { free = true, sleeping_with_parents = true, max_age_years = 6 }
+short = "Do 6 lat gratis na istniejących łóżkach"
+note = "Wszystkie dzieci do lat 6 nocują bezpłatnie, jeśli śpią na istniejących łóżkach (strona pokoju rodzinnego)."
+source = "hotel_website"
+url = "https://www.hotel-amber.pl/pokoje/pokoj-rodzinny-amber"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "high_chair"
+value = { available = true, on_request = true }
+short = "Krzesełko na życzenie"
+note = "Na życzenie krzesełko dla maluchów."
+source = "hotel_website"
+url = "https://www.hotel-amber.pl/pokoje/pokoj-rodzinny-amber"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true, on_request = true }
+short = "Podgrzewacz do butelek na życzenie"
+note = "Na życzenie podgrzewacz do butelek. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotel-amber.pl/pokoje/pokoj-rodzinny-amber"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "lift"
+value = { available = true }
+short = "Winda"
+note = "Na wyższe piętra dojazd windą."
+source = "hotel_website"
+url = "https://www.hotel-amber.pl/pokoje/pokoj-rodzinny-amber"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 5
+note = "poniżej 1 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.0655%2C19.9338"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 55
+note = "80 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.0655%2C19.9338"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 170
+note = "270 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.0655%2C19.9338"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 200
+note = "300 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.0655%2C19.9338"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 290
+note = "460 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.0655%2C19.9338"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 350
+note = "600 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.0655%2C19.9338"
+verified_at = 2026-11-08
