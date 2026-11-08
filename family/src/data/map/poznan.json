@@ -46,492 +46,574 @@
  "locality": "Poznań",
  "refs": [
   {
+   "due": "2027-05-05",
    "src": null,
    "type": "osm",
    "url": "https://www.openstreetmap.org/node/12545941282",
    "verified_at": "2026-11-05"
   },
   {
+   "due": "2027-05-05",
    "src": null,
    "type": "venue_website",
    "url": "https://bawialniabawimy.pl/",
    "verified_at": "2026-11-05"
   },
   {
+   "due": "2027-05-05",
    "src": null,
    "type": "venue_website",
    "url": "https://bawialniabawimy.pl/dla-odwiedzajacych/",
    "verified_at": "2026-11-05"
   },
   {
+   "due": "2027-05-05",
    "src": null,
    "type": "venue_website",
    "url": "https://bawialniabawimy.pl/warsztaty/",
    "verified_at": "2026-11-05"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "osm",
    "url": "https://www.openstreetmap.org/way/441733580",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://bramapoznania.pl/cennik",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://bramapoznania.pl/",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-04",
    "src": null,
    "type": "osm",
    "url": "https://www.openstreetmap.org/node/11048021117",
    "verified_at": "2026-11-04"
   },
   {
+   "due": "2027-05-04",
    "src": null,
    "type": "venue_website",
    "url": "https://fikolki.pl/ch-posnania-poznan/",
    "verified_at": "2026-11-04"
   },
   {
+   "due": "2027-05-05",
    "src": null,
    "type": "venue_website",
    "url": "https://fikolki.pl/cennik/",
    "verified_at": "2026-11-05"
   },
   {
+   "due": "2027-05-04",
    "src": null,
    "type": "venue_website",
    "url": "https://fikolki.pl/cennik/",
    "verified_at": "2026-11-04"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://fikolki.pl/urodziny/",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-04",
    "src": null,
    "type": "osm",
    "url": "https://www.openstreetmap.org/way/1504245766",
    "verified_at": "2026-11-04"
   },
   {
+   "due": "2027-05-04",
    "src": null,
    "type": "venue_website",
    "url": "https://fikolki.pl/stary-browar/",
    "verified_at": "2026-11-04"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "osm",
    "url": "https://www.openstreetmap.org/node/9736298555",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://historyland.pl/bilety/",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://historyland.pl/",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://historyland.pl/nasze-atrakcje/urodziny-w-historylandzie/",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-04",
    "src": null,
    "type": "osm",
    "url": "https://www.openstreetmap.org/node/1982842819",
    "verified_at": "2026-11-04"
   },
   {
+   "due": "2027-05-04",
    "src": null,
    "type": "venue_website",
    "url": "https://krainapiratow.pl/regulamin/",
    "verified_at": "2026-11-04"
   },
   {
+   "due": "2027-05-04",
    "src": null,
    "type": "venue_website",
    "url": "https://krainapiratow.pl/cennik/",
    "verified_at": "2026-11-04"
   },
   {
+   "due": "2027-05-04",
    "src": null,
    "type": "venue_website",
    "url": "https://krainapiratow.pl/",
    "verified_at": "2026-11-04"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://krainapiratow.pl/urodziny/",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "osm",
    "url": "https://www.openstreetmap.org/way/686070754",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://ligawa.pl/godziny-otwarcia/",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://ligawa.pl/cennik/",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://ligawa.pl/",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "osm",
    "url": "https://www.openstreetmap.org/way/188919088",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://posir.poznan.pl/obiekty/malta/lodowisko",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://posir.poznan.pl/obiekty/malta/lodowisko/cennik",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://posir.poznan.pl/images/obiekty/Malta/Lodowisko/regulamin-lodowisko-malta.pdf?v2",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-04",
    "src": null,
    "type": "osm",
    "url": "https://www.openstreetmap.org/way/165076478",
    "verified_at": "2026-11-04"
   },
   {
+   "due": "2027-05-04",
    "src": null,
    "type": "venue_website",
    "url": "https://www.centrummadagaskar.pl/cennik.html",
    "verified_at": "2026-11-04"
   },
   {
+   "due": "2027-05-04",
    "src": null,
    "type": "venue_website",
    "url": "https://www.centrummadagaskar.pl/",
    "verified_at": "2026-11-04"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://www.centrummadagaskar.pl/imprezy.html",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "osm",
    "url": "https://www.openstreetmap.org/way/33050435",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://maltaski.pl/cennikletni.html",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://maltaski.pl/cennik-zimowy_055.html",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://maltaski.pl/letni-tor-saneczkowy_5632.html",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-04",
    "src": null,
    "type": "osm",
    "url": "https://www.openstreetmap.org/node/12492719739",
    "verified_at": "2026-11-04"
   },
   {
+   "due": "2027-05-04",
    "src": null,
    "type": "venue_website",
    "url": "https://bawialniamlecz.pl/regulamin/",
    "verified_at": "2026-11-04"
   },
   {
+   "due": "2027-05-05",
    "src": null,
    "type": "venue_website",
    "url": "https://bawialniamlecz.pl/bawialnia-kawiarnia/",
    "verified_at": "2026-11-05"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://bawialniamlecz.pl/oferta-urodzinowa/",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-04",
    "src": null,
    "type": "venue_website",
    "url": "https://bawialniamlecz.pl/",
    "verified_at": "2026-11-04"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "osm",
    "url": "https://www.openstreetmap.org/way/480832184",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://zoo.poznan.pl/ceny-biletow-wstepu-do-ogrodu-zoologicznego/",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://zoo.poznan.pl/informacje-nowe-zoo/",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://zoo.poznan.pl/dostepnosc-dojazd-do-nowego-zoo/",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://zoo.poznan.pl/regulamin/",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "osm",
    "url": "https://www.openstreetmap.org/way/23858440",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://ogrod.amu.edu.pl/godziny-otwarcia/",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://ogrod.amu.edu.pl/regulamin-zwiedzania/",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "osm",
    "url": "https://www.openstreetmap.org/way/130034853",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://posir.poznan.pl/images/firma/Zarzdzenie_nr_13_wprowadzajce.pdf",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://posir.poznan.pl/obiekty/atlantis/plywalnia-kryta/cennik",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://posir.poznan.pl/obiekty/atlantis",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "osm",
    "url": "https://www.openstreetmap.org/way/183969850",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://posir.poznan.pl/obiekty/rataje",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://posir.poznan.pl/obiekty/rataje/plywalnia-kryta/cennik",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "osm",
    "url": "https://www.openstreetmap.org/way/809322867",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://posir.poznan.pl/obiekty/winogrady/plywalnia-kryta",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://posir.poznan.pl/obiekty/winogrady/plywalnia-kryta/cennik",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://posir.poznan.pl/obiekty/winogrady",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "osm",
    "url": "https://www.openstreetmap.org/node/4355305570",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://rogalowemuzeum.pl/indywidualni/",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://rogalowemuzeum.pl/",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-05",
    "src": null,
    "type": "osm",
    "url": "https://www.openstreetmap.org/node/9945645798",
    "verified_at": "2026-11-05"
   },
   {
+   "due": "2027-05-05",
    "src": null,
    "type": "venue_website",
    "url": "https://www.ikea.com/pl/pl/files/pdf/76/64/76645b88/ikeapoznan-regulamin-smaland.pdf",
    "verified_at": "2026-11-05"
   },
   {
+   "due": "2027-05-05",
    "src": null,
    "type": "venue_website",
    "url": "https://www.ikea.com/pl/pl/stores/poznan/",
    "verified_at": "2026-11-05"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "osm",
    "url": "https://www.openstreetmap.org/way/369544154",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://zoo.poznan.pl/informacje-stare-zoo/",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://zoo.poznan.pl/dostepnosc-dojazd-do-starego-zoo/",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "osm",
    "url": "https://www.openstreetmap.org/node/6001228864",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://teatranimacji.pl/pl/spektakl/bajki-malutkie--199",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://teatranimacji.pl/pl/informacje-o-biletach",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "osm",
    "url": "https://www.openstreetmap.org/way/519982488",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://termymaltanskie.com.pl/cenniki/",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://termymaltanskie.com.pl/regulaminy/",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://termymaltanskie.com.pl/wp-content/uploads/2024/06/Regulamin-Ogolny-Kompleksu-Termy-Maltanskie-2024.pdf",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-08",
    "src": null,
    "type": "venue_website",
    "url": "https://termymaltanskie.com.pl/wp-content/uploads/2024/08/Regulamin-atrakcji-wodnych_24.pdf",
    "verified_at": "2026-11-08"
   },
   {
+   "due": "2027-05-07",
    "src": "nfz_nisoz",
    "type": "open_data",
    "url": "https://pacjent.gov.pl/sites/pacjent/files/dane/Mapa-Nocna-i-swiateczna-pomoc-05.10.2026.json",
    "verified_at": "2026-11-07"
   },
   {
+   "due": "2027-11-07",
    "src": "poznan_place_zabaw",
    "type": "open_data",
    "url": "https://www.poznan.pl/mim/plan/map_service.html?mtype=education&co=miejsca2021",

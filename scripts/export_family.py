@@ -20,7 +20,7 @@ from typing import Any
 REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT))
 
-from ingest import curated
+from ingest import curated, staleness
 
 OUT = REPO_ROOT / "family" / "src" / "data" / "family.json"
 
@@ -35,22 +35,55 @@ def _plain(obj: Any) -> Any:
     return obj
 
 
+def _with_due(kind: str, facts: list[dict[str, Any]], key: str = "key") -> list[dict[str, Any]]:
+    """Add `due` (ingest.staleness) to each fact: after it the site shows "do ponownego sprawdzenia"."""
+    for f in facts:
+        f["due"] = staleness.due_date(kind, f[key], f["verified_at"], f.get("value"))
+    return facts
+
+
+def _hotel(h: curated.Hotel) -> dict[str, Any]:
+    d = asdict(h)
+    _with_due("hotel", d["features"])
+    for a in d["access"]:
+        a["due"] = staleness.due_date("hotel", f"access:{a['from_code']}:{a['mode']}", a["verified_at"])
+    return d
+
+
+def _carrier(c: curated.CarrierRules) -> dict[str, Any]:
+    d = asdict(c)
+    _with_due("carrier", d["rules"])
+    return d
+
+
+def _essential(e: curated.Essential) -> dict[str, Any]:
+    d = asdict(e)
+    _with_due("essential", d["facts"])
+    return d
+
+
+def _airport(a: curated.Airport) -> dict[str, Any]:
+    d = asdict(a)
+    _with_due("airport", d["facts"])
+    return d
+
+
 def build(data: curated.Curated) -> dict[str, Any]:
     return _plain({
         # Vocabularies let the site list what a hotel's page does *not* state.
         "feature_keys": sorted(curated.FEATURE_KEYS),
         "rule_keys": sorted(curated.RULE_KEYS),
         "places": [asdict(p) for p in data.places],
-        "hotels": [asdict(h) for h in data.hotels],
-        "carriers": [asdict(c) for c in sorted(data.carriers, key=lambda c: c.carrier_iata)],
+        "hotels": [_hotel(h) for h in data.hotels],
+        "carriers": [_carrier(c) for c in sorted(data.carriers, key=lambda c: c.carrier_iata)],
         # Venues themselves reach the site only via the DB (python -m ingest.curated, then
         # scripts/export_venues.py -> family/src/data/map/<city>.json, read by the map and the
         # bawialnie list); here only the labels' vocabulary and city names.
         "venue_keys": sorted(curated.VENUE_KEYS_BY_CATEGORY["sala_zabaw"]),
         "venue_cities": curated.VENUE_CITIES,
-        "essentials": {e.topic: asdict(e) for e in data.essentials},
+        "essentials": {e.topic: _essential(e) for e in data.essentials},
         "airport_keys": list(curated.AIRPORT_KEYS),
-        "airports": [asdict(a) for a in data.airports],
+        "airports": [_airport(a) for a in data.airports],
     })
 
 

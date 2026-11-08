@@ -16,6 +16,7 @@ export interface Fact {
   url: string | null;
   verified_at: string;
   to_confirm: boolean;
+  due: string; // re-verification date (ingest/staleness.py); after it: "do ponownego sprawdzenia"
 }
 
 export interface Access {
@@ -26,6 +27,7 @@ export interface Access {
   note: string | null;
   url: string | null;
   verified_at: string;
+  due: string;
 }
 
 export interface Place {
@@ -74,6 +76,7 @@ export interface EssentialFact {
   url: string;
   verified_at: string;
   to_confirm: boolean;
+  due: string;
   also: { label: string; url: string }[];
 }
 
@@ -92,6 +95,7 @@ export interface AirportFact {
   url: string;
   verified_at: string;
   to_confirm: boolean;
+  due: string;
 }
 
 export interface Airport {

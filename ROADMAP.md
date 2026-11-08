@@ -312,7 +312,9 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       children; Villa Hoff parking months/fee; whether Lidia/Unitral brodziki are heated.
 - [x] C (2026-11-08): project skill `reverify-facts` (all curated facts, not only child rules) and
       `scripts/stale_facts.py` (12 months; 6 for fees/prices, venues, airports). First facts expire 2027-05-04.
-- [ ] C: show "do ponownego sprawdzenia" on the site for expired facts (PLAN.md §3), and a monthly reminder.
+- [x] C (2026-11-08): "do ponownego sprawdzenia" on the site for expired facts (exports carry `due` from
+      `ingest/staleness.py`, the browser compares it with today, no rebuild needed) and a monthly reminder
+      (`.github/workflows/stale-facts.yml`: one open issue labelled `stale-facts` when facts are due).
 - [x] C (2026-11-08): `/poznan/bawialnie/` reads the map export (DB) like `/poznan/`, `family.json` no longer
       carries venues; a test fails when the committed export lags behind the venue TOMLs.
 - [ ] Photos (optional): only with your permission per download (e.g. Unsplash), licence noted.

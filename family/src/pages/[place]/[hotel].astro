@@ -56,6 +56,7 @@ const accessSources = [...new Map(
   h.access.filter((a) => a.url).map((a) => [new URL(a.url!).hostname.replace(/^www\./, ""), a.url!]),
 )];
 const accessChecked = h.access.map((a) => a.verified_at).sort().at(-1);
+const accessDue = h.access.map((a) => a.due).sort().at(0); // earliest: one stale time flags the table
 const transfer = h.features.find((f) => f.key === "transfer");
 const groups = FEATURE_GROUPS.map((g) => ({ ...g, keys: g.keys.filter((k) => stated.has(k)) })).filter(
   (g) => g.keys.length > 0,
@@ -184,7 +185,7 @@ const groups = FEATURE_GROUPS.map((g) => ({ ...g, keys: g.keys.filter((k) => sta
                 <strong>{m.title}:</strong> {m.how}.{" "}
               </>
             ))}
-            {`Czasy orientacyjne${accessChecked ? `, sprawdzone ${plDate(accessChecked)}` : ""}. Źródła: `}
+            <span data-due={accessDue}>{`Czasy orientacyjne${accessChecked ? `, sprawdzone ${plDate(accessChecked)}` : ""}`}</span>{". Źródła: "}
             {accessSources.map(([host, url], i) => (
               <>{i > 0 && ", "}<a href={url} rel="noopener">{host}</a></>
             ))}.

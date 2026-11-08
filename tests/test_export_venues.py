@@ -59,8 +59,9 @@ def test_build_exports_published_city_venues_with_refs(conn: psycopg.Connection[
     a = doc["venues"][0]
     assert [f["key"] for f in a["facts"]] == ["opening_hours", "price"]      # display order
     # One shared reference for every fact and location from the same import.
+    # `due`: plac_zabaw's stale_after_months (12, venue_categories) after the import date.
     assert doc["refs"] == [{"src": "poznan_place_zabaw", "type": "open_data", "url": url,
-                            "verified_at": "2026-11-07"}]
+                            "verified_at": "2026-11-07", "due": "2027-11-07"}]
     assert a["location_ref"] == 0 and {f["ref"] for f in a["facts"]} == {0}
     assert doc["categories"] == {"plac_zabaw": "Place zabaw"}
     assert set(doc["fact_labels"]) == {"opening_hours", "price"}
@@ -79,7 +80,7 @@ def test_build_includes_curated_venues_with_their_own_refs(conn: psycopg.Connect
     assert mlecz["categories"] == ["sala_zabaw"] and mlecz["facts"][0]["key"] == "age_range"
     loc = doc["refs"][mlecz["location_ref"]]
     assert loc == {"src": None, "type": "osm", "url": "https://www.openstreetmap.org/node/12492719739",
-                   "verified_at": "2026-11-04"}
+                   "verified_at": "2026-11-04", "due": "2027-05-04"}          # sala_zabaw: 6 months
     assert {doc["refs"][f["ref"]]["type"] for f in mlecz["facts"]} == {"venue_website"}
     assert "curated" not in doc["sources"]                 # the site lists open-data sources only
     assert {"infant_free", "price_child", "socks_required"} <= set(doc["fact_labels"])

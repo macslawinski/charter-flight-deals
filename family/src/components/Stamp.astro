@@ -4,7 +4,7 @@ import Icon from "./Icon.astro";
 import { plDate, sourceLabel, type Fact } from "../lib/data";
 
 interface Props {
-  fact: Pick<Fact, "source" | "url" | "verified_at" | "to_confirm">;
+  fact: Pick<Fact, "source" | "url" | "verified_at" | "to_confirm" | "due">;
   owner?: string;
 }
 const { fact, owner } = Astro.props;
@@ -12,7 +12,7 @@ const src = owner && fact.source === "carrier_official" ? owner : sourceLabel(fa
 const text = `${src}, sprawdzone ${plDate(fact.verified_at)}`;
 ---
 
-<span class:list={["source", { ask: fact.to_confirm }]}>
+<span class:list={["source", { ask: fact.to_confirm }]} data-due={fact.due}>
   <Icon name={fact.to_confirm ? "question" : "check"} size={16} />
   {
     fact.url ? (

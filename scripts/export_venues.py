@@ -25,6 +25,7 @@ sys.path.insert(0, str(REPO_ROOT))
 
 from ingest import store
 from ingest.config import load_settings
+from ingest.staleness import add_months
 
 log = logging.getLogger("export_venues")
 
@@ -67,32 +68,44 @@ def build(conn: psycopg.Connection[Any], city: str) -> dict[str, Any]:
 
     refs: list[dict[str, Any]] = []
     ref_ix: dict[tuple[Any, ...], int] = {}
+    ref_months: list[int] = []
+    # Staleness per category (DB param); a ref shared by several categories takes the shortest period.
+    stale_months: dict[str, int] = dict(
+        conn.execute("select slug, stale_after_months from venue_categories").fetchall())
 
-    def ref(src: str | None, kind: str, url: str | None, verified: Any) -> int:
+    def ref(src: str | None, kind: str, url: str | None, verified: Any, months: int) -> int:
         key = (src, kind, url, verified.isoformat())
         if key not in ref_ix:
             ref_ix[key] = len(refs)
-            refs.append({"src": src, "type": kind, "url": url, "verified_at": key[3]})
-        return ref_ix[key]
+            refs.append({"src": src, "type": kind, "url": url, "verified_at": key[3], "_verified": verified})
+            ref_months.append(months)
+        i = ref_ix[key]
+        ref_months[i] = min(ref_months[i], months)
+        return i
 
     out_venues = []
-    def loc_ref(src: str, kind: str, url: str, verified: Any) -> int:
+    def loc_ref(src: str, kind: str, url: str, verified: Any, months: int) -> int:
         # Open data: the import itself. Curated: the OpenStreetMap object, else the venue's own page.
         if kind == "open_data":
-            return ref(src, "open_data", url, verified)
+            return ref(src, "open_data", url, verified, months)
         return ref(None, "osm" if url.startswith("https://www.openstreetmap.org/") else "venue_website",
-                   url, verified)
+                   url, verified, months)
 
     for (vid, src, ext, name, address, lat, lon, url, loc_url, loc_verified, cats, kind) in venues:
         vf = sorted(facts.get(vid, []), key=lambda f: (_order(f[0]), f[2] or ""))
+        months = min((stale_months[c] for c in cats), default=6)
         out_venues.append({
             "id": f"{src}:{ext}", "source": src, "name": name, "address": address,
             "lat": lat, "lon": lon, "official_url": url, "categories": list(cats),
-            "location_ref": loc_ref(src, kind, loc_url, loc_verified) if loc_url and loc_verified else None,
+            "location_ref": (loc_ref(src, kind, loc_url, loc_verified, months)
+                             if loc_url and loc_verified else None),
             "facts": [{"key": k, "value": v, "short": s, "note": n, "to_confirm": ask,
-                       "ref": ref(src if t == "open_data" else None, t, u, d)}
+                       "ref": ref(src if t == "open_data" else None, t, u, d, months)}
                       for (k, v, s, n, t, u, d, ask) in vf],
         })
+    for r, m in zip(refs, ref_months, strict=True):
+        # After `due` the site shows "do ponownego sprawdzenia" next to the source line.
+        r["due"] = add_months(r.pop("_verified"), m).isoformat()
 
     used_sources = sorted({v["source"] for v in out_venues})
     sources = {

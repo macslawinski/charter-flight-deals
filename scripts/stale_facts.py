@@ -15,7 +15,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import re
 import sys
 from dataclasses import asdict, dataclass
 from datetime import date, timedelta
@@ -25,9 +24,12 @@ from typing import Any
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from ingest import curated
+from ingest.staleness import add_months as _add_months
+from ingest.staleness import due_date, months_valid
+
+__all__ = ["KINDS", "Due", "_add_months", "collect", "due_by", "main", "months_valid", "render"]
 
 KINDS = ("carrier", "hotel", "venue", "airport", "essential")
-_MONEY_KEY = re.compile(r"fee|fare|price|pln|eur|amount", re.IGNORECASE)
 
 
 @dataclass(frozen=True)
@@ -42,36 +44,13 @@ class Due:
     to_confirm: bool
 
 
-def _add_months(d: date, months: int) -> date:
-    y, m = divmod(d.month - 1 + months, 12)
-    year, month = d.year + y, m + 1
-    for day in (d.day, 30, 29, 28):  # 31 Aug + 6 months -> 28/29 Feb
-        try:
-            return date(year, month, day)
-        except ValueError:
-            continue
-    raise AssertionError("unreachable")
-
-
-def _has_money(key: str, value: dict[str, Any] | None) -> bool:
-    return bool(_MONEY_KEY.search(key)) or any(_MONEY_KEY.search(k) for k in (value or {}))
-
-
-def months_valid(kind: str, key: str, value: dict[str, Any] | None = None) -> int:
-    if kind in ("venue", "airport"):
-        return 6
-    if kind == "essential":
-        return 12
-    return 6 if _has_money(key, value) else 12
-
-
 def collect(data: curated.Curated) -> list[Due]:
     """Every dated fact with its due date (not filtered)."""
     out: list[Due] = []
 
     def add(kind: str, file: str, item: str, key: str, verified: date, url: str | None,
             to_confirm: bool = False, value: dict[str, Any] | None = None) -> None:
-        due = _add_months(verified, months_valid(kind, key, value))
+        due = due_date(kind, key, verified, value)
         out.append(Due(kind, file, item, key, verified, due, url, to_confirm))
 
     for c in data.carriers:

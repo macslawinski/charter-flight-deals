@@ -33,6 +33,19 @@ def test_export_shape():
     assert saltic["place"] == "grzybowo" and saltic["features"]
 
 
+def test_every_fact_carries_its_due_date():
+    # The site flags "do ponownego sprawdzenia" from `due` (ingest/staleness.py, same rule as stale_facts).
+    out = json.loads(export_family.render(curated.load()))
+    fr = next(c for c in out["carriers"] if c["carrier_iata"] == "FR")
+    fee = next(r for r in fr["rules"] if r["key"] == "infant_fee")
+    assert fee["due"] == "2027-05-04"                              # money: 6 months
+    facts = [f for c in out["carriers"] for f in c["rules"]]
+    facts += [f for h in out["hotels"] for f in h["features"] + h["access"]]
+    facts += [f for a in out["airports"] for f in a["facts"]]
+    facts += [f for e in out["essentials"].values() for f in e["facts"]]
+    assert facts and all(f["due"] > f["verified_at"] for f in facts)
+
+
 def test_check_fails_on_stale_file(tmp_path):
     stale = tmp_path / "family.json"
     stale.write_text("{}\n", encoding="utf-8")
