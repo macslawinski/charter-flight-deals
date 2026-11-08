@@ -1,0 +1,139 @@
+# Leads for Product B: hotels in województwo kujawsko-pomorskie whose own website shows an offer for
+# children 0-3. Discovered via OpenStreetMap (tourism=hotel, leisure=resort; (c) OpenStreetMap
+# contributors, ODbL) and web search pointing to the hotels' own sites; each lead confirmed on its own
+# kids page. Not facts: the curate-hotel skill reads the facts.
+voivodeship = "kujawsko-pomorskie"
+checked_at = 2026-11-08
+covered = ["całe województwo (OSM 299 obiektów, probe 127 stron) + web search, 2026-11-08"]
+
+[[lead]]
+name = "Hotel Villa Park MED & SPA"
+town = "Ciechocinek"
+official_url = "https://villapark.pl/"
+kids_url = "https://villapark.pl/atrakcje-dla-dzieci"
+evidence_urls = ["https://villapark.pl/pakiet/rodzinne-wakacje-w-ciechocinku"]
+osm = "way/984751928"
+lat = 52.88455
+lon = 18.79378
+signals = ["baby room", "brodzik", "menu dla dzieci", "do 3 lat gratis"]
+why = "Baby Room z zabawkami, zewnętrzny basen z brodzikiem, karta menu dla dzieci; do 3 lat gratis w łóżku rodziców."
+status = "lead"
+
+[[lead]]
+name = "Herbarium Hotel & Spa"
+town = "Chomiąża Szlachecka"
+official_url = "https://www.herbariumhotel.pl/"
+kids_url = "https://www.herbariumhotel.pl/hotel/hotel-dla-dzieci"
+osm = "way/890487630"
+lat = 52.75097
+lon = 17.84084
+signals = ["łóżeczko", "nocnik", "wanienka", "podgrzewacz", "krzesełko", "sala zabaw"]
+why = "Bezpłatnie na życzenie: łóżeczko z pościelą, nocnik, nakładka, wanienka, podest, podgrzewacz; krzesełka, menu dziecięce, sala zabaw."
+status = "lead"
+
+[[lead]]
+name = "Przystań Bydgoszcz"
+town = "Bydgoszcz"
+official_url = "https://www.przystanbydgoszcz.pl/"
+kids_url = "https://www.przystanbydgoszcz.pl/hotel/dla-dzieci"
+osm = "way/194790422"
+lat = 53.12363
+lon = 17.99524
+signals = ["łóżeczko", "wanienka", "mata do przewijania"]
+why = "Hotel nad Brdą w mieście: na życzenie łóżeczko turystyczne, wanienka, mata do przewijania."
+status = "lead"
+
+[[lead]]
+name = "Pałac Poledno"
+town = "Poledno"
+official_url = "https://poledno.pl/"
+osm = "way/412745092"
+lat = 53.39451
+lon = 18.30251
+signals = ["brodzik"]
+why = "Wellness z 15-metrowym basenem i brodzikiem dla dzieci (strona główna); osobnej strony dla dzieci brak."
+status = "lead"
+
+[[lead]]
+name = "Copernicus Toruń Hotel"
+town = "Toruń"
+official_url = "https://www.copernicustorunhotel.com/"
+kids_url = "https://www.copernicustorunhotel.com/"
+evidence_urls = ["https://www.copernicustorunhotel.com/hotel/regulamin-hotelu"]
+osm = "way/239539240"
+lat = 53.00769
+lon = 18.59749
+signals = ["brodzik", "łóżeczko", "plac zabaw"]
+why = "Brodzik przy basenie wewnętrznym, bezpłatne łóżeczko na życzenie (regulamin), plac zabaw i mini sala zabaw."
+status = "lead"
+
+[[lead]]
+name = "Pałac Romantyczny"
+town = "Turzno"
+official_url = "https://www.palac-romantyczny.com/"
+kids_url = "https://www.palac-romantyczny.com/hotel-przyjazny-dzieciom"
+evidence_urls = ["https://u.profitroom.com/2018-palac-romantyczny-com-pl/uploads/id_ksiazka_2024.pdf"]
+osm = "way/357789753"
+lat = 53.10723
+lon = 18.72656
+signals = ["łóżeczko", "wanienka", "nocnik", "sala zabaw"]
+why = "Na zgłoszenie w recepcji łóżeczko turystyczne, wanienka, nocnik, pościel; sala zabaw Frycek i plac zabaw w parku."
+status = "lead"
+
+[[lead]]
+name = "Arche Cukrownia Żnin"
+town = "Żnin"
+official_url = "https://www.cukrowniaznin.pl/"
+kids_url = "https://www.cukrowniaznin.pl/hotel/dla-dzieci"
+osm = "node/8237258558"
+lat = 52.84937
+lon = 17.73819
+signals = ["łóżeczko", "wanienka", "nocnik", "brodzik", "sala zabaw"]
+why = "Nocleg gratis do 4 roku życia, łóżeczka z pościelą, wanienki, nocniki, nakładki; brodzik 40 cm w parku wodnym; sala zabaw z kącikiem dla najmłodszych."
+status = "lead"
+
+[[lead]]
+name = "Głęboczek Vine Resort & Spa"
+town = "Wielki Głęboczek"
+official_url = "https://gleboczek.pl/"
+status = "skipped"
+skip_reason = "Tylko kameralna sala zabaw „dla młodszych dzieci”; brak sprzętu i miejsc wyraźnie dla 0-3."
+
+[[lead]]
+name = "Hotel Aquarius"
+town = "Odolion"
+official_url = "https://hotelaquarius.pl/"
+osm = "way/382510226"
+status = "skipped"
+skip_reason = "Sala zabaw bez wieku, brak sprzętu dla niemowląt na stronie."
+
+[[lead]]
+name = "Hanza Pałac"
+town = "Rulewo"
+official_url = "https://hanzapalac.pl/"
+osm = "way/198012169"
+status = "skipped"
+skip_reason = "Strona atrakcji to ogólne teksty o regionie; nic konkretnego dla 0-3."
+
+[[lead]]
+name = "Hotel Stork"
+town = "Brodnica"
+official_url = "https://www.hotelstork.pl/"
+osm = "way/296557287"
+status = "skipped"
+skip_reason = "Tylko „miejsce do zabawy dla dzieci” i plac zabaw; brak sprzętu dla 0-3."
+
+[[lead]]
+name = "Półwysep Wądzyn"
+town = "Wądzyn"
+official_url = "https://polwysepwadzyn.com.pl/"
+osm = "way/1090573944"
+status = "skipped"
+skip_reason = "Strona nie działa (błędny certyfikat); ośrodek z bungalowami, nie hotel."
+
+[[lead]]
+name = "Hotel Saline"
+town = "Inowrocław"
+official_url = ""
+status = "skipped"
+skip_reason = "Własnej strony nie znaleziono (hotelsaline.pl na sprzedaż); sala zabaw tylko na portalach."
