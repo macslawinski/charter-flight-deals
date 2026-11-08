@@ -25,8 +25,8 @@ Product A (charter flight deals) stays in `charter-flight-deals`.
 
 ## Steps (2026-11-09)
 1. **Freeze** (C): merge open PRs (#64 `reverify-facts`), tag `pre-split` on `main`, no new B work until step 5.
-2. **New repo** (C): `git clone` → `git filter-repo` keeping only B paths (history kept), push as a private repo
-   (name to confirm, proposal `pieluchy-i-paszporty`). Kept paths: `family/`, `data/curated/`, `ingest/{__init__,
+2. **New repo** (C): `git clone` → `git filter-repo` keeping only B paths (history kept), push as the private repo
+   `pieluchy-i-paszporty`. Kept paths: `family/`, `data/curated/`, `ingest/{__init__,
    config,http_client,store,models,curated}.py`, `ingest/opendata/`, `config/` (open-data sources only),
    `scripts/{export_family,export_venues,stale_facts,db_local,json_shape}.py`, B tests + fixtures, `PLAN.md`,
    `docs/family-*.md`, B skills, `pyproject.toml`. Then trim what B does not use (A models, A tables in `store.py`).
@@ -47,9 +47,9 @@ Product A (charter flight deals) stays in `charter-flight-deals`.
 6. **Docs and memory** (C): new CLAUDE.md for B (from CLAUDE.md "Product B extension" + working conventions),
    ROADMAP for B (Step 4 + Extension sections), memory copied; footer link B → A unchanged.
 
-## Still to decide
-- Repo name and visibility (proposal: `pieluchy-i-paszporty`, private).
-- Order: split first, then make A public (proposal), or both at once.
+## Decided (2026-11-08)
+- Repo: `pieluchy-i-paszporty`, **private**.
+- Order: **split first**, make A public afterwards.
 
 ## Rollback
 Until step 5 nothing is deleted: tag `pre-split` and the old DB stay usable; Vercel can be relinked back.
