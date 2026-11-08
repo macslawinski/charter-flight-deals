@@ -17,7 +17,7 @@ lat = 52.88455
 lon = 18.79378
 signals = ["baby room", "brodzik", "menu dla dzieci", "do 3 lat gratis"]
 why = "Baby Room z zabawkami, zewnętrzny basen z brodzikiem, karta menu dla dzieci; do 3 lat gratis w łóżku rodziców."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Herbarium Hotel & Spa"
@@ -29,7 +29,7 @@ lat = 52.75097
 lon = 17.84084
 signals = ["łóżeczko", "nocnik", "wanienka", "podgrzewacz", "krzesełko", "sala zabaw"]
 why = "Bezpłatnie na życzenie: łóżeczko z pościelą, nocnik, nakładka, wanienka, podest, podgrzewacz; krzesełka, menu dziecięce, sala zabaw."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Przystań Bydgoszcz"
@@ -41,7 +41,8 @@ lat = 53.12363
 lon = 17.99524
 signals = ["łóżeczko", "wanienka", "mata do przewijania"]
 why = "Hotel nad Brdą w mieście: na życzenie łóżeczko turystyczne, wanienka, mata do przewijania."
-status = "lead"
+status = "skipped"
+skip_reason = "Obiekt noclegowy (22 pokoje przy przystani jachtowej, regulamin: obiekt noclegowy), nie hotel."
 
 [[lead]]
 name = "Pałac Poledno"
@@ -52,7 +53,7 @@ lat = 53.39451
 lon = 18.30251
 signals = ["brodzik"]
 why = "Wellness z 15-metrowym basenem i brodzikiem dla dzieci (strona główna); osobnej strony dla dzieci brak."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Copernicus Toruń Hotel"
@@ -65,7 +66,7 @@ lat = 53.00769
 lon = 18.59749
 signals = ["brodzik", "łóżeczko", "plac zabaw"]
 why = "Brodzik przy basenie wewnętrznym, bezpłatne łóżeczko na życzenie (regulamin), plac zabaw i mini sala zabaw."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Pałac Romantyczny"
@@ -78,7 +79,7 @@ lat = 53.10723
 lon = 18.72656
 signals = ["łóżeczko", "wanienka", "nocnik", "sala zabaw"]
 why = "Na zgłoszenie w recepcji łóżeczko turystyczne, wanienka, nocnik, pościel; sala zabaw Frycek i plac zabaw w parku."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Arche Cukrownia Żnin"
@@ -90,7 +91,7 @@ lat = 52.84937
 lon = 17.73819
 signals = ["łóżeczko", "wanienka", "nocnik", "brodzik", "sala zabaw"]
 why = "Nocleg gratis do 4 roku życia, łóżeczka z pościelą, wanienki, nocniki, nakładki; brodzik 40 cm w parku wodnym; sala zabaw z kącikiem dla najmłodszych."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Głęboczek Vine Resort & Spa"

@@ -334,6 +334,8 @@ export const TRIP_GROUPS: {
     regions: ["Jura Krakowsko-Częstochowska", "Małopolska"] },
   { id: "mazowsze", title: "Warszawa i Mazowsze", tone: "sun", icon: "pin",
     regions: ["Mazowsze"] },
+  { id: "kujawy", title: "Toruń, Kujawy i Pałuki", tone: "coral", icon: "pin",
+    regions: ["Toruń i Kujawy", "Pałuki"] },
 ];
 const GROUP_OF = Object.fromEntries(TRIP_GROUPS.flatMap((g) => g.regions.map((r) => [r, g.id])));
 export const tripGroupOf = (h: Hotel) => must(GROUP_OF, placeRegion(placeOf(h)), "trip group of region");
