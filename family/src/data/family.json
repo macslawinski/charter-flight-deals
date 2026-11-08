@@ -9992,6 +9992,146 @@
     {
      "from_code": "Kraków",
      "from_kind": "city",
+     "minutes": 5,
+     "mode": "car",
+     "note": "poniżej 1 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.0655%2C19.9338",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 55,
+     "mode": "car",
+     "note": "80 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.0655%2C19.9338",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 170,
+     "mode": "car",
+     "note": "270 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.0655%2C19.9338",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 200,
+     "mode": "car",
+     "note": "300 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.0655%2C19.9338",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 290,
+     "mode": "car",
+     "note": "460 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.0655%2C19.9338",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 350,
+     "mode": "car",
+     "note": "600 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.0655%2C19.9338",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "Garbarska 8-10, 31-131 Kraków",
+   "features": [
+    {
+     "age_band": "0-2",
+     "key": "cot",
+     "note": "Jedno dziecko do lat 2 na łóżeczku niemowlęcym: 50 zł za dobę; najwyżej 1 łóżeczko w pokoju; opłatę reguluje się w hotelu.",
+     "short": "Łóżeczko 50 zł/doba (do 2 lat)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-amber.pl/pokoje/pokoj-rodzinny-amber",
+     "value": {
+      "available": true,
+      "fee_pln_per_night": 50,
+      "max_count": 1,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "child_free_stay",
+     "note": "Wszystkie dzieci do lat 6 nocują bezpłatnie, jeśli śpią na istniejących łóżkach (strona pokoju rodzinnego).",
+     "short": "Do 6 lat gratis na istniejących łóżkach",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-amber.pl/pokoje/pokoj-rodzinny-amber",
+     "value": {
+      "free": true,
+      "max_age_years": 6,
+      "sleeping_with_parents": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Na życzenie krzesełko dla maluchów.",
+     "short": "Krzesełko na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-amber.pl/pokoje/pokoj-rodzinny-amber",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Na życzenie podgrzewacz do butelek. Opłaty strona nie podaje.",
+     "short": "Podgrzewacz do butelek na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-amber.pl/pokoje/pokoj-rodzinny-amber",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "lift",
+     "note": "Na wyższe piętra dojazd windą.",
+     "short": "Winda",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-amber.pl/pokoje/pokoj-rodzinny-amber",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.0655403,
+   "lon": 19.9337578,
+   "name": "Hotel Amber",
+   "official_url": "https://www.hotel-amber.pl/",
+   "place": "krakow",
+   "slug": "amber-krakow",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
      "minutes": 10,
      "mode": "car",
      "note": "10 km",
@@ -21140,6 +21280,197 @@
     {
      "from_code": "Kraków",
      "from_kind": "city",
+     "minutes": 100,
+     "mode": "car",
+     "note": "110 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.2898%2C19.9579",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 140,
+     "mode": "car",
+     "note": "180 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.2898%2C19.9579",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 255,
+     "mode": "car",
+     "note": "370 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.2898%2C19.9579",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 290,
+     "mode": "car",
+     "note": "400 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.2898%2C19.9579",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 370,
+     "mode": "car",
+     "note": "560 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.2898%2C19.9579",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 430,
+     "mode": "car",
+     "note": "700 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.2898%2C19.9579",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Tetmajera 16, 34-500 Zakopane",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na życzenie bezpłatne łóżeczko dla niemowlęcia; liczba ograniczona (FAQ).",
+     "short": "Bezpłatne łóżeczko na życzenie (ograniczona liczba)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://bachledaresort.pl/faq",
+     "value": {
+      "available": true,
+      "free": true,
+      "limited": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "child_free_stay",
+     "note": "W Bachleda Residence dzieci do 4. roku życia nocują bezpłatnie, jeśli śpią na łóżku rodziców; 5–11 lat dopłata zależna od oferty, od 12 lat pełna cena (FAQ).",
+     "short": "Do 4 lat gratis w łóżku rodziców (Residence)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://bachledaresort.pl/faq",
+     "value": {
+      "free": true,
+      "max_age_years": 4,
+      "sleeping_with_parents": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W restauracji La Prima (Bachleda Residence) przy śniadaniu 7:00–11:00 są krzesełka do karmienia (FAQ).",
+     "short": "Krzesełka przy śniadaniu",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://bachledaresort.pl/faq",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "W bufecie śniadaniowym La Prima są specjalne pozycje dla dzieci (FAQ).",
+     "short": "Pozycje dla dzieci w bufecie śniadaniowym",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://bachledaresort.pl/faq",
+     "value": {
+      "available": true,
+      "kids_buffet": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Na życzenie bezpłatna wanienka; liczba ograniczona (FAQ).",
+     "short": "Bezpłatna wanienka na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://bachledaresort.pl/faq",
+     "value": {
+      "available": true,
+      "free": true,
+      "limited": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala zabaw w tatrzańskim stylu, bezpłatna, codziennie 8:00–22:00 (FAQ). Regulamin: zabawki dla dzieci 0–12 lat, dzieci do 4 lat tylko w obecności opiekuna; hotel nie zapewnia opieki.",
+     "short": "Sala zabaw 8–22, do 4 lat z rodzicem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://u.profitroom.com/2019-bachledaresidence-pl/uploads/documents/RegulaminSaliZabawPL-EN.pdf",
+     "value": {
+      "available": true,
+      "close": "22:00",
+      "free": true,
+      "open": "08:00",
+      "supervised": false,
+      "with_parent_under_years": 4
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animacje z profesjonalnymi animatorami tylko w sezonie: wakacje, ferie zimowe, święta; program w recepcji (FAQ). Wieku strona nie podaje.",
+     "short": "Animacje w wakacje, ferie i święta",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://bachledaresort.pl/faq",
+     "value": {
+      "available": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking płatny 50 zł za dobę, bez rezerwacji; w Bachleda Residence w tej samej cenie garaż (FAQ).",
+     "short": "Parking 50 zł/doba, garaż w Residence",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://bachledaresort.pl/faq",
+     "value": {
+      "fee_pln_per_day": 50,
+      "garage": true,
+      "paid": true,
+      "reservable": false
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.289773,
+   "lon": 19.957932,
+   "name": "Bachleda Resort Zakopane",
+   "official_url": "https://bachledaresort.pl/",
+   "place": "zakopane",
+   "slug": "bachleda-resort-zakopane",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
      "minutes": 105,
      "mode": "car",
      "note": "110 km",
@@ -21514,6 +21845,168 @@
    "official_url": "https://www.goldhotel.eu/",
    "place": "zakopane",
    "slug": "gold-hotel-zakopane",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 100,
+     "mode": "car",
+     "note": "110 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.2995%2C19.9539",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 135,
+     "mode": "car",
+     "note": "180 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.2995%2C19.9539",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 250,
+     "mode": "car",
+     "note": "370 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.2995%2C19.9539",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 290,
+     "mode": "car",
+     "note": "400 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.2995%2C19.9539",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 370,
+     "mode": "car",
+     "note": "560 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.2995%2C19.9539",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 430,
+     "mode": "car",
+     "note": "690 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.2995%2C19.9539",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Słoneczna 2a, 34-500 Zakopane",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko dla niemowlęcia na życzenie. Opłaty strona nie podaje.",
+     "short": "Łóżeczko na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotel-helios.pl/dla-dzieci/",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": "0-3",
+     "key": "child_free_stay",
+     "note": "Dzieci do 3 lat nocują bezpłatnie; od 3 lat dostawka (ceny strona nie podaje). Czy darmowy pobyt obejmuje dziecko, które skończyło 3 lata, strona nie precyzuje.",
+     "short": "Dzieci do 3 lat gratis",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotel-helios.pl/dla-dzieci/",
+     "value": {
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełko do karmienia wśród udogodnień dla rodzin.",
+     "short": "Krzesełko do karmienia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotel-helios.pl/dla-dzieci/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka na życzenie. Opłaty strona nie podaje.",
+     "short": "Wanienka na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotel-helios.pl/dla-dzieci/",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala zabaw z grami i zabawami manualnymi. Minimalnego wieku, godzin ani tego, czy rodzic musi zostać, strona nie podaje.",
+     "short": "Sala zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotel-helios.pl/dla-dzieci/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Przed hotelem duży zewnętrzny plac zabaw i piaskownica.",
+     "short": "Duży plac zabaw z piaskownicą",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotel-helios.pl/",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Duży, bezpłatny parking.",
+     "short": "Duży bezpłatny parking",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotel-helios.pl/dla-dzieci/",
+     "value": {
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.2994547,
+   "lon": 19.9538947,
+   "name": "Hotel Helios",
+   "official_url": "https://hotel-helios.pl/",
+   "place": "zakopane",
+   "slug": "helios-zakopane",
    "status": "published"
   },
   {
@@ -21896,6 +22389,140 @@
    "official_url": "https://www.nosalowy-dwor.eu/",
    "place": "zakopane",
    "slug": "nosalowy-dwor-zakopane",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 100,
+     "mode": "car",
+     "note": "110 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.2986%2C19.9834",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 135,
+     "mode": "car",
+     "note": "180 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.2986%2C19.9834",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 250,
+     "mode": "car",
+     "note": "370 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.2986%2C19.9834",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 290,
+     "mode": "car",
+     "note": "400 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.2986%2C19.9834",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 370,
+     "mode": "car",
+     "note": "560 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.2986%2C19.9834",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 430,
+     "mode": "car",
+     "note": "700 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.2986%2C19.9834",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Paryskich 15, 34-500 Zakopane",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczka turystyczne wśród udogodnień dla maluszków. Opłaty strona nie podaje.",
+     "short": "Łóżeczka turystyczne",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelparyski.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W restauracji są krzesełka do karmienia.",
+     "short": "Krzesełka w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelparyski.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Wyjątkowe menu dla dzieci.",
+     "short": "Menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelparyski.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienki do kąpieli maluszków wśród udogodnień dla dzieci.",
+     "short": "Wanienki dla maluszków",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelparyski.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Strona dla dzieci wymienia Małpi Gaj (miejsce zabaw, także na urodziny). Minimalnego wieku, godzin ani zasad opieki strona nie podaje.",
+     "short": "Małpi Gaj",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelparyski.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.29861,
+   "lon": 19.9834,
+   "name": "Hotel Paryski",
+   "official_url": "https://hotelparyski.pl/",
+   "place": "zakopane",
+   "slug": "paryski-zakopane",
    "status": "published"
   },
   {

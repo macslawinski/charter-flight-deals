@@ -1,0 +1,149 @@
+# Facts from the hotel's own website (bachledaresort.pl; robots.txt allows all but /pl/privacy, checked
+# 2026-11-08): /faq, /regulaminy, Regulamin sali zabaw (PDF), /regulamin-spa-wellness-bachleda-resort-zakopane,
+# home page. Written in our words. The resort has two buildings, Bachleda Residence and Hotel Wersal; the note
+# says when the site ties a fact to one of them.
+# Also on the site, no feature key for it: Spa & Wellness with a pool, jacuzzi and saunas, 8:00-22:00; under 13
+# only with an adult, under 3 only in waterproof swim nappies; Hotel Wersal guests: wellness free for children
+# up to 4, 25 zł per 3 h for ages 5-11; Residence: children aged 5-11 pay a surcharge, 12+ full price.
+# Not stated (so not recorded yet): changing table, potty, bottle warmer, baby monitor, lift, brodzik (none
+# mentioned).
+#
+# Coordinates: the hotel's own map link (maps.google.com/?q=49.289773,19.957932).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet (Zakopane station).
+slug = "bachleda-resort-zakopane"
+place = "zakopane"
+name = "Bachleda Resort Zakopane"
+official_url = "https://bachledaresort.pl/"
+address = "ul. Tetmajera 16, 34-500 Zakopane"
+lat = 49.289773
+lon = 19.957932
+status = "published"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true, free = true, limited = true }
+short = "Bezpłatne łóżeczko na życzenie (ograniczona liczba)"
+note = "Na życzenie bezpłatne łóżeczko dla niemowlęcia; liczba ograniczona (FAQ)."
+source = "hotel_website"
+url = "https://bachledaresort.pl/faq"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "child_free_stay"
+value = { free = true, sleeping_with_parents = true, max_age_years = 4 }
+short = "Do 4 lat gratis w łóżku rodziców (Residence)"
+note = "W Bachleda Residence dzieci do 4. roku życia nocują bezpłatnie, jeśli śpią na łóżku rodziców; 5–11 lat dopłata zależna od oferty, od 12 lat pełna cena (FAQ)."
+source = "hotel_website"
+url = "https://bachledaresort.pl/faq"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "high_chair"
+value = { available = true, where = "restaurant" }
+short = "Krzesełka przy śniadaniu"
+note = "W restauracji La Prima (Bachleda Residence) przy śniadaniu 7:00–11:00 są krzesełka do karmienia (FAQ)."
+source = "hotel_website"
+url = "https://bachledaresort.pl/faq"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true, kids_buffet = true }
+short = "Pozycje dla dzieci w bufecie śniadaniowym"
+note = "W bufecie śniadaniowym La Prima są specjalne pozycje dla dzieci (FAQ)."
+source = "hotel_website"
+url = "https://bachledaresort.pl/faq"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, on_request = true, free = true, limited = true }
+short = "Bezpłatna wanienka na życzenie"
+note = "Na życzenie bezpłatna wanienka; liczba ograniczona (FAQ)."
+source = "hotel_website"
+url = "https://bachledaresort.pl/faq"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true, open = "08:00", close = "22:00", free = true, with_parent_under_years = 4, supervised = false }
+short = "Sala zabaw 8–22, do 4 lat z rodzicem"
+note = "Sala zabaw w tatrzańskim stylu, bezpłatna, codziennie 8:00–22:00 (FAQ). Regulamin: zabawki dla dzieci 0–12 lat, dzieci do 4 lat tylko w obecności opiekuna; hotel nie zapewnia opieki."
+source = "hotel_website"
+url = "https://u.profitroom.com/2019-bachledaresidence-pl/uploads/documents/RegulaminSaliZabawPL-EN.pdf"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, seasonal = true }
+short = "Animacje w wakacje, ferie i święta"
+note = "Animacje z profesjonalnymi animatorami tylko w sezonie: wakacje, ferie zimowe, święta; program w recepcji (FAQ). Wieku strona nie podaje."
+source = "hotel_website"
+url = "https://bachledaresort.pl/faq"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { paid = true, fee_pln_per_day = 50, garage = true, reservable = false }
+short = "Parking 50 zł/doba, garaż w Residence"
+note = "Parking płatny 50 zł za dobę, bez rezerwacji; w Bachleda Residence w tej samej cenie garaż (FAQ)."
+source = "hotel_website"
+url = "https://bachledaresort.pl/faq"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 100
+note = "110 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.2898%2C19.9579"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 140
+note = "180 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.2898%2C19.9579"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 255
+note = "370 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.2898%2C19.9579"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 290
+note = "400 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.2898%2C19.9579"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 370
+note = "560 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.2898%2C19.9579"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 430
+note = "700 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.2898%2C19.9579"
+verified_at = 2026-11-08

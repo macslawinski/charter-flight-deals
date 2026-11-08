@@ -165,6 +165,13 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       playroom only from a photo caption, to confirm). Car access only. 8 leads left (2 need Chrome).
 - [ ] U (phone/e-mail, optional): Kasprowy high chair, kids' menu, cot fee; Nosalowy which seasons are free for
       under 6; Piastun playroom, baby items; Chochołowy free-stay age outside packages.
+- [x] C: małopolskie hotels, batch 5 (2026-11-08): Bachleda Resort (Zakopane, 8 facts: free cot and bath,
+      under 4 free in parents' bed, playroom 8–22 with a parent under 4, parking 50 zł), Helios (Zakopane, 7: under
+      3 free, cot on request, big playground), Hotel Amber (Kraków, 5: cot 50 zł/night under 2, under 6 free on
+      existing beds, lift), Paryski (Zakopane, 5: travel cots, baths, Małpi Gaj with no details). Three under 8:
+      their sites say little. Car access only. 4 leads left: Grand Ascot, Maria; Bania and Hotel Krynica (Chrome).
+- [ ] U (phone/e-mail, optional): Paryski Małpi Gaj age and hours, free-stay age, parking; Helios kids' menu and
+      playroom hours; Amber baby bath and parking fee.
 - [x] ~~U: decide which pomorskie hotels to publish (all are `draft`);~~ superseded above; those under 8 facts need a phone or e-mail
       round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Kiston cot fee, free-stay age, brodzik; Primavera cot fee, Playland age;

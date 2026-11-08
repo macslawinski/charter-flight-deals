@@ -75,7 +75,7 @@ lat = 50.0654055
 lon = 19.9336718
 signals = ["łóżeczko", "krzesełko", "podgrzewacz"]
 why = "Hotel w centrum: łóżeczko na życzenie (dla dziecka do 2 lat 50 zł za dobę), krzesełko i podgrzewacz do butelek na życzenie."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Farmona Hotel Business & SPA"
@@ -205,7 +205,7 @@ lat = 49.290045
 lon = 19.9577775
 signals = ["łóżeczko", "wanienka", "krzesełko", "sala zabaw"]
 why = "Bezpłatne łóżeczko i wanienka (ograniczona liczba), krzesełka przy śniadaniu, sala zabaw 8–22 z rodzicem; w Residence dzieci do 4 lat w łóżku rodziców gratis."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Crocus"
@@ -277,7 +277,7 @@ lat = 49.2994547
 lon = 19.9538947
 signals = ["łóżeczko", "wanienka", "krzesełko", "sala zabaw"]
 why = "Wanienka i łóżeczko dla niemowlaka na życzenie, krzesełko, sala zabaw; dzieci do 3 lat nocują bezpłatnie."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Paryski"
@@ -289,7 +289,7 @@ lat = 49.2957477
 lon = 19.9827128
 signals = ["łóżeczko", "wanienka", "krzesełko", "małpi gaj"]
 why = "Łóżeczka turystyczne, wanienki dla maluszków, krzesełka w restauracji, menu dla dzieci, Małpi Gaj."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Sabała"
