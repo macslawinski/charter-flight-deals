@@ -14,7 +14,7 @@ official_url = "https://www.grandchotowa.pl/"
 address = "Chotowa 87c, 39-217 Grabiny"
 lat = 50.0323326
 lon = 21.2830819
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

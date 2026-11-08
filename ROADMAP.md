@@ -209,7 +209,7 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       southern voivodeships (`hotel_leads/dolnoslaskie.toml`, `podkarpackie.toml`). New places Karpacz,
       Szklarska Poręba, Staniszów (Karkonosze), Polanica-Zdrój (Kotlina Kłodzka), Polańczyk, Myczkowce, Arłamów
       (Bieszczady), Chotowa (Podkarpacie, trip group "Jeziora i lasy"). Car access only (OSRM); train not checked.
-- [x] C: dolnośląskie + podkarpackie hotels, batch 1 (2026-11-08), 16 hotels, all `draft`. 8+ verified facts:
+- [x] C: dolnośląskie + podkarpackie hotels, batch 1 (2026-11-08), 16 hotels, all published 2026-11-08. 8+ verified facts:
       Czarny Kamień (12), Artus (10), Zefir (10), Mövenpick (9), Tremonti (9 + free stay to 6 or 3 to confirm),
       Termy Karkonosze (8), Arłamów (8), Grand Chotowa (8). Under 8: Gołębiewski Karpacz, Mercure Skalny,
       Green Mountain, Irena Eris Polanica, Solina Spa, Skalny SPA (6 + brodzik to confirm), Vivaldi, Kryształ.

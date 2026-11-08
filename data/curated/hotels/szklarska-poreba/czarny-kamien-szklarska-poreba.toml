@@ -14,7 +14,7 @@ official_url = "https://www.czarnykamien.pl/"
 address = "ul. Wojska Polskiego 11, 58-580 Szklarska Poręba"
 lat = 50.8308811
 lon = 15.5127825
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

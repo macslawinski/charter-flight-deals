@@ -14,7 +14,7 @@ official_url = "https://termykarkonosze.pl/"
 address = "ul. Zdrojowa 2, 58-500 Staniszów"
 lat = 50.8627244
 lon = 15.7287856
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

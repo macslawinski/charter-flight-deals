@@ -14,7 +14,7 @@ official_url = "https://www.green-mountain.pl/"
 address = "ul. Sarnia 21, 58-540 Karpacz"
 lat = 50.7646256
 lon = 15.7663482
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "child_free_stay"
