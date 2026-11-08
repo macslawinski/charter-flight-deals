@@ -248,6 +248,11 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       Kortowo (6), Vitalia (6). Skipped Moran (read in Chrome: animations from 5, nothing for 0-3), Grand Royal
       and Trzy Jeziora (0-3 items only in family packages). Car access only; train not checked. No leads left.
 - [ ] U: decide which wielkopolskie hotels to publish (all `draft`).
+- [x] C: lubelskie hotels, batch 1 (2026-11-08, published; leads in `hotel_leads/lubelskie.toml`): Zamek Janów
+      Podlaski (9: free stay to 5, cot, bath, changing table, brodziki), Arche Nałęczów (7: brodzik until 19:00,
+      playroom from 4, bottle warming), Trzy Korony Puławy (7: free cot, bath, changing table, free stay to 4),
+      Kraft Kraśnik (5). New region "Lubelszczyzna" in a new trip group "Wyżyny i uzdrowiska". Podkarpackie
+      leads closed (Gościniec nad Sawą, Blue Diamond skipped).
 - [ ] C: train access for the Karkonosze / Bieszczady hotels (Jelenia Góra, Kłodzko, Zagórz stations).
 - [ ] U (phone/e-mail, optional): Tremonti free-stay age (6 vs 3); Skalny SPA brodzik; Artus cot fee; Czarny
       Kamień cot fee; Arłamów cot fee and free-stay rule; most: playroom minimum age.

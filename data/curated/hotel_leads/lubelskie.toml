@@ -1,0 +1,87 @@
+# Leads for Product B: hotels in województwo lubelskie whose own website shows an offer for children
+# 0-3. Discovered via OpenStreetMap (tourism=hotel, leisure=resort; (c) OpenStreetMap contributors,
+# ODbL) and web search pointing to the hotels' own sites. Leads not yet read are probe hits only.
+# Not facts: the curate-hotel skill reads the facts.
+voivodeship = "lubelskie"
+checked_at = 2026-11-08
+covered = ["całe województwo (311 obiektów w OSM, 152 strony sprawdzone), 2026-11-08"]
+
+[[lead]]
+name = "Zamek Janów Podlaski"
+town = "Janów Podlaski"
+official_url = "https://www.zamekjanowpodlaski.pl/"
+kids_url = "https://www.zamekjanowpodlaski.pl/hotel-przyjazny-dzieciom"
+osm = "node/6847786120"
+signals = ["łóżeczko", "wanienka", "przewijak", "krzesełko", "brodzik"]
+why = "Łóżeczko i wanienka na życzenie, przewijak, brodziki, do lat 5 gratis."
+status = "curated"
+
+[[lead]]
+name = "Hotel Kraft"
+town = "Kraśnik"
+official_url = "https://www.hotelkraft.pl/"
+kids_url = "https://www.hotelkraft.pl/dzieci"
+osm = "way/345028121"
+signals = ["łóżeczko", "przewijak"]
+why = "Łóżeczko turystyczne, pokój do przewijania i karmienia, kącik zabaw."
+status = "curated"
+
+[[lead]]
+name = "Arche Hotel"
+town = "Lublin"
+official_url = "https://archehotellublin.pl/"
+signals = ["łóżeczko", "wanienka", "podgrzewacz", "przewijak"]
+why = "Probe: łóżeczko, wanienka, podgrzewacz, przewijak, ale na stronie pakietu; trzeba znaleźć stałą stronę dla dzieci."
+status = "lead"
+
+[[lead]]
+name = "Agit"
+town = "Lublin"
+official_url = "https://agit-hotel.pl/"
+kids_url = "https://agit-hotel.pl/strefa-dziecka/nasza-oferta"
+signals = ["krzesełko", "sala zabaw", "basen dla dzieci"]
+why = "Probe: strefa dziecka z salą zabaw, krzesełka, basen dla dzieci; nie czytane."
+status = "lead"
+
+[[lead]]
+name = "Arche Nałęczów"
+town = "Nałęczów"
+official_url = "https://archenaleczow.pl/"
+kids_url = "https://archenaleczow.pl/hotel-dla-dzieci"
+osm = "relation/5361818"
+signals = ["krzesełko", "podgrzewacz", "brodzik"]
+why = "Krzesełka, podgrzanie butelek, brodzik (dzieci do 19:00), sala zabaw od 4 lat."
+status = "curated"
+
+[[lead]]
+name = "Hotel Sanvit Lake Resort & Spa"
+town = "Okuninka"
+official_url = "https://www.okuninka.sanvit.pl/"
+signals = ["łóżeczko", "kids club"]
+why = "Probe: łóżeczko, kids club, ale tylko w ofercie ferii; trzeba sprawdzić stałe strony."
+status = "lead"
+
+[[lead]]
+name = "Trzy Korony Boutique Hotel"
+town = "Puławy"
+official_url = "https://www.trzy-korony.com/"
+kids_url = "https://www.trzy-korony.com/odkryj-trzy-korony/dzieci-w-hotelu"
+osm = "way/438281758"
+signals = ["łóżeczko", "wanienka", "przewijak"]
+why = "Bezpłatne łóżeczko, wanienka i przewijak, dzieci do 4 lat gratis."
+status = "curated"
+
+[[lead]]
+name = "Junior"
+town = "Zamość"
+official_url = "https://hoteljunior.pl/"
+signals = ["łóżeczko", "niemowlę"]
+why = "Probe: łóżeczko, niemowlę w cenniku; nie czytane."
+status = "lead"
+
+[[lead]]
+name = "Król Kazimierz Hotel & SPA"
+town = "Kazimierz Dolny"
+official_url = "https://www.krolkazimierz.pl/"
+status = "skipped"
+skip_reason = "Strona nie wymienia nic dla 0-3 (tylko 'pokoje dla rodzin')."

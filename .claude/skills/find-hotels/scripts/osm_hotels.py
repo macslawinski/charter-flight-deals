@@ -253,6 +253,10 @@ def probe(row: dict) -> dict:
     if PORTALS.search(host(url) or ""):
         return {**res, "status": "portal", "flags": ["portal_domain"]}
     try:
+        httpx.URL(url)  # OSM 'website' tags are sometimes free text (e.g. a name), not a URL
+    except httpx.InvalidURL:
+        return {**res, "status": "bad_url"}
+    try:
         with httpx.Client(headers={"User-Agent": UA}, timeout=15, follow_redirects=True) as c:
             rp = RobotFileParser()
             try:
