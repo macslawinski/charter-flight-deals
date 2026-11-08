@@ -1,0 +1,219 @@
+# Facts from the hotel's own website (zalesiemazury.pl; robots.txt allows all, checked 2026-11-08):
+# /hotel/qa, /dzieci/baby-club, /dzieci/hotel-dla-dzieci, /basen. Written in our words.
+# Also on the site, no feature key for it: Mini Club for ages 3-8 (same hours, also free in all package stays);
+# Bajkolandia (200 m2) with a room for toddlers up to 3; Sala Piaskowa, a 100 m2 indoor sandpit; 1500 m2 of indoor
+# play rooms; mini zoo; a 60 m water slide on the beach from age 5 with an adult; bibs in the restaurant; the beach
+# has a lifeguard in summer except Saturdays. Pool for non-guests: under 3 free.
+# Not stated (so not recorded yet): free-stay age (price depends on age, package and room), food for babies.
+#
+# Coordinates: OpenStreetMap node/4162583291 ((c) OpenStreetMap contributors, ODbL).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet (nearest stations Barczewo / Olsztyn).
+slug = "zalesie-mazury"
+place = "zalesie"
+name = "Zalesie Mazury Active Spa"
+official_url = "https://www.zalesiemazury.pl/"
+address = "Zalesie 12, 11-010 Barczewo"
+lat = 53.830512
+lon = 20.738063
+status = "published"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true, free = true, travel_cot = true, bedding = true }
+short = "Turystyczne, bezpłatne, zgłosić wcześniej"
+note = "Na wcześniejsze życzenie bezpłatne łóżeczko turystyczne w pokoju, z pościelą i ręcznikiem."
+source = "hotel_website"
+url = "https://www.zalesiemazury.pl/hotel/qa"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_monitor"
+value = { available = true, on_request = true, free = true }
+short = "Bezpłatnie w recepcji"
+note = "Elektroniczną nianię można bezpłatnie wypożyczyć w recepcji."
+source = "hotel_website"
+url = "https://www.zalesiemazury.pl/hotel/qa"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "high_chair"
+value = { available = true, where = "restaurant" }
+short = "Krzesełka w restauracji"
+note = "Restauracja ma krzesełka, śliniaczki i specjalne menu dla dzieci."
+source = "hotel_website"
+url = "https://www.zalesiemazury.pl/dzieci/hotel-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true, kids_buffet = true }
+short = "Osobny bufet dziecięcy"
+note = "Dla dzieci osobny bufet dziecięcy i specjalne menu w restauracji."
+source = "hotel_website"
+url = "https://www.zalesiemazury.pl/dzieci/hotel-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true, on_request = true, free = true }
+short = "Bezpłatnie w recepcji"
+note = "Podgrzewacz do butelek można bezpłatnie wypożyczyć w recepcji."
+source = "hotel_website"
+url = "https://www.zalesiemazury.pl/hotel/qa"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, on_request = true, free = true }
+short = "Bezpłatnie w recepcji"
+note = "Wanienkę można bezpłatnie wypożyczyć w recepcji."
+source = "hotel_website"
+url = "https://www.zalesiemazury.pl/hotel/qa"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "changing_table"
+value = { available = true, on_request = true }
+short = "Na życzenie"
+note = "Przewijaki na życzenie gości (obok łóżeczek turystycznych i wanienek)."
+source = "hotel_website"
+url = "https://www.zalesiemazury.pl/dzieci/hotel-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "potty"
+value = { available = true, on_request = true, free = true, toilet_seat_adapter = true }
+short = "Nocnik i nakładka, bezpłatnie"
+note = "Nocnik i nakładkę na sedes można bezpłatnie wypożyczyć w recepcji."
+source = "hotel_website"
+url = "https://www.zalesiemazury.pl/hotel/qa"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true, min_age_months = 4, max_age_years = 3, supervised = true, free = true, open = "09:00", close = "21:00", break = "14:00-15:00" }
+short = "Baby Club 4 mies.–3 lata, z opiekunami"
+note = "Baby Club dla dzieci od 4. miesiąca do 3 lat: po krótkiej adaptacji rodzice mogą zostawić dziecko z animatorami; codziennie 9:00–14:00 i 15:00–21:00 (11 godzin), bez dodatkowych opłat w ramach wszystkich pakietów pobytowych. Jest sala snu z drewnianymi łóżeczkami na drzemki."
+source = "hotel_website"
+url = "https://www.zalesiemazury.pl/hotel/qa"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true, count = 3 }
+short = "Trzy place zabaw na zewnątrz"
+note = "Trzy zewnętrzne place zabaw."
+source = "hotel_website"
+url = "https://www.zalesiemazury.pl/dzieci/hotel-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, year_round = true }
+short = "Codziennie, w kilku blokach"
+note = "Animacje dla dzieci codziennie, w kilku blokach czasowych. Wieku strona nie podaje (Baby Club i Mini Club osobno)."
+source = "hotel_website"
+url = "https://www.zalesiemazury.pl/dzieci/hotel-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "paddling_pool"
+value = { indoor = true, heated = true, water_temp_c = 29, depth_m = 0.5, slide = true, fountain = true }
+short = "Happy Kids: brodzik 50 cm, 29°C"
+note = "Strefa Happy Kids w całorocznym basenie: brodzik o głębokości 50 cm, woda 29°C, fontanna grzybek i małe zjeżdżalnie (Słoń, Smok). Czynne codziennie 9:00–21:00, w cenie pobytu."
+source = "hotel_website"
+url = "https://www.zalesiemazury.pl/basen"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "lift"
+value = { available = true, where = "part_B" }
+short = "Winda w części B, bez windy w części A"
+note = "Winda jest w części B i prowadzi też do pokoi w części F i do strefy basenowej; część A (parter i piętro) nie ma windy."
+source = "hotel_website"
+url = "https://www.zalesiemazury.pl/hotel/qa"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "step_free_access"
+value = { available = true }
+short = "Łączniki przystosowane do wózków"
+note = "Części kompleksu łączą łączniki przystosowane do poruszania się z wózkami dziecięcymi."
+source = "hotel_website"
+url = "https://www.zalesiemazury.pl/hotel/qa"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { own_beach = true, lake = "Orzyc" }
+short = "Własna piaszczysta plaża nad jeziorem"
+note = "Hotel leży nad jeziorem Orzyc i ma prywatną, piaszczystą plażę; w wakacje z ratownikiem (oprócz sobót). Odległości strona nie podaje."
+source = "hotel_website"
+url = "https://www.zalesiemazury.pl/hotel/qa"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { free = true, guarded = false, reservable = false }
+short = "Bezpłatny, bez rezerwacji"
+note = "Parking dla gości bezpłatny, nie wymaga rezerwacji; nie jest strzeżony."
+source = "hotel_website"
+url = "https://www.zalesiemazury.pl/hotel/qa"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 145
+note = "200 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.8305%2C20.7381"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 170
+note = "230 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.8305%2C20.7381"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 310
+note = "390 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.8305%2C20.7381"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 345
+note = "500 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.8305%2C20.7381"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 370
+note = "540 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.8305%2C20.7381"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 380
+note = "530 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.8305%2C20.7381"
+verified_at = 2026-11-08

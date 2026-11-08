@@ -106,7 +106,7 @@ lat = 53.82993
 lon = 21.378381
 signals = ["łóżeczko bezpłatnie"]
 why = "Regulamin: łóżeczko do pokoju na życzenie nieodpłatnie (w miarę dostępności); hotel rodzinny, reszta do sprawdzenia."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Gołębiewski Mikołajki"
@@ -166,7 +166,7 @@ lat = 53.781751
 lon = 20.450412
 signals = ["basen dla maluchów", "sala zabaw"]
 why = "Sekcja Maluchy: basen z podgrzewaną wodą i zabawkami pod okiem ratownika, sala zabaw, menu dla dzieci; łóżeczko do sprawdzenia."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Mazurski Raj"
@@ -262,7 +262,7 @@ lat = 53.784155
 lon = 20.127379
 signals = ["strefa maluszków z brodzikiem", "pokój zabaw"]
 why = "Wydzielona strefa dla maluszków z brodzikiem i fontanną, pokój zabaw dla najmłodszych; sonda widziała 'nie ma możliwości wstawienia ... łóżeczka' (w których pokojach: do sprawdzenia)."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Dr Irena Eris Wzgórza Dylewskie"
@@ -286,7 +286,7 @@ lat = 53.830512
 lon = 20.738063
 signals = ["Baby Club 4 mies.–3 lata", "sala do drzemek z łóżeczkami"]
 why = "Baby Club dla dzieci od 4 miesięcy do 3 lat, 11 godzin dziennie, w cenie pobytów pakietowych; reszta (łóżeczko w pokoju) do sprawdzenia."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Lake Hill Mazury Resort & SPA"

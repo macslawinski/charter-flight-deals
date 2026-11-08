@@ -8533,6 +8533,158 @@
   {
    "access": [
     {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 180,
+     "mode": "car",
+     "note": "250 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.8299%2C21.3784",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 205,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.8299%2C21.3784",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 345,
+     "mode": "car",
+     "note": "430 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.8299%2C21.3784",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 375,
+     "mode": "car",
+     "note": "550 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.8299%2C21.3784",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 400,
+     "mode": "car",
+     "note": "580 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.8299%2C21.3784",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 410,
+     "mode": "car",
+     "note": "580 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.8299%2C21.3784",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "Kosewo 78, 11-700 Mrągowo",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na życzenie gości z małymi dziećmi hotel bezpłatnie wstawia łóżeczko do pokoju, jeśli jest dostępne (regulamin, §4).",
+     "short": "Bezpłatnie, w miarę dostępności",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://kosewo78.pl/regulamin/",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true,
+      "subject_to_availability": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja ma menu dziecięce.",
+     "short": "Menu dziecięce",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://kosewo78.pl/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Place zabaw dla dzieci i boiska.",
+     "short": "Place zabaw i boiska",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://kosewo78.pl/hotel/",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animacje dla dzieci. Wieku ani terminów strona nie podaje.",
+     "short": "Animacje dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://kosewo78.pl/hotel/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Hotel nad samym brzegiem jeziora Probarskiego, z prywatną plażą.",
+     "short": "Własna plaża nad jeziorem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://kosewo78.pl/",
+     "value": {
+      "lake": "Probarskie",
+      "own_beach": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Monitorowany parking dla wszystkich gości. Opłaty strona nie podaje.",
+     "short": "Monitorowany, dla wszystkich gości",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://kosewo78.pl/",
+     "value": {
+      "available": true,
+      "monitored": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 53.82993,
+   "lon": 21.378381,
+   "name": "Kosewo 78 Family Hotel & SPA",
+   "official_url": "https://kosewo78.pl/",
+   "place": "kosewo",
+   "slug": "kosewo-78",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
      "from_code": "HER",
      "from_kind": "airport",
      "minutes": 25,
@@ -11760,6 +11912,242 @@
    "official_url": "https://www.ognistyptak.pl/",
    "place": "ogonki",
    "slug": "ognisty-ptak-ogonki",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 125,
+     "mode": "car",
+     "note": "170 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.7818%2C20.4504",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 160,
+     "mode": "car",
+     "note": "220 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.7818%2C20.4504",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 290,
+     "mode": "car",
+     "note": "350 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.7818%2C20.4504",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 335,
+     "mode": "car",
+     "note": "490 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.7818%2C20.4504",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 360,
+     "mode": "car",
+     "note": "520 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.7818%2C20.4504",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 370,
+     "mode": "car",
+     "note": "520 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.7818%2C20.4504",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Żeglarska 4, 10-160 Olsztyn",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na życzenie gości łóżeczka dziecięce, usługa bezpłatna.",
+     "short": "Bezpłatnie, na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelprzystan.com/hotel-info",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka do karmienia w obu restauracjach hotelu.",
+     "short": "W obu restauracjach",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelprzystan.com/hotel-info",
+     "value": {
+      "available": true,
+      "where": "all_restaurants"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja hotelu ma menu dla dzieci.",
+     "short": "Kids menu w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelprzystan.com/familyandfriends",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacz do butelek zamawia się w recepcji. Opłaty strona nie podaje.",
+     "short": "Przez recepcję",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelprzystan.com/hotel-info",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienkę zamawia się w recepcji. Opłaty strona nie podaje.",
+     "short": "Przez recepcję",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelprzystan.com/hotel-info",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Strona wymienia przewijaki wśród udogodnień dla dzieci; gdzie są, nie podaje.",
+     "short": "Przewijaki",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelprzystan.com/hotel-info",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Pokój Zabaw dla maluchów. Minimalnego wieku, godzin ani opieki strona nie podaje.",
+     "short": "Pokój Zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelprzystan.com/hotel-info",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Hotel ma plac zabaw.",
+     "short": "Plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelprzystan.com/hotel-info",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animatorzy w wakacje i ferie zimowe, w weekendy i święta. Wieku strona nie podaje.",
+     "short": "Wakacje, ferie, weekendy, święta",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelprzystan.com/hotel-info",
+     "value": {
+      "available": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Brodzik z podgrzewaną wodą dla najmłodszych, pod okiem ratownika. Temperatury i godzin dla dzieci strona nie podaje; od 21:00 basen tylko dla dorosłych.",
+     "short": "Podgrzewany, pod okiem ratownika",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelprzystan.com/hotel-info",
+     "value": {
+      "available": true,
+      "heated": true,
+      "lifeguard": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "lift",
+     "note": "Windy są we wszystkich częściach obiektu.",
+     "short": "Windy we wszystkich częściach",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelprzystan.com/hotel-info",
+     "value": {
+      "available": true,
+      "where": "all_buildings"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking płatny za każdą rozpoczętą dobę: 40 zł albo 70 zł w garażu podziemnym; monitorowany całą dobę. Strona nazywa rodzaje parkingów niespójnie (Q&A: wewnętrzny 70 zł, zewnętrzny 40 zł; sekcja Parking: garaż 70 zł, wewnętrzny 40 zł).",
+     "short": "40 zł lub 70 zł (garaż) za dobę",
+     "source": "hotel_website",
+     "to_confirm": true,
+     "url": "https://www.hotelprzystan.com/hotel-info",
+     "value": {
+      "fee_pln_per_day": 40,
+      "monitored": true,
+      "paid": true,
+      "underground_fee_pln_per_day": 70
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 53.781751,
+   "lon": 20.450412,
+   "name": "Przystań Hotel & SPA",
+   "official_url": "https://www.hotelprzystan.com/",
+   "place": "olsztyn",
+   "slug": "przystan-olsztyn",
    "status": "published"
   },
   {
@@ -17574,6 +17962,159 @@
     {
      "from_code": "Gdańsk",
      "from_kind": "city",
+     "minutes": 105,
+     "mode": "car",
+     "note": "140 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.7842%2C20.1274",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 170,
+     "mode": "car",
+     "note": "210 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.7842%2C20.1274",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 275,
+     "mode": "car",
+     "note": "340 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.7842%2C20.1274",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 340,
+     "mode": "car",
+     "note": "480 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.7842%2C20.1274",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 365,
+     "mode": "car",
+     "note": "520 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.7842%2C20.1274",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 375,
+     "mode": "car",
+     "note": "510 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.7842%2C20.1274",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "Worliny 33, 14-105 Łukta",
+   "features": [
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka do karmienia w hotelowej restauracji.",
+     "short": "W restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelmasuria.pl/dla-najmlodszych/",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Specjalne menu dla dzieci w restauracji.",
+     "short": "Menu dla najmłodszych",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelmasuria.pl/dla-najmlodszych/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Pokój zabaw dla dzieci od roku do 12 lat; dzieci mogą w nim przebywać wyłącznie z dorosłym opiekunem (regulamin sali zabaw). Godzin strona nie podaje.",
+     "short": "Od 1 roku, tylko z dorosłym",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelmasuria.pl/wp-content/uploads/2026/08/MAS_regulamin_salazabaw.pdf",
+     "value": {
+      "available": true,
+      "max_age_years": 12,
+      "min_age_years": 1,
+      "with_parent": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Zewnętrzny plac zabaw ze zjeżdżalnią, małą ścianką wspinaczkową i huśtawkami.",
+     "short": "Zjeżdżalnia, ścianka, huśtawki",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelmasuria.pl/dla-dzieci/",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animacje dla dzieci w ferie zimowe, wakacje i wybrane święta. Wieku strona nie podaje.",
+     "short": "Ferie, wakacje, wybrane święta",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelmasuria.pl/dla-dzieci/",
+     "value": {
+      "available": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Przy basenie wydzielona strefa dla maluszków z brodzikiem i fontanną grzybek. Basen 9:00–21:00; dzieci do 3 lat tylko w pieluchomajtkach do pływania. Temperatury strona nie podaje.",
+     "short": "Strefa maluszków z brodzikiem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelmasuria.pl/dla-dzieci/",
+     "value": {
+      "available": true,
+      "fountain": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 53.784155,
+   "lon": 20.127379,
+   "name": "Masuria Hotel & SPA",
+   "official_url": "https://hotelmasuria.pl/",
+   "place": "worliny",
+   "slug": "masuria-worliny",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
      "minutes": 115,
      "mode": "car",
      "note": "150 km",
@@ -17758,6 +18299,317 @@
    "official_url": "https://www.drirenaerisspa.pl/wzgorza-dylewskie",
    "place": "wysoka-wies",
    "slug": "irena-eris-wzgorza-dylewskie",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 145,
+     "mode": "car",
+     "note": "200 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.8305%2C20.7381",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 170,
+     "mode": "car",
+     "note": "230 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.8305%2C20.7381",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 310,
+     "mode": "car",
+     "note": "390 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.8305%2C20.7381",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 345,
+     "mode": "car",
+     "note": "500 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.8305%2C20.7381",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 370,
+     "mode": "car",
+     "note": "540 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.8305%2C20.7381",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 380,
+     "mode": "car",
+     "note": "530 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.8305%2C20.7381",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "Zalesie 12, 11-010 Barczewo",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na wcześniejsze życzenie bezpłatne łóżeczko turystyczne w pokoju, z pościelą i ręcznikiem.",
+     "short": "Turystyczne, bezpłatne, zgłosić wcześniej",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.zalesiemazury.pl/hotel/qa",
+     "value": {
+      "available": true,
+      "bedding": true,
+      "free": true,
+      "on_request": true,
+      "travel_cot": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_monitor",
+     "note": "Elektroniczną nianię można bezpłatnie wypożyczyć w recepcji.",
+     "short": "Bezpłatnie w recepcji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.zalesiemazury.pl/hotel/qa",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Restauracja ma krzesełka, śliniaczki i specjalne menu dla dzieci.",
+     "short": "Krzesełka w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.zalesiemazury.pl/dzieci/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Dla dzieci osobny bufet dziecięcy i specjalne menu w restauracji.",
+     "short": "Osobny bufet dziecięcy",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.zalesiemazury.pl/dzieci/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "kids_buffet": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacz do butelek można bezpłatnie wypożyczyć w recepcji.",
+     "short": "Bezpłatnie w recepcji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.zalesiemazury.pl/hotel/qa",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienkę można bezpłatnie wypożyczyć w recepcji.",
+     "short": "Bezpłatnie w recepcji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.zalesiemazury.pl/hotel/qa",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Przewijaki na życzenie gości (obok łóżeczek turystycznych i wanienek).",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.zalesiemazury.pl/dzieci/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Nocnik i nakładkę na sedes można bezpłatnie wypożyczyć w recepcji.",
+     "short": "Nocnik i nakładka, bezpłatnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.zalesiemazury.pl/hotel/qa",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Baby Club dla dzieci od 4. miesiąca do 3 lat: po krótkiej adaptacji rodzice mogą zostawić dziecko z animatorami; codziennie 9:00–14:00 i 15:00–21:00 (11 godzin), bez dodatkowych opłat w ramach wszystkich pakietów pobytowych. Jest sala snu z drewnianymi łóżeczkami na drzemki.",
+     "short": "Baby Club 4 mies.–3 lata, z opiekunami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.zalesiemazury.pl/hotel/qa",
+     "value": {
+      "available": true,
+      "break": "14:00-15:00",
+      "close": "21:00",
+      "free": true,
+      "max_age_years": 3,
+      "min_age_months": 4,
+      "open": "09:00",
+      "supervised": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Trzy zewnętrzne place zabaw.",
+     "short": "Trzy place zabaw na zewnątrz",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.zalesiemazury.pl/dzieci/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "count": 3,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animacje dla dzieci codziennie, w kilku blokach czasowych. Wieku strona nie podaje (Baby Club i Mini Club osobno).",
+     "short": "Codziennie, w kilku blokach",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.zalesiemazury.pl/dzieci/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "year_round": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Strefa Happy Kids w całorocznym basenie: brodzik o głębokości 50 cm, woda 29°C, fontanna grzybek i małe zjeżdżalnie (Słoń, Smok). Czynne codziennie 9:00–21:00, w cenie pobytu.",
+     "short": "Happy Kids: brodzik 50 cm, 29°C",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.zalesiemazury.pl/basen",
+     "value": {
+      "depth_m": 0.5,
+      "fountain": true,
+      "heated": true,
+      "indoor": true,
+      "slide": true,
+      "water_temp_c": 29
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "lift",
+     "note": "Winda jest w części B i prowadzi też do pokoi w części F i do strefy basenowej; część A (parter i piętro) nie ma windy.",
+     "short": "Winda w części B, bez windy w części A",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.zalesiemazury.pl/hotel/qa",
+     "value": {
+      "available": true,
+      "where": "part_B"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "step_free_access",
+     "note": "Części kompleksu łączą łączniki przystosowane do poruszania się z wózkami dziecięcymi.",
+     "short": "Łączniki przystosowane do wózków",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.zalesiemazury.pl/hotel/qa",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Hotel leży nad jeziorem Orzyc i ma prywatną, piaszczystą plażę; w wakacje z ratownikiem (oprócz sobót). Odległości strona nie podaje.",
+     "short": "Własna piaszczysta plaża nad jeziorem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.zalesiemazury.pl/hotel/qa",
+     "value": {
+      "lake": "Orzyc",
+      "own_beach": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking dla gości bezpłatny, nie wymaga rezerwacji; nie jest strzeżony.",
+     "short": "Bezpłatny, bez rezerwacji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.zalesiemazury.pl/hotel/qa",
+     "value": {
+      "free": true,
+      "guarded": false,
+      "reservable": false
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 53.830512,
+   "lon": 20.738063,
+   "name": "Zalesie Mazury Active Spa",
+   "official_url": "https://www.zalesiemazury.pl/",
+   "place": "zalesie",
+   "slug": "zalesie-mazury",
    "status": "published"
   }
  ],
@@ -18129,6 +18981,38 @@
    "name": "Wysoka Wieś",
    "region": "Mazury",
    "slug": "wysoka-wies"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Zalesie (Barczewo)",
+   "region": "Mazury",
+   "slug": "zalesie"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Olsztyn",
+   "region": "Warmia",
+   "slug": "olsztyn"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Worliny",
+   "region": "Mazury",
+   "slug": "worliny"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Kosewo",
+   "region": "Mazury",
+   "slug": "kosewo"
   }
  ],
  "rule_keys": [

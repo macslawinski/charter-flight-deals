@@ -122,6 +122,12 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       (robots.txt blocks AI agents incl. Claude). Car access only. 11 leads left.
 - [ ] U (phone/e-mail, optional): Kadyny cot fee amount; Mazurski Raj and Mrągowo free-stay age; Mazurski Raj
       Kraina Kłobuka minimum age and whether a parent must stay.
+- [x] C: warmińsko-mazurskie hotels, batch 4 (2026-11-08): Zalesie Mazury (16 facts: Baby Club 4 months–3 years
+      with carers, free cot/bath/potty/monitor, brodzik 50 cm 29°C), Przystań (Olsztyn, 11 + parking to confirm:
+      free cot, heated brodzik with lifeguard), Masuria (Worliny, 6: under 8, cot not stated), Kosewo 78 (6: under
+      8, free cot, own beach, no pool). Car access only. 7 leads left (3 need Chrome or have no own site).
+- [ ] U (phone/e-mail, optional): Przystań parking (which lot costs 40 vs. 70 zł); Masuria cot and baby items;
+      Kosewo 78 high chair, baby items, free-stay age.
 - [x] ~~U: decide which pomorskie hotels to publish (all are `draft`);~~ superseded above; those under 8 facts need a phone or e-mail
       round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Kiston cot fee, free-stay age, brodzik; Primavera cot fee, Playland age;
