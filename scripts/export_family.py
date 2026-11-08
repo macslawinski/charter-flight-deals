@@ -46,6 +46,7 @@ def build(data: curated.Curated) -> dict[str, Any]:
         "venue_keys": sorted(curated.VENUE_KEYS),
         "venue_cities": curated.VENUE_CITIES,
         "venues": [asdict(v) for v in sorted(data.venues, key=lambda v: (v.city, v.name))],
+        "essentials": {e.topic: asdict(e) for e in data.essentials},
     })
 
 

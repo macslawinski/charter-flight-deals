@@ -1,0 +1,282 @@
+# Children's travel documents (Wyjazdy). Official sources only (*.gov.pl, checked by the loader).
+# Facts in our own words; `short` is what the page shows, `note` the detail behind it.
+# Where official sources disagree, the fact is `to_confirm = true` and names both.
+title = "Dokumenty dziecka na wyjazd"
+
+[[group]]
+id = "dokument"
+title = "Jaki dokument"
+icon = "info"
+
+[[group]]
+id = "dowod"
+title = "Dowód osobisty dziecka"
+icon = "card"
+intro = "Wystarczy w krajach, które wpuszczają na dowód. Jest bezpłatny."
+
+[[group]]
+id = "paszport"
+title = "Paszport dla dziecka"
+icon = "plane"
+intro = "Potrzebny poza krajami, które wpuszczają na dowód."
+
+[[group]]
+id = "ekuz"
+title = "EKUZ (Europejska Karta Ubezpieczenia Zdrowotnego)"
+icon = "medical"
+intro = "Leczenie w publicznej opiece zdrowotnej w krajach UE i kilku innych, na zasadach tego kraju."
+
+[[group]]
+id = "zgoda"
+title = "Wyjazd z jednym rodzicem"
+icon = "people"
+
+# --- which document ---------------------------------------------------------------------------
+
+[[fact]]
+group = "dokument"
+key = "own-document"
+short = "Każde dziecko, także niemowlę, potrzebuje własnego dokumentu: dowodu osobistego albo paszportu, zależnie od kraju."
+publisher = "Europejskie Centrum Konsumenckie"
+url = "https://konsument.gov.pl/aktualne/podroze-malych-i-duzych/"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "dokument"
+key = "schengen-still-needs-document"
+short = "Brak kontroli granicznej w strefie Schengen nie zwalnia z obowiązku posiadania dokumentu."
+publisher = "Europejskie Centrum Konsumenckie"
+url = "https://konsument.gov.pl/aktualne/podroze-malych-i-duzych/"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "dokument"
+key = "id-card-countries"
+short = "Dowód osobisty wystarczy w krajach UE, strefy Schengen i innych, które wpuszczają na dowód, np. w Albanii i Czarnogórze."
+note = "Do pozostałych krajów potrzebny jest paszport. Wymagania kraju docelowego sprawdź przed rezerwacją."
+publisher = "gov.pl"
+url = "https://www.gov.pl/web/gov/uzyskaj-dowod-osobisty-dla-dziecka-lub-podopiecznego"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "dokument"
+key = "validity-margin"
+short = "Niektóre kraje wymagają dokumentu ważnego jeszcze co najmniej pół roku. Sprawdź datę ważności przed rezerwacją."
+publisher = "Europejskie Centrum Konsumenckie"
+url = "https://konsument.gov.pl/aktualne/podroze-malych-i-duzych/"
+verified_at = 2026-11-08
+
+# --- ID card ----------------------------------------------------------------------------------
+
+[[fact]]
+group = "dowod"
+key = "id-fee"
+short = "Bezpłatny."
+publisher = "gov.pl"
+url = "https://www.gov.pl/web/gov/uzyskaj-dowod-osobisty-dla-dziecka-lub-podopiecznego"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "dowod"
+key = "id-validity"
+short = "Ważny 5 lat od wydania, jeśli dziecko nie ukończyło 12 lat."
+publisher = "gov.pl"
+url = "https://www.gov.pl/web/gov/uzyskaj-dowod-osobisty-dla-dziecka-lub-podopiecznego"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "dowod"
+key = "id-who-where"
+short = "Wniosek składa jeden z rodziców (albo opiekun lub kurator) w dowolnym urzędzie gminy."
+publisher = "gov.pl"
+url = "https://www.gov.pl/web/gov/uzyskaj-dowod-osobisty-dla-dziecka-lub-podopiecznego"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "dowod"
+key = "id-child-present"
+short = "Dziecko powyżej 5 lat musi być w urzędzie przy składaniu wniosku."
+publisher = "gov.pl"
+url = "https://www.gov.pl/web/gov/uzyskaj-dowod-osobisty-dla-dziecka-lub-podopiecznego"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "dowod"
+key = "id-time"
+short = "Do 30 dni od złożenia wniosku."
+publisher = "gov.pl"
+url = "https://www.gov.pl/web/gov/uzyskaj-dowod-osobisty-dla-dziecka-lub-podopiecznego"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "dowod"
+key = "id-pickup"
+short = "Odbiór w urzędzie, w którym złożono wniosek; może go odebrać każde z rodziców, także to, które wniosku nie składało."
+note = "Dziecko musi być przy odbiorze, chyba że ma mniej niż 5 lat albo ma od 5 do 12 lat i było przy składaniu wniosku."
+publisher = "gov.pl"
+url = "https://www.gov.pl/web/gov/uzyskaj-dowod-osobisty-dla-dziecka-lub-podopiecznego"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "dowod"
+key = "id-not-from-abroad"
+short = "Dowodu nie odbierzesz w konsulacie, a pobyt za granicą nie uprawnia do odbioru przez pełnomocnika."
+publisher = "gov.pl"
+url = "https://www.gov.pl/web/gov/uzyskaj-dowod-osobisty-dla-dziecka-lub-podopiecznego"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "dowod"
+key = "id-online"
+short = "Wniosek można złożyć przez internet (profil zaufany, e-dowód lub podpis kwalifikowany); od 1 stycznia 2026 potrzebna jest skrzynka do e-Doręczeń."
+publisher = "gov.pl"
+url = "https://www.gov.pl/web/gov/uzyskaj-dowod-osobisty-dla-dziecka-lub-podopiecznego"
+verified_at = 2026-11-08
+
+# --- passport ---------------------------------------------------------------------------------
+
+[[fact]]
+group = "paszport"
+key = "passport-fee"
+short = "30 zł dla dziecka do 12 lat, 15 zł z Kartą Dużej Rodziny."
+note = "Opłaty nie zwraca się po złożeniu wniosku. W konsulacie obowiązują inne kwoty."
+publisher = "Pomorski Urząd Wojewódzki"
+url = "https://www.gov.pl/web/uw-pomorski/paszport-dla-dziecka"
+verified_at = 2026-11-08
+also = [{ label = "gov.pl: Uzyskaj paszport dla dziecka", url = "https://www.gov.pl/web/gov/uzyskaj-paszport-dla-dziecka" }]
+
+[[fact]]
+group = "paszport"
+key = "passport-validity"
+short = "Ważny 5 lat, jeśli w dniu złożenia wniosku dziecko nie ukończyło 12 lat."
+publisher = "Opolski Urząd Wojewódzki"
+url = "https://www.gov.pl/web/uw-opolski/wydanie-paszportu-dla-osoby-maloletniej"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "paszport"
+key = "passport-consent"
+short = "Potrzebna zgoda obojga rodziców. Bez zgody drugiego rodzica paszportu nie wydadzą."
+note = "Drugi rodzic może wyrazić zgodę w urzędzie paszportowym, u notariusza albo elektronicznie (profilem zaufanym, podpisem osobistym lub kwalifikowanym), także po złożeniu wniosku. Gdy rodzice się nie zgadzają, zgodę zastępuje orzeczenie sądu rodzinnego."
+publisher = "gov.pl"
+url = "https://www.gov.pl/web/gov/uzyskaj-paszport-dla-dziecka"
+verified_at = 2026-11-08
+also = [{ label = "Opolski Urząd Wojewódzki", url = "https://www.gov.pl/web/uw-opolski/wydanie-paszportu-dla-osoby-maloletniej" }]
+
+[[fact]]
+group = "paszport"
+key = "passport-child-present"
+short = "Dziecko, które ukończyło 5 lat, musi być przy składaniu wniosku."
+note = "Po wniosku złożonym przez internet dziecko w wieku od 5 do 12 lat musi być też przy odbiorze; młodsze nie musi."
+publisher = "Opolski Urząd Wojewódzki"
+url = "https://www.gov.pl/web/uw-opolski/wydanie-paszportu-dla-osoby-maloletniej"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "paszport"
+key = "passport-time"
+short = "W Polsce około miesiąca, w konsulacie zwykle 6–8 tygodni."
+publisher = "gov.pl"
+url = "https://www.gov.pl/web/gov/uzyskaj-paszport-dla-dziecka"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "paszport"
+key = "passport-temporary"
+short = "W pilnej sytuacji, np. choroby dziecka, można dostać szybciej paszport tymczasowy, ważny do 365 dni."
+publisher = "gov.pl"
+url = "https://www.gov.pl/web/gov/uzyskaj-paszport-dla-dziecka"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "paszport"
+key = "passport-where"
+short = "W dowolnym punkcie paszportowym w Polsce; odbiór tam, gdzie złożono wniosek."
+note = "Adresy punktów są na stronach urzędów wojewódzkich. Potrzebne jest jedno aktualne, kolorowe zdjęcie zrobione najwyżej 6 miesięcy przed wnioskiem."
+publisher = "gov.pl"
+url = "https://www.gov.pl/web/gov/uzyskaj-paszport-dla-dziecka"
+verified_at = 2026-11-08
+
+# --- EKUZ -------------------------------------------------------------------------------------
+
+[[fact]]
+group = "ekuz"
+key = "ekuz-own-card"
+short = "Każde dziecko dostaje własną kartę; wniosek składa się osobno dla każdego członka rodziny."
+publisher = "NFZ (pacjent.gov.pl)"
+url = "https://pacjent.gov.pl/aktualnosc/ekuz-koniecznie-wez-za-granice"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "ekuz"
+key = "ekuz-fee"
+short = "Bezpłatna."
+publisher = "NFZ (pacjent.gov.pl)"
+url = "https://pacjent.gov.pl/europejska-karta-ubezpieczenia-zdrowotnego-ekuz"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "ekuz"
+key = "ekuz-validity"
+short = "Dla dziecka zgłoszonego do ubezpieczenia jako członek rodziny ważna do 18. urodzin."
+note = "Gdy prawo do świadczeń NFZ wygaśnie, karta przestaje działać po 30 dniach, nawet jeśli data na niej jest późniejsza."
+publisher = "NFZ (pacjent.gov.pl)"
+url = "https://pacjent.gov.pl/europejska-karta-ubezpieczenia-zdrowotnego-ekuz"
+verified_at = 2026-11-08
+also = [{ label = "pacjent.gov.pl: EKUZ, koniecznie weź za granicę", url = "https://pacjent.gov.pl/aktualnosc/ekuz-koniecznie-wez-za-granice" }]
+
+[[fact]]
+group = "ekuz"
+key = "ekuz-apply"
+short = "Wniosek przez IKP, mojeIKP lub ePUAP, osobiście w oddziale NFZ albo pocztą. E-mailem nie da się go wysłać."
+publisher = "NFZ (pacjent.gov.pl)"
+url = "https://pacjent.gov.pl/europejska-karta-ubezpieczenia-zdrowotnego-ekuz"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "ekuz"
+key = "ekuz-time"
+short = "Osobiście od ręki, inaczej do 5 dni; od czerwca do września oddział NFZ może wydłużyć termin do kilkunastu dni."
+publisher = "NFZ (pacjent.gov.pl)"
+url = "https://pacjent.gov.pl/europejska-karta-ubezpieczenia-zdrowotnego-ekuz"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "ekuz"
+key = "ekuz-scope"
+short = "Pokrywa leczenie niezbędne w czasie pobytu, np. przy nagłej chorobie albo złamaniu. Nie pokrywa leczenia planowanego ani powrotu do Polski."
+note = "Nie obejmuje też np. prywatnego ratownictwa górskiego w Austrii. Kartę okazuje się razem z dokumentem tożsamości dziecka lub rodzica."
+publisher = "NFZ (pacjent.gov.pl)"
+url = "https://pacjent.gov.pl/europejska-karta-ubezpieczenia-zdrowotnego-ekuz"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "ekuz"
+key = "ekuz-countries"
+short = "Działa w krajach UE, w Islandii, Liechtensteinie, Norwegii, Szwajcarii i Wielkiej Brytanii."
+note = "Nie działa m.in. w Monako, San Marino, Watykanie, na Wyspach Normandzkich i na Wyspie Man."
+publisher = "NFZ (pacjent.gov.pl)"
+url = "https://pacjent.gov.pl/europejska-karta-ubezpieczenia-zdrowotnego-ekuz"
+verified_at = 2026-11-08
+
+# --- one parent -------------------------------------------------------------------------------
+
+[[fact]]
+group = "zgoda"
+key = "consent-holiday"
+short = "Źródła urzędowe się różnią. Ministerstwo Sprawiedliwości: wyjazd na wakacje za granicę wymaga zgody obojga rodziców z władzą rodzicielską."
+note = "Według Ministerstwa, gdy zgody brak, potrzebne jest orzeczenie sądu opiekuńczego. Europejskie Centrum Konsumenckie pisze natomiast, że przy wspólnej władzy rodzicielskiej zgoda drugiego rodzica na czasowy wyjazd co do zasady nie jest wymagana, i radzi sprawdzić wymagania kraju docelowego."
+publisher = "Ministerstwo Sprawiedliwości (Stop uprowadzeniom dzieci)"
+url = "https://www.gov.pl/web/stopuprowadzeniomdzieci/pytanie2"
+verified_at = 2026-11-08
+to_confirm = true
+also = [{ label = "Europejskie Centrum Konsumenckie", url = "https://konsument.gov.pl/aktualne/podroze-malych-i-duzych/" }]
+
+[[fact]]
+group = "zgoda"
+key = "consent-form"
+short = "Portal Powroty radzi: pisemna zgoda drugiego rodzica z podpisem poświadczonym przez notariusza i skrócony odpis aktu urodzenia dziecka."
+note = "Przy wyjeździe za granicę portal radzi też tłumaczenie przysięgłe zgody, najlepiej na język kraju docelowego. Tekst portalu pochodzi z 21 września 2020 r."
+publisher = "Powroty (powroty.gov.pl)"
+url = "https://powroty.gov.pl/podroz-z-dzieckiem-za-granice/"
+verified_at = 2026-11-08

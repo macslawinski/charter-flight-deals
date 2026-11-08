@@ -62,6 +62,10 @@ VENUE_KEYS = {
 }
 VENUE_SOURCES = {"venue_website", "osm", "own_visit"}
 SHORT_MAX = 60  # one line on a phone card
+# Legal and official topics ("Niezbędnik", travel documents): official sources only.
+ESSENTIAL_TOPICS = {"travel_documents"}
+ESSENTIAL_SHORT_MAX = 160
+_OFFICIAL_URL = re.compile(r"^https://([a-z0-9-]+\.)*gov\.pl(/|$)")
 _SLUG = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 
 
@@ -138,11 +142,48 @@ class Venue:
 
 
 @dataclass(frozen=True)
+class Link:
+    label: str
+    url: str
+
+
+@dataclass(frozen=True)
+class EssentialFact:
+    group: str
+    key: str
+    short: str       # the fact in one or two sentences, our own words
+    publisher: str   # who says it, shown in the source line ("gov.pl", "NFZ", ...)
+    url: str         # official page (*.gov.pl only)
+    verified_at: date
+    note: str | None = None
+    to_confirm: bool = False
+    also: tuple[Link, ...] = ()  # further official pages, e.g. a source that says otherwise
+
+
+@dataclass(frozen=True)
+class EssentialGroup:
+    id: str
+    title: str
+    icon: str
+    intro: str | None = None
+
+
+@dataclass(frozen=True)
+class Essential:
+    """A topic of rules (documents, benefits, ...), not places: exported to the site, not to the DB."""
+    topic: str
+    title: str
+    groups: tuple[EssentialGroup, ...]
+    facts: tuple[EssentialFact, ...]
+
+
+@dataclass(frozen=True)
 class Curated:
     places: tuple[Place, ...]
     hotels: tuple[Hotel, ...]
     carriers: tuple[CarrierRules, ...]
     venues: tuple[Venue, ...] = ()
+    essentials: tuple[Essential, ...] = ()
 
 
 # --- validation helpers ---------------------------------------------------------------------
@@ -357,7 +398,64 @@ def load(root: Path = CURATED) -> Curated:
             osm=osm, features=tuple(feats),
         ))
     _unique(venues, lambda v: v.slug, "venues")
-    return Curated(tuple(places), tuple(hotels), tuple(carriers), tuple(venues))
+
+    essentials = [_essential(path, root) for path in sorted((root / "essentials").glob("*.toml"))]
+    return Curated(tuple(places), tuple(hotels), tuple(carriers), tuple(venues), tuple(essentials))
+
+
+def _official(v: str, where: str) -> str:
+    if not _OFFICIAL_URL.match(v):
+        raise CuratedError(f"{where}: official topics need a *.gov.pl https url, got {v!r}")
+    return v
+
+
+def _essential(path: Path, root: Path) -> Essential:
+    where = str(path.relative_to(root))
+    e = _read(path)
+    _no_extra(e, {"title", "group", "fact"}, where)
+    if path.stem not in ESSENTIAL_TOPICS:
+        raise CuratedError(f"{where}: unknown topic {path.stem!r}, expected one of {sorted(ESSENTIAL_TOPICS)}")
+    groups: list[EssentialGroup] = []
+    for i, g in enumerate(e.get("group", [])):
+        w = f"{where} group[{i}]"
+        _no_extra(g, {"id", "title", "icon", "intro"}, w)
+        groups.append(EssentialGroup(_slug(_get(g, "id", str, w), w), _get(g, "title", str, w),
+                                     _get(g, "icon", str, w), _get(g, "intro", str, w, required=False)))
+    _unique(groups, lambda g: g.id, where)
+    ids = {g.id for g in groups}
+
+    facts: list[EssentialFact] = []
+    for i, f in enumerate(e.get("fact", [])):
+        w = f"{where} fact[{i}]"
+        _no_extra(f, {"group", "key", "short", "note", "publisher", "url", "verified_at",
+                      "to_confirm", "also"}, w)
+        group = _get(f, "group", str, w)
+        if group not in ids:
+            raise CuratedError(f"{w}: group {group!r} not defined in this file")
+        short = _get(f, "short", str, w)
+        if not 1 <= len(short) <= ESSENTIAL_SHORT_MAX:
+            raise CuratedError(f"{w}: 'short' must be 1-{ESSENTIAL_SHORT_MAX} chars")
+        verified = _get(f, "verified_at", date, w)
+        if verified > date.today():
+            raise CuratedError(f"{w}: verified_at {verified} is in the future")
+        also: list[Link] = []
+        for j, a in enumerate(_get(f, "also", list, w, required=False) or []):
+            wa = f"{w} also[{j}]"
+            if not isinstance(a, dict):
+                raise CuratedError(f"{wa}: expected a table")
+            _no_extra(a, {"label", "url"}, wa)
+            also.append(Link(_get(a, "label", str, wa), _official(_get(a, "url", str, wa), wa)))
+        facts.append(EssentialFact(
+            group=group, key=_slug(_get(f, "key", str, w), w), short=short,
+            publisher=_get(f, "publisher", str, w), url=_official(_get(f, "url", str, w), w),
+            verified_at=verified, note=_get(f, "note", str, w, required=False),
+            to_confirm=bool(_get(f, "to_confirm", bool, w, required=False)), also=tuple(also),
+        ))
+    _unique(facts, lambda f: f.key, where)
+    for g in groups:
+        if not any(f.group == g.id for f in facts):
+            raise CuratedError(f"{where}: group {g.id!r} has no facts")
+    return Essential(path.stem, _get(e, "title", str, where), tuple(groups), tuple(facts))
 
 
 # --- writing ---------------------------------------------------------------------------------
@@ -476,8 +574,9 @@ def main(argv: list[str] | None = None) -> int:
     except CuratedError as e:
         log.error("invalid curated data: %s", e)
         return 1
-    log.info("valid: %d places, %d hotels, %d carriers with rules, %d venues",
-             len(data.places), len(data.hotels), len(data.carriers), len(data.venues))
+    log.info("valid: %d places, %d hotels, %d carriers with rules, %d venues, %d essential topics",
+             len(data.places), len(data.hotels), len(data.carriers), len(data.venues),
+             len(data.essentials))
     if args.dry_run:
         return 0
     url = args.database_url or load_settings().database_url

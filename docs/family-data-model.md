@@ -171,7 +171,12 @@ pattern (simple) or as a separate `venue_events` table with dates (precise, but 
 Benefits, documents, deadlines and vaccinations are rules, not map points. Proposal: curated TOML in
 `data/curated/essentials/<topic>.toml`, one fact per rule (amount, deadline, condition) with `source_url` (the act
 on ISAP/ELI or the agency page), `verified_at`, `valid_from` / `valid_to` (amounts change on fixed dates).
-TODO: DB table (`essential_facts`) now or JSON export straight from TOML (no DB) until it is needed?
+Decided (2026-11-08): JSON export straight from TOML, no DB table until something needs to query it. Built for
+the first topic, `essentials/travel_documents.toml` (page `/wyjazdy/dokumenty/`): `[[group]]` (id, title, icon,
+intro) and `[[fact]]` (group, key, short, note, publisher, url, verified_at, to_confirm, also = [{label, url}]).
+The loader (`ingest/curated.py`) accepts only `*.gov.pl` https URLs and known topics (`ESSENTIAL_TOPICS`);
+disagreeing official sources go into one fact with `to_confirm = true` and the other source in `also`.
+`valid_from` / `valid_to` are not built yet (no dated amounts so far).
 
 Recalled products (UOKiK, Safety Gate) are a feed, not curated: a separate table `product_recalls(source_id,
 external_id, published_at, product, category, hazard_pl, url)`, filtered to children's products (TODO: how?

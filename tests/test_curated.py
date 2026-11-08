@@ -192,3 +192,51 @@ def test_venue_fact_without_url_is_rejected(tree):
                   'source = "own_visit"\nverified_at = 2026-11-04\n')
     with pytest.raises(CuratedError, match="need a url"):
         curated.load(tree)
+
+
+# --- essentials (official topics, exported to the site only) ---------------------------------
+
+def _docs(tree: Path) -> Path:
+    return tree / "essentials" / "travel_documents.toml"
+
+
+ESSENTIAL_FACT = """
+[[fact]]
+group = "{group}"
+key = "extra-fact"
+short = "Test."
+publisher = "gov.pl"
+url = "{url}"
+verified_at = 2026-11-04
+"""
+
+
+def test_travel_documents_load_with_official_sources_only():
+    [docs] = [e for e in curated.load().essentials if e.topic == "travel_documents"]
+    assert {g.id for g in docs.groups} == {"dokument", "dowod", "paszport", "ekuz", "zgoda"}
+    fee = next(f for f in docs.facts if f.key == "passport-fee")
+    assert "30 zł" in fee.short and fee.url.startswith("https://www.gov.pl/")
+    # Sources that disagree are shown as such, never as a plain fact.
+    consent = next(f for f in docs.facts if f.key == "consent-holiday")
+    assert consent.to_confirm and consent.also
+
+
+@pytest.mark.parametrize("group, url, error", [
+    ("paszport", "https://www.paszport-info.pl/x", "gov.pl https url"),
+    ("paszport", "https://gov.pl.evil.com/x", "gov.pl https url"),
+    ("nope", "https://www.gov.pl/x", "group 'nope' not defined"),
+])
+def test_bad_essential_fact_is_rejected(tree, group, url, error):
+    _append(_docs(tree), ESSENTIAL_FACT.format(group=group, url=url))
+    with pytest.raises(CuratedError, match=error):
+        curated.load(tree)
+
+
+def test_essential_unknown_topic_and_empty_group_are_rejected(tree):
+    shutil.copy(_docs(tree), tree / "essentials" / "benefits.toml")
+    with pytest.raises(CuratedError, match="unknown topic 'benefits'"):
+        curated.load(tree)
+    (tree / "essentials" / "benefits.toml").unlink()
+    _append(_docs(tree), '\n[[group]]\nid = "pusta"\ntitle = "Pusta"\nicon = "info"\n')
+    with pytest.raises(CuratedError, match="group 'pusta' has no facts"):
+        curated.load(tree)

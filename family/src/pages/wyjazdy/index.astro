@@ -85,7 +85,7 @@ const hotelWord = (n: number) =>
 
   <h2 class="section section-title">
     <span class="tile-icon"><Icon name="plane" /></span>
-    Lot z dzieckiem
+    Lot i dokumenty
   </h2>
   <div class="doors trip-doors">
     <a class="door sea" href="/linie/">
@@ -93,6 +93,12 @@ const hotelWord = (n: number) =>
       <div>
         <h3>Linie lotnicze</h3>
         <p>{carriers.length} przewoźników obok siebie: opłata za niemowlę, wózek, bagaż, fotelik.</p>
+      </div>
+    </a>
+    <a class="door coral" href="/wyjazdy/dokumenty/">
+      <div>
+        <h3>Dokumenty dziecka</h3>
+        <p>Dowód, paszport, EKUZ i zgoda drugiego rodzica: opłaty, terminy, kto musi przyjść. Ze stron urzędowych.</p>
       </div>
     </a>
   </div>
@@ -141,6 +147,6 @@ const hotelWord = (n: number) =>
   }
   .trip-facts li { display: flex; align-items: flex-start; gap: 0.4rem; }
   .trip-facts li :global(svg) { flex: none; margin-top: 0.2rem; }
-  .trip-doors { max-width: 24rem; }
+  .trip-doors { max-width: 50rem; }
   .trip-group a { text-underline-offset: 0.15em; }
 </style>
