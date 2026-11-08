@@ -198,6 +198,13 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
 - [ ] U (phone/e-mail, optional): Villa Verde free-stay age, high chair, parking; Dolina Leśnicy baby bath,
       changing table, parking; Belweder free-stay age, baby items, parking; Mercure free-stay age, baby bath,
       kids' menu.
+- [x] C: śląskie hotels, batch 3 (2026-11-08): Aries Szczyrk (8 facts: separate playroom for under-3s with
+      parents, playroom 8-22 free, cot and bath on request, brodzik in Aqua Aries), Złoty Groń (Istebna, 7:
+      under 8; free stay to 4 in parents' bed, warm brodzik, Małpi Gaj 24h with parents), Ostaniec (Podlesice,
+      7: under 8; cot, bath, bottle warmer, high chair), Centuria (Ogrodzieniec, 6: under 8; cot, bath, bottle
+      warmer, play corner). 7 śląskie leads left.
+- [ ] U (phone/e-mail, optional): Aries free-stay age, high chair; Złoty Groń cot, baby items; Ostaniec
+      free-stay age, parking; Centuria free-stay age, high chair, parking.
 - [x] ~~U: decide which pomorskie hotels to publish (all are `draft`);~~ superseded above; those under 8 facts need a phone or e-mail
       round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Kiston cot fee, free-stay age, brodzik; Primavera cot fee, Playland age;

@@ -476,3 +476,24 @@ name = "Brenna"
 country = "Polska"
 region = "Beskidy"
 kind = "domestic"
+
+[[place]]
+slug = "istebna"
+name = "Istebna"
+country = "Polska"
+region = "Beskidy"
+kind = "domestic"
+
+[[place]]
+slug = "podlesice"
+name = "Podlesice"
+country = "Polska"
+region = "Jura Krakowsko-Częstochowska"
+kind = "domestic"
+
+[[place]]
+slug = "ogrodzieniec"
+name = "Ogrodzieniec"
+country = "Polska"
+region = "Jura Krakowsko-Częstochowska"
+kind = "domestic"

@@ -6049,6 +6049,173 @@
   {
    "access": [
     {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 95,
+     "mode": "car",
+     "note": "110 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.5664%2C18.9121",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 135,
+     "mode": "car",
+     "note": "150 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.5664%2C18.9121",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 200,
+     "mode": "car",
+     "note": "270 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.5664%2C18.9121",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 280,
+     "mode": "car",
+     "note": "430 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.5664%2C18.9121",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 320,
+     "mode": "car",
+     "note": "450 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.5664%2C18.9121",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 390,
+     "mode": "car",
+     "note": "630 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.5664%2C18.9121",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "Istebna 593, 43-470 Istebna",
+   "features": [
+    {
+     "age_band": null,
+     "key": "child_free_stay",
+     "note": "Dla dzieci do lat 4 pobyt jest bezpłatny, jeśli śpią na łóżku z rodzicami; dziecko ma prawo do śniadań (regulamin hotelu, § 10 ust. 7).",
+     "short": "Dzieci do 4 lat gratis w łóżku z rodzicami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelzlotygron.pl/regulamin",
+     "value": {
+      "breakfast_included": true,
+      "free": true,
+      "max_age_years": 4,
+      "sleeping_with_parents": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Menu dziecięce w hotelowej restauracji i w karczmie.",
+     "short": "Menu dziecięce w restauracji i karczmie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelzlotygron.pl/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Małpi Gaj Dżumandżi otwarty całą dobę; dzieci bawią się pod opieką rodziców. Jest też sala zabaw sensorycznych. Minimalnego wieku strona nie podaje.",
+     "short": "Małpi Gaj całą dobę (z rodzicem), sala sensoryczna",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelzlotygron.pl/dzieci",
+     "value": {
+      "available": true,
+      "open_24h": true,
+      "parent_supervision": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animacje dla dzieci, m.in. spotkania z kulturą góralską. Minimalnego wieku ani godzin strona nie podaje.",
+     "short": "Animacje z kulturą góralską",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelzlotygron.pl/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Zewnętrzny plac zabaw: trampolina, tunele i zjeżdżalnie, piaskownica, tor przeszkód, ścianka wspinaczkowa. Wieku ani godzin strona nie podaje.",
+     "short": "Plac zabaw z trampoliną i piaskownicą",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelzlotygron.pl/dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Przy basenie brodzik z płytką, ciepłą wodą. Głębokości, temperatury ani zasad wiekowych strona nie podaje.",
+     "short": "Ciepły brodzik z płytką wodą",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelzlotygron.pl/dzieci",
+     "value": {
+      "available": true,
+      "heated": true,
+      "indoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Opłata za parking nie jest wliczona w cenę pobytu (regulamin hotelu, § 4 ust. 4). Stawki strona nie podaje.",
+     "short": "Parking płatny osobno",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelzlotygron.pl/regulamin",
+     "value": {
+      "paid": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.5663918,
+   "lon": 18.9120518,
+   "name": "Hotel Złoty Groń",
+   "official_url": "https://www.hotelzlotygron.pl/",
+   "place": "istebna",
+   "slug": "zloty-gron-istebna",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
      "from_code": "Kraków",
      "from_kind": "city",
      "minutes": 60,
@@ -15047,6 +15214,153 @@
   {
    "access": [
     {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 50,
+     "mode": "car",
+     "note": "40 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.4084%2C19.4801",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 90,
+     "mode": "car",
+     "note": "70 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.4084%2C19.4801",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 170,
+     "mode": "car",
+     "note": "250 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.4084%2C19.4801",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 215,
+     "mode": "car",
+     "note": "340 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.4084%2C19.4801",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 270,
+     "mode": "car",
+     "note": "440 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.4084%2C19.4801",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 325,
+     "mode": "car",
+     "note": "540 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.4084%2C19.4801",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Centuria 1, 42-440 Ogrodzieniec",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Hotel ma łóżeczka turystyczne. Opłaty strona nie podaje.",
+     "short": "Łóżeczka turystyczne",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelcenturia.pl/centuria_dla_najmlodszych",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Szef kuchni przygotował osobną kartę menu dla dzieci.",
+     "short": "Osobna karta menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelcenturia.pl/centuria_dla_najmlodszych",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Hotel ma podgrzewacz do butelek. Opłaty strona nie podaje.",
+     "short": "Podgrzewacz do butelek",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelcenturia.pl/centuria_dla_najmlodszych",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Hotel ma wanienki dla dzieci. Opłaty strona nie podaje.",
+     "short": "Wanienki",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelcenturia.pl/centuria_dla_najmlodszych",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "W hotelu wewnętrzny kącik zabaw dla dzieci. Minimalnego wieku, godzin ani tego, czy rodzic musi zostać, strona nie podaje.",
+     "short": "Wewnętrzny kącik zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelcenturia.pl/centuria_dla_najmlodszych",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Na zewnątrz mini plac zabaw: huśtawka, zjeżdżalnia, domek i piaskownica.",
+     "short": "Mini plac zabaw z piaskownicą",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelcenturia.pl/centuria_dla_najmlodszych",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.4083606,
+   "lon": 19.4800624,
+   "name": "Centuria Hotel & Natural SPA",
+   "official_url": "https://www.hotelcenturia.pl/",
+   "place": "ogrodzieniec",
+   "slug": "centuria-ogrodzieniec",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
      "from_code": "Gdańsk",
      "from_kind": "city",
      "minutes": 125,
@@ -16131,6 +16445,173 @@
    "official_url": "https://www.lineamare.pl/",
    "place": "pobierowo",
    "slug": "linea-mare-pobierowo",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 60,
+     "mode": "car",
+     "note": "70 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.5681%2C19.5340",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 100,
+     "mode": "car",
+     "note": "80 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.5681%2C19.5340",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 185,
+     "mode": "car",
+     "note": "270 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.5681%2C19.5340",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 200,
+     "mode": "car",
+     "note": "290 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.5681%2C19.5340",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 255,
+     "mode": "car",
+     "note": "390 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.5681%2C19.5340",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 310,
+     "mode": "car",
+     "note": "490 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.5681%2C19.5340",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Jaskiniowa 6, 42-425 Podlesice",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na życzenie gości łóżeczko turystyczne i dodatkowa pościel. Opłaty strona nie podaje.",
+     "short": "Łóżeczko turystyczne na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.ostaniec.com.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W restauracji krzesełka do karmienia dla najmłodszych.",
+     "short": "Krzesełka do karmienia w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.ostaniec.com.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "W restauracji specjalne menu dla dzieci; kuchnia uwzględnia indywidualne prośby.",
+     "short": "Menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.ostaniec.com.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Na życzenie gości podgrzewacz do butelek i czajnik elektryczny. Opłaty strona nie podaje.",
+     "short": "Podgrzewacz do butelek i czajnik na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.ostaniec.com.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "kettle": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Na życzenie gości wanienka. Opłaty strona nie podaje.",
+     "short": "Wanienka na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.ostaniec.com.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "W hotelu bajkowy pokój zabaw; w restauracji kącik zabaw z panelem multimedialnym, stolikiem LEGO i stolikiem do kolorowania. Minimalnego wieku, godzin ani tego, czy rodzic musi zostać, strona nie podaje.",
+     "short": "Bajkowy pokój zabaw + kącik w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.ostaniec.com.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "restaurant_corner": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Przy restauracji w weekendy dmuchany plac zabaw (poza deszczowymi dniami). Wieku strona nie podaje.",
+     "short": "Dmuchany plac zabaw w weekendy",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.ostaniec.com.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "inflatable": true,
+      "weekends": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.5681127,
+   "lon": 19.5339686,
+   "name": "Hotel Ostaniec",
+   "official_url": "https://www.ostaniec.com.pl/",
+   "place": "podlesice",
+   "slug": "ostaniec-podlesice",
    "status": "published"
   },
   {
@@ -19170,6 +19651,190 @@
    "official_url": "https://www.hotelmaria-szczawnica.pl/",
    "place": "szczawnica",
    "slug": "maria-szczawnica",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 70,
+     "mode": "car",
+     "note": "80 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.7161%2C19.0187",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 110,
+     "mode": "car",
+     "note": "120 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.7161%2C19.0187",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 190,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.7161%2C19.0187",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 255,
+     "mode": "car",
+     "note": "400 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.7161%2C19.0187",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 305,
+     "mode": "car",
+     "note": "460 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.7161%2C19.0187",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 365,
+     "mode": "car",
+     "note": "600 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.7161%2C19.0187",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "Górska 7, 43-370 Szczyrk",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "W razie potrzeby łóżeczko niemowlęce i inne akcesoria dla najmłodszych (FAQ). Opłaty strona nie podaje.",
+     "short": "Łóżeczko niemowlęce w razie potrzeby",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.ariesszczyrk.pl/dzieci-w-aries",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "W restauracji Halka dania dopasowane do gustu młodszych gości; obsługa pomaga dobrać porcje (FAQ). Osobnego menu dla niemowląt strona nie opisuje.",
+     "short": "Dania dla młodszych gości w restauracji Halka",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.ariesszczyrk.pl/dzieci-w-aries",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "W razie potrzeby wanienka (FAQ). Opłaty strona nie podaje.",
+     "short": "Wanienka w razie potrzeby",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.ariesszczyrk.pl/dzieci-w-aries",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala zabaw czynna codziennie 8:00–22:00, dla gości hotelu bezpłatna; za bezpieczeństwo dzieci odpowiadają rodzice (regulamin sali zabaw). Dla dzieci do lat 3 osobna sala z zabawkami i miejscem dla rodziców.",
+     "short": "Sala zabaw 8–22 + osobna sala dla dzieci do 3 lat",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.ariesszczyrk.pl/dzieci-w-aries",
+     "value": {
+      "available": true,
+      "close": "22:00",
+      "free": true,
+      "open": "08:00",
+      "parent_supervision": true,
+      "toddler_room": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animacje dla dzieci prowadzone przez wykwalifikowanych opiekunów. Minimalnego wieku ani godzin strona nie podaje.",
+     "short": "Animacje pod okiem opiekunów",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.ariesszczyrk.pl/dzieci-w-aries",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Przy hotelu zewnętrzny plac zabaw (FAQ). Wieku ani godzin strona nie podaje.",
+     "short": "Zewnętrzny plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.ariesszczyrk.pl/dzieci-w-aries",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "W Aqua Aries dla najmłodszych płytsza strefa wodna i brodzik (FAQ); dzieci poniżej 13 lat tylko pod opieką dorosłego (regulamin Aqua Aries). Głębokości ani temperatury strona nie podaje.",
+     "short": "Brodzik i płytsza strefa w Aqua Aries",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.ariesszczyrk.pl/dzieci-w-aries",
+     "value": {
+      "available": true,
+      "indoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking naziemny i podziemny, płatny za każdą rozpoczętą godzinę, czynny całą dobę, niestrzeżony (regulamin parkingu). Stawki strona nie podaje.",
+     "short": "Płatny parking naziemny i podziemny (za godzinę)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://cdn.prod.website-files.com/64099f9512b4fe4694c22f57/660ebcce60531ce1a39d6057_Regulamin%20parkingu.pdf",
+     "value": {
+      "guarded": false,
+      "paid": true,
+      "per_hour": true,
+      "underground": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.7160849,
+   "lon": 19.0187276,
+   "name": "Aries Hotel & SPA Szczyrk",
+   "official_url": "https://www.ariesszczyrk.pl/",
+   "place": "szczyrk",
+   "slug": "aries-szczyrk",
    "status": "published"
   },
   {
@@ -25581,6 +26246,30 @@
    "name": "Brenna",
    "region": "Beskidy",
    "slug": "brenna"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Istebna",
+   "region": "Beskidy",
+   "slug": "istebna"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Podlesice",
+   "region": "Jura Krakowsko-Częstochowska",
+   "slug": "podlesice"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Ogrodzieniec",
+   "region": "Jura Krakowsko-Częstochowska",
+   "slug": "ogrodzieniec"
   }
  ],
  "rule_keys": [
