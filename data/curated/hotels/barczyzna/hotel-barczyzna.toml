@@ -1,0 +1,165 @@
+# Facts from the hotel's own website (hotelbarczyzna.pl; robots.txt allows all, checked 2026-11-08):
+# /atrakcje-dla-dzieci, /pokoje, /regulamin-hotelu, /kontakt. Written in our words.
+# Also on the site, no feature key for it: nursing room with a rocking chair; children's bedding and cutlery;
+# colouring pages in the restaurant; SPA & wellness zone with a pool, saunas and jacuzzi (no children's rules or
+# pool depth stated); the hotel rules say children under 12 must be under their guardians' constant supervision.
+# Not stated (so not recorded yet): fees for the baby items, free-stay ages and child prices, playroom minimum
+# age / hours, brodzik, bottle warmer, beach / lake.
+#
+# Coordinates: the hotel's own map link.
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet.
+slug = "hotel-barczyzna"
+place = "barczyzna"
+name = "Hotel Barczyzna"
+official_url = "https://www.hotelbarczyzna.pl/"
+address = "Barczyzna 12, 62-330 Nekla"
+lat = 52.374848  # the hotel's own map link
+lon = 17.464625
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true }
+short = "Łóżeczka dziecięce"
+note = "Hotel wymienia łóżeczka dziecięce wśród udogodnień dla małych dzieci, do tego pościel dziecięcą. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelbarczyzna.pl/atrakcje-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "high_chair"
+value = { available = true }
+short = "Wysokie krzesełka"
+note = "Hotel ma wysokie krzesełka dla dzieci i sztućce dziecięce."
+source = "hotel_website"
+url = "https://www.hotelbarczyzna.pl/atrakcje-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Specjalne menu dla dzieci"
+note = "Restauracja ma osobne menu dla najmłodszych gości."
+source = "hotel_website"
+url = "https://www.hotelbarczyzna.pl/atrakcje-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_bath"
+value = { available = true }
+short = "Są wanienki"
+note = "Hotel wymienia wanienki wśród udogodnień dla małych dzieci. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelbarczyzna.pl/atrakcje-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "changing_table"
+value = { available = true }
+short = "Są przewijaki"
+note = "Hotel wymienia przewijaki wśród udogodnień dla małych dzieci; gdzie stoją, strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelbarczyzna.pl/atrakcje-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "potty"
+value = { available = true, toilet_seat_adapter = true }
+short = "Nocniki i nakładki na toaletę"
+note = "Hotel ma nocniki i nakładki na toaletę dla dzieci."
+source = "hotel_website"
+url = "https://www.hotelbarczyzna.pl/atrakcje-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Sala zabaw dla najmłodszych"
+note = "W hotelu jest sala zabaw dla najmłodszych gości. Minimalnego wieku, godzin otwarcia ani zasad opieki strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelbarczyzna.pl/atrakcje-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "Plac zabaw na świeżym powietrzu"
+note = "Plac zabaw dla dzieci i duży teren do zabawy na zewnątrz."
+source = "hotel_website"
+url = "https://www.hotelbarczyzna.pl/atrakcje-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "lift"
+value = { available = true }
+short = "Winda na wyższe piętra"
+note = "Standardowe wyposażenie pokoi obejmuje dojazd windą na wyższe piętra."
+source = "hotel_website"
+url = "https://www.hotelbarczyzna.pl/pokoje"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { free = true }
+short = "Bezpłatny parking"
+note = "Strona pokoi podaje, że parking jest bezpłatny. Czy jest strzeżony, strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelbarczyzna.pl/pokoje"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 45
+note = "40 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B52.3748%2C17.4646"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 155
+note = "220 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B52.3748%2C17.4646"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 175
+note = "280 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B52.3748%2C17.4646"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 200
+note = "290 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B52.3748%2C17.4646"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 235
+note = "390 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B52.3748%2C17.4646"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 280
+note = "460 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B52.3748%2C17.4646"
+verified_at = 2026-11-08

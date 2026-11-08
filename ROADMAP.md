@@ -239,6 +239,15 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       3 do potwierdzenia: free stay to 3, brodzik, paid parking, all only on a package page), Poledno (1).
       Skipped Przystań Bydgoszcz (obiekt noclegowy, not a hotel). Car access only; train not checked. No leads left.
 - [ ] U: decide which kujawsko-pomorskie hotels to publish (all `draft`).
+- [x] C: hotel leads wielkopolskie (2026-11-08, find-hotels): 10 leads, 1 do sprawdzenia (Moran, redirect loop:
+      read in Chrome), 7 skipped (`hotel_leads/wielkopolskie.toml`). OSM 489, probed 281 (84 unreadable).
+      Strongest: Barczyzna, Vitalia (Boszkowo), Pałac Pakosław, DeSilva Poznań; weakest: Grand Royal, Trzy Jeziora.
+- [x] C: wielkopolskie hotels, batch 1 (2026-11-08, draft): 7 hotels, new regions "Wielkopolska" and
+      "Pojezierze Leszczyńskie" (own trip group "Poznań i Wielkopolska"). 8+ verified facts: Olandia (12),
+      Barczyzna (10). Under 8: DeSilva Poznań (7 + parking do potwierdzenia), Toscania (7), Pakosław (6),
+      Kortowo (6), Vitalia (6). Skipped Moran (read in Chrome: animations from 5, nothing for 0-3), Grand Royal
+      and Trzy Jeziora (0-3 items only in family packages). Car access only; train not checked. No leads left.
+- [ ] U: decide which wielkopolskie hotels to publish (all `draft`).
 - [ ] C: train access for the Karkonosze / Bieszczady hotels (Jelenia Góra, Kłodzko, Zagórz stations).
 - [ ] U (phone/e-mail, optional): Tremonti free-stay age (6 vs 3); Skalny SPA brodzik; Artus cot fee; Czarny
       Kamień cot fee; Arłamów cot fee and free-stay rule; most: playroom minimum age.

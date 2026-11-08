@@ -1,0 +1,129 @@
+# Facts from the hotel's own website (kortowo.com.pl; robots.txt allows the hotel pages, checked 2026-11-08):
+# /hotel/dzieci/, /hotel/rezerwacje-cennik/, /hotel/dojazd/. Written in our words.
+# Also on the site, no feature key for it: 50% of the stay price for children 6-12, full price over 12; extra bed
+# 200 zł per night; breakfast 50 zł per person (no child rate stated); tennis courts; trams 5, 8, 14 from the
+# railway and bus station towards Górczyn, then about 100 m from the bus stop of lines 610, 616 and 702.
+# Not stated (so not recorded yet): cot fee, baby bath, bottle warmer, changing table, potty, indoor playroom,
+# lift.
+#
+# Coordinates: OpenStreetMap way/378452537, ODbL (no map link with coordinates on the site).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet (Poznań Główny).
+slug = "hotel-kortowo"
+place = "poznan"
+name = "Hotel Kortowo"
+official_url = "https://www.kortowo.com.pl/"
+address = "ul. Kotowo 62, 60-009 Poznań"
+lat = 52.35432  # OpenStreetMap way/378452537, ODbL
+lon = 16.85972
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true }
+short = "Łóżeczko na życzenie"
+note = "Łóżeczko dla małego dziecka hotel wstawia do pokoju na życzenie. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.kortowo.com.pl/hotel/dzieci/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "child_free_stay"
+value = { free = true, max_age_years = 6 }
+short = "Pobyt bezpłatny do lat 6"
+note = "Strona dla dzieci: pobyt bezpłatny dla dzieci w wieku do lat 6, 50% za dzieci 6-12 lat, pełna opłata powyżej 12 lat. Czy chodzi o dziecko przed 6. urodzinami i czy dotyczy spania z rodzicami, strona nie precyzuje."
+source = "hotel_website"
+url = "https://www.kortowo.com.pl/hotel/dzieci/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "high_chair"
+value = { available = true, where = "restaurant" }
+short = "Krzesełka w restauracji"
+note = "W restauracji hotelowej są krzesełka dla maluchów."
+source = "hotel_website"
+url = "https://www.kortowo.com.pl/hotel/dzieci/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Specjalne menu dla dzieci"
+note = "Restauracja hotelowa ma specjalne menu dla dzieci."
+source = "hotel_website"
+url = "https://www.kortowo.com.pl/hotel/dzieci/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "Drewniany plac zabaw z tyrolką"
+note = "Drewniany plac zabaw z tyrolką i trampoliną, obok boisko do piłki plażowej i mini boisko do piłki nożnej."
+source = "hotel_website"
+url = "https://www.kortowo.com.pl/hotel/dzieci/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { free = true, gated = true, spaces = 50 }
+short = "Bezpłatny parking na 50 aut"
+note = "Bezpłatny parking hotelowy na 50 aut, zamykany automatyczną bramą. Czy jest strzeżony, strona nie podaje."
+source = "hotel_website"
+url = "https://www.kortowo.com.pl/hotel/dojazd/"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 15
+note = "10 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B52.3543%2C16.8597"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 120
+note = "170 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B52.3543%2C16.8597"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 185
+note = "310 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B52.3543%2C16.8597"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 200
+note = "310 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B52.3543%2C16.8597"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 230
+note = "370 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B52.3543%2C16.8597"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 280
+note = "450 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B52.3543%2C16.8597"
+verified_at = 2026-11-08
