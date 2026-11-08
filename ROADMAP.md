@@ -288,8 +288,10 @@ model: `docs/family-data-model.md`; sources: `docs/family-data-sources.md`.
       curation backlog stays in Step 4.
 
 ### E3. Airlines and airports
+- [x] C (2026-11-08): `/wyjazdy/dokumenty/`: child's ID card, passport, EKUZ, other parent's consent; 28 facts from
+      `*.gov.pl` pages (`data/curated/essentials/travel_documents.toml`). Re-verify yearly (fees, e-Doręczenia).
 - [ ] Airline child rules under "Wyjazdy" (existing `/linie/`); airport family facts (play areas, family lanes,
-      stroller handover); children's documents, EHIC, car-seat laws abroad.
+      stroller handover); car-seat laws abroad.
 - [ ] "Niezbędnik rodzica" topics (benefits, deadlines, vaccinations, recalls, car-seat tests): TODO: which
       stage? The brief lists them in the product but not in a stage.
 

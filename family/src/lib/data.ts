@@ -68,7 +68,28 @@ export interface Venue {
   features: Fact[];
 }
 
+// Official topics (travel documents, later "Niezbędnik"): rules, not places. Official sources only.
+export interface EssentialFact {
+  group: string;
+  key: string;
+  short: string;
+  note: string | null;
+  publisher: string;
+  url: string;
+  verified_at: string;
+  to_confirm: boolean;
+  also: { label: string; url: string }[];
+}
+
+export interface Essential {
+  topic: string;
+  title: string;
+  groups: { id: string; title: string; icon: string; intro: string | null }[];
+  facts: EssentialFact[];
+}
+
 interface Data {
+  essentials: Record<string, Essential>;
   feature_keys: string[];
   rule_keys: string[];
   venue_keys: string[];
@@ -86,6 +107,8 @@ function must<T>(table: Record<string, T>, key: string, what: string): T {
   if (v === undefined) throw new Error(`No ${what} for '${key}' (family/src/lib/data.ts)`);
   return v;
 }
+
+export const essential = (topic: string) => must(data.essentials, topic, "essentials topic");
 
 // One-line headline for cards: the curated `short`, else the note's first sentence.
 export function short(f: Fact): string {

@@ -81,7 +81,7 @@ the open data platform first? TODO: how current is "miejsca2021"?
 | Hotels' own websites | per hotel | HTML (curation, `curate-hotel` skill) | 12 months (fees 6) | facts in our own words | **verified** (in use) |
 | Airlines' official pages | per carrier | HTML (curation) | 12 months | facts in our own words | **verified** (in use) |
 | Airports' own websites (play areas, family lanes, stroller handover) | per airport | HTML (curation) | TODO | facts in our own words | **to check** |
-| Children's documents, EHIC, other parent's consent | gov.pl (passports / ID cards), NFZ EKUZ pages, destination countries' official pages | HTML (curation) | yearly | public information | **to check** (URLs not collected yet) |
+| Children's documents, EHIC, other parent's consent | gov.pl (passports / ID cards), NFZ EKUZ pages, destination countries' official pages | HTML (curation) | yearly | public information | **used** (2026-11-08): gov.pl passport / ID card pages, Pomorski and Opolski UW, pacjent.gov.pl (EKUZ), MS "Stop uprowadzeniom dzieci", konsument.gov.pl, powroty.gov.pl; URLs in `data/curated/essentials/travel_documents.toml` |
 | Car-seat laws abroad | TODO: an official EU or per-country source | HTML (curation) | yearly | TODO | **to check** |
 
 ## Parent essentials ("Niezbędnik rodzica")
