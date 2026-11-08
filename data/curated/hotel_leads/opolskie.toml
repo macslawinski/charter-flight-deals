@@ -1,0 +1,105 @@
+# Leads for Product B: hotels in województwo opolskie whose own website shows an offer for children 0-3.
+# Discovered via OpenStreetMap (tourism=hotel, leisure=resort; (c) OpenStreetMap contributors, ODbL) and web
+# search pointing to the hotels' own sites; each lead confirmed on its own kids page.
+# Not facts: the curate-hotel skill reads the facts.
+voivodeship = "opolskie"
+checked_at = 2026-11-08
+covered = ["całe województwo (OSM 112 obiektów, 70 ze stroną, probe top 60) + web search, 2026-11-08"]
+
+[[lead]]
+name = "Zamek Moszna"
+town = "Moszna"
+official_url = "https://mosznazamek.pl/"
+kids_url = "https://mosznazamek.pl/dla-dzieci/"
+evidence_urls = ["https://mosznazamek.pl/faq"]
+osm = "way/73054209"
+lat = 50.44079
+lon = 17.76793
+signals = ["krzesełko", "pokój rodzica", "sala zabaw", "plac zabaw"]
+why = "Wysokie krzesełka, Pokój Rodzica na parterze, płatna sala zabaw Hrabiolandia, plac zabaw w kształcie zamku."
+status = "curated"
+
+[[lead]]
+name = "Hotel Szara Willa"
+town = "Opole"
+official_url = "https://www.szarawilla.pl/"
+kids_url = "https://www.szarawilla.pl/dla-dzieci"
+evidence_urls = ["https://www.szarawilla.pl/hotel/informacje-praktyczne"]
+osm = "way/207015798"
+lat = 50.67212
+lon = 17.92629
+signals = ["łóżeczko", "wanienka", "nocnik", "przewijak", "podgrzewacz", "krzesełko", "bawialnia", "menu dla dzieci"]
+why = "Łóżeczko turystyczne, wanienka, nocnik i nakładka, przewijak, podgrzewacz, krzesełko, bezpłatna bawialnia z trampoliną."
+status = "curated"
+
+[[lead]]
+name = "Hotel Weneda"
+town = "Opole"
+official_url = "https://hotel-weneda.pl/"
+kids_url = "https://hotel-weneda.pl/faq"
+osm = "way/207029215"
+lat = 50.66394
+lon = 17.93719
+signals = ["łóżeczko", "do 5 lat gratis"]
+why = "Płatne łóżeczko w wybranych pokojach, dzieci do 5 lat gratis bez osobnego łóżka; słabszy lead."
+status = "curated"
+
+[[lead]]
+name = "Hotel Spa Dębowe Wzgórze"
+town = "Pokrzywna"
+official_url = "https://www.debowewzgorze.eu/"
+kids_url = "https://www.debowewzgorze.eu/spotkania_rodzinne"
+osm = "way/427462884"
+lat = 50.28858
+lon = 17.47306
+signals = ["łóżeczko", "wanienka", "sala zabaw", "basen dla dzieci"]
+why = "Płatne łóżeczko turystyczne z pościelą, wanienka, Bajlandia z basenami z piłkami, basen dla młodszych gości."
+status = "curated"
+
+[[lead]]
+name = "Biała Akacja"
+town = "Łąka Prudnicka"
+official_url = "https://www.bialaakacja.pl/"
+osm = "way/427470164"
+lat = 50.30809
+lon = 17.51847
+signals = ["kącik", "plac zabaw"]
+why = "Tylko kącik do rysowania i plac zabaw."
+status = "skipped"
+skip_reason = "Nic konkretnego dla 0-3."
+
+[[lead]]
+name = "Antonio"
+town = "Skarbimierz-Osiedle"
+official_url = "https://antonioconference.eu/"
+osm = "relation/12765236"
+lat = 50.83421
+lon = 17.42311
+signals = ["mini zoo", "plac zabaw"]
+why = "Wpis blogowy o mini zoo i placu zabaw, nic dla 0-3 w pokoju czy restauracji."
+status = "skipped"
+skip_reason = "Nic konkretnego dla 0-3."
+
+[[lead]]
+name = "Hotel DeSilva Premium Opole"
+town = "Opole"
+official_url = "https://www.desilva.pl/opole/"
+osm = "way/207015274"
+lat = 50.66393
+lon = 17.92389
+signals = []
+why = "Strona hotelu w Opolu bez oferty dla dzieci (probe myli domenę z DeSilva Poznań)."
+status = "skipped"
+skip_reason = "Brak oferty dla 0-3 dla tej lokalizacji."
+
+[[lead]]
+name = "Mercure Opole"
+town = "Opole"
+official_url = "https://all.accor.com/"  # chain site; OSM links an old accorhotels.com page
+osm = "way/1540223828"
+lat = 50.66351
+lon = 17.92598
+signals = []
+why = "Tylko ogólnosieciowa strona Accor."
+status = "skipped"
+skip_reason = "Strona sieciowa, bez faktów dla tej lokalizacji."

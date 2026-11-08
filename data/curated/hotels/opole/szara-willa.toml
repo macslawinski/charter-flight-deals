@@ -1,0 +1,164 @@
+# Facts from the hotel's own website (szarawilla.pl; robots.txt allows all, checked 2026-11-08):
+# /dla-dzieci, /hotel/informacje-praktyczne. Written in our words.
+# Also on the site, no feature key for it: the kids page points to attractions outside the hotel (Błękitna Fala
+# pool with a brodzik, Hoplandia); "Klub Urwisa" has its own rules PDF (age not read yet).
+# Not stated (so not recorded yet): fees for the baby items (only that they must be reserved, limited number),
+# free-stay ages, playroom minimum age / hours.
+#
+# Coordinates: the hotel's own "Pokaż na mapie" link (Google Maps query).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet.
+slug = "szara-willa"
+place = "opole"
+name = "Hotel Szara Willa"
+official_url = "https://www.szarawilla.pl/"
+address = "ul. Oleska 11, 45-052 Opole"
+lat = 50.6720772  # hotel's own map link
+lon = 17.9263515
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true, travel_cot = true, bedding = true }
+short = "Łóżeczko turystyczne z pościelą (rezerwacja)"
+note = "Strona dla dzieci: łóżeczko turystyczne z pościelą; rzeczy dla dzieci trzeba zarezerwować wcześniej, liczba ograniczona. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.szarawilla.pl/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "high_chair"
+value = { available = true, where = "restaurant" }
+short = "Krzesełko w restauracji"
+note = "W restauracji krzesełko do karmienia."
+source = "hotel_website"
+url = "https://www.szarawilla.pl/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Menu dla milusińskich"
+note = "Restauracja ma menu dla dzieci („menu dla milusińskich”)."
+source = "hotel_website"
+url = "https://www.szarawilla.pl/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true, in_room = true }
+short = "Podgrzewacz do jedzenia w pokoju"
+note = "Strona dla dzieci wymienia w pokoju podgrzewacz do jedzenia. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.szarawilla.pl/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_bath"
+value = { available = true }
+short = "Wanienka do kąpieli"
+note = "W łazience wanienka dla dziecka (do zarezerwowania wcześniej). Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.szarawilla.pl/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "changing_table"
+value = { available = true, where = "bathroom" }
+short = "Przewijak, pieluchy i chusteczki"
+note = "Strona dla dzieci wymienia w łazience przewijak oraz pieluszki i chusteczki."
+source = "hotel_website"
+url = "https://www.szarawilla.pl/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "potty"
+value = { available = true, on_request = true, toilet_seat_adapter = true, step_stool = true }
+short = "Nocnik, nakładka na sedes, podest"
+note = "Strona dla dzieci wymienia nocnik, nakładkę na sedes i podest."
+source = "hotel_website"
+url = "https://www.szarawilla.pl/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true, free = true }
+short = "Bawialnia z trampoliną, bezpłatna"
+note = "Informacje praktyczne: dziecięca bawialnia bezpłatna dla najmłodszych gości; strona dla dzieci: z trampoliną. Minimalnego wieku ani godzin strona nie podaje."
+source = "hotel_website"
+url = "https://www.szarawilla.pl/hotel/informacje-praktyczne"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "lift"
+value = { available = true }
+short = "Winda (recepcja na I piętrze)"
+note = "Informacje praktyczne: recepcja jest na I piętrze, wjazd windą."
+source = "hotel_website"
+url = "https://www.szarawilla.pl/hotel/informacje-praktyczne"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { free = true, underground = true, max_height_m = 2 }
+short = "Bezpłatny garaż podziemny (do 2 m)"
+note = "Garaż podziemny bezpłatny dla aut do 2 m wysokości, wjazd od ul. Gen. Andersa; bezpłatny parking zewnętrzny 100 m od hotelu."
+source = "hotel_website"
+url = "https://www.szarawilla.pl/hotel/informacje-praktyczne"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 75
+note = "100 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.6721%2C17.9264"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 80
+note = "110 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.6721%2C17.9264"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 130
+note = "190 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.6721%2C17.9264"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 195
+note = "280 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.6721%2C17.9264"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 240
+note = "340 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.6721%2C17.9264"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 355
+note = "540 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.6721%2C17.9264"
+verified_at = 2026-11-08
