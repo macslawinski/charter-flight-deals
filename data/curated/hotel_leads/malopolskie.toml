@@ -111,7 +111,7 @@ lat = 50.0887034
 lon = 19.9810782
 signals = ["łóżeczko", "wanienka", "nocnik", "krzesełko", "kącik zabaw", "brodzik"]
 why = "Łóżeczko, wanienka, nocnik, nakładka na toaletę na życzenie, krzesełka, kącik zabaw 24/7 dla małych dzieci; wodny brodzik w Stacji Parkowej (park wodny osobno płatny)."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Czarny Potok Resort SPA & Conference"
@@ -158,7 +158,7 @@ lat = 49.4319779
 lon = 20.708078
 signals = ["łóżeczko", "wanienka", "nocnik", "podgrzewacz", "brodzik", "sala zabaw"]
 why = "Łóżeczka, wanienki, nocniki i podkładki, podgrzewacze do butelek (na życzenie), brodzik w HedoniSPA, sala zabaw, płatna niania."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Górski Raj"
@@ -229,7 +229,7 @@ lat = 49.2843845
 lon = 19.9906819
 signals = ["łóżeczko", "wanienka", "podgrzewacz", "przewijak", "nocnik", "krzesełko"]
 why = "Łóżeczka turystyczne z pościelą, wanienka, podgrzewacz do butelek i słoiczków, nakładka-przewijak, nocnik, nakładka na WC, krzesełka; bezpłatne dodatki dla rodzin."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Grand Hotel Stamary"
@@ -265,7 +265,7 @@ lat = 49.2957999
 lon = 19.9646473
 signals = ["łóżeczko", "wanienka", "podgrzewacz", "strefa malucha"]
 why = "Bezpłatnie na życzenie: certyfikowane łóżeczka turystyczne, wanienki, podgrzewacze do butelek; strefa malucha w sali zabaw, bufet dziecięcy."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Helios"

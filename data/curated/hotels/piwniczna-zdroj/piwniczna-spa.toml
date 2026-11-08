@@ -1,0 +1,166 @@
+# Facts from the hotel's own website (hotelpiwniczna.pl; robots.txt allows all, checked 2026-11-08):
+# /dzieci, /kontakt, Regulamin Hotelu and Regulamin HedoniSPA (PDFs, linked from /odkryj-hotel/regulamin).
+# Written in our words.
+# Also on the site, no feature key for it: a paid babysitter; children under 12 must stay under their guardians'
+# supervision anywhere in the hotel; HedoniSPA only with a guardian for under-18s, swim nappies required for
+# children in nappies; children's bikes to hire.
+# Not stated (so not recorded yet): cot fee, free-stay age, high chair, changing table, baby monitor, lift,
+# playroom age and hours, brodzik depth and temperature, parking fee.
+#
+# Coordinates: the hotel's own map link on /kontakt (marker 49.4319303, 20.7080882).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet (Piwniczna-Zdrój station, regional trains only).
+slug = "piwniczna-spa"
+place = "piwniczna-zdroj"
+name = "Hotel Piwniczna SPA & Conference"
+official_url = "https://www.hotelpiwniczna.pl/"
+address = "ul. Juliusza Korwina Gąsiorowskiego 5, 33-350 Piwniczna-Zdrój"
+lat = 49.4319303
+lon = 20.7080882
+status = "published"
+
+[[feature]]
+key = "cot"
+value = { available = true }
+short = "Łóżeczka dla dzieci"
+note = "Strona dla dzieci wymienia wygodne łóżeczka. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelpiwniczna.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Menu dla dzieci w restauracji"
+note = "Menu dla dzieci w Restauracji Czarna Owca."
+source = "hotel_website"
+url = "https://www.hotelpiwniczna.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true, on_request = true }
+short = "Podgrzewacz do butelek na życzenie"
+note = "Podgrzewacze do butelek na życzenie. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelpiwniczna.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, on_request = true }
+short = "Wanienka na życzenie"
+note = "Wanienki do kąpieli na życzenie."
+source = "hotel_website"
+url = "https://www.hotelpiwniczna.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "potty"
+value = { available = true, on_request = true, toilet_seat_adapter = true }
+short = "Nocnik i nakładka na życzenie"
+note = "Nocniki i nakładki na toaletę na życzenie."
+source = "hotel_website"
+url = "https://www.hotelpiwniczna.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Sala zabaw"
+note = "W hotelu jest sala zabaw. Minimalnego wieku, godzin ani tego, czy rodzic musi zostać, strona nie podaje (regulamin: dzieci do 12 lat zawsze pod nadzorem opiekunów)."
+source = "hotel_website"
+url = "https://www.hotelpiwniczna.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "Zewnętrzny plac zabaw"
+note = "Przy hotelu jest zewnętrzny plac zabaw."
+source = "hotel_website"
+url = "https://www.hotelpiwniczna.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_animation"
+value = { available = true }
+short = "Animacje"
+note = "Strona dla dzieci wymienia animacje. Wieku ani terminów strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelpiwniczna.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "paddling_pool"
+value = { available = true }
+short = "Brodzik w HedoniSPA"
+note = "Brodzik w strefie HedoniSPA. Głębokości ani temperatury strona nie podaje; dzieci korzystają ze SPA tylko z opiekunem, a w pieluchach tylko w pieluchach do pływania (regulamin HedoniSPA)."
+source = "hotel_website"
+url = "https://www.hotelpiwniczna.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { monitored = true, guarded = false }
+short = "Parking monitorowany, niestrzeżony"
+note = "Hotel ma parking monitorowany, niestrzeżony (regulamin hotelu, s. 4). Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://u.profitroom.com/hotelpiwniczna.pl/uploads/RegulaminHotelu_1.pdf"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 130
+note = "140 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.4319%2C20.7081"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 170
+note = "220 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.4319%2C20.7081"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 285
+note = "410 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.4319%2C20.7081"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 310
+note = "420 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.4319%2C20.7081"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 405
+note = "590 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.4319%2C20.7081"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 460
+note = "730 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.4319%2C20.7081"
+verified_at = 2026-11-08

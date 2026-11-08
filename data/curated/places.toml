@@ -392,3 +392,17 @@ name = "Poręba Wielka"
 country = "Polska"
 region = "Gorce"
 kind = "domestic"
+
+[[place]]
+slug = "piwniczna-zdroj"
+name = "Piwniczna-Zdrój"
+country = "Polska"
+region = "Beskidy"
+kind = "domestic"
+
+[[place]]
+slug = "krakow"
+name = "Kraków"
+country = "Polska"
+region = "Małopolska"
+kind = "domestic"
