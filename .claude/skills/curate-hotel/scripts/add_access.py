@@ -19,6 +19,7 @@ Usage (from the repo root):
 from __future__ import annotations
 
 import argparse
+import re
 import sys
 import tomllib
 from datetime import date
@@ -54,11 +55,18 @@ def main() -> int:
     ap.add_argument("--train-from", type=Path, help="hotel TOML whose train section to copy")
     ap.add_argument("--train", nargs=2, metavar=("STATION", "RESULTS"))
     ap.add_argument("--train-date", help="the weekday date queried on rozklad-pkp.pl (with --train)")
+    ap.add_argument("--train-only", action="store_true",
+                    help="hotel already has car blocks: append only the train section and rewrite the "
+                         "'# - train:' header line (needs --station and --train or --train-from)")
+    ap.add_argument("--train-note", default="",
+                    help="with --train-only: extra header text, e.g. which cities have no connection")
     a = ap.parse_args()
     if a.train and a.train_from:
         ap.error("use --train or --train-from, not both")
     if a.train and not a.train_date:
         ap.error("--train needs --train-date")
+    if a.train_only and not (a.station and (a.train or a.train_from)):
+        ap.error("--train-only needs --station and --train or --train-from")
 
     today = date.today().isoformat()
     train = ""
@@ -69,6 +77,30 @@ def main() -> int:
         train = donor[donor.index(TRAIN_MARK):].rstrip() + "\n"
     elif a.train:
         train = train_section(a.train[0], a.train[1], a.train_date, today)
+
+    if a.train_only:
+        m = re.search(rf"^{re.escape(TRAIN_MARK)} to (.+?) station \(rozklad-pkp\.pl, (\d{{4}}-\d\d-\d\d)\)",
+                      train, re.MULTILINE)
+        if not m:
+            raise SystemExit("train section has no station/date mark")
+        station, qdate = m.group(1), date.fromisoformat(m.group(2))
+        for path in a.hotels:
+            text = path.read_text(encoding="utf-8")
+            if 'mode = "train"' in text:
+                raise SystemExit(f"{path} already has train access; remove it first")
+            data = tomllib.loads(text)
+            desc = station_desc(a.station[0], a.station[1], float(data["lat"]), float(data["lon"]))
+            header = (f"# - train: rozklad-pkp.pl, {qdate:%A} {qdate}, departures 05:00-14:00; fastest connection "
+                      f"with at most one\n#   change, to {station} station. Station -> hotel: {desc}.")
+            if a.train_note:
+                header += "\n" + "\n".join(f"#   {line}" for line in a.train_note.split("\n"))
+            # The old "# - train: ..." line plus its "#   ..." continuation lines.
+            text, n = re.subn(r"^# - train:.*\n(?:#   .*\n)*", header + "\n", text, count=1, flags=re.MULTILINE)
+            if n != 1:
+                raise SystemExit(f"{path}: no '# - train:' header line to replace")
+            path.write_bytes((text.rstrip() + "\n\n" + train.rstrip() + "\n").encode("utf-8"))
+            print(f"{path}: train to {station} added ({desc})")
+        return 0
 
     for path in a.hotels:
         text = path.read_text(encoding="utf-8")

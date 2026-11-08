@@ -12747,6 +12747,66 @@
      "note": "570 km",
      "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.7666%2C15.7628",
      "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 117,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 224,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 3 h 54 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 248,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 5 h 37 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 311,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 6 h 44 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 377,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 419,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 7 h 09 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
     }
    ],
    "address": "ul. Wilcza 9, 58-540 Karpacz",
@@ -12972,6 +13032,66 @@
      "note": "580 km",
      "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.7774%2C15.7305",
      "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 117,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 224,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 3 h 54 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 248,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 5 h 37 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 311,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 6 h 44 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 377,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 419,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 7 h 09 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
     }
    ],
    "address": "ul. Karkonoska 14, 58-540 Karpacz",
@@ -13154,6 +13274,66 @@
      "note": "570 km",
      "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.7646%2C15.7663",
      "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 117,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 224,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 3 h 54 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 248,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 5 h 37 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 311,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 6 h 44 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 377,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 419,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 7 h 09 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
     }
    ],
    "address": "ul. Sarnia 21, 58-540 Karpacz",
@@ -13333,6 +13513,66 @@
      "note": "570 km",
      "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.7724%2C15.7639",
      "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 117,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 224,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 3 h 54 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 248,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 5 h 37 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 311,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 6 h 44 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 377,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 419,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 7 h 09 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
     }
    ],
    "address": "ul. Obrońców Pokoju 5, 58-540 Karpacz",
@@ -13510,6 +13750,66 @@
      "mode": "car",
      "note": "570 km",
      "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.7709%2C15.7635",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 117,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 224,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 3 h 54 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 248,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 5 h 37 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 311,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 6 h 44 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 377,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 419,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 7 h 09 min",
+     "url": "https://rozklad-pkp.pl/",
      "verified_at": "2026-11-08"
     }
    ],
@@ -13719,6 +14019,66 @@
      "mode": "car",
      "note": "570 km",
      "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.7748%2C15.7452",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 117,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 224,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 3 h 54 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 248,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 5 h 37 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 311,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 6 h 44 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 377,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 419,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 7 h 09 min",
+     "url": "https://rozklad-pkp.pl/",
      "verified_at": "2026-11-08"
     }
    ],
@@ -13941,6 +14301,66 @@
      "mode": "car",
      "note": "570 km",
      "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.7726%2C15.7389",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 117,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 224,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 3 h 54 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 248,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 5 h 37 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 311,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 6 h 44 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 377,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 419,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 7 h 09 min",
+     "url": "https://rozklad-pkp.pl/",
      "verified_at": "2026-11-08"
     }
    ],
@@ -22673,6 +23093,56 @@
      "note": "860 km",
      "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.4313%2C22.4131",
      "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 277,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 421,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 491,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 509,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 626,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
     }
    ],
    "address": "Myczkowce 122, 38-623 Uherce",
@@ -24903,6 +25373,66 @@
      "note": "580 km",
      "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.8358%2C15.5644",
      "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 117,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 224,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 3 h 54 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 248,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 5 h 37 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 311,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 6 h 44 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 377,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 419,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 7 h 09 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
     }
    ],
    "address": "ul. Turystyczna 8, 58-573 Piechowice",
@@ -26257,6 +26787,56 @@
      "note": "870 km",
      "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.3704%2C22.4286",
      "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 277,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 421,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 491,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 509,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 626,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
     }
    ],
    "address": "ul. Zdrojowa 11, 38-610 Polańczyk",
@@ -26430,6 +27010,56 @@
      "mode": "car",
      "note": "870 km",
      "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.3632%2C22.4305",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 277,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 421,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 491,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 509,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 626,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
      "verified_at": "2026-11-08"
     }
    ],
@@ -26654,6 +27284,66 @@
      "mode": "car",
      "note": "580 km",
      "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.4115%2C16.5026",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 65,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 179,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 206,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 273,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 292,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 376,
+     "mode": "train",
+     "note": "1 przesiadka",
+     "url": "https://rozklad-pkp.pl/",
      "verified_at": "2026-11-08"
     }
    ],
@@ -30569,6 +31259,66 @@
      "note": "560 km",
      "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.8627%2C15.7288",
      "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 117,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 224,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 3 h 54 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 248,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 5 h 37 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 311,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 6 h 44 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 377,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 419,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 7 h 09 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
     }
    ],
    "address": "ul. Zdrojowa 2, 58-500 Staniszów",
@@ -32744,6 +33494,66 @@
      "note": "580 km",
      "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.8201%2C15.5222",
      "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 117,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 224,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 3 h 54 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 248,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 5 h 37 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 311,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 6 h 44 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 377,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 419,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 7 h 09 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
     }
    ],
    "address": "ul. Okrzei 17, 58-580 Szklarska Poręba",
@@ -32986,6 +33796,66 @@
      "mode": "car",
      "note": "580 km",
      "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.8309%2C15.5128",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 117,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 224,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 3 h 54 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 248,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 5 h 37 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 311,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 6 h 44 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 377,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 419,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 7 h 09 min",
+     "url": "https://rozklad-pkp.pl/",
      "verified_at": "2026-11-08"
     }
    ],
@@ -33241,6 +34111,66 @@
      "mode": "car",
      "note": "580 km",
      "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.8246%2C15.5265",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 117,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 224,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 3 h 54 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 248,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 5 h 37 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 311,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 6 h 44 min",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 377,
+     "mode": "train",
+     "note": "bezpośredni",
+     "url": "https://rozklad-pkp.pl/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "due": "2027-11-08",
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 419,
+     "mode": "train",
+     "note": "1 przesiadka · bezpośredni 7 h 09 min",
+     "url": "https://rozklad-pkp.pl/",
      "verified_at": "2026-11-08"
     }
    ],

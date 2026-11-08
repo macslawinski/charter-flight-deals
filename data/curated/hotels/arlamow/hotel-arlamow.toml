@@ -6,7 +6,8 @@
 # Coordinates: OpenStreetMap node/4192042517 centre ((c) OpenStreetMap contributors, ODbL).
 # Access (checked 2026-11-08):
 # - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
-# - train: not checked yet.
+# - train: none sensible. The nearest stations are Ustrzyki Dolne (~30 km, ~40 min by car) and Przemyśl Główny
+#   (~35 km, ~55 min by car, OSRM, checked 2026-11-08), both beyond our ~25 km limit; car only.
 slug = "hotel-arlamow"
 place = "arlamow"
 name = "Hotel Arłamów"

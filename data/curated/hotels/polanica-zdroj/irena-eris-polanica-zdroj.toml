@@ -6,7 +6,9 @@
 # Coordinates: OpenStreetMap way/368583597 centre ((c) OpenStreetMap contributors, ODbL).
 # Access (checked 2026-11-08):
 # - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
-# - train: not checked yet.
+# - train: rozklad-pkp.pl, Thursday 2026-11-12, departures 05:00-14:00; fastest connection with at most one
+#   change, to Kłodzko Główne station. Station -> hotel: ~16 km, ~20 min by car or taxi (OSRM).
+#   Polanica-Zdrój station is closer (~3 km); times are to Kłodzko Główne, the nearest station with long-distance trains.
 slug = "irena-eris-polanica-zdroj"
 place = "polanica-zdroj"
 name = "Dr Irena Eris Polanica Resort & SPA"
@@ -133,4 +135,59 @@ mode = "car"
 minutes = 410
 note = "580 km"
 url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.4115%2C16.5026"
+verified_at = 2026-11-08
+
+# --- Access: train to Kłodzko Główne station (rozklad-pkp.pl, 2026-11-12) --------------------
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "train"
+minutes = 65
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "train"
+minutes = 179
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "train"
+minutes = 206
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "train"
+minutes = 273
+note = "bezpośredni"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "train"
+minutes = 292
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "train"
+minutes = 376
+note = "1 przesiadka"
+url = "https://rozklad-pkp.pl/"
 verified_at = 2026-11-08
