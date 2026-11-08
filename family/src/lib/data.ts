@@ -66,6 +66,7 @@ export interface Venue {
   lon: number | null;
   osm: string | null;
   features: Fact[];
+  category: string;
 }
 
 // Official topics (travel documents, later "Niezbędnik"): rules, not places. Official sources only.
@@ -212,7 +213,7 @@ const SOURCES: Record<string, string> = {
   own_visit: "nasza wizyta",
   operator_page: "strona biura podróży",
   review_hint: "opinie gości",
-  venue_website: "strona bawialni",
+  venue_website: "strona miejsca",
   osm: "OpenStreetMap",
 };
 export const sourceLabel = (s: string) => must(SOURCES, s, "source label");

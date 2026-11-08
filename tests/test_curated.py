@@ -178,6 +178,24 @@ def test_venues_round_trip_and_retire(db):  # noqa: F811
     assert db.execute("select id, status from venues where slug = 'mlecz'").fetchone() == (*first_id, "retired")
     curated.save_venues(db, data.venues)
     assert db.execute("select status from venues where slug = 'mlecz'").fetchone() == ("published",)
+    # Pools and rinks link to their own category and use the keys of migration 014.
+    cats = dict(db.execute(
+        """select v.slug, l.category from venues v join venue_category_links l on l.venue_id = v.id
+           where v.slug in ('termy-maltanskie', 'lodowisko-ligawa')""").fetchall())
+    assert cats == {"termy-maltanskie": "basen", "lodowisko-ligawa": "lodowisko"}
+
+
+def test_venue_category_limits_its_keys(tree):
+    path = tree / "venues" / "poznan" / "lodowisko-ligawa.toml"
+    text = path.read_text(encoding="utf-8")
+    path.write_text(text.replace('key = "skating_aid"', 'key = "socks_required"'), encoding="utf-8")
+    with pytest.raises(CuratedError, match="unknown key 'socks_required'"):
+        curated.load(tree)
+    path.write_text(text.replace('category = "lodowisko"', 'category = "kino"'), encoding="utf-8")
+    with pytest.raises(CuratedError, match="category 'kino'"):
+        curated.load(tree)
+    # A file without `category` stays an indoor playground.
+    assert {v.slug: v.category for v in curated.load().venues}["mlecz"] == "sala_zabaw"
 
 
 def test_card_short_falls_back_to_first_sentence():

@@ -1,0 +1,70 @@
+# Discovered via OpenStreetMap (way/519982488, © OpenStreetMap contributors, ODbL); facts from the
+# venue's own pages (/cenniki/, /regulaminy/ and its PDFs: Regulamin Ogólny 2024, Regulamin atrakcji
+# wodnych 2024), read 2026-11-08. Written in our words.
+# Family tickets: /cenniki/ shows two different family price sets for the Aquapark (e.g. 93 vs 75 zł
+# for 1 h) without saying which applies: left out. Age limit of the reduced ticket not stated.
+# Not stated: water temperature of the brodzik, changing table.
+slug = "termy-maltanskie"
+city = "poznan"
+category = "basen"
+name = "Termy Maltańskie (Aquapark)"
+official_url = "https://termymaltanskie.com.pl/"
+address = "ul. Termalna 1, Poznań"
+lat = 52.4050673
+lon = 16.9737058
+osm = "way/519982488"
+status = "published"
+
+[[feature]]
+key = "paddling_pool"
+value = { available = true, depth_cm_min = 1, depth_cm_max = 30 }
+short = "Brodzik dziecięcy, głębokość 1–30 cm"
+note = "W Aquaparku jest brodzik dziecięcy o głębokości od 1 do 30 cm. Na tarasie jest też plac zabaw dla dzieci od 1. roku życia (czynny w godzinach plaży zewnętrznej)."
+source = "venue_website"
+url = "https://termymaltanskie.com.pl/wp-content/uploads/2024/08/Regulamin-atrakcji-wodnych_24.pdf"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "price"
+value = { free_under_years = 3, normal_1h_pln = 46, reduced_1h_pln = 37 }
+short = "Dzieci do 3 lat wchodzą bezpłatnie"
+note = "Dzieci poniżej 3 lat mają bilet bezpłatny. Aquapark: bilet normalny 46 zł za godzinę, ulgowy 37 zł. Od kogo przysługuje ulgowy i który cennik biletów rodzinnych obowiązuje, strona nie wyjaśnia: zapytaj w kasie."
+source = "venue_website"
+url = "https://termymaltanskie.com.pl/cenniki/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "swim_nappies"
+value = { required = true, under_years = 3 }
+short = "Do 3 lat obowiązkowo pieluchomajtki do pływania"
+note = "Dzieci do ukończenia 3 lat muszą mieć pieluchomajtki przeznaczone do kąpieli."
+source = "venue_website"
+url = "https://termymaltanskie.com.pl/wp-content/uploads/2024/06/Regulamin-Ogolny-Kompleksu-Termy-Maltanskie-2024.pdf"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "supervision"
+value = { adult_required_under_years = 13 }
+short = "Dzieci do 13 lat tylko z pełnoletnim opiekunem"
+note = "Dziecko do ukończenia 13 lat może być w kompleksie tylko pod opieką pełnoletniego rodzica lub opiekuna; samo nie kupi biletu."
+source = "venue_website"
+url = "https://termymaltanskie.com.pl/wp-content/uploads/2024/06/Regulamin-Ogolny-Kompleksu-Termy-Maltanskie-2024.pdf"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "opening_hours"
+value = { text = "Aquapark codziennie 9:00-23:00" }
+short = "Aquapark codziennie 9:00–23:00"
+note = "Aquapark jest czynny codziennie od 9:00 do 23:00. Baseny sportowe: pon.–sob. 6:00–23:00, niedziele i święta 7:00–23:00."
+source = "venue_website"
+url = "https://termymaltanskie.com.pl/cenniki/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { available = true, free = false }
+short = "Płatne parkingi przy kompleksie"
+note = "Przy Termach są dwa płatne parkingi (A niestrzeżony i B dozorowany), każdy z własnym regulaminem."
+source = "venue_website"
+url = "https://termymaltanskie.com.pl/regulaminy/"
+verified_at = 2026-11-08

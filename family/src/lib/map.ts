@@ -68,6 +68,8 @@ export const openSourceLabel = (id: string) => must(OPEN_SOURCES, id, "open-data
 export const CATEGORIES: { id: string; chip: string; color: string; radius: number }[] = [
   { id: "plac_zabaw", chip: "Place zabaw", color: "#0f7a74", radius: 5 },
   { id: "sala_zabaw", chip: "Sale zabaw (bawialnie)", color: "#d4472f", radius: 8 },
+  { id: "basen", chip: "Baseny i aquaparki", color: "#3a86ff", radius: 8 },
+  { id: "lodowisko", chip: "Lodowiska", color: "#c98a00", radius: 8 },
   { id: "nisoz", chip: "Nocna i świąteczna pomoc lekarska", color: "#5b3cc4", radius: 8 },
 ];
 const CAT_IDS = CATEGORIES.map((c) => c.id);
@@ -86,6 +88,10 @@ export const TAGS: { id: string; cat: string; group: string; chip: string; test:
     test: (fs: ExportFact[]) => fs.some((f) => f.key === "equipment" && f.value[id] === true),
   })),
   { id: "toddler", cat: "sala_zabaw", group: "age", chip: "Z ofertą dla 0–3 lat", test: toddlerFacts },
+  { id: "paddling", cat: "basen", group: "kids", chip: "Z brodzikiem",
+    test: (fs) => fs.some((f) => f.key === "paddling_pool" && f.value.available === true) },
+  { id: "baby_classes", cat: "basen", group: "kids", chip: "Zajęcia dla niemowląt",
+    test: (fs) => fs.some((f) => f.key === "baby_classes" && f.value.available === true) },
 ];
 
 export interface MapRef {
@@ -130,7 +136,7 @@ export function cityMap(ex: CityExport): MapPayload {
     }
     return seen.get(key)!;
   };
-  // Open data: "publisher, data z <data_as_of>, pobrane <date>". Curated: "strona bawialni, sprawdzone <date>"
+  // Open data: "publisher, data z <data_as_of>, pobrane <date>". Curated: "strona miejsca, sprawdzone <date>"
   // (location: "OpenStreetMap, sprawdzone <date>").
   const openRef = (r: ExportRef) => {
     if (r.type !== "open_data" || !r.src) return ref(`${sourceLabel(r.type)}, sprawdzone ${plDate(r.verified_at)}`, r.url);

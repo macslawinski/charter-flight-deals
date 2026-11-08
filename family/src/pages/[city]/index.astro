@@ -21,13 +21,13 @@ const inCity = name === "Poznań" ? "w Poznaniu" : `w mieście ${name}`;
 const clientCats = Object.fromEntries(CATEGORIES.map((c) => [c.id, { color: c.color, radius: c.radius, label: c.chip }]));
 ---
 
-<Base title={`Z dzieckiem ${inCity}`} section="gdzie" description={`Place zabaw, bawialnie i nocna pomoc lekarska ${inCity} na jednej mapie, ze źródłami.`}>
+<Base title={`Z dzieckiem ${inCity}`} section="gdzie" description={`Place zabaw, bawialnie, baseny, lodowiska i nocna pomoc lekarska ${inCity} na jednej mapie, ze źródłami.`}>
   <section class="page-hero map-hero">
     <div>
       <h1>Z dzieckiem {inCity}</h1>
       <p class="lead">
-        Place zabaw, bawialnie i nocna pomoc lekarska na jednej mapie. Przy każdej informacji jest
-        źródło i data.
+        Place zabaw, bawialnie, baseny, lodowiska i nocna pomoc lekarska na jednej mapie. Przy każdej
+        informacji jest źródło i data.
       </p>
     </div>
   </section>
@@ -131,6 +131,10 @@ const clientCats = Object.fromEntries(CATEGORIES.map((c) => [c.id, { color: c.co
       <li>
         Bawialnie: sprawdzone na stronach samych bawialni, lista i szczegóły na stronie
         <a href={`/${ex.city}/bawialnie/`}>Bawialnie</a>.
+      </li>
+      <li>
+        Baseny i lodowiska: sprawdzone na stronach samych obiektów i w ich regulaminach (przy każdej
+        informacji link i data).
       </li>
       <li>
         Podkład mapy: <a href="https://www.openstreetmap.org/copyright">© autorzy OpenStreetMap</a> (licencja ODbL).

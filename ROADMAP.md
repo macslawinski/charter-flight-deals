@@ -275,8 +275,13 @@ model: `docs/family-data-model.md`; sources: `docs/family-data-sources.md`.
       pumptrack, naturalny) now OR inside the group (they were AND-ed: 3 chips gave 0 playgrounds).
 - [ ] C: nurseries and bathing sites: by hand for Poznań until MRiPS / GIS provide files (no scraper).
 - [ ] C: scheduling in Actions within the minutes budget (open data changes slowly: weekly or monthly).
-- [ ] C: Poznań section 1 curation: pools/aquaparks, ice rinks, sledding, zoo/farms, rope parks, culture,
-      birthday venues (venues' own sites, OSM for discovery).
+- [x] C (2026-11-08): pools and ice rinks on `/poznan/` (migration 014: categories `basen`, `lodowisko`;
+      TOML `category = ...`): Termy Maltańskie, POSiR pools Atlantis / Winogrady / Rataje, rinks Malta and
+      Ligawa; facts from the venues' sites and rules PDFs. Skipped: POSiR Grunwald and Chwiałka pools (no
+      current rules / pool data found), Hala Wilda rink (season status unclear), Suchy Las and Swarzędz
+      (outside Poznań). Map filters "Z brodzikiem", "Zajęcia dla niemowląt".
+- [ ] C: Poznań section 1 curation: sledding, zoo/farms, rope parks, culture, birthday venues (venues' own
+      sites, OSM for discovery).
 - [ ] C: site: map + shared filters, category pages, source + verified date on every fact (frontend-design).
 - [ ] U: route and home page decision (today `/` is the hotel finder).
 

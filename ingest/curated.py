@@ -49,17 +49,22 @@ ACCESS_CITIES = {"Warszawa", "Poznań", "Gdańsk", "Wrocław", "Kraków", "Katow
 # Indoor playgrounds ("bawialnie"): loaded into venues / venue_facts (013) under source 'curated'.
 VENUE_CITIES = {"poznan": "Poznań"}
 VENUE_SOURCE_ID = "curated"
-VENUE_CATEGORY = "sala_zabaw"  # every curated venue is an indoor playground for now
+DEFAULT_VENUE_CATEGORY = "sala_zabaw"  # files without `category` are indoor playgrounds
 # age_band -> (age_min_months, age_max_months) for venue_facts; None = open end.
 BAND_MONTHS: dict[str, tuple[int | None, int | None]] = {
     "0-1": (0, 12), "0-2": (0, 24), "1-2": (12, 24), "2-3": (24, 36), "0-3": (0, 36),
     "2+": (24, None), "3+": (36, None),
 }
 CARD_SHORT_MAX = 80  # venue_facts.short_pl check
-VENUE_KEYS = {
-    "age_range", "toddler_zone", "infant_free", "price_child", "price_adult", "opening_hours",
-    "cafe", "parking", "socks_required", "supervision", "toddler_classes", "changing_table",
+# Fact keys per curated category (DB: fact_keys, scope 'shared' or the category; 013, 014).
+_VENUE_SHARED = {"age_range", "opening_hours", "parking", "changing_table", "supervision"}
+VENUE_KEYS_BY_CATEGORY: dict[str, set[str]] = {
+    "sala_zabaw": _VENUE_SHARED | {"toddler_zone", "infant_free", "price_child", "price_adult", "cafe",
+                                   "socks_required", "toddler_classes"},
+    "basen": _VENUE_SHARED | {"price", "pools", "paddling_pool", "swim_nappies", "baby_classes"},
+    "lodowisko": _VENUE_SHARED | {"price", "season", "skate_rental", "skating_aid", "helmet"},
 }
+VENUE_KEYS = set().union(*VENUE_KEYS_BY_CATEGORY.values())
 VENUE_SOURCES = {"venue_website", "osm", "own_visit"}
 SHORT_MAX = 60  # one line on a phone card
 # Legal and official topics ("Niezbędnik", travel documents): official sources only.
@@ -139,6 +144,7 @@ class Venue:
     lon: float | None = None
     osm: str | None = None  # 'node/123' or 'way/456': lets a monthly check spot closed venues
     features: tuple[Fact, ...] = field(default_factory=tuple)
+    category: str = DEFAULT_VENUE_CATEGORY  # VENUE_KEYS_BY_CATEGORY key
 
 
 @dataclass(frozen=True)
@@ -363,7 +369,10 @@ def load(root: Path = CURATED) -> Curated:
         where = str(path.relative_to(root))
         v = _read(path)
         _no_extra(v, {"slug", "city", "name", "status", "official_url", "address", "lat", "lon",
-                      "osm", "feature"}, where)
+                      "osm", "feature", "category"}, where)
+        category = _get(v, "category", str, where, required=False) or DEFAULT_VENUE_CATEGORY
+        if category not in VENUE_KEYS_BY_CATEGORY:
+            raise CuratedError(f"{where}: category {category!r} not in {sorted(VENUE_KEYS_BY_CATEGORY)}")
         city = _get(v, "city", str, where)
         if city not in VENUE_CITIES:
             raise CuratedError(f"{where}: city {city!r} not in {sorted(VENUE_CITIES)}")
@@ -375,7 +384,7 @@ def load(root: Path = CURATED) -> Curated:
         osm = _get(v, "osm", str, where, required=False)
         if osm is not None and not re.fullmatch(r"(node|way|relation)/\d+", osm):
             raise CuratedError(f"{where}: osm must look like 'node/123', got {osm!r}")
-        feats = [_fact(f, f"{where} feature[{i}]", VENUE_KEYS, VENUE_SOURCES)
+        feats = [_fact(f, f"{where} feature[{i}]", VENUE_KEYS_BY_CATEGORY[category], VENUE_SOURCES)
                  for i, f in enumerate(v.get("feature", []))]
         _unique(feats, lambda f: (f.key, f.age_band), where)
         if not feats:
@@ -395,7 +404,7 @@ def load(root: Path = CURATED) -> Curated:
             address=_get(v, "address", str, where, required=False),
             lat=_get(v, "lat", float, where, required=False),
             lon=_get(v, "lon", float, where, required=False),
-            osm=osm, features=tuple(feats),
+            osm=osm, features=tuple(feats), category=category,
         ))
     _unique(venues, lambda v: v.slug, "venues")
 
@@ -542,7 +551,7 @@ def save_venues(conn: psycopg.Connection[Any], venues: tuple[Venue, ...],
         vid = row[0]
         conn.execute("delete from venue_category_links where venue_id = %s", (vid,))
         conn.execute("insert into venue_category_links (venue_id, category) values (%s, %s)",
-                     (vid, VENUE_CATEGORY))
+                     (vid, v.category))
         conn.execute("delete from venue_facts where venue_id = %s", (vid,))
         for f in v.features:
             age_min, age_max = BAND_MONTHS[f.age_band] if f.age_band else (None, None)
