@@ -1,0 +1,140 @@
+# Facts from the hotel's own website (ostaniec.com.pl; robots.txt allows all, checked 2026-11-08):
+# /hotel-dla-dzieci, /hotel/regulamin-hotelu. Written in our words.
+# Also on the site, no feature key for it: rope park with two routes for children from 6 years or 140 cm;
+# the Osada Zborów water park next door (not the hotel) has a 30 cm toddler pool, summer season only; hotel
+# rules: children under 12 under constant supervision of their guardians. Also on the site: "Ferie zimowe na
+# Jurze - pobyt dzieci gratis" package (ages not given), not recorded as a hotel rule.
+# Not stated (so not recorded yet): cot fee, free-stay age, changing table, potty, baby monitor, lift,
+# playroom age and hours, parking.
+#
+# Coordinates: OpenStreetMap way/152948569 (centre; (c) OpenStreetMap contributors, ODbL); the site gives no
+# map coordinates.
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet (Zawiercie about 25 km).
+slug = "ostaniec-podlesice"
+place = "podlesice"
+name = "Hotel Ostaniec"
+official_url = "https://www.ostaniec.com.pl/"
+address = "ul. Jaskiniowa 6, 42-425 Podlesice"
+lat = 50.5681127
+lon = 19.5339686
+status = "published"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true }
+short = "Łóżeczko turystyczne na życzenie"
+note = "Na życzenie gości łóżeczko turystyczne i dodatkowa pościel. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.ostaniec.com.pl/hotel-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "high_chair"
+value = { available = true, where = "restaurant" }
+short = "Krzesełka do karmienia w restauracji"
+note = "W restauracji krzesełka do karmienia dla najmłodszych."
+source = "hotel_website"
+url = "https://www.ostaniec.com.pl/hotel-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Menu dla dzieci"
+note = "W restauracji specjalne menu dla dzieci; kuchnia uwzględnia indywidualne prośby."
+source = "hotel_website"
+url = "https://www.ostaniec.com.pl/hotel-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true, on_request = true, kettle = true }
+short = "Podgrzewacz do butelek i czajnik na życzenie"
+note = "Na życzenie gości podgrzewacz do butelek i czajnik elektryczny. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.ostaniec.com.pl/hotel-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, on_request = true }
+short = "Wanienka na życzenie"
+note = "Na życzenie gości wanienka. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.ostaniec.com.pl/hotel-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true, restaurant_corner = true }
+short = "Bajkowy pokój zabaw + kącik w restauracji"
+note = "W hotelu bajkowy pokój zabaw; w restauracji kącik zabaw z panelem multimedialnym, stolikiem LEGO i stolikiem do kolorowania. Minimalnego wieku, godzin ani tego, czy rodzic musi zostać, strona nie podaje."
+source = "hotel_website"
+url = "https://www.ostaniec.com.pl/hotel-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, inflatable = true, weekends = true }
+short = "Dmuchany plac zabaw w weekendy"
+note = "Przy restauracji w weekendy dmuchany plac zabaw (poza deszczowymi dniami). Wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.ostaniec.com.pl/hotel-dla-dzieci"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 60
+note = "70 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.5681%2C19.5340"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 100
+note = "80 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.5681%2C19.5340"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 185
+note = "270 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.5681%2C19.5340"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 200
+note = "290 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.5681%2C19.5340"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 255
+note = "390 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.5681%2C19.5340"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 310
+note = "490 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.5681%2C19.5340"
+verified_at = 2026-11-08

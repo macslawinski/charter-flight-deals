@@ -1,0 +1,139 @@
+# Facts from the hotel's own website (hotelzlotygron.pl; robots.txt allows all, checked 2026-11-08):
+# /dzieci, /regulamin. Written in our words.
+# Also on the site, no feature key for it: Kids SPA with age-appropriate rituals; Skizuś ski kindergarten for
+# children 5-12 (winter, Mon-Fri 3 h a day); hotel rules: children under 12 under constant supervision of
+# their guardians.
+# Not stated (so not recorded yet): cot, baby bath, high chair, changing table, potty, bottle warmer, baby
+# monitor, lift, playroom ages, brodzik depth and temperature, parking rate.
+#
+# Coordinates: OpenStreetMap node/6995383276 ((c) OpenStreetMap contributors, ODbL); the site gives no map
+# coordinates.
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: none sensible (no railway station in Istebna); car only.
+slug = "zloty-gron-istebna"
+place = "istebna"
+name = "Hotel Złoty Groń"
+official_url = "https://www.hotelzlotygron.pl/"
+address = "Istebna 593, 43-470 Istebna"
+lat = 49.5663918
+lon = 18.9120518
+status = "published"
+
+[[feature]]
+key = "child_free_stay"
+value = { free = true, max_age_years = 4, sleeping_with_parents = true, breakfast_included = true }
+short = "Dzieci do 4 lat gratis w łóżku z rodzicami"
+note = "Dla dzieci do lat 4 pobyt jest bezpłatny, jeśli śpią na łóżku z rodzicami; dziecko ma prawo do śniadań (regulamin hotelu, § 10 ust. 7)."
+source = "hotel_website"
+url = "https://hotelzlotygron.pl/regulamin"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Menu dziecięce w restauracji i karczmie"
+note = "Menu dziecięce w hotelowej restauracji i w karczmie."
+source = "hotel_website"
+url = "https://www.hotelzlotygron.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true, open_24h = true, parent_supervision = true }
+short = "Małpi Gaj całą dobę (z rodzicem), sala sensoryczna"
+note = "Małpi Gaj Dżumandżi otwarty całą dobę; dzieci bawią się pod opieką rodziców. Jest też sala zabaw sensorycznych. Minimalnego wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelzlotygron.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_animation"
+value = { available = true }
+short = "Animacje z kulturą góralską"
+note = "Animacje dla dzieci, m.in. spotkania z kulturą góralską. Minimalnego wieku ani godzin strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelzlotygron.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "Plac zabaw z trampoliną i piaskownicą"
+note = "Zewnętrzny plac zabaw: trampolina, tunele i zjeżdżalnie, piaskownica, tor przeszkód, ścianka wspinaczkowa. Wieku ani godzin strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelzlotygron.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "paddling_pool"
+value = { available = true, indoor = true, heated = true }
+short = "Ciepły brodzik z płytką wodą"
+note = "Przy basenie brodzik z płytką, ciepłą wodą. Głębokości, temperatury ani zasad wiekowych strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelzlotygron.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { paid = true }
+short = "Parking płatny osobno"
+note = "Opłata za parking nie jest wliczona w cenę pobytu (regulamin hotelu, § 4 ust. 4). Stawki strona nie podaje."
+source = "hotel_website"
+url = "https://hotelzlotygron.pl/regulamin"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 95
+note = "110 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.5664%2C18.9121"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 135
+note = "150 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.5664%2C18.9121"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 200
+note = "270 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.5664%2C18.9121"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 280
+note = "430 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.5664%2C18.9121"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 320
+note = "450 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.5664%2C18.9121"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 390
+note = "630 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.5664%2C18.9121"
+verified_at = 2026-11-08

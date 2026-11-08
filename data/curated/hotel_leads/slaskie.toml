@@ -40,7 +40,7 @@ lat = 49.5663918
 lon = 18.9120518
 signals = ["brodzik", "menu dziecięce", "sala zabaw sensorycznych", "małpi gaj"]
 why = "Brodzik z płytką wodą, menu dziecięce, sala zabaw sensorycznych, małpi gaj czynny całą dobę (dzieci pod opieką rodziców); sprzętu dla niemowląt strona nie wymienia."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Monopol Katowice"
@@ -88,7 +88,7 @@ lat = 50.4083606
 lon = 19.4800624
 signals = ["łóżeczko turystyczne", "wanienka", "podgrzewacz do butelek", "kącik zabaw", "menu dla dzieci"]
 why = "Łóżeczka turystyczne, wanienki, podgrzewacz do butelek, wewnętrzny kącik zabaw, karta menu dla dzieci; animacje tylko w pakietach."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Ostaniec"
@@ -100,7 +100,7 @@ lat = 50.5681127
 lon = 19.5339686
 signals = ["łóżeczko turystyczne", "wanienka", "podgrzewacz do butelek", "krzesełko do karmienia", "pokój zabaw", "menu dla dzieci"]
 why = "Na życzenie łóżeczko turystyczne, wanienka, podgrzewacz do butelek; krzesełka i menu dla dzieci w restauracji, pokój zabaw; brodzik to sąsiedni park wodny (sezon), nie hotel."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Aries Hotel & SPA Szczyrk"
@@ -112,7 +112,7 @@ lat = 49.7160849
 lon = 19.0187276
 signals = ["sala zabaw do lat 3", "łóżeczko", "wanienka", "brodzik"]
 why = "Osobna sala zabaw dla dzieci do lat 3 z miejscem dla rodziców; łóżeczko i wanienka w razie potrzeby (FAQ), płytka strefa wodna w Aqua Aries."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Klimczok Resort & SPA"
