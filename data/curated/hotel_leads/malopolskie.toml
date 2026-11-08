@@ -51,7 +51,7 @@ lat = 50.2067749
 lon = 19.7760567
 signals = ["łóżeczko", "wanienka", "przewijak", "krzesełko"]
 why = "Łóżeczko turystyczne 50 zł za pobyt, wanienka, przewijak (toaleta i w pokoju na życzenie), wysokie krzesełka; w pakietach rodzinnych dzieci do 3 lat gratis."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Młyn Jacka"
@@ -146,7 +146,7 @@ lat = 49.3918625
 lon = 20.9577234
 signals = ["łóżeczko", "sala zabaw"]
 why = "Łóżeczko dla małego dziecka na życzenie, wewnętrzna sala zabaw z basenem z kulkami, menu dla dzieci, opiekunka na życzenie."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Piwniczna SPA & Conference"
@@ -193,7 +193,7 @@ lat = 49.2946011
 lon = 19.9314045
 signals = ["łóżeczko", "wanienka", "brodzik", "strefa dla najmłodszych"]
 why = "Łóżeczko i wanienka na życzenie, strefa dla najmłodszych z basenem z kulkami, brodzik 60 cm w SPA; Kids Club od 4 lat."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Bachleda Resort Zakopane (Bachleda Residence, Hotel Wersal)"
@@ -253,7 +253,7 @@ lat = 49.2856795
 lon = 19.98819
 signals = ["łóżeczko", "krzesełko", "strefa dla najmłodszych w basenie", "sale zabaw"]
 why = "Łóżeczka dla maluchów, krzesełka w restauracjach, płytsza strefa basenu dla najmłodszych, dwie sale zabaw; w wybranych sezonach dzieci do 6 lat gratis."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Aquarion Family & Friends"

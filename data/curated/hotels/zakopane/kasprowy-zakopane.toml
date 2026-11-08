@@ -1,0 +1,139 @@
+# Facts from the hotel's own website (kasprowy.pl; robots.txt allows all, checked 2026-11-08):
+# /hotel/hotel-dla-dzieci, /regulamin-kids-club-kasprus, /regulamin-spa-wellness, /regulamin-hotelu, /kontakt.
+# Written in our words.
+# Also on the site, no feature key for it: climbing wall; "Małpi Gaj" in the Kids Club only for ages 5-12;
+# children of non-staying visitors pay for the Kids Club; pool area: under 13 only with an adult, under 3 only
+# in waterproof swim nappies, no prams in the AQUA zone; relax zone for children over 7 from 8:00 to 17:00.
+# Not stated (so not recorded yet): cot and baby-bath fees, free-stay age, high chair, kids' menu, changing
+# table, potty, bottle warmer, baby monitor, lift, brodzik water temperature.
+#
+# Coordinates: the hotel's own map link on /kontakt (maps.google.com/?q=49.291752,19.933416).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet (Zakopane station).
+slug = "kasprowy-zakopane"
+place = "zakopane"
+name = "Bachleda Hotel Kasprowy"
+official_url = "https://www.kasprowy.pl/"
+address = "ul. Szymaszkowa 20, 34-500 Zakopane"
+lat = 49.291752
+lon = 19.933416
+status = "published"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true }
+short = "Łóżeczko na życzenie"
+note = "Na życzenie hotel przygotowuje łóżeczko. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.kasprowy.pl/hotel/hotel-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, on_request = true }
+short = "Wanienka na życzenie"
+note = "Na życzenie hotel przygotowuje wanienkę. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.kasprowy.pl/hotel/hotel-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true, open = "10:00", close = "19:00", min_age_years = 1, with_parent_under_years = 4, free = true, free_hours = 4 }
+short = "Kids Club 10–19, od 1 roku; do 4 lat z rodzicem"
+note = "Kids Club Kaspruś: 400 m², 6 sal, codziennie 10:00–19:00, ze strefą dla najmłodszych (kącik kuchenny, pojazdy, basen z kulkami). Regulamin: od 1 do 16 lat, dzieci poniżej 4 lat tylko pod opieką rodzica; starsze można zostawić z animatorką. Dla dzieci gości hotelowych bezpłatnie przez 4 godziny, dłużej płatnie."
+source = "hotel_website"
+url = "https://www.kasprowy.pl/regulamin-kids-club-kasprus"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "Plac zabaw"
+note = "Dzieci mają dostęp do placu zabaw (i ścianki wspinaczkowej)."
+source = "hotel_website"
+url = "https://www.kasprowy.pl/hotel/hotel-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, seasonal = true }
+short = "Wydarzenia w ferie, wakacje i długie weekendy"
+note = "W ferie, wakacje, święta i długie weekendy hotel organizuje wydarzenia dla najmłodszych. Wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.kasprowy.pl/hotel/hotel-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "paddling_pool"
+value = { available = true, indoor = true, depth_cm = 60, slide = true }
+short = "Brodzik 60 cm, dwie zjeżdżalnie"
+note = "W strefie Spa & Wellness brodzik o głębokości 60 cm (regulamin: strefa brodzikowa do 0,6 m), dwie zjeżdżalnie i przeszklona ściana z widokiem na Giewont. Dzieci do 13 lat tylko z dorosłym, do 3 lat w pieluchach do pływania. Temperatury strona nie podaje."
+source = "hotel_website"
+url = "https://www.kasprowy.pl/hotel/hotel-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { paid = true, fee_pln_per_day = 70, monitored_fee_pln_per_day = 100, garage_fee_pln_per_day_low = 100, garage_fee_pln_per_day_high = 150 }
+short = "Parking od 70 zł/doba, garaż 100–150 zł"
+note = "Regulamin hotelu (§10): parking niestrzeżony 70 zł/doba, monitorowany 100 zł/doba; garaż 100 zł/doba od kwietnia do listopada i 150 zł/doba od grudnia do marca."
+source = "hotel_website"
+url = "https://www.kasprowy.pl/regulamin-hotelu"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 105
+note = "110 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.2918%2C19.9334"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 140
+note = "180 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.2918%2C19.9334"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 255
+note = "370 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.2918%2C19.9334"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 295
+note = "410 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.2918%2C19.9334"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 375
+note = "560 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.2918%2C19.9334"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 430
+note = "700 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.2918%2C19.9334"
+verified_at = 2026-11-08
