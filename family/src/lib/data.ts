@@ -342,6 +342,10 @@ export const TRIP_GROUPS: {
     regions: ["Lubelszczyzna", "Góry Świętokrzyskie", "Ponidzie", "Ziemia Sandomierska"] },
   { id: "lodzkie", title: "Łódź, Uniejów i Sulejów", tone: "sun", icon: "pin",
     regions: ["Łódź i okolice", "Termy Uniejów", "Zalew Sulejowski"] },
+  { id: "podlasie", title: "Podlasie i Augustów", tone: "sea", icon: "pin",
+    regions: ["Białystok i Podlasie", "Puszcza Białowieska", "Pojezierze Augustowskie"] },
+  { id: "opolskie", title: "Opolszczyzna i Góry Opawskie", tone: "coral", icon: "castle",
+    regions: ["Opolszczyzna", "Góry Opawskie"] },
 ];
 const GROUP_OF = Object.fromEntries(TRIP_GROUPS.flatMap((g) => g.regions.map((r) => [r, g.id])));
 export const tripGroupOf = (h: Hotel) => must(GROUP_OF, placeRegion(placeOf(h)), "trip group of region");
