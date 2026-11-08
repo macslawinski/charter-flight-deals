@@ -95,7 +95,165 @@
     "same_dates": true,
     "found_date": "2026-12-03",
     "url": "https://www.aviasales.com/search/sample"
-   }
+   },
+   "history": [
+    {
+     "date": "2026-11-04",
+     "price": 1673.0,
+     "segment_avg": 1555.72,
+     "segment_flights": 6
+    },
+    {
+     "date": "2026-11-05",
+     "price": 1660.0,
+     "segment_avg": 1546.57,
+     "segment_flights": 13
+    },
+    {
+     "date": "2026-11-06",
+     "price": 1628.0,
+     "segment_avg": 1545.25,
+     "segment_flights": 8
+    },
+    {
+     "date": "2026-11-08",
+     "price": 1571.0,
+     "segment_avg": 1664.69,
+     "segment_flights": 8
+    },
+    {
+     "date": "2026-11-09",
+     "price": 1559.0,
+     "segment_avg": 1625.38,
+     "segment_flights": 14
+    },
+    {
+     "date": "2026-11-10",
+     "price": 1557.0,
+     "segment_avg": 1688.77,
+     "segment_flights": 7
+    },
+    {
+     "date": "2026-11-11",
+     "price": 1570.0,
+     "segment_avg": 1554.65,
+     "segment_flights": 9
+    },
+    {
+     "date": "2026-11-12",
+     "price": 1567.0,
+     "segment_avg": 1641.34,
+     "segment_flights": 14
+    },
+    {
+     "date": "2026-11-13",
+     "price": 1653.0,
+     "segment_avg": 1591.43,
+     "segment_flights": 6
+    },
+    {
+     "date": "2026-11-14",
+     "price": 1644.0,
+     "segment_avg": 1631.18,
+     "segment_flights": 13
+    },
+    {
+     "date": "2026-11-15",
+     "price": 1661.0,
+     "segment_avg": 1582.04,
+     "segment_flights": 12
+    },
+    {
+     "date": "2026-11-16",
+     "price": 1582.0,
+     "segment_avg": 1571.45,
+     "segment_flights": 8
+    },
+    {
+     "date": "2026-11-18",
+     "price": 1614.0,
+     "segment_avg": 1611.21,
+     "segment_flights": 12
+    },
+    {
+     "date": "2026-11-19",
+     "price": 1570.0,
+     "segment_avg": 1689.4,
+     "segment_flights": 11
+    },
+    {
+     "date": "2026-11-20",
+     "price": 1728.0,
+     "segment_avg": 1586.54,
+     "segment_flights": 11
+    },
+    {
+     "date": "2026-11-22",
+     "price": 1658.0,
+     "segment_avg": 1654.65,
+     "segment_flights": 10
+    },
+    {
+     "date": "2026-11-23",
+     "price": 1644.0,
+     "segment_avg": 1587.85,
+     "segment_flights": 12
+    },
+    {
+     "date": "2026-11-26",
+     "price": 1560.0,
+     "segment_avg": 1643.76,
+     "segment_flights": 9
+    },
+    {
+     "date": "2026-11-27",
+     "price": 1707.0,
+     "segment_avg": 1691.49,
+     "segment_flights": 9
+    },
+    {
+     "date": "2026-11-28",
+     "price": 1615.0,
+     "segment_avg": 1674.39,
+     "segment_flights": 12
+    },
+    {
+     "date": "2026-11-29",
+     "price": 1643.0,
+     "segment_avg": 1629.88,
+     "segment_flights": 8
+    },
+    {
+     "date": "2026-11-30",
+     "price": 1595.0,
+     "segment_avg": 1552.25,
+     "segment_flights": 11
+    },
+    {
+     "date": "2026-12-01",
+     "price": 1580.0,
+     "segment_avg": 1611.44,
+     "segment_flights": 11
+    },
+    {
+     "date": "2026-12-02",
+     "price": 1706.0,
+     "segment_avg": 1673.8,
+     "segment_flights": 13
+    },
+    {
+     "date": "2026-12-03",
+     "price": 1617.0,
+     "segment_avg": 1598.35,
+     "segment_flights": 11
+    },
+    {
+     "date": "2026-12-04",
+     "price": 1249.0,
+     "segment_avg": 1555.73,
+     "segment_flights": 7
+    }
+   ]
   },
   {
    "as_of": "2026-12-04",
@@ -134,7 +292,183 @@
     "same_dates": false,
     "found_date": "2026-12-02",
     "url": "https://www.aviasales.com/search/sample"
-   }
+   },
+   "history": [
+    {
+     "date": "2026-11-04",
+     "price": null,
+     "segment_avg": 2347.13,
+     "segment_flights": 5
+    },
+    {
+     "date": "2026-11-05",
+     "price": null,
+     "segment_avg": 2331.09,
+     "segment_flights": 9
+    },
+    {
+     "date": "2026-11-06",
+     "price": null,
+     "segment_avg": 2228.63,
+     "segment_flights": 13
+    },
+    {
+     "date": "2026-11-07",
+     "price": null,
+     "segment_avg": 2325.83,
+     "segment_flights": 7
+    },
+    {
+     "date": "2026-11-08",
+     "price": null,
+     "segment_avg": 2314.08,
+     "segment_flights": 14
+    },
+    {
+     "date": "2026-11-09",
+     "price": null,
+     "segment_avg": 2365.9,
+     "segment_flights": 12
+    },
+    {
+     "date": "2026-11-10",
+     "price": null,
+     "segment_avg": 2375.19,
+     "segment_flights": 13
+    },
+    {
+     "date": "2026-11-11",
+     "price": null,
+     "segment_avg": 2287.16,
+     "segment_flights": 6
+    },
+    {
+     "date": "2026-11-12",
+     "price": null,
+     "segment_avg": 2287.5,
+     "segment_flights": 8
+    },
+    {
+     "date": "2026-11-14",
+     "price": null,
+     "segment_avg": 2232.48,
+     "segment_flights": 10
+    },
+    {
+     "date": "2026-11-15",
+     "price": null,
+     "segment_avg": 2218.63,
+     "segment_flights": 14
+    },
+    {
+     "date": "2026-11-16",
+     "price": 2319.0,
+     "segment_avg": 2218.42,
+     "segment_flights": 5
+    },
+    {
+     "date": "2026-11-18",
+     "price": 2394.0,
+     "segment_avg": 2281.9,
+     "segment_flights": 10
+    },
+    {
+     "date": "2026-11-19",
+     "price": 2250.0,
+     "segment_avg": 2304.53,
+     "segment_flights": 12
+    },
+    {
+     "date": "2026-11-20",
+     "price": 2352.0,
+     "segment_avg": 2302.64,
+     "segment_flights": 6
+    },
+    {
+     "date": "2026-11-21",
+     "price": 2423.0,
+     "segment_avg": 2368.19,
+     "segment_flights": 12
+    },
+    {
+     "date": "2026-11-22",
+     "price": 2224.0,
+     "segment_avg": 2232.28,
+     "segment_flights": 13
+    },
+    {
+     "date": "2026-11-23",
+     "price": 2472.0,
+     "segment_avg": 2354.42,
+     "segment_flights": 13
+    },
+    {
+     "date": "2026-11-24",
+     "price": 2243.0,
+     "segment_avg": 2343.52,
+     "segment_flights": 9
+    },
+    {
+     "date": "2026-11-25",
+     "price": 2317.0,
+     "segment_avg": 2404.83,
+     "segment_flights": 8
+    },
+    {
+     "date": "2026-11-26",
+     "price": 2309.0,
+     "segment_avg": 2374.98,
+     "segment_flights": 8
+    },
+    {
+     "date": "2026-11-27",
+     "price": 2428.0,
+     "segment_avg": 2377.13,
+     "segment_flights": 8
+    },
+    {
+     "date": "2026-11-28",
+     "price": 2423.0,
+     "segment_avg": 2384.05,
+     "segment_flights": 8
+    },
+    {
+     "date": "2026-11-29",
+     "price": 2421.0,
+     "segment_avg": 2308.83,
+     "segment_flights": 5
+    },
+    {
+     "date": "2026-11-30",
+     "price": 2272.0,
+     "segment_avg": 2304.09,
+     "segment_flights": 14
+    },
+    {
+     "date": "2026-12-01",
+     "price": 2478.0,
+     "segment_avg": 2298.31,
+     "segment_flights": 10
+    },
+    {
+     "date": "2026-12-02",
+     "price": 2279.0,
+     "segment_avg": 2279.22,
+     "segment_flights": 8
+    },
+    {
+     "date": "2026-12-03",
+     "price": 2352.0,
+     "segment_avg": 2273.01,
+     "segment_flights": 14
+    },
+    {
+     "date": "2026-12-04",
+     "price": 1899.0,
+     "segment_avg": 2305.76,
+     "segment_flights": 10
+    }
+   ]
   },
   {
    "as_of": "2026-12-04",
@@ -172,7 +506,165 @@
     "same_dates": null,
     "found_date": null,
     "url": null
-   }
+   },
+   "history": [
+    {
+     "date": "2026-11-04",
+     "price": null,
+     "segment_avg": 909.6,
+     "segment_flights": 6
+    },
+    {
+     "date": "2026-11-05",
+     "price": null,
+     "segment_avg": 975.79,
+     "segment_flights": 8
+    },
+    {
+     "date": "2026-11-06",
+     "price": null,
+     "segment_avg": 918.49,
+     "segment_flights": 10
+    },
+    {
+     "date": "2026-11-08",
+     "price": null,
+     "segment_avg": 970.05,
+     "segment_flights": 12
+    },
+    {
+     "date": "2026-11-09",
+     "price": null,
+     "segment_avg": 991.4,
+     "segment_flights": 7
+    },
+    {
+     "date": "2026-11-10",
+     "price": null,
+     "segment_avg": 913.61,
+     "segment_flights": 7
+    },
+    {
+     "date": "2026-11-11",
+     "price": null,
+     "segment_avg": 945.71,
+     "segment_flights": 7
+    },
+    {
+     "date": "2026-11-12",
+     "price": null,
+     "segment_avg": 958.1,
+     "segment_flights": 12
+    },
+    {
+     "date": "2026-11-13",
+     "price": null,
+     "segment_avg": 934.8,
+     "segment_flights": 13
+    },
+    {
+     "date": "2026-11-14",
+     "price": null,
+     "segment_avg": 903.58,
+     "segment_flights": 6
+    },
+    {
+     "date": "2026-11-15",
+     "price": null,
+     "segment_avg": 990.15,
+     "segment_flights": 11
+    },
+    {
+     "date": "2026-11-16",
+     "price": null,
+     "segment_avg": 920.04,
+     "segment_flights": 8
+    },
+    {
+     "date": "2026-11-18",
+     "price": null,
+     "segment_avg": 949.11,
+     "segment_flights": 14
+    },
+    {
+     "date": "2026-11-19",
+     "price": null,
+     "segment_avg": 953.21,
+     "segment_flights": 7
+    },
+    {
+     "date": "2026-11-21",
+     "price": null,
+     "segment_avg": 986.74,
+     "segment_flights": 14
+    },
+    {
+     "date": "2026-11-22",
+     "price": null,
+     "segment_avg": 950.59,
+     "segment_flights": 13
+    },
+    {
+     "date": "2026-11-23",
+     "price": null,
+     "segment_avg": 915.96,
+     "segment_flights": 13
+    },
+    {
+     "date": "2026-11-25",
+     "price": null,
+     "segment_avg": 918.93,
+     "segment_flights": 5
+    },
+    {
+     "date": "2026-11-26",
+     "price": null,
+     "segment_avg": 915.77,
+     "segment_flights": 7
+    },
+    {
+     "date": "2026-11-27",
+     "price": null,
+     "segment_avg": 970.37,
+     "segment_flights": 13
+    },
+    {
+     "date": "2026-11-29",
+     "price": 966.0,
+     "segment_avg": 951.92,
+     "segment_flights": 6
+    },
+    {
+     "date": "2026-11-30",
+     "price": 933.0,
+     "segment_avg": 906.94,
+     "segment_flights": 5
+    },
+    {
+     "date": "2026-12-01",
+     "price": 975.0,
+     "segment_avg": 949.73,
+     "segment_flights": 6
+    },
+    {
+     "date": "2026-12-02",
+     "price": 969.0,
+     "segment_avg": 959.68,
+     "segment_flights": 13
+    },
+    {
+     "date": "2026-12-03",
+     "price": 969.0,
+     "segment_avg": 927.85,
+     "segment_flights": 12
+    },
+    {
+     "date": "2026-12-04",
+     "price": 799.0,
+     "segment_avg": 925.05,
+     "segment_flights": 13
+    }
+   ]
   }
  ]
 }

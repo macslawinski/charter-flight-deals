@@ -103,6 +103,30 @@ from seg
 """
 
 
+# Price history behind each deal, for the chart: per day from window_start to as_of, this flight's
+# price (null on days it was not offered) and the plain average of all eligible flights in the
+# segment that day. Same price column (price_last) and segment as compute_deals; display only.
+_HISTORY = """
+with dl as (
+    select d.flight_key, d.window_start, e.operator, e.origin_iata, e.dest_iata, e.dep_month
+    from deals d
+    join eligible_flights e on e.flight_key = d.flight_key
+    where d.as_of = %(as_of)s
+)
+select dl.flight_key, s.snapshot_date as date,
+       max(s.price_last) filter (where s.flight_key = dl.flight_key) as price,
+       round(avg(s.price_last), 2)                                   as segment_avg,
+       count(*)::integer                                             as segment_flights
+from dl
+join eligible_flights e
+  on (e.operator, e.origin_iata, e.dest_iata, e.dep_month)
+   = (dl.operator, dl.origin_iata, dl.dest_iata, dl.dep_month)
+join price_snapshots s
+  on s.flight_key = e.flight_key and s.snapshot_date between dl.window_start and %(as_of)s
+group by dl.flight_key, s.snapshot_date
+order by dl.flight_key, s.snapshot_date
+"""
+
 # Regular-airline reference per deal (display-only; 005_market_fares.sql).
 _MARKET = "select * from market_reference(%(as_of)s)"
 AVIASALES = "https://www.aviasales.com"
@@ -149,11 +173,14 @@ def build_payload(conn: psycopg.Connection[Any], generated_at: datetime) -> dict
         as_of = status.get("last_snapshot_date")
         deals: list[dict[str, Any]] = []
         market: dict[str, dict[str, Any]] = {}
+        history: dict[str, list[dict[str, Any]]] = {}
         segments: dict[str, Any] = {"segments": 0, "ready": 0}
         if as_of is not None:
             deals = [_row(r) for r in cur.execute(_DEALS, {"as_of": as_of}).fetchall()]
             segments = cur.execute(_SEGMENTS, {"as_of": as_of}).fetchone() or segments
             market = {r["flight_key"]: r for r in cur.execute(_MARKET, {"as_of": as_of}).fetchall()}
+            for r in cur.execute(_HISTORY, {"as_of": as_of}).fetchall():
+                history.setdefault(r.pop("flight_key"), []).append(_row(r))
         zones = cur.execute(
             "select zone, min_sensible_stay_days from zones order by min_sensible_stay_days"
         ).fetchall()
@@ -162,6 +189,7 @@ def build_payload(conn: psycopg.Connection[Any], generated_at: datetime) -> dict
         d["origin_name"] = ORIGINS.get(d["origin_iata"], d["origin_iata"])
         d["dest_name"] = d["dest_name"] or d["dest_iata"]
         d["market"] = _market(market.get(d["flight_key"]))
+        d["history"] = history.get(d["flight_key"], [])
     return {
         "schema_version": SCHEMA_VERSION,
         "generated_at": _jsonable(generated_at),

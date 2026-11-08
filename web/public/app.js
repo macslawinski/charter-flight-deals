@@ -151,6 +151,114 @@ function proof(deal, params) {
       `z dni ${fullDate.format(d(deal.window_start))} – ${fullDate.format(d(deal.window_end))}.`));
 }
 
+// ---------- price history chart ----------
+// This flight's daily price vs. the plain daily average of its segment, with the baseline and the
+// threshold as reference lines. Drawn at the container's real width (no viewBox scaling, so text
+// and dots keep their size on phones) and redrawn on resize.
+
+const SVG_NS = "http://www.w3.org/2000/svg";
+function svg(tag, attrs = {}, ...children) {
+  const node = document.createElementNS(SVG_NS, tag);
+  for (const [k, v] of Object.entries(attrs)) node.setAttribute(k, String(v));
+  for (const c of children) if (c != null) node.append(c);
+  return node;
+}
+
+const chartResize = new ResizeObserver((entries) => {
+  for (const e of entries) {
+    if (!e.target.isConnected) { chartResize.unobserve(e.target); continue; }
+    const w = Math.round(e.contentRect.width);
+    if (w > 0 && w !== e.target._w) { e.target._w = w; drawHistory(e.target, w); }
+  }
+});
+
+function historyChart(deal) {
+  const h = (deal.history ?? []).filter((p) => p.segment_avg != null);
+  if (h.length < 2) return null;
+  const seen = h.filter((p) => p.price != null).length;
+  const plot = el("div", { class: "plot", role: "img",
+    "aria-label": `Wykres ceny tego lotu z ${seen} dni na tle średniej dnia na trasie; szczegóły w tabeli.` });
+  plot._deal = { ...deal, history: h };
+  chartResize.observe(plot);
+  const swatch = (cls) => el("span", { class: `sw ${cls}`, "aria-hidden": "true" });
+  return el("figure", { class: "history" },
+    el("figcaption", {},
+      el("span", {}, swatch("flight"), "ten lot"),
+      el("span", {}, swatch("seg"), "średnia dnia wszystkich lotów na tej trasie w tym miesiącu")),
+    plot,
+    el("table", { class: "sr-only" },
+      el("caption", {}, "Ceny dzienne"),
+      el("thead", {}, el("tr", {}, el("th", {}, "Dzień"), el("th", {}, "Ten lot"), el("th", {}, "Średnia trasy"))),
+      el("tbody", {}, h.map((p) => el("tr", {},
+        el("td", {}, fullDate.format(d(p.date))),
+        el("td", {}, p.price == null ? "brak oferty" : money(p.price)),
+        el("td", {}, `${money(p.segment_avg)} (${p.segment_flights} lotów)`))))));
+}
+
+function drawHistory(plot, W) {
+  const deal = plot._deal;
+  const h = deal.history;
+  const H = 150, m = { t: 10, r: 92, b: 22, l: 4 };
+  const day0 = d(h[0].date).getTime(), dayN = d(h.at(-1).date).getTime();
+  const x = (iso) => m.l + ((d(iso).getTime() - day0) / (dayN - day0)) * (W - m.l - m.r);
+  const vals = h.flatMap((p) => [p.price, p.segment_avg]).filter((v) => v != null)
+    .concat(deal.baseline_used, deal.threshold_price);
+  const lo = Math.min(...vals), hi = Math.max(...vals), pad = (hi - lo) * 0.08 || hi * 0.05;
+  const y = (v) => m.t + (1 - (v - (lo - pad)) / (hi - lo + 2 * pad)) * (H - m.t - m.b);
+  const right = W - m.r;
+
+  // Flight line breaks on days without an offer; isolated days still get a dot.
+  const runs = [];
+  for (const p of h) {
+    if (p.price == null) { if (runs.at(-1)?.length) runs.push([]); continue; }
+    if (!runs.length) runs.push([]);
+    runs.at(-1).push(p);
+  }
+  const path = (pts, key) => pts.map((p, i) => `${i ? "L" : "M"}${x(p.date).toFixed(1)},${y(p[key]).toFixed(1)}`).join("");
+  const last = h.at(-1);
+  const refLine = (v, cls, text) => [
+    svg("line", { class: `ref ${cls}`, x1: m.l, x2: right, y1: y(v), y2: y(v) }),
+    svg("text", { class: `ref-lbl ${cls}`, x: right + 6, y: y(v) + 4 }, text)];
+
+  const cross = svg("line", { class: "cross", y1: m.t, y2: H - m.b, visibility: "hidden" });
+  const hit = svg("rect", { class: "hit", x: m.l, y: 0, width: right - m.l, height: H });
+  plot.replaceChildren(svg("svg", { width: W, height: H, "aria-hidden": "true" },
+    svg("rect", { class: "zone", x: m.l, y: y(deal.threshold_price), width: right - m.l,
+      height: Math.max(0, H - m.b - y(deal.threshold_price)) }),
+    svg("line", { class: "axis", x1: m.l, x2: right, y1: H - m.b, y2: H - m.b }),
+    svg("text", { class: "tick", x: m.l, y: H - 6 }, dayMonth.format(d(h[0].date))),
+    svg("text", { class: "tick", x: right, y: H - 6, "text-anchor": "end" }, "dziś"),
+    ...refLine(deal.baseline_used, "avg", `średnia ${money(deal.baseline_used)}`),
+    ...refLine(deal.threshold_price, "thr", `próg ${money(deal.threshold_price)}`),
+    svg("path", { class: "seg", d: path(h, "segment_avg") }),
+    ...runs.filter((r) => r.length > 1).map((r) => svg("path", { class: "flight", d: path(r, "price") })),
+    ...runs.filter((r) => r.length === 1 && r[0] !== last)
+      .map((r) => svg("circle", { class: "lone", cx: x(r[0].date), cy: y(r[0].price), r: 3 })),
+    cross,
+    last.price != null ? svg("circle", { class: "today", cx: x(last.date), cy: y(last.price), r: 5 }) : null,
+    hit));
+
+  const tip = el("div", { class: "tip", hidden: "" });
+  plot.append(tip);
+  const show = (ev) => {
+    const box = plot.getBoundingClientRect();
+    const px = ev.clientX - box.left;
+    const p = h.reduce((a, b) => (Math.abs(x(b.date) - px) < Math.abs(x(a.date) - px) ? b : a));
+    const cx = x(p.date);
+    cross.setAttribute("x1", cx); cross.setAttribute("x2", cx); cross.setAttribute("visibility", "visible");
+    tip.replaceChildren(
+      el("b", {}, p === last ? "Dziś" : fullDate.format(d(p.date))),
+      el("span", {}, `Ten lot: ${p.price == null ? "brak oferty" : money(p.price)}`),
+      el("span", {}, `Średnia trasy: ${money(p.segment_avg)} (${p.segment_flights} lotów)`));
+    tip.hidden = false;
+    const tw = tip.offsetWidth;
+    tip.style.left = `${Math.max(0, Math.min(W - tw, cx + 12 + tw > W ? cx - 12 - tw : cx + 12))}px`;
+  };
+  hit.addEventListener("pointermove", show);
+  hit.addEventListener("pointerdown", show);
+  hit.addEventListener("pointerleave", () => { tip.hidden = true; cross.setAttribute("visibility", "hidden"); });
+}
+
 // Regular airlines on the same route (Aviasales data). Context only: it never decides a deal.
 const AVIASALES = "https://www.aviasales.com/";
 
@@ -197,6 +305,7 @@ function strip(deal, params) {
       el("p", { class: "when" }, when),
       ruler(deal),
       proof(deal, params),
+      historyChart(deal),
       market(deal, params)),
     el("div", { class: "strip-price" },
       el("span", { class: "now" }, money(deal.current_price)),
