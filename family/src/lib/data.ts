@@ -327,7 +327,7 @@ export const TRIP_GROUPS: {
   { id: "morze", title: "Nad morzem", tone: "sea", icon: "umbrella",
     regions: ["Bałtyk – Pomorze", "Bałtyk – Pomorze Zachodnie", "Zalew Wiślany"] },
   { id: "gory", title: "W górach", tone: "sun", icon: "mountain",
-    regions: ["Tatry i Podhale", "Beskidy", "Gorce", "Pieniny", "Karkonosze", "Kotlina Kłodzka", "Bieszczady"] },
+    regions: ["Tatry i Podhale", "Beskidy", "Gorce", "Pieniny", "Karkonosze", "Kotlina Kłodzka", "Góry Sowie", "Bieszczady"] },
   { id: "jeziora", title: "Jeziora i lasy", tone: "sea", icon: "tree",
     regions: ["Mazury", "Warmia", "Pojezierze Iławskie", "Kaszuby", "Bory Tucholskie", "Kociewie", "Podkarpacie"] },
   { id: "jura", title: "Jura i Małopolska", tone: "coral", icon: "castle",

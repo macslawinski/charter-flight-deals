@@ -553,3 +553,24 @@ name = "Chotowa"
 country = "Polska"
 region = "Podkarpacie"
 kind = "domestic"
+
+[[place]]
+slug = "sosnowka"
+name = "Sosnówka"
+country = "Polska"
+region = "Karkonosze"
+kind = "domestic"
+
+[[place]]
+slug = "piechowice"
+name = "Piechowice"
+country = "Polska"
+region = "Karkonosze"
+kind = "domestic"
+
+[[place]]
+slug = "bielawa"
+name = "Bielawa"
+country = "Polska"
+region = "Góry Sowie"
+kind = "domestic"

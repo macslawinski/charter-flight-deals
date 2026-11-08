@@ -3165,6 +3165,154 @@
   {
    "access": [
     {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 80,
+     "mode": "car",
+     "note": "70 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.6809%2C16.6075",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 160,
+     "mode": "car",
+     "note": "220 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.6809%2C16.6075",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 190,
+     "mode": "car",
+     "note": "250 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.6809%2C16.6075",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 210,
+     "mode": "car",
+     "note": "290 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.6809%2C16.6075",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 285,
+     "mode": "car",
+     "note": "420 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.6809%2C16.6075",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 375,
+     "mode": "car",
+     "note": "550 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.6809%2C16.6075",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Piastowska 23, 58-260 Bielawa",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Dla najmłodszych hotel ma łóżeczka dziecięce. Opłaty strona nie podaje.",
+     "short": "Łóżeczka dziecięce",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.palacbielawa.pl/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Hotel ma krzesełko do jedzenia dla dziecka.",
+     "short": "Krzesełko do jedzenia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.palacbielawa.pl/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Hotel ma podgrzewacz do butelek. Opłaty strona nie podaje.",
+     "short": "Podgrzewacz do butelek",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.palacbielawa.pl/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Hotel ma wanienkę. Opłaty strona nie podaje.",
+     "short": "Wanienka",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.palacbielawa.pl/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "W pałacowym ogrodzie jest plac zabaw (strona pisze o nim przy starszych dzieciach).",
+     "short": "Plac zabaw w pałacowym ogrodzie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.palacbielawa.pl/",
+     "value": {
+      "available": true,
+      "outdoor": true,
+      "where": "palace_garden"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "lift",
+     "note": "Budynek nie ma windy ze względu na zabytkowy charakter.",
+     "short": "Brak windy (zabytkowy budynek)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.palacbielawa.pl/",
+     "value": {
+      "available": false
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.6809336,
+   "lon": 16.6074787,
+   "name": "Pałac Bielawa",
+   "official_url": "https://www.palacbielawa.pl/",
+   "place": "bielawa",
+   "slug": "palac-bielawa",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
      "from_code": "Katowice",
      "from_kind": "city",
      "minutes": 85,
@@ -18689,6 +18837,116 @@
   {
    "access": [
     {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 130,
+     "mode": "car",
+     "note": "130 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.8358%2C15.5644",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 225,
+     "mode": "car",
+     "note": "310 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.8358%2C15.5644",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 230,
+     "mode": "car",
+     "note": "270 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.8358%2C15.5644",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 275,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.8358%2C15.5644",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 340,
+     "mode": "car",
+     "note": "480 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.8358%2C15.5644",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 415,
+     "mode": "car",
+     "note": "580 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.8358%2C15.5644",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Turystyczna 8, 58-573 Piechowice",
+   "features": [
+    {
+     "age_band": "0-3",
+     "key": "cot",
+     "note": "Łóżeczka dziecięce są bezpłatne dla dzieci do lat 3, w zależności od dostępności (FAQ).",
+     "short": "Łóżeczko do 3 lat bezpłatnie, wg dostępności",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotel-las.pl/faq",
+     "value": {
+      "available": true,
+      "free": true,
+      "subject_to_availability": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "W hotelu jest kącik zabaw dla dzieci. Godzin strona nie podaje. Minimalnego wieku strona nie podaje.",
+     "short": "Kącik zabaw dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotel-las.pl/faq",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Hotel ma własny parking dla gości, 30 zł za dobę (FAQ).",
+     "short": "Parking 30 zł/doba",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotel-las.pl/faq",
+     "value": {
+      "fee_pln_per_day": 30,
+      "paid": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.8357625,
+   "lon": 15.5644094,
+   "name": "Hotel LAS",
+   "official_url": "https://hotel-las.pl/",
+   "place": "piechowice",
+   "slug": "hotel-las-piechowice",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
      "from_code": "Kraków",
      "from_kind": "city",
      "minutes": 130,
@@ -21987,6 +22245,157 @@
     {
      "from_code": "Wrocław",
      "from_kind": "city",
+     "minutes": 125,
+     "mode": "car",
+     "note": "120 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.8314%2C15.7186",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 220,
+     "mode": "car",
+     "note": "300 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.8314%2C15.7186",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 225,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.8314%2C15.7186",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 270,
+     "mode": "car",
+     "note": "370 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.8314%2C15.7186",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 335,
+     "mode": "car",
+     "note": "470 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.8314%2C15.7186",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 410,
+     "mode": "car",
+     "note": "580 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.8314%2C15.7186",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Tyrolska 2G, 58-564 Sosnówka",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko niemowlęce jest bezpłatne; trzeba o nie poprosić przy rezerwacji, a ich liczba jest ograniczona (regulamin hotelu).",
+     "short": "Łóżeczko niemowlęce gratis, zgłosić przy rezerwacji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.lakehill.pl/hotel/regulamin/regulamin-hotelu",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "child_free_stay",
+     "note": "Regulamin hotelu: dzieci w wieku 0–4 lat mają pobyt w hotelu gratis; dostawka dla dzieci od 4 do 12 lat według cennika. Czy 4-latek jest jeszcze gratis, strona nie rozstrzyga.",
+     "short": "Dzieci 0–4 lat pobyt gratis",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.lakehill.pl/hotel/regulamin/regulamin-hotelu",
+     "value": {
+      "free": true,
+      "max_age_years": 4
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Hotel ma Kids Room do zabawy dla dzieci. Godzin strona nie podaje. Minimalnego wieku strona nie podaje.",
+     "short": "Kids Room",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.lakehill.pl/hotel/hotel-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Hotel ma nowoczesny plac zabaw.",
+     "short": "Nowoczesny plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.lakehill.pl/hotel/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_pool",
+     "note": "Hotel ma basen dla dzieci. Głębokości i godzin strona nie podaje.",
+     "short": "Basen dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.lakehill.pl/hotel/hotel-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Opłata parkingowa wynosi 20 zł za dobę (regulamin parkingu).",
+     "short": "Parking 20 zł/doba",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.lakehill.pl/hotel/regulamin/regulamin-hotelu",
+     "value": {
+      "fee_pln_per_day": 20,
+      "paid": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.8314151,
+   "lon": 15.7185964,
+   "name": "Lake Hill Resort & Spa",
+   "official_url": "https://www.lakehill.pl/",
+   "place": "sosnowka",
+   "slug": "lake-hill-sosnowka",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
      "minutes": 120,
      "mode": "car",
      "note": "120 km",
@@ -23775,6 +24184,232 @@
    "official_url": "https://mercureszczyrk.pl/",
    "place": "szczyrk",
    "slug": "mercure-szczyrk",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 140,
+     "mode": "car",
+     "note": "130 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.8201%2C15.5222",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 230,
+     "mode": "car",
+     "note": "310 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.8201%2C15.5222",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 240,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.8201%2C15.5222",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 280,
+     "mode": "car",
+     "note": "390 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.8201%2C15.5222",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 350,
+     "mode": "car",
+     "note": "490 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.8201%2C15.5222",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 420,
+     "mode": "car",
+     "note": "580 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.8201%2C15.5222",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Okrzei 17, 58-580 Szklarska Poręba",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko można zarezerwować. Opłaty strona nie podaje.",
+     "short": "Łóżeczko do zarezerwowania",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.bergohotel.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "child_free_stay",
+     "note": "Dzieci do lat 6 śpiące z rodzicami w łóżku wypoczywają bezpłatnie.",
+     "short": "Dzieci do lat 6 w łóżku rodziców bezpłatnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.bergohotel.pl/hotel/dla-dzieci",
+     "value": {
+      "free": true,
+      "max_age_years": 6,
+      "sleeping_with_parents": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W restauracji są krzesełka do karmienia.",
+     "short": "Krzesełka do karmienia w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.bergohotel.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja ma osobne menu dla dzieci (strona /dzieci/menu-dla-dzieci).",
+     "short": "Menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.bergohotel.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Na życzenie hotel udostępnia podgrzewacze do butelek. Opłaty strona nie podaje.",
+     "short": "Podgrzewacz do butelek na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.bergohotel.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Na życzenie hotel udostępnia wanienki. Opłaty strona nie podaje.",
+     "short": "Wanienka na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.bergohotel.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Przewijaki są w toaletach ogólnodostępnych.",
+     "short": "Przewijaki w toaletach ogólnodostępnych",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.bergohotel.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "public_toilets"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Na życzenie: nocniki, nakładki na toalety i podesty. Opłaty strona nie podaje.",
+     "short": "Nocnik, nakładka i podest na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.bergohotel.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "step_stool": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Kids Club jest czynny codziennie 9:00–21:00; jest w nim zjeżdżalnia i basen z kulkami. Minimalnego wieku strona nie podaje. Strona nie mówi, czy rodzic musi zostać.",
+     "short": "Kids Club codziennie 9–21, basen z kulkami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.bergohotel.pl/dzieci/kids-club",
+     "value": {
+      "available": true,
+      "ball_pool": true,
+      "close": "21:00",
+      "open": "09:00"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "W weekendy, wakacje i ferie zimowe animatorzy prowadzą gry i zabawy. Wieku strona nie podaje.",
+     "short": "Animacje w weekendy, wakacje i ferie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.bergohotel.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Basen ma strefę dla najmłodszych z brodzikiem z fontanną i wodnymi zabawkami. Dzieci do lat 4 kąpią się tylko w pieluchach wodoodpornych (płatne w recepcji SPA). Głębokości i godzin strona nie podaje.",
+     "short": "Brodzik z fontanną; do 4 lat pieluchy do pływania",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.bergohotel.pl/dzieci/basen-dla-dzieci",
+     "value": {
+      "indoor": true,
+      "swim_nappies_required_under_years": 4
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.8200829,
+   "lon": 15.5221556,
+   "name": "Bergo Resort & Spa",
+   "official_url": "https://www.bergohotel.pl/",
+   "place": "szklarska-poreba",
+   "slug": "bergo-szklarska-poreba",
    "status": "published"
   },
   {
@@ -30318,6 +30953,30 @@
    "name": "Chotowa",
    "region": "Podkarpacie",
    "slug": "chotowa"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Sosnówka",
+   "region": "Karkonosze",
+   "slug": "sosnowka"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Piechowice",
+   "region": "Karkonosze",
+   "slug": "piechowice"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Bielawa",
+   "region": "Góry Sowie",
+   "slug": "bielawa"
   }
  ],
  "rule_keys": [
