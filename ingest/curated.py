@@ -56,13 +56,16 @@ BAND_MONTHS: dict[str, tuple[int | None, int | None]] = {
     "2+": (24, None), "3+": (36, None),
 }
 CARD_SHORT_MAX = 80  # venue_facts.short_pl check
-# Fact keys per curated category (DB: fact_keys, scope 'shared' or the category; 013, 014).
+# Fact keys per curated category (DB: fact_keys, scope 'shared' or the category; 013, 014, 015).
 _VENUE_SHARED = {"age_range", "opening_hours", "parking", "changing_table", "supervision"}
 VENUE_KEYS_BY_CATEGORY: dict[str, set[str]] = {
     "sala_zabaw": _VENUE_SHARED | {"toddler_zone", "infant_free", "price_child", "price_adult", "cafe",
                                    "socks_required", "toddler_classes"},
     "basen": _VENUE_SHARED | {"price", "pools", "paddling_pool", "swim_nappies", "baby_classes"},
     "lodowisko": _VENUE_SHARED | {"price", "season", "skate_rental", "skating_aid", "helmet"},
+    "zoo": _VENUE_SHARED | {"price", "infant_free", "playground", "stroller_access", "notes"},
+    "kultura": _VENUE_SHARED | {"price", "youngest_shows"},
+    "rekreacja": _VENUE_SHARED | {"price", "season", "kids_rides"},
 }
 VENUE_KEYS = set().union(*VENUE_KEYS_BY_CATEGORY.values())
 VENUE_SOURCES = {"venue_website", "osm", "own_visit"}
