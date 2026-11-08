@@ -230,6 +230,15 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       (5), Kawallo (4), Santa Natura (3), Sobienie (3), Indigo (3). Skipped B&B Julinek Park (not a hotel). Car
       access only; train not checked. Lead left: Holiday Inn Józefów (no own kids page found).
 - [ ] U: decide which mazowieckie hotels to publish (all `draft`).
+- [x] C: hotel leads kujawsko-pomorskie (2026-11-08, find-hotels): 7 leads, 0 do sprawdzenia, 6 skipped
+      (`hotel_leads/kujawsko-pomorskie.toml`). Few family hotels in this voivodeship (OSM 299, probed 127).
+      Strongest: Cukrownia Żnin, Herbarium, Pałac Romantyczny, Villa Park; weakest: Poledno.
+- [x] C: kujawsko-pomorskie hotels, batch 1 (2026-11-08, draft): 6 hotels, new regions "Toruń i Kujawy" and
+      "Pałuki" (own trip group "Toruń, Kujawy i Pałuki"); Poledno under "Bory Tucholskie". 8+ verified facts:
+      Herbarium (9), Cukrownia Żnin (8). Under 8: Copernicus Toruń (6), Pałac Romantyczny (5), Villa Park (4 +
+      3 do potwierdzenia: free stay to 3, brodzik, paid parking, all only on a package page), Poledno (1).
+      Skipped Przystań Bydgoszcz (obiekt noclegowy, not a hotel). Car access only; train not checked. No leads left.
+- [ ] U: decide which kujawsko-pomorskie hotels to publish (all `draft`).
 - [ ] C: train access for the Karkonosze / Bieszczady hotels (Jelenia Góra, Kłodzko, Zagórz stations).
 - [ ] U (phone/e-mail, optional): Tremonti free-stay age (6 vs 3); Skalny SPA brodzik; Artus cot fee; Czarny
       Kamień cot fee; Arłamów cot fee and free-stay rule; most: playroom minimum age.

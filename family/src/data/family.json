@@ -4610,6 +4610,205 @@
   {
    "access": [
     {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 90,
+     "mode": "car",
+     "note": "100 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B52.7510%2C17.8417",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 165,
+     "mode": "car",
+     "note": "230 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B52.7510%2C17.8417",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 195,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B52.7510%2C17.8417",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 225,
+     "mode": "car",
+     "note": "300 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B52.7510%2C17.8417",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 285,
+     "mode": "car",
+     "note": "410 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B52.7510%2C17.8417",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 330,
+     "mode": "car",
+     "note": "480 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B52.7510%2C17.8417",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "Chomiąża Szlachecka 2, 88-410 Chomiąża Szlachecka",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na życzenie hotel bezpłatnie przygotowuje w pokoju łóżeczko z pościelą.",
+     "short": "Bezpłatne, na życzenie, z pościelą",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.herbariumhotel.pl/hotel/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "bedding": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka dziecięce w restauracji; są też kredki i kolorowanki.",
+     "short": "W restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.herbariumhotel.pl/hotel/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Osobne menu dla dzieci w Restauracji Werbena. O jedzeniu dla niemowląt strona nie wspomina.",
+     "short": "Menu dziecięce w Restauracji Werbena",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.herbariumhotel.pl/hotel/hotel-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Na życzenie bezpłatnie do pokoju: elektryczny podgrzewacz do butelek.",
+     "short": "Bezpłatnie, na życzenie, do pokoju",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.herbariumhotel.pl/hotel/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Na życzenie bezpłatnie do pokoju: wanienka do kąpieli.",
+     "short": "Bezpłatnie, na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.herbariumhotel.pl/hotel/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Na życzenie bezpłatnie do pokoju: nocnik, nakładka na toaletę i podest.",
+     "short": "Nocnik, nakładka, podest na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.herbariumhotel.pl/hotel/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true,
+      "step_stool": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala zabaw w hotelu z zabawkami i zjeżdżalnią, czynna codziennie 7:00-21:00 (strona kontakt). Minimalnego wieku i opieki strona nie podaje.",
+     "short": "Sala zabaw, codziennie 7:00-21:00",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.herbariumhotel.pl/kontakt",
+     "value": {
+      "available": true,
+      "hours": "07:00-21:00"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Plac zabaw na świeżym powietrzu: huśtawki, domki, piaskownica z zabawkami.",
+     "short": "Plac zabaw z piaskownicą",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.herbariumhotel.pl/hotel/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Hotel ma przestronny, strzeżony parking dla gości. Opłaty strona nie podaje.",
+     "short": "Strzeżony parking dla gości",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.herbariumhotel.pl/",
+     "value": {
+      "guarded": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 52.75104,
+   "lon": 17.84168,
+   "name": "Herbarium Hotel & Spa",
+   "official_url": "https://www.herbariumhotel.pl/",
+   "place": "chomiaza-szlachecka",
+   "slug": "herbarium-hotel-spa",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
      "from_code": "Kraków",
      "from_kind": "city",
      "minutes": 90,
@@ -4787,6 +4986,171 @@
    "place": "chotowa",
    "slug": "grand-chotowa",
    "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 115,
+     "mode": "car",
+     "note": "180 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B52.8845%2C18.7935",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 145,
+     "mode": "car",
+     "note": "240 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B52.8845%2C18.7935",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 155,
+     "mode": "car",
+     "note": "200 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B52.8845%2C18.7935",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 205,
+     "mode": "car",
+     "note": "350 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B52.8845%2C18.7935",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 240,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B52.8845%2C18.7935",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 250,
+     "mode": "car",
+     "note": "420 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B52.8845%2C18.7935",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Warzelniana 10, 87-720 Ciechocinek",
+   "features": [
+    {
+     "age_band": "0-3",
+     "key": "child_free_stay",
+     "note": "Dzieci do lat 3 śpiące w łóżku rodziców nocują bezpłatnie. Zasada stoi w ramce informacyjnej na stronie pakietu rodzinnego, nie na stałej stronie hotelu; o dziecku między 3. a 4. urodzinami strona nie mówi.",
+     "short": "Do 3 lat gratis w łóżku rodziców",
+     "source": "hotel_website",
+     "to_confirm": true,
+     "url": "https://villapark.pl/pakiet/rodzinne-wakacje-w-ciechocinku",
+     "value": {
+      "free": true,
+      "sleeping_with_parents": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja Preludium ma osobną kartę menu dla dzieci (kilkanaście pozycji). O jedzeniu dla niemowląt strona nie wspomina.",
+     "short": "Osobna karta menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://villapark.pl/atrakcje-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Kolorowy pokój zabaw (Baby Room) z zabawkami i grami oraz strefa gier rodzinnych. Minimalnego wieku, godzin i opieki strona nie podaje.",
+     "short": "Baby Room z zabawkami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://villapark.pl/atrakcje-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Zewnętrzny plac zabaw na zielonym terenie hotelu.",
+     "short": "Zewnętrzny plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://villapark.pl/atrakcje-dla-dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "W wybranych terminach animatorzy: warsztaty kulinarne, zabawy na powietrzu, gry, seanse bajek. Od jakiego wieku, strona nie podaje.",
+     "short": "Animacje w wybranych terminach",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://villapark.pl/atrakcje-dla-dzieci",
+     "value": {
+      "available": true,
+      "selected_dates": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "FAQ na stronie pakietu: hotel ma zewnętrzny basen z brodzikiem; strona dla dzieci mówi o basenie zewnętrznym latem z bezpiecznym wejściem, bez słowa o brodziku.",
+     "short": "Brodzik przy basenie zewnętrznym (latem)",
+     "source": "hotel_website",
+     "to_confirm": true,
+     "url": "https://villapark.pl/pakiet/rodzinne-wakacje-w-ciechocinku",
+     "value": {
+      "available": true,
+      "outdoor": true,
+      "outdoor_seasonal": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking dodatkowo płatny, bez rezerwacji miejsca (ramka „Parking - informacje” na stronie pakietu). Stawki strona nie podaje.",
+     "short": "Płatny, bez rezerwacji miejsca",
+     "source": "hotel_website",
+     "to_confirm": true,
+     "url": "https://villapark.pl/pakiet/rodzinne-wakacje-w-ciechocinku",
+     "value": {
+      "paid": true,
+      "reservable": false
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 52.88451,
+   "lon": 18.79347,
+   "name": "Hotel Villa Park MED & SPA",
+   "official_url": "https://villapark.pl/",
+   "place": "ciechocinek",
+   "slug": "villa-park-med-spa",
+   "status": "draft"
   },
   {
    "access": [
@@ -21841,6 +22205,88 @@
   {
    "access": [
     {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 90,
+     "mode": "car",
+     "note": "130 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.3942%2C18.3005",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 130,
+     "mode": "car",
+     "note": "180 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.3942%2C18.3005",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 205,
+     "mode": "car",
+     "note": "340 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.3942%2C18.3005",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 240,
+     "mode": "car",
+     "note": "360 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.3942%2C18.3005",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 265,
+     "mode": "car",
+     "note": "450 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.3942%2C18.3005",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 310,
+     "mode": "car",
+     "note": "520 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.3942%2C18.3005",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "Poledno 2, 86-122 Bukowiec",
+   "features": [
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "W strefie wellness brodzik dla dzieci z fontanną. Dzieci do 3 lat tylko w pieluchomajtkach (regulamin strefy). Opłaty dla gości hotelu ustala recepcja; kwoty strona nie podaje.",
+     "short": "Brodzik z fontanną w strefie wellness",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://poledno.pl/spa/",
+     "value": {
+      "available": true,
+      "fountain": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 53.39423,
+   "lon": 18.30054,
+   "name": "Pałac Poledno",
+   "official_url": "https://poledno.pl/",
+   "place": "poledno",
+   "slug": "palac-poledno",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
      "from_code": "Kraków",
      "from_kind": "city",
      "minutes": 75,
@@ -26637,6 +27083,164 @@
     {
      "from_code": "Gdańsk",
      "from_kind": "city",
+     "minutes": 115,
+     "mode": "car",
+     "note": "170 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.0078%2C18.5963",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 145,
+     "mode": "car",
+     "note": "180 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.0078%2C18.5963",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 165,
+     "mode": "car",
+     "note": "260 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.0078%2C18.5963",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 225,
+     "mode": "car",
+     "note": "370 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.0078%2C18.5963",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 255,
+     "mode": "car",
+     "note": "360 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.0078%2C18.5963",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 265,
+     "mode": "car",
+     "note": "440 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.0078%2C18.5963",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "Bulwar Filadelfijski 11, 87-100 Toruń",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Gościom z małym dzieckiem hotel na życzenie i w miarę dostępności bezpłatnie wstawia łóżeczko do pokoju (regulamin hotelu).",
+     "short": "Bezpłatne, na życzenie, w miarę dostępności",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.copernicustorunhotel.com/hotel/regulamin-hotelu",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true,
+      "subject_to_availability": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Przy placu zabaw i sali zabaw jest łatwy dostęp do toalet i przewijaków.",
+     "short": "Przewijaki przy strefach zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.copernicustorunhotel.com/atrakcje/atrakcje/plac-zabaw-i-mini-sala-zabaw",
+     "value": {
+      "available": true,
+      "where": "near_play_areas"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Mini sala zabaw w hotelu (klocki, tablice do rysowania, pluszaki, gry), bezpłatna dla gości. Strona pisze, że atrakcje są dla dzieci w wieku przedszkolnym i wczesnoszkolnym, a w sali są zabawki dla mniejszych dzieci; minimalnego wieku i opieki nie podaje.",
+     "short": "Mini sala zabaw, bezpłatna",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.copernicustorunhotel.com/atrakcje/atrakcje/plac-zabaw-i-mini-sala-zabaw",
+     "value": {
+      "available": true,
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Zewnętrzny drewniany plac zabaw w hotelowym ogrodzie (zjeżdżalnie, huśtawki, ścianki), bezpłatny dla gości.",
+     "short": "Drewniany plac zabaw w ogrodzie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.copernicustorunhotel.com/atrakcje/atrakcje/plac-zabaw-i-mini-sala-zabaw",
+     "value": {
+      "available": true,
+      "free": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Kryty basen ma brodzik dla dzieci o głębokości 0,3 m; nad basenem czuwają ratownicy. Basen jest bezpłatny dla gości hotelu.",
+     "short": "Brodzik 30 cm przy krytym basenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.copernicustorunhotel.com/spa-wellness/strefa-basenowo-saunowa",
+     "value": {
+      "available": true,
+      "depth_cm": 30,
+      "indoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking tylko dla gości, płatny: 40 zł za dobę za miejsce na parkingu naziemnym, 55 zł na podziemnym; monitorowany.",
+     "short": "40 zł/doba, podziemny 55 zł/doba",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.copernicustorunhotel.com/hotel/parking",
+     "value": {
+      "fee_pln_per_day": 40,
+      "monitored": true,
+      "paid": true,
+      "underground_fee_pln_per_day": 55
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 53.00776,
+   "lon": 18.59632,
+   "name": "Copernicus Toruń Hotel",
+   "official_url": "https://www.copernicustorunhotel.com/",
+   "place": "torun",
+   "slug": "copernicus-torun-hotel",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
      "minutes": 205,
      "mode": "car",
      "note": "290 km",
@@ -26882,6 +27486,143 @@
    "place": "trzesacz",
    "slug": "villa-hoff-trzesacz",
    "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 100,
+     "mode": "car",
+     "note": "160 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.1082%2C18.7288",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 165,
+     "mode": "car",
+     "note": "210 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.1082%2C18.7288",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 165,
+     "mode": "car",
+     "note": "270 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.1082%2C18.7288",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 225,
+     "mode": "car",
+     "note": "390 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.1082%2C18.7288",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 260,
+     "mode": "car",
+     "note": "410 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.1082%2C18.7288",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 265,
+     "mode": "car",
+     "note": "450 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.1082%2C18.7288",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Toruńska 1, 87-148 Turzno",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko turystyczne i komplet pościeli trzeba zgłosić w recepcji (książka gościa, s. 5). Opłaty strona nie podaje.",
+     "short": "Łóżeczko turystyczne na zgłoszenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://u.profitroom.com/2018-palac-romantyczny-com-pl/uploads/id_ksiazka_2024.pdf",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienkę trzeba zgłosić w recepcji (książka gościa, s. 5).",
+     "short": "Na zgłoszenie w recepcji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://u.profitroom.com/2018-palac-romantyczny-com-pl/uploads/id_ksiazka_2024.pdf",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Nocnik trzeba zgłosić w recepcji (książka gościa, s. 5).",
+     "short": "Na zgłoszenie w recepcji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://u.profitroom.com/2018-palac-romantyczny-com-pl/uploads/id_ksiazka_2024.pdf",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala zabaw „Frycek” w części Atrium: domek, zabawki interaktywne, kuchenka, kącik plastyczny, gry, dziecięce mebelki. Minimalnego wieku, godzin i opieki strona nie podaje.",
+     "short": "Sala zabaw „Frycek”",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.palac-romantyczny.com/hotel-przyjazny-dzieciom",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Zewnętrzny plac zabaw w parku: huśtawki, zjeżdżalnia, bujaki, piaskownica, karuzela.",
+     "short": "Plac zabaw w parku",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.palac-romantyczny.com/hotel-przyjazny-dzieciom",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 53.10817,
+   "lon": 18.72875,
+   "name": "Pałac Romantyczny",
+   "official_url": "https://www.palac-romantyczny.com/",
+   "place": "turzno",
+   "slug": "palac-romantyczny",
+   "status": "draft"
   },
   {
    "access": [
@@ -32778,6 +33519,187 @@
    "place": "zawiercie",
    "slug": "villa-verde-zawiercie",
    "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 75,
+     "mode": "car",
+     "note": "90 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B52.8489%2C17.7386",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 140,
+     "mode": "car",
+     "note": "220 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B52.8489%2C17.7386",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 185,
+     "mode": "car",
+     "note": "270 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B52.8489%2C17.7386",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 220,
+     "mode": "car",
+     "note": "360 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B52.8489%2C17.7386",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 285,
+     "mode": "car",
+     "note": "470 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B52.8489%2C17.7386",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 325,
+     "mode": "car",
+     "note": "530 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B52.8489%2C17.7386",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Klemensa Janickiego 1, 88-400 Żnin",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Hotel ma łóżeczka turystyczne i pościel do łóżeczka. Opłaty strona nie podaje.",
+     "short": "Łóżeczka turystyczne z pościelą",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.cukrowniaznin.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "bedding": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "child_free_stay",
+     "note": "Strona dla dzieci: „nocleg gratis dla dziecka do 4 roku życia”. Czy chodzi o dziecko przed 4. urodzinami, oraz czy dotyczy spania z rodzicami, strona nie precyzuje.",
+     "short": "Nocleg gratis do 4 roku życia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.cukrowniaznin.pl/hotel/dla-dzieci",
+     "value": {
+      "free": true,
+      "max_age_years": 4
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Hotel ma wanienki dla dzieci.",
+     "short": "Są wanienki",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.cukrowniaznin.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Hotel ma nocniki.",
+     "short": "Są nocniki",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.cukrowniaznin.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Całoroczna sala zabaw (ok. 300 m²) z dużym małpim gajem i osobną, mniejszą strefą z małym małpim gajem dla najmłodszych; obok strefa relaksu dla rodziców. Jest też mała sala zabaw Pakownia. Minimalnego wieku i godzin strona nie podaje.",
+     "short": "Sala zabaw ok. 300 m², strefa dla maluchów",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.cukrowniaznin.pl/atrakcje/atrakcje-w-obiekcie-i-okolicy-arche-cukrownia-znin/caloroczna-sala-zabaw-dla-dzieci-arche-cukrownia-znin",
+     "value": {
+      "available": true,
+      "size_m2": 300,
+      "toddler_zone": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Zewnętrzny plac zabaw na terenie obiektu.",
+     "short": "Zewnętrzny plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.cukrowniaznin.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "W krytym parku wodnym (budynek Fabryka II) brodzik o głębokości 40 cm z małą zjeżdżalnią, grzybkiem z wodą, wiadrami i armatką. Dzieci do 3 lat tylko w pieluszkach do pływania (regulamin basenu, s. 3). Cennik wejść do parku wodnego jest za 75 min; czy goście hotelu płacą, strona nie podaje.",
+     "short": "Brodzik 40 cm ze zjeżdżalnią (park wodny)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://wa-uploads.profitroom.com/archecukrowniaznin/17207815621573_REGULAMINKORZYSTANIAZBASENU.pdf",
+     "value": {
+      "available": true,
+      "depth_cm": 40,
+      "indoor": true,
+      "slide": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking niestrzeżony i płatny, czynny całą dobę (regulamin parkingu, s. 1). Stawki strona nie podaje.",
+     "short": "Płatny, niestrzeżony",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://wa-uploads.profitroom.com/archecukrowniaznin/1771314069007_Regulamin%20parkingu.pdf",
+     "value": {
+      "guarded": false,
+      "paid": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 52.84891,
+   "lon": 17.7386,
+   "name": "Arche Cukrownia Żnin",
+   "official_url": "https://www.cukrowniaznin.pl/",
+   "place": "znin",
+   "slug": "arche-cukrownia-znin",
+   "status": "draft"
   }
  ],
  "places": [
@@ -33548,6 +34470,54 @@
    "name": "Wilga",
    "region": "Mazowsze",
    "slug": "wilga"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Chomiąża Szlachecka",
+   "region": "Pałuki",
+   "slug": "chomiaza-szlachecka"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Ciechocinek",
+   "region": "Toruń i Kujawy",
+   "slug": "ciechocinek"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Poledno",
+   "region": "Bory Tucholskie",
+   "slug": "poledno"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Toruń",
+   "region": "Toruń i Kujawy",
+   "slug": "torun"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Turzno",
+   "region": "Toruń i Kujawy",
+   "slug": "turzno"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Żnin",
+   "region": "Pałuki",
+   "slug": "znin"
   }
  ],
  "rule_keys": [

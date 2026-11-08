@@ -1,0 +1,130 @@
+# Facts from the hotel's own website (copernicustorunhotel.com; robots.txt allows all, checked 2026-11-08):
+# /hotel/regulamin-hotelu, /atrakcje/atrakcje/plac-zabaw-i-mini-sala-zabaw, /hotel/parking,
+# /spa-wellness/strefa-basenowo-saunowa, home page. Written in our words.
+# Also on the site, no feature key for it: indoor pool 24 x 17 m (to 1.4 m), free for hotel guests, with
+# lifeguards; seasonal outdoor pool; children under 12 only with their guardians anywhere in the hotel;
+# Old Town and the Vistula boulevard a short walk away.
+# Not stated (so not recorded yet): free-stay ages, high chair, kids menu, baby bath, bottle warmer, potty,
+# playroom hours, lift.
+#
+# Coordinates: the hotel's own map link.
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet (Toruń Główny).
+slug = "copernicus-torun-hotel"
+place = "torun"
+name = "Copernicus Toruń Hotel"
+official_url = "https://www.copernicustorunhotel.com/"
+address = "Bulwar Filadelfijski 11, 87-100 Toruń"
+lat = 53.00776  # the hotel's own map link
+lon = 18.59632
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true, free = true, subject_to_availability = true }
+short = "Bezpłatne, na życzenie, w miarę dostępności"
+note = "Gościom z małym dzieckiem hotel na życzenie i w miarę dostępności bezpłatnie wstawia łóżeczko do pokoju (regulamin hotelu)."
+source = "hotel_website"
+url = "https://www.copernicustorunhotel.com/hotel/regulamin-hotelu"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "changing_table"
+value = { available = true, where = "near_play_areas" }
+short = "Przewijaki przy strefach zabaw"
+note = "Przy placu zabaw i sali zabaw jest łatwy dostęp do toalet i przewijaków."
+source = "hotel_website"
+url = "https://www.copernicustorunhotel.com/atrakcje/atrakcje/plac-zabaw-i-mini-sala-zabaw"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true, free = true }
+short = "Mini sala zabaw, bezpłatna"
+note = "Mini sala zabaw w hotelu (klocki, tablice do rysowania, pluszaki, gry), bezpłatna dla gości. Strona pisze, że atrakcje są dla dzieci w wieku przedszkolnym i wczesnoszkolnym, a w sali są zabawki dla mniejszych dzieci; minimalnego wieku i opieki nie podaje."
+source = "hotel_website"
+url = "https://www.copernicustorunhotel.com/atrakcje/atrakcje/plac-zabaw-i-mini-sala-zabaw"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true, free = true }
+short = "Drewniany plac zabaw w ogrodzie"
+note = "Zewnętrzny drewniany plac zabaw w hotelowym ogrodzie (zjeżdżalnie, huśtawki, ścianki), bezpłatny dla gości."
+source = "hotel_website"
+url = "https://www.copernicustorunhotel.com/atrakcje/atrakcje/plac-zabaw-i-mini-sala-zabaw"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "paddling_pool"
+value = { available = true, indoor = true, depth_cm = 30 }
+short = "Brodzik 30 cm przy krytym basenie"
+note = "Kryty basen ma brodzik dla dzieci o głębokości 0,3 m; nad basenem czuwają ratownicy. Basen jest bezpłatny dla gości hotelu."
+source = "hotel_website"
+url = "https://www.copernicustorunhotel.com/spa-wellness/strefa-basenowo-saunowa"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { paid = true, fee_pln_per_day = 40, underground_fee_pln_per_day = 55, monitored = true }
+short = "40 zł/doba, podziemny 55 zł/doba"
+note = "Parking tylko dla gości, płatny: 40 zł za dobę za miejsce na parkingu naziemnym, 55 zł na podziemnym; monitorowany."
+source = "hotel_website"
+url = "https://www.copernicustorunhotel.com/hotel/parking"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 115
+note = "170 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.0078%2C18.5963"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 145
+note = "180 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.0078%2C18.5963"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 165
+note = "260 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.0078%2C18.5963"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 225
+note = "370 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.0078%2C18.5963"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 255
+note = "360 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.0078%2C18.5963"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 265
+note = "440 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.0078%2C18.5963"
+verified_at = 2026-11-08

@@ -672,3 +672,44 @@ name = "Wilga"
 country = "Polska"
 region = "Mazowsze"
 kind = "domestic"
+[[place]]
+slug = "chomiaza-szlachecka"
+name = "Chomiąża Szlachecka"
+country = "Polska"
+region = "Pałuki"
+kind = "domestic"
+
+[[place]]
+slug = "ciechocinek"
+name = "Ciechocinek"
+country = "Polska"
+region = "Toruń i Kujawy"
+kind = "domestic"
+
+[[place]]
+slug = "poledno"
+name = "Poledno"
+country = "Polska"
+region = "Bory Tucholskie"
+kind = "domestic"
+
+[[place]]
+slug = "torun"
+name = "Toruń"
+country = "Polska"
+region = "Toruń i Kujawy"
+kind = "domestic"
+
+[[place]]
+slug = "turzno"
+name = "Turzno"
+country = "Polska"
+region = "Toruń i Kujawy"
+kind = "domestic"
+
+[[place]]
+slug = "znin"
+name = "Żnin"
+country = "Polska"
+region = "Pałuki"
+kind = "domestic"
