@@ -239,9 +239,18 @@ def test_travel_documents_load_with_official_sources_only():
     assert consent.to_confirm and consent.also
 
 
+def test_parent_benefits_load_from_gov_and_zus():
+    [ben] = [e for e in curated.load().essentials if e.topic == "parent_benefits"]
+    assert {g.id for g in ben.groups} == {"po-urodzeniu", "urlopy", "swiadczenia", "opieka"}
+    assert {f.url.split("/")[2] for f in ben.facts} <= {"www.gov.pl", "www.zus.pl", "powroty.gov.pl"}
+    child = next(f for f in ben.facts if f.key == "800-plus")
+    assert "800 zł" in child.short and child.url.startswith("https://www.zus.pl/")
+
+
 @pytest.mark.parametrize("group, url, error", [
-    ("paszport", "https://www.paszport-info.pl/x", "gov.pl https url"),
-    ("paszport", "https://gov.pl.evil.com/x", "gov.pl https url"),
+    ("paszport", "https://www.paszport-info.pl/x", "gov.pl or www.zus.pl https url"),
+    ("paszport", "https://gov.pl.evil.com/x", "gov.pl or www.zus.pl https url"),
+    ("paszport", "https://www.zus.pl.evil.com/x", "gov.pl or www.zus.pl https url"),
     ("nope", "https://www.gov.pl/x", "group 'nope' not defined"),
 ])
 def test_bad_essential_fact_is_rejected(tree, group, url, error):

@@ -177,7 +177,8 @@ on ISAP/ELI or the agency page), `verified_at`, `valid_from` / `valid_to` (amoun
 Decided (2026-11-08): JSON export straight from TOML, no DB table until something needs to query it. Built for
 the first topic, `essentials/travel_documents.toml` (page `/wyjazdy/dokumenty/`): `[[group]]` (id, title, icon,
 intro) and `[[fact]]` (group, key, short, note, publisher, url, verified_at, to_confirm, also = [{label, url}]).
-The loader (`ingest/curated.py`) accepts only `*.gov.pl` https URLs and known topics (`ESSENTIAL_TOPICS`);
+Second topic (2026-11-08): `essentials/parent_benefits.toml` (page `/niezbednik/swiadczenia/`, hub `/niezbednik/`).
+The loader (`ingest/curated.py`) accepts only `*.gov.pl` and `www.zus.pl` https URLs and known topics (`ESSENTIAL_TOPICS`);
 disagreeing official sources go into one fact with `to_confirm = true` and the other source in `also`.
 `valid_from` / `valid_to` are not built yet (no dated amounts so far).
 

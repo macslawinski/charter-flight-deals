@@ -1,0 +1,55 @@
+---
+// "Niezbędnik rodzica" hub: official topics (benefits, documents) and the NFZ night care points.
+// Counts come from the same data as the topic pages.
+import Base from "../../layouts/Base.astro";
+import { essential } from "../../lib/data";
+import { cityExports, cityMap } from "../../lib/map";
+
+const benefits = essential("parent_benefits");
+const docs = essential("travel_documents");
+const poznan = cityExports.find((ex) => ex.city === "poznan")!;
+const nisoz = cityMap(poznan).venues.filter((v) => v.cat === "nisoz").length;
+---
+
+<Base title="Niezbędnik rodzica" section="niezbednik" description="Urlopy, świadczenia, terminy po narodzinach, dokumenty dziecka i nocna pomoc lekarska: fakty ze stron urzędowych.">
+  <section class="page-hero">
+    <div>
+      <h1>Niezbędnik rodzica</h1>
+      <p class="lead">
+        Sprawy urzędowe i zdrowotne dla rodziców małych dzieci. Tylko to, co podają ZUS, urzędy i NFZ, z linkiem i
+        datą sprawdzenia. Bez porad i opinii.
+      </p>
+    </div>
+  </section>
+
+  <div class="doors ess-doors">
+    <a class="door coral" href="/niezbednik/swiadczenia/">
+      <div>
+        <h3>{benefits.title}</h3>
+        <p>
+          {benefits.facts.length} informacji: rejestracja urodzenia, urlopy, 800+, becikowe, Aktywny Rodzic, zasiłek
+          opiekuńczy. Ze stron ZUS i gov.pl.
+        </p>
+      </div>
+    </a>
+    <a class="door sea" href="/poznan/#nocna-pomoc">
+      <div>
+        <h3>Nocna i świąteczna pomoc lekarska</h3>
+        <p>{nisoz} punktów w Poznaniu, z adresem i telefonem. Z mapy NFZ na pacjent.gov.pl.</p>
+      </div>
+    </a>
+    <a class="door sun" href="/wyjazdy/dokumenty/">
+      <div>
+        <h3>{docs.title}</h3>
+        <p>Dowód, paszport, EKUZ i zgoda drugiego rodzica: opłaty, terminy, kto musi przyjść.</p>
+      </div>
+    </a>
+  </div>
+</Base>
+
+<style>
+  .ess-doors {
+    max-width: 50rem;
+    margin-top: 1.5rem;
+  }
+</style>

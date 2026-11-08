@@ -1,0 +1,38 @@
+---
+// Leave, benefits and deadlines after a birth: official facts only (essentials/parent_benefits.toml).
+import Base from "../../layouts/Base.astro";
+import EssentialFacts from "../../components/EssentialFacts.astro";
+import { essential, plDate } from "../../lib/data";
+
+const topic = essential("parent_benefits");
+const latest = topic.facts.map((f) => f.verified_at).sort().at(-1)!;
+---
+
+<Base title={topic.title} section="niezbednik" description="Urlop macierzyński, rodzicielski i ojcowski, 800+, becikowe, Aktywny Rodzic i zasiłek opiekuńczy: kwoty i terminy ze stron ZUS i gov.pl.">
+  <p class="crumb"><a href="/niezbednik/">Niezbędnik</a></p>
+  <section class="page-hero">
+    <div>
+      <h1>{topic.title}</h1>
+      <p class="lead">
+        Co i do kiedy załatwić po narodzinach dziecka, ile trwają urlopy i jakie są świadczenia. Tylko ze stron
+        ZUS i gov.pl, przy każdej informacji link i data sprawdzenia (ostatnio {plDate(latest)}).
+      </p>
+    </div>
+  </section>
+
+  <EssentialFacts topic={topic} />
+
+  <p class="doc-disclaimer">
+    To nie jest porada prawna ani kalkulator świadczeń. Kwoty i warunki się zmieniają: przed złożeniem wniosku
+    sprawdź je na stronie ZUS lub urzędu (link przy każdej informacji) albo zapytaj w placówce ZUS.
+  </p>
+</Base>
+
+<style>
+  .doc-disclaimer {
+    margin-top: 2.5rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+    max-width: 62ch;
+  }
+</style>

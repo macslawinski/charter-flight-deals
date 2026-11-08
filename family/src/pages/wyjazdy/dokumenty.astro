@@ -1,12 +1,10 @@
 ---
 // Children's travel documents: official facts only (data/curated/essentials/travel_documents.toml).
-// Every fact shows who says it, a link and the date we read it; disagreeing sources are labelled.
 import Base from "../../layouts/Base.astro";
-import Icon from "../../components/Icon.astro";
+import EssentialFacts from "../../components/EssentialFacts.astro";
 import { essential, plDate } from "../../lib/data";
 
 const docs = essential("travel_documents");
-const groups = docs.groups.map((g) => ({ ...g, facts: docs.facts.filter((f) => f.group === g.id) }));
 const latest = docs.facts.map((f) => f.verified_at).sort().at(-1)!;
 ---
 
@@ -22,61 +20,7 @@ const latest = docs.facts.map((f) => f.verified_at).sort().at(-1)!;
     </div>
   </section>
 
-  <nav aria-label="Tematy">
-    <ul class="toc">
-      {
-        groups.map((g) => (
-          <li>
-            <a href={`#${g.id}`}>
-              <Icon name={g.icon} size={18} />
-              {g.title}
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-  </nav>
-
-  {
-    groups.map((g) => (
-      <section class="section" aria-labelledby={g.id}>
-        <h2 class="section-title" id={g.id}>
-          <span class="tile-icon">
-            <Icon name={g.icon} />
-          </span>
-          {g.title}
-        </h2>
-        {g.intro && <p class="doc-intro">{g.intro}</p>}
-        <ul class="doc-facts">
-          {g.facts.map((f) => (
-            <li class:list={["doc-fact", { ask: f.to_confirm }]}>
-              {f.to_confirm && <span class="badge-ask">Do potwierdzenia: źródła się różnią</span>}
-              <p class="doc-short">{f.short}</p>
-              {f.note && <p class="doc-note">{f.note}</p>}
-              <p class="source-line">
-                <span class:list={["source", { ask: f.to_confirm }]}>
-                  <Icon name={f.to_confirm ? "question" : "check"} size={16} />
-                  <a href={f.url} rel="noopener" target="_blank">
-                    {f.publisher}, sprawdzone {plDate(f.verified_at)}
-                    <span class="visually-hidden"> (źródło, otwiera się w nowej karcie)</span>
-                  </a>
-                </span>
-                {f.also.map((a) => (
-                  <span class="source">
-                    <Icon name="link" size={16} />
-                    <a href={a.url} rel="noopener" target="_blank">
-                      Zobacz też: {a.label}
-                      <span class="visually-hidden"> (otwiera się w nowej karcie)</span>
-                    </a>
-                  </span>
-                ))}
-              </p>
-            </li>
-          ))}
-        </ul>
-      </section>
-    ))
-  }
+  <EssentialFacts topic={docs} />
 
   <p class="doc-disclaimer">
     To nie jest porada prawna. Zasady i opłaty się zmieniają: przed wyjazdem sprawdź je na stronie urzędu
@@ -85,49 +29,6 @@ const latest = docs.facts.map((f) => f.verified_at).sort().at(-1)!;
 </Base>
 
 <style>
-  .doc-intro {
-    margin: 0.25rem 0 0.75rem;
-    color: var(--muted);
-    max-width: 62ch;
-  }
-  .doc-facts {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    gap: 0.75rem;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
-  }
-  .doc-fact {
-    background: var(--white);
-    border-radius: var(--r-tile);
-    padding: 1rem 1.1rem;
-    display: grid;
-    align-content: start;
-    gap: 0.4rem;
-  }
-  .doc-fact.ask {
-    outline: 2px solid var(--sun);
-  }
-  .doc-fact .badge-ask {
-    justify-self: start;
-  }
-  .doc-short {
-    margin: 0;
-    font-family: var(--display);
-    font-weight: 700;
-    font-size: 1.08rem;
-    line-height: 1.3;
-  }
-  .doc-note {
-    margin: 0;
-    font-size: 0.95rem;
-  }
-  .source-line {
-    margin: 0.2rem 0 0;
-    display: grid;
-    gap: 0.2rem;
-  }
   .doc-disclaimer {
     margin-top: 2.5rem;
     color: var(--muted);

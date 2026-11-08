@@ -301,8 +301,14 @@ model: `docs/family-data-model.md`; sources: `docs/family-data-sources.md`.
       GDN has no family page (news items only; "komfortki" to confirm). POZ and WRO block plain HTTP clients:
       read in a browser. Re-verify every 6 months.
 - [ ] Car-seat laws abroad.
-- [ ] "Niezbędnik rodzica" topics (benefits, deadlines, vaccinations, recalls, car-seat tests): TODO: which
-      stage? The brief lists them in the product but not in a stage.
+
+### E4. "Niezbędnik rodzica"
+- [x] C (2026-11-08): hub `/niezbednik/` (nav "Niezbędnik") and `/niezbednik/swiadczenia/`: birth registration,
+      800+ and becikowe deadlines, maternity / supplementary / parental / paternity leave, 800+, becikowe, Aktywny
+      Rodzic (3 benefits), zasiłek opiekuńczy; 15 facts from ZUS and gov.pl (`essentials/parent_benefits.toml`;
+      the loader now also accepts `www.zus.pl`). Hub also links NiŚOZ points on `/poznan/#nocna-pomoc` and the
+      travel documents. Re-verify yearly (amounts; the becikowe income limit is from 2013).
+- [ ] Vaccination schedule (PSO, GIS communiqué), product recalls (feed), car-seat tests (licence): not started.
 
 ### Backlog (needs your go)
 - E-mail agent that asks hotels/venues for missing data and updates facts from replies (`venue_submitted` /
