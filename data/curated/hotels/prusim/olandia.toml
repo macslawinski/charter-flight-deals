@@ -21,7 +21,7 @@ official_url = "https://www.olandia.pl/"
 address = "Prusim 5, 64-420 Kwilcz"
 lat = 52.57755  # OpenStreetMap way/536491772, ODbL
 lon = 16.00506
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

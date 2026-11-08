@@ -1,0 +1,84 @@
+# Leads for Product B: hotels in województwo lubuskie whose own website shows an offer for children 0-3.
+# Discovered via OpenStreetMap (tourism=hotel, leisure=resort; (c) OpenStreetMap contributors, ODbL) and web
+# search pointing to the hotels' own sites; each lead confirmed on its own kids page.
+# Not facts: the curate-hotel skill reads the facts.
+voivodeship = "lubuskie"
+checked_at = 2026-11-08
+covered = ["całe województwo (OSM 205 obiektów, 94 ze stroną, probe 88 stron) + web search, 2026-11-08"]
+
+[[lead]]
+name = "Hotel Woiński Spa"
+town = "Lubniewice"
+official_url = "https://www.woinskispa.pl/"
+kids_url = "https://www.woinskispa.pl/rodzinnie"
+signals = ["łóżeczko", "brodzik", "plac zabaw"]
+why = "Łóżeczka turystyczne na życzenie, plaża z brodzikiem dla dzieci, plac zabaw; słabszy lead."
+status = "curated"
+
+[[lead]]
+name = "Grand Boutique Hotel"
+town = "Rzepin"
+official_url = "https://rzepin.hotelkaliski.pl/grand-boutique-hotel-w-rzepinie"
+kids_url = "https://rzepin.hotelkaliski.pl/cennik"
+signals = ["łóżeczko"]
+why = "W cenniku tylko łóżeczko dla dziecka do lat 3 za 45 zł; hotel miejski/biznesowy."
+status = "skipped"
+skip_reason = "Hotel biznesowy, jedyna rzecz dla 0-3 to płatne łóżeczko w cenniku."
+
+[[lead]]
+name = "Qubus Hotel Gorzów"
+town = "Gorzów Wielkopolski"
+official_url = "https://www.qubushotel.com/pl/hotel-gorzow-wlkp/"
+kids_url = "https://www.qubushotel.com/pl/promocje-pakiety-pobytowe/dla-rodzin-z-dziecmi/"
+signals = ["menu dla dzieci", "kącik zabaw"]
+why = "Tylko ogólnosieciowa oferta rodzinna (pakiet), nic konkretnego dla tej lokalizacji."
+status = "skipped"
+skip_reason = "Strona sieciowa / pakiet, bez faktów dla tej lokalizacji."
+
+[[lead]]
+name = "Pałac Wiechlice"
+town = "Wiechlice"
+official_url = "https://www.palacwiechlice.pl/"
+kids_url = "https://www.palacwiechlice.pl/atrakcje"
+signals = ["kids club"]
+why = "Kids Club 200 m2 bez wieku i bez sprzętu dla 0-3."
+status = "skipped"
+skip_reason = "Nic konkretnego dla 0-3."
+
+[[lead]]
+name = "Ruben Hotel"
+town = "Zielona Góra"
+official_url = "https://www.rubenhotel.pl/"
+kids_url = "https://www.rubenhotel.pl/atrakcje"
+signals = ["plac zabaw", "sala zabaw"]
+why = "Park Krasnala (plac zabaw z salą zabaw) jako atrakcja, nic dla 0-3 w hotelu."
+status = "skipped"
+skip_reason = "Nic konkretnego dla 0-3 w hotelu."
+
+[[lead]]
+name = "Pałac Mierzęcin"
+town = "Mierzęcin"
+official_url = "https://www.palacmierzecin.pl/"
+signals = []
+why = "Sygnały tylko w pakiecie; brak stałej strony dla dzieci."
+status = "skipped"
+skip_reason = "Tylko pakiet, brak stałej oferty dla 0-3."
+
+[[lead]]
+name = "Winny Dworek"
+town = "Górzykowo"
+official_url = "https://winnydworek.pl/"
+kids_url = "https://winnydworek.pl/atrakcje/dla-dzieci.html"
+signals = ["animacje"]
+why = "Drewniany domek dla dzieci i animatorzy na zamówienie; nic dla 0-3."
+status = "skipped"
+skip_reason = "Nic konkretnego dla 0-3."
+
+[[lead]]
+name = "Pałac Brühla"
+town = "Brody"
+official_url = "https://palacbrody.pl/"
+signals = []
+why = "Na stronie atrakcji nic dla dzieci poza parkiem linowym 2 km dalej."
+status = "skipped"
+skip_reason = "Nic konkretnego dla 0-3."

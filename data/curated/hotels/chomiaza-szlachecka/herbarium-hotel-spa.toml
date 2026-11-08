@@ -18,7 +18,7 @@ official_url = "https://www.herbariumhotel.pl/"
 address = "Chomiąża Szlachecka 2, 88-410 Chomiąża Szlachecka"
 lat = 52.75104  # the hotel's own map link
 lon = 17.84168
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

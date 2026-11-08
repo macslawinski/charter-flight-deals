@@ -18,7 +18,7 @@ official_url = "https://www.warszawianka.pl/"
 address = "Jachranka 77, 05-140 Serock"
 lat = 52.4846153  # from the hotel's own map link
 lon = 20.9669514
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

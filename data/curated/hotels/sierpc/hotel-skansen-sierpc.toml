@@ -16,7 +16,7 @@ official_url = "https://www.hotelskansen.pl/"
 address = "ul. Gabriela Narutowicza 64, 09-200 Sierpc"
 lat = 52.86496  # OpenStreetMap relation/9595176, ODbL
 lon = 19.63188
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "kids_menu"

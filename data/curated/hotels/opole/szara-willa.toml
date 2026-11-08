@@ -16,7 +16,7 @@ official_url = "https://www.szarawilla.pl/"
 address = "ul. Oleska 11, 45-052 Opole"
 lat = 50.6720772  # hotel's own map link
 lon = 17.9263515
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

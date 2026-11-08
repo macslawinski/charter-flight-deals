@@ -17,7 +17,7 @@ official_url = "https://poledno.pl/"
 address = "Poledno 2, 86-122 Bukowiec"
 lat = 53.39423  # the hotel's own map link
 lon = 18.30054
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "paddling_pool"

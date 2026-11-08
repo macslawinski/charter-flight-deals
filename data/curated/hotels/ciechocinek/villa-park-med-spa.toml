@@ -19,7 +19,7 @@ official_url = "https://villapark.pl/"
 address = "ul. Warzelniana 10, 87-720 Ciechocinek"
 lat = 52.88451  # the hotel's own map link
 lon = 18.79347
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "child_free_stay"

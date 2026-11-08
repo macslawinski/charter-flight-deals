@@ -16,7 +16,7 @@ official_url = "https://www.palacdomaniowski.pl/"
 address = "Konary 8, 26-432 Wieniawa"
 lat = 51.4184326  # from the hotel's own map link
 lon = 20.8473323
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

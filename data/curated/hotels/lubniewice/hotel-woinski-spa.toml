@@ -1,0 +1,101 @@
+# Facts from the hotel's own website (woinskispa.pl; robots.txt allows all, checked 2026-11-08):
+# /rodzinnie. Written in our words. The /regulamin page covers only online booking and payments.
+# Also on the site, no feature key for it: a games room ("pokój gier"); kids' pedal boats with a slide on the lake.
+# Not stated (so not recorded yet): cot fee, free-stay ages, high chair, kids menu, baby bath, changing table,
+# playground details, brodzik depth / season, lift, parking.
+#
+# Coordinates: the hotel's own Google Maps link (woinskispa.pl/rodzinnie).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet.
+slug = "hotel-woinski-spa"
+place = "lubniewice"
+name = "Hotel Woiński Spa"
+official_url = "https://www.woinskispa.pl/"
+address = "ul. Ratuszowa 3, 69-210 Lubniewice"
+lat = 52.5122799  # hotel's own map link
+lon = 15.2399432
+status = "published"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true, travel_cot = true }
+short = "Łóżeczko turystyczne na życzenie"
+note = "Strona „Rodzinnie”, przy opisie pokoju Suite: łóżeczka turystyczne dla dzieci na życzenie. Opłaty strona nie podaje; czy dotyczy wszystkich pokoi, strona wprost nie mówi."
+source = "hotel_website"
+url = "https://www.woinskispa.pl/rodzinnie"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true }
+short = "Plac zabaw"
+note = "Strona „Rodzinnie” wymienia plac zabaw oraz pokój gier. Szczegółów strona nie podaje."
+source = "hotel_website"
+url = "https://www.woinskispa.pl/rodzinnie"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "paddling_pool"
+value = { outdoor = true, beach = true }
+short = "Plaża z brodzikiem dla dzieci"
+note = "Strona „Rodzinnie”: plaża hotelu nad jeziorem z brodzikiem dla dzieci. Czy to osobny basen czy płytka strefa w jeziorze, głębokości ani sezonu strona nie podaje."
+source = "hotel_website"
+url = "https://www.woinskispa.pl/rodzinnie"
+verified_at = 2026-11-08
+to_confirm = true
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 115
+note = "150 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B52.5123%2C15.2399"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 210
+note = "280 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B52.5123%2C15.2399"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 280
+note = "450 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B52.5123%2C15.2399"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 300
+note = "450 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B52.5123%2C15.2399"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 300
+note = "460 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B52.5123%2C15.2399"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 350
+note = "540 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B52.5123%2C15.2399"
+verified_at = 2026-11-08

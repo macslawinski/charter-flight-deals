@@ -16,7 +16,7 @@ official_url = "https://www.hotelwarszawa.pl/"
 address = "ul. Zdrojowa 1, 16-300 Augustów"
 lat = 53.85819  # OpenStreetMap way/244865335, ODbL
 lon = 22.99846
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

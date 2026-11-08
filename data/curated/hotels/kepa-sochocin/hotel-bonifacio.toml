@@ -18,7 +18,7 @@ official_url = "https://www.hotelbonifacio.pl/"
 address = "Kępa 84, 09-110 Sochocin"
 lat = 52.71481  # from the hotel's own map link
 lon = 20.408725
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

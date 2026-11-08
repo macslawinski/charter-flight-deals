@@ -16,7 +16,7 @@ official_url = "https://www.fabrykawelny.pl/"
 address = "ul. Grobelna 4, 95-200 Pabianice"
 lat = 51.66291  # OpenStreetMap way/149777407, ODbL
 lon = 19.35944
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "child_free_stay"

@@ -346,6 +346,8 @@ export const TRIP_GROUPS: {
     regions: ["Białystok i Podlasie", "Puszcza Białowieska", "Pojezierze Augustowskie"] },
   { id: "opolskie", title: "Opolszczyzna i Góry Opawskie", tone: "coral", icon: "castle",
     regions: ["Opolszczyzna", "Góry Opawskie"] },
+  { id: "lubuskie", title: "Ziemia Lubuska", tone: "sun", icon: "pin",
+    regions: ["Pojezierze Lubuskie"] },
 ];
 const GROUP_OF = Object.fromEntries(TRIP_GROUPS.flatMap((g) => g.regions.map((r) => [r, g.id])));
 export const tripGroupOf = (h: Hotel) => must(GROUP_OF, placeRegion(placeOf(h)), "trip group of region");

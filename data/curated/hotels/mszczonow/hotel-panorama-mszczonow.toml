@@ -17,7 +17,7 @@ official_url = "https://www.hotelpanorama.pl/"
 address = "ul. Tarczyńska 109a, 96-320 Mszczonów"
 lat = 51.9739799  # from the hotel's own map link
 lon = 20.5382767
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

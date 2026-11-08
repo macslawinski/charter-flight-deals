@@ -15,7 +15,7 @@ official_url = "https://www.golebiewski.pl/bialystok"
 address = "ul. Pałacowa 7, 15-064 Białystok"
 lat = 53.1322222  # hotel's own directions link
 lon = 23.17
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "child_free_stay"

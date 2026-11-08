@@ -19,7 +19,7 @@ official_url = "https://www.cukrowniaznin.pl/"
 address = "ul. Klemensa Janickiego 1, 88-400 Żnin"
 lat = 52.84891  # the hotel's own map link
 lon = 17.73860
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

@@ -16,7 +16,7 @@ official_url = "https://www.palacifolwarklochow.pl/"
 address = "ul. Marii Konopnickiej 10, 07-130 Łochów"
 lat = 52.5145798  # from the hotel's own map link
 lon = 21.6919785
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

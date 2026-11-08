@@ -17,7 +17,7 @@ official_url = "https://www.palac-alexandrinum.pl/"
 address = "Krubki-Górki 13a, 05-326 Poświętne"
 lat = 52.2961693  # from the hotel's own map link
 lon = 21.3857689
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

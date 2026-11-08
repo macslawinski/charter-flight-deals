@@ -16,7 +16,7 @@ official_url = "https://www.debowewzgorze.eu/"
 address = "Pokrzywna 48, 48-267 Jarnołtówek"  # as given in the regulamin, point 25
 lat = 50.28858  # OpenStreetMap way/427462884, ODbL
 lon = 17.47306
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

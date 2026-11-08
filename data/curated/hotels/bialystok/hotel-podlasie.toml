@@ -15,7 +15,7 @@ official_url = "https://www.hotelpodlasie.pl/"
 address = "ul. 42 Pułku Piechoty 6, 15-181 Białystok"
 lat = 53.14380  # OpenStreetMap way/215568743, ODbL
 lon = 23.19237
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

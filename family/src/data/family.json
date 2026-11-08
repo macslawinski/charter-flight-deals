@@ -3138,7 +3138,7 @@
    "official_url": "https://www.hotelwarszawa.pl/",
    "place": "augustow",
    "slug": "hotel-warszawa-augustow",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -3338,7 +3338,7 @@
    "official_url": "https://www.hotelbarczyzna.pl/",
    "place": "barczyzna",
    "slug": "hotel-barczyzna",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -3719,7 +3719,7 @@
    "official_url": "https://www.hotel.bialowieza.pl/",
    "place": "bialowieza",
    "slug": "hotel-bialowieski",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -3856,7 +3856,7 @@
    "official_url": "https://www.golebiewski.pl/bialystok",
    "place": "bialystok",
    "slug": "golebiewski-bialystok",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -3982,7 +3982,7 @@
    "official_url": "https://www.hotelpodlasie.pl/",
    "place": "bialystok",
    "slug": "hotel-podlasie",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -4280,7 +4280,7 @@
    "official_url": "https://hotelvitalia.pl/",
    "place": "boszkowo-letnisko",
    "slug": "hotel-vitalia",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -5885,7 +5885,7 @@
    "official_url": "https://www.herbariumhotel.pl/",
    "place": "chomiaza-szlachecka",
    "slug": "herbarium-hotel-spa",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -6231,7 +6231,7 @@
    "official_url": "https://villapark.pl/",
    "place": "ciechocinek",
    "slug": "villa-park-med-spa",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -9510,7 +9510,7 @@
    "official_url": "https://www.warszawianka.pl/",
    "place": "jachranka",
    "slug": "hotel-warszawianka",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -13577,7 +13577,7 @@
    "official_url": "https://www.hotelbonifacio.pl/",
    "place": "kepa-sochocin",
    "slug": "hotel-bonifacio",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -15472,7 +15472,7 @@
    "official_url": "https://www.palacdomaniowski.pl/",
    "place": "konary",
    "slug": "palac-domaniowski",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -16980,7 +16980,7 @@
    "official_url": "https://www.palac-alexandrinum.pl/",
    "place": "krubki-gorki",
    "slug": "palac-alexandrinum",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -18060,7 +18060,7 @@
    "official_url": "https://www.kawallo.pl/",
    "place": "leonow",
    "slug": "hotel-kawallo",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -18430,7 +18430,117 @@
    "official_url": "https://www.palacifolwarklochow.pl/",
    "place": "lochow",
    "slug": "palac-i-folwark-lochow",
-   "status": "draft"
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 115,
+     "mode": "car",
+     "note": "150 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B52.5123%2C15.2399",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 210,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B52.5123%2C15.2399",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 280,
+     "mode": "car",
+     "note": "450 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B52.5123%2C15.2399",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 300,
+     "mode": "car",
+     "note": "450 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B52.5123%2C15.2399",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 300,
+     "mode": "car",
+     "note": "460 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B52.5123%2C15.2399",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 350,
+     "mode": "car",
+     "note": "540 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B52.5123%2C15.2399",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Ratuszowa 3, 69-210 Lubniewice",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Strona „Rodzinnie”, przy opisie pokoju Suite: łóżeczka turystyczne dla dzieci na życzenie. Opłaty strona nie podaje; czy dotyczy wszystkich pokoi, strona wprost nie mówi.",
+     "short": "Łóżeczko turystyczne na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.woinskispa.pl/rodzinnie",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "travel_cot": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Strona „Rodzinnie” wymienia plac zabaw oraz pokój gier. Szczegółów strona nie podaje.",
+     "short": "Plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.woinskispa.pl/rodzinnie",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Strona „Rodzinnie”: plaża hotelu nad jeziorem z brodzikiem dla dzieci. Czy to osobny basen czy płytka strefa w jeziorze, głębokości ani sezonu strona nie podaje.",
+     "short": "Plaża z brodzikiem dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": true,
+     "url": "https://www.woinskispa.pl/rodzinnie",
+     "value": {
+      "beach": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 52.5122799,
+   "lon": 15.2399432,
+   "name": "Hotel Woiński Spa",
+   "official_url": "https://www.woinskispa.pl/",
+   "place": "lubniewice",
+   "slug": "hotel-woinski-spa",
+   "status": "published"
   },
   {
    "access": [
@@ -20321,7 +20431,7 @@
    "official_url": "https://mosznazamek.pl/",
    "place": "moszna",
    "slug": "zamek-moszna",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -20849,7 +20959,7 @@
    "official_url": "https://www.hotelpanorama.pl/",
    "place": "mszczonow",
    "slug": "hotel-panorama-mszczonow",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -21497,7 +21607,7 @@
    "official_url": "https://www.santanatura.pl/",
    "place": "nowa-wies-wiskitki",
    "slug": "santa-natura-resort-spa",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -22195,7 +22305,7 @@
    "official_url": "https://hotel-weneda.pl/",
    "place": "opole",
    "slug": "hotel-weneda",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -22405,7 +22515,7 @@
    "official_url": "https://www.szarawilla.pl/",
    "place": "opole",
    "slug": "szara-willa",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -22569,7 +22679,7 @@
    "official_url": "https://www.fabrykawelny.pl/",
    "place": "pabianice",
    "slug": "fabryka-welny",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -22721,7 +22831,7 @@
    "official_url": "https://palacpakoslaw.pl/",
    "place": "pakoslaw",
    "slug": "palac-w-pakoslawiu",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -24170,7 +24280,7 @@
    "official_url": "https://www.debowewzgorze.eu/",
    "place": "pokrzywna",
    "slug": "debowe-wzgorze",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -24784,7 +24894,7 @@
    "official_url": "https://poledno.pl/",
    "place": "poledno",
    "slug": "palac-poledno",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -25168,7 +25278,7 @@
    "official_url": "https://www.desilva.pl/poznan/",
    "place": "poznan",
    "slug": "desilva-premium-poznan",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -25320,7 +25430,7 @@
    "official_url": "https://www.kortowo.com.pl/",
    "place": "poznan",
    "slug": "hotel-kortowo",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -25555,7 +25665,7 @@
    "official_url": "https://www.olandia.pl/",
    "place": "prusim",
    "slug": "olandia",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -25944,7 +26054,7 @@
    "official_url": "https://www.artis-loft.pl/",
    "place": "radziejowice-parcel",
    "slug": "artis-loft-hotel",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -27514,7 +27624,7 @@
    "official_url": "https://www.hotelskansen.pl/",
    "place": "sierpc",
    "slug": "hotel-skansen-sierpc",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -27629,7 +27739,7 @@
    "official_url": "https://www.sobieniekrolewskie.pl/",
    "place": "sobienie-szlacheckie",
    "slug": "hotel-sobienie-krolewskie",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -29344,7 +29454,7 @@
    "official_url": "https://www.hotelpodklasztorze.pl/",
    "place": "sulejow",
    "slug": "hotel-podklasztorze",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -30940,7 +31050,7 @@
    "official_url": "https://www.copernicustorunhotel.com/",
    "place": "torun",
    "slug": "copernicus-torun-hotel",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -31328,7 +31438,7 @@
    "official_url": "https://www.palac-romantyczny.com/",
    "place": "turzno",
    "slug": "palac-romantyczny",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -31482,7 +31592,7 @@
    "official_url": "https://www.hoteluniejow.pl/",
    "place": "uniejow",
    "slug": "hotel-uniejow-ecoactive-spa",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -31591,7 +31701,7 @@
    "official_url": "https://lawendowetermy.pl/",
    "place": "uniejow",
    "slug": "lawendowe-termy",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -34029,7 +34139,7 @@
    "official_url": "https://www.sielanka.pl/",
    "place": "warka",
    "slug": "hotel-sielanka-nad-pilica",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -34181,7 +34291,7 @@
    "official_url": "https://www.doubletreewarsaw.pl/",
    "place": "warszawa",
    "slug": "doubletree-by-hilton-warsaw",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -34279,7 +34389,7 @@
    "official_url": "https://indigowarsaw.com/",
    "place": "warszawa",
    "slug": "hotel-indigo-warsaw-nowy-swiat",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -34502,7 +34612,7 @@
    "official_url": "https://www.las-woda.pl/",
    "place": "wilga",
    "slug": "las-woda-wilga",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -35176,7 +35286,7 @@
    "official_url": "https://hoteltoscania.pl/",
    "place": "wloszakowice",
    "slug": "hotel-toscania",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -37828,7 +37938,7 @@
    "official_url": "https://www.hotelnowagdynia.pl/",
    "place": "zgierz",
    "slug": "stacja-nowa-gdynia",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -38009,7 +38119,7 @@
    "official_url": "https://www.cukrowniaznin.pl/",
    "place": "znin",
    "slug": "arche-cukrownia-znin",
-   "status": "draft"
+   "status": "published"
   }
  ],
  "places": [
@@ -39012,6 +39122,14 @@
    "name": "Pokrzywna",
    "region": "Góry Opawskie",
    "slug": "pokrzywna"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Lubniewice",
+   "region": "Pojezierze Lubuskie",
+   "slug": "lubniewice"
   }
  ],
  "rule_keys": [

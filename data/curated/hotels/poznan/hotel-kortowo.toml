@@ -17,7 +17,7 @@ official_url = "https://www.kortowo.com.pl/"
 address = "ul. Kotowo 62, 60-009 Poznań"
 lat = 52.35432  # OpenStreetMap way/378452537, ODbL
 lon = 16.85972
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

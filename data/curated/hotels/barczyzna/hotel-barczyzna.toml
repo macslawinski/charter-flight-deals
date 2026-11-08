@@ -17,7 +17,7 @@ official_url = "https://www.hotelbarczyzna.pl/"
 address = "Barczyzna 12, 62-330 Nekla"
 lat = 52.374848  # the hotel's own map link
 lon = 17.464625
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

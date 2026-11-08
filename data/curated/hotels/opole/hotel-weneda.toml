@@ -14,7 +14,7 @@ official_url = "https://hotel-weneda.pl/"
 address = "ul. 1 Maja 77, 45-355 Opole"
 lat = 50.66394  # OpenStreetMap way/207029215, ODbL
 lon = 17.93719
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"
