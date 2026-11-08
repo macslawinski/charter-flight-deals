@@ -1,0 +1,174 @@
+# Facts from the hotel's own website (hotelpodklasztorze.pl; robots.txt allows all, checked 2026-11-08):
+# /dzieci/udogodnienia-dla-dzieci, /dzieci/dzieci, /hotel/faq, home page. Written in our words.
+# Also on the site, no feature key for it: hotel in the 12th-century Cistercian abbey; on request bathrobes for the
+# youngest; swim nappies on sale at the pool; inflatable balls, swim boards and pool noodles to borrow; children
+# may use the pool zone 9:00-20:00 (adults to 21:00); children's treatments in the spa with a parent recommended.
+# Not stated (so not recorded yet): free-stay prices beyond "a child to 3 sleeping with parents or in a travel
+# cot", playroom minimum age / hours, brodzik depth, potty.
+#
+# Coordinates: OpenStreetMap node/683182942, ODbL (the hotel's map link is a goo.gl short link).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet.
+slug = "hotel-podklasztorze"
+place = "sulejow"
+name = "Hotel Podklasztorze"
+official_url = "https://www.hotelpodklasztorze.pl/"
+address = "ul. Władysława Jagiełły 1, 97-330 Sulejów"
+lat = 51.36497  # OpenStreetMap node/683182942, ODbL
+lon = 19.87967
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, free = true, bedding = true }
+short = "Łóżeczko z pościelą, bezpłatnie"
+note = "FAQ: łóżeczko dziecięce hotel wstawia bezpłatnie. Strona udogodnień: łóżeczko z kołderką, pościelą, poduszeczką i dodatkowym kocykiem."
+source = "hotel_website"
+url = "https://www.hotelpodklasztorze.pl/hotel/faq"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "high_chair"
+value = { available = true, where = "restaurant" }
+short = "Krzesełko w restauracji"
+note = "W restauracji Miód i Wino jest krzesełko dla dzieci, a także zabawki."
+source = "hotel_website"
+url = "https://www.hotelpodklasztorze.pl/dzieci/udogodnienia-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true, kids_buffet = true }
+short = "Karta dziecięca i bufet śniadaniowy dla dzieci"
+note = "Dziecięca karta menu od szefa kuchni oraz kącik smakosza z bufetem śniadaniowym dla najmłodszych; obiady i kolacje także pod indywidualną dietę."
+source = "hotel_website"
+url = "https://www.hotelpodklasztorze.pl/dzieci/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true, sterilizer = true }
+short = "Podgrzewacz w pokoju, sterylizator w restauracji"
+note = "W pokoju podgrzewacz do butelek; w restauracji podgrzewacz i sterylizator 2w1 do butelek i słoiczków. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelpodklasztorze.pl/dzieci/udogodnienia-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_bath"
+value = { available = true }
+short = "Wanienka do kąpieli"
+note = "Hotel wymienia wanienkę do kąpieli wśród udogodnień w pokoju. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelpodklasztorze.pl/dzieci/udogodnienia-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "changing_table"
+value = { available = true, where = "room_and_restaurant" }
+short = "Przewijak w pokoju i w restauracji"
+note = "Przewijak jest wśród udogodnień w pokoju i w restauracji."
+source = "hotel_website"
+url = "https://www.hotelpodklasztorze.pl/dzieci/udogodnienia-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Sala zabaw Figlarium"
+note = "W hotelu jest sala zabaw dla dzieci „Figlarium”. Minimalnego wieku ani godzin strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelpodklasztorze.pl/dzieci/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "Plac zabaw"
+note = "Hotel ma plac zabaw; szczegółów strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelpodklasztorze.pl/dzieci/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "paddling_pool"
+value = { indoor = true, slide = true }
+short = "Brodzik z mini zjeżdżalnią"
+note = "W strefie basenowej brodzik z mini zjeżdżalnią dla maluchów. Dzieci korzystają ze strefy basenowej do 20:00. Głębokości strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelpodklasztorze.pl/dzieci/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "lift"
+value = { available = false }
+short = "Brak windy"
+note = "FAQ: w obiekcie nie ma windy."
+source = "hotel_website"
+url = "https://www.hotelpodklasztorze.pl/hotel/faq"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { free = true, monitored = true, closed_at_night = true }
+short = "Bezpłatny, monitorowany, zamykany na noc"
+note = "FAQ: parking dla gości hotelowych jest bezpłatny, monitorowany i zamykany na noc."
+source = "hotel_website"
+url = "https://www.hotelpodklasztorze.pl/hotel/faq"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 115
+note = "150 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B51.3650%2C19.8797"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 125
+note = "180 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B51.3650%2C19.8797"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 170
+note = "250 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B51.3650%2C19.8797"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 180
+note = "280 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B51.3650%2C19.8797"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 190
+note = "270 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B51.3650%2C19.8797"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 235
+note = "390 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B51.3650%2C19.8797"
+verified_at = 2026-11-08

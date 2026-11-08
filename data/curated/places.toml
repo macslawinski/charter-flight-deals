@@ -804,3 +804,31 @@ name = "Solec-Zdrój"
 country = "Polska"
 region = "Ponidzie"
 kind = "domestic"
+
+[[place]]
+slug = "pabianice"
+name = "Pabianice"
+country = "Polska"
+region = "Łódź i okolice"
+kind = "domestic"
+
+[[place]]
+slug = "sulejow"
+name = "Sulejów"
+country = "Polska"
+region = "Zalew Sulejowski"
+kind = "domestic"
+
+[[place]]
+slug = "uniejow"
+name = "Uniejów"
+country = "Polska"
+region = "Termy Uniejów"
+kind = "domestic"
+
+[[place]]
+slug = "zgierz"
+name = "Zgierz"
+country = "Polska"
+region = "Łódź i okolice"
+kind = "domestic"

@@ -21313,6 +21313,170 @@
   {
    "access": [
     {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 105,
+     "mode": "car",
+     "note": "150 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B51.6629%2C19.3594",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 130,
+     "mode": "car",
+     "note": "210 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B51.6629%2C19.3594",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 135,
+     "mode": "car",
+     "note": "220 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B51.6629%2C19.3594",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 145,
+     "mode": "car",
+     "note": "210 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B51.6629%2C19.3594",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 175,
+     "mode": "car",
+     "note": "270 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B51.6629%2C19.3594",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 215,
+     "mode": "car",
+     "note": "360 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B51.6629%2C19.3594",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Grobelna 4, 95-200 Pabianice",
+   "features": [
+    {
+     "age_band": "0-3",
+     "key": "child_free_stay",
+     "note": "Strona dla dzieci: dzieci do 3 roku życia mają bezpłatny pobyt; dzieci 4-10 lat mają zniżkę (wysokości strona nie podaje). Rok między 3. a 4. urodzinami strona pomija.",
+     "short": "Dzieci do 3 roku życia gratis",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.fabrykawelny.pl/hotel/dzieci-w-hotelu",
+     "value": {
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Restauracje hotelu mają krzesełka dla dzieci.",
+     "short": "Krzesełka w restauracjach",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.fabrykawelny.pl/hotel/dzieci-w-hotelu",
+     "value": {
+      "available": true,
+      "where": "all_restaurants"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "W restauracji Przędzalnia osobne menu dla dzieci (np. rosół, pomidorowa z makaronem, naleśniki z serem).",
+     "short": "Menu dziecięce w Przędzalni",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.fabrykawelny.pl/hotel/dzieci-w-hotelu",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Łazienki są wyposażone w przewijaki.",
+     "short": "Przewijaki w łazienkach",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.fabrykawelny.pl/hotel/dzieci-w-hotelu",
+     "value": {
+      "available": true,
+      "where": "bathrooms"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala zabaw Fabrykolandia z małpim gajem: tor przeszkód, trampolina, zjeżdżalnie, suchy basen. Minimalnego wieku, godzin, opłat ani zasad opieki strona nie podaje.",
+     "short": "Sala zabaw Fabrykolandia z małpim gajem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.fabrykawelny.pl/hotel/dzieci-w-hotelu",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Dwa place zabaw wśród drzew w Afloparku, czynnym od marca do października, wstęp bezpłatny dla gości hotelu.",
+     "short": "Dwa place zabaw (Aflopark, marzec–październik)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.fabrykawelny.pl/hotel/dzieci-w-hotelu",
+     "value": {
+      "available": true,
+      "outdoor": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "W każdą wakacyjną sobotę animacje dla dzieci gości hotelowych. Wieku strona nie podaje.",
+     "short": "Animacje w wakacyjne soboty",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.fabrykawelny.pl/hotel/dzieci-w-hotelu",
+     "value": {
+      "available": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 51.66291,
+   "lon": 19.35944,
+   "name": "Fabryka Wełny Hotel & Spa",
+   "official_url": "https://www.fabrykawelny.pl/",
+   "place": "pabianice",
+   "slug": "fabryka-welny",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
      "from_code": "Wrocław",
      "from_kind": "city",
      "minutes": 65,
@@ -27731,6 +27895,227 @@
   {
    "access": [
     {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 115,
+     "mode": "car",
+     "note": "150 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B51.3650%2C19.8797",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 125,
+     "mode": "car",
+     "note": "180 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B51.3650%2C19.8797",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 170,
+     "mode": "car",
+     "note": "250 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B51.3650%2C19.8797",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 180,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B51.3650%2C19.8797",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 190,
+     "mode": "car",
+     "note": "270 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B51.3650%2C19.8797",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 235,
+     "mode": "car",
+     "note": "390 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B51.3650%2C19.8797",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Władysława Jagiełły 1, 97-330 Sulejów",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "FAQ: łóżeczko dziecięce hotel wstawia bezpłatnie. Strona udogodnień: łóżeczko z kołderką, pościelą, poduszeczką i dodatkowym kocykiem.",
+     "short": "Łóżeczko z pościelą, bezpłatnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelpodklasztorze.pl/hotel/faq",
+     "value": {
+      "available": true,
+      "bedding": true,
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W restauracji Miód i Wino jest krzesełko dla dzieci, a także zabawki.",
+     "short": "Krzesełko w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelpodklasztorze.pl/dzieci/udogodnienia-dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Dziecięca karta menu od szefa kuchni oraz kącik smakosza z bufetem śniadaniowym dla najmłodszych; obiady i kolacje także pod indywidualną dietę.",
+     "short": "Karta dziecięca i bufet śniadaniowy dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelpodklasztorze.pl/dzieci/dzieci",
+     "value": {
+      "available": true,
+      "kids_buffet": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "W pokoju podgrzewacz do butelek; w restauracji podgrzewacz i sterylizator 2w1 do butelek i słoiczków. Opłaty strona nie podaje.",
+     "short": "Podgrzewacz w pokoju, sterylizator w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelpodklasztorze.pl/dzieci/udogodnienia-dla-dzieci",
+     "value": {
+      "available": true,
+      "sterilizer": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Hotel wymienia wanienkę do kąpieli wśród udogodnień w pokoju. Opłaty strona nie podaje.",
+     "short": "Wanienka do kąpieli",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelpodklasztorze.pl/dzieci/udogodnienia-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Przewijak jest wśród udogodnień w pokoju i w restauracji.",
+     "short": "Przewijak w pokoju i w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelpodklasztorze.pl/dzieci/udogodnienia-dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "room_and_restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "W hotelu jest sala zabaw dla dzieci „Figlarium”. Minimalnego wieku ani godzin strona nie podaje.",
+     "short": "Sala zabaw Figlarium",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelpodklasztorze.pl/dzieci/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Hotel ma plac zabaw; szczegółów strona nie podaje.",
+     "short": "Plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelpodklasztorze.pl/dzieci/dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "W strefie basenowej brodzik z mini zjeżdżalnią dla maluchów. Dzieci korzystają ze strefy basenowej do 20:00. Głębokości strona nie podaje.",
+     "short": "Brodzik z mini zjeżdżalnią",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelpodklasztorze.pl/dzieci/dzieci",
+     "value": {
+      "indoor": true,
+      "slide": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "lift",
+     "note": "FAQ: w obiekcie nie ma windy.",
+     "short": "Brak windy",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelpodklasztorze.pl/hotel/faq",
+     "value": {
+      "available": false
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "FAQ: parking dla gości hotelowych jest bezpłatny, monitorowany i zamykany na noc.",
+     "short": "Bezpłatny, monitorowany, zamykany na noc",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelpodklasztorze.pl/hotel/faq",
+     "value": {
+      "closed_at_night": true,
+      "free": true,
+      "monitored": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 51.36497,
+   "lon": 19.87967,
+   "name": "Hotel Podklasztorze",
+   "official_url": "https://www.hotelpodklasztorze.pl/",
+   "place": "sulejow",
+   "slug": "hotel-podklasztorze",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
      "from_code": "Poznań",
      "from_kind": "city",
      "minutes": 245,
@@ -29710,6 +30095,269 @@
    "official_url": "https://www.palac-romantyczny.com/",
    "place": "turzno",
    "slug": "palac-romantyczny",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 100,
+     "mode": "car",
+     "note": "150 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B51.9717%2C18.7940",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 110,
+     "mode": "car",
+     "note": "170 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B51.9717%2C18.7940",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 170,
+     "mode": "car",
+     "note": "210 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B51.9717%2C18.7940",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 175,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B51.9717%2C18.7940",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 215,
+     "mode": "car",
+     "note": "310 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B51.9717%2C18.7940",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 220,
+     "mode": "car",
+     "note": "350 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B51.9717%2C18.7940",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Bł. Bogumiła 32, 99-210 Uniejów",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "W wybranych pokojach łóżeczko dla małego dziecka, na życzenie zgłoszone przy rezerwacji. Opłaty strona nie podaje.",
+     "short": "Łóżeczko w wybranych pokojach (zgłosić przy rezerwacji)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hoteluniejow.pl/pl/eco-hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "selected_rooms": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W restauracji na życzenie krzesełka dla maluchów.",
+     "short": "Krzesełka w restauracji na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hoteluniejow.pl/pl/eco-hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "W restauracji na życzenie specjalne menu dla dzieci.",
+     "short": "Menu dla dzieci na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hoteluniejow.pl/pl/eco-hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "W wybranych pokojach podgrzewacz do butelek; w restauracji na życzenie podgrzewacz do butelek i słoiczków.",
+     "short": "Podgrzewacz w pokoju i w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hoteluniejow.pl/pl/eco-hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Na życzenie hotel wyposaża łazienkę w wanienkę do kąpieli. Opłaty strona nie podaje.",
+     "short": "Wanienka do łazienki",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hoteluniejow.pl/pl/eco-hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Regulamin: parking hotelu jest płatny według cennika i niestrzeżony. Stawek strona nie podaje.",
+     "short": "Płatny, niestrzeżony",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hoteluniejow.pl/pl/regulamin-hotelu",
+     "value": {
+      "guarded": false,
+      "paid": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 51.97169,
+   "lon": 18.79399,
+   "name": "Hotel Uniejów ecoActive&Spa",
+   "official_url": "https://www.hoteluniejow.pl/",
+   "place": "uniejow",
+   "slug": "hotel-uniejow-ecoactive-spa",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 105,
+     "mode": "car",
+     "note": "160 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B51.9622%2C18.7897",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 115,
+     "mode": "car",
+     "note": "170 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B51.9622%2C18.7897",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 170,
+     "mode": "car",
+     "note": "210 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B51.9622%2C18.7897",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 175,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B51.9622%2C18.7897",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 220,
+     "mode": "car",
+     "note": "310 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B51.9622%2C18.7897",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 220,
+     "mode": "car",
+     "note": "350 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B51.9622%2C18.7897",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Jakuba Świnki 10, 99-210 Uniejów",
+   "features": [
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "W hotelu jest kącik zabaw dla dzieci. Minimalnego wieku ani godzin strona nie podaje.",
+     "short": "Kącik zabaw dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://lawendowetermy.pl/hotel/dzieci-w-hotelu",
+     "value": {
+      "available": true,
+      "corner": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Na zewnątrz jest plac zabaw.",
+     "short": "Plac zabaw na zewnątrz",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://lawendowetermy.pl/hotel/dzieci-w-hotelu",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "FAQ: w strefie basenowej jest brodzik dla dzieci z mini fontanną (obok basenu wewnętrznego i zewnętrznego). Głębokości i temperatury brodzika strona nie podaje.",
+     "short": "Brodzik z mini fontanną",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://lawendowetermy.pl/hotel/dzieci-w-hotelu",
+     "value": {
+      "fountain": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 51.96216,
+   "lon": 18.78973,
+   "name": "Medical Spa Hotel Lawendowe Termy",
+   "official_url": "https://lawendowetermy.pl/",
+   "place": "uniejow",
+   "slug": "lawendowe-termy",
    "status": "draft"
   },
   {
@@ -35774,6 +36422,184 @@
   {
    "access": [
     {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 90,
+     "mode": "car",
+     "note": "130 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B51.8313%2C19.4177",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 130,
+     "mode": "car",
+     "note": "200 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B51.8313%2C19.4177",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 145,
+     "mode": "car",
+     "note": "220 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B51.8313%2C19.4177",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 160,
+     "mode": "car",
+     "note": "230 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B51.8313%2C19.4177",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 190,
+     "mode": "car",
+     "note": "290 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B51.8313%2C19.4177",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 200,
+     "mode": "car",
+     "note": "330 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B51.8313%2C19.4177",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Sosnowa 1, 95-100 Zgierz",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Strona dla dzieci wymienia w hotelu łóżeczko z materacem dla małych dzieci. Opłaty strona nie podaje.",
+     "short": "Łóżeczko z materacem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelnowagdynia.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "mattress": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W restauracji krzesełko do karmienia niemowląt.",
+     "short": "Krzesełko do karmienia w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelnowagdynia.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja hotelowa ma menu dla najmłodszych.",
+     "short": "Menu dla najmłodszych",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelnowagdynia.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Strona dla dzieci wymienia w hotelu podgrzewacz do butelek. Opłaty strona nie podaje.",
+     "short": "Podgrzewacz do butelek",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelnowagdynia.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Strona dla dzieci wymienia w hotelu wanienkę do kąpieli dla małych dzieci. Opłaty strona nie podaje.",
+     "short": "Wanienka do kąpieli",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelnowagdynia.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Duża sala zabaw Ancymondo (labirynt ze zjeżdżalniami, trampolinami i basenami z piłkami), przystosowana dla młodszych gości. Minimalnego wieku, godzin, opłat ani zasad opieki strona nie podaje.",
+     "short": "Sala zabaw Ancymondo",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelnowagdynia.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Przed Centrum Sportu plac zabaw z piaskownicą i zjeżdżalnią.",
+     "short": "Plac zabaw z piaskownicą",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelnowagdynia.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true,
+      "sandpit": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Strona dla dzieci: w aquaparku w Zgierzu jest specjalny basen dla dzieci, 60-metrowy brodzik ze zjeżdżalnią; FAQ podaje, że basen hotelu jest częścią Aquaparku Nowa Gdynia. Czy goście hotelu płacą za wstęp i jaka jest głębokość, strona nie podaje.",
+     "short": "Brodzik 60 m ze zjeżdżalnią (aquapark)",
+     "source": "hotel_website",
+     "to_confirm": true,
+     "url": "https://www.hotelnowagdynia.pl/dla-dzieci",
+     "value": {
+      "indoor": true,
+      "length_m": 60,
+      "slide": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 51.83131,
+   "lon": 19.41771,
+   "name": "Hotel Stacja Nowa Gdynia",
+   "official_url": "https://www.hotelnowagdynia.pl/",
+   "place": "zgierz",
+   "slug": "stacja-nowa-gdynia",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
      "from_code": "Poznań",
      "from_kind": "city",
      "minutes": 75,
@@ -36873,6 +37699,38 @@
    "name": "Solec-Zdrój",
    "region": "Ponidzie",
    "slug": "solec-zdroj"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Pabianice",
+   "region": "Łódź i okolice",
+   "slug": "pabianice"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Sulejów",
+   "region": "Zalew Sulejowski",
+   "slug": "sulejow"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Uniejów",
+   "region": "Termy Uniejów",
+   "slug": "uniejow"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Zgierz",
+   "region": "Łódź i okolice",
+   "slug": "zgierz"
   }
  ],
  "rule_keys": [
