@@ -38,6 +38,27 @@ def test_payload_contains_deal_with_proof_fields(db):  # noqa: F811
     assert payload["status"]["segments_with_baseline"] >= 1
     assert payload["params"]["discount_threshold"] == 0.15
 
+    # Chart history: 10 window days at 1600 + today, flight vs. segment average per day.
+    h = d["history"]
+    assert len(h) == 11 and h[0]["date"] == "2027-01-05" and h[-1]["date"] == D.isoformat()
+    assert h[0] == {"date": h[0]["date"], "price": 1600.0, "segment_avg": 1600.0, "segment_flights": 6}
+    assert h[-1]["price"] == 1249.0 and h[-1]["segment_avg"] == round((1249 + 5 * 1600) / 6, 2)
+
+
+def test_history_has_null_price_on_days_the_flight_was_missing(db):  # noqa: F811
+    keys = [flight(db, i) for i in range(6)]
+    for k in keys[1:]:
+        history(db, k, 1600)
+        price(db, k, D, 1600)
+    history(db, keys[0], 1600, days=3)  # deal flight appeared only 3 days ago
+    price(db, keys[0], D, 1249)
+    db.execute("select refresh_deals(%s)", (D,))
+
+    payload = export_deals.build_payload(db, datetime(2027, 1, 15, 12, tzinfo=UTC))
+    [d] = [d for d in payload["deals"] if d["flight_key"] == keys[0]]
+    prices = [p["price"] for p in d["history"]]
+    assert prices == [None] * 7 + [1600.0] * 3 + [1249.0]
+
 
 def test_status_is_reported_per_operator(db):  # noqa: F811
     k = flight(db, 0)
