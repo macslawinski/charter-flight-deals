@@ -172,6 +172,13 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       their sites say little. Car access only. 4 leads left: Grand Ascot, Maria; Bania and Hotel Krynica (Chrome).
 - [ ] U (phone/e-mail, optional): Paryski Małpi Gaj age and hours, free-stay age, parking; Helios kids' menu and
       playroom hours; Amber baby bath and parking fee.
+- [x] C: małopolskie hotels, batch 6 (2026-11-08): Hotel Bania (Białka Tatrzańska, 12 facts, read in Chrome: free
+      cot, bath, baby monitor and bottle warmer, Górska Kraina with animators, Terma family zone), Grand Ascot
+      (Kraków, 5: under 8; free cot and bath, garage 120 zł), Hotel Maria (Szczawnica, 3: under 8; brodzik,
+      playroom, free parking). Skipped Hotel Krynica (site unreachable: broken TLS certificate, no HTTP).
+      Małopolskie leads done: 23 curated, 10 skipped. Train access for the mountains still to do.
+- [ ] U (phone/e-mail, optional): Bania free-stay age, parking, Terma entry; Grand Ascot high chair and free-stay
+      age; Maria cot, baby items, free-stay age.
 - [x] ~~U: decide which pomorskie hotels to publish (all are `draft`);~~ superseded above; those under 8 facts need a phone or e-mail
       round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Kiston cot fee, free-stay age, brodzik; Primavera cot fee, Playland age;
