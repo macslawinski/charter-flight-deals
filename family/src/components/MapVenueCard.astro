@@ -1,0 +1,72 @@
+---
+// One place from the city map export (lib/map.ts cityMap) as a list card: every fact with its source line
+// (publisher, date, "do ponownego sprawdzenia" once `due` has passed), where the location comes from, and
+// the venue's own site. Used by the category list pages and the NiŚOZ list under the map.
+import Icon from "./Icon.astro";
+import type { MapRef, MapVenue } from "../lib/map";
+
+interface Props {
+  v: MapVenue;
+  refs: MapRef[];
+}
+const { v, refs } = Astro.props;
+const ref = (i: number) => {
+  const r = refs[i];
+  if (!r) throw new Error(`Venue ${v.id}: missing ref ${i} (MapVenueCard)`);
+  return r;
+};
+const loc = v.loc === null ? null : ref(v.loc);
+---
+
+<li class="venue" data-tags={v.tags.join(" ")}>
+  <h3>{v.name}</h3>
+  {
+    v.address && (
+      <p class="addr">
+        <Icon name="pin" size={18} />
+        {v.address}
+      </p>
+    )
+  }
+  <ul class="venue-facts">
+    {
+      v.facts.map((f) => (
+        <li>
+          <span>
+            <strong>{f.label}:</strong> {f.note ?? f.short}
+            {f.ask && <> <span class="badge-ask">do potwierdzenia</span></>}
+            <br />
+            <span class:list={["source", { ask: f.ask }]} data-due={ref(f.ref).due}>
+              <Icon name={f.ask ? "question" : "check"} size={16} />
+              {ref(f.ref).url ? (
+                <a href={ref(f.ref).url!} rel="noopener" target="_blank">
+                  {ref(f.ref).text}
+                  <span class="visually-hidden"> (źródło, otwiera się w nowej karcie)</span>
+                </a>
+              ) : (
+                <span>{ref(f.ref).text}</span>
+              )}
+            </span>
+          </span>
+        </li>
+      ))
+    }
+  </ul>
+  {
+    loc && (
+      <p class="source-line">
+        <span class="source" data-due={loc.due}>
+          <Icon name="pin" size={16} />
+          {loc.url ? (
+            <a href={loc.url} rel="noopener" target="_blank">
+              Położenie: {loc.text}
+            </a>
+          ) : (
+            <span>Położenie: {loc.text}</span>
+          )}
+        </span>
+      </p>
+    )
+  }
+  {v.url && <a href={v.url} rel="noopener">Strona miejsca</a>}
+</li>

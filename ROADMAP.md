@@ -382,7 +382,10 @@ model: `docs/family-data-model.md`; sources: `docs/family-data-sources.md`.
       only in the booking tool), Muzeum Narodowe and Muzeum Ziemi (no family offer / hours readable on the site).
 - [ ] C: Poznań section 1 curation, rest: more culture (libraries once they publish toddler meetings), Palmiarnia
       after reopening.
-- [ ] C: site: map + shared filters, category pages, source + verified date on every fact (frontend-design).
+- [x] C (2026-11-08): category list pages `/poznan/{baseny,lodowiska,zoo-i-ogrody,teatr,stok-i-atrakcje,muzea,
+      nocna-pomoc}/` (`[city]/[category].astro`, `list` in `CATEGORIES`) with the map's filter chips (shared
+      `matchesTags`) and a "Zobacz na mapie" deep link (`/poznan/?kat=basen&tag=paddling`); the map links to the lists.
+      Playgrounds stay map-only. Source + date (+ "do ponownego sprawdzenia") on every fact via `MapVenueCard`.
 - [ ] U: route and home page decision (today `/` is the hotel finder).
 
 ### E2. Hotels ("Wyjazdy")

@@ -66,18 +66,46 @@ const OPEN_SOURCES: Record<string, string> = {
 export const openSourceLabel = (id: string) => must(OPEN_SOURCES, id, "open-data source label");
 
 // Map categories: chip label, marker colour, marker radius. Order = order of the chips.
-export const CATEGORIES: { id: string; chip: string; color: string; radius: number }[] = [
+// `list`: the category's own list page /<city>/<slug>/ (pages/[city]/[category].astro). Playgrounds (hundreds of
+// points) stay map-only; indoor playgrounds have their own page /<city>/bawialnie/.
+export interface Category {
+  id: string;
+  chip: string;
+  color: string;
+  radius: number;
+  list?: { slug: string; title: string; lead: string };
+}
+export const CATEGORIES: Category[] = [
   { id: "plac_zabaw", chip: "Place zabaw", color: "#0f7a74", radius: 5 },
   { id: "sala_zabaw", chip: "Sale zabaw (bawialnie)", color: "#d4472f", radius: 8 },
-  { id: "basen", chip: "Baseny i aquaparki", color: "#3a86ff", radius: 8 },
-  { id: "lodowisko", chip: "Lodowiska", color: "#c98a00", radius: 8 },
-  { id: "zoo", chip: "Zoo i ogrody", color: "#3f8f2f", radius: 8 },
-  { id: "kultura", chip: "Teatr dla dzieci", color: "#b8327a", radius: 8 },
-  { id: "rekreacja", chip: "Stok i atrakcje", color: "#8d5a14", radius: 8 },
-  { id: "muzeum", chip: "Muzea dla rodzin", color: "#6a4c93", radius: 8 },
-  { id: "nisoz", chip: "Nocna i świąteczna pomoc lekarska", color: "#5b3cc4", radius: 8 },
+  { id: "basen", chip: "Baseny i aquaparki", color: "#3a86ff", radius: 8,
+    list: { slug: "baseny", title: "Baseny i aquaparki",
+            lead: "Brodzik, zajęcia dla niemowląt, ceny i godziny. Ze stron i regulaminów samych pływalni." } },
+  { id: "lodowisko", chip: "Lodowiska", color: "#c98a00", radius: 8,
+    list: { slug: "lodowiska", title: "Lodowiska",
+            lead: "Sezon, godziny, ceny i zasady dla najmłodszych. Ze stron i regulaminów lodowisk." } },
+  { id: "zoo", chip: "Zoo i ogrody", color: "#3f8f2f", radius: 8,
+    list: { slug: "zoo-i-ogrody", title: "Zoo i ogrody",
+            lead: "Bilety, godziny, place zabaw i dojście z wózkiem. Ze stron samych ogrodów." } },
+  { id: "kultura", chip: "Teatr dla dzieci", color: "#b8327a", radius: 8,
+    list: { slug: "teatr", title: "Teatr dla dzieci",
+            lead: "Spektakle dla najmłodszych: od ilu lat, ile kosztują. Ze stron samych teatrów." } },
+  { id: "rekreacja", chip: "Stok i atrakcje", color: "#8d5a14", radius: 8,
+    list: { slug: "stok-i-atrakcje", title: "Stok i atrakcje",
+            lead: "Tor saneczkowy, stok i inne atrakcje: od ilu lat i za ile. Ze stron samych obiektów." } },
+  { id: "muzeum", chip: "Muzea dla rodzin", color: "#6a4c93", radius: 8,
+    list: { slug: "muzea", title: "Muzea dla rodzin",
+            lead: "Zajęcia dla rodzin z maluchami, bilety i dostępność z wózkiem. Ze stron samych muzeów." } },
+  { id: "nisoz", chip: "Nocna i świąteczna pomoc lekarska", color: "#5b3cc4", radius: 8,
+    list: { slug: "nocna-pomoc", title: "Nocna i świąteczna pomoc lekarska",
+            lead: "Gdzie iść z chorym dzieckiem w nocy, w weekend i w święto. Punkty z mapy NFZ." } },
 ];
 const CAT_IDS = CATEGORIES.map((c) => c.id);
+export const category = (id: string) => {
+  const c = CATEGORIES.find((x) => x.id === id);
+  if (!c) throw new Error(`No map category '${id}' (family/src/lib/map.ts)`);
+  return c;
+};
 
 // Narrowing filters inside one category. Ids are stable (they may go into the URL later).
 // Checked tags of the same group are OR-ed ("tyrolka or pumptrack"), different groups are AND-ed
