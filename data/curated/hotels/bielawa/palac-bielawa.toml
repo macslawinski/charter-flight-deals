@@ -1,0 +1,125 @@
+# Facts from the hotel's own website (palacbielawa.pl; robots.txt allows the pages, checked by the find-hotels probe 2026-11-08):
+# / (section 'dla dzieci'). Written in our words.
+# Not stated (so not recorded yet): item fees, free-stay age, kids' menu, changing table, potty, playroom, pool for children, parking.
+#
+# Coordinates: OpenStreetMap way/199310324 centre ((c) OpenStreetMap contributors, ODbL).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet.
+slug = "palac-bielawa"
+place = "bielawa"
+name = "Pałac Bielawa"
+official_url = "https://www.palacbielawa.pl/"
+address = "ul. Piastowska 23, 58-260 Bielawa"
+lat = 50.6809336
+lon = 16.6074787
+status = "published"
+
+[[feature]]
+key = "cot"
+value = { available = true }
+short = "Łóżeczka dziecięce"
+note = "Dla najmłodszych hotel ma łóżeczka dziecięce. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.palacbielawa.pl/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "high_chair"
+value = { available = true }
+short = "Krzesełko do jedzenia"
+note = "Hotel ma krzesełko do jedzenia dla dziecka."
+source = "hotel_website"
+url = "https://www.palacbielawa.pl/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true }
+short = "Podgrzewacz do butelek"
+note = "Hotel ma podgrzewacz do butelek. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.palacbielawa.pl/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_bath"
+value = { available = true }
+short = "Wanienka"
+note = "Hotel ma wanienkę. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.palacbielawa.pl/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true, where = "palace_garden" }
+short = "Plac zabaw w pałacowym ogrodzie"
+note = "W pałacowym ogrodzie jest plac zabaw (strona pisze o nim przy starszych dzieciach)."
+source = "hotel_website"
+url = "https://www.palacbielawa.pl/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "lift"
+value = { available = false }
+short = "Brak windy (zabytkowy budynek)"
+note = "Budynek nie ma windy ze względu na zabytkowy charakter."
+source = "hotel_website"
+url = "https://www.palacbielawa.pl/"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 80
+note = "70 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.6809%2C16.6075"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 160
+note = "220 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.6809%2C16.6075"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 190
+note = "250 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.6809%2C16.6075"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 210
+note = "290 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.6809%2C16.6075"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 285
+note = "420 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.6809%2C16.6075"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 375
+note = "550 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.6809%2C16.6075"
+verified_at = 2026-11-08

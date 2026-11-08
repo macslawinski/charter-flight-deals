@@ -1,0 +1,171 @@
+# Facts from the hotel's own website (bergohotel.pl; robots.txt allows the pages, checked by the find-hotels probe 2026-11-08):
+# /hotel/dla-dzieci, /dzieci/kids-club, /dzieci/basen-dla-dzieci, /dzieci/animacje. Written in our words.
+# Also on the site, no feature key for it: Game Room for children over 8 (9:00-23:00); a play corner with colouring books in the restaurant; water animations (games, aqua dance, swimming lessons); children up to 16 in the pool only with their guardians.
+# Not stated (so not recorded yet): cot fee, Kids Club minimum age and whether a parent must stay, animation ages, pool depth / hours / temperature, playground, lift, parking.
+#
+# Coordinates: OpenStreetMap way/1085326475 centre ((c) OpenStreetMap contributors, ODbL).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet.
+slug = "bergo-szklarska-poreba"
+place = "szklarska-poreba"
+name = "Bergo Resort & Spa"
+official_url = "https://www.bergohotel.pl/"
+address = "ul. Okrzei 17, 58-580 Szklarska Poręba"
+lat = 50.8200829
+lon = 15.5221556
+status = "published"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true }
+short = "Łóżeczko do zarezerwowania"
+note = "Łóżeczko można zarezerwować. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.bergohotel.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "child_free_stay"
+value = { free = true, max_age_years = 6, sleeping_with_parents = true }
+short = "Dzieci do lat 6 w łóżku rodziców bezpłatnie"
+note = "Dzieci do lat 6 śpiące z rodzicami w łóżku wypoczywają bezpłatnie."
+source = "hotel_website"
+url = "https://www.bergohotel.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "high_chair"
+value = { available = true, where = "restaurant" }
+short = "Krzesełka do karmienia w restauracji"
+note = "W restauracji są krzesełka do karmienia."
+source = "hotel_website"
+url = "https://www.bergohotel.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Menu dla dzieci"
+note = "Restauracja ma osobne menu dla dzieci (strona /dzieci/menu-dla-dzieci)."
+source = "hotel_website"
+url = "https://www.bergohotel.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true, on_request = true }
+short = "Podgrzewacz do butelek na życzenie"
+note = "Na życzenie hotel udostępnia podgrzewacze do butelek. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.bergohotel.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, on_request = true }
+short = "Wanienka na życzenie"
+note = "Na życzenie hotel udostępnia wanienki. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.bergohotel.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "changing_table"
+value = { available = true, where = "public_toilets" }
+short = "Przewijaki w toaletach ogólnodostępnych"
+note = "Przewijaki są w toaletach ogólnodostępnych."
+source = "hotel_website"
+url = "https://www.bergohotel.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "potty"
+value = { available = true, on_request = true, toilet_seat_adapter = true, step_stool = true }
+short = "Nocnik, nakładka i podest na życzenie"
+note = "Na życzenie: nocniki, nakładki na toalety i podesty. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.bergohotel.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true, ball_pool = true, open = "09:00", close = "21:00" }
+short = "Kids Club codziennie 9–21, basen z kulkami"
+note = "Kids Club jest czynny codziennie 9:00–21:00; jest w nim zjeżdżalnia i basen z kulkami. Minimalnego wieku strona nie podaje. Strona nie mówi, czy rodzic musi zostać."
+source = "hotel_website"
+url = "https://www.bergohotel.pl/dzieci/kids-club"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, seasonal = true }
+short = "Animacje w weekendy, wakacje i ferie"
+note = "W weekendy, wakacje i ferie zimowe animatorzy prowadzą gry i zabawy. Wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.bergohotel.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "paddling_pool"
+value = { indoor = true, swim_nappies_required_under_years = 4 }
+short = "Brodzik z fontanną; do 4 lat pieluchy do pływania"
+note = "Basen ma strefę dla najmłodszych z brodzikiem z fontanną i wodnymi zabawkami. Dzieci do lat 4 kąpią się tylko w pieluchach wodoodpornych (płatne w recepcji SPA). Głębokości i godzin strona nie podaje."
+source = "hotel_website"
+url = "https://www.bergohotel.pl/dzieci/basen-dla-dzieci"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 140
+note = "130 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.8201%2C15.5222"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 230
+note = "310 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.8201%2C15.5222"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 240
+note = "280 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.8201%2C15.5222"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 280
+note = "390 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.8201%2C15.5222"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 350
+note = "490 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.8201%2C15.5222"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 420
+note = "580 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.8201%2C15.5222"
+verified_at = 2026-11-08

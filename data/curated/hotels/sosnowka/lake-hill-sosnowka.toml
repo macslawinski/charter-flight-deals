@@ -1,0 +1,126 @@
+# Facts from the hotel's own website (lakehill.pl; robots.txt allows the pages, checked by the find-hotels probe 2026-11-08):
+# /hotel/hotel-dla-dzieci, /hotel/regulamin/regulamin-hotelu (incl. parking rules). Written in our words.
+# Also on the site, no feature key for it: children under 16 under constant supervision of their guardians (hotel rules); family apartments and villas with separate rules (not recorded).
+# Not stated (so not recorded yet): cot fee beyond 'gratis', high chair, kids' menu, baby bath, changing table, Kids Room hours and minimum age, animations, pool depth and hours, lift.
+#
+# Coordinates: OpenStreetMap way/851902474 centre ((c) OpenStreetMap contributors, ODbL).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet.
+slug = "lake-hill-sosnowka"
+place = "sosnowka"
+name = "Lake Hill Resort & Spa"
+official_url = "https://www.lakehill.pl/"
+address = "ul. Tyrolska 2G, 58-564 Sosnówka"
+lat = 50.8314151
+lon = 15.7185964
+status = "published"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true, free = true }
+short = "Łóżeczko niemowlęce gratis, zgłosić przy rezerwacji"
+note = "Łóżeczko niemowlęce jest bezpłatne; trzeba o nie poprosić przy rezerwacji, a ich liczba jest ograniczona (regulamin hotelu)."
+source = "hotel_website"
+url = "https://www.lakehill.pl/hotel/regulamin/regulamin-hotelu"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "child_free_stay"
+value = { free = true, max_age_years = 4 }
+short = "Dzieci 0–4 lat pobyt gratis"
+note = "Regulamin hotelu: dzieci w wieku 0–4 lat mają pobyt w hotelu gratis; dostawka dla dzieci od 4 do 12 lat według cennika. Czy 4-latek jest jeszcze gratis, strona nie rozstrzyga."
+source = "hotel_website"
+url = "https://www.lakehill.pl/hotel/regulamin/regulamin-hotelu"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Kids Room"
+note = "Hotel ma Kids Room do zabawy dla dzieci. Godzin strona nie podaje. Minimalnego wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.lakehill.pl/hotel/hotel-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "Nowoczesny plac zabaw"
+note = "Hotel ma nowoczesny plac zabaw."
+source = "hotel_website"
+url = "https://www.lakehill.pl/hotel/hotel-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_pool"
+value = { available = true }
+short = "Basen dla dzieci"
+note = "Hotel ma basen dla dzieci. Głębokości i godzin strona nie podaje."
+source = "hotel_website"
+url = "https://www.lakehill.pl/hotel/hotel-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { paid = true, fee_pln_per_day = 20 }
+short = "Parking 20 zł/doba"
+note = "Opłata parkingowa wynosi 20 zł za dobę (regulamin parkingu)."
+source = "hotel_website"
+url = "https://www.lakehill.pl/hotel/regulamin/regulamin-hotelu"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 125
+note = "120 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.8314%2C15.7186"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 220
+note = "300 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.8314%2C15.7186"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 225
+note = "280 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.8314%2C15.7186"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 270
+note = "370 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.8314%2C15.7186"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 335
+note = "470 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.8314%2C15.7186"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 410
+note = "580 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.8314%2C15.7186"
+verified_at = 2026-11-08

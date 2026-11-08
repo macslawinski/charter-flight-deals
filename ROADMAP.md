@@ -216,6 +216,11 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       Skipped: Norweska Dolina, Holiday Park Cieplice, Pensjonat Karkonoski (not hotels), Bacówka Radawa,
       Salamandra, Perła Bieszczadów (too thin). Leads left: Hotel Las, Pałac Bielawa, Bergo, Five Seasons,
       Lake Hill (dolnośląskie); Gościniec nad Sawą, Blue Diamond (podkarpackie).
+- [x] C: dolnośląskie hotels, batch 2 (2026-11-08, published): Bergo Szklarska Poręba (11 facts: free stay to 6
+      in parents' bed, cot, warmer, bath, potty, changing tables, Kids Club 9-21, brodzik, swim nappies under 4),
+      Lake Hill Sosnówka (6: free stay 0-4, free cot), Pałac Bielawa (6: cot, warmer, bath, no lift; new region
+      "Góry Sowie"), Hotel LAS Piechowice (3: free cot to 3, play corner). Skipped Five Seasons (aparthotel).
+      No dolnośląskie leads left.
 - [ ] C: train access for the Karkonosze / Bieszczady hotels (Jelenia Góra, Kłodzko, Zagórz stations).
 - [ ] U (phone/e-mail, optional): Tremonti free-stay age (6 vs 3); Skalny SPA brodzik; Artus cot fee; Czarny
       Kamień cot fee; Arłamów cot fee and free-stay rule; most: playroom minimum age.

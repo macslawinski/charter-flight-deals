@@ -1,0 +1,100 @@
+# Facts from the hotel's own website (hotel-las.pl; robots.txt allows the pages, checked by the find-hotels probe 2026-11-08):
+# /atrakcje, /faq. Written in our words.
+# Also on the site, no feature key for it: indoor pool 13 x 6 m, 1.35 m deep, free for hotel guests (no brodzik stated); children from 4 are charged as adults (FAQ); children under 13 under constant adult supervision.
+# Not stated (so not recorded yet): high chair, kids' menu, baby bath, changing table, play corner minimum age and hours, animations, lift.
+#
+# Coordinates: OpenStreetMap way/298335942 centre ((c) OpenStreetMap contributors, ODbL).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet.
+slug = "hotel-las-piechowice"
+place = "piechowice"
+name = "Hotel LAS"
+official_url = "https://hotel-las.pl/"
+address = "ul. Turystyczna 8, 58-573 Piechowice"
+lat = 50.8357625
+lon = 15.5644094
+status = "published"
+
+[[feature]]
+key = "cot"
+age_band = "0-3"
+value = { available = true, free = true, subject_to_availability = true }
+short = "Łóżeczko do 3 lat bezpłatnie, wg dostępności"
+note = "Łóżeczka dziecięce są bezpłatne dla dzieci do lat 3, w zależności od dostępności (FAQ)."
+source = "hotel_website"
+url = "https://hotel-las.pl/faq"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Kącik zabaw dla dzieci"
+note = "W hotelu jest kącik zabaw dla dzieci. Godzin strona nie podaje. Minimalnego wieku strona nie podaje."
+source = "hotel_website"
+url = "https://hotel-las.pl/faq"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { paid = true, fee_pln_per_day = 30 }
+short = "Parking 30 zł/doba"
+note = "Hotel ma własny parking dla gości, 30 zł za dobę (FAQ)."
+source = "hotel_website"
+url = "https://hotel-las.pl/faq"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 130
+note = "130 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.8358%2C15.5644"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 225
+note = "310 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.8358%2C15.5644"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 230
+note = "270 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.8358%2C15.5644"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 275
+note = "380 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.8358%2C15.5644"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 340
+note = "480 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.8358%2C15.5644"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 415
+note = "580 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.8358%2C15.5644"
+verified_at = 2026-11-08
