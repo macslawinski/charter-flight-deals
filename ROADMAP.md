@@ -221,6 +221,9 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       Lake Hill Sosnówka (6: free stay 0-4, free cot), Pałac Bielawa (6: cot, warmer, bath, no lift; new region
       "Góry Sowie"), Hotel LAS Piechowice (3: free cot to 3, play corner). Skipped Five Seasons (aparthotel).
       No dolnośląskie leads left.
+- [x] C: hotel leads mazowieckie (2026-11-08, find-hotels): 16 leads, 1 do sprawdzenia (Holiday Inn Józefów), 6
+      skipped (`hotel_leads/mazowieckie.toml`). Strongest: Artis Loft, Alexandrinum, Łochów, Julinek, Panorama
+      Mszczonów; weakest: Sobienie Królewskie, Domaniowski. Mostly weekend hotels within ~1 h of Warsaw.
 - [ ] C: train access for the Karkonosze / Bieszczady hotels (Jelenia Góra, Kłodzko, Zagórz stations).
 - [ ] U (phone/e-mail, optional): Tremonti free-stay age (6 vs 3); Skalny SPA brodzik; Artus cot fee; Czarny
       Kamień cot fee; Arłamów cot fee and free-stay rule; most: playroom minimum age.
