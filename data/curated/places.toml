@@ -350,3 +350,17 @@ name = "Kosewo"
 country = "Polska"
 region = "Mazury"
 kind = "domestic"
+
+[[place]]
+slug = "gizycko"
+name = "Giżycko"
+country = "Polska"
+region = "Mazury"
+kind = "domestic"
+
+[[place]]
+slug = "ilawa"
+name = "Iława"
+country = "Polska"
+region = "Pojezierze Iławskie"
+kind = "domestic"

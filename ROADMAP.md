@@ -128,6 +128,13 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       8, free cot, own beach, no pool). Car access only. 7 leads left (3 need Chrome or have no own site).
 - [ ] U (phone/e-mail, optional): Przystań parking (which lot costs 40 vs. 70 zł); Masuria cot and baby items;
       Kosewo 78 high chair, baby items, free-stay age.
+- [x] C: warmińsko-mazurskie hotels, batch 5 (2026-11-08): St. Bruno (Giżycko, 8 facts: free cot, playroom 2–6,
+      brodzik), Hotel Giżycko (6: under 2 free, free cot), GrandHotel Tiffi (Iława, 6: Tiffilandia with a sensory
+      corner, Aqua Fun brodzik), Hotel Mikołajki (5: playroom 7–22, brodzik 40 cm; cot not stated). Three under 8:
+      their sites say little. Car access only. 3 leads left, all hard: Port 110 and Joseph Conrad (Chrome),
+      Mikołajki Resort (no own site found).
+- [ ] U (phone/e-mail, optional): Hotel Mikołajki cot and high chair; Tiffi cot fee, free-stay age, Tiffilandia
+      minimum age; Hotel Giżycko high chair and whether there is any play area.
 - [x] ~~U: decide which pomorskie hotels to publish (all are `draft`);~~ superseded above; those under 8 facts need a phone or e-mail
       round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Kiston cot fee, free-stay age, brodzik; Primavera cot fee, Playland age;

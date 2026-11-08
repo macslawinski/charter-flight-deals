@@ -28,7 +28,7 @@ lat = 54.035636
 lon = 21.768095
 signals = ["łóżeczko turystyczne", "wanienka", "nocnik"]
 why = "Na życzenie (po uzgodnieniu z recepcją): łóżeczko turystyczne z pościelą, wanienka, nocnik."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel St. Bruno"
@@ -40,7 +40,7 @@ lat = 54.0356
 lon = 21.760122
 signals = ["przewijak", "brodzik", "sala zabaw"]
 why = "Toaleta z przewijakiem, brodzik w strefie basenowej, sala zabaw (wiek nie podany)."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "GrandHotel Tiffi"
@@ -52,7 +52,7 @@ lat = 53.602822
 lon = 19.559233
 signals = ["kącik sensoryczny dla najmłodszych"]
 why = "Tiffilandia: kącik sensoryczny z miękkimi matami dla najmłodszych; reszta (łóżeczko, brodzik) do sprawdzenia."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Port 110"
@@ -130,7 +130,7 @@ lat = 53.797737
 lon = 21.568886
 signals = ["brodzik", "sala zabaw"]
 why = "Brodzik dla najmłodszych, sala zabaw 7–22 codziennie; łóżeczka strona nie wymienia."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Pałac Mortęgi Hotel & SPA"
