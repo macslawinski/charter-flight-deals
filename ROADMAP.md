@@ -183,6 +183,13 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       (`data/curated/hotel_leads/slaskie.toml`; whole voivodeship: 505 OSM objects, 233 sites probed). Beskidy
       (Wisła, Ustroń, Szczyrk, Istebna, Brenna), Jura (Zawiercie, Podlesice, Lgota Murowana, Ogrodzieniec),
       Katowice, Kochcice. Not covered yet: Skalite and Skalny (Szczyrk) and Aries Wisła (own site not found).
+- [x] C: śląskie hotels, batch 1 (2026-11-08): Gołębiewski Wisła (11 facts: cot, bath, potty, microwave, kids'
+      club 9-19 under 5 with an adult, brodzik 36°C free for guests), Klimczok Szczyrk (9: free stay to 5,
+      cot, bath, warm brodzik, Figlopark), Diament Ustroń (12: paid cot, free stay to 4, warmer, changing
+      table, potty, brodzik; Kids Club only 4-12), Fajkier Lgota Murowana (9: cot, free stay to 4 without extra
+      bed, changing table in room and at the pool, bath, brodzik). 15 śląskie leads left.
+- [ ] U (phone/e-mail, optional): Gołębiewski free-stay age and parking fee; Klimczok cot fee, parking, lift;
+      Diament cot fee, which building the baby items are in; Fajkier parking, play corner age.
 - [x] ~~U: decide which pomorskie hotels to publish (all are `draft`);~~ superseded above; those under 8 facts need a phone or e-mail
       round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Kiston cot fee, free-stay age, brodzik; Primavera cot fee, Playland age;

@@ -76,7 +76,7 @@ lat = 50.5307571
 lon = 19.567792
 signals = ["łóżeczko", "przewijak", "wanienka", "krzesełko do karmienia", "brodzik", "kącik zabaw", "dzieci do 4 lat gratis"]
 why = "Łóżeczka z pościelą, przewijak, wanienka z matą, wrzątek całą dobę, krzesełka, menu dla dzieci, brodzik, kącik Kubusia Puchatka; dzieci do 4 lat gratis bez dostawki."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Centuria Hotel & Natural SPA"
@@ -124,7 +124,7 @@ lat = 49.7262212
 lon = 19.0032998
 signals = ["łóżeczko", "wanienka", "krzesełko", "brodzik z ciepłą wodą", "Figlopark", "menu dla dzieci", "dzieci do 5 lat gratis"]
 why = "Łóżeczko z materacem, wanienka, krzesełka, brodzik z ciepłą wodą, menu dla dzieci, Figlopark; dzieci do lat 5 nocują bezpłatnie (do dwojga w pokoju)."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Mercure Szczyrk Resort"
@@ -172,7 +172,7 @@ lat = 49.7185643
 lon = 18.8267825
 signals = ["łóżeczko", "przewijak", "krzesełko do karmienia", "brodzik", "Kids Club", "menu dziecięce"]
 why = "Łóżeczka niemowlęce, przewijaki, zabezpieczenia gniazdek, wysokie krzesełka, menu dziecięce, brodzik, Kids Club z podglądem (Kids Club TV)."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Crystal Mountain"
@@ -196,7 +196,7 @@ lat = 49.6609337
 lon = 18.859055
 signals = ["łóżeczko turystyczne", "wanienka", "nocnik", "krzesełko", "mikrofalówka", "brodzik", "klub dla dzieci"]
 why = "Łóżeczko z pościelą; wanienka, nocnik i mata na życzenie; mikrofalówka do jedzenia dzieci, krzesełka, ciepły brodzik z piaskownicą, Klub dla Dzieci 9-19 (do 5 lat z dorosłym)."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Stok"

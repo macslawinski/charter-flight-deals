@@ -12193,6 +12193,201 @@
   {
    "access": [
     {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 55,
+     "mode": "car",
+     "note": "60 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.5308%2C19.5678",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 95,
+     "mode": "car",
+     "note": "70 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.5308%2C19.5678",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 175,
+     "mode": "car",
+     "note": "260 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.5308%2C19.5678",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 205,
+     "mode": "car",
+     "note": "300 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.5308%2C19.5678",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 260,
+     "mode": "car",
+     "note": "390 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.5308%2C19.5678",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 320,
+     "mode": "car",
+     "note": "500 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.5308%2C19.5678",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "Lgota Murowana, ul. Kalinowa 63, 42-425 Kroczyce",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Dla malucha łóżeczko z pościelą i kocykiem oraz dodatkowe poduszki. Opłaty strona nie podaje.",
+     "short": "Łóżeczko z pościelą i kocykiem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelfajkier.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "child_free_stay",
+     "note": "Dzieci do lat 4, które nie wymagają dostawki i śpią w pokoju rodziców, nocują gratis.",
+     "short": "Dzieci do 4 lat gratis bez dostawki",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelfajkier.pl/dla-dzieci",
+     "value": {
+      "free": true,
+      "max_age_years": 4,
+      "no_extra_bed": true,
+      "sleeping_with_parents": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W restauracji krzesełka do karmienia.",
+     "short": "Krzesełka do karmienia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelfajkier.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Specjalne menu dla dzieci, podawane w zabawnej formie (np. statek piracki).",
+     "short": "Menu dla dzieci podane na wesoło",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelfajkier.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Czajnik w pokoju lub wrzątek udostępniany przez całą dobę, np. do przygotowania posiłku dla malucha. Podgrzewacza do butelek strona nie wymienia.",
+     "short": "Czajnik lub wrzątek całą dobę",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelfajkier.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "boiling_water_24h": true,
+      "kettle": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "W pokoju z dzieckiem wanienka i mata antypoślizgowa. Opłaty strona nie podaje.",
+     "short": "Wanienka z matą antypoślizgową",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelfajkier.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "non_slip_mat": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "W pokoju z dzieckiem przewijak; przy basenie rodzinna szatnia z przewijakiem dla niemowląt.",
+     "short": "Przewijak w pokoju i w szatni przy basenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelfajkier.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "room_and_pool"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Kącik zabaw Kubuś Puchatek ze zjeżdżalnią, zabawkami i klockami. Minimalnego wieku, godzin ani tego, czy rodzic musi zostać, strona nie podaje.",
+     "short": "Kącik zabaw Kubuś Puchatek",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelfajkier.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "W kompleksie basenowym brodzik z parasolką wodną; dla gości hotelu kompleks w cenie pobytu. Głębokości, temperatury ani zasad wiekowych strona nie podaje.",
+     "short": "Brodzik z parasolką wodną (basen w cenie)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelfajkier.pl/wellness-spa/kompleks-basenowy",
+     "value": {
+      "available": true,
+      "free_for_guests": true,
+      "indoor": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.5307571,
+   "lon": 19.567792,
+   "name": "Hotel Fajkier Wellness & SPA",
+   "official_url": "https://www.hotelfajkier.pl/",
+   "place": "lgota-murowana",
+   "slug": "fajkier-lgota-murowana",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
      "from_code": "Poznań",
      "from_kind": "city",
      "minutes": 225,
@@ -18816,6 +19011,197 @@
   {
    "access": [
     {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 75,
+     "mode": "car",
+     "note": "80 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.7262%2C19.0033",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 110,
+     "mode": "car",
+     "note": "120 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.7262%2C19.0033",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 190,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.7262%2C19.0033",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 260,
+     "mode": "car",
+     "note": "400 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.7262%2C19.0033",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 310,
+     "mode": "car",
+     "note": "470 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.7262%2C19.0033",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 370,
+     "mode": "car",
+     "note": "610 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.7262%2C19.0033",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Poziomkowa 20, 43-370 Szczyrk",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "W pokojach można mieć dodatkowe łóżeczko z materacem. Opłaty strona nie podaje.",
+     "short": "Dodatkowe łóżeczko z materacem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.klimczok.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "child_free_stay",
+     "note": "Dzieci w wieku do lat 5 nocują bezpłatnie; w jednym pokoju najwyżej dwoje dzieci gratis. Dzieci 6–16 lat mają zniżkę.",
+     "short": "Dzieci do 5 lat nocują gratis (max 2 w pokoju)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.klimczok.pl/hotel-dla-dzieci",
+     "value": {
+      "free": true,
+      "max_age_years": 5,
+      "max_children": 2
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Dla najmłodszych są krzesełka do karmienia.",
+     "short": "Krzesełka dla najmłodszych",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.klimczok.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Przy obiadokolacjach w formie bufetu hotel podaje specjalne menu dziecięce (FAQ).",
+     "short": "Dziecięce menu przy obiadokolacji (bufet)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.klimczok.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "W wyposażeniu pokoju dla dziecka wymieniona wanienka do kąpieli. Opłaty strona nie podaje.",
+     "short": "Wanienka do kąpieli",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.klimczok.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala zabaw Figlopark w budynku hotelu, czynna przez cały rok. Minimalnego wieku, godzin ani tego, czy rodzic musi zostać, strona nie podaje.",
+     "short": "Sala zabaw Figlopark, cały rok",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.klimczok.pl/hotel-z-placem-zabaw",
+     "value": {
+      "available": true,
+      "year_round": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Plac zabaw powyżej hotelu z urządzeniami dla dzieci w różnym wieku, obok siłowni pod chmurką dla dorosłych.",
+     "short": "Plac zabaw nad hotelem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.klimczok.pl/hotel-z-placem-zabaw",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "W kompleksie basenów brodzik z ciepłą wodą i grzybkiem dla dzieci. Głębokości, temperatury ani zasad wiekowych strona nie podaje.",
+     "short": "Brodzik z ciepłą wodą i grzybkiem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.klimczok.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "heated": true,
+      "indoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Hotel prowadzi animacje dla dzieci; aktualny plan w recepcji. Minimalnego wieku strona nie podaje.",
+     "short": "Animacje dla dzieci (plan w recepcji)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.klimczok.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.7262212,
+   "lon": 19.0032998,
+   "name": "Hotel Klimczok Resort & SPA",
+   "official_url": "https://www.klimczok.pl/",
+   "place": "szczyrk",
+   "slug": "klimczok-szczyrk",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
      "from_code": "Gdańsk",
      "from_kind": "city",
      "minutes": 205,
@@ -20540,6 +20926,241 @@
   {
    "access": [
     {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 75,
+     "mode": "car",
+     "note": "80 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.7183%2C18.8264",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 120,
+     "mode": "car",
+     "note": "130 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.7183%2C18.8264",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 170,
+     "mode": "car",
+     "note": "240 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.7183%2C18.8264",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 260,
+     "mode": "car",
+     "note": "400 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.7183%2C18.8264",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 290,
+     "mode": "car",
+     "note": "430 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.7183%2C18.8264",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 370,
+     "mode": "car",
+     "note": "600 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.7183%2C18.8264",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Zdrojowa 3, 43-450 Ustroń",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko z materacem i pościelą dla małego dziecka, dodatkowo płatne. Kwoty strona nie podaje.",
+     "short": "Łóżeczko z materacem i pościelą (płatne)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.diamentustron.pl/udogodnienia-dla-osob-podrozujacych-z-dziecmi",
+     "value": {
+      "available": true,
+      "paid": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "child_free_stay",
+     "note": "Dziecko do lat 4 bezpłatnie, jeśli śpi na łóżku opiekunów.",
+     "short": "Dziecko do 4 lat gratis w łóżku rodziców",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.diamentustron.pl/udogodnienia-dla-osob-podrozujacych-z-dziecmi",
+     "value": {
+      "free": true,
+      "max_age_years": 4,
+      "sleeping_with_parents": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W restauracji krzesełka do karmienia oraz plastikowe naczynia i sztućce dla dzieci.",
+     "short": "Krzesełka do karmienia w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.diamentustron.pl/udogodnienia-dla-osob-podrozujacych-z-dziecmi",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "W restauracji specjalne menu dla dzieci.",
+     "short": "Menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.diamentustron.pl/udogodnienia-dla-osob-podrozujacych-z-dziecmi",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "W pokoju podgrzewacz butelek i słoiczków oraz czajnik; w restauracji też podgrzewacz do butelek lub słoiczków. Opłaty strona nie podaje.",
+     "short": "Podgrzewacz butelek w pokoju i w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.diamentustron.pl/udogodnienia-dla-osob-podrozujacych-z-dziecmi",
+     "value": {
+      "available": true,
+      "kettle": true,
+      "where": "room_and_restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "W łazience wanienka dziecięca z matą antypoślizgową. Opłaty strona nie podaje.",
+     "short": "Wanienka z matą antypoślizgową",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.diamentustron.pl/udogodnienia-dla-osob-podrozujacych-z-dziecmi",
+     "value": {
+      "available": true,
+      "non_slip_mat": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "W pokoju przewijak.",
+     "short": "Przewijak w pokoju",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.diamentustron.pl/udogodnienia-dla-osob-podrozujacych-z-dziecmi",
+     "value": {
+      "available": true,
+      "where": "room"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "W łazience nocnik i nakładki na toaletę.",
+     "short": "Nocnik i nakładka na toaletę",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.diamentustron.pl/udogodnienia-dla-osob-podrozujacych-z-dziecmi",
+     "value": {
+      "available": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Kids Club w sali zabaw dla dzieci w wieku 4–12 lat; dla młodszych strona nie opisuje osobnej strefy. Godzin ani tego, czy rodzic musi zostać, strona nie podaje.",
+     "short": "Kids Club dla dzieci 4–12 lat",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.diamentustron.pl/kids-club",
+     "value": {
+      "available": true,
+      "max_age_years": 12,
+      "min_age_years": 4
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Program animacji prowadzą animatorzy i maskotka Pan Diamencik. Minimalnego wieku strona nie podaje.",
+     "short": "Animacje z Panem Diamencikiem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.diamentustron.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "W strefie basenowej basen z podgrzewaną wodą i brodzik. Głębokości, temperatury brodzika ani zasad wiekowych strona nie podaje.",
+     "short": "Brodzik przy basenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.diamentustron.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parkowanie tylko na parkingu hotelowym; cennik przy wjeździe i w recepcji (regulamin hotelu, s. 1). Stawki strona nie podaje.",
+     "short": "Parking hotelowy według cennika",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://u.profitroom.com/2016.diamentustron.pl/uploads/RegulaminHotelu-Ustro.pdf",
+     "value": {
+      "paid": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.71833,
+   "lon": 18.82639,
+   "name": "SPA & Wellness Hotel Diament",
+   "official_url": "https://www.diamentustron.pl/",
+   "place": "ustron",
+   "slug": "diament-ustron",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
      "from_code": "Gdańsk",
      "from_kind": "city",
      "minutes": 155,
@@ -20971,6 +21592,234 @@
    "official_url": "https://naturamazur.pl/",
    "place": "warchaly",
    "slug": "natura-mazur-warchaly",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 85,
+     "mode": "car",
+     "note": "90 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.6607%2C18.8591",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 125,
+     "mode": "car",
+     "note": "140 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.6607%2C18.8591",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 175,
+     "mode": "car",
+     "note": "250 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.6607%2C18.8591",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 265,
+     "mode": "car",
+     "note": "410 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.6607%2C18.8591",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 295,
+     "mode": "car",
+     "note": "430 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.6607%2C18.8591",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 375,
+     "mode": "car",
+     "note": "610 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.6607%2C18.8591",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "Al. Ks. Bp. Bursche 3, 43-460 Wisła",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na życzenie łóżeczko turystyczne z pościelą. Opłaty strona nie podaje.",
+     "short": "Łóżeczko turystyczne z pościelą na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://golebiewski.pl/wisla/dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełko do karmienia dostępne w restauracji podczas posiłków.",
+     "short": "Krzesełko do karmienia w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://golebiewski.pl/wisla/dzieci",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Specjalne menu dla dzieci; bufet dla najmłodszych Smakolandia 12:00–13:30 i 16:00–17:30, w cenie przy pobycie z trzema posiłkami dziennie, przy innych pakietach dodatkowo płatny.",
+     "short": "Menu dla dzieci i bufet Smakolandia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://golebiewski.pl/wisla/dzieci",
+     "value": {
+      "available": true,
+      "kids_buffet": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "W restauracji można skorzystać z mikrofalówki, by podgrzać posiłki dla dzieci (podgrzewacza do butelek strona nie wymienia).",
+     "short": "Mikrofalówka w restauracji do jedzenia dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://golebiewski.pl/wisla/dzieci",
+     "value": {
+      "available": true,
+      "microwave": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Na życzenie wanienka i mata antypoślizgowa. Opłaty strona nie podaje.",
+     "short": "Wanienka i mata antypoślizgowa na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://golebiewski.pl/wisla/dzieci",
+     "value": {
+      "available": true,
+      "non_slip_mat": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Na życzenie nocnik. Opłaty strona nie podaje.",
+     "short": "Nocnik na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://golebiewski.pl/wisla/dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Klub dla Dzieci czynny codziennie 9:00–19:00, tylko dla gości hotelu z kartą pokojową; dzieci do lat 5 pod opieką dorosłych. Minimalnego wieku strona nie podaje.",
+     "short": "Klub dla Dzieci 9–19, do 5 lat z dorosłym",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://golebiewski.pl/wisla/dzieci",
+     "value": {
+      "available": true,
+      "close": "19:00",
+      "guests_only": true,
+      "open": "09:00",
+      "with_parent_under_years": 5
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Przy hotelu nowoczesny, dobrze wyposażony zewnętrzny plac zabaw. Godzin ani wieku strona nie podaje.",
+     "short": "Zewnętrzny plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://golebiewski.pl/wisla/dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "W parku wodnym Tropikana brodzik z dwiema zjeżdżalniami i wodą 36°C, przy nim piaskownica; goście hotelu wchodzą bezpłatnie, dzieci do 14 lat tylko z dorosłym. Głębokości strona nie podaje.",
+     "short": "Brodzik 36°C ze zjeżdżalniami i piaskownicą",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.golebiewski.pl/wisla/park-wodny",
+     "value": {
+      "available": true,
+      "free_for_guests": true,
+      "heated": true,
+      "indoor": true,
+      "water_temp_c": 36
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "lift",
+     "note": "Hotel ma windę (FAQ na stronie hotelu w Wiśle).",
+     "short": "Winda",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://golebiewski.pl/wisla",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Na terenie kompleksu prywatny, monitorowany parking dla gości, dodatkowo płatny. Stawki strona nie podaje.",
+     "short": "Płatny parking monitorowany",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://golebiewski.pl/wisla",
+     "value": {
+      "monitored": true,
+      "paid": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.6607483,
+   "lon": 18.8590604,
+   "name": "Hotel Gołębiewski Wisła",
+   "official_url": "https://golebiewski.pl/wisla",
+   "place": "wisla",
+   "slug": "golebiewski-wisla",
    "status": "published"
   },
   {
@@ -24034,6 +24883,38 @@
    "name": "Szczawnica",
    "region": "Pieniny",
    "slug": "szczawnica"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Wisła",
+   "region": "Beskidy",
+   "slug": "wisla"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Szczyrk",
+   "region": "Beskidy",
+   "slug": "szczyrk"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Ustroń",
+   "region": "Beskidy",
+   "slug": "ustron"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Lgota Murowana",
+   "region": "Jura Krakowsko-Częstochowska",
+   "slug": "lgota-murowana"
   }
  ],
  "rule_keys": [
