@@ -1,0 +1,129 @@
+# Facts from the hotel's own website (palacpakoslaw.pl; robots.txt allows all, checked 2026-11-08):
+# /dla-dzieci, /pokoje, home page, /kuchnia. Written in our words.
+# Also on the site, no feature key for it: night light for children free to borrow; board games, puzzles and
+# wooden toys free to borrow to the room; 24 rooms in the palace, some with an extra bed; a family package for
+# parents with a child aged 4-10 (package, not a hotel rule).
+# Not stated (so not recorded yet): free-stay ages and child prices, high chair, kids menu, potty, playroom
+# minimum age / hours, lift, parking.
+#
+# Coordinates: OpenStreetMap way/275563123, ODbL (no map link with coordinates on the site).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet.
+slug = "palac-w-pakoslawiu"
+place = "pakoslaw"
+name = "Pałac w Pakosławiu"
+official_url = "https://palacpakoslaw.pl/"
+address = "ul. Parkowa 14, 63-920 Pakosław"
+lat = 51.61778  # OpenStreetMap way/275563123, ODbL
+lon = 17.05949
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, free = true, bedding = true }
+short = "Łóżeczko z pościelą, bezpłatnie"
+note = "Łóżeczko z pościelą można wypożyczyć do pokoju; strona dla dzieci podaje, że wypożyczenie jest bezpłatne."
+source = "hotel_website"
+url = "https://palacpakoslaw.pl/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true, free = true }
+short = "Podgrzewacz do butelek, bezpłatnie"
+note = "Podgrzewacz do butelek do wypożyczenia; wypożyczenie jest bezpłatne."
+source = "hotel_website"
+url = "https://palacpakoslaw.pl/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, free = true }
+short = "Wanienka, bezpłatnie"
+note = "Wanienka do wypożyczenia; wypożyczenie jest bezpłatne."
+source = "hotel_website"
+url = "https://palacpakoslaw.pl/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "changing_table"
+value = { available = true, free = true }
+short = "Przewijak, bezpłatnie"
+note = "Przewijak do wypożyczenia do pokoju; wypożyczenie jest bezpłatne. Pełna lista sprzętu jest w recepcji."
+source = "hotel_website"
+url = "https://palacpakoslaw.pl/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Przestrzeń do zabawy dla dzieci"
+note = "W pałacu jest przestrzeń do zabawy dla wszystkich dzieci. Minimalnego wieku ani godzin strona nie podaje."
+source = "hotel_website"
+url = "https://palacpakoslaw.pl/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "Miejsce do zabaw na świeżym powietrzu"
+note = "Na terenie pałacu jest miejsce na gry i zabawy na świeżym powietrzu."
+source = "hotel_website"
+url = "https://palacpakoslaw.pl/dla-dzieci"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 65
+note = "80 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B51.6178%2C17.0595"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 105
+note = "140 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B51.6178%2C17.0595"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 175
+note = "280 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B51.6178%2C17.0595"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 225
+note = "350 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B51.6178%2C17.0595"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 260
+note = "340 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B51.6178%2C17.0595"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 290
+note = "440 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B51.6178%2C17.0595"
+verified_at = 2026-11-08

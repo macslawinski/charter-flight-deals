@@ -16,7 +16,7 @@ lat = 52.37473
 lon = 17.46467
 signals = ["łóżeczko", "wanienka", "przewijak", "nocnik", "krzesełko", "sala zabaw", "menu dla dzieci", "pokój do karmienia"]
 why = "Łóżeczka, wanienki, przewijaki, nocniki, nakładki, wysokie krzesełka, sztućce dziecięce; sala zabaw, menu dla dzieci, pokój do karmienia z fotelem."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Vitalia"
@@ -28,7 +28,7 @@ lat = 51.95182
 lon = 16.33151
 signals = ["łóżeczko", "wanienka", "podgrzewacz", "pokój zabaw", "naczynia dla dzieci"]
 why = "Strona \"Baby Hotel\": łóżeczko, wanienka, podgrzewacz do butelek, mata antypoślizgowa, naczynia i sztućce dla dzieci; pokój zabaw (wiek nie podany)."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Moran Hotel & SPA"
@@ -39,7 +39,8 @@ lat = 52.42722
 lon = 17.95506
 signals = []
 why = "Do sprawdzenia: 4* nad Jeziorem Powidzkim, portale wskazują salę zabaw i animacje; strona hotelu zapętla przekierowania (probe i WebFetch), czytać w Chrome."
-status = "lead"
+status = "skipped"
+skip_reason = "Czytane w Chrome 2026-11-08: animacje od 5 lat (młodsze tylko z opiekunem), parking płatny; łóżeczka, sali zabaw ani brodzika strona i regulaminy nie podają."
 
 [[lead]]
 name = "Pałac w Pakosławiu"
@@ -51,7 +52,7 @@ lat = 51.61778
 lon = 17.05949
 signals = ["łóżeczko", "wanienka", "przewijak", "podgrzewacz", "sala zabaw"]
 why = "Bezpłatnie do wypożyczenia: łóżeczko z pościelą, wanienka, przewijak, podgrzewacz do butelek, lampka nocna; przestrzeń zabaw dla dzieci."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "DeSilva Premium Poznań"
@@ -64,7 +65,7 @@ lat = 52.40523
 lon = 16.92789
 signals = ["łóżeczko", "wanienka", "nocnik", "krzesełko", "kącik zabaw", "menu dla dzieci"]
 why = "Hotel w centrum: na życzenie łóżeczko, wanienka, nocnik, nakładka; krzesełka do karmienia, kącik zabaw, menu dla dzieci, przechowanie wózka."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Grand Royal Hotel"
@@ -76,7 +77,8 @@ lat = 52.36637
 lon = 16.85691
 signals = ["łóżeczko", "kącik malucha", "basen"]
 why = "Łóżeczko na życzenie (potwierdzane przez hotel), kącik malucha przy restauracji, basen; słabszy lead."
-status = "lead"
+status = "skipped"
+skip_reason = "Łóżeczko na życzenie, kącik malucha i gratis do 12 lat tylko na stronie pakietu rodzinnego; strony hotelu (regulamin, basen) nic dla 0-3 nie podają."
 
 [[lead]]
 name = "Hotel Kortowo"
@@ -88,7 +90,7 @@ lat = 52.35432
 lon = 16.85972
 signals = ["łóżeczko", "krzesełko", "menu dla dzieci", "plac zabaw"]
 why = "Łóżeczko na życzenie, krzesełka w restauracji, menu dla dzieci, drewniany plac zabaw; dzieci do 6 lat gratis."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Olandia"
@@ -101,7 +103,7 @@ lat = 52.57755
 lon = 16.00506
 signals = ["maty antypoślizgowe", "podesty", "zaślepki gniazdek", "menu dla dzieci", "pokój zabaw", "do 3 lat gratis"]
 why = "Na życzenie zaślepki gniazdek, maty antypoślizgowe i podesty w łazience; menu dziecięce, dwa pokoje zabaw, plac zabaw; do 3 lat gratis. Łóżeczko pewnie w PDF wyposażenia pokoi rodzinnych."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Trzy Jeziora"
@@ -111,7 +113,8 @@ kids_url = "https://www.trzyjeziora.com/dla-dzieci"
 evidence_urls = ["https://www.trzyjeziora.com/en/pakiet-familijny"]
 signals = ["łóżeczko", "sala zabaw", "animacje", "do 3 lat gratis"]
 why = "Hotel 3* w centrum wypoczynkowym (też domki): łóżeczko hotelowe na życzenie, sala zabaw, animacje; do 3 lat gratis. Kwalifikować tylko pokoje hotelowe."
-status = "lead"
+status = "skipped"
+skip_reason = "Łóżeczko i gratis do 3 lat tylko w Pakiecie familijnym; sala zabaw tylko na zdjęciu, strona dla dzieci bez konkretów dla 0-3."
 
 [[lead]]
 name = "Hotel Toscania"
@@ -123,7 +126,7 @@ lat = 51.92859
 lon = 16.36756
 signals = ["łóżeczko", "krzesełko", "menu dla dzieci", "kącik zabaw", "plac zabaw"]
 why = "Łóżeczko dla malucha, krzesełko do karmienia, menu dla dzieci (z cenami), kącik zabaw w restauracji, duży plac zabaw."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Acwador"

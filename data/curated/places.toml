@@ -713,3 +713,45 @@ name = "Żnin"
 country = "Polska"
 region = "Pałuki"
 kind = "domestic"
+
+[[place]]
+slug = "barczyzna"
+name = "Barczyzna"
+country = "Polska"
+region = "Wielkopolska"
+kind = "domestic"
+
+[[place]]
+slug = "boszkowo-letnisko"
+name = "Boszkowo-Letnisko"
+country = "Polska"
+region = "Pojezierze Leszczyńskie"
+kind = "domestic"
+
+[[place]]
+slug = "pakoslaw"
+name = "Pakosław"
+country = "Polska"
+region = "Wielkopolska"
+kind = "domestic"
+
+[[place]]
+slug = "poznan"
+name = "Poznań"
+country = "Polska"
+region = "Wielkopolska"
+kind = "domestic"
+
+[[place]]
+slug = "prusim"
+name = "Prusim"
+country = "Polska"
+region = "Wielkopolska"
+kind = "domestic"
+
+[[place]]
+slug = "wloszakowice"
+name = "Włoszakowice"
+country = "Polska"
+region = "Pojezierze Leszczyńskie"
+kind = "domestic"

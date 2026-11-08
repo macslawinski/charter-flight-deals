@@ -2920,6 +2920,206 @@
   {
    "access": [
     {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 45,
+     "mode": "car",
+     "note": "40 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B52.3748%2C17.4646",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 155,
+     "mode": "car",
+     "note": "220 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B52.3748%2C17.4646",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 175,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B52.3748%2C17.4646",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 200,
+     "mode": "car",
+     "note": "290 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B52.3748%2C17.4646",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 235,
+     "mode": "car",
+     "note": "390 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B52.3748%2C17.4646",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 280,
+     "mode": "car",
+     "note": "460 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B52.3748%2C17.4646",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "Barczyzna 12, 62-330 Nekla",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Hotel wymienia łóżeczka dziecięce wśród udogodnień dla małych dzieci, do tego pościel dziecięcą. Opłaty strona nie podaje.",
+     "short": "Łóżeczka dziecięce",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelbarczyzna.pl/atrakcje-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Hotel ma wysokie krzesełka dla dzieci i sztućce dziecięce.",
+     "short": "Wysokie krzesełka",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelbarczyzna.pl/atrakcje-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja ma osobne menu dla najmłodszych gości.",
+     "short": "Specjalne menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelbarczyzna.pl/atrakcje-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Hotel wymienia wanienki wśród udogodnień dla małych dzieci. Opłaty strona nie podaje.",
+     "short": "Są wanienki",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelbarczyzna.pl/atrakcje-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Hotel wymienia przewijaki wśród udogodnień dla małych dzieci; gdzie stoją, strona nie podaje.",
+     "short": "Są przewijaki",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelbarczyzna.pl/atrakcje-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Hotel ma nocniki i nakładki na toaletę dla dzieci.",
+     "short": "Nocniki i nakładki na toaletę",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelbarczyzna.pl/atrakcje-dla-dzieci",
+     "value": {
+      "available": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "W hotelu jest sala zabaw dla najmłodszych gości. Minimalnego wieku, godzin otwarcia ani zasad opieki strona nie podaje.",
+     "short": "Sala zabaw dla najmłodszych",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelbarczyzna.pl/atrakcje-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Plac zabaw dla dzieci i duży teren do zabawy na zewnątrz.",
+     "short": "Plac zabaw na świeżym powietrzu",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelbarczyzna.pl/atrakcje-dla-dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "lift",
+     "note": "Standardowe wyposażenie pokoi obejmuje dojazd windą na wyższe piętra.",
+     "short": "Winda na wyższe piętra",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelbarczyzna.pl/pokoje",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Strona pokoi podaje, że parking jest bezpłatny. Czy jest strzeżony, strona nie podaje.",
+     "short": "Bezpłatny parking",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelbarczyzna.pl/pokoje",
+     "value": {
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 52.374848,
+   "lon": 17.464625,
+   "name": "Hotel Barczyzna",
+   "official_url": "https://www.hotelbarczyzna.pl/",
+   "place": "barczyzna",
+   "slug": "hotel-barczyzna",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
      "from_code": "Kraków",
      "from_kind": "city",
      "minutes": 90,
@@ -3309,6 +3509,156 @@
    "place": "bielawa",
    "slug": "palac-bielawa",
    "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 75,
+     "mode": "car",
+     "note": "80 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B51.9518%2C16.3315",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 100,
+     "mode": "car",
+     "note": "130 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B51.9518%2C16.3315",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 210,
+     "mode": "car",
+     "note": "320 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B51.9518%2C16.3315",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 240,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B51.9518%2C16.3315",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 255,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B51.9518%2C16.3315",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 260,
+     "mode": "car",
+     "note": "400 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B51.9518%2C16.3315",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Dominicka 24, Boszkowo-Letnisko, 64-140 Włoszakowice",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Strona „Baby Hotel” wymienia łóżeczko dla małego dziecka. Opłaty strona nie podaje.",
+     "short": "Łóżeczko dla małego dziecka",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelvitalia.pl/baby-hotel",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Strona „Baby Hotel” wymienia podgrzewacz do butelek. Opłaty strona nie podaje.",
+     "short": "Podgrzewacz do butelek",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelvitalia.pl/baby-hotel",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Łazienkę hotel może wyposażyć w wanienkę do kąpieli dziecka. Opłaty strona nie podaje.",
+     "short": "Wanienka do łazienki na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelvitalia.pl/baby-hotel",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "W hotelu jest pokój zabaw dla dzieci. Minimalnego wieku ani godzin strona nie podaje.",
+     "short": "Pokój zabaw dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelvitalia.pl/baby-hotel",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Na zewnątrz plac zabaw dla maluchów z dużą trampoliną, huśtawkami i zjeżdżalniami.",
+     "short": "Plac zabaw z trampoliną i huśtawkami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelvitalia.pl/atrakcje-hotelu",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Przy hotelu jest mały parking; auto można też zostawić bezpłatnie na parkingu ok. 3 minut pieszo od hotelu. Czy parking przy hotelu jest płatny, strona nie podaje.",
+     "short": "Bezpłatny parking ok. 3 min pieszo",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelvitalia.pl/pokoje",
+     "value": {
+      "free": true,
+      "nearby": true,
+      "walk_minutes": 3
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 51.95182,
+   "lon": 16.33151,
+   "name": "Hotel Vitalia",
+   "official_url": "https://hotelvitalia.pl/",
+   "place": "boszkowo-letnisko",
+   "slug": "hotel-vitalia",
+   "status": "draft"
   },
   {
    "access": [
@@ -20360,6 +20710,158 @@
   {
    "access": [
     {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 65,
+     "mode": "car",
+     "note": "80 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B51.6178%2C17.0595",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 105,
+     "mode": "car",
+     "note": "140 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B51.6178%2C17.0595",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 175,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B51.6178%2C17.0595",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 225,
+     "mode": "car",
+     "note": "350 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B51.6178%2C17.0595",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 260,
+     "mode": "car",
+     "note": "340 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B51.6178%2C17.0595",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 290,
+     "mode": "car",
+     "note": "440 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B51.6178%2C17.0595",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Parkowa 14, 63-920 Pakosław",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko z pościelą można wypożyczyć do pokoju; strona dla dzieci podaje, że wypożyczenie jest bezpłatne.",
+     "short": "Łóżeczko z pościelą, bezpłatnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://palacpakoslaw.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "bedding": true,
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacz do butelek do wypożyczenia; wypożyczenie jest bezpłatne.",
+     "short": "Podgrzewacz do butelek, bezpłatnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://palacpakoslaw.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka do wypożyczenia; wypożyczenie jest bezpłatne.",
+     "short": "Wanienka, bezpłatnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://palacpakoslaw.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Przewijak do wypożyczenia do pokoju; wypożyczenie jest bezpłatne. Pełna lista sprzętu jest w recepcji.",
+     "short": "Przewijak, bezpłatnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://palacpakoslaw.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "W pałacu jest przestrzeń do zabawy dla wszystkich dzieci. Minimalnego wieku ani godzin strona nie podaje.",
+     "short": "Przestrzeń do zabawy dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://palacpakoslaw.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Na terenie pałacu jest miejsce na gry i zabawy na świeżym powietrzu.",
+     "short": "Miejsce do zabaw na świeżym powietrzu",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://palacpakoslaw.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 51.61778,
+   "lon": 17.05949,
+   "name": "Pałac w Pakosławiu",
+   "official_url": "https://palacpakoslaw.pl/",
+   "place": "pakoslaw",
+   "slug": "palac-w-pakoslawiu",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
      "from_code": "Warszawa",
      "from_kind": "city",
      "minutes": 185,
@@ -22499,6 +23001,561 @@
    "place": "poreba-wielka",
    "slug": "gorski-raj-poreba-wielka",
    "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 130,
+     "mode": "car",
+     "note": "180 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B52.4052%2C16.9279",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 185,
+     "mode": "car",
+     "note": "310 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B52.4052%2C16.9279",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 205,
+     "mode": "car",
+     "note": "310 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B52.4052%2C16.9279",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 240,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B52.4052%2C16.9279",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 290,
+     "mode": "car",
+     "note": "460 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B52.4052%2C16.9279",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Piekary 5, 61-823 Poznań",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Hotel ma łóżeczka dla niemowląt i prosi o wcześniejszy kontakt, żeby przygotować łóżeczko w pokoju. Opłaty strona nie podaje.",
+     "short": "Łóżeczko na życzenie (zgłosić wcześniej)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.desilva.pl/poznan/najczesciej-zadawane-pytania/",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Hotel ma krzesełka do karmienia dla najmłodszych gości.",
+     "short": "Krzesełka do karmienia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.desilva.pl/poznan/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Szef kuchni przygotował menu dla dzieci; dziecko na specjalnej diecie warto zgłosić przy rezerwacji.",
+     "short": "Menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.desilva.pl/poznan/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienkę hotel udostępnia na życzenie. Opłaty strona nie podaje.",
+     "short": "Wanienka na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.desilva.pl/poznan/",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Na życzenie hotel udostępnia nocnik i nakładkę na deskę sedesową.",
+     "short": "Nocnik i nakładka na sedes na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.desilva.pl/poznan/",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Kącik zabaw z kolorowym domkiem, kolorowankami, książeczkami, klockami, tablicą kredową i zabawkami edukacyjnymi. Minimalnego wieku ani godzin strona nie podaje.",
+     "short": "Kącik zabaw z domkiem i klockami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.desilva.pl/poznan/",
+     "value": {
+      "available": true,
+      "corner": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "lift",
+     "note": "W odpowiedzi o dostępności dla osób z niepełnosprawnościami hotel podaje, że ma windy, szerokie drzwi i dostosowane toalety.",
+     "short": "Windy",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.desilva.pl/poznan/najczesciej-zadawane-pytania/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "FAQ: hotel ma miejsca parkingowe, w okolicy są też publiczne parkingi przy ulicach; obowiązują opłaty godzinowe i dobowe. Czy opłaty dotyczą miejsc hotelowych czy ulicznych, ani stawek, strona nie precyzuje.",
+     "short": "Parking płatny (godzinowo i dobowo)",
+     "source": "hotel_website",
+     "to_confirm": true,
+     "url": "https://www.desilva.pl/poznan/najczesciej-zadawane-pytania/",
+     "value": {
+      "paid": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 52.40523,
+   "lon": 16.92789,
+   "name": "DeSilva Premium Poznań",
+   "official_url": "https://www.desilva.pl/poznan/",
+   "place": "poznan",
+   "slug": "desilva-premium-poznan",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 15,
+     "mode": "car",
+     "note": "10 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B52.3543%2C16.8597",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 120,
+     "mode": "car",
+     "note": "170 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B52.3543%2C16.8597",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 185,
+     "mode": "car",
+     "note": "310 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B52.3543%2C16.8597",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 200,
+     "mode": "car",
+     "note": "310 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B52.3543%2C16.8597",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 230,
+     "mode": "car",
+     "note": "370 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B52.3543%2C16.8597",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 280,
+     "mode": "car",
+     "note": "450 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B52.3543%2C16.8597",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Kotowo 62, 60-009 Poznań",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko dla małego dziecka hotel wstawia do pokoju na życzenie. Opłaty strona nie podaje.",
+     "short": "Łóżeczko na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.kortowo.com.pl/hotel/dzieci/",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "child_free_stay",
+     "note": "Strona dla dzieci: pobyt bezpłatny dla dzieci w wieku do lat 6, 50% za dzieci 6-12 lat, pełna opłata powyżej 12 lat. Czy chodzi o dziecko przed 6. urodzinami i czy dotyczy spania z rodzicami, strona nie precyzuje.",
+     "short": "Pobyt bezpłatny do lat 6",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.kortowo.com.pl/hotel/dzieci/",
+     "value": {
+      "free": true,
+      "max_age_years": 6
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W restauracji hotelowej są krzesełka dla maluchów.",
+     "short": "Krzesełka w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.kortowo.com.pl/hotel/dzieci/",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja hotelowa ma specjalne menu dla dzieci.",
+     "short": "Specjalne menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.kortowo.com.pl/hotel/dzieci/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Drewniany plac zabaw z tyrolką i trampoliną, obok boisko do piłki plażowej i mini boisko do piłki nożnej.",
+     "short": "Drewniany plac zabaw z tyrolką",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.kortowo.com.pl/hotel/dzieci/",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Bezpłatny parking hotelowy na 50 aut, zamykany automatyczną bramą. Czy jest strzeżony, strona nie podaje.",
+     "short": "Bezpłatny parking na 50 aut",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.kortowo.com.pl/hotel/dojazd/",
+     "value": {
+      "free": true,
+      "gated": true,
+      "spaces": 50
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 52.35432,
+   "lon": 16.85972,
+   "name": "Hotel Kortowo",
+   "official_url": "https://www.kortowo.com.pl/",
+   "place": "poznan",
+   "slug": "hotel-kortowo",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 75,
+     "mode": "car",
+     "note": "70 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B52.5776%2C16.0051",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 175,
+     "mode": "car",
+     "note": "230 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B52.5776%2C16.0051",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 250,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B52.5776%2C16.0051",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 265,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B52.5776%2C16.0051",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 285,
+     "mode": "car",
+     "note": "430 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B52.5776%2C16.0051",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 335,
+     "mode": "car",
+     "note": "510 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B52.5776%2C16.0051",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "Prusim 5, 64-420 Kwilcz",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na życzenie łóżeczko z materacem i pościelą dla małego dziecka (PDF „Udogodnienia dla dzieci”, s. 1). Opłaty strona nie podaje.",
+     "short": "Łóżeczko z materacem i pościelą na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://u.profitroom.com/2018-olandia-pl/uploads/Udogodnieniadladzieci2025.pdf",
+     "value": {
+      "available": true,
+      "bedding": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": "0-3",
+     "key": "child_free_stay",
+     "note": "Strona dla dzieci: wszystkie dzieci do lat 3 hotel gości bezpłatnie. Czy dotyczy to także dziecka po 3. urodzinach, strona nie precyzuje.",
+     "short": "Dzieci do lat 3 bezpłatnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.olandia.pl/miejsce-dla-dzieci",
+     "value": {
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W restauracji krzesełko do karmienia, plastikowe naczynia i zestaw do kolorowania (PDF „Udogodnienia dla dzieci”, s. 1).",
+     "short": "Krzesełko do karmienia w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://u.profitroom.com/2018-olandia-pl/uploads/Udogodnieniadladzieci2025.pdf",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Szef kuchni przygotował osobne menu dla dzieci; diety na życzenie.",
+     "short": "Osobne menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.olandia.pl/miejsce-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Na życzenie podgrzewacz do butelek w pokoju; w restauracji podgrzewacz do butelek lub słoiczków (PDF „Udogodnienia dla dzieci”, s. 1).",
+     "short": "Podgrzewacz do butelek w pokoju i restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://u.profitroom.com/2018-olandia-pl/uploads/Udogodnieniadladzieci2025.pdf",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Na życzenie wanienka do kąpieli dziecka i mata antypoślizgowa pod prysznic lub do wanny (PDF „Udogodnienia dla dzieci”, s. 1).",
+     "short": "Wanienka na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://u.profitroom.com/2018-olandia-pl/uploads/Udogodnieniadladzieci2025.pdf",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "W części ogólnej jest toaleta z przewijakiem dla małych dzieci (PDF „Udogodnienia dla dzieci”, s. 2).",
+     "short": "Toaleta z przewijakiem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://u.profitroom.com/2018-olandia-pl/uploads/Udogodnieniadladzieci2025.pdf",
+     "value": {
+      "available": true,
+      "where": "public_toilets"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Na życzenie podest łazienkowy (PDF „Udogodnienia dla dzieci”, s. 1). Nocnika ani nakładki strona nie wymienia.",
+     "short": "Podest łazienkowy na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://u.profitroom.com/2018-olandia-pl/uploads/Udogodnieniadladzieci2025.pdf",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "step_stool": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Pokój zabaw przy restauracji Olenderskie Smaki (zabawki, gry, przybory plastyczne) i druga sala zabaw w budynku Kamiennik; PDF mówi o kąciku zabaw dla dzieci w różnym wieku. Minimalnego wieku ani godzin strona nie podaje.",
+     "short": "Pokój zabaw w restauracji i w Kamienniku",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.olandia.pl/atrakcje/szczegoly-atrakcji?RecordID=48556",
+     "value": {
+      "available": true,
+      "count": 2
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Zewnętrzny plac zabaw oraz domek ze zjeżdżalnią w parku.",
+     "short": "Plac zabaw i domek ze zjeżdżalnią",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.olandia.pl/atrakcje/szczegoly-atrakcji?RecordID=48556",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Hotel prowadzi programy animacyjne dla dzieci i młodzieży (PDF „Udogodnienia dla dzieci”, s. 2). Wieku, terminów ani czy w cenie, strona nie podaje.",
+     "short": "Programy animacyjne dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://u.profitroom.com/2018-olandia-pl/uploads/Udogodnieniadladzieci2025.pdf",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_pool",
+     "note": "Kryty basen ma nieckę dziecięcą. Głębokości ani zasad dla najmłodszych strona nie podaje.",
+     "short": "Niecka dziecięca przy krytym basenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.olandia.pl/sport-i-rekreacja/basen",
+     "value": {
+      "available": true,
+      "indoor": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 52.57755,
+   "lon": 16.00506,
+   "name": "Olandia",
+   "official_url": "https://www.olandia.pl/",
+   "place": "prusim",
+   "slug": "olandia",
+   "status": "draft"
   },
   {
    "access": [
@@ -31049,6 +32106,169 @@
   {
    "access": [
     {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 65,
+     "mode": "car",
+     "note": "80 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B51.9286%2C16.3676",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 95,
+     "mode": "car",
+     "note": "120 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B51.9286%2C16.3676",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 205,
+     "mode": "car",
+     "note": "320 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B51.9286%2C16.3676",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 230,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B51.9286%2C16.3676",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 250,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B51.9286%2C16.3676",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 255,
+     "mode": "car",
+     "note": "400 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B51.9286%2C16.3676",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Spokojna 4a, 64-140 Włoszakowice",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Strona dla dzieci wymienia łóżeczko dla malucha wśród udogodnień. Opłaty strona nie podaje.",
+     "short": "Łóżeczko dla malucha",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hoteltoscania.pl/dzieci/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": "0-2",
+     "key": "child_free_stay",
+     "note": "Regulamin: dzieci do lat 2 śpiące na istniejącym łóżku nocują bezpłatnie. Cen dla starszych dzieci strona nie podaje.",
+     "short": "Do lat 2 gratis na istniejącym łóżku",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hoteltoscania.pl/regulamin/",
+     "value": {
+      "existing_bed": true,
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Strona dla dzieci wymienia krzesełko do karmienia.",
+     "short": "Krzesełko do karmienia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hoteltoscania.pl/dzieci/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja ma osobne menu dla najmłodszych, np. rosół z makaronem 16 zł, burgerek z kurczakiem 29 zł, pizza Margherita 30 zł; uwzględnia diety i alergie.",
+     "short": "Menu dla najmłodszych (od 16 zł)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hoteltoscania.pl/dzieci/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "W restauracji jest kącik z zabawkami dla dzieci. Minimalnego wieku strona nie podaje.",
+     "short": "Kącik z zabawkami w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hoteltoscania.pl/dzieci/",
+     "value": {
+      "available": true,
+      "corner": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Nowy, duży plac zabaw na zewnątrz, w zasięgu wzroku rodziców.",
+     "short": "Nowy, duży plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hoteltoscania.pl/dzieci/",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Regulamin: parking przy hotelu jest bezpłatny. Czy jest strzeżony, strona nie podaje.",
+     "short": "Bezpłatny parking przy hotelu",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hoteltoscania.pl/regulamin/",
+     "value": {
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 51.92859,
+   "lon": 16.36756,
+   "name": "Hotel Toscania",
+   "official_url": "https://hoteltoscania.pl/",
+   "place": "wloszakowice",
+   "slug": "hotel-toscania",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
      "from_code": "Gdańsk",
      "from_kind": "city",
      "minutes": 105,
@@ -34518,6 +35738,54 @@
    "name": "Żnin",
    "region": "Pałuki",
    "slug": "znin"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Barczyzna",
+   "region": "Wielkopolska",
+   "slug": "barczyzna"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Boszkowo-Letnisko",
+   "region": "Pojezierze Leszczyńskie",
+   "slug": "boszkowo-letnisko"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Pakosław",
+   "region": "Wielkopolska",
+   "slug": "pakoslaw"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Poznań",
+   "region": "Wielkopolska",
+   "slug": "poznan"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Prusim",
+   "region": "Wielkopolska",
+   "slug": "prusim"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Włoszakowice",
+   "region": "Pojezierze Leszczyńskie",
+   "slug": "wloszakowice"
   }
  ],
  "rule_keys": [
