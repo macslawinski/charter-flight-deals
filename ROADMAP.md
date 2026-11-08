@@ -205,6 +205,20 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       warmer, play corner). 7 śląskie leads left.
 - [ ] U (phone/e-mail, optional): Aries free-stay age, high chair; Złoty Groń cot, baby items; Ostaniec
       free-stay age, parking; Centuria free-stay age, high chair, parking.
+- [x] C: hotel leads dolnośląskie + podkarpackie (2026-11-08, find-hotels): first hotels outside the five coastal /
+      southern voivodeships (`hotel_leads/dolnoslaskie.toml`, `podkarpackie.toml`). New places Karpacz,
+      Szklarska Poręba, Staniszów (Karkonosze), Polanica-Zdrój (Kotlina Kłodzka), Polańczyk, Myczkowce, Arłamów
+      (Bieszczady), Chotowa (Podkarpacie, trip group "Jeziora i lasy"). Car access only (OSRM); train not checked.
+- [x] C: dolnośląskie + podkarpackie hotels, batch 1 (2026-11-08), 16 hotels, all `draft`. 8+ verified facts:
+      Czarny Kamień (12), Artus (10), Zefir (10), Mövenpick (9), Tremonti (9 + free stay to 6 or 3 to confirm),
+      Termy Karkonosze (8), Arłamów (8), Grand Chotowa (8). Under 8: Gołębiewski Karpacz, Mercure Skalny,
+      Green Mountain, Irena Eris Polanica, Solina Spa, Skalny SPA (6 + brodzik to confirm), Vivaldi, Kryształ.
+      Skipped: Norweska Dolina, Holiday Park Cieplice, Pensjonat Karkonoski (not hotels), Bacówka Radawa,
+      Salamandra, Perła Bieszczadów (too thin). Leads left: Hotel Las, Pałac Bielawa, Bergo, Five Seasons,
+      Lake Hill (dolnośląskie); Gościniec nad Sawą, Blue Diamond (podkarpackie).
+- [ ] C: train access for the Karkonosze / Bieszczady hotels (Jelenia Góra, Kłodzko, Zagórz stations).
+- [ ] U (phone/e-mail, optional): Tremonti free-stay age (6 vs 3); Skalny SPA brodzik; Artus cot fee; Czarny
+      Kamień cot fee; Arłamów cot fee and free-stay rule; most: playroom minimum age.
 - [x] ~~U: decide which pomorskie hotels to publish (all are `draft`);~~ superseded above; those under 8 facts need a phone or e-mail
       round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Kiston cot fee, free-stay age, brodzik; Primavera cot fee, Playland age;

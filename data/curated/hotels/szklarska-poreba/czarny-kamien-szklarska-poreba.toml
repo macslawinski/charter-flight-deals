@@ -1,0 +1,181 @@
+# Facts from the hotel's own website (czarnykamien.pl; robots.txt allows the pages, checked by the find-hotels
+# probe 2026-11-08): /dzieci, /hotel/faq. Written in our words.
+# Also on the site, no feature key for it: animations (art, sport, themed classes, games) only in certain packages; stroller storage at reception; indoor pool 8:00-21:30; no pets.
+# Not stated (so not recorded yet): cot fee amount, playroom hours and minimum age, lift, baby monitor.
+#
+# Coordinates: OpenStreetMap node/4552186789 centre ((c) OpenStreetMap contributors, ODbL).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet.
+slug = "czarny-kamien-szklarska-poreba"
+place = "szklarska-poreba"
+name = "Czarny Kamień Resort & SPA"
+official_url = "https://www.czarnykamien.pl/"
+address = "ul. Wojska Polskiego 11, 58-580 Szklarska Poręba"
+lat = 50.8308811
+lon = 15.5127825
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, paid = true }
+short = "Łóżeczko z materacem i pościelą, płatne"
+note = "Łóżeczko z materacem i pościelą dla małego dziecka jest za dodatkową opłatą. Kwoty strona nie podaje."
+source = "hotel_website"
+url = "https://www.czarnykamien.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "child_free_stay"
+age_band = "0-3"
+value = { free = true, sleeping_with_parents = true }
+short = "Do 3 lat gratis w łóżku z rodzicami"
+note = "Dzieci w wieku do lat 3 nocują bezpłatnie, jeżeli śpią na łóżku z rodzicami (FAQ). Strona nie mówi, czy dotyczy to także 3-latków."
+source = "hotel_website"
+url = "https://www.czarnykamien.pl/hotel/faq"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "high_chair"
+value = { available = true, where = "restaurant" }
+short = "Krzesełka dziecięce w restauracji"
+note = "W restauracji są krzesełka dziecięce."
+source = "hotel_website"
+url = "https://www.czarnykamien.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Dedykowane menu dla dzieci"
+note = "Restauracja ma dedykowane menu dla dzieci."
+source = "hotel_website"
+url = "https://www.czarnykamien.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true, on_request = true }
+short = "Podgrzewacz do butelek na życzenie"
+note = "Na życzenie dostępny jest podgrzewacz do butelek. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.czarnykamien.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, on_request = true }
+short = "Wanienka lub mata antypoślizgowa na życzenie"
+note = "Na życzenie: wanienka do kąpieli lub mata antypoślizgowa. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.czarnykamien.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "changing_table"
+value = { available = true, where = "public_toilet_and_rooms" }
+short = "Toaleta z przewijakiem; przewijak do pokoju"
+note = "W obiekcie jest toaleta z przewijakiem dla małych dzieci; przewijak można też dostać do apartamentu."
+source = "hotel_website"
+url = "https://www.czarnykamien.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "potty"
+value = { available = true, on_request = true, toilet_seat_adapter = true, step_stool = true }
+short = "Nocnik, podest lub nakładka na życzenie"
+note = "Na życzenie: nocnik oraz podest do toalety lub nakładka. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.czarnykamien.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Pokój Zabaw z klockami i bajkami"
+note = "Pokój Zabaw z klockami, zabawkami, grami i bajkami. Godzin strona nie podaje. Minimalnego wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.czarnykamien.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true, fenced = true }
+short = "Ogrodzony plac zabaw z atestami"
+note = "Plac zabaw jest ogrodzony, a urządzenia mają atesty."
+source = "hotel_website"
+url = "https://www.czarnykamien.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_pool"
+value = { available = true, warm = true, water_toys = true }
+short = "Basen dla dzieci z ciepłą wodą i zabawkami"
+note = "Basen dla dzieci z ciepłą wodą i zestawem wodnych zabawek. Godzin dla dzieci strona nie podaje (basen wewnętrzny 8:00–21:30)."
+source = "hotel_website"
+url = "https://www.czarnykamien.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { free = true }
+short = "Bezpłatny parking"
+note = "Parking jest bezpłatny dla wszystkich gości (FAQ)."
+source = "hotel_website"
+url = "https://www.czarnykamien.pl/hotel/faq"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 140
+note = "130 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.8309%2C15.5128"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 230
+note = "310 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.8309%2C15.5128"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 240
+note = "280 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.8309%2C15.5128"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 280
+note = "390 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.8309%2C15.5128"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 350
+note = "490 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.8309%2C15.5128"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 420
+note = "580 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.8309%2C15.5128"
+verified_at = 2026-11-08

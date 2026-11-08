@@ -1,0 +1,144 @@
+# Facts from the hotel's own website (termykarkonosze.pl; robots.txt allows the pages, checked by the find-hotels
+# probe 2026-11-08): /dzieci. Written in our words.
+# Also on the site, no feature key for it: meals for special diets and allergies on request.
+# Not stated (so not recorded yet): item fees, free-stay age, playroom hours and minimum age, animation ages, baby bath, changing table, lift, parking.
+#
+# Coordinates: OpenStreetMap way/1232876155 centre ((c) OpenStreetMap contributors, ODbL).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet.
+slug = "termy-karkonosze-staniszow"
+place = "staniszow"
+name = "Termy Karkonosze Resort & Spa"
+official_url = "https://termykarkonosze.pl/"
+address = "ul. Zdrojowa 2, 58-500 Staniszów"
+lat = 50.8627244
+lon = 15.7287856
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true }
+short = "Łóżeczko na życzenie"
+note = "Na życzenie hotel zapewnia łóżeczka. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://termykarkonosze.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "high_chair"
+value = { available = true, on_request = true }
+short = "Krzesełka do karmienia na życzenie"
+note = "Na życzenie hotel zapewnia krzesełka do karmienia."
+source = "hotel_website"
+url = "https://termykarkonosze.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Specjalne menu dla dzieci"
+note = "Restauracja ma specjalne menu dla dzieci."
+source = "hotel_website"
+url = "https://termykarkonosze.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Sala zabaw dla najmłodszych"
+note = "Sala zabaw z atrakcjami dostosowanymi do wieku dzieci. Godzin strona nie podaje. Minimalnego wieku strona nie podaje."
+source = "hotel_website"
+url = "https://termykarkonosze.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, seasonal = true }
+short = "Animacje w wakacje, ferie i wybrane weekendy"
+note = "Animacje są w wakacje, ferie i wybrane weekendy, według harmonogramu w recepcji. Wieku strona nie podaje."
+source = "hotel_website"
+url = "https://termykarkonosze.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "Zewnętrzny plac zabaw"
+note = "Na dzieci czeka zewnętrzny plac zabaw."
+source = "hotel_website"
+url = "https://termykarkonosze.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_pool"
+value = { available = true, shallow = true }
+short = "Płytki basen zaprojektowany dla dzieci"
+note = "Basen dla dzieci jest płytki, zaprojektowany z myślą o bezpieczeństwie i komforcie dzieci. Godzin strona nie podaje."
+source = "hotel_website"
+url = "https://termykarkonosze.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "stroller_rental"
+value = { available = true, free = true, subject_to_availability = true, max_weight_kg = 22 }
+short = "Bezpłatne wózki dla dzieci do 22 kg"
+note = "Na miejscu są bezpłatne wózki PICO marki My Junior dla dzieci do 22 kg, bez rezerwacji; hotel nie gwarantuje dostępności."
+source = "hotel_website"
+url = "https://termykarkonosze.pl/dzieci"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 120
+note = "120 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.8627%2C15.7288"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 210
+note = "290 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.8627%2C15.7288"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 220
+note = "260 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.8627%2C15.7288"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 265
+note = "370 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.8627%2C15.7288"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 330
+note = "470 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.8627%2C15.7288"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 405
+note = "560 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.8627%2C15.7288"
+verified_at = 2026-11-08

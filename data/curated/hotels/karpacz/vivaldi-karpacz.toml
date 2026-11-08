@@ -1,0 +1,117 @@
+# Facts from the hotel's own website (vivaldi.pl, pages under /karpacz; robots.txt allows the pages, checked by the find-hotels
+# probe 2026-11-08): /karpacz/hotel/dla-dzieci. Written in our words.
+# Also on the site, no feature key for it: a pool with floating toys and a sandpit with toys (no separate children's pool stated).
+# Not stated (so not recorded yet): cot fee, free-stay age, playroom hours and minimum age, animations, changing table, lift, parking.
+#
+# Coordinates: OpenStreetMap way/350125593 centre ((c) OpenStreetMap contributors, ODbL).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet.
+slug = "vivaldi-karpacz"
+place = "karpacz"
+name = "Hotel Vivaldi Karpacz"
+official_url = "https://www.vivaldi.pl/karpacz"
+address = "ul. Olimpijska 4, 58-540 Karpacz"
+lat = 50.7725885
+lon = 15.738918
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true }
+short = "Łóżeczko z pościelą"
+note = "Hotel udostępnia łóżeczko z pościelą. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.vivaldi.pl/karpacz/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "high_chair"
+value = { available = true, where = "restaurant" }
+short = "Krzesełko w restauracji"
+note = "W restauracji jest krzesełko dla dziecka."
+source = "hotel_website"
+url = "https://www.vivaldi.pl/karpacz/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Specjalne menu w restauracji"
+note = "Restauracja ma specjalne menu dla dzieci."
+source = "hotel_website"
+url = "https://www.vivaldi.pl/karpacz/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_bath"
+value = { available = true }
+short = "Wanienka do kąpieli"
+note = "Hotel udostępnia wanienkę do kąpieli. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.vivaldi.pl/karpacz/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Pokój zabaw z przyborami do rysowania"
+note = "Pokój zabaw z przyborami do zabawy, rysowania i malowania. Godzin strona nie podaje. Minimalnego wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.vivaldi.pl/karpacz/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 125
+note = "130 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.7726%2C15.7389"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 215
+note = "300 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.7726%2C15.7389"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 225
+note = "270 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.7726%2C15.7389"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 270
+note = "380 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.7726%2C15.7389"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 335
+note = "480 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.7726%2C15.7389"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 405
+note = "570 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.7726%2C15.7389"
+verified_at = 2026-11-08

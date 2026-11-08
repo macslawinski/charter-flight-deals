@@ -1,0 +1,136 @@
+# Facts from the hotel's own website (drirenaerisspa.pl, pages under /polanica-zdroj; robots.txt allows the pages, checked by the find-hotels
+# probe 2026-11-08): /polanica-zdroj, /polanica-zdroj/hotel/dzieci-w-hotelu. Written in our words.
+# Also on the site, no feature key for it: a professional babysitter to hire on request; a multimedia room for teenagers; children under 11 in the sauna zone only with adults; children 3-12 stay for an extra charge.
+# Not stated (so not recorded yet): cot fee, playroom hours and minimum age, animation ages (schedule linked), baby bath, changing table, lift, parking.
+#
+# Coordinates: OpenStreetMap way/368583597 centre ((c) OpenStreetMap contributors, ODbL).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet.
+slug = "irena-eris-polanica-zdroj"
+place = "polanica-zdroj"
+name = "Dr Irena Eris Polanica Resort & SPA"
+official_url = "https://www.drirenaerisspa.pl/polanica-zdroj"
+address = "ul. Dębowa 19b, 57-320 Polanica-Zdrój"
+lat = 50.4114943
+lon = 16.5026063
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true }
+short = "Łóżeczko dla małego dziecka na życzenie"
+note = "Na życzenie: łóżeczko dla małego dziecka. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.drirenaerisspa.pl/polanica-zdroj/hotel/dzieci-w-hotelu"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "child_free_stay"
+age_band = "0-3"
+value = { free = true, meals_included = true }
+short = "Pobyt do ukończenia 3 lat bezpłatny"
+note = "Pobyt dzieci do ukończenia 3. roku życia jest bezpłatny (nocleg i wyżywienie); dzieci od 3 do 12 lat płacą dodatkowo."
+source = "hotel_website"
+url = "https://www.drirenaerisspa.pl/polanica-zdroj/hotel/dzieci-w-hotelu"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "high_chair"
+value = { available = true, where = "restaurant" }
+short = "Krzesełka dla maluchów w restauracji"
+note = "W Restauracji Art Déco są krzesełka dla maluchów."
+source = "hotel_website"
+url = "https://www.drirenaerisspa.pl/polanica-zdroj/hotel/dzieci-w-hotelu"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Menu dla dzieci w Restauracji Art Déco"
+note = "Restauracja Art Déco ma specjalne menu dla dzieci."
+source = "hotel_website"
+url = "https://www.drirenaerisspa.pl/polanica-zdroj/hotel/dzieci-w-hotelu"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Sala zabaw dla młodszych dzieci"
+note = "Sala dla młodszych dzieci pełna zabawek (osobno sala multimedialna dla nastolatków). Godzin strona nie podaje. Minimalnego wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.drirenaerisspa.pl/polanica-zdroj/hotel/dzieci-w-hotelu"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "Plac zabaw dla dzieci"
+note = "Hotel ma plac zabaw dla dzieci."
+source = "hotel_website"
+url = "https://www.drirenaerisspa.pl/polanica-zdroj/hotel/dzieci-w-hotelu"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_pool"
+value = { available = true }
+short = "Basen dla dzieci w Centrum SPA"
+note = "W Centrum SPA jest basen dla dzieci. Godzin strona nie podaje."
+source = "hotel_website"
+url = "https://www.drirenaerisspa.pl/polanica-zdroj/hotel/dzieci-w-hotelu"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 110
+note = "100 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.4115%2C16.5026"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 170
+note = "220 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.4115%2C16.5026"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 225
+note = "280 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.4115%2C16.5026"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 225
+note = "300 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.4115%2C16.5026"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 320
+note = "450 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.4115%2C16.5026"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 410
+note = "580 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.4115%2C16.5026"
+verified_at = 2026-11-08

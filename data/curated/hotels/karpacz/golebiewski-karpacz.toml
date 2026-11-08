@@ -1,0 +1,135 @@
+# Facts from the hotel's own website (golebiewski.pl, pages under /karpacz; robots.txt allows the pages, checked by the find-hotels
+# probe 2026-11-08): /karpacz, /karpacz/dzieci, /karpacz/info. Written in our words.
+# Also on the site, no feature key for it: Tropikana water park hours Mon-Fri 11:00-21:00, Sat-Sun 9:00-21:00 (whether entry is included is not stated); terms for children up to 14 depend on the current packages (FAQ).
+# Not stated (so not recorded yet): cot fee, free-stay age, lift, changing table, bottle warmer, animation details.
+#
+# Coordinates: OpenStreetMap way/201273540 centre ((c) OpenStreetMap contributors, ODbL).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet.
+slug = "golebiewski-karpacz"
+place = "karpacz"
+name = "Hotel Gołębiewski Karpacz"
+official_url = "https://www.golebiewski.pl/karpacz"
+address = "ul. Karkonoska 14, 58-540 Karpacz"
+lat = 50.777426
+lon = 15.730459
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true }
+short = "Łóżeczko turystyczne z pościelą na życzenie"
+note = "Na życzenie: łóżeczko turystyczne z pościelą. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.golebiewski.pl/karpacz/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "high_chair"
+value = { available = true, where = "restaurant" }
+short = "Krzesełko do karmienia w restauracji"
+note = "Krzesełko do karmienia jest dostępne w restauracji podczas posiłków."
+source = "hotel_website"
+url = "https://www.golebiewski.pl/karpacz/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Menu dla dzieci w restauracji Smakolandia"
+note = "Restauracja Smakolandia ma menu dla młodych gości."
+source = "hotel_website"
+url = "https://www.golebiewski.pl/karpacz/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, on_request = true }
+short = "Wanienka na życzenie"
+note = "Na życzenie: wanienka do kąpieli. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.golebiewski.pl/karpacz/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true, open = "09:00", close = "21:00", with_parent_under_years = 5 }
+short = "Klub dla Dzieci 9–21, do 5 lat z dorosłym"
+note = "Klub dla Dzieci jest czynny codziennie 9:00–21:00; dzieci do 5 lat mogą w nim przebywać tylko z dorosłym."
+source = "hotel_website"
+url = "https://www.golebiewski.pl/karpacz/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "paddling_pool"
+value = { indoor = true, heated = true }
+short = "Brodzik z ciepłą wodą i piaskownicą w Tropikanie"
+note = "W parku wodnym Tropikana jest bezpieczny brodzik dla dzieci z ciepłą wodą i piaskownicą."
+source = "hotel_website"
+url = "https://www.golebiewski.pl/karpacz/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { paid = true, fee_pln_per_day = 50, underground_fee_pln_per_day = 70, reservable = false }
+short = "Parking 50 zł/doba, podziemny 70 zł/doba"
+note = "Parking zewnętrzny 50 zł za dobę za pojazd, podziemny 70 zł; miejsc nie można zarezerwować."
+source = "hotel_website"
+url = "https://www.golebiewski.pl/karpacz/info"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 125
+note = "130 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.7774%2C15.7305"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 220
+note = "310 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.7774%2C15.7305"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 225
+note = "270 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.7774%2C15.7305"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 270
+note = "380 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.7774%2C15.7305"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 335
+note = "480 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.7774%2C15.7305"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 410
+note = "580 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.7774%2C15.7305"
+verified_at = 2026-11-08

@@ -1,0 +1,162 @@
+# Facts from the hotel's own website (hotel-zefir.pl; robots.txt allows the pages, checked by the find-hotels
+# probe 2026-11-08): /dla-dzieci/. Written in our words.
+# Also on the site, no feature key for it: children up to 12 stay on special price terms depending on age and booking option.
+# Not stated (so not recorded yet): item fees, free-stay age, playroom hours and minimum age, animation ages, changing table, lift, parking.
+#
+# Coordinates: OpenStreetMap node/12806019451 centre ((c) OpenStreetMap contributors, ODbL).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet.
+slug = "zefir-polanczyk"
+place = "polanczyk"
+name = "Hotel Zefir"
+official_url = "https://hotel-zefir.pl/"
+address = "ul. Dworska 13, 38-610 Polańczyk"
+lat = 49.363228
+lon = 22.4305452
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true }
+short = "Łóżeczko turystyczne z pościelą do wypożyczenia"
+note = "Przy rezerwacji można wypożyczyć łóżeczko turystyczne z pościelą. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://hotel-zefir.pl/dla-dzieci/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "high_chair"
+value = { available = true, where = "restaurant" }
+short = "Krzesełka do karmienia w restauracji"
+note = "W restauracji są krzesełka do karmienia."
+source = "hotel_website"
+url = "https://hotel-zefir.pl/dla-dzieci/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Dania dla dzieci w menu obiadowym"
+note = "W menu obiadowym jest osobna pozycja z daniami dla dzieci."
+source = "hotel_website"
+url = "https://hotel-zefir.pl/dla-dzieci/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, on_request = true }
+short = "Wanienka do wypożyczenia"
+note = "Przy rezerwacji można wypożyczyć wanienkę. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://hotel-zefir.pl/dla-dzieci/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "potty"
+value = { available = true, on_request = true, toilet_seat_adapter = true }
+short = "Nocnik lub nakładka na WC do wypożyczenia"
+note = "Przy rezerwacji można wypożyczyć nakładkę na WC lub nocnik. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://hotel-zefir.pl/dla-dzieci/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Sala zabaw z miejscami dla rodziców"
+note = "Rodzice mogą doglądać dzieci w sali zabaw ze specjalnie wyznaczonych miejsc. Godzin strona nie podaje. Minimalnego wieku strona nie podaje."
+source = "hotel_website"
+url = "https://hotel-zefir.pl/dla-dzieci/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_animation"
+value = { available = true }
+short = "Animacje zależnie od pakietu i terminu"
+note = "Harmonogram i tematyka animacji zależą od wybranej opcji pobytu i terminu. Wieku strona nie podaje."
+source = "hotel_website"
+url = "https://hotel-zefir.pl/dla-dzieci/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true, fenced = true }
+short = "Ogrodzony plac zabaw"
+note = "Plac zabaw jest na ogrodzonym, zamkniętym terenie."
+source = "hotel_website"
+url = "https://hotel-zefir.pl/dla-dzieci/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "paddling_pool"
+value = { indoor = true, heated = true }
+short = "Całoroczny basen z brodzikiem"
+note = "Całoroczny basen z podgrzewaną wodą, brodzikiem i hydromasażem. Godzin strona nie podaje."
+source = "hotel_website"
+url = "https://hotel-zefir.pl/dla-dzieci/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_pool"
+value = { available = true, splash_park = true, indoor = true }
+short = "Wewnętrzny wodny plac zabaw"
+note = "Hotel opisuje też wewnętrzny wodny plac zabaw. Wieku i godzin strona nie podaje."
+source = "hotel_website"
+url = "https://hotel-zefir.pl/dla-dzieci/"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 230
+note = "270 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.3632%2C22.4305"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 270
+note = "350 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.3632%2C22.4305"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 360
+note = "440 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.3632%2C22.4305"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 385
+note = "540 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.3632%2C22.4305"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 500
+note = "730 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.3632%2C22.4305"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 560
+note = "870 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.3632%2C22.4305"
+verified_at = 2026-11-08
