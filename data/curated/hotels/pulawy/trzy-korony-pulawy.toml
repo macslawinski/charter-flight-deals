@@ -1,0 +1,135 @@
+# Facts from the hotel's own website (trzy-korony.com; robots.txt allows the pages, checked by the find-hotels probe 2026-11-08):
+# /odkryj-trzy-korony/dzieci-w-hotelu. Written in our words.
+# Also on the site, no feature key for it: sledges to rent in winter; garden chess; children's parties (events, not recorded).
+# Not stated (so not recorded yet): high chair, bottle warmer, potty, playroom hours and age, animations for guests, pool, lift, parking.
+#
+# Coordinates: OpenStreetMap way/438281758 centre ((c) OpenStreetMap contributors, ODbL).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet.
+slug = "trzy-korony-pulawy"
+place = "pulawy"
+name = "Trzy Korony Boutique Hotel"
+official_url = "https://www.trzy-korony.com/"
+address = "ul. 6-go Sierpnia 43b, 24-100 Puławy"
+lat = 51.4217492
+lon = 21.9483489
+status = "published"
+
+[[feature]]
+key = "cot"
+value = { available = true, free = true }
+short = "Łóżeczko do wypożyczenia bezpłatnie"
+note = "W hotelu można bezpłatnie wypożyczyć łóżeczko."
+source = "hotel_website"
+url = "https://www.trzy-korony.com/odkryj-trzy-korony/dzieci-w-hotelu"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "child_free_stay"
+value = { free = true, max_age_years = 4 }
+short = "Dzieci do 4 roku życia za darmo"
+note = "Dzieci do 4. roku życia przebywają w hotelu za darmo. Czy dotyczy to także 4-latków, strona nie rozstrzyga."
+source = "hotel_website"
+url = "https://www.trzy-korony.com/odkryj-trzy-korony/dzieci-w-hotelu"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Dania dla dzieci"
+note = "Restauracja ma dania przygotowane specjalnie dla dzieci."
+source = "hotel_website"
+url = "https://www.trzy-korony.com/odkryj-trzy-korony/dzieci-w-hotelu"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, free = true }
+short = "Wanienka do wypożyczenia bezpłatnie"
+note = "Bezpłatnie można wypożyczyć wanienkę do kąpieli."
+source = "hotel_website"
+url = "https://www.trzy-korony.com/odkryj-trzy-korony/dzieci-w-hotelu"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "changing_table"
+value = { available = true, free = true, where = "room" }
+short = "Przewijak do wypożyczenia bezpłatnie"
+note = "Bezpłatnie można wypożyczyć przewijak."
+source = "hotel_website"
+url = "https://www.trzy-korony.com/odkryj-trzy-korony/dzieci-w-hotelu"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Kącik klocków dla dzieci"
+note = "Hotel ma kącik z klockami dla młodszych i starszych dzieci. Godzin strona nie podaje. Minimalnego wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.trzy-korony.com/odkryj-trzy-korony/dzieci-w-hotelu"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "Plac zabaw ze zjeżdżalnią i huśtawkami"
+note = "Plac zabaw ze zjeżdżalnią, huśtawkami i trampolinami."
+source = "hotel_website"
+url = "https://www.trzy-korony.com/odkryj-trzy-korony/dzieci-w-hotelu"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 105
+note = "140 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B51.4217%2C21.9483"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 205
+note = "260 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B51.4217%2C21.9483"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 240
+note = "330 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B51.4217%2C21.9483"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 275
+note = "450 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B51.4217%2C21.9483"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 320
+note = "490 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B51.4217%2C21.9483"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 335
+note = "480 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B51.4217%2C21.9483"
+verified_at = 2026-11-08

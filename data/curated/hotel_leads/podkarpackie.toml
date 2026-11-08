@@ -37,7 +37,8 @@ official_url = "https://www.gosciniecnadsawa.pl/"
 kids_url = "https://www.gosciniecnadsawa.pl/sala-zabaw/urodziny-w-sali-zabaw"
 signals = ["sala zabaw", "do 3 lat"]
 why = "Do sprawdzenia: probe widzi salę zabaw i 'do 3 lat', ale tylko na stronie urodzin; trzeba znaleźć ofertę noclegową dla dzieci."
-status = "lead"
+status = "skipped"
+skip_reason = "Gościniec z restauracją i komercyjną salą zabaw Bajkolandia; strony hotelu nic nie mówią o łóżeczku ani innych rzeczach dla 0-3."
 
 [[lead]]
 name = "Hotel Solina Spa"
@@ -57,7 +58,8 @@ town = "Nowa Wieś"
 official_url = "https://bluediamond-hotel.pl/"
 signals = ["łóżeczko", "wanienka"]
 why = "Do sprawdzenia: probe widzi łóżeczko i wanienkę, ale nazwy hotelu nie ma na stronie (flaga name_not_on_site)."
-status = "lead"
+status = "skipped"
+skip_reason = "Domena to blog poradnikowy o hotelach, nie strona hotelu."
 
 [[lead]]
 name = "Hotel Skalny SPA Bieszczady"

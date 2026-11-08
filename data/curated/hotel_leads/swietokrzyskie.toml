@@ -1,0 +1,59 @@
+# Leads for Product B: hotels in województwo świętokrzyskie whose own website shows an offer for children
+# 0-3. Discovered via OpenStreetMap (tourism=hotel, leisure=resort; (c) OpenStreetMap contributors,
+# ODbL) and web search pointing to the hotels' own sites. Leads not yet read are probe hits only.
+# Not facts: the curate-hotel skill reads the facts.
+voivodeship = "swietokrzyskie"
+checked_at = 2026-11-08
+covered = ["całe województwo (probe, top 40), 2026-11-08"]
+
+[[lead]]
+name = "Hotel Uroczysko Spa & Business"
+town = "Cedzyna"
+official_url = "https://www.hotel-uroczysko.com.pl/"
+kids_url = "https://www.hotel-uroczysko.com.pl/kids-club.php"
+osm = "way/1391444458"
+signals = ["brodzik", "sala zabaw", "plac zabaw"]
+why = "Brodzik dla dzieci, sala zabaw, wewnętrzny i zewnętrzny plac zabaw."
+status = "curated"
+
+[[lead]]
+name = "Hotel Mały Rzym"
+town = "Sandomierz"
+official_url = "https://www.malyrzym.pl/"
+kids_url = "https://www.malyrzym.pl/atrakcje-dla-dzieci"
+osm = "way/354273759"
+signals = ["sala zabaw", "kącik malucha", "menu dziecięce"]
+why = "Sala zabaw, kącik malucha w restauracji, menu dziecięce, animacje, plac zabaw."
+status = "curated"
+
+[[lead]]
+name = "Mineral Hotel Malinowy Raj"
+town = "Solec-Zdrój"
+official_url = "https://www.malinowyraj.com/"
+kids_url = "https://www.malinowyraj.com/baseny/dla-dzieci"
+osm = "way/427559978"
+signals = ["brodzik", "krzesełko", "przewijak"]
+why = "Brodzik 15-30 cm (33-34°C), krzesełka i miejsce do przewijania przy basenach."
+status = "curated"
+
+[[lead]]
+name = "Malinowy Zdrój Medical Spa"
+town = "Solec-Zdrój"
+official_url = "https://www.malinowyzdroj.pl/"
+why = "Siostrzany hotel Malinowego Raju; nie czytany."
+status = "lead"
+
+[[lead]]
+name = "Binkowski Resort"
+town = "Kielce"
+official_url = "https://www.binkowskihotel.pl/"
+kids_url = "https://www.binkowskihotel.pl/dzieci/bawialnia-i-plac-zabaw"
+status = "skipped"
+skip_reason = "Bawialnia od 6 lat, kino; strona nie wymienia nic dla 0-3 (część tekstu to lorem ipsum)."
+
+[[lead]]
+name = "Cztery Wiatry Spa & Sport Resort"
+town = "Korytnica"
+official_url = "https://resort.czterywiatry.pl/"
+status = "skipped"
+skip_reason = "Aparthotel; strona nie wymienia nic konkretnego dla 0-3."

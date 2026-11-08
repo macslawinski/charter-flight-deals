@@ -4267,6 +4267,115 @@
   {
    "access": [
     {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 105,
+     "mode": "car",
+     "note": "130 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.8705%2C20.7366",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 130,
+     "mode": "car",
+     "note": "180 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.8705%2C20.7366",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 140,
+     "mode": "car",
+     "note": "200 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.8705%2C20.7366",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 255,
+     "mode": "car",
+     "note": "400 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.8705%2C20.7366",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 280,
+     "mode": "car",
+     "note": "370 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.8705%2C20.7366",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 335,
+     "mode": "car",
+     "note": "480 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.8705%2C20.7366",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "Cedzyna 44D, 25-900 Kielce",
+   "features": [
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala zabaw z puzzlami, grami planszowymi i kolorowankami (zależnie od dostępności sal). Godzin strona nie podaje. Minimalnego wieku strona nie podaje.",
+     "short": "Sala zabaw z grami i kolorowankami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-uroczysko.com.pl/kids-club.php",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Hotel ma wewnętrzny i zewnętrzny plac zabaw.",
+     "short": "Wewnętrzny i zewnętrzny plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-uroczysko.com.pl/kids-club.php",
+     "value": {
+      "available": true,
+      "indoor": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Hotel ma brodzik dla dzieci. Głębokości i godzin strona nie podaje.",
+     "short": "Brodzik dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel-uroczysko.com.pl/kids-club.php",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.8704906,
+   "lon": 20.7365889,
+   "name": "Hotel Uroczysko Spa & Business",
+   "official_url": "https://www.hotel-uroczysko.com.pl/",
+   "place": "cedzyna",
+   "slug": "uroczysko-cedzyna",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
      "from_code": "Gdańsk",
      "from_kind": "city",
      "minutes": 80,
@@ -8780,6 +8889,199 @@
    "place": "jachranka",
    "slug": "hotel-warszawianka",
    "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 120,
+     "mode": "car",
+     "note": "180 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B52.1979%2C23.2006",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 290,
+     "mode": "car",
+     "note": "480 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B52.1979%2C23.2006",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 295,
+     "mode": "car",
+     "note": "460 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B52.1979%2C23.2006",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 295,
+     "mode": "car",
+     "note": "500 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B52.1979%2C23.2006",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 330,
+     "mode": "car",
+     "note": "530 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B52.1979%2C23.2006",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 345,
+     "mode": "car",
+     "note": "510 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B52.1979%2C23.2006",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Zamkowa 1, 21-505 Janów Podlaski",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na życzenie hotel daje do pokoju łóżeczko. Opłaty strona nie podaje.",
+     "short": "Łóżeczko w pokoju na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.zamekjanowpodlaski.pl/hotel-przyjazny-dzieciom",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "child_free_stay",
+     "note": "Wszystkie dzieci do lat 5 nocujące razem z rodzicami mają pobyt gratis.",
+     "short": "Dzieci do lat 5 nocujące z rodzicami gratis",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.zamekjanowpodlaski.pl/hotel-przyjazny-dzieciom",
+     "value": {
+      "free": true,
+      "max_age_years": 5,
+      "sleeping_with_parents": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W restauracji są krzesełka do karmienia.",
+     "short": "Krzesełka do karmienia w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.zamekjanowpodlaski.pl/hotel-przyjazny-dzieciom",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja Masztalerz ma menu dziecięce.",
+     "short": "Menu dziecięce w restauracji Masztalerz",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.zamekjanowpodlaski.pl/hotel-przyjazny-dzieciom",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Na życzenie hotel daje do pokoju wanienkę. Opłaty strona nie podaje.",
+     "short": "Wanienka na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.zamekjanowpodlaski.pl/hotel-przyjazny-dzieciom",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Przewijak dla niemowląt jest w strefie wellness.",
+     "short": "Przewijak w strefie wellness",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.zamekjanowpodlaski.pl/hotel-przyjazny-dzieciom",
+     "value": {
+      "available": true,
+      "where": "wellness"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Hotel cyklicznie organizuje warsztaty z animatorami, kino bajkowe i dmuchańce. Terminów i wieku strona nie podaje.",
+     "short": "Cykliczne warsztaty z animatorami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.zamekjanowpodlaski.pl/hotel-przyjazny-dzieciom",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Zewnętrzny plac zabaw z huśtawkami, zjeżdżalniami, mini ścianką wspinaczkową, piaskownicą i bujakiem.",
+     "short": "Plac zabaw z piaskownicą i mini ścianką",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.zamekjanowpodlaski.pl/hotel-przyjazny-dzieciom",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Płytkie baseny typu brodzik są w wewnętrznej i zewnętrznej strefie wellness. Głębokości i godzin strona nie podaje.",
+     "short": "Brodziki w wewnętrznej i zewnętrznej strefie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.zamekjanowpodlaski.pl/hotel-przyjazny-dzieciom",
+     "value": {
+      "indoor": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 52.1978929,
+   "lon": 23.2006045,
+   "name": "Hotel Zamek Janów Podlaski",
+   "official_url": "https://www.zamekjanowpodlaski.pl/",
+   "place": "janow-podlaski",
+   "slug": "zamek-janow-podlaski",
+   "status": "published"
   },
   {
    "access": [
@@ -15386,6 +15688,142 @@
   {
    "access": [
     {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 145,
+     "mode": "car",
+     "note": "210 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.9289%2C22.2522",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 180,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.9289%2C22.2522",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 220,
+     "mode": "car",
+     "note": "360 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.9289%2C22.2522",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 315,
+     "mode": "car",
+     "note": "520 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.9289%2C22.2522",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 335,
+     "mode": "car",
+     "note": "550 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.9289%2C22.2522",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 375,
+     "mode": "car",
+     "note": "550 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.9289%2C22.2522",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Kolejowa 6, 23-200 Kraśnik",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Hotel ma łóżeczko turystyczne. Opłaty strona nie podaje.",
+     "short": "Łóżeczko turystyczne",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelkraft.pl/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja Rubio ma menu przygotowane dla dzieci.",
+     "short": "Menu dla dzieci w restauracji Rubio",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelkraft.pl/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Hotel ma pomieszczenie do przewijania i karmienia z miejscem do siedzenia i przewijakiem.",
+     "short": "Pokój do przewijania i karmienia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelkraft.pl/dzieci",
+     "value": {
+      "available": true,
+      "where": "feeding_room"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Tuż przy restauracji jest kącik zabaw. Godzin strona nie podaje. Minimalnego wieku strona nie podaje.",
+     "short": "Kącik zabaw przy restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelkraft.pl/dzieci",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Na zewnątrz jest kolorowy plac zabaw.",
+     "short": "Plac zabaw na zewnątrz",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelkraft.pl/dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.9288503,
+   "lon": 22.2521897,
+   "name": "Hotel Kraft",
+   "official_url": "https://www.hotelkraft.pl/",
+   "place": "krasnik",
+   "slug": "kraft-krasnik",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
      "from_code": "HER",
      "from_kind": "airport",
      "minutes": 25,
@@ -19808,6 +20246,171 @@
   {
    "access": [
     {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 120,
+     "mode": "car",
+     "note": "160 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B51.2920%2C22.2107",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 225,
+     "mode": "car",
+     "note": "340 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B51.2920%2C22.2107",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 265,
+     "mode": "car",
+     "note": "420 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B51.2920%2C22.2107",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 290,
+     "mode": "car",
+     "note": "460 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B51.2920%2C22.2107",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 330,
+     "mode": "car",
+     "note": "510 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B51.2920%2C22.2107",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 345,
+     "mode": "car",
+     "note": "500 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B51.2920%2C22.2107",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Spółdzielcza 4B, 24-150 Nałęczów",
+   "features": [
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W Restauracji Retro są krzesełka do karmienia.",
+     "short": "Krzesełka do karmienia w restauracji Retro",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://archenaleczow.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "W menu à la carte są dania dla dzieci (menu dziecięce w PDF).",
+     "short": "Menu dla dzieci (PDF)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://archenaleczow.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "W Restauracji Retro można podgrzać butelki i słoiczki.",
+     "short": "Podgrzanie butelek i słoiczków w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://archenaleczow.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": "3+",
+     "key": "playroom",
+     "note": "Sala Zabaw Harce jest dla dzieci od 4. roku życia i ich rodziców. Godzin strona nie podaje.",
+     "short": "Sala Zabaw Harce od 4 lat",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://archenaleczow.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "min_age_years": 4
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Hotel prowadzi programy animacyjne dla dzieci w wakacje, ferie, długie weekendy i święta. Wieku strona nie podaje.",
+     "short": "Animacje w wakacje, ferie, długie weekendy i święta",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://archenaleczow.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Brodzik z płytką wodą jest w strefie basenowej, otwartej dla dzieci codziennie do 19:00. Głębokości strona nie podaje.",
+     "short": "Brodzik, dzieci w strefie basenowej do 19:00",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://archenaleczow.pl/hotel-dla-dzieci",
+     "value": {
+      "children_until": "19:00",
+      "indoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Hotel ma zewnętrzny plac zabaw.",
+     "short": "Zewnętrzny plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://archenaleczow.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 51.2920462,
+   "lon": 22.2106596,
+   "name": "Arche Nałęczów",
+   "official_url": "https://archenaleczow.pl/",
+   "place": "naleczow",
+   "slug": "arche-naleczow",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
      "from_code": "Gdańsk",
      "from_kind": "city",
      "minutes": 205,
@@ -23562,6 +24165,171 @@
     {
      "from_code": "Warszawa",
      "from_kind": "city",
+     "minutes": 105,
+     "mode": "car",
+     "note": "140 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B51.4217%2C21.9483",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 205,
+     "mode": "car",
+     "note": "260 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B51.4217%2C21.9483",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 240,
+     "mode": "car",
+     "note": "330 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B51.4217%2C21.9483",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 275,
+     "mode": "car",
+     "note": "450 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B51.4217%2C21.9483",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 320,
+     "mode": "car",
+     "note": "490 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B51.4217%2C21.9483",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 335,
+     "mode": "car",
+     "note": "480 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B51.4217%2C21.9483",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. 6-go Sierpnia 43b, 24-100 Puławy",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "W hotelu można bezpłatnie wypożyczyć łóżeczko.",
+     "short": "Łóżeczko do wypożyczenia bezpłatnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.trzy-korony.com/odkryj-trzy-korony/dzieci-w-hotelu",
+     "value": {
+      "available": true,
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "child_free_stay",
+     "note": "Dzieci do 4. roku życia przebywają w hotelu za darmo. Czy dotyczy to także 4-latków, strona nie rozstrzyga.",
+     "short": "Dzieci do 4 roku życia za darmo",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.trzy-korony.com/odkryj-trzy-korony/dzieci-w-hotelu",
+     "value": {
+      "free": true,
+      "max_age_years": 4
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja ma dania przygotowane specjalnie dla dzieci.",
+     "short": "Dania dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.trzy-korony.com/odkryj-trzy-korony/dzieci-w-hotelu",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Bezpłatnie można wypożyczyć wanienkę do kąpieli.",
+     "short": "Wanienka do wypożyczenia bezpłatnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.trzy-korony.com/odkryj-trzy-korony/dzieci-w-hotelu",
+     "value": {
+      "available": true,
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Bezpłatnie można wypożyczyć przewijak.",
+     "short": "Przewijak do wypożyczenia bezpłatnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.trzy-korony.com/odkryj-trzy-korony/dzieci-w-hotelu",
+     "value": {
+      "available": true,
+      "free": true,
+      "where": "room"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Hotel ma kącik z klockami dla młodszych i starszych dzieci. Godzin strona nie podaje. Minimalnego wieku strona nie podaje.",
+     "short": "Kącik klocków dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.trzy-korony.com/odkryj-trzy-korony/dzieci-w-hotelu",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Plac zabaw ze zjeżdżalnią, huśtawkami i trampolinami.",
+     "short": "Plac zabaw ze zjeżdżalnią i huśtawkami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.trzy-korony.com/odkryj-trzy-korony/dzieci-w-hotelu",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 51.4217492,
+   "lon": 21.9483489,
+   "name": "Trzy Korony Boutique Hotel",
+   "official_url": "https://www.trzy-korony.com/",
+   "place": "pulawy",
+   "slug": "trzy-korony-pulawy",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
      "minutes": 35,
      "mode": "car",
      "note": "40 km",
@@ -24821,6 +25589,127 @@
   {
    "access": [
     {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 175,
+     "mode": "car",
+     "note": "190 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.6893%2C21.7463",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 200,
+     "mode": "car",
+     "note": "220 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.6893%2C21.7463",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 215,
+     "mode": "car",
+     "note": "270 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.6893%2C21.7463",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 330,
+     "mode": "car",
+     "note": "470 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.6893%2C21.7463",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 360,
+     "mode": "car",
+     "note": "480 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.6893%2C21.7463",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 420,
+     "mode": "car",
+     "note": "580 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.6893%2C21.7463",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Okrzei 9, 27-600 Sandomierz",
+   "features": [
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Szef kuchni przygotował specjalne menu dla dzieci.",
+     "short": "Dziecięce menu",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.malyrzym.pl/atrakcje-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Obok strefy SPA jest Sala Zabaw „Bajkowy Świat”. Godzin strona nie podaje. Minimalnego wieku strona nie podaje.",
+     "short": "Sala Zabaw „Bajkowy Świat” obok SPA",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.malyrzym.pl/atrakcje-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animatorzy prowadzą zajęcia dla dzieci w różnym wieku; harmonogram jest w sali zabaw i w recepcji. Wieku strona nie podaje.",
+     "short": "Animacje dla dzieci w różnym wieku",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.malyrzym.pl/atrakcje-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Zewnętrzny plac zabaw ma huśtawki, zjeżdżalnię, drabinki, domek i bujaczki.",
+     "short": "Plac zabaw z huśtawkami i domkiem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.malyrzym.pl/atrakcje-dla-dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.6893052,
+   "lon": 21.7463048,
+   "name": "Hotel Mały Rzym",
+   "official_url": "https://www.malyrzym.pl/",
+   "place": "sandomierz",
+   "slug": "maly-rzym-sandomierz",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
      "from_code": "Gdańsk",
      "from_kind": "city",
      "minutes": 160,
@@ -25344,6 +26233,148 @@
    "place": "sobienie-szlacheckie",
    "slug": "hotel-sobienie-krolewskie",
    "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 95,
+     "mode": "car",
+     "note": "90 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.3612%2C20.8854",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 140,
+     "mode": "car",
+     "note": "190 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.3612%2C20.8854",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 205,
+     "mode": "car",
+     "note": "240 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.3612%2C20.8854",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 250,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.3612%2C20.8854",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 355,
+     "mode": "car",
+     "note": "430 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.3612%2C20.8854",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 410,
+     "mode": "car",
+     "note": "540 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.3612%2C20.8854",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Partyzantów 18A, 28-131 Solec-Zdrój",
+   "features": [
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W strefie gastronomii przy basenach są krzesełka do karmienia.",
+     "short": "Krzesełka do karmienia w strefie gastronomii",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.malinowyraj.com/baseny/dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "pool_restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "W strefie gastronomii przy basenach jest miejsce do przewijania.",
+     "short": "Miejsce do przewijania w strefie gastronomii",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.malinowyraj.com/baseny/dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "pool_restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Regulamin hotelu wspomina pokój zabaw (dzieci do 12 lat pod stałym nadzorem opiekunów). Godzin strona nie podaje. Minimalnego wieku strona nie podaje.",
+     "short": "Pokój zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.malinowyraj.com/informacje/regulamin-hotelowy",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Brodzik ma 28,75 m², głębokość od 15 do 30 cm i wodę o temperaturze 33–34°C; jest zjeżdżalnia „Słonik”, jeż wodny, maty i zabawki. Godzin i wieku strona nie podaje.",
+     "short": "Brodzik 15–30 cm, woda 33–34°C, zjeżdżalnia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.malinowyraj.com/baseny/dla-dzieci",
+     "value": {
+      "depth_cm_max": 30,
+      "depth_cm_min": 15,
+      "indoor": true,
+      "slide": true,
+      "water_temp_c_max": 34,
+      "water_temp_c_min": 33
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Ogrodzony, monitorowany parking na terenie obiektu kosztuje 20 zł za dobę; parking przed hotelem 100 zł za dobę (regulamin, §8).",
+     "short": "Parking 20 zł/doba (przed hotelem 100 zł)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.malinowyraj.com/informacje/regulamin-hotelowy",
+     "value": {
+      "fee_pln_per_day": 20,
+      "front_fee_pln_per_day": 100,
+      "paid": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.3611645,
+   "lon": 20.8854209,
+   "name": "Mineral Hotel Malinowy Raj",
+   "official_url": "https://www.malinowyraj.com/",
+   "place": "solec-zdroj",
+   "slug": "malinowy-raj-solec-zdroj",
+   "status": "published"
   },
   {
    "access": [
@@ -35786,6 +36817,62 @@
    "name": "Włoszakowice",
    "region": "Pojezierze Leszczyńskie",
    "slug": "wloszakowice"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Janów Podlaski",
+   "region": "Lubelszczyzna",
+   "slug": "janow-podlaski"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Nałęczów",
+   "region": "Lubelszczyzna",
+   "slug": "naleczow"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Puławy",
+   "region": "Lubelszczyzna",
+   "slug": "pulawy"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Kraśnik",
+   "region": "Lubelszczyzna",
+   "slug": "krasnik"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Cedzyna (Kielce)",
+   "region": "Góry Świętokrzyskie",
+   "slug": "cedzyna"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Sandomierz",
+   "region": "Ziemia Sandomierska",
+   "slug": "sandomierz"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Solec-Zdrój",
+   "region": "Ponidzie",
+   "slug": "solec-zdroj"
   }
  ],
  "rule_keys": [

@@ -755,3 +755,52 @@ name = "Włoszakowice"
 country = "Polska"
 region = "Pojezierze Leszczyńskie"
 kind = "domestic"
+
+[[place]]
+slug = "janow-podlaski"
+name = "Janów Podlaski"
+country = "Polska"
+region = "Lubelszczyzna"
+kind = "domestic"
+
+[[place]]
+slug = "naleczow"
+name = "Nałęczów"
+country = "Polska"
+region = "Lubelszczyzna"
+kind = "domestic"
+
+[[place]]
+slug = "pulawy"
+name = "Puławy"
+country = "Polska"
+region = "Lubelszczyzna"
+kind = "domestic"
+
+[[place]]
+slug = "krasnik"
+name = "Kraśnik"
+country = "Polska"
+region = "Lubelszczyzna"
+kind = "domestic"
+
+[[place]]
+slug = "cedzyna"
+name = "Cedzyna (Kielce)"
+country = "Polska"
+region = "Góry Świętokrzyskie"
+kind = "domestic"
+
+[[place]]
+slug = "sandomierz"
+name = "Sandomierz"
+country = "Polska"
+region = "Ziemia Sandomierska"
+kind = "domestic"
+
+[[place]]
+slug = "solec-zdroj"
+name = "Solec-Zdrój"
+country = "Polska"
+region = "Ponidzie"
+kind = "domestic"
