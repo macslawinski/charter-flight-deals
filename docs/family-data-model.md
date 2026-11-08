@@ -142,6 +142,8 @@ venues load under data source `curated` (external_id = slug, location = the OSM 
 Migration 014 adds the categories `basen` and `lodowisko`: a TOML sets `category` (default `sala_zabaw`), its facts
 must be shared keys or that category's keys (`VENUE_KEYS_BY_CATEGORY` in `ingest/curated.py`); `supervision` became
 shared. Only `sala_zabaw` venues go to `family.json` (page `/<city>/bawialnie/`); all reach the map via the DB.
+Migration 015 adds `zoo` (zoos and gardens), `kultura` (children's theatre) and `rekreacja` (slope, toboggan), the
+keys `playground`, `youngest_shows`, `kids_rides`, and makes `infant_free` and `season` shared.
 
 ## Category extensions (examples)
 

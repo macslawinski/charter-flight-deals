@@ -1,0 +1,40 @@
+# Discovered via OpenStreetMap (way/23858440, © OpenStreetMap contributors, ODbL); facts from the garden's own
+# pages (opening hours, visitor rules), read 2026-11-08. Written in our words.
+# Not stated: toilets, changing table, strollers (rules only mention wheelchairs), parking.
+slug = "ogrod-botaniczny-uam"
+city = "poznan"
+category = "zoo"
+name = "Ogród Botaniczny UAM"
+official_url = "https://ogrod.amu.edu.pl/zwiedzanie/"
+address = "ul. Dąbrowskiego 165, Poznań"
+lat = 52.4201522
+lon = 16.8808235
+osm = "way/23858440"
+status = "published"
+
+[[feature]]
+key = "price"
+value = { free = true }
+short = "Wstęp bezpłatny"
+note = "Regulamin zwiedzania: wstęp do Ogrodu Botanicznego UAM jest bezpłatny."
+source = "venue_website"
+url = "https://ogrod.amu.edu.pl/regulamin-zwiedzania/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "opening_hours"
+value = { text = "XI-II 9:00-15:00; III 9:00-17:00; IV 9:00-19:00; V-VIII 9:00-20:00; IX 9:00-19:00; X 9:00-18:00" }
+short = "Listopad–luty 9:00–15:00"
+note = "Listopad–luty 9:00–15:00, marzec 9:00–17:00, kwiecień 9:00–19:00, maj–sierpień 9:00–20:00, wrzesień 9:00–19:00, październik 9:00–18:00."
+source = "venue_website"
+url = "https://ogrod.amu.edu.pl/godziny-otwarcia/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "notes"
+value = { no_bikes_scooters = true, paths_only = true, no_animals = true }
+short = "Bez rowerów i hulajnóg; chodzi się tylko po ścieżkach"
+note = "Regulamin zakazuje jazdy na rowerach, skuterach, hulajnogach i deskorolkach (stojaki są przy wejściach) oraz wprowadzania zwierząt, poza psami asystującymi. Zwiedza się tylko wyznaczonymi ścieżkami; niektóre rośliny są parzące lub trujące."
+source = "venue_website"
+url = "https://ogrod.amu.edu.pl/regulamin-zwiedzania/"
+verified_at = 2026-11-08

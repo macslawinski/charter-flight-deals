@@ -178,11 +178,13 @@ def test_venues_round_trip_and_retire(db):  # noqa: F811
     assert db.execute("select id, status from venues where slug = 'mlecz'").fetchone() == (*first_id, "retired")
     curated.save_venues(db, data.venues)
     assert db.execute("select status from venues where slug = 'mlecz'").fetchone() == ("published",)
-    # Pools and rinks link to their own category and use the keys of migration 014.
+    # Pools, rinks, zoos, theatre and recreation link to their own category (migrations 014, 015).
     cats = dict(db.execute(
         """select v.slug, l.category from venues v join venue_category_links l on l.venue_id = v.id
-           where v.slug in ('termy-maltanskie', 'lodowisko-ligawa')""").fetchall())
-    assert cats == {"termy-maltanskie": "basen", "lodowisko-ligawa": "lodowisko"}
+           where v.slug in ('termy-maltanskie', 'lodowisko-ligawa', 'nowe-zoo', 'teatr-animacji',
+                            'malta-ski')""").fetchall())
+    assert cats == {"termy-maltanskie": "basen", "lodowisko-ligawa": "lodowisko", "nowe-zoo": "zoo",
+                    "teatr-animacji": "kultura", "malta-ski": "rekreacja"}
 
 
 def test_venue_category_limits_its_keys(tree):

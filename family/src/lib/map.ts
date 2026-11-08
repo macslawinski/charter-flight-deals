@@ -70,6 +70,9 @@ export const CATEGORIES: { id: string; chip: string; color: string; radius: numb
   { id: "sala_zabaw", chip: "Sale zabaw (bawialnie)", color: "#d4472f", radius: 8 },
   { id: "basen", chip: "Baseny i aquaparki", color: "#3a86ff", radius: 8 },
   { id: "lodowisko", chip: "Lodowiska", color: "#c98a00", radius: 8 },
+  { id: "zoo", chip: "Zoo i ogrody", color: "#3f8f2f", radius: 8 },
+  { id: "kultura", chip: "Teatr dla dzieci", color: "#b8327a", radius: 8 },
+  { id: "rekreacja", chip: "Stok i atrakcje", color: "#8d5a14", radius: 8 },
   { id: "nisoz", chip: "Nocna i świąteczna pomoc lekarska", color: "#5b3cc4", radius: 8 },
 ];
 const CAT_IDS = CATEGORIES.map((c) => c.id);
@@ -92,6 +95,8 @@ export const TAGS: { id: string; cat: string; group: string; chip: string; test:
     test: (fs) => fs.some((f) => f.key === "paddling_pool" && f.value.available === true) },
   { id: "baby_classes", cat: "basen", group: "kids", chip: "Zajęcia dla niemowląt",
     test: (fs) => fs.some((f) => f.key === "baby_classes" && f.value.available === true) },
+  { id: "free_entry", cat: "zoo", group: "price", chip: "Wstęp bezpłatny",
+    test: (fs) => fs.some((f) => f.key === "price" && f.value.free === true) },
 ];
 
 export interface MapRef {
