@@ -158,6 +158,13 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       with parents). Car access only. 12 leads left.
 - [ ] U (phone/e-mail, optional): cot fee and free-stay age at all four; Młyn Jacka whether cots are still
       offered; Crocus parking rate; Zbójnicówka parking.
+- [x] C: małopolskie hotels, batch 4 (2026-11-08): Grand Nosalowy Dwór (Zakopane, 10 facts: under 6 free
+      depending on season, two playrooms, shallow pool zone), Chochołowy Dwór (Jerzmanowice, 9: cot 50 zł/stay,
+      Sunday animations, fenced playground, free parking), Kasprowy (Zakopane, 7: under 8; Kids Club 10–19 from
+      1 year, under 4 with a parent, 4 h free; brodzik 60 cm; parking 70–150 zł), Piastun (Krynica, 6: under 8;
+      playroom only from a photo caption, to confirm). Car access only. 8 leads left (2 need Chrome).
+- [ ] U (phone/e-mail, optional): Kasprowy high chair, kids' menu, cot fee; Nosalowy which seasons are free for
+      under 6; Piastun playroom, baby items; Chochołowy free-stay age outside packages.
 - [x] ~~U: decide which pomorskie hotels to publish (all are `draft`);~~ superseded above; those under 8 facts need a phone or e-mail
       round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Kiston cot fee, free-stay age, brodzik; Primavera cot fee, Playland age;

@@ -413,3 +413,10 @@ name = "Jaroszowice"
 country = "Polska"
 region = "Małopolska"
 kind = "domestic"
+
+[[place]]
+slug = "jerzmanowice"
+name = "Jerzmanowice"
+country = "Polska"
+region = "Jura Krakowsko-Częstochowska"
+kind = "domestic"
