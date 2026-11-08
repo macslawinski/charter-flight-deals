@@ -55,18 +55,13 @@ export interface Carrier {
   rules: Fact[];
 }
 
+// Indoor playground card (built from the map export in lib/map.ts, cityPlaygrounds).
 export interface Venue {
   slug: string;
-  city: string;
   name: string;
-  status: string;
   official_url: string | null;
   address: string | null;
-  lat: number | null;
-  lon: number | null;
-  osm: string | null;
   features: Fact[];
-  category: string;
 }
 
 // Official topics (travel documents, later "Niezbędnik"): rules, not places. Official sources only.
@@ -118,7 +113,6 @@ interface Data {
   places: Place[];
   hotels: Hotel[];
   carriers: Carrier[];
-  venues: Venue[];
 }
 
 export const data = raw as unknown as Data;

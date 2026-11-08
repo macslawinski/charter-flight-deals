@@ -71,7 +71,7 @@ VENUE_KEYS = set().union(*VENUE_KEYS_BY_CATEGORY.values())
 VENUE_SOURCES = {"venue_website", "osm", "own_visit"}
 SHORT_MAX = 60  # one line on a phone card
 # Legal and official topics ("Niezbędnik", travel documents): official sources only.
-ESSENTIAL_TOPICS = {"travel_documents", "parent_benefits"}
+ESSENTIAL_TOPICS = {"travel_documents", "parent_benefits", "vaccinations"}
 ESSENTIAL_SHORT_MAX = 160
 # Official sources: any *.gov.pl site, plus ZUS (a state agency that is not under gov.pl).
 _OFFICIAL_URL = re.compile(r"^https://(([a-z0-9-]+\.)*gov\.pl|www\.zus\.pl)(/|$)")

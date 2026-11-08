@@ -2,7 +2,7 @@
 // (written by scripts/export_venues.py from the DB). Everything is resolved at build time into one
 // compact payload for the client-side map; a category, tag or source without a label here fails
 // the build.
-import { plDate, sourceLabel, toddlerFacts, type Value } from "./data";
+import { plDate, sourceLabel, toddlerFacts, venueLabel, type Fact, type Value, type Venue } from "./data";
 
 interface ExportRef {
   src: string | null;
@@ -174,6 +174,29 @@ export function cityMap(ex: CityExport): MapPayload {
     };
   });
   return { center: must(CENTERS, ex.city, "map centre"), refs, venues };
+}
+
+// Indoor playgrounds for the /<city>/bawialnie/ list: the curated `sala_zabaw` venues of the same
+// export the map reads, so both pages show one set of facts. A key the list has no label for fails
+// the build (venueLabel) instead of silently dropping off the card.
+export function cityPlaygrounds(ex: CityExport): Venue[] {
+  return ex.venues
+    .filter((v) => v.source === "curated" && v.categories.includes("sala_zabaw"))
+    .map((v) => ({
+      slug: v.id.replace(/^curated:/, ""),
+      name: v.name,
+      address: v.address,
+      official_url: v.official_url,
+      features: v.facts.map((f): Fact => {
+        venueLabel(f.key);
+        const r = ex.refs[f.ref];
+        if (!r) throw new Error(`Venue ${v.id}: missing ref ${f.ref} (lib/map.ts)`);
+        return {
+          key: f.key, age_band: null, value: f.value, note: f.note, short: f.short,
+          source: r.type, url: r.url, verified_at: r.verified_at, to_confirm: f.to_confirm,
+        };
+      }),
+    }));
 }
 
 // Safe to drop into <script type="application/json">.

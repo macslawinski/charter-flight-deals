@@ -4,8 +4,9 @@ import HotelFinder from "../components/HotelFinder.astro";
 import Icon from "../components/Icon.astro";
 import Illustration from "../components/Illustration.astro";
 import { carriers, data, hotels } from "../lib/data";
+import { cityExports, cityPlaygrounds } from "../lib/map";
 
-const venues = data.venues.length;
+const venues = cityExports.reduce((n, ex) => n + cityPlaygrounds(ex).length, 0);
 ---
 
 <Base title="Pieluchy i paszporty" section="hotele" description="Hotele dla rodzin z dzieckiem do 3 lat: łóżeczko, brodzik, bawialnia i dojazd z Twojego miasta, sprawdzone u źródła.">

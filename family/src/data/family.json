@@ -2428,6 +2428,287 @@
    ],
    "title": "Dokumenty dziecka na wyjazd",
    "topic": "travel_documents"
+  },
+  "vaccinations": {
+   "facts": [
+    {
+     "also": [
+      {
+       "label": "PSO na rok 2026",
+       "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2025/85/akt.pdf"
+      },
+      {
+       "label": "GIS: Program Szczepień Ochronnych na 2026 rok",
+       "url": "https://www.gov.pl/web/gis/program-szczepien-ochronnych-na-2026-rok"
+      }
+     ],
+     "group": "zasady",
+     "key": "pso-2027",
+     "note": "To Program Szczepień Ochronnych na rok 2027 (Dziennik Urzędowy Ministra Zdrowia, poz. 77). Do końca 2026 r. obowiązuje program na rok 2026 (komunikat z 31 października 2025 r., poz. 85).",
+     "publisher": "GIS",
+     "short": "Kalendarz na 2027 r. ogłosił Główny Inspektor Sanitarny komunikatem z 28 października 2026 r.",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [],
+     "group": "zasady",
+     "key": "mandatory-free",
+     "note": null,
+     "publisher": "pacjent.gov.pl",
+     "short": "Szczepienia obowiązkowe są bezpłatne, finansowane z budżetu państwa.",
+     "to_confirm": false,
+     "url": "https://pacjent.gov.pl/kalendarz-szczepien-dzieci-i-mlodziezy-na-2026-rok",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [],
+     "group": "zasady",
+     "key": "age-meaning",
+     "note": null,
+     "publisher": "GIS",
+     "short": "„6. rok życia” to dziecko, które skończyło 5 lat. Tak PSO liczy wiek w kalendarzu.",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [],
+     "group": "zasady",
+     "key": "catch-up",
+     "note": "Szczepienie wyrównawcze jest obowiązkowe do wieku podanego w rozporządzeniu o obowiązkowych szczepieniach. Potem staje się tylko zalecane i płaci się za szczepionkę; schemat wielodawkowy rozpoczęty wcześniej kończy się bezpłatnie.",
+     "publisher": "GIS",
+     "short": "Pominięte szczepienie obowiązkowe nadrabia się jak najszybciej, według indywidualnego kalendarza szczepień.",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [],
+     "group": "pierwszy-rok",
+     "key": "birth",
+     "note": null,
+     "publisher": "GIS",
+     "short": "Od 1. doby życia, najpóźniej do wypisu ze szpitala: gruźlica (BCG) i 1. dawka przeciw WZW typu B.",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [],
+     "group": "pierwszy-rok",
+     "key": "month-2",
+     "note": "Rotawirusy: 2 lub 3 dawki, zależnie od szczepionki. Dzieci urodzone przed 37. tygodniem ciąży albo z masą urodzeniową poniżej 2500 g dostają szczepionkę z bezkomórkowym komponentem krztuśca.",
+     "publisher": "GIS",
+     "short": "W 2. miesiącu (po 6. tygodniu): rotawirusy, WZW typu B (2. dawka), błonica, tężec i krztuściec (DTP), Hib, pneumokoki.",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [],
+     "group": "pierwszy-rok",
+     "key": "month-4",
+     "note": "Rotawirusy 4 tygodnie po pierwszej dawce. Polio od ukończenia 12. tygodnia życia. DTP, Hib i pneumokoki od ukończenia 12. tygodnia, 8 tygodni po pierwszej dawce.",
+     "publisher": "GIS",
+     "short": "W 4. miesiącu: rotawirusy (2. dawka), polio (IPV, 1. dawka), DTP, Hib i pneumokoki (2. dawka).",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [],
+     "group": "pierwszy-rok",
+     "key": "month-5-6",
+     "note": null,
+     "publisher": "GIS",
+     "short": "W 5.–6. miesiącu: 3. dawka przeciw rotawirusom (tylko szczepionka 3-dawkowa). W 6. miesiącu: DTP i Hib (3. dawka), polio (2. dawka).",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [],
+     "group": "pierwszy-rok",
+     "key": "month-7",
+     "note": null,
+     "publisher": "GIS",
+     "short": "W 7. miesiącu: 3. dawka przeciw WZW typu B, 5 miesięcy po drugiej.",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [],
+     "group": "do-szesciu-lat",
+     "key": "month-13-15",
+     "note": "MMR to szczepionka żywa atenuowana; o terminie decyduje lekarz. Przebycie odry, świnki lub różyczki nie jest przeciwwskazaniem. Pneumokoki po ukończeniu 12. miesiąca, co najmniej 6 miesięcy po drugiej dawce.",
+     "publisher": "GIS",
+     "short": "W 13.–15. miesiącu: odra, świnka i różyczka (MMR) oraz 3. dawka przeciw pneumokokom.",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [],
+     "group": "do-szesciu-lat",
+     "key": "month-16-18",
+     "note": null,
+     "publisher": "GIS",
+     "short": "W 16.–18. miesiącu: DTP i Hib (4. dawka) oraz polio (3. dawka).",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [],
+     "group": "do-szesciu-lat",
+     "key": "year-6",
+     "note": "Dziecko, które nie dostało drugiej dawki MMR w 6. roku życia, powinno ją uzupełnić jak najwcześniej.",
+     "publisher": "GIS",
+     "short": "W 6. roku życia: dawki przypominające przeciw błonicy, tężcowi i krztuścowi (DTaP) i polio oraz 2. dawka MMR.",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [
+      {
+       "label": "szczepienia.pzh.gov.pl: kalendarz 2026",
+       "url": "https://szczepienia.pzh.gov.pl/kalendarz-szczepien-2026/"
+      }
+     ],
+     "group": "do-szesciu-lat",
+     "key": "varicella",
+     "note": "W kalendarzu obowiązkowym zaznaczono ją w 10.–12. i 13.–15. miesiącu życia. Według serwisu szczepienia.pzh.gov.pl szczepionkę można podać po ukończeniu 9. miesiąca, optymalnie w 12., a poza grupami ryzyka jest płatna.",
+     "publisher": "GIS",
+     "short": "Ospa wietrzna jest obowiązkowa tylko dla dzieci z grup ryzyka wskazanych w PSO; pozostałym jest zalecana: 2 dawki co najmniej 3 miesiące od siebie.",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [],
+     "group": "skojarzone",
+     "key": "combined-variants",
+     "note": "5w1: dawki w 2., 4., 6.–7. i 16.–18. miesiącu; WZW typu B osobno (po urodzeniu, w 2. i 6.–7. miesiącu). 6w1: dawki w 2., 4., 5.–6. i 16.–18. miesiącu, po urodzeniu osobna dawka przeciw WZW typu B; rotawirusy w 2., 3. i (przy 3 dawkach) 4. miesiącu. BCG, pneumokoki i MMR w obu wariantach w tych samych miesiącach co w podstawowym.",
+     "publisher": "GIS",
+     "short": "PSO ma też warianty z jedną szczepionką zamiast kilku: 5w1 (błonica, tężec, krztuściec, polio, Hib) albo 6w1 (to samo i WZW typu B).",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [
+      {
+       "label": "PSO na rok 2027 (cz. I.A.1–A.2)",
+       "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf"
+      }
+     ],
+     "group": "skojarzone",
+     "key": "combined-cost",
+     "note": "pacjent.gov.pl (kalendarz na 2026 r.): rodzice mogą zastąpić bezpłatne szczepionki preparatami wysoko skojarzonymi (odpłatnymi). PSO opisuje warianty 5w1 i 6w1 jako warianty „w populacji ogólnej dzieci do 2 lat”.",
+     "publisher": "pacjent.gov.pl",
+     "short": "Źródła różnią się w sprawie opłat: pacjent.gov.pl podaje, że szczepionki wysoko skojarzone są odpłatne, a PSO 2027 nie mówi, kto za nie płaci.",
+     "to_confirm": true,
+     "url": "https://pacjent.gov.pl/kalendarz-szczepien-dzieci-i-mlodziezy-na-2026-rok",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [
+      {
+       "label": "PSO na rok 2027 (cz. VII.B)",
+       "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf"
+      }
+     ],
+     "group": "zalecane",
+     "key": "influenza",
+     "note": "pacjent.gov.pl wymienia szczepienie przeciw grypie u dzieci od 6. miesiąca życia wśród szczepień w ramach refundacji. Schemat dawek: PSO 2027, cz. VII.B.",
+     "publisher": "pacjent.gov.pl",
+     "short": "Grypa: zalecana od 6. miesiąca życia, refundowana. Dziecko do 8 lat szczepione pierwszy raz w życiu dostaje 2 dawki w odstępie 4 tygodni.",
+     "to_confirm": false,
+     "url": "https://pacjent.gov.pl/kalendarz-szczepien-dzieci-i-mlodziezy-na-2026-rok",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [],
+     "group": "zalecane",
+     "key": "rsv",
+     "note": "To uodpornienie bierne (przeciwciała monoklonalne), nie szczepionka.",
+     "publisher": "GIS",
+     "short": "RSV: przeciwciała zalecane noworodkom i niemowlętom w ich pierwszym sezonie RSV oraz dzieciom do 2 lat szczególnie narażonym na ciężki przebieg.",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [
+      {
+       "label": "PSO na rok 2027 (cz. VII.B)",
+       "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf"
+      }
+     ],
+     "group": "zalecane",
+     "key": "meningococci",
+     "note": null,
+     "publisher": "pacjent.gov.pl",
+     "short": "Meningokoki (MenB, MenACWY): zalecane, schemat zależy od wieku dziecka. pacjent.gov.pl wymienia je wśród szczepień płatnych.",
+     "to_confirm": false,
+     "url": "https://pacjent.gov.pl/kalendarz-szczepien-dzieci-i-mlodziezy-na-2026-rok",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [
+      {
+       "label": "pacjent.gov.pl: kalendarz 2026",
+       "url": "https://pacjent.gov.pl/kalendarz-szczepien-dzieci-i-mlodziezy-na-2026-rok"
+      }
+     ],
+     "group": "zalecane",
+     "key": "other-recommended",
+     "note": "pacjent.gov.pl wymienia kleszczowe zapalenie mózgu i WZW typu A wśród szczepień płatnych; COVID-19 dla dzieci od 6. miesiąca życia, zgodnie z komunikatami Ministra Zdrowia.",
+     "publisher": "GIS",
+     "short": "Zalecane także: kleszczowe zapalenie mózgu (3 dawki, przypominająca co 3–5 lat), WZW typu A (2 dawki co 6–12 miesięcy) i COVID-19.",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "groups": [
+    {
+     "icon": "info",
+     "id": "zasady",
+     "intro": "Program Szczepień Ochronnych (PSO) ogłasza co roku Główny Inspektor Sanitarny. Poniżej program na rok 2027.",
+     "title": "Skąd jest ten kalendarz"
+    },
+    {
+     "icon": "calendar",
+     "id": "pierwszy-rok",
+     "intro": "Wariant podstawowy z PSO: osobne szczepionki. Dokładny termin każdej dawki ustala lekarz przy badaniu kwalifikacyjnym.",
+     "title": "Szczepienia obowiązkowe w 1. roku życia"
+    },
+    {
+     "icon": "calendar",
+     "id": "do-szesciu-lat",
+     "intro": null,
+     "title": "Szczepienia obowiązkowe w 2. i 6. roku życia"
+    },
+    {
+     "icon": "shield",
+     "id": "skojarzone",
+     "intro": null,
+     "title": "Szczepionki 5w1 i 6w1"
+    },
+    {
+     "icon": "medical",
+     "id": "zalecane",
+     "intro": "Nie są obowiązkowe. PSO je zaleca; część jest bezpłatna albo refundowana, część płatna.",
+     "title": "Szczepienia zalecane do 6 lat"
+    }
+   ],
+   "title": "Kalendarz szczepień",
+   "topic": "vaccinations"
   }
  },
  "feature_keys": [
@@ -27152,718 +27433,5 @@
   "supervision",
   "toddler_classes",
   "toddler_zone"
- ],
- "venues": [
-  {
-   "address": "ul. Jana Henryka Dąbrowskiego 89/U5, Poznań",
-   "category": "sala_zabaw",
-   "city": "poznan",
-   "features": [
-    {
-     "age_band": null,
-     "key": "age_range",
-     "note": "Bawialnia inspirowana pedagogiką Montessori: wspinaczki, zjeżdżalnie, zakamarki i kąciki do wyciszenia. Strona nie podaje górnej granicy wieku.",
-     "short": "Od niemowlaka, w duchu Montessori",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://bawialniabawimy.pl/",
-     "value": {
-      "min": "infant"
-     },
-     "verified_at": "2026-11-05"
-    },
-    {
-     "age_band": null,
-     "key": "toddler_zone",
-     "note": "Zawsze dostępne są miękkie maty i zabawki dla niemowlaków, żeby najmłodsi mieli własną przestrzeń.",
-     "short": "Maty i zabawki dla niemowląt",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://bawialniabawimy.pl/",
-     "value": {
-      "available": true,
-      "soft_mats": true
-     },
-     "verified_at": "2026-11-05"
-    },
-    {
-     "age_band": "0-1",
-     "key": "infant_free",
-     "note": "Dziecko do 6 miesięcy bawi się w cenie kawy.",
-     "short": "Do 6 miesięcy w cenie kawy",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://bawialniabawimy.pl/dla-odwiedzajacych/",
-     "value": {
-      "max_months": 6,
-      "price": "coffee"
-     },
-     "verified_at": "2026-11-05"
-    },
-    {
-     "age_band": null,
-     "key": "price_child",
-     "note": "Pon.–czw.: 40 zł za godzinę, 65 zł za 2 godziny, 80 zł bez limitu. Pt.–niedz. i święta: 45, 69 i 90 zł. Taniej w aplikacji Rewardo (np. 35 zł za godzinę albo 0,70 zł za minutę). Rodzeństwo: 15% zniżki na drugie i kolejne dziecko.",
-     "short": "40 zł za godzinę (pon.–czw.)",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://bawialniabawimy.pl/dla-odwiedzajacych/",
-     "value": {
-      "app_weekday_1h_pln": 35,
-      "app_weekday_pln_per_min": 0.7,
-      "app_weekend_pln_per_min": 0.85,
-      "sibling_discount_pct": 15,
-      "weekday_1h_pln": 40,
-      "weekday_2h_pln": 65,
-      "weekday_day_pln": 85,
-      "weekday_no_limit_pln": 80,
-      "weekend_1h_pln": 45,
-      "weekend_2h_pln": 69,
-      "weekend_day_pln": 105,
-      "weekend_no_limit_pln": 90
-     },
-     "verified_at": "2026-11-05"
-    },
-    {
-     "age_band": "0-3",
-     "key": "toddler_classes",
-     "note": "Zajęcia muzyczne metodą Gordona prowadzone także dla niemowląt i małych dzieci.",
-     "short": "Umuzykalnianie metodą Gordona",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://bawialniabawimy.pl/warsztaty/",
-     "value": {
-      "available": true,
-      "method": "Gordon"
-     },
-     "verified_at": "2026-11-05"
-    },
-    {
-     "age_band": null,
-     "key": "opening_hours",
-     "note": "Według OpenStreetMap: pon., wt., czw., pt. 10:00–19:00, śr. 10:00–17:30, sob. 11:30–14:00, niedz. 9:00–19:00. Strona bawialni nie podaje godzin, więc sprawdź przed wyjściem.",
-     "short": "Zwykle 10–19, w środy do 17:30",
-     "source": "osm",
-     "to_confirm": true,
-     "url": "https://www.openstreetmap.org/node/12545941282",
-     "value": {
-      "osm": "Mo,Tu,Th,Fr 10:00-19:00; We 10:00-17:30; Sa 11:30-14:00; Su 09:00-19:00"
-     },
-     "verified_at": "2026-11-05"
-    }
-   ],
-   "lat": 52.4147167,
-   "lon": 16.8972469,
-   "name": "Bawimy Jeżyce",
-   "official_url": "https://bawialniabawimy.pl/",
-   "osm": "node/12545941282",
-   "slug": "bawimy-jezyce",
-   "status": "published"
-  },
-  {
-   "address": "ul. Smardzewska, 60-161 Poznań",
-   "category": "sala_zabaw",
-   "city": "poznan",
-   "features": [
-    {
-     "age_band": null,
-     "key": "price_child",
-     "note": "Poniedziałek–piątek 12 zł za godzinę (0,20 zł za minutę), weekend 15 zł (0,25 zł za minutę). Bilet do 5 godzin: 25 zł.",
-     "short": "12 zł za godzinę (pon.–pt.)",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://www.centrummadagaskar.pl/cennik.html",
-     "value": {
-      "up_to_5h_pln": 25,
-      "weekday_1h_pln": 12,
-      "weekday_pln_per_min": 0.2,
-      "weekend_1h_pln": 15,
-      "weekend_pln_per_min": 0.25
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "socks_required",
-     "note": "Strona prosi, żeby przed wizytą zaopatrzyć dziecko w rajstopy.",
-     "short": "Zabierz rajstopy dla dziecka",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://www.centrummadagaskar.pl/",
-     "value": {
-      "applies_to": "children",
-      "item": "tights",
-      "required": true
-     },
-     "verified_at": "2026-11-04"
-    }
-   ],
-   "lat": 52.389891,
-   "lon": 16.859353,
-   "name": "Centrum Madagaskar",
-   "official_url": "https://www.centrummadagaskar.pl/",
-   "osm": "way/165076478",
-   "slug": "madagaskar",
-   "status": "published"
-  },
-  {
-   "address": "ul. Pleszewska 1 (Posnania, 2. piętro), 61-136 Poznań",
-   "category": "sala_zabaw",
-   "city": "poznan",
-   "features": [
-    {
-     "age_band": null,
-     "key": "age_range",
-     "note": "Sala zabaw dla dzieci od niemowlęcia do 11 lat.",
-     "short": "Od niemowlaka do 11 lat",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/ch-posnania-poznan/",
-     "value": {
-      "max_years": 11,
-      "min": "infant"
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "toddler_zone",
-     "note": "Kącik malucha dla dzieci do 4 lat i osobne atrakcje dla maluchów od 0 do 3 lat.",
-     "short": "Kącik malucha i atrakcje dla 0–3 lat",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/ch-posnania-poznan/",
-     "value": {
-      "attractions_for": "0-3",
-      "available": true,
-      "max_years": 4
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "price_child",
-     "note": "Dni robocze: 0,75 zł za minutę albo 55 zł za cały dzień. Weekendy i święta: 0,90 zł za minutę albo 66 zł. Cennik jest wspólny dla sieci Fikołki.",
-     "short": "0,75 zł za minutę albo 55 zł za dzień",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/cennik/",
-     "value": {
-      "weekday_day_pln": 55,
-      "weekday_pln_per_min": 0.75,
-      "weekend_day_pln": 66,
-      "weekend_pln_per_min": 0.9
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": "0-2",
-     "key": "infant_free",
-     "note": "Karta Malucha Basic dla dzieci do 24 miesięcy: wstęp pon.–pt. do 16:00 za 0 zł miesięcznie, jeśli zgodzisz się na marketing (bez zgód 29,99 zł), plus jednorazowo 19,99 zł za aktywację. Wersja Plus, bez limitu godzin, kosztuje 19,99 zł miesięcznie ze zgodami.",
-     "short": "Do 2 lat gratis z Kartą Malucha (pon.–pt.)",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/cennik/",
-     "value": {
-      "activation_pln": 19.99,
-      "card": "karta_malucha_basic",
-      "pln_per_month": 29.99,
-      "pln_per_month_with_consents": 0,
-      "plus_unlimited_pln_per_month_with_consents": 19.99,
-      "weekdays_until": "16:00"
-     },
-     "verified_at": "2026-11-05"
-    },
-    {
-     "age_band": null,
-     "key": "opening_hours",
-     "note": "Poniedziałek–sobota 10:00–21:00, niedziela 10:00–19:00, niedziela handlowa 10:00–20:00.",
-     "short": "Pon.–sob. 10–21, niedz. 10–19",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/ch-posnania-poznan/",
-     "value": {
-      "osm": "Mo-Sa 10:00-21:00; Su 10:00-19:00"
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "cafe",
-     "note": "Rodzic może usiąść przy kawie w Fikołki Caffe.",
-     "short": "Fikołki Caffe na miejscu",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/ch-posnania-poznan/",
-     "value": {
-      "available": true
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "parking",
-     "note": "Klub korzysta z parkingu centrum Posnania.",
-     "short": "Parking centrum handlowego",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/ch-posnania-poznan/",
-     "value": {
-      "available": true,
-      "mall": true
-     },
-     "verified_at": "2026-11-04"
-    }
-   ],
-   "lat": 52.398157,
-   "lon": 16.954928,
-   "name": "Fikołki Posnania",
-   "official_url": "https://fikolki.pl/ch-posnania-poznan/",
-   "osm": "node/11048021117",
-   "slug": "fikolki-posnania",
-   "status": "published"
-  },
-  {
-   "address": "ul. Półwiejska 42 (Stary Browar), 61-888 Poznań",
-   "category": "sala_zabaw",
-   "city": "poznan",
-   "features": [
-    {
-     "age_band": null,
-     "key": "age_range",
-     "note": "Sala zabaw dla dzieci od niemowlęcia do 11 lat.",
-     "short": "Od niemowlaka do 11 lat",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/stary-browar/",
-     "value": {
-      "max_years": 11,
-      "min": "infant"
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "toddler_zone",
-     "note": "Osobny kącik malucha dla dzieci do 4 lat.",
-     "short": "Kącik malucha do 4 lat",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/stary-browar/",
-     "value": {
-      "available": true,
-      "max_years": 4
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "price_child",
-     "note": "Dni robocze: 0,75 zł za minutę albo 55 zł za cały dzień. Weekendy i święta: 0,90 zł za minutę albo 66 zł. Cennik jest wspólny dla sieci Fikołki.",
-     "short": "0,75 zł za minutę albo 55 zł za dzień",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/cennik/",
-     "value": {
-      "weekday_day_pln": 55,
-      "weekday_pln_per_min": 0.75,
-      "weekend_day_pln": 66,
-      "weekend_pln_per_min": 0.9
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": "0-2",
-     "key": "infant_free",
-     "note": "Karta Malucha Basic dla dzieci do 24 miesięcy: wstęp pon.–pt. do 16:00 za 0 zł miesięcznie, jeśli zgodzisz się na marketing (bez zgód 29,99 zł), plus jednorazowo 19,99 zł za aktywację. Wersja Plus, bez limitu godzin, kosztuje 19,99 zł miesięcznie ze zgodami.",
-     "short": "Do 2 lat gratis z Kartą Malucha (pon.–pt.)",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/cennik/",
-     "value": {
-      "activation_pln": 19.99,
-      "card": "karta_malucha_basic",
-      "pln_per_month": 29.99,
-      "pln_per_month_with_consents": 0,
-      "plus_unlimited_pln_per_month_with_consents": 19.99,
-      "weekdays_until": "16:00"
-     },
-     "verified_at": "2026-11-05"
-    },
-    {
-     "age_band": "0-3",
-     "key": "toddler_classes",
-     "note": "Klub prowadzi zajęcia ogólnorozwojowe dla dzieci od 0 do 3 lat.",
-     "short": "Zajęcia ogólnorozwojowe 0–3 lata",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/stary-browar/",
-     "value": {
-      "available": true
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "opening_hours",
-     "note": "Poniedziałek–sobota 10:00–21:00, niedziela 10:00–19:00, niedziela handlowa 10:00–20:00.",
-     "short": "Pon.–sob. 10–21, niedz. 10–19",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/stary-browar/",
-     "value": {
-      "osm": "Mo-Sa 10:00-21:00; Su 10:00-19:00"
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "cafe",
-     "note": "Na miejscu kawiarnia Fikołki Caffe.",
-     "short": "Fikołki Caffe na miejscu",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/stary-browar/",
-     "value": {
-      "available": true
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "parking",
-     "note": "Klub jest w centrum handlowym, które ma parking.",
-     "short": "Parking centrum handlowego",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/stary-browar/",
-     "value": {
-      "available": true,
-      "mall": true
-     },
-     "verified_at": "2026-11-04"
-    }
-   ],
-   "lat": 52.402821,
-   "lon": 16.924838,
-   "name": "Fikołki Stary Browar",
-   "official_url": "https://fikolki.pl/stary-browar/",
-   "osm": "way/1504245766",
-   "slug": "fikolki-stary-browar",
-   "status": "published"
-  },
-  {
-   "address": "ul. Bolesława Krzywoustego 68 (Giant Meble), Poznań",
-   "category": "sala_zabaw",
-   "city": "poznan",
-   "features": [
-    {
-     "age_band": null,
-     "key": "age_range",
-     "note": "Sala zabaw dla dzieci do 11 lat. Na zdjęciach jest kącik malucha, ale bez podanego przedziału wieku.",
-     "short": "Dla dzieci do 11 lat, jest kącik malucha",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://krainapiratow.pl/regulamin/",
-     "value": {
-      "max_years": 11
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": "0-1",
-     "key": "infant_free",
-     "note": "Dzieci, które jeszcze nie chodzą same (niemowlęta, dzieci noszone), nie płacą. Mogą być w strefie zabaw tylko z dorosłym.",
-     "short": "Niechodzące maluchy wchodzą za darmo",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://krainapiratow.pl/cennik/",
-     "value": {
-      "condition": "not_walking",
-      "free": true
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "price_child",
-     "note": "Poniedziałek–czwartek: 20 zł za godzinę, 30 zł za dwie, 40 zł za cały dzień. Piątek–niedziela i święta: 25, 35 i 45 zł. Dłuższy pobyt: 0,50 zł za minutę.",
-     "short": "Od 20 zł za godzinę (pon.–czw.)",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://krainapiratow.pl/cennik/",
-     "value": {
-      "extension_pln_per_min": 0.5,
-      "weekday_1h_pln": 20,
-      "weekday_2h_pln": 30,
-      "weekday_day_pln": 40,
-      "weekend_1h_pln": 25,
-      "weekend_2h_pln": 35,
-      "weekend_day_pln": 45
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "opening_hours",
-     "note": "Codziennie 10:00–20:00, także w niedziele niehandlowe.",
-     "short": "Codziennie 10:00–20:00",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://krainapiratow.pl/",
-     "value": {
-      "osm": "Mo-Su 10:00-20:00"
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "cafe",
-     "note": "Na miejscu jest kawiarnia dla rodziców.",
-     "short": "Kawiarnia na miejscu",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://krainapiratow.pl/",
-     "value": {
-      "available": true
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "parking",
-     "note": "Duży parking przy galerii Giant Meble.",
-     "short": "Duży parking",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://krainapiratow.pl/",
-     "value": {
-      "available": true,
-      "large": true
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "socks_required",
-     "note": "Dzieci i dorośli chodzą po sali w skarpetkach albo obuwiu ochronnym.",
-     "short": "Skarpetki obowiązkowe, także dla dorosłych",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://krainapiratow.pl/regulamin/",
-     "value": {
-      "applies_to": "children_and_adults",
-      "required": true
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "supervision",
-     "note": "Za dziecko na sali odpowiada rodzic albo pełnoletni opiekun.",
-     "short": "Dziecko zostaje pod Twoją opieką",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://krainapiratow.pl/regulamin/",
-     "value": {
-      "parent_required": true
-     },
-     "verified_at": "2026-11-04"
-    }
-   ],
-   "lat": 52.377095,
-   "lon": 16.979014,
-   "name": "Kraina Piratów",
-   "official_url": "https://krainapiratow.pl/",
-   "osm": "node/1982842819",
-   "slug": "kraina-piratow",
-   "status": "published"
-  },
-  {
-   "address": "ul. Stanisława Barańczaka 1/47 LU3, 60-537 Poznań",
-   "category": "sala_zabaw",
-   "city": "poznan",
-   "features": [
-    {
-     "age_band": null,
-     "key": "age_range",
-     "note": "Sala zabaw dla dzieci od 0 do 6 lat, urządzona głównie z myślą o młodszych.",
-     "short": "Dla dzieci od 0 do 6 lat",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://bawialniamlecz.pl/regulamin/",
-     "value": {
-      "max_years": 6,
-      "min_years": 0
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "price_child",
-     "note": "1 godzina 30 zł, 2 godziny 45 zł, bez limitu 55 zł. W weekendy i święta: 35, 50 i 65 zł.",
-     "short": "30 zł za godzinę (w tygodniu)",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://bawialniamlecz.pl/bawialnia-kawiarnia/",
-     "value": {
-      "weekday_1h_pln": 30,
-      "weekday_2h_pln": 45,
-      "weekday_no_limit_pln": 55,
-      "weekend_1h_pln": 35,
-      "weekend_2h_pln": 50,
-      "weekend_no_limit_pln": 65
-     },
-     "verified_at": "2026-11-05"
-    },
-    {
-     "age_band": "0-1",
-     "key": "infant_free",
-     "note": "Dzieci 6–12 miesięcy płacą o 50% mniej. Dla dzieci do 6 miesięcy cennik pokazuje zniżkę 70% albo 100% (układ strony jest niejasny), więc zapytaj na miejscu.",
-     "short": "Niemowlęta taniej: 6–12 mies. −50%",
-     "source": "venue_website",
-     "to_confirm": true,
-     "url": "https://bawialniamlecz.pl/bawialnia-kawiarnia/",
-     "value": {
-      "discount_pct_6_12_months": 50,
-      "discount_pct_under_6_months": "70 or 100"
-     },
-     "verified_at": "2026-11-05"
-    },
-    {
-     "age_band": null,
-     "key": "opening_hours",
-     "note": "Regulamin podaje 10:00–19:00 codziennie. W OpenStreetMap w piątki–niedziele do 20:00, więc sprawdź przed wyjściem.",
-     "short": "Codziennie 10:00–19:00",
-     "source": "venue_website",
-     "to_confirm": true,
-     "url": "https://bawialniamlecz.pl/regulamin/",
-     "value": {
-      "text": "codziennie 10:00-19:00"
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "cafe",
-     "note": "Kawiarnia z kawą, napojami i lekkimi przekąskami dla dzieci i dorosłych.",
-     "short": "Kawiarnia z przekąskami dla dzieci",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://bawialniamlecz.pl/",
-     "value": {
-      "available": true
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "socks_required",
-     "note": "Dzieci bawią się wyłącznie w skarpetkach albo rajstopach, o każdej porze roku.",
-     "short": "Dzieci tylko w skarpetkach",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://bawialniamlecz.pl/regulamin/",
-     "value": {
-      "applies_to": "children",
-      "required": true
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "supervision",
-     "note": "Rodzic opiekuje się dzieckiem przez cały pobyt. Płatna opieka personelu jest tylko dla dzieci powyżej 3 lat.",
-     "short": "Dziecko zostaje pod Twoją opieką",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://bawialniamlecz.pl/regulamin/",
-     "value": {
-      "paid_care_from_years": 3,
-      "parent_required": true
-     },
-     "verified_at": "2026-11-04"
-    }
-   ],
-   "lat": 52.415421,
-   "lon": 16.90507,
-   "name": "Mlecz bawialnia i kawiarnia",
-   "official_url": "https://bawialniamlecz.pl/",
-   "osm": "node/12492719739",
-   "slug": "mlecz",
-   "status": "published"
-  },
-  {
-   "address": "ul. Szwedzka 10 (IKEA), Poznań",
-   "category": "sala_zabaw",
-   "city": "poznan",
-   "features": [
-    {
-     "age_band": null,
-     "key": "age_range",
-     "note": "Pokój zabaw przyjmuje dzieci od ukończonych 3 do 10 lat. Dziecko musi się swobodnie porozumiewać z personelem i samo korzystać z toalety. Personel może poprosić o dokument z datą urodzenia.",
-     "short": "Od 3 do 10 lat",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://www.ikea.com/pl/pl/files/pdf/76/64/76645b88/ikeapoznan-regulamin-smaland.pdf",
-     "value": {
-      "independent_toilet": true,
-      "max_years": 10,
-      "min_years": 3
-     },
-     "verified_at": "2026-11-05"
-    },
-    {
-     "age_band": null,
-     "key": "supervision",
-     "note": "Dzieckiem opiekuje się personel, najdłużej godzinę. Opiekun wypełnia formularz, zostaje w sklepie i odbiera telefon w czasie pobytu dziecka.",
-     "short": "Personel pilnuje do 1 godziny",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://www.ikea.com/pl/pl/files/pdf/76/64/76645b88/ikeapoznan-regulamin-smaland.pdf",
-     "value": {
-      "max_minutes": 60,
-      "parent_stays_in_store": true,
-      "phone_required": true,
-      "staff": true
-     },
-     "verified_at": "2026-11-05"
-    },
-    {
-     "age_band": null,
-     "key": "socks_required",
-     "note": "Dzieci wchodzą w skarpetkach, bez butów i okrycia wierzchniego. Nie wolno wnosić telefonów, zabawek ani jedzenia.",
-     "short": "Dzieci w skarpetkach, bez butów",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://www.ikea.com/pl/pl/files/pdf/76/64/76645b88/ikeapoznan-regulamin-smaland.pdf",
-     "value": {
-      "applies_to": "children",
-      "required": true
-     },
-     "verified_at": "2026-11-05"
-    },
-    {
-     "age_band": null,
-     "key": "opening_hours",
-     "note": "Poniedziałek–piątek 14:00–20:00, sobota 9:00–20:30 (według strony sklepu IKEA Poznań).",
-     "short": "Pon.–pt. 14–20, sob. 9–20:30",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://www.ikea.com/pl/pl/stores/poznan/",
-     "value": {
-      "text": "pon.-pt. 14:00-20:00, sob. 09:00-20:30"
-     },
-     "verified_at": "2026-11-05"
-    }
-   ],
-   "lat": 52.3829292,
-   "lon": 16.9879961,
-   "name": "Smålandia w IKEA Poznań",
-   "official_url": "https://www.ikea.com/pl/pl/stores/poznan/",
-   "osm": "node/9945645798",
-   "slug": "smalandia-ikea",
-   "status": "published"
-  }
  ]
 }
