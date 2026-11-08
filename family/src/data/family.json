@@ -1857,6 +1857,170 @@
   {
    "access": [
     {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 85,
+     "mode": "car",
+     "note": "90 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.6853%2C18.9118",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 125,
+     "mode": "car",
+     "note": "140 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.6853%2C18.9118",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 180,
+     "mode": "car",
+     "note": "250 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.6853%2C18.9118",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 265,
+     "mode": "car",
+     "note": "410 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.6853%2C18.9118",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 295,
+     "mode": "car",
+     "note": "430 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.6853%2C18.9118",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 380,
+     "mode": "car",
+     "note": "610 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.6853%2C18.9118",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "Leśnica 153, 43-438 Brenna",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Dla maluchów łóżeczka turystyczne z kompletem pościeli. Opłaty strona nie podaje.",
+     "short": "Łóżeczko turystyczne z kompletem pościeli",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.dolinalesnicy.pl/atrakcje/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "child_free_stay",
+     "note": "Dzieci do lat 4 mają bezpłatny pobyt ze śniadaniem. Innych warunków (np. spanie z rodzicami) strona nie podaje.",
+     "short": "Dzieci do 4 lat gratis ze śniadaniem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.dolinalesnicy.pl/atrakcje/dla-dzieci",
+     "value": {
+      "breakfast_included": true,
+      "free": true,
+      "max_age_years": 4
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W restauracji krzesełka do karmienia oraz plastikowa zastawa i sztućce dla dzieci.",
+     "short": "Krzesełka do karmienia w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.dolinalesnicy.pl/atrakcje/dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "W restauracji resortu specjalne menu dla dzieci.",
+     "short": "Menu dla dzieci w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.dolinalesnicy.pl/atrakcje/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Pokój zabaw z zabawkami, klockami, bujakami, mebelkami i miękkimi pufami. Minimalnego wieku, godzin ani tego, czy rodzic musi zostać, strona nie podaje.",
+     "short": "Pokój zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.dolinalesnicy.pl/atrakcje/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Duży teren zielony z placem zabaw: piaskownica, zjeżdżalnia, huśtawki.",
+     "short": "Plac zabaw z piaskownicą i huśtawkami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.dolinalesnicy.pl/atrakcje/dla-dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "W wakacje i ferie zimowe animacje dla dzieci (zajęcia plastyczne). Minimalnego wieku strona nie podaje.",
+     "short": "Animacje w wakacje i ferie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.dolinalesnicy.pl/atrakcje/dla-dzieci",
+     "value": {
+      "available": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.6852778,
+   "lon": 18.9117876,
+   "name": "Dolina Leśnicy SKI & SPA Resort",
+   "official_url": "https://dolinalesnicy.pl/",
+   "place": "brenna",
+   "slug": "dolina-lesnicy-brenna",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
      "from_code": "Kraków",
      "from_kind": "city",
      "minutes": 100,
@@ -19202,6 +19366,145 @@
   {
    "access": [
     {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 75,
+     "mode": "car",
+     "note": "80 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.7217%2C19.0226",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 110,
+     "mode": "car",
+     "note": "120 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.7217%2C19.0226",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 190,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.7217%2C19.0226",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 255,
+     "mode": "car",
+     "note": "400 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.7217%2C19.0226",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 310,
+     "mode": "car",
+     "note": "470 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.7217%2C19.0226",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 365,
+     "mode": "car",
+     "note": "600 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.7217%2C19.0226",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Wrzosowa 28a, 43-370 Szczyrk",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Darmowe łóżeczka turystyczne z pościelą.",
+     "short": "Darmowe łóżeczko turystyczne z pościelą",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mercureszczyrk.pl/hotel-dla-dzieci-w-gorach",
+     "value": {
+      "available": true,
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Wśród udogodnień dla maluchów krzesełka do karmienia.",
+     "short": "Krzesełka do karmienia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mercureszczyrk.pl/hotel-dla-dzieci-w-gorach",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala zabaw BOOM z basenem z kulkami i drewnianymi domkami, dzieci bawią się pod opieką rodziców; mała sala BOOMIK w restauracji śniadaniowej SEASONS (kredki, klocki, kolorowanki). Minimalnego wieku ani godzin strona nie podaje.",
+     "short": "Sale zabaw BOOM i BOOMIK, pod opieką rodziców",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mercureszczyrk.pl/hotel-dla-dzieci-w-gorach",
+     "value": {
+      "available": true,
+      "count": 2,
+      "parent_supervision": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "W strefie basenowej Water & Fun (8:00–22:00) brodzik z wieloma atrakcjami dla najmłodszych. Głębokości, temperatury ani zasad wiekowych strona nie podaje.",
+     "short": "Brodzik z atrakcjami w strefie Water & Fun",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://mercureszczyrk.pl/baseny-szczyrk",
+     "value": {
+      "available": true,
+      "indoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Garaż i parking naziemny, dodatkowo płatne według cennika; parking jest niestrzeżony (regulamin hotelu, s. 7; regulamin parkingu). Stawki strona nie podaje.",
+     "short": "Płatny parking i garaż, niestrzeżone",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://mercureszczyrk.pl/wp-content/uploads/Regulamin-korzystania-z-parkingu-MSR.pdf",
+     "value": {
+      "garage": true,
+      "guarded": false,
+      "paid": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.7217243,
+   "lon": 19.0225807,
+   "name": "Mercure Szczyrk Resort",
+   "official_url": "https://mercureszczyrk.pl/",
+   "place": "szczyrk",
+   "slug": "mercure-szczyrk",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
      "from_code": "Gdańsk",
      "from_kind": "city",
      "minutes": 205,
@@ -20921,6 +21224,160 @@
    "official_url": "https://www.royal-baltic.pl/",
    "place": "ustka",
    "slug": "royal-baltic-ustka",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 80,
+     "mode": "car",
+     "note": "80 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.7193%2C18.8321",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 120,
+     "mode": "car",
+     "note": "130 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.7193%2C18.8321",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 170,
+     "mode": "car",
+     "note": "240 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.7193%2C18.8321",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 260,
+     "mode": "car",
+     "note": "400 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.7193%2C18.8321",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 290,
+     "mode": "car",
+     "note": "430 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.7193%2C18.8321",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 370,
+     "mode": "car",
+     "note": "600 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.7193%2C18.8321",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Zdrojowa 15, 43-450 Ustroń",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Do pokoju można przygotować łóżeczko dziecięce (albo dostawkę). Opłaty strona nie podaje.",
+     "short": "Łóżeczko dziecięce na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelbelweder.pl/hotel-dla-rodzin",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "W restauracji Menu Małego Belwederu dla dzieci, np. rosół z makaronem 15 zł, spaghetti bolognese 25 zł, tosty 15 zł.",
+     "short": "Menu Małego Belwederu (np. rosół 15 zł)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelbelweder.pl/hotel-dla-rodzin",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala zabaw czynna codziennie 7:00–22:00. Dzieci poniżej 3 lat (także na animacjach) tylko w obecności rodzica; dzieci 3–13 lat mogą zostać pod opieką animatorów po podpisaniu zgody (regulamin sali zabaw).",
+     "short": "Sala zabaw 7–22; do 3 lat tylko z rodzicem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://wa-uploads.profitroom.com/belwederhotel/17389286667331_Regulaminpokojuzabaw.pdf",
+     "value": {
+      "available": true,
+      "close": "22:00",
+      "open": "07:00",
+      "supervised": true,
+      "with_parent_under_years": 3
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Przy hotelu ogród z placem zabaw.",
+     "short": "Plac zabaw w ogrodzie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelbelweder.pl/hotel-dla-rodzin",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animacje, warsztaty i zajęcia dla najmłodszych; program zmienia się sezonowo i według wieku, najwięcej atrakcji w weekendy i w wakacje. Dzieci poniżej 3 lat tylko z rodzicem.",
+     "short": "Animacje, najwięcej w weekendy i wakacje",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelbelweder.pl/hotel-dla-rodzin",
+     "value": {
+      "available": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "27-metrowy basen z brodzikiem i wydzieloną strefą dla dzieci. Głębokości ani temperatury strona nie podaje.",
+     "short": "Brodzik przy 27-metrowym basenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelbelweder.pl/hotel-dla-rodzin",
+     "value": {
+      "available": true,
+      "indoor": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.7193135,
+   "lon": 18.8320792,
+   "name": "Hotel Belweder",
+   "official_url": "https://hotelbelweder.pl/",
+   "place": "ustron",
+   "slug": "belweder-ustron",
    "status": "published"
   },
   {
@@ -24385,6 +24842,199 @@
    "place": "zalesie",
    "slug": "zalesie-mazury",
    "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 45,
+     "mode": "car",
+     "note": "40 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.5104%2C19.3820",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 90,
+     "mode": "car",
+     "note": "110 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.5104%2C19.3820",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 165,
+     "mode": "car",
+     "note": "240 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.5104%2C19.3820",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 195,
+     "mode": "car",
+     "note": "290 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.5104%2C19.3820",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 250,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.5104%2C19.3820",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 305,
+     "mode": "car",
+     "note": "490 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.5104%2C19.3820",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Mrzygłodzka 273, 42-400 Zawiercie",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na życzenie łóżeczko turystyczne z pościelą. Opłaty strona nie podaje.",
+     "short": "Łóżeczko turystyczne z pościelą na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://villaverde.pl/dla-rodzin-z-dziecmi-hotel-spa-na-jurze",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Na życzenie podgrzewacz do butelek. Opłaty strona nie podaje.",
+     "short": "Podgrzewacz do butelek na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://villaverde.pl/dla-rodzin-z-dziecmi-hotel-spa-na-jurze",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Na życzenie wanienka. Opłaty strona nie podaje.",
+     "short": "Wanienka na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://villaverde.pl/dla-rodzin-z-dziecmi-hotel-spa-na-jurze",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Na życzenie przewijak do pokoju. Opłaty strona nie podaje.",
+     "short": "Przewijak do pokoju na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://villaverde.pl/dla-rodzin-z-dziecmi-hotel-spa-na-jurze",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "where": "room"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Na życzenie nocnik. Opłaty strona nie podaje.",
+     "short": "Nocnik na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://villaverde.pl/dla-rodzin-z-dziecmi-hotel-spa-na-jurze",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "W hotelu jest pokój zabaw. Minimalnego wieku, godzin ani tego, czy rodzic musi zostać, strona nie podaje.",
+     "short": "Pokój zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://villaverde.pl/dla-rodzin-z-dziecmi-hotel-spa-na-jurze",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animacje dla najmłodszych gości; tematyka zależy od pakietu i pory roku. Minimalnego wieku strona nie podaje.",
+     "short": "Animacje dla najmłodszych (wg pakietu i sezonu)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.villaverde.pl/animacje_hotel_dla_dzieci_na_jurze",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Przy hotelu zewnętrzny plac zabaw. Wieku ani godzin strona nie podaje.",
+     "short": "Zewnętrzny plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://villaverde.pl/dla-rodzin-z-dziecmi-hotel-spa-na-jurze",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_pool",
+     "note": "Baseny zewnętrzne ze zjeżdżalniami i strefą dziecka. Sezonu, głębokości ani zasad wiekowych strona nie podaje.",
+     "short": "Baseny zewnętrzne ze strefą dziecka",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://villaverde.pl/dla-rodzin-z-dziecmi-hotel-spa-na-jurze",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.5103923,
+   "lon": 19.3820251,
+   "name": "Hotel Villa Verde",
+   "official_url": "https://www.villaverde.pl/",
+   "place": "zawiercie",
+   "slug": "villa-verde-zawiercie",
+   "status": "published"
   }
  ],
  "places": [
@@ -24915,6 +25565,22 @@
    "name": "Lgota Murowana",
    "region": "Jura Krakowsko-Częstochowska",
    "slug": "lgota-murowana"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Zawiercie",
+   "region": "Jura Krakowsko-Częstochowska",
+   "slug": "zawiercie"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Brenna",
+   "region": "Beskidy",
+   "slug": "brenna"
   }
  ],
  "rule_keys": [

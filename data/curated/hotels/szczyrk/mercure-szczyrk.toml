@@ -1,0 +1,122 @@
+# Facts from the hotel's own website (mercureszczyrk.pl; robots.txt disallows only /stats/, checked
+# 2026-11-08): /hotel-dla-dzieci-w-gorach, /baseny-szczyrk, home page, hotel rules PDF
+# (/wp-content/uploads/REGULAMIN-.pdf, s. 7) and parking rules PDF
+# (/wp-content/uploads/Regulamin-korzystania-z-parkingu-MSR.pdf). Written in our words.
+# Also on the site, no feature key for it: Water & Fun pool zone open 8:00-22:00 (whether included for hotel
+# guests isn't stated); Hot & Chill zone from 16 years, extra charge.
+# Not stated (so not recorded yet): free-stay age, baby bath, changing table, potty, bottle warmer, baby
+# monitor, kids' menu, lift, playroom ages and hours, animations, brodzik depth and temperature, parking fee.
+#
+# Coordinates: OpenStreetMap relation/3283453 (centre; (c) OpenStreetMap contributors, ODbL); the site gives
+# no map coordinates.
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet (Szczyrk has no station; Bielsko-Biała about 20 km).
+slug = "mercure-szczyrk"
+place = "szczyrk"
+name = "Mercure Szczyrk Resort"
+official_url = "https://mercureszczyrk.pl/"
+address = "ul. Wrzosowa 28a, 43-370 Szczyrk"
+lat = 49.7217243
+lon = 19.0225807
+status = "published"
+
+[[feature]]
+key = "cot"
+value = { available = true, free = true }
+short = "Darmowe łóżeczko turystyczne z pościelą"
+note = "Darmowe łóżeczka turystyczne z pościelą."
+source = "hotel_website"
+url = "https://www.mercureszczyrk.pl/hotel-dla-dzieci-w-gorach"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "high_chair"
+value = { available = true }
+short = "Krzesełka do karmienia"
+note = "Wśród udogodnień dla maluchów krzesełka do karmienia."
+source = "hotel_website"
+url = "https://www.mercureszczyrk.pl/hotel-dla-dzieci-w-gorach"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true, count = 2, parent_supervision = true }
+short = "Sale zabaw BOOM i BOOMIK, pod opieką rodziców"
+note = "Sala zabaw BOOM z basenem z kulkami i drewnianymi domkami, dzieci bawią się pod opieką rodziców; mała sala BOOMIK w restauracji śniadaniowej SEASONS (kredki, klocki, kolorowanki). Minimalnego wieku ani godzin strona nie podaje."
+source = "hotel_website"
+url = "https://www.mercureszczyrk.pl/hotel-dla-dzieci-w-gorach"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "paddling_pool"
+value = { available = true, indoor = true }
+short = "Brodzik z atrakcjami w strefie Water & Fun"
+note = "W strefie basenowej Water & Fun (8:00–22:00) brodzik z wieloma atrakcjami dla najmłodszych. Głębokości, temperatury ani zasad wiekowych strona nie podaje."
+source = "hotel_website"
+url = "https://mercureszczyrk.pl/baseny-szczyrk"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { paid = true, guarded = false, garage = true }
+short = "Płatny parking i garaż, niestrzeżone"
+note = "Garaż i parking naziemny, dodatkowo płatne według cennika; parking jest niestrzeżony (regulamin hotelu, s. 7; regulamin parkingu). Stawki strona nie podaje."
+source = "hotel_website"
+url = "https://mercureszczyrk.pl/wp-content/uploads/Regulamin-korzystania-z-parkingu-MSR.pdf"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 75
+note = "80 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.7217%2C19.0226"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 110
+note = "120 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.7217%2C19.0226"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 190
+note = "280 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.7217%2C19.0226"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 255
+note = "400 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.7217%2C19.0226"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 310
+note = "470 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.7217%2C19.0226"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 365
+note = "600 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.7217%2C19.0226"
+verified_at = 2026-11-08

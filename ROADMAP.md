@@ -190,6 +190,14 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       bed, changing table in room and at the pool, bath, brodzik). 15 śląskie leads left.
 - [ ] U (phone/e-mail, optional): Gołębiewski free-stay age and parking fee; Klimczok cot fee, parking, lift;
       Diament cot fee, which building the baby items are in; Fajkier parking, play corner age.
+- [x] C: śląskie hotels, batch 2 (2026-11-08): Villa Verde (Zawiercie, 9 facts: cot, changing table, warmer,
+      potty, bath on request), Dolina Leśnicy (Brenna, 7: under 8; cot, free stay to 4 with breakfast, high
+      chair, kids' menu), Belweder (Ustroń, 6: under 8; playroom 7-22, under 3 only with a parent, brodzik,
+      kids' menu with prices), Mercure Szczyrk (5: under 8; free cot, high chair, brodzik, two playrooms with
+      parents, paid unguarded parking). 11 śląskie leads left.
+- [ ] U (phone/e-mail, optional): Villa Verde free-stay age, high chair, parking; Dolina Leśnicy baby bath,
+      changing table, parking; Belweder free-stay age, baby items, parking; Mercure free-stay age, baby bath,
+      kids' menu.
 - [x] ~~U: decide which pomorskie hotels to publish (all are `draft`);~~ superseded above; those under 8 facts need a phone or e-mail
       round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Kiston cot fee, free-stay age, brodzik; Primavera cot fee, Playland age;
