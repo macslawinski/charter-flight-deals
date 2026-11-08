@@ -32,9 +32,10 @@ OUT_DIR = REPO_ROOT / "family" / "src" / "data" / "map"
 # Site slug -> `venues.locality`. Add a city here when its data is ready.
 CITIES = {"poznan": "Poznań"}
 # Display order of facts on a place card; keys not listed go last, alphabetically.
-FACT_ORDER = ["age_range", "toddler_zone", "infant_free", "toddler_classes", "opening_hours", "access",
-              "price", "price_child", "price_adult", "equipment", "socks_required", "cafe", "changing_table",
-              "parking", "supervision", "service_mode", "phone", "notes", "managed_by"]
+FACT_ORDER = ["age_range", "toddler_zone", "infant_free", "toddler_classes", "family_programme", "opening_hours",
+              "access", "price", "price_child", "price_adult", "equipment", "socks_required", "stroller_access",
+              "birthday_parties", "cafe", "changing_table", "parking", "supervision", "service_mode", "phone",
+              "notes", "managed_by"]
 
 
 def _order(key: str) -> tuple[int, str]:

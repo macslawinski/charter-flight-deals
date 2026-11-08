@@ -83,3 +83,12 @@ note = "Za dziecko na sali odpowiada rodzic albo pełnoletni opiekun."
 source = "venue_website"
 url = "https://krainapiratow.pl/regulamin/"
 verified_at = 2026-11-04
+
+[[feature]]
+key = "birthday_parties"
+value = { available = true, weekday_pln = 400, weekend_pln = 500, children_included = 10 }
+short = "Urodziny od 400 zł (do 10 dzieci, pon.–czw.)"
+note = "Pakiet 1: 400 zł od poniedziałku do czwartku, 500 zł w piątek–niedzielę i święta, za 10 dzieci (rozliczane jest co najmniej 10); każde kolejne dziecko 30 zł / 40 zł. Dwie godziny (można przedłużyć do trzech za dopłatą), wszystkie atrakcje, sala urodzinowa, słodki poczęstunek i napoje. Pakiet 2 z animatorem: 550 zł / 650 zł."
+source = "venue_website"
+url = "https://krainapiratow.pl/urodziny/"
+verified_at = 2026-11-08

@@ -73,6 +73,7 @@ export const CATEGORIES: { id: string; chip: string; color: string; radius: numb
   { id: "zoo", chip: "Zoo i ogrody", color: "#3f8f2f", radius: 8 },
   { id: "kultura", chip: "Teatr dla dzieci", color: "#b8327a", radius: 8 },
   { id: "rekreacja", chip: "Stok i atrakcje", color: "#8d5a14", radius: 8 },
+  { id: "muzeum", chip: "Muzea dla rodzin", color: "#6a4c93", radius: 8 },
   { id: "nisoz", chip: "Nocna i świąteczna pomoc lekarska", color: "#5b3cc4", radius: 8 },
 ];
 const CAT_IDS = CATEGORIES.map((c) => c.id);
@@ -91,6 +92,8 @@ export const TAGS: { id: string; cat: string; group: string; chip: string; test:
     test: (fs: ExportFact[]) => fs.some((f) => f.key === "equipment" && f.value[id] === true),
   })),
   { id: "toddler", cat: "sala_zabaw", group: "age", chip: "Z ofertą dla 0–3 lat", test: toddlerFacts },
+  { id: "birthday", cat: "sala_zabaw", group: "party", chip: "Organizuje urodziny",
+    test: (fs) => fs.some((f) => f.key === "birthday_parties" && f.value.available === true) },
   { id: "paddling", cat: "basen", group: "kids", chip: "Z brodzikiem",
     test: (fs) => fs.some((f) => f.key === "paddling_pool" && f.value.available === true) },
   { id: "baby_classes", cat: "basen", group: "kids", chip: "Zajęcia dla niemowląt",

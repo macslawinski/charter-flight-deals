@@ -1,0 +1,42 @@
+# Discovered via OpenStreetMap (way/441733580, © OpenStreetMap contributors, ODbL); facts from the museum's own
+# pages (/, /cennik, /zajeciarodzinne), read 2026-11-08. Written in our words.
+# The family classes page names "Małe psoty" as the class for the youngest, without ages; the price list gives the
+# age bands (0-3, 3-5, 6-12). Not stated: lift / stroller access details (the accessibility page only says the
+# exhibition is adapted), changing table, parking, from which age a child needs a ticket for the exhibition.
+slug = "brama-poznania"
+city = "poznan"
+category = "muzeum"
+name = "Brama Poznania ICHOT"
+official_url = "https://bramapoznania.pl/"
+address = "ul. Gdańska 2, Poznań"
+lat = 52.412324
+lon = 16.951665
+osm = "way/441733580"
+status = "published"
+
+[[feature]]
+key = "family_programme"
+value = { available = true, ages = ["0-3", "3-5", "6-12"], price_child_pln = 20, adults_free_max = 2, family_6_12_pln = 60 }
+short = "Zajęcia rodzinne dla 0–3 i 3–5 lat: 20 zł za dziecko"
+note = "Zajęcia dla rodzin z dziećmi w wieku 0–3 i 3–5 lat kosztują 20 zł za dziecko; rodzice lub opiekunowie (najwyżej dwoje) wchodzą bez opłaty. Dla dzieci 6–12 lat: 60 zł za rodzinę do 5 osób. Na pograjki, koncerty i spektakle dziecko do 3 lat płaci 5 zł. Zajęcia dla najmłodszych to „Małe psoty”."
+source = "venue_website"
+url = "https://bramapoznania.pl/cennik"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "opening_hours"
+value = { tue_fri = "9:00-18:00", sat_sun = "10:00-19:00" }
+short = "Wt.–pt. 9–18, sob.–niedz. 10–19"
+note = "Wtorek–piątek 9:00–18:00, sobota i niedziela 10:00–19:00. Poniedziałku strona nie wymienia."
+source = "venue_website"
+url = "https://bramapoznania.pl/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "price"
+value = { normal_pln = 35, reduced_pln = 29, family_pln = 75 }
+short = "Wystawa: 35 zł, ulgowy 29 zł, rodzinny 75 zł"
+note = "Bilet rodzinny 75 zł: najwyżej 5 osób, w tym najwyżej 2 dorosłych i dzieci do 18 lat; dziecko potrzebuje dokumentu uprawniającego do zniżki (np. legitymacji). Z Poznańską Kartą Turystyczną: 21 zł i 17 zł."
+source = "venue_website"
+url = "https://bramapoznania.pl/cennik"
+verified_at = 2026-11-08

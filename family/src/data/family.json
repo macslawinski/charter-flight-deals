@@ -27422,6 +27422,7 @@
  },
  "venue_keys": [
   "age_range",
+  "birthday_parties",
   "cafe",
   "changing_table",
   "infant_free",

@@ -356,12 +356,13 @@ const VENUE_FEATURES: Record<string, { label: string; icon: string }> = {
   supervision: { label: "Opieka", icon: "hand" },
   toddler_classes: { label: "Zajęcia dla maluchów", icon: "star" },
   changing_table: { label: "Przewijak", icon: "diaper" },
+  birthday_parties: { label: "Urodziny", icon: "star" },
 };
 export const venueLabel = (key: string) => must(VENUE_FEATURES, key, "venue label").label;
 export const venueIcon = (key: string) => must(VENUE_FEATURES, key, "venue icon").icon;
 export const VENUE_ORDER = [
   "age_range", "toddler_zone", "infant_free", "toddler_classes", "price_child", "price_adult",
-  "opening_hours", "socks_required", "cafe", "changing_table", "parking", "supervision",
+  "opening_hours", "socks_required", "birthday_parties", "cafe", "changing_table", "parking", "supervision",
 ];
 
 // A venue is "for the youngest" only when its own site says so, never by guess.

@@ -1,0 +1,59 @@
+# Discovered via OpenStreetMap (node/9736298555, © OpenStreetMap contributors, ODbL); facts from the venue's own
+# pages (/, /bilety/), read 2026-11-08. Written in our words.
+# Prices on the site are "from" prices (Tuesday-Friday). Not stated: lift / stroller access, changing table,
+# visit length, birthday party prices, opening on Mondays.
+slug = "historyland"
+city = "poznan"
+category = "muzeum"
+name = "HistoryLand Poznań"
+official_url = "https://historyland.pl/"
+address = "ul. Głogowska 14, Hala 3A (Międzynarodowe Targi Poznańskie), Poznań"
+lat = 52.405897
+lon = 16.910492
+osm = "node/9736298555"
+status = "published"
+
+[[feature]]
+key = "infant_free"
+value = { free = true, under_years = 3 }
+short = "Dzieci do 3 lat za darmo"
+note = "Dzieci do 3 lat wchodzą bezpłatnie, tylko z rodzicem lub opiekunem."
+source = "venue_website"
+url = "https://historyland.pl/bilety/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "opening_hours"
+value = { tue_sun = "10:00-18:00", last_entry = "17:15" }
+short = "Wt.–niedz. 10–18 (ostatnie wejście 17:15)"
+note = "Wtorek–niedziela 10:00–18:00, ostatnie wejście o 17:15. Poniedziałku strona nie wymienia."
+source = "venue_website"
+url = "https://historyland.pl/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "price"
+value = { normal_from_pln = 45, reduced_from_pln = 35, family_2_2_from_pln = 130 }
+short = "Od 45 zł, ulgowy (do 18 lat) od 35 zł"
+note = "Ceny „od” (wtorek–piątek): normalny od 45 zł (powyżej 18 lat), ulgowy od 35 zł (do 18 lat), rodzinny 2+2 od 130 zł. Audioprzewodnik 5 zł, z biletem rodzinnym 3 zł."
+source = "venue_website"
+url = "https://historyland.pl/bilety/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "birthday_parties"
+value = { available = true }
+short = "Urodziny z klockami LEGO (cena na zapytanie)"
+note = "Strona opisuje urodziny z animacjami, warsztatami i zabawami z klockami LEGO dla dzieci w każdym wieku; ceny nie podaje."
+source = "venue_website"
+url = "https://historyland.pl/nasze-atrakcje/urodziny-w-historylandzie/"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "notes"
+value = { lego_models = 10, scale = "1:50", play_room = true }
+short = "10 makiet historii Polski z klocków LEGO; sala zabaw"
+note = "Wystawa to 10 makiet wydarzeń z historii Polski zbudowanych z miliona klocków LEGO w skali 1:50. Jest też sala zabaw, gdzie dzieci budują z klocków."
+source = "venue_website"
+url = "https://historyland.pl/"
+verified_at = 2026-11-08
