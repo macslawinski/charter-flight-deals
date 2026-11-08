@@ -17,7 +17,7 @@ lat = 52.48481
 lon = 20.96951
 signals = ["przewijak", "brodzik", "sala zabaw"]
 why = "Brodzik ze zjeżdżalnią i parasolem wodnym, przewijaki na życzenie, sala KIDDI ROOM dla dzieci do 150 cm (z opiekunem)."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "B&B Julinek Park"
@@ -29,7 +29,8 @@ lat = 52.27457
 lon = 20.59602
 signals = ["łóżeczko", "wanienka", "podgrzewacz", "nocnik", "elektroniczna niania", "sala zabaw"]
 why = "Łóżeczko, wanienka, podgrzewacz, nocnik z nakładką, niania elektryczna na życzenie; dzieci do 3 lat gratis. Nazwa B&B, ale restauracja i pokoje rodzinne."
-status = "lead"
+status = "skipped"
+skip_reason = "B&B (regulamin: obiekt noclegowy), nie hotel; reguła tylko hotele. Mocna oferta 0-3: łóżeczko, wanienka, podgrzewacz, nocnik, niania, do 3 lat gratis."
 
 [[lead]]
 name = "Hotel BoniFaCio SPA & Sport Resort"
@@ -41,7 +42,7 @@ lat = 52.71496
 lon = 20.40881
 signals = ["brodzik", "strefa malucha"]
 why = "Brodzik dla maluchów, Strefa Malucha (weekendy i wakacje); łóżeczko i krzesełko do sprawdzenia na podstronie udogodnień."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Pałac Domaniowski Resort & Conference"
@@ -53,7 +54,7 @@ lat = 51.41492
 lon = 20.84609
 signals = ["łóżeczko", "krzesełko", "menu dziecięce"]
 why = "Łóżeczka i krzesełka do karmienia na życzenie, menu dziecięce; brak brodzika i sali dla maluchów."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Pałac Alexandrinum"
@@ -65,7 +66,7 @@ lat = 52.29784
 lon = 21.38714
 signals = ["łóżeczko", "wanienka", "podgrzewacz", "krzesełko", "brodzik", "sala zabaw"]
 why = "Łóżeczko, wanienka, podgrzewacz do butelek i słoiczków, foteliki do karmienia, brodzik z podgrzewaną wodą, pokój zabaw."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Kawallo"
@@ -78,7 +79,7 @@ lat = 52.39977
 lon = 19.90489
 signals = ["brodzik", "sala zabaw"]
 why = "Brodzik dla dzieci z kurtyną wodną, sala zabaw Leśna Kryjówka, plac zabaw; łóżeczka nie wymienione."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Arche Pałac i Folwark Łochów"
@@ -90,7 +91,7 @@ lat = 52.51526
 lon = 21.69932
 signals = ["łóżeczko", "wanienka", "przewijak", "krzesełko", "brodzik", "sala zabaw"]
 why = "Łóżeczko i wanienka w pokoju, przewijak, krzesełka, bezpieczny brodzik dla maluchów, sala zabaw; dzieci do 4 lat gratis."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Panorama"
@@ -103,7 +104,7 @@ lat = 51.9741
 lon = 20.53936
 signals = ["łóżeczko", "przewijak", "krzesełko", "sala zabaw"]
 why = "Bezpłatne łóżeczka, ogólnodostępny przewijak, krzesełka, Misiowa Sala dla niemowląt (otwierana na życzenie) w strefie Panorama KIDS."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Santa Natura Resort & SPA"
@@ -115,7 +116,7 @@ lat = 52.06294
 lon = 20.26581
 signals = ["brodzik", "plac zabaw"]
 why = "Brodzik dla dzieci, drewniany plac zabaw z piaskownicą; łóżeczka i sali zabaw strona nie wymienia."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Artis Loft Hotel"
@@ -127,7 +128,7 @@ lat = 51.99108
 lon = 20.54453
 signals = ["łóżeczko", "wanienka", "podgrzewacz", "przewijak", "nocnik", "krzesełko", "sala zabaw"]
 why = "Łóżeczko z pościelą, wanienka, nocnik na życzenie, podgrzewacz i krzesełka w restauracji, przewijak, sala zabaw; do 3 lat gratis."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Skansen Conference & SPA"
@@ -140,7 +141,7 @@ lat = 52.86496
 lon = 19.63188
 signals = ["brodzik", "sala zabaw", "menu dla najmłodszych"]
 why = "Brodzik dla dzieci z kurtyną wodną i gejzerem, place zabaw wewnętrzne i zewnętrzne, menu dla najmłodszych."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Sobienie Królewskie"
@@ -152,7 +153,7 @@ lat = 51.93584
 lon = 21.32707
 signals = ["sala zabaw", "pieluszki kąpielowe"]
 why = "Kids Room z basenem z piłkami, pieluszki kąpielowe na recepcji; brak brodzika i sprzętu dla niemowląt na stronie (najsłabszy lead)."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Sielanka nad Pilicą"
@@ -164,7 +165,7 @@ lat = 51.76998
 lon = 21.17154
 signals = ["brodzik", "sala zabaw", "plac zabaw"]
 why = "Bezpieczny brodzik w strefie basenowej, sala zabaw Pasikonik (animator od 4 lat), plac zabaw, mini zoo."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "DoubleTree by Hilton Warsaw"
@@ -176,7 +177,7 @@ lat = 52.18564
 lon = 21.14122
 signals = ["brodzik", "kids club", "menu dziecięce"]
 why = "Brodzik w strefie wellness, Kids Club, menu dla dzieci; łóżeczka nie wymienione."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Indigo Warsaw - Nowy Świat"
@@ -188,7 +189,7 @@ lat = 52.23273
 lon = 21.02125
 signals = ["łóżeczko", "przewijak", "elektroniczna niania"]
 why = "Hotel w centrum: łóżeczka, przewijak, elektroniczna niania; bez basenu i sali zabaw."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Las Woda Park Rekreacyjno-Biznesowy"
@@ -201,8 +202,7 @@ lat = 51.84386
 lon = 21.43696
 signals = ["brodzik", "sala zabaw"]
 why = "Wydzielony brodzik przy basenie zewnętrznym (sezon letni), sala zabaw z małpim gajem; probe widział też łóżeczko i wanienkę do potwierdzenia."
-status = "lead"
-
+status = "curated"
 [[lead]]
 name = "Holiday Inn Resort Warszawa Józefów"
 town = "Józefów"

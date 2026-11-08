@@ -1,0 +1,128 @@
+# Facts from the hotel's own website (hotelskansen.pl; robots.txt allows all, checked 2026-11-08):
+# /rodzinnie, /kontakt, regulamin hotelu PDF (/download/hotel-skansen/...). Written in our words.
+# Also on the site, no feature key for it: Muzeum Wsi Mazowieckiej (open-air museum) next door; children's
+# pedal go-karts, bikes, sledges in winter; children under 13 must be supervised (regulamin pt 8).
+# Not stated (so not recorded yet): cot, free-stay ages, high chair, baby bath, bottle warmer, changing
+# table, potty, lift, playroom hours / minimum age.
+#
+# Coordinates: OpenStreetMap relation/9595176 (ODbL).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet.
+slug = "hotel-skansen-sierpc"
+place = "sierpc"
+name = "Hotel Skansen Conference & SPA"
+official_url = "https://www.hotelskansen.pl/"
+address = "ul. Gabriela Narutowicza 64, 09-200 Sierpc"
+lat = 52.86496  # OpenStreetMap relation/9595176, ODbL
+lon = 19.63188
+status = "draft"
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Menu dla najmłodszych"
+note = "Restauracja ma osobne menu dla najmłodszych. Czy obejmuje dania dla niemowląt, strona nie mówi."
+source = "hotel_website"
+url = "https://www.hotelskansen.pl/rodzinnie"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Wewnętrzny plac zabaw"
+note = "Wewnętrzny plac zabaw. Godzin, minimalnego wieku i opieki strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelskansen.pl/rodzinnie"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "Na zewnątrz"
+note = "Zewnętrzny plac zabaw."
+source = "hotel_website"
+url = "https://www.hotelskansen.pl/rodzinnie"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, paid = true, fee_pln_per_hour = 50, fee_pln_per_day = 80 }
+short = "Płatne: 50 zł/h lub 80 zł/dzień"
+note = "Animacje dla dzieci płatne: 50 zł za godzinę od osoby albo 80 zł za cały dzień (regulamin hotelu, s. 2). Wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelskansen.pl/download/hotel-skansen/user/PDF/Regulamin-HnTZowdJ.pdf"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "paddling_pool"
+value = { indoor = true }
+short = "Brodzik w strefie wellness"
+note = "Brodzik dla dzieci w strefie wellness, obok kurtyny wodnej, gejzeru, kaskady i grzybka. Godzin i wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelskansen.pl/rodzinnie"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { paid = true, fee_pln_per_day = 20, first_hour_free = true, guarded = false, monitored = true }
+short = "Płatny, do 20 zł za dobę"
+note = "Parking niestrzeżony, monitorowany, płatny (pobiera Muzeum Wsi Mazowieckiej): 1. godzina bezpłatnie, każda kolejna 2 zł, postój powyżej 10 h 20 zł za dobę."
+source = "hotel_website"
+url = "https://www.hotelskansen.pl/kontakt"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 120
+note = "130 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B52.8650%2C19.6319"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 180
+note = "240 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B52.8650%2C19.6319"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 230
+note = "260 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B52.8650%2C19.6319"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 245
+note = "350 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B52.8650%2C19.6319"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 280
+note = "380 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B52.8650%2C19.6319"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 290
+note = "420 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B52.8650%2C19.6319"
+verified_at = 2026-11-08
