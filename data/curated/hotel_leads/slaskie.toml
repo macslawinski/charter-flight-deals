@@ -16,7 +16,7 @@ lat = 49.6852778
 lon = 18.9117876
 signals = ["łóżeczko turystyczne", "krzesełko do karmienia", "menu dla dzieci", "sala zabaw", "dzieci do 4 lat gratis"]
 why = "Łóżeczka turystyczne z pościelą, krzesełka do karmienia, menu dla dzieci, sala zabaw; dzieci do lat 4 bezpłatnie ze śniadaniem (adres: Leśnica 153, Brenna)."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Zagroń Istebna"
@@ -136,7 +136,7 @@ lat = 49.7217243
 lon = 19.0225807
 signals = ["łóżeczko turystyczne", "krzesełko do karmienia", "brodzik", "sala zabaw"]
 why = "Darmowe łóżeczka turystyczne z pościelą, krzesełka, brodzik z atrakcjami, sale zabaw BOOM (pod opieką rodziców) i BOOMIK przy restauracji."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Belweder"
@@ -148,7 +148,7 @@ lat = 49.7193135
 lon = 18.8320792
 signals = ["łóżeczko", "brodzik", "sala zabaw", "menu dla dzieci"]
 why = "Łóżeczko na życzenie, basen 27 m z brodzikiem i strefą dziecięcą, sala zabaw i plac zabaw, Menu Małego Belwederu; dzieci do 5 lat z opiekunem."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Olympic SPA & Wellness"
@@ -234,7 +234,7 @@ lat = 50.5103923
 lon = 19.3820251
 signals = ["łóżeczko turystyczne", "przewijak", "podgrzewacz do butelek", "nocnik", "wanienka"]
 why = "Na życzenie łóżeczko turystyczne z pościelą, przewijak, podgrzewacz do butelek, nocnik, wanienka; animacje zależne od pakietu i sezonu."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Alpin"

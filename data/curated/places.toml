@@ -462,3 +462,17 @@ name = "Lgota Murowana"
 country = "Polska"
 region = "Jura Krakowsko-Częstochowska"
 kind = "domestic"
+
+[[place]]
+slug = "zawiercie"
+name = "Zawiercie"
+country = "Polska"
+region = "Jura Krakowsko-Częstochowska"
+kind = "domestic"
+
+[[place]]
+slug = "brenna"
+name = "Brenna"
+country = "Polska"
+region = "Beskidy"
+kind = "domestic"
