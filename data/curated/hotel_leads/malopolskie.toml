@@ -27,7 +27,7 @@ lat = 49.3261111
 lon = 20.0938615
 signals = ["łóżeczko", "wanienka", "nocnik", "przewijak", "podgrzewacz", "sterylizator", "krzesełko", "wózek", "brodzik"]
 why = "Łóżeczka, wanienki, nocniki, przewijaki, podgrzewacze i sterylizatory, krzesełka, wózek spacerowy; brodziki 40 i 70 cm w Termach; dzieci do 3 lat bezpłatnie; Klub Malucha od 3 lat."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Zbójnicówka"
@@ -123,7 +123,7 @@ lat = 49.4076207
 lon = 20.9322332
 signals = ["łóżeczko", "wanienka", "podgrzewacz", "przewijak", "krzesełko", "brodzik"]
 why = "Łóżeczko z materacem, wanienka, podgrzewacz, przewijak, krzesełka; strefa dla maluchów w basenie (30 cm, 30–32°C); Kids Club od 3 lat."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Krynica"
@@ -170,7 +170,7 @@ lat = 49.6003193
 lon = 20.0705815
 signals = ["łóżeczko", "wanienka", "podgrzewacz", "przewijak", "krzesełko", "menu dziecięce"]
 why = "Łóżeczko z pościelą (100 zł za pobyt), wanienka, podgrzewacz do butelek i słoiczków, przewijak, krzesełka, menu dziecięce, kącik zabaw."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Maria"
@@ -241,7 +241,7 @@ lat = 49.2990676
 lon = 19.958603
 signals = ["łóżeczko", "wanienka", "przewijak", "krzesełko", "brodzik", "pokój zabaw"]
 why = "Łóżeczko, wanienka, przewijak i jednorazowe pieluchy do basenu w SPA, brodzik z zabawkami, krzesełka, pokój zabaw z suchym basenem."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Grand Nosalowy Dwór"

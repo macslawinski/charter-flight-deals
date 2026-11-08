@@ -1,0 +1,184 @@
+# Facts from the hotel's own website (hotelczarnypotok.pl; robots.txt allows all, checked 2026-11-08):
+# /dla-dzieci/poznaj-oferte-dla-najmlodszych, /hotel/faq, /spa-wellness/basen-sauny. Written in our words.
+# Also on the site, no feature key for it: a stroller room (wózkarnia); Gaming Room 11:00-21:00 (consoles free,
+# VR paid); KIDS SPA treatments; pool open 7:00-23:00, 21:00-23:00 only for guests aged 17+; free town bus
+# stop by the hotel; pets 115 zł per night.
+# Not stated (so not recorded yet): free-stay age (only a seasonal package with "2 children free"), Kids Club
+# minimum age and whether a parent must stay, potty, baby monitor, lift, brodzik depth outdoors.
+#
+# Coordinates: the hotel's own map link (maps.google.com/?q=49.407606,20.932290).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet (Krynica-Zdrój station).
+slug = "czarny-potok-krynica"
+place = "krynica-zdroj"
+name = "Hotel Czarny Potok Resort SPA & Conference"
+official_url = "https://www.hotelczarnypotok.pl/"
+address = "ul. Czarny Potok 65, 33-380 Krynica-Zdrój"
+lat = 49.407606
+lon = 20.93229
+status = "published"
+
+[[feature]]
+key = "cot"
+age_band = "0-3"
+value = { available = true, on_request = true, free = true, max_count = 1 }
+short = "Bezpłatne łóżeczko dla 1 dziecka do 3 lat"
+note = "Dla jednego dziecka do 3. roku życia można bezpłatnie dostawić łóżeczko turystyczne; prośbę zgłasza się wcześniej w recepcji (FAQ). Strona dla dzieci wymienia kojec/łóżeczko z materacem i pościelą na życzenie."
+source = "hotel_website"
+url = "https://www.hotelczarnypotok.pl/hotel/faq"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "high_chair"
+value = { available = true, where = "restaurants" }
+short = "Krzesełka w restauracjach"
+note = "W restauracjach są krzesełka do karmienia dla dzieci."
+source = "hotel_website"
+url = "https://www.hotelczarnypotok.pl/dla-dzieci/poznaj-oferte-dla-najmlodszych"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Drukowane menu dla dzieci"
+note = "W restauracjach jest wydrukowane specjalne menu dla dzieci."
+source = "hotel_website"
+url = "https://www.hotelczarnypotok.pl/dla-dzieci/poznaj-oferte-dla-najmlodszych"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true, on_request = true }
+short = "Podgrzewacz w pokoju i w restauracji"
+note = "Podgrzewacz do butelek do pokoju na życzenie; w restauracjach podgrzewacz do butelek lub słoiczków. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelczarnypotok.pl/dla-dzieci/poznaj-oferte-dla-najmlodszych"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, on_request = true }
+short = "Wanienka na życzenie"
+note = "Wanienka do kąpieli dziecka na życzenie. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelczarnypotok.pl/dla-dzieci/poznaj-oferte-dla-najmlodszych"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "changing_table"
+value = { available = true, where = "public_toilets" }
+short = "Toaleta z przewijakiem"
+note = "Dla rodzin z niemowlętami jest przestronna toaleta z przewijakiem i wózkarnia."
+source = "hotel_website"
+url = "https://www.hotelczarnypotok.pl/dla-dzieci/poznaj-oferte-dla-najmlodszych"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "potty"
+value = { available = true, on_request = true, step_stool = true }
+short = "Krzesełko łazienkowe lub podest"
+note = "Na życzenie krzesełko łazienkowe lub podest do łazienki. Nocnika strona nie wymienia."
+source = "hotel_website"
+url = "https://www.hotelczarnypotok.pl/dla-dzieci/poznaj-oferte-dla-najmlodszych"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true, open = "09:00", close = "21:00" }
+short = "Kids Club codziennie 9:00–21:00"
+note = "Kids Club czynny codziennie 9:00–21:00: basen z piłeczkami, labirynt z tunelami, zabawki i jeździki (FAQ). Minimalnego wieku ani tego, czy rodzic musi zostać, strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelczarnypotok.pl/hotel/faq"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, open = "09:00", close = "21:00" }
+short = "Całodzienne animacje 9:00–21:00"
+note = "Całodzienne animacje dla dzieci 9:00–21:00, program zależy od terminu i sezonu. Wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelczarnypotok.pl/hotel/faq"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "Zewnętrzny plac zabaw"
+note = "Na terenie hotelu jest zewnętrzny plac zabaw dla dzieci."
+source = "hotel_website"
+url = "https://www.hotelczarnypotok.pl/hotel/faq"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "paddling_pool"
+value = { indoor = true, heated = true, depth_cm = 30, water_temp_c_min = 30, water_temp_c_max = 32, outdoor = true, outdoor_seasonal = true }
+short = "Brodzik 30 cm, 30–32°C; latem też na zewnątrz"
+note = "W strefie Aqua brodzik dla maluchów o głębokości 30 cm i temperaturze 30–32°C (strona dla dzieci; strona basenu podaje 31,5°C), z grzybkiem wodnym. Latem basen zewnętrzny z brodzikiem dla dzieci (dat sezonu strona nie podaje)."
+source = "hotel_website"
+url = "https://www.hotelczarnypotok.pl/dla-dzieci/poznaj-oferte-dla-najmlodszych"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { free = true, limited = true }
+short = "Bezpłatny parking, ograniczona liczba miejsc"
+note = "Goście mogą korzystać z bezpłatnego parkingu; liczba miejsc jest ograniczona. Czy jest strzeżony, strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelczarnypotok.pl/hotel/faq"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 145
+note = "150 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.4076%2C20.9323"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 185
+note = "230 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.4076%2C20.9323"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 295
+note = "420 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.4076%2C20.9323"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 325
+note = "430 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.4076%2C20.9323"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 415
+note = "600 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.4076%2C20.9323"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 475
+note = "740 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.4076%2C20.9323"
+verified_at = 2026-11-08
