@@ -135,6 +135,9 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       Mikołajki Resort (no own site found).
 - [ ] U (phone/e-mail, optional): Hotel Mikołajki cot and high chair; Tiffi cot fee, free-stay age, Tiffilandia
       minimum age; Hotel Giżycko high chair and whether there is any play area.
+- [x] C: hotel leads małopolskie (2026-11-08, `find-hotels`): 24 leads (Zakopane 9, Kraków 4, Krynica 3,
+      Bukowina 2, others 1 each), 2 do sprawdzenia (Hotel Bania: JS, Hotel Krynica: TLS; read in Chrome);
+      9 skipped (nothing concrete for 0-3, Radisson Blu chain site 403). 843 hotels in OSM, 400 sites probed.
 - [x] ~~U: decide which pomorskie hotels to publish (all are `draft`);~~ superseded above; those under 8 facts need a phone or e-mail
       round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Kiston cot fee, free-stay age, brodzik; Primavera cot fee, Playland age;
