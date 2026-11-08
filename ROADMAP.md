@@ -238,6 +238,7 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
 - [ ] Photos (optional): only with your permission per download (e.g. Unsplash), licence noted.
 
 ## Step 5. Before going public (target ~end of November 2026)
+- [ ] C+U (2026-11-09): split Product B into its own repo and Supabase project, plan in `docs/repo-split-plan.md`.
 - [ ] U: permission e-mails to Rainbow (r.pl) and Itaka (and decide whether to ask about hotel facts).
 - [ ] U: repo public → C: Itaka back to 2×/day in `ingest.yml` (Actions minutes).
 - [ ] U: domain(s) and analytics; hosting decision (Vercel Hobby vs. Pro/Cloudflare) before any ads.
