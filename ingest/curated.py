@@ -68,9 +68,10 @@ VENUE_KEYS = set().union(*VENUE_KEYS_BY_CATEGORY.values())
 VENUE_SOURCES = {"venue_website", "osm", "own_visit"}
 SHORT_MAX = 60  # one line on a phone card
 # Legal and official topics ("Niezbędnik", travel documents): official sources only.
-ESSENTIAL_TOPICS = {"travel_documents"}
+ESSENTIAL_TOPICS = {"travel_documents", "parent_benefits"}
 ESSENTIAL_SHORT_MAX = 160
-_OFFICIAL_URL = re.compile(r"^https://([a-z0-9-]+\.)*gov\.pl(/|$)")
+# Official sources: any *.gov.pl site, plus ZUS (a state agency that is not under gov.pl).
+_OFFICIAL_URL = re.compile(r"^https://(([a-z0-9-]+\.)*gov\.pl|www\.zus\.pl)(/|$)")
 # Polish departure airports from a parent's point of view: facts only from the airport's own site.
 AIRPORT_DOMAINS = {
     "WAW": "lotnisko-chopina.pl", "KRK": "krakowairport.pl", "KTW": "katowice-airport.com",
@@ -488,7 +489,7 @@ def _airport(path: Path, root: Path) -> Airport:
 
 def _official(v: str, where: str) -> str:
     if not _OFFICIAL_URL.match(v):
-        raise CuratedError(f"{where}: official topics need a *.gov.pl https url, got {v!r}")
+        raise CuratedError(f"{where}: official topics need a *.gov.pl or www.zus.pl https url, got {v!r}")
     return v
 
 

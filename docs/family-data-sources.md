@@ -89,7 +89,7 @@ the open data platform first? TODO: how current is "miejsca2021"?
 | Source | URL | Format | Update frequency | Licence | Status |
 |---|---|---|---|---|---|
 | Acts (Kodeks pracy, ustawa o opiece nad dziećmi do lat 3, …) | ISAP / ELI API `https://api.sejm.gov.pl/eli/` | JSON, PDF, HTML | on change | public (official texts) | **to check** |
-| Benefits: leave, zasiłek opiekuńczy, 800+, Dobry Start | ZUS and gov.pl pages | HTML (curation) | yearly (indexation dates) | public information | **to check** (URLs not collected yet) |
+| Benefits: leave, zasiłek opiekuńczy, 800+, becikowe, Aktywny Rodzic | ZUS (`www.zus.pl`) and gov.pl pages | HTML (curation) | yearly (indexation dates) | public information | **in use** (2026-11-08, `essentials/parent_benefits.toml`). ZUS pages are ~300 kB of menus: read the article body (`.journal-content-article`) in a browser |
 | Vaccination schedule (Program Szczepień Ochronnych) | GIS yearly communiqué in the Health Minister's official journal | PDF (curation) | yearly | public (official text) | **to check** |
 | UOKiK register of dangerous products | `http://publikacje.uokik.gov.pl/hermes3_pub/Rejestr.ashx?Typ=ProduktNiebezpieczny` (from a press article, not opened) | HTML; export or RSS unknown | ongoing | TODO | **to check** |
 | EU Safety Gate (non-food dangerous products) | https://ec.europa.eu/safety-gate-alerts/ ; weekly report XML export reported by third parties at `.../api/download/weeklyReport/list/xml/en` | XML (weekly), JSON (unofficial) | weekly | free; source acknowledgement required (per third parties) | **to check** (no official API doc found) |

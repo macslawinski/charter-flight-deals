@@ -1,0 +1,171 @@
+# Leave, benefits and deadlines after a child is born (Niezbędnik rodzica). Official sources only
+# (*.gov.pl or www.zus.pl, checked by the loader). Facts in our own words; `short` is what the page
+# shows, `note` the detail behind it. Amounts change on fixed dates: re-verify yearly.
+title = "Urlopy, świadczenia i terminy"
+
+[[group]]
+id = "po-urodzeniu"
+title = "Po narodzinach: terminy"
+icon = "calendar"
+intro = "Sprawy z terminem, który biegnie od dnia narodzin. Po terminie część z nich przepada."
+
+[[group]]
+id = "urlopy"
+title = "Urlopy i zasiłek macierzyński"
+icon = "clock"
+intro = "Dla osób z ubezpieczeniem chorobowym (np. na umowie o pracę). Zasiłek wypłaca ZUS albo pracodawca."
+
+[[group]]
+id = "swiadczenia"
+title = "Świadczenia na dziecko"
+icon = "card"
+
+[[group]]
+id = "opieka"
+title = "Gdy dziecko choruje albo żłobek jest zamknięty"
+icon = "medical"
+
+# --- after the birth: deadlines --------------------------------------------------------------
+
+[[fact]]
+group = "po-urodzeniu"
+key = "birth-registration"
+short = "Urodzenie dziecka zgłaszasz w urzędzie stanu cywilnego w ciągu 21 dni od wystawienia karty urodzenia."
+note = "Kartę urodzenia wystawia osoba, która odebrała poród, i w ciągu 3 dni przekazuje ją do urzędu. Jeśli nie zgłosisz urodzenia w terminie, kierownik USC sam wybierze dziecku imię i zarejestruje urodzenie."
+publisher = "gov.pl"
+url = "https://www.gov.pl/web/gov/zglos-urodzenie-dziecka"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "po-urodzeniu"
+key = "birth-documents"
+short = "Po rejestracji dostajesz bezpłatnie odpis skrócony aktu urodzenia i powiadomienie o nadaniu numeru PESEL."
+note = "Zgłoszenie jest bezpłatne. Można je złożyć przez internet (profil zaufany, e-dowód albo podpis kwalifikowany); od 1 stycznia 2026 r. sprawę online załatwisz tylko przez e-Doręczenia."
+publisher = "gov.pl"
+url = "https://www.gov.pl/web/gov/zglos-urodzenie-dziecka"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "po-urodzeniu"
+key = "800-plus-newborn"
+short = "Wniosek o 800+ złożony w ciągu 3 miesięcy od urodzenia daje świadczenie od dnia urodzenia dziecka."
+note = "Po tym terminie ZUS przyzna świadczenie od miesiąca, w którym złożysz wniosek. Wniosek składasz tylko elektronicznie, np. przez eZUS."
+publisher = "ZUS"
+url = "https://www.zus.pl/swiadczenia/swiadczenia-dla-rodzin/swiadczenie-wychowawcze-800-plus"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "po-urodzeniu"
+key = "maternity-81-5"
+short = "Wniosek o zasiłek za cały urlop macierzyński i rodzicielski złożony do 21 dni po porodzie daje 81,5% podstawy za oba urlopy."
+note = "Bez takiego wniosku: 100% za urlop macierzyński i 70% za rodzicielski. Za 9 tygodni urlopu rodzicielskiego zarezerwowanych dla drugiego rodzica zawsze 70%."
+publisher = "ZUS"
+url = "https://www.zus.pl/swiadczenia/zasilki/zasilek-macierzynski/wysokosc"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "po-urodzeniu"
+key = "becikowe-deadline"
+short = "Wniosek o becikowe składasz w ciągu 12 miesięcy od narodzin dziecka. Wniosek złożony później nie zostanie rozpatrzony."
+publisher = "Ministerstwo Rodziny, Pracy i Polityki Społecznej"
+url = "https://www.gov.pl/web/rodzina/jednorazowa-zapomoga-z-tytulu-urodzenia-sie-dziecka"
+verified_at = 2026-11-08
+
+# --- leave -----------------------------------------------------------------------------------
+
+[[fact]]
+group = "urlopy"
+key = "maternity-leave"
+short = "Urlop macierzyński trwa 20 tygodni przy jednym dziecku, 31 tygodni przy bliźniętach (dłużej przy większej liczbie dzieci)."
+note = "Do 6 tygodni możesz wykorzystać przed porodem. Zasiłek za ten czas wynosi 100% podstawy wymiaru."
+publisher = "ZUS"
+url = "https://www.zus.pl/swiadczenia/zasilki/zasilek-macierzynski/prawo-do-zasilku-i-okres-przyslugiwania/za-okres-urlopu-macierzynskiego-albo-urlopu-na-warunkach-urlopu-macierzynskiego"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "urlopy"
+key = "supplementary-maternity-leave"
+short = "Gdy dziecko urodzi się przedwcześnie albo po porodzie trafi do szpitala, przysługuje też uzupełniający urlop macierzyński, do 15 tygodni."
+note = "Tydzień urlopu za każdy tydzień pobytu dziecka w szpitalu: do 15. tygodnia po porodzie (urodzenie przed 28. tygodniem ciąży lub masa do 1000 g), do 8. tygodnia (28.–37. tydzień ciąży). Zasiłek: 100% podstawy."
+publisher = "ZUS"
+url = "https://www.zus.pl/swiadczenia/zasilki/zasilek-macierzynski/prawo-do-zasilku-i-okres-przyslugiwania/za-okres-uzupelniajacego-urlopu-macierzynskiego"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "urlopy"
+key = "parental-leave"
+short = "Urlop rodzicielski trwa 41 tygodni przy jednym dziecku i 43 tygodnie, gdy urodzi się więcej dzieci przy jednym porodzie."
+note = "Każdy z rodziców ma wyłączne prawo do 9 tygodni, których nie można przenieść na drugiego. Urlop można podzielić na maksymalnie 5 części i wykorzystać do końca roku, w którym dziecko kończy 6 lat."
+publisher = "ZUS"
+url = "https://www.zus.pl/swiadczenia/zasilki/zasilek-macierzynski/prawo-do-zasilku-i-okres-przyslugiwania/za-okres-dodatkowego-urlopu-rodzicielskiego"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "urlopy"
+key = "paternity-leave"
+short = "Urlop ojcowski: do 2 tygodni, do ukończenia przez dziecko 12 miesięcy. Zasiłek wynosi 100% podstawy wymiaru."
+note = "Można go wykorzystać naraz albo w 2 częściach; żadna część nie może być krótsza niż tydzień."
+publisher = "ZUS"
+url = "https://www.zus.pl/swiadczenia/zasilki/zasilek-macierzynski/prawo-do-zasilku-i-okres-przyslugiwania/za-okres-dodatkowego-urlopu-ojcowskiego"
+verified_at = 2026-11-08
+
+# --- benefits for the child ------------------------------------------------------------------
+
+[[fact]]
+group = "swiadczenia"
+key = "800-plus"
+short = "800 zł miesięcznie na każde dziecko do 18 lat, bez względu na dochód (800+)."
+note = "Okres świadczeniowy trwa od 1 czerwca do 31 maja. Wniosek złożony od 1 lutego do 30 czerwca daje świadczenie od 1 czerwca; wniosek tylko elektronicznie."
+publisher = "ZUS"
+url = "https://www.zus.pl/swiadczenia/swiadczenia-dla-rodzin/swiadczenie-wychowawcze-800-plus"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "swiadczenia"
+key = "becikowe"
+short = "Becikowe: jednorazowo 1000 zł na dziecko, gdy dochód rodziny nie przekracza 1922 zł netto na osobę."
+note = "Warunek: matka była pod opieką lekarza lub położnej najpóźniej od 10. tygodnia ciąży do porodu (potrzebne zaświadczenie). Nie dotyczy opiekunów prawnych i rodziców adopcyjnych."
+publisher = "Ministerstwo Rodziny, Pracy i Polityki Społecznej"
+url = "https://www.gov.pl/web/rodzina/jednorazowa-zapomoga-z-tytulu-urodzenia-sie-dziecka"
+verified_at = 2026-11-08
+also = [{ label = "powroty.gov.pl (stan prawny na 8.06.2026)", url = "https://powroty.gov.pl/dodatek-z-tytulu-urodzenia-sie-dziecka-11469/" }]
+
+[[fact]]
+group = "swiadczenia"
+key = "aktywni-rodzice-w-pracy"
+short = "1500 zł miesięcznie na dziecko od 12. do 35. miesiąca życia, gdy rodzice pracują („aktywni rodzice w pracy”)."
+note = "Rodzice razem muszą mieć podstawę składek co najmniej 100% płacy minimalnej, każde z nich co najmniej 50% (30% przy preferencyjnych składkach). Dziecko nie może chodzić do żłobka ani przedszkola. Bez względu na dochód; przysługuje od miesiąca, w którym wpłynął wniosek. 1900 zł przy orzeczeniu o niepełnosprawności."
+publisher = "ZUS"
+url = "https://www.zus.pl/aktywnyrodzic/swiadczenie-aktywni-rodzice-w-pracy"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "swiadczenia"
+key = "aktywnie-w-zlobku"
+short = "Do 1500 zł miesięcznie na opłatę za żłobek, klub dziecięcy lub dziennego opiekuna, nie więcej niż sama opłata („aktywnie w żłobku”)."
+note = "ZUS przelewa pieniądze placówce, nie rodzicowi. Nie ma minimalnego wieku dziecka. Opłata za wyżywienie się nie liczy. Nie przysługuje, gdy opłata przekracza limit ogłaszany co roku w „Monitorze Polskim”."
+publisher = "ZUS"
+url = "https://www.zus.pl/aktywnyrodzic/wiadczenie-aktywnie-w-zlobku"
+verified_at = 2026-11-08
+
+[[fact]]
+group = "swiadczenia"
+key = "aktywnie-w-domu"
+short = "500 zł miesięcznie na dziecko od 12. do 35. miesiąca życia, bez względu na dochód („aktywnie w domu”)."
+note = "Na jedno dziecko w danym miesiącu przysługuje tylko jedno z trzech świadczeń programu Aktywny Rodzic. Rodzaj świadczenia można zmieniać."
+publisher = "ZUS"
+url = "https://www.zus.pl/aktywnyrodzic/wiadczenie-aktywnie-w-domu"
+verified_at = 2026-11-08
+also = [{ label = "ZUS: program Aktywny Rodzic", url = "https://www.zus.pl/aktywnyrodzic" }]
+
+# --- sick child, closed nursery ---------------------------------------------------------------
+
+[[fact]]
+group = "opieka"
+key = "care-allowance"
+short = "Zasiłek opiekuńczy: do 60 dni w roku na zdrowe dziecko do 8 lat (np. nagłe zamknięcie żłobka) lub chore dziecko do 14 lat."
+note = "Wynosi 80% podstawy wymiaru. Zamknięcie żłobka, klubu lub przedszkola jest nieprzewidziane, gdy dowiesz się o nim mniej niż 7 dni wcześniej. Limit 60 dni nie zależy od liczby dzieci ani osób uprawnionych."
+publisher = "ZUS"
+url = "https://www.zus.pl/swiadczenia/zasilki/zasilek-opiekunczy/prawo-do-zasilku-i-okres-przyslugiwania"
+verified_at = 2026-11-08
+also = [{ label = "ZUS: wysokość zasiłku opiekuńczego", url = "https://www.zus.pl/swiadczenia/zasilki/zasilek-opiekunczy/wysokosc" }]
