@@ -1,0 +1,33 @@
+# Katowice Airport: the airport's "Specjalne potrzeby" page, read 2026-11-08. Written in our words.
+# Not stated: a play area (none mentioned on the special needs page or in the FAQ), free airport strollers.
+iata = "KTW"
+name = "Katowice Airport"
+city = "Katowice"
+official_url = "https://www.katowice-airport.com/pl/dla-pasazera/przed-podroza/specjalne-potrzeby"
+
+[[fact]]
+key = "parent_room"
+short = "Pokoje dla opiekunów z dziećmi z przewijakiem i umywalką, w każdym terminalu"
+note = "Są zarówno przed kontrolą bezpieczeństwa, jak i za nią."
+url = "https://www.katowice-airport.com/pl/dla-pasazera/przed-podroza/specjalne-potrzeby"
+verified_at = 2026-11-08
+
+[[fact]]
+key = "family_security"
+short = "Z dzieckiem do 2 lat przechodzisz w pierwszej kolejności przez odprawę i kontrolę bezpieczeństwa"
+url = "https://www.katowice-airport.com/pl/dla-pasazera/przed-podroza/specjalne-potrzeby"
+verified_at = 2026-11-08
+
+[[fact]]
+key = "baby_food"
+short = "Dla dziecka do 2 lat płyny na podróż (mleko, płynne pokarmy) poza limitem"
+note = "Płyny zgłasza się przed kontrolą bezpieczeństwa; są sprawdzane osobno."
+url = "https://www.katowice-airport.com/pl/dla-pasazera/przed-podroza/specjalne-potrzeby"
+verified_at = 2026-11-08
+
+[[fact]]
+key = "stroller"
+short = "Wózek nadasz przy odprawie albo oddasz przy wyjściu do samolotu (za kontrolą)"
+note = "Nosidełko można zabrać do samolotu, ale nie na pokład pasażerski."
+url = "https://www.katowice-airport.com/pl/dla-pasazera/przed-podroza/specjalne-potrzeby"
+verified_at = 2026-11-08

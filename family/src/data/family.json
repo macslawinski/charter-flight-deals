@@ -1,4 +1,270 @@
 {
+ "airport_keys": [
+  "play_area",
+  "parent_room",
+  "family_security",
+  "baby_food",
+  "stroller",
+  "airport_stroller"
+ ],
+ "airports": [
+  {
+   "city": "Gdańsk",
+   "facts": [
+    {
+     "key": "play_area",
+     "note": "Otwarty w lipcu 2025 (komunikat lotniska z 18.07.2025). Komunikat nie podaje, w której strefie odlotów (Schengen czy Non-Schengen).",
+     "short": "Plac zabaw w strefie odlotów: samolot, wieża ze zjeżdżalnią, ekrany dotykowe",
+     "to_confirm": false,
+     "url": "https://www.airport.gdansk.pl/aktualnosci/nowy-plac-zabaw-na-lotnisku",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "key": "parent_room",
+     "note": "Pomieszczenia są pomyślane głównie dla osób z niepełnosprawnością i ich opiekunów (podnośnik, leżanka); komunikat ze stycznia 2026 nie mówi wprost o przewijaku dla niemowląt.",
+     "short": "Cztery „komfortki” z przewijakiem lub leżanką, m.in. w hali odlotów Schengen i strefie Non-Schengen",
+     "to_confirm": true,
+     "url": "https://www.airport.gdansk.pl/aktualnosci/komfortki-na-gdanskim-lotnisku",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "key": "baby_food",
+     "note": null,
+     "short": "Jedzenie dla niemowląt nie podlega limitowi 100 ml, ale jest sprawdzane przy kontroli",
+     "to_confirm": false,
+     "url": "https://www.airport.gdansk.pl/przed-podroza/praktyczne-wskazowki/bagaz/przedmioty-dozwolone-i-zakazane",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "iata": "GDN",
+   "name": "Port Lotniczy Gdańsk im. Lecha Wałęsy",
+   "official_url": "https://www.airport.gdansk.pl/"
+  },
+  {
+   "city": "Kraków",
+   "facts": [
+    {
+     "key": "play_area",
+     "note": "Strona nie podaje, w której części terminala są place zabaw.",
+     "short": "Place zabaw w terminalu, jeden połączony ze sklepem z zabawkami Toys Store",
+     "to_confirm": false,
+     "url": "https://krakowairport.pl/pl/pasazer/podroz/specjalne-potrzeby/podroz-z-dzieckiem",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "key": "parent_room",
+     "note": "Rozkładane przewijaki są też w toaletach damskich i męskich.",
+     "short": "Pokoje rodzinne z fotelem do karmienia i przewijakiem",
+     "to_confirm": false,
+     "url": "https://krakowairport.pl/pl/pasazer/podroz/specjalne-potrzeby/podroz-z-dzieckiem",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "key": "family_security",
+     "note": null,
+     "short": "Special Service Line: osobny punkt kontroli bezpieczeństwa dla rodzin z dziećmi do 2 lat",
+     "to_confirm": false,
+     "url": "https://krakowairport.pl/pl/pasazer/podroz/specjalne-potrzeby/podroz-z-dzieckiem",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "key": "baby_food",
+     "note": null,
+     "short": "Mleko i gotowe jedzenie dla dziecka można wziąć w ilości potrzebnej na czas podróży",
+     "to_confirm": false,
+     "url": "https://krakowairport.pl/pl/pasazer/podroz/specjalne-potrzeby/podroz-z-dzieckiem",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "key": "stroller",
+     "note": null,
+     "short": "Wózek składany zwykle oddajesz tuż przed wejściem na pokład, nieskładany przy odprawie",
+     "to_confirm": false,
+     "url": "https://krakowairport.pl/pl/pasazer/podroz/specjalne-potrzeby/podroz-z-dzieckiem",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "key": "airport_stroller",
+     "note": null,
+     "short": "Bezpłatne lotniskowe wózki dziecięce za kontrolą bezpieczeństwa",
+     "to_confirm": false,
+     "url": "https://krakowairport.pl/pl/pasazer/podroz/specjalne-potrzeby/podroz-z-dzieckiem",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "iata": "KRK",
+   "name": "Kraków Airport",
+   "official_url": "https://krakowairport.pl/pl/pasazer/podroz/specjalne-potrzeby/podroz-z-dzieckiem"
+  },
+  {
+   "city": "Katowice",
+   "facts": [
+    {
+     "key": "parent_room",
+     "note": "Są zarówno przed kontrolą bezpieczeństwa, jak i za nią.",
+     "short": "Pokoje dla opiekunów z dziećmi z przewijakiem i umywalką, w każdym terminalu",
+     "to_confirm": false,
+     "url": "https://www.katowice-airport.com/pl/dla-pasazera/przed-podroza/specjalne-potrzeby",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "key": "family_security",
+     "note": null,
+     "short": "Z dzieckiem do 2 lat przechodzisz w pierwszej kolejności przez odprawę i kontrolę bezpieczeństwa",
+     "to_confirm": false,
+     "url": "https://www.katowice-airport.com/pl/dla-pasazera/przed-podroza/specjalne-potrzeby",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "key": "baby_food",
+     "note": "Płyny zgłasza się przed kontrolą bezpieczeństwa; są sprawdzane osobno.",
+     "short": "Dla dziecka do 2 lat płyny na podróż (mleko, płynne pokarmy) poza limitem",
+     "to_confirm": false,
+     "url": "https://www.katowice-airport.com/pl/dla-pasazera/przed-podroza/specjalne-potrzeby",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "key": "stroller",
+     "note": "Nosidełko można zabrać do samolotu, ale nie na pokład pasażerski.",
+     "short": "Wózek nadasz przy odprawie albo oddasz przy wyjściu do samolotu (za kontrolą)",
+     "to_confirm": false,
+     "url": "https://www.katowice-airport.com/pl/dla-pasazera/przed-podroza/specjalne-potrzeby",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "iata": "KTW",
+   "name": "Katowice Airport",
+   "official_url": "https://www.katowice-airport.com/pl/dla-pasazera/przed-podroza/specjalne-potrzeby"
+  },
+  {
+   "city": "Poznań",
+   "facts": [
+    {
+     "key": "play_area",
+     "note": "Przed kontrolą bezpieczeństwa są jeszcze automat z zabawkami i pojazdy zabawkowe (wyścigówka, helikopter).",
+     "short": "Strefa Fun&Leisure w hali odlotów Schengen i mini plac zabaw w hali Non-Schengen",
+     "to_confirm": false,
+     "url": "https://poznanairport.pl/przed-podroza/podroz-z-dziecmi/na-lotnisku/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "key": "parent_room",
+     "note": null,
+     "short": "Przewijalnie przy toaletach przed kontrolą bezpieczeństwa i za nią",
+     "to_confirm": false,
+     "url": "https://poznanairport.pl/przed-podroza/podroz-z-dziecmi/na-lotnisku/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "key": "family_security",
+     "note": "Płyny dla niemowlęcia pokazuje się przy kontroli osobno. Osobnego przejścia dla rodzin strona nie wymienia.",
+     "short": "Dziecko wyjmujesz z wózka i przenosisz przez bramkę na rękach; wózek składasz do prześwietlenia",
+     "to_confirm": false,
+     "url": "https://poznanairport.pl/przed-podroza/podroz-z-dziecmi/na-lotnisku/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "key": "baby_food",
+     "note": "Jedzenie i picie dla niemowlęcia przechodzi kontrolę bezpieczeństwa.",
+     "short": "Mleko w proszku i płynne, woda i soki dla niemowlęcia w ilości na czas lotu",
+     "to_confirm": false,
+     "url": "https://poznanairport.pl/przed-podroza/podroz-z-dziecmi/przed-przyjazdem-na-lotnisko/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "key": "stroller",
+     "note": null,
+     "short": "Wózek bezpłatnie: nadasz przy odprawie albo zostawisz przy samym samolocie",
+     "to_confirm": false,
+     "url": "https://poznanairport.pl/przed-podroza/podroz-z-dziecmi/przed-przyjazdem-na-lotnisko/",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "iata": "POZ",
+   "name": "Port Lotniczy Poznań-Ławica",
+   "official_url": "https://poznanairport.pl/przed-podroza/podroz-z-dziecmi/na-lotnisku/"
+  },
+  {
+   "city": "Warszawa",
+   "facts": [
+    {
+     "key": "play_area",
+     "note": "Lotnisko opisuje je jako place zabaw dla dzieci powyżej 3 lat.",
+     "short": "Trzy place zabaw: przy wyjściach 1 i 37 (Schengen) oraz 22N (Non-Schengen)",
+     "to_confirm": false,
+     "url": "https://lotnisko-chopina.pl/pl/udogodnienia/dla-dzieci/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "key": "parent_room",
+     "note": "Pokoje są w różnych częściach terminala, jeden na tarasie widokowym.",
+     "short": "20 pokoi opieki nad dzieckiem z przewijakiem, umywalką i krzesłem do karmienia",
+     "to_confirm": false,
+     "url": "https://lotnisko-chopina.pl/pl/udogodnienia/dla-dzieci/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "key": "family_security",
+     "note": null,
+     "short": "Oznakowane przejście dla rodzin z małymi dziećmi w każdej strefie kontroli bezpieczeństwa",
+     "to_confirm": false,
+     "url": "https://lotnisko-chopina.pl/pl/udogodnienia/dla-dzieci/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "key": "airport_stroller",
+     "note": null,
+     "short": "Bezpłatne wózki spacerowe tuż za kontrolą bezpieczeństwa",
+     "to_confirm": false,
+     "url": "https://lotnisko-chopina.pl/pl/udogodnienia/dla-dzieci/",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "iata": "WAW",
+   "name": "Lotnisko Chopina",
+   "official_url": "https://lotnisko-chopina.pl/pl/udogodnienia/dla-dzieci/"
+  },
+  {
+   "city": "Wrocław",
+   "facts": [
+    {
+     "key": "play_area",
+     "note": null,
+     "short": "Kącik dla dzieci w hali odlotów, za odprawą i kontrolą bezpieczeństwa",
+     "to_confirm": false,
+     "url": "https://airport.wroclaw.pl/pasazer/odlatuje/poradnik-przed-odlotem/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "key": "parent_room",
+     "note": null,
+     "short": "Pokoje dla rodziców z małymi dziećmi, do przewinięcia i umycia dziecka",
+     "to_confirm": false,
+     "url": "https://airport.wroclaw.pl/pasazer/odlatuje/poradnik-przed-odlotem/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "key": "baby_food",
+     "note": "W części o kontroli bezpieczeństwa lotnisko pisze też, że limity płynów nie dotyczą niemowląt do 12. miesiąca życia.",
+     "short": "Jedzenie i picie dla dziecka na podróż nie musi być w torebce na płyny, ale przechodzi kontrolę",
+     "to_confirm": false,
+     "url": "https://airport.wroclaw.pl/pasazer/odlatuje/poradnik-przed-odlotem/",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "key": "stroller",
+     "note": null,
+     "short": "Wózek nadasz przy odprawie albo zostawisz przed samolotem; trafia do luku",
+     "to_confirm": false,
+     "url": "https://airport.wroclaw.pl/pasazer/odlatuje/poradnik-przed-odlotem/",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "iata": "WRO",
+   "name": "Port Lotniczy Wrocław",
+   "official_url": "https://airport.wroclaw.pl/pasazer/odlatuje/poradnik-przed-odlotem/"
+  }
+ ],
  "carriers": [
   {
    "carrier_iata": "2W",

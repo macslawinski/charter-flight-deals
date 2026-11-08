@@ -89,8 +89,28 @@ export interface Essential {
   facts: EssentialFact[];
 }
 
+// Departure airports for parents: facts only from each airport's own site.
+export interface AirportFact {
+  key: string;
+  short: string;
+  note: string | null;
+  url: string;
+  verified_at: string;
+  to_confirm: boolean;
+}
+
+export interface Airport {
+  iata: string;
+  name: string;
+  city: string;
+  official_url: string;
+  facts: AirportFact[];
+}
+
 interface Data {
   essentials: Record<string, Essential>;
+  airport_keys: string[];
+  airports: Airport[];
   feature_keys: string[];
   rule_keys: string[];
   venue_keys: string[];
@@ -110,6 +130,17 @@ function must<T>(table: Record<string, T>, key: string, what: string): T {
 }
 
 export const essential = (topic: string) => must(data.essentials, topic, "essentials topic");
+
+// Airport fact keys: label and icon. A key exported without an entry here fails the build.
+const AIRPORT_LABELS: Record<string, { label: string; icon: string }> = {
+  play_area: { label: "Plac zabaw", icon: "slide" },
+  parent_room: { label: "Przewijanie i karmienie", icon: "diaper" },
+  family_security: { label: "Kontrola bezpieczeństwa z dzieckiem", icon: "shield" },
+  baby_food: { label: "Jedzenie i picie dla dziecka", icon: "bottle" },
+  stroller: { label: "Własny wózek", icon: "stroller" },
+  airport_stroller: { label: "Wózki lotniskowe", icon: "stroller" },
+};
+export const airportKey = (key: string) => must(AIRPORT_LABELS, key, "airport fact label");
 
 // One-line headline for cards: the curated `short`, else the note's first sentence.
 export function short(f: Fact): string {

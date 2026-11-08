@@ -50,6 +50,8 @@ def build(data: curated.Curated) -> dict[str, Any]:
         "venues": [asdict(v) for v in sorted(data.venues, key=lambda v: (v.city, v.name))
                    if v.category == "sala_zabaw"],
         "essentials": {e.topic: asdict(e) for e in data.essentials},
+        "airport_keys": list(curated.AIRPORT_KEYS),
+        "airports": [asdict(a) for a in data.airports],
     })
 
 
