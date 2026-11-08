@@ -18,7 +18,7 @@ official_url = "https://villahoff.pl/"
 address = "ul. Słoneczna 3, 72-344 Trzęsacz"
 lat = 54.076930  # the hotel's own Google Maps place pin
 lon = 14.994097
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

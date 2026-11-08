@@ -19,7 +19,7 @@ official_url = "https://www.hotel-lidia.pl/"
 address = "ul. Dorszowa 3, 76-153 Darłowo"
 lat = 54.437609  # from the hotel's own Google Maps link
 lon = 16.376539
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

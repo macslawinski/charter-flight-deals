@@ -18,7 +18,7 @@ official_url = "https://www.hotelriverstyle.pl/"
 address = "ul. Pucka 10B, 84-240 Reda"
 lat = 54.6085854  # the hotel's own Google Maps link
 lon = 18.3496666
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "playroom"

@@ -20,7 +20,7 @@ official_url = "https://www.dolinacharlotty.pl/"
 address = "Strzelinko 14, 76-200 Słupsk"
 lat = 54.524631  # the hotel's own map link
 lon = 16.952397
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

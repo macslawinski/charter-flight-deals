@@ -18,7 +18,7 @@ official_url = "https://imperiall.pl/"
 address = "ul. Północna 6, Sianożęty, 78-111 Ustronie Morskie"
 lat = 54.208707  # the hotel's own Google Maps link
 lon = 15.730386
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

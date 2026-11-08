@@ -19,7 +19,7 @@ official_url = "https://www.factoryresort.pl/"
 address = "ul. Kasprowicza 10, 78-100 Kołobrzeg"
 lat = 54.182583  # the hotel's own Google Maps link
 lon = 15.582788
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

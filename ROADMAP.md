@@ -101,7 +101,15 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       city + car/train + max time, region, "hotel podaje" filters, sort, state in the URL) and
       `/hotele/porownaj/?h=…` compares 2–4 hotels side by side. Foreign hotels (Rodos, Heraklion) hidden
       for now: `SHOW_FOREIGN_HOTELS` in `family/src/lib/data.ts`, data stays in the export.
-- [ ] U: decide which pomorskie hotels to publish (all are `draft`); those under 8 facts need a phone or e-mail
+- [x] U (2026-11-07): publish all hotels (58 `published`; foreign ones stay hidden by `SHOW_FOREIGN_HOTELS`).
+      New hotels are written `published` from now on.
+- [x] C: hotel leads warmińsko-mazurskie (2026-11-07, `find-hotels`): 24 leads, 3 do sprawdzenia (Port 110,
+      Joseph Conrad: JS/TLS, read in Chrome; Mikołajki Resort Jora Wielka: own site not found); skipped
+      Lake Hill Mazury, Marina Club (nothing for 0-3).
+- [x] C: warmińsko-mazurskie hotels, batch 1 (2026-11-07): Robert's Port (Stare Sady, 11 facts; brodzik
+      only 3+), Natura Mazur (Warchały, 11), Ognisty Ptak (Ogonki, 10), Pałac Mortęgi (7: under 8). Car
+      access only; train for Mazury still to do (rozklad-pkp.pl). 20 leads left.
+- [x] ~~U: decide which pomorskie hotels to publish (all are `draft`);~~ superseded above; those under 8 facts need a phone or e-mail
       round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Kiston cot fee, free-stay age, brodzik; Primavera cot fee, Playland age;
       Villa Baltica free-stay age, playroom hours; Faltom whether under-4s may use Klub Malucha with a parent.
@@ -115,7 +123,7 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       Grano Life free-stay rule outside offers; Platan cot/playpen fee.
 - [ ] U (phone/e-mail, optional): Wichrowe Wzgórze and River Style baby items and free-stay age; Miłosz whether
       the 50 zł cot fee is per night; Pod Orłem free-stay age, high chair.
-- [ ] U: decide which zachodniopomorskie hotels to publish (all are `draft`); those under 8 facts need a phone or
+- [x] ~~U: decide which zachodniopomorskie hotels to publish (all are `draft`);~~ all published 2026-11-07; those under 8 facts need a phone or
       e-mail round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Zalewski and Sandra cot, high chair, free-stay age; Baltic Plaza free stay
       outside packages, beach distance.
@@ -165,7 +173,10 @@ model: `docs/family-data-model.md`; sources: `docs/family-data-sources.md`.
 - [x] C: `python scripts/export_venues.py --city poznan` (DB → committed `family/src/data/map/poznan.json`)
       and the map page `/poznan/` (Leaflet + OSM tiles; playgrounds, NiŚOZ, curated bawialnie; filters;
       source and date under every fact). Re-run the export after each import.
-- [ ] C: move the Poznań playground TOMLs onto `venues` / `venue_facts` (loader in `ingest.curated`).
+- [x] C: Poznań playground TOMLs on `venues` / `venue_facts` (2026-11-07, migration 013, source `curated`,
+      `python -m ingest.curated` upserts them; all 7 published). The map `/poznan/` reads them from the
+      export only; `/poznan/bawialnie/` still reads `family.json`. Map equipment chips (tyrolka, linowe,
+      pumptrack, naturalny) now OR inside the group (they were AND-ed: 3 chips gave 0 playgrounds).
 - [ ] C: nurseries and bathing sites: by hand for Poznań until MRiPS / GIS provide files (no scraper).
 - [ ] C: scheduling in Actions within the minutes budget (open data changes slowly: weekly or monthly).
 - [ ] C: Poznań section 1 curation: pools/aquaparks, ice rinks, sledding, zoo/farms, rope parks, culture,

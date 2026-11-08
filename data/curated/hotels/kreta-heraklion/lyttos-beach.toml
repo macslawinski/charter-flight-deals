@@ -17,7 +17,7 @@ official_url = "https://www.lyttosbeach.gr/"
 address = "Hersonissos, 700 14 Kreta"
 lat = 35.335196
 lon = 25.352468
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

@@ -21,7 +21,7 @@ official_url = "https://www.hotel-trofana.pl/"
 address = "ul. Zdrojowa 9, 72-500 Międzyzdroje"
 lat = 53.9297039  # the hotel's own Google Maps link
 lon = 14.44846
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

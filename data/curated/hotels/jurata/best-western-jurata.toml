@@ -17,7 +17,7 @@ official_url = "https://www.hotel-jurata.com.pl/pl/"
 address = "ul. Świętopełka 11, 84-141 Jurata"
 lat = 54.6805485  # OpenStreetMap way/906077352, ODbL
 lon = 18.7223537
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

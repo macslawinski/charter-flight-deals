@@ -19,7 +19,7 @@ official_url = "https://seasidepark.pl/"
 address = "ul. Wschodnia 20, 78-100 Kołobrzeg"
 lat = 54.188592  # the hotel's own Google Maps link
 lon = 15.605012
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

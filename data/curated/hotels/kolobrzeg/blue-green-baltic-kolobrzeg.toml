@@ -19,7 +19,7 @@ official_url = "https://www.blueandgreenhotels.pl/morze"
 address = "ul. Wylotowa 45, 78-100 Kołobrzeg"
 lat = 54.1692458  # OpenStreetMap node/10175216689, ODbL
 lon = 15.5274408
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

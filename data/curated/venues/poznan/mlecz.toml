@@ -12,7 +12,7 @@ address = "ul. Stanisława Barańczaka 1/47 LU3, 60-537 Poznań"
 lat = 52.415421
 lon = 16.90507
 osm = "node/12492719739"
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "age_range"

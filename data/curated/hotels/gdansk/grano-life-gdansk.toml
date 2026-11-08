@@ -20,7 +20,7 @@ official_url = "https://www.granohotels.pl/grano-life-gdansk"
 address = "ul. Jaglana 4, Gdańsk"  # the page gives no postal code
 lat = 54.3438374  # OpenStreetMap way/769255173, ODbL
 lon = 18.6560711
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

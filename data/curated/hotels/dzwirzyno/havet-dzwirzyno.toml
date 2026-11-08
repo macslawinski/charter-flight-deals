@@ -19,7 +19,7 @@ official_url = "https://www.havethotel.pl/"
 address = "ul. Wyzwolenia 29, 78-131 Dźwirzyno"
 lat = 54.161946  # the hotel's own Google Maps link
 lon = 15.422500
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

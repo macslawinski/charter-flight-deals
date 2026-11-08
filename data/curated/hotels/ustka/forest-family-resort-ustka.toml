@@ -19,7 +19,7 @@ official_url = "https://forestustka.pl/"
 address = "ul. Kościuszki 19, 76-270 Ustka"
 lat = 54.5870712  # OpenStreetMap node/2977772835, ODbL
 lon = 16.8695759
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "playroom"

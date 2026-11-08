@@ -17,7 +17,7 @@ official_url = "https://wodnikleba.pl/"
 address = "ul. Nadmorska 10, 84-360 Łeba"
 lat = 54.7650436  # OpenStreetMap node/9939596605, ODbL
 lon = 17.565113
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

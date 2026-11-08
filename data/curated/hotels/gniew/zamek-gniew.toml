@@ -19,7 +19,7 @@ official_url = "https://www.zamek-gniew.pl/"
 address = "ul. Zamkowa 3, 83-140 Gniew"
 lat = 53.8335415  # OpenStreetMap way/192583614, ODbL
 lon = 18.8294015
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

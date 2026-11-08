@@ -18,7 +18,7 @@ official_url = "https://www.hotelleba.com.pl/"
 address = "ul. Nadmorska 9B, 84-360 Łeba"
 lat = 54.7654019  # OpenStreetMap way/292291728, ODbL
 lon = 17.5735776
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "child_free_stay"

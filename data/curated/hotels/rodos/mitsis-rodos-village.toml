@@ -17,7 +17,7 @@ official_url = "https://www.mitsis.com/en/hotels/rodos-village"
 address = "Kiotari, 851 09 Rodos"
 lat = 36.056159
 lon = 27.973765
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "high_chair"

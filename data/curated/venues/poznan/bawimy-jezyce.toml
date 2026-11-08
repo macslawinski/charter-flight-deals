@@ -11,7 +11,7 @@ address = "ul. Jana Henryka Dąbrowskiego 89/U5, Poznań"
 lat = 52.4147167
 lon = 16.8972469
 osm = "node/12545941282"
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "age_range"

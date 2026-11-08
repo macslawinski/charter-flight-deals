@@ -18,7 +18,7 @@ official_url = "https://jantar-ustka.pl/"
 address = "ul. Wczasowa 14, 76-270 Ustka"
 lat = 54.5865478  # OpenStreetMap relation/19560310 (Nominatim), ODbL
 lon = 16.8757641
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

@@ -20,7 +20,7 @@ official_url = "https://www.lineamare.pl/"
 address = "ul. Karola Borka 6, 72-346 Pobierowo"
 lat = 54.055264  # OpenStreetMap way/1193998792 centre, ODbL
 lon = 14.917960
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

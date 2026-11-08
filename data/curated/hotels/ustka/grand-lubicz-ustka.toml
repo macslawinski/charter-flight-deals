@@ -20,7 +20,7 @@ official_url = "https://www.grandlubicz.pl/"
 address = "ul. Wczasowa 4, 76-270 Ustka"
 lat = 54.5844201  # OpenStreetMap way/272001745, ODbL
 lon = 16.869326
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

@@ -18,7 +18,7 @@ official_url = "https://hotelplatan.gda.pl/"
 address = "ul. Niepołomicka 36, Gdańsk"  # the page gives no postal code
 lat = 54.3098555  # the hotel's own Google Maps link
 lon = 18.597908
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

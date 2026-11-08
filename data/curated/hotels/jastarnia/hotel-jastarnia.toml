@@ -17,7 +17,7 @@ official_url = "https://hoteljastarnia.com.pl/"
 address = "ul. Portowa 35, 84-140 Jastarnia"
 lat = 54.6984941  # OpenStreetMap way/224283671, ODbL
 lon = 18.6760641
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

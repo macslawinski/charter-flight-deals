@@ -19,7 +19,7 @@ official_url = "https://www.hotel-ustka.eu/"
 address = "ul. Wczasowa 25, 76-270 Ustka"
 lat = 54.5885345  # OpenStreetMap way/434636081, ODbL
 lon = 16.8833509
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "toddler_food"

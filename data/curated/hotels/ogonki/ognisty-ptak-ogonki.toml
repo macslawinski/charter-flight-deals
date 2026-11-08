@@ -1,0 +1,165 @@
+# Facts from the hotel's own website (ognistyptak.pl; robots.txt allows all, checked 2026-11-07):
+# /ognisty-ptak/hotel-przyjazny-rodzinie, /kontakt. Written in our words.
+# Also on the site, no feature key for it: Toddler Club "in season" (no ages or hours); children's slide
+# into the lake (season); bike child seat; packages "Dzieci do lat 4 gratis" / "Dzieci gratis" (package
+# only, not recorded).
+# Not stated (so not recorded yet): cot fee, free-stay rule outside packages, bottle warmer, changing table,
+# potty, playroom ages and supervision, parking fee (only a parking rules PDF), lift.
+#
+# Coordinates: the hotel's own map link on /kontakt ("Zobacz na mapie").
+# Access (checked 2026-11-07):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: none sensible (no regular passenger trains to Węgorzewo); car only.
+slug = "ognisty-ptak-ogonki"
+place = "ogonki"
+name = "Hotel Ognisty Ptak"
+official_url = "https://www.ognistyptak.pl/"
+address = "ul. Sztynorcka 6, Ogonki, 11-600 Węgorzewo"
+lat = 54.1760712
+lon = 21.8116131
+status = "published"
+
+[[feature]]
+key = "cot"
+value = { available = true, mattress = true, bedding = true }
+short = "Z materacem i pościelą"
+note = "Łóżeczko z materacem i pościelą dla małego dziecka. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.ognistyptak.pl/ognisty-ptak/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "high_chair"
+value = { available = true }
+short = "Krzesełka do karmienia"
+note = "Krzesełka do karmienia wśród udogodnień dla rodzin."
+source = "hotel_website"
+url = "https://www.ognistyptak.pl/ognisty-ptak/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Menu dla dzieci"
+note = "Menu dla dzieci w restauracji."
+source = "hotel_website"
+url = "https://www.ognistyptak.pl/ognisty-ptak/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "baby_bath"
+value = { available = true }
+short = "Wanienka do kąpieli"
+note = "Wanienka do kąpieli wśród udogodnień dla rodzin. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.ognistyptak.pl/ognisty-ptak/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playroom"
+value = { available = true, ball_pool = true }
+short = "Sala zabaw z dwupoziomowym małpim gajem"
+note = "Pokój zabaw (gry, zabawki, książki) i sala z dwupoziomowym małpim gajem (basen z kulkami, zjeżdżalnia). Wieku ani opieki strona nie podaje."
+source = "hotel_website"
+url = "https://www.ognistyptak.pl/ognisty-ptak/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "playground"
+value = { available = true }
+short = "Nowoczesny plac zabaw"
+note = "Nowoczesny plac zabaw."
+source = "hotel_website"
+url = "https://www.ognistyptak.pl/ognisty-ptak/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "kids_animation"
+value = { available = true }
+short = "Animacje dla dzieci i młodzieży"
+note = "Programy animacyjne dla dzieci i młodzieży. Wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.ognistyptak.pl/ognisty-ptak/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "paddling_pool"
+value = { available = true, water_play = true }
+short = "Brodzik z atrakcjami wodnymi"
+note = "Brodzik dla dzieci z atrakcjami wodnymi. Czy jest kryty, strona nie podaje."
+source = "hotel_website"
+url = "https://www.ognistyptak.pl/ognisty-ptak/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { own_beach = true }
+short = "Prywatna plaża nad jeziorem"
+note = "Prywatna plaża z koszami i leżakami; w sezonie zjeżdżalnia dla dzieci do jeziora. Odległości strona nie podaje."
+source = "hotel_website"
+url = "https://www.ognistyptak.pl/ognisty-ptak/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+[[feature]]
+key = "parking"
+value = { available = true }
+short = "Parking przy hotelu"
+note = "Hotel ma parking (osobny regulamin parkingu). Opłat strona nie podaje."
+source = "hotel_website"
+url = "https://www.ognistyptak.pl/ognisty-ptak/hotel-przyjazny-rodzinie"
+verified_at = 2026-11-07
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 235
+note = "280 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.1761%2C21.8116"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 235
+note = "310 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.1761%2C21.8116"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 400
+note = "490 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.1761%2C21.8116"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 410
+note = "600 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.1761%2C21.8116"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 430
+note = "580 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.1761%2C21.8116"
+verified_at = 2026-11-07
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 445
+note = "630 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.1761%2C21.8116"
+verified_at = 2026-11-07

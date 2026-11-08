@@ -18,7 +18,7 @@ official_url = "https://www.hotelnadmorskileba.pl/"
 address = "ul. Nadmorska 9C, 84-360 Łeba"
 lat = 54.7653542  # the hotel's own Google Maps link
 lon = 17.5739117
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

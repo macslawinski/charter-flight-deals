@@ -20,7 +20,7 @@ official_url = "https://hoteldivaspa.pl/"
 address = "ul. Kościuszki 16, 78-100 Kołobrzeg"
 lat = 54.1841125  # the hotel's own Google Maps link
 lon = 15.5857048
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

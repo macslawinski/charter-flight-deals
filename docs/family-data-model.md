@@ -136,8 +136,9 @@ Enum extension (new migration): `alter type fact_source add value 'venue_website
 | source, verified date | on every fact and on the location | shown, not filtered |
 
 The existing playground keys (`price_child`, `infant_free`, `cafe`, `socks_required`, `supervision`) become either
-shared keys (`price_child` → `price`) or `sala_zabaw` extensions. TODO: migrate the TOML keys or map them in the
-loader?
+shared keys (`price_child` → `price`) or `sala_zabaw` extensions. Decided (migration 013): the TOML keys are kept
+as `sala_zabaw` fact keys; `age_range`, `opening_hours`, `parking`, `changing_table` are already shared. Curated
+venues load under data source `curated` (external_id = slug, location = the OSM object, age_band → month columns).
 
 ## Category extensions (examples)
 

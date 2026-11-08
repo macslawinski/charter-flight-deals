@@ -18,7 +18,7 @@ official_url = "https://gorzelanny.pl/hotel-dzwirzyno/"
 address = "ul. Jachtowa 42, 78-131 Dźwirzyno"
 lat = 54.1512745  # OpenStreetMap way/1303545551, ODbL
 lon = 15.400362
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

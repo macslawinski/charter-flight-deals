@@ -19,7 +19,7 @@ official_url = "https://hotelnotera.pl/"
 address = "ul. Wczasowa 1, 89-606 Charzykowy"
 lat = 53.7420355  # the hotel's own map link
 lon = 17.5100131
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

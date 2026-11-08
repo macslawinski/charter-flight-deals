@@ -17,7 +17,7 @@ official_url = "https://www.hotel-podorlem.com/"
 address = "ul. 3 Maja 10, 83-300 Kartuzy"
 lat = 54.3354308  # OpenStreetMap node/4041317723, ODbL
 lon = 18.2029471
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

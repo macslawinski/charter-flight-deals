@@ -18,7 +18,7 @@ official_url = "https://villabaltica.com/"
 address = "ul. Emilii Plater 1, 81-777 Sopot"
 lat = 54.4377698  # OpenStreetMap node/2659039610, ODbL
 lon = 18.5781104
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

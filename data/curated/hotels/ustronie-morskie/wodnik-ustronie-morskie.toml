@@ -18,7 +18,7 @@ official_url = "https://www.wodnik.pl/"
 address = "ul. Kościuszki 5, 78-111 Ustronie Morskie"
 lat = 54.218574  # the hotel's own Google Maps link
 lon = 15.762577
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

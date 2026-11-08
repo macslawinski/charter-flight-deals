@@ -20,7 +20,7 @@ official_url = "https://www.aquariusspa.pl/"
 address = "ul. Kasprowicza 24, 78-100 Kołobrzeg"
 lat = 54.183634  # OpenStreetMap node/1379289444, ODbL
 lon = 15.5909435
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"
