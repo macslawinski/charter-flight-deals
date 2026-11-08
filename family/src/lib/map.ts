@@ -9,6 +9,7 @@ interface ExportRef {
   type: string;
   url: string | null;
   verified_at: string;
+  due: string;
 }
 interface ExportFact {
   key: string;
@@ -105,6 +106,7 @@ export const TAGS: { id: string; cat: string; group: string; chip: string; test:
 export interface MapRef {
   text: string;
   url: string | null;
+  due: string;
 }
 export interface MapFact {
   label: string;
@@ -136,21 +138,24 @@ const CENTERS: Record<string, [number, number]> = { poznan: [52.4064, 16.9252] }
 export function cityMap(ex: CityExport): MapPayload {
   const refs: MapRef[] = [];
   const seen = new Map<string, number>();
-  const ref = (text: string, url: string | null) => {
+  const ref = (text: string, url: string | null, due: string) => {
     const key = `${text}\u0000${url ?? ""}`;
     if (!seen.has(key)) {
       seen.set(key, refs.length);
-      refs.push({ text, url });
+      refs.push({ text, url, due });
     }
+    const r = refs[seen.get(key)!]!;
+    if (due < r.due) r.due = due; // merged refs: the earliest re-verification date wins
     return seen.get(key)!;
   };
   // Open data: "publisher, data z <data_as_of>, pobrane <date>". Curated: "strona miejsca, sprawdzone <date>"
   // (location: "OpenStreetMap, sprawdzone <date>").
   const openRef = (r: ExportRef) => {
-    if (r.type !== "open_data" || !r.src) return ref(`${sourceLabel(r.type)}, sprawdzone ${plDate(r.verified_at)}`, r.url);
+    if (r.type !== "open_data" || !r.src)
+      return ref(`${sourceLabel(r.type)}, sprawdzone ${plDate(r.verified_at)}`, r.url, r.due);
     const asOf = must(ex.sources, r.src, "source").data_as_of;
     const parts = [openSourceLabel(r.src), asOf ? `dane z ${plDate(asOf)}` : null, `pobrane ${plDate(r.verified_at)}`];
-    return ref(parts.filter(Boolean).join(", "), r.url);
+    return ref(parts.filter(Boolean).join(", "), r.url, r.due);
   };
   const exRefs = ex.refs.map(openRef);
 
@@ -196,7 +201,7 @@ export function cityPlaygrounds(ex: CityExport): Venue[] {
         if (!r) throw new Error(`Venue ${v.id}: missing ref ${f.ref} (lib/map.ts)`);
         return {
           key: f.key, age_band: null, value: f.value, note: f.note, short: f.short,
-          source: r.type, url: r.url, verified_at: r.verified_at, to_confirm: f.to_confirm,
+          source: r.type, url: r.url, verified_at: r.verified_at, to_confirm: f.to_confirm, due: r.due,
         };
       }),
     }));

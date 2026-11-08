@@ -44,7 +44,7 @@ const groups = topic.groups.map((g) => ({ ...g, facts: topic.facts.filter((f) =>
             <p class="doc-short">{f.short}</p>
             {f.note && <p class="doc-note">{f.note}</p>}
             <p class="source-line">
-              <span class:list={["source", { ask: f.to_confirm }]}>
+              <span class:list={["source", { ask: f.to_confirm }]} data-due={f.due}>
                 <Icon name={f.to_confirm ? "question" : "check"} size={16} />
                 <a href={f.url} rel="noopener" target="_blank">
                   {f.publisher}, sprawdzone {plDate(f.verified_at)}

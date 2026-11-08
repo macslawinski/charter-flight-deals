@@ -12,13 +12,13 @@ Product A (charter flight deals) stays in `charter-flight-deals`.
 ## What couples A and B today (checked 2026-11-08)
 | Area | Coupling | After the split |
 |---|---|---|
-| Python | `ingest/config.py`, `http_client.py`, `store.py` (connect), `models.py` (`ParseError`) used by both; `curated.py`, `opendata/` are B; `sources/`, `run.py`, `market.py` are A | copy the small shared core into both repos (no shared package) |
+| Python | `ingest/config.py`, `http_client.py`, `store.py` (connect), `models.py` (`ParseError`) used by both; `curated.py`, `staleness.py`, `opendata/` are B; `sources/`, `run.py`, `market.py` are A | copy the small shared core into both repos (no shared package) |
 | Scripts | `export_family.py`, `export_venues.py` = B; `export_deals.py` = A; `db_local.py`, `json_shape.py` = both | copy the shared ones |
 | Tests | `test_curated`, `test_export_family`, `test_export_venues`, `test_opendata`, `test_stale_facts` = B; the rest A; `test_config`, `test_http_client`, `test_store`, `test_models` = core (keep the parts each repo uses) | split |
 | DB | one Supabase project, one migration series 001–015. B tables: `airports`, `child_rules`, `places`, `hotels`, `hotel_child_features`, `hotel_access` (009), `venue_categories`, `data_sources`, `import_runs`, `venues`, `venue_category_links`, `fact_keys`, `venue_facts` (012–015); types `age_band`, `fact_source`. B depends on A: `child_rules.carrier_iata → airlines`, `places.dest_iata → destinations`; 009 added `airlines.website`, `family_rules_url`, `destinations.slug`; 011 seeded charter airlines into `airlines` | B: new project, one `001_baseline.sql` with only B tables + its own `carriers` table (the airlines B has rules for); `places.dest_iata` becomes a plain column (no FK) |
 | Sites | `family/` reads only committed JSON; links to A in the footer; A never reads B | unchanged (footer link stays) |
 | Vercel | two projects on the same repo (`web/`, `family/` root dirs) | relink `pieluchy-i-paszporty` (prj_kO1Ag8JIX2PthiKPDQat5oYljoah) to the new repo; `ssoProtection: all` stays |
-| CI | `tests.yml` runs everything; `ingest.yml`, `web.yml` = A | B gets its own `tests.yml` (+ later the open-data schedule) |
+| CI | `tests.yml` runs everything; `ingest.yml`, `web.yml` = A; `stale-facts.yml` = B | B gets its own `tests.yml` + `stale-facts.yml` (+ later the open-data schedule) |
 | Docs | `CLAUDE.md` (both), `ROADMAP.md` (both, B = Step 4 + "Extension"), `PLAN.md`, `docs/family-*.md` = B | split; each repo its own CLAUDE.md and ROADMAP |
 | Skills | `rpl-discover`, `check-deals` = A; `curate-hotel`, `find-hotels`, `find-playgrounds`, `reverify-facts` = B; `apply-migration` = both | move / copy |
 | Memory | project memory lives under this repo's path | copy the B entries (product-b-family-plan, vercel-protection, always-preview-link) to the new repo's memory |
@@ -27,7 +27,7 @@ Product A (charter flight deals) stays in `charter-flight-deals`.
 1. **Freeze** (C): merge open PRs (#64 `reverify-facts`), tag `pre-split` on `main`, no new B work until step 5.
 2. **New repo** (C): `git clone` → `git filter-repo` keeping only B paths (history kept), push as the private repo
    `pieluchy-i-paszporty`. Kept paths: `family/`, `data/curated/`, `ingest/{__init__,
-   config,http_client,store,models,curated}.py`, `ingest/opendata/`, `config/` (open-data sources only),
+   config,http_client,store,models,curated,staleness}.py`, `ingest/opendata/`, `config/` (open-data sources only),
    `scripts/{export_family,export_venues,stale_facts,db_local,json_shape}.py`, B tests + fixtures, `PLAN.md`,
    `docs/family-*.md`, B skills, `pyproject.toml`. Then trim what B does not use (A models, A tables in `store.py`).
 3. **New database** (C, user creates or approves the project): new Supabase project (free tier: 2 projects).

@@ -393,6 +393,17 @@ details.more-info p {
 .source.ask .icon {
   color: #8a5a00;
 }
+/* Past its re-verification date (data-due, lib/format.ts markStale): said once, next to the date. */
+.stale-note {
+  display: inline-block;
+  margin-left: 0.35rem;
+  background: var(--sun-soft);
+  color: #6b4500;
+  border-radius: 999px;
+  padding: 0 0.5rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
 .badge-ask {
   display: inline-block;
   background: var(--sun-soft);

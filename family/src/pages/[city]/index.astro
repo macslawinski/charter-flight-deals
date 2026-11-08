@@ -95,7 +95,7 @@ const clientCats = Object.fromEntries(CATEGORIES.map((c) => [c.id, { color: c.co
                     <span>
                       <strong>{f.label}:</strong> {f.note ?? f.short}
                       <br />
-                      <span class="source">
+                      <span class="source" data-due={ref(f.ref).due}>
                         <Icon name="check" size={16} />
                         {ref(f.ref).url ? (
                           <a href={ref(f.ref).url!} rel="noopener" target="_blank">
@@ -150,6 +150,7 @@ const clientCats = Object.fromEntries(CATEGORIES.map((c) => [c.id, { color: c.co
   import L from "leaflet";
   import "leaflet/dist/leaflet.css";
   import type { MapPayload, MapVenue } from "../../lib/map";
+  import { flagStale } from "../../lib/format";
 
   type Payload = MapPayload & { cats: Record<string, { color: string; radius: number; label: string }> };
   const dataEl = document.getElementById("mapa-dane");
@@ -183,6 +184,8 @@ const clientCats = Object.fromEntries(CATEGORIES.map((c) => [c.id, { color: c.co
       a.target = "_blank";
       line.append(a);
     } else line.append(el("span", prefix + r.text));
+    line.dataset.due = r.due;
+    flagStale(line);
     return line;
   };
 
