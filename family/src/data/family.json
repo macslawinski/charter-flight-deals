@@ -6193,6 +6193,214 @@
     {
      "from_code": "Gdańsk",
      "from_kind": "city",
+     "minutes": 70,
+     "mode": "car",
+     "note": "80 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.2973%2C19.4888",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 220,
+     "mode": "car",
+     "note": "300 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.2973%2C19.4888",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 255,
+     "mode": "car",
+     "note": "370 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.2973%2C19.4888",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 355,
+     "mode": "car",
+     "note": "600 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.2973%2C19.4888",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 365,
+     "mode": "car",
+     "note": "550 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.2973%2C19.4888",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 400,
+     "mode": "car",
+     "note": "660 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.2973%2C19.4888",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "Kadyny 18, 82-340 Tolkmicko",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na życzenie łóżeczko turystyczne z kompletem pościeli, za dodatkową opłatą; kwoty strona nie podaje.",
+     "short": "Turystyczne z pościelą, płatne",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://kadyny.com.pl/pytania-i-odpowiedzi",
+     "value": {
+      "available": true,
+      "bedding": true,
+      "on_request": true,
+      "paid": true,
+      "travel_cot": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": "0-3",
+     "key": "child_free_stay",
+     "note": "Pobyt dzieci do 3 lat jest bezpłatny (dziecko śpi w łóżku rodziców). Za dostawkę dla dziecka 4–12 lat 136 zł za dobę ze śniadaniem i obiadokolacją; rok między 3. a 4. urodzinami strona pomija.",
+     "short": "Dzieci do 3 lat bezpłatnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://kadyny.com.pl/pytania-i-odpowiedzi",
+     "value": {
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełko do karmienia w restauracji; o potrzebie krzesełka hotel prosi poinformować przy rezerwacji.",
+     "short": "W restauracji, zgłosić przy rezerwacji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://kadyny.com.pl/pytania-i-odpowiedzi",
+     "value": {
+      "available": true,
+      "book_ahead": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja ma menu dla dzieci.",
+     "short": "Menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://kadyny.com.pl/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka na życzenie, gdy w łazience pokoju nie ma wanny. Opłaty strona nie podaje.",
+     "short": "Na życzenie, gdy w łazience brak wanny",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://kadyny.com.pl/dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Wewnętrzny pokój zabaw dla dzieci. Minimalnego wieku, godzin ani opieki strona nie podaje.",
+     "short": "Pokój zabaw w budynku",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://kadyny.com.pl/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Zewnętrzny plac zabaw; obok mini zoo z alpakami, kozami, owcami, kucykami i jeleniami.",
+     "short": "Plac zabaw i mini zoo",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://kadyny.com.pl/dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "lift",
+     "note": "W hotelu nie ma windy; do niektórych atrakcji prowadzą schody.",
+     "short": "Brak windy",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://kadyny.com.pl/pytania-i-odpowiedzi",
+     "value": {
+      "available": false
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Plaża nad Zalewem Wiślanym około 1 km od hotelu.",
+     "short": "Plaża nad Zalewem ok. 1 km",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://kadyny.com.pl/pytania-i-odpowiedzi",
+     "value": {
+      "distance_m": 1000,
+      "lake": "Zalew Wiślany"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Bezpłatny, niestrzeżony parking na terenie hotelu.",
+     "short": "Bezpłatny, niestrzeżony",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://kadyny.com.pl/pytania-i-odpowiedzi",
+     "value": {
+      "free": true,
+      "guarded": false
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 54.297317,
+   "lon": 19.488789,
+   "name": "Kadyny Folwark Hotel & SPA",
+   "official_url": "https://kadyny.com.pl/",
+   "place": "kadyny",
+   "slug": "kadyny-folwark",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
      "minutes": 40,
      "mode": "car",
      "note": "30 km",
@@ -10803,6 +11011,187 @@
     {
      "from_code": "Gdańsk",
      "from_kind": "city",
+     "minutes": 175,
+     "mode": "car",
+     "note": "250 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.8760%2C21.3207",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 205,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.8760%2C21.3207",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 340,
+     "mode": "car",
+     "note": "430 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.8760%2C21.3207",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 375,
+     "mode": "car",
+     "note": "550 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.8760%2C21.3207",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 400,
+     "mode": "car",
+     "note": "580 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.8760%2C21.3207",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 410,
+     "mode": "car",
+     "note": "570 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.8760%2C21.3207",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Giżycka 6, 11-700 Mrągowo",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na życzenie drewniane łóżeczko dla niemowlęcia w pokoju; cennik na stronie hotelu: 60 zł za pobyt.",
+     "short": "Drewniane, 60 zł za pobyt",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://mragoworesort.pl/hotel/",
+     "value": {
+      "available": true,
+      "fee_pln_per_stay": 60,
+      "on_request": true,
+      "wooden": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Hotel ma krzesełka do karmienia dzieci.",
+     "short": "Krzesełka do karmienia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://mragoworesort.pl/dla-dzieci/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Specjalne menu dla dzieci z kolorowanką; dla dzieci z alergiami można dobrać osobne menu.",
+     "short": "Menu dla dzieci z kolorowanką",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://mragoworesort.pl/dla-dzieci/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala zabaw dla dzieci od 1 roku do 12 lat; dzieci są w niej wyłącznie pod opieką rodziców lub opiekunów (regulamin sali zabaw). Godzin strona nie podaje.",
+     "short": "Sala zabaw od 1 roku, z rodzicem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://mragoworesort.pl/wp-content/uploads/2025/04/Regulamin-sali-zabaw.pdf",
+     "value": {
+      "available": true,
+      "max_age_years": 12,
+      "min_age_years": 1,
+      "with_parent": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Zewnętrzny plac zabaw z trampoliną i tyrolką, przy statku pirackim.",
+     "short": "Trampolina, tyrolka, statek piracki",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://mragoworesort.pl/dla-dzieci/",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animacje dla dzieci w weekendy tematyczne, święta i wakacje. Wieku strona nie podaje.",
+     "short": "W weekendy tematyczne, święta, wakacje",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://mragoworesort.pl/dla-dzieci/",
+     "value": {
+      "available": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Brodzik dla najmłodszych w strefie basenów (obok basenu sportowego i rekreacyjnego ze zjeżdżalnią). Basen czynny pn–czw 10:00–20:00, pt 10:00–21:00, sb 8:00–21:00, nd 8:00–20:00; w święta i długie weekendy według programu. Temperatury i zasad dla małych dzieci strona nie podaje.",
+     "short": "Brodzik w strefie basenów",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://mragoworesort.pl/spa/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking na terenie hotelu 40 zł za dobę. Czy jest strzeżony, strona nie podaje.",
+     "short": "40 zł/doba",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://mragoworesort.pl/hotel/",
+     "value": {
+      "fee_pln_per_day": 40,
+      "paid": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 53.8759602,
+   "lon": 21.3207024,
+   "name": "Hotel Mrągowo Resort & SPA",
+   "official_url": "https://mragoworesort.pl/",
+   "place": "mragowo",
+   "slug": "mragowo-resort",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
      "minutes": 190,
      "mode": "car",
      "note": "260 km",
@@ -11371,6 +11760,200 @@
    "official_url": "https://www.ognistyptak.pl/",
    "place": "ogonki",
    "slug": "ognisty-ptak-ogonki",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 185,
+     "mode": "car",
+     "note": "230 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.6861%2C21.5804",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 215,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.6861%2C21.5804",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 355,
+     "mode": "car",
+     "note": "530 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.6861%2C21.5804",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 360,
+     "mode": "car",
+     "note": "550 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.6861%2C21.5804",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 380,
+     "mode": "car",
+     "note": "530 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.6861%2C21.5804",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 395,
+     "mode": "car",
+     "note": "580 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.6861%2C21.5804",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "Piaski 5, 12-220 Ruciane-Nida",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na życzenie łóżeczko w pokoju. Opłaty strona nie podaje.",
+     "short": "Na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mazurskiraj.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka dla dzieci w restauracjach hotelu.",
+     "short": "Krzesełka w restauracjach",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mazurskiraj.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "all_restaurants"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Menu dziecięce „Pofajdoki”; przy śniadaniach i obiadokolacjach także dania przygotowane dla dzieci.",
+     "short": "Menu Pofajdoki i dania dla dzieci w bufecie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mazurskiraj.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "kids_buffet": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Całoroczna bawialnia Junior Club – Kraina Kłobuka z małpim gajem i zabawkami sensorycznymi. Minimalnego wieku, godzin ani tego, czy rodzic musi być obecny, strona nie podaje.",
+     "short": "Kraina Kłobuka z małpim gajem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mazurskiraj.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "year_round": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Tematyczny plac zabaw na świeżym powietrzu.",
+     "short": "Tematyczny plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mazurskiraj.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animacje dla dzieci przez cały rok, 7 dni w tygodniu. Wieku strona nie podaje.",
+     "short": "Cały rok, 7 dni w tygodniu",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mazurskiraj.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "year_round": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "W krytej strefie basenowej brodzik z mini placem zabaw i mini zjeżdżalniami; płytka woda o odpowiedniej temperaturze (stopni strona nie podaje). Basen dla wszystkich 10:00–20:00, potem tylko dorośli.",
+     "short": "Kryty brodzik z mini zjeżdżalniami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mazurskiraj.pl/baseny",
+     "value": {
+      "indoor": true,
+      "slide": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "beach_walk_minutes",
+     "note": "Hotel ma prywatną piaszczystą plażę z bezpłatnymi leżakami. Odległości strona nie podaje.",
+     "short": "Własna piaszczysta plaża",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mazurskiraj.pl/faq",
+     "value": {
+      "own_beach": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking naziemny na ok. 200 miejsc i garaż podziemny na 43 auta, czynny całą dobę; opłaty według cennika wywieszonego na parkingu (kwoty strona nie podaje).",
+     "short": "Parking i garaż podziemny, płatny",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.mazurskiraj.pl/regulaminy",
+     "value": {
+      "available": true,
+      "paid": true,
+      "underground": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 53.686122,
+   "lon": 21.580367,
+   "name": "Hotel Mazurski Raj",
+   "official_url": "https://www.mazurskiraj.pl/",
+   "place": "piaski",
+   "slug": "mazurski-raj-piaski",
    "status": "published"
   },
   {
@@ -16985,6 +17568,197 @@
    "place": "wladyslawowo",
    "slug": "gwiazda-morza-wladyslawowo",
    "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 115,
+     "mode": "car",
+     "note": "150 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.5439%2C19.9416",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 165,
+     "mode": "car",
+     "note": "210 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.5439%2C19.9416",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 270,
+     "mode": "car",
+     "note": "310 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.5439%2C19.9416",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 330,
+     "mode": "car",
+     "note": "490 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.5439%2C19.9416",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 360,
+     "mode": "car",
+     "note": "510 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.5439%2C19.9416",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 365,
+     "mode": "car",
+     "note": "520 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.5439%2C19.9416",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "Wysoka Wieś 22, 14-100 Ostróda",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na życzenie gości z małymi dziećmi hotel bezpłatnie wstawia łóżeczko do pokoju.",
+     "short": "Bezpłatnie, na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.drirenaerisspa.pl/wzgorza-dylewskie/hotel/regulations",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": "0-3",
+     "key": "child_free_stay",
+     "note": "Pobyt dzieci do ukończenia 3 roku życia jest bezpłatny (nocleg i wyżywienie). Dzieci od 3 do ukończenia 12 lat nocują za dodatkową opłatą.",
+     "short": "Do 3. urodzin bezpłatnie z wyżywieniem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.drirenaerisspa.pl/wzgorza-dylewskie/hotel/dzieci-w-hotelu",
+     "value": {
+      "free": true,
+      "meals_included": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka dla maluchów w restauracji Oranżeria.",
+     "short": "W restauracji Oranżeria",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.drirenaerisspa.pl/wzgorza-dylewskie/hotel/dzieci-w-hotelu",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Specjalne menu dla dzieci w restauracji Oranżeria.",
+     "short": "Menu dla dzieci w Oranżerii",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.drirenaerisspa.pl/wzgorza-dylewskie/hotel/dzieci-w-hotelu",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala zabaw dla dzieci wyposażona w zabawki. Minimalnego wieku, godzin ani opieki strona nie podaje.",
+     "short": "Sala zabaw z zabawkami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.drirenaerisspa.pl/wzgorza-dylewskie/hotel/dzieci-w-hotelu",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Plac zabaw dla dzieci.",
+     "short": "Plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.drirenaerisspa.pl/wzgorza-dylewskie/hotel/dzieci-w-hotelu",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "W hotelu organizowane są animacje dla dzieci. Wieku ani terminów strona nie podaje.",
+     "short": "Animacje dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.drirenaerisspa.pl/wzgorza-dylewskie/hotel/dzieci-w-hotelu",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_pool",
+     "note": "Basen dla dzieci w Centrum SPA (tam też jednorazowe pieluszki). Głębokości, temperatury ani godzin strona nie podaje.",
+     "short": "Basen dla dzieci w Centrum SPA",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.drirenaerisspa.pl/wzgorza-dylewskie/hotel/dzieci-w-hotelu",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Regulamin wymienia garaż podziemny i parking przed hotelem. Opłat ani tego, czy jest strzeżony, strona nie podaje.",
+     "short": "Garaż podziemny i parking przed hotelem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.drirenaerisspa.pl/wzgorza-dylewskie/hotel/regulations",
+     "value": {
+      "available": true,
+      "underground": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 53.543946,
+   "lon": 19.94157,
+   "name": "Hotel SPA Dr Irena Eris Wzgórza Dylewskie",
+   "official_url": "https://www.drirenaerisspa.pl/wzgorza-dylewskie",
+   "place": "wysoka-wies",
+   "slug": "irena-eris-wzgorza-dylewskie",
+   "status": "published"
   }
  ],
  "places": [
@@ -17323,6 +18097,38 @@
    "name": "Stare Jabłonki",
    "region": "Mazury",
    "slug": "stare-jablonki"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Mrągowo",
+   "region": "Mazury",
+   "slug": "mragowo"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Piaski (Ruciane-Nida)",
+   "region": "Mazury",
+   "slug": "piaski"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Kadyny",
+   "region": "Zalew Wiślany",
+   "slug": "kadyny"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Wysoka Wieś",
+   "region": "Mazury",
+   "slug": "wysoka-wies"
   }
  ],
  "rule_keys": [

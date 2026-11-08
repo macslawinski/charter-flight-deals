@@ -1,0 +1,168 @@
+# Facts from the hotel's own website (kadyny.com.pl; robots.txt allows all, checked 2026-11-08):
+# /dzieci, /pytania-i-odpowiedzi, /kontakt, Regulamin hotelowy 2023 (PDF, §12 and the info page). Written in
+# our words.
+# Also on the site, no feature key for it: mini zoo (alpacas, goats, sheep, ponies, deer, birds); storage for
+# strollers and children's bikes; indoor pool 8:00-21:00 free for guests (no rules for small children stated);
+# extra bed for a child 4-12: 136 zł per night with breakfast and dinner. Children under 12 should be
+# supervised on the premises (regulamin).
+# Not stated (so not recorded yet): cot fee amount, changing table, potty, bottle warmer, baby monitor,
+# paddling pool, playroom ages/hours, animations.
+#
+# Coordinates: GPS given on the hotel's /kontakt page (54°17'50.34" N, 19°29'19.64" E).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet (nearest station Elbląg).
+slug = "kadyny-folwark"
+place = "kadyny"
+name = "Kadyny Folwark Hotel & SPA"
+official_url = "https://kadyny.com.pl/"
+address = "Kadyny 18, 82-340 Tolkmicko"
+lat = 54.297317
+lon = 19.488789
+status = "published"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true, paid = true, bedding = true, travel_cot = true }
+short = "Turystyczne z pościelą, płatne"
+note = "Na życzenie łóżeczko turystyczne z kompletem pościeli, za dodatkową opłatą; kwoty strona nie podaje."
+source = "hotel_website"
+url = "https://kadyny.com.pl/pytania-i-odpowiedzi"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "child_free_stay"
+age_band = "0-3"
+value = { free = true }
+short = "Dzieci do 3 lat bezpłatnie"
+note = "Pobyt dzieci do 3 lat jest bezpłatny (dziecko śpi w łóżku rodziców). Za dostawkę dla dziecka 4–12 lat 136 zł za dobę ze śniadaniem i obiadokolacją; rok między 3. a 4. urodzinami strona pomija."
+source = "hotel_website"
+url = "https://kadyny.com.pl/pytania-i-odpowiedzi"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "high_chair"
+value = { available = true, where = "restaurant", book_ahead = true }
+short = "W restauracji, zgłosić przy rezerwacji"
+note = "Krzesełko do karmienia w restauracji; o potrzebie krzesełka hotel prosi poinformować przy rezerwacji."
+source = "hotel_website"
+url = "https://kadyny.com.pl/pytania-i-odpowiedzi"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Menu dla dzieci"
+note = "Restauracja ma menu dla dzieci."
+source = "hotel_website"
+url = "https://kadyny.com.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, on_request = true }
+short = "Na życzenie, gdy w łazience brak wanny"
+note = "Wanienka na życzenie, gdy w łazience pokoju nie ma wanny. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://kadyny.com.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Pokój zabaw w budynku"
+note = "Wewnętrzny pokój zabaw dla dzieci. Minimalnego wieku, godzin ani opieki strona nie podaje."
+source = "hotel_website"
+url = "https://kadyny.com.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "Plac zabaw i mini zoo"
+note = "Zewnętrzny plac zabaw; obok mini zoo z alpakami, kozami, owcami, kucykami i jeleniami."
+source = "hotel_website"
+url = "https://kadyny.com.pl/dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "lift"
+value = { available = false }
+short = "Brak windy"
+note = "W hotelu nie ma windy; do niektórych atrakcji prowadzą schody."
+source = "hotel_website"
+url = "https://kadyny.com.pl/pytania-i-odpowiedzi"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "beach_walk_minutes"
+value = { distance_m = 1000, lake = "Zalew Wiślany" }
+short = "Plaża nad Zalewem ok. 1 km"
+note = "Plaża nad Zalewem Wiślanym około 1 km od hotelu."
+source = "hotel_website"
+url = "https://kadyny.com.pl/pytania-i-odpowiedzi"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { free = true, guarded = false }
+short = "Bezpłatny, niestrzeżony"
+note = "Bezpłatny, niestrzeżony parking na terenie hotelu."
+source = "hotel_website"
+url = "https://kadyny.com.pl/pytania-i-odpowiedzi"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 70
+note = "80 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B54.2973%2C19.4888"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 220
+note = "300 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B54.2973%2C19.4888"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 255
+note = "370 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B54.2973%2C19.4888"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 355
+note = "600 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B54.2973%2C19.4888"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 365
+note = "550 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B54.2973%2C19.4888"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 400
+note = "660 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B54.2973%2C19.4888"
+verified_at = 2026-11-08

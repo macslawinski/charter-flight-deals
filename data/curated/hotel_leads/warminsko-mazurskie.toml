@@ -94,7 +94,7 @@ lat = 54.297214
 lon = 19.490428
 signals = ["łóżeczko", "wanienka", "krzesełko"]
 why = "Łóżeczko z pościelą, wanienka na życzenie (gdy łazienka bez wanny), krzesełko w restauracji."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Kosewo 78 Family Hotel & SPA"
@@ -154,7 +154,7 @@ lat = 53.874211
 lon = 21.322405
 signals = ["łóżeczko drewniane", "krzesełko", "brodzik", "sala zabaw"]
 why = "Drewniane łóżeczko dla niemowląt na życzenie, krzesełka do karmienia, brodzik dla najmłodszych, sala zabaw."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Przystań Hotel & SPA"
@@ -178,7 +178,7 @@ lat = 53.686072
 lon = 21.582248
 signals = ["łóżeczko", "krzesełko", "brodzik"]
 why = "Łóżeczka na życzenie, krzesełka w restauracjach, płytki brodzik z wodnym placem zabaw dla najmłodszych."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Hotel Joseph Conrad"
@@ -201,7 +201,8 @@ lat = 53.613107
 lon = 20.415795
 signals = ["łóżeczko", "wanienka", "krzesełko"]
 why = "Łóżeczko z pościelą i wanienka na życzenie, krzesełka do karmienia, dzieci do 4 lat bezpłatnie (sonda dostała 403, WebFetch czyta)."
-status = "lead"
+status = "skipped"
+skip_reason = "robots.txt blokuje boty AI, w tym ClaudeBot / Claude-Web / anthropic-ai (2026-11-08); bez obejścia."
 
 [[lead]]
 name = "Hotel Anders"
@@ -273,7 +274,7 @@ lat = 53.543946
 lon = 19.94157
 signals = ["łóżeczko", "krzesełko", "pieluszki", "basen dla dzieci"]
 why = "Łóżeczko na życzenie, krzesełka w restauracji, pieluszki w SPA; pobyt dzieci do ukończenia 3 lat bezpłatny."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Zalesie Mazury Active Spa"
