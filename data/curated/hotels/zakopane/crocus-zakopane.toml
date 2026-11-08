@@ -1,0 +1,148 @@
+# Facts from the hotel's own website (hotelcrocus.pl; robots.txt has no Disallow, checked 2026-11-08):
+# /hotel/dla-dzieci, /kontakt, Regulamin Pływalni and Regulamin Parkingu (PDFs, linked from /prywatnosc-1).
+# Written in our words.
+# Also on the site, no feature key for it: pool, saunas and jacuzzi only under constant adult supervision for
+# children under 14; prams may be kept in the room (hotel regulamin).
+# Not stated (so not recorded yet): fees for the cot and baby items, free-stay age, potty, bottle warmer, baby
+# monitor, lift, playroom age and hours, depth and temperature of the children's zone, parking fee.
+#
+# Coordinates: OpenStreetMap way/332012418 (centre; (c) OpenStreetMap contributors, ODbL); the site's map link
+# is a short link.
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet (Zakopane station).
+slug = "crocus-zakopane"
+place = "zakopane"
+name = "Hotel Crocus"
+official_url = "https://hotelcrocus.pl/"
+address = "ul. Chałubińskiego 40, 34-500 Zakopane"
+lat = 49.286087
+lon = 19.9715092
+status = "published"
+
+[[feature]]
+key = "cot"
+value = { available = true }
+short = "Łóżeczka"
+note = "Wyposażenie dla najmłodszych obejmuje łóżeczka. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://hotelcrocus.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "high_chair"
+value = { available = true }
+short = "Krzesełka do karmienia"
+note = "Wyposażenie dla najmłodszych obejmuje krzesełka do karmienia."
+source = "hotel_website"
+url = "https://hotelcrocus.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Menu dla dzieci"
+note = "Specjalne menu dla dzieci."
+source = "hotel_website"
+url = "https://hotelcrocus.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_bath"
+value = { available = true }
+short = "Wanienki"
+note = "Wyposażenie dla najmłodszych obejmuje wanienki."
+source = "hotel_website"
+url = "https://hotelcrocus.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "changing_table"
+value = { available = true }
+short = "Przewijaki"
+note = "Wyposażenie dla najmłodszych obejmuje przewijaki; gdzie stoją, strona nie podaje."
+source = "hotel_website"
+url = "https://hotelcrocus.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Sala zabaw"
+note = "W hotelu jest sala zabaw. Minimalnego wieku, godzin ani tego, czy rodzic musi zostać, strona nie podaje."
+source = "hotel_website"
+url = "https://hotelcrocus.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_pool"
+value = { available = true, kids_zone = true }
+short = "Basen z wydzieloną strefą dla dzieci"
+note = "Basen hotelowy ma wydzieloną strefę dla dzieci. Dzieci do 14 lat tylko pod stałą opieką dorosłego, do 3 lat w wodoodpornych pieluszkach (regulamin pływalni). Głębokości ani temperatury strona nie podaje."
+source = "hotel_website"
+url = "https://hotelcrocus.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { paid = true, garage = true }
+short = "Płatny parking/garaż"
+note = "Parking i garaż prowadzi zewnętrzna spółka na zasadach odpłatnego najmu miejsca (bilet lub karta przy szlabanie), czynny całą dobę. Stawki strona nie podaje."
+source = "hotel_website"
+url = "https://u.profitroom.com/hotelcrocus.pl/uploads/regulaminmiejscpostojowychpol.pdf"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 105
+note = "110 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.2861%2C19.9715"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 140
+note = "180 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.2861%2C19.9715"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 255
+note = "370 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.2861%2C19.9715"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 290
+note = "400 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.2861%2C19.9715"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 370
+note = "560 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.2861%2C19.9715"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 430
+note = "700 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.2861%2C19.9715"
+verified_at = 2026-11-08

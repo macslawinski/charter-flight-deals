@@ -1890,6 +1890,168 @@
   {
    "access": [
     {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 100,
+     "mode": "car",
+     "note": "100 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.3399%2C20.0809",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 135,
+     "mode": "car",
+     "note": "170 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.3399%2C20.0809",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 250,
+     "mode": "car",
+     "note": "370 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.3399%2C20.0809",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 290,
+     "mode": "car",
+     "note": "400 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.3399%2C20.0809",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 370,
+     "mode": "car",
+     "note": "550 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.3399%2C20.0809",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 430,
+     "mode": "car",
+     "note": "690 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.3399%2C20.0809",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Wierch Olczański 99, 34-530 Bukowina Tatrzańska",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczka dziecięce z pościelą wśród udogodnień dla dzieci. Opłaty strona nie podaje.",
+     "short": "Łóżeczka z pościelą",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelzbojnicowka.pl/pl/atrakcje/hotel",
+     "value": {
+      "available": true,
+      "bedding": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Wysokie krzesełka dziecięce wśród udogodnień dla dzieci.",
+     "short": "Wysokie krzesełka",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelzbojnicowka.pl/pl/atrakcje/hotel",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka wśród udogodnień dla dzieci.",
+     "short": "Wanienka",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelzbojnicowka.pl/pl/atrakcje/hotel",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Przewijak wśród udogodnień dla dzieci; gdzie stoi, strona nie podaje.",
+     "short": "Przewijak",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelzbojnicowka.pl/pl/atrakcje/hotel",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Nocnik wśród udogodnień dla dzieci.",
+     "short": "Nocnik",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelzbojnicowka.pl/pl/atrakcje/hotel",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Pokój zabaw, w którym dzieci bawią się pod opieką rodziców: dla młodszych klocki i zabawki, dla starszych Xbox. Godzin ani minimalnego wieku strona nie podaje.",
+     "short": "Pokój zabaw z klockami, pod opieką rodziców",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelzbojnicowka.pl/pl/atrakcje/hotel",
+     "value": {
+      "available": true,
+      "with_parent": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Zewnętrzny plac zabaw z widokiem na Tatry; dzieci bawią się pod opieką rodziców.",
+     "short": "Zewnętrzny plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelzbojnicowka.pl/pl/atrakcje/hotel",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.3399383,
+   "lon": 20.0809441,
+   "name": "Hotel Zbójnicówka",
+   "official_url": "https://www.hotelzbojnicowka.pl/pl/",
+   "place": "bukowina-tatrzanska",
+   "slug": "zbojnicowka-bukowina-tatrzanska",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
      "from_code": "Gdańsk",
      "from_kind": "city",
      "minutes": 80,
@@ -5473,6 +5635,186 @@
    "official_url": "https://grandhotel.tiffi.com/",
    "place": "ilawa",
    "slug": "tiffi-ilawa",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 60,
+     "mode": "car",
+     "note": "50 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.8533%2C19.5095",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 75,
+     "mode": "car",
+     "note": "80 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.8533%2C19.5095",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 190,
+     "mode": "car",
+     "note": "270 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.8533%2C19.5095",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 250,
+     "mode": "car",
+     "note": "350 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.8533%2C19.5095",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 310,
+     "mode": "car",
+     "note": "450 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.8533%2C19.5095",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 365,
+     "mode": "car",
+     "note": "590 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.8533%2C19.5095",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Zakopiańska 64, 34-100 Jaroszowice",
+   "features": [
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W restauracji są krzesełka dla dzieci.",
+     "short": "Krzesełka w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelmj.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "W karcie restauracji jest menu dziecięce.",
+     "short": "Menu dziecięce w karcie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelmj.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Hotel ma wanienki dla dzieci.",
+     "short": "Wanienki",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelmj.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Nakładki na toaletę i podesty ułatwiające dzieciom korzystanie z łazienki. Nocnika strona nie wymienia.",
+     "short": "Nakładki na toaletę i podesty",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelmj.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "step_stool": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Przy hotelu jest plac zabaw, boisko do siatkówki i szachy wielkoformatowe.",
+     "short": "Plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelmj.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "W wybranych terminach, zwłaszcza w ferie zimowe i wakacje, animacje dla najmłodszych. Wieku strona nie podaje.",
+     "short": "Animacje w ferie i wakacje",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelmj.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Brodzik ze zjeżdżalnią dla dzieci, płytki; woda o 2–3 stopnie cieplejsza niż w basenie głównym (ok. 30°C). Głębokości strona nie podaje. Dzieci do 12 lat korzystają ze zjeżdżalni i atrakcji brodzika tylko pod stałą opieką dorosłych (regulamin strefy wellness).",
+     "short": "Brodzik ze zjeżdżalnią, cieplejszy o 2–3°C",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelmj.pl/spa/basen-wellness",
+     "value": {
+      "available": true,
+      "heated": true,
+      "slide": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Hotel zapewnia gościom bezpłatny, monitorowany parking (regulamin hotelu, s. 2).",
+     "short": "Bezpłatny parking monitorowany",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://wa-uploads.profitroom.com/mlynjackahotelspa1/17689003050155_Regulamin%20hotelu%20PL.pdf",
+     "value": {
+      "free": true,
+      "monitored": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.8533046,
+   "lon": 19.5094921,
+   "name": "Młyn Jacka Hotel & SPA",
+   "official_url": "https://hotelmj.pl/",
+   "place": "jaroszowice",
+   "slug": "mlyn-jacka-jaroszowice",
    "status": "published"
   },
   {
@@ -9451,6 +9793,198 @@
    "official_url": "https://kosewo78.pl/",
    "place": "kosewo",
    "slug": "kosewo-78",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 10,
+     "mode": "car",
+     "note": "10 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.0085%2C19.9324",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 55,
+     "mode": "car",
+     "note": "80 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.0085%2C19.9324",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 165,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.0085%2C19.9324",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 205,
+     "mode": "car",
+     "note": "310 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.0085%2C19.9324",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 285,
+     "mode": "car",
+     "note": "460 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.0085%2C19.9324",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 345,
+     "mode": "car",
+     "note": "600 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.0085%2C19.9324",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Jugowicka 10c, 30-443 Kraków",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko/kojec wśród udogodnień dla dzieci. Opłaty strona nie podaje.",
+     "short": "Łóżeczko lub kojec",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelfarmona.pl/o-nas/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka do jedzenia wśród udogodnień dla dzieci.",
+     "short": "Krzesełka do jedzenia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelfarmona.pl/o-nas/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "W Restauracji Magnifica jest dziecięce menu.",
+     "short": "Menu dziecięce w Restauracji Magnifica",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelfarmona.pl/o-nas/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka wśród udogodnień dla dzieci.",
+     "short": "Wanienka",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelfarmona.pl/o-nas/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Przewijak wśród udogodnień dla dzieci; gdzie stoi, strona nie podaje.",
+     "short": "Przewijak",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelfarmona.pl/o-nas/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Pokój zabaw po wcześniejszej rezerwacji; na stronie usług dodatkowych wśród usług bezpłatnych. Minimalnego wieku, godzin ani tego, czy rodzic musi zostać, strona nie podaje.",
+     "short": "Pokój zabaw po rezerwacji, bezpłatny",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelfarmona.pl/o-nas/dla-dzieci",
+     "value": {
+      "available": true,
+      "free": true,
+      "reservation_required": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Plac zabaw z huśtawką i zjeżdżalnią.",
+     "short": "Plac zabaw z huśtawką i zjeżdżalnią",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelfarmona.pl/o-nas/dla-dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Bezpłatny, monitorowany parking (strona główna i usługi dodatkowe).",
+     "short": "Bezpłatny parking monitorowany",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelfarmona.pl/o-nas/uslugi-dodatkowe",
+     "value": {
+      "free": true,
+      "monitored": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "transfer",
+     "note": "Concierge na życzenie organizuje transport do i z lotniska w Balicach oraz dworca PKP. Ceny strona nie podaje.",
+     "short": "Transport z lotniska Balice i dworca PKP",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelfarmona.pl/o-nas/uslugi-dodatkowe",
+     "value": {
+      "from_airport": true,
+      "from_station": true,
+      "on_request": true,
+      "station": "Kraków Główny"
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.008504,
+   "lon": 19.932353,
+   "name": "Farmona Hotel Business & SPA",
+   "official_url": "https://www.hotelfarmona.pl/",
+   "place": "krakow",
+   "slug": "farmona-krakow",
    "status": "published"
   },
   {
@@ -20268,6 +20802,180 @@
      "minutes": 105,
      "mode": "car",
      "note": "110 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.2861%2C19.9715",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 140,
+     "mode": "car",
+     "note": "180 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.2861%2C19.9715",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 255,
+     "mode": "car",
+     "note": "370 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.2861%2C19.9715",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 290,
+     "mode": "car",
+     "note": "400 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.2861%2C19.9715",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 370,
+     "mode": "car",
+     "note": "560 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.2861%2C19.9715",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 430,
+     "mode": "car",
+     "note": "700 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.2861%2C19.9715",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Chałubińskiego 40, 34-500 Zakopane",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Wyposażenie dla najmłodszych obejmuje łóżeczka. Opłaty strona nie podaje.",
+     "short": "Łóżeczka",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelcrocus.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Wyposażenie dla najmłodszych obejmuje krzesełka do karmienia.",
+     "short": "Krzesełka do karmienia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelcrocus.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Specjalne menu dla dzieci.",
+     "short": "Menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelcrocus.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wyposażenie dla najmłodszych obejmuje wanienki.",
+     "short": "Wanienki",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelcrocus.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Wyposażenie dla najmłodszych obejmuje przewijaki; gdzie stoją, strona nie podaje.",
+     "short": "Przewijaki",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelcrocus.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "W hotelu jest sala zabaw. Minimalnego wieku, godzin ani tego, czy rodzic musi zostać, strona nie podaje.",
+     "short": "Sala zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelcrocus.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_pool",
+     "note": "Basen hotelowy ma wydzieloną strefę dla dzieci. Dzieci do 14 lat tylko pod stałą opieką dorosłego, do 3 lat w wodoodpornych pieluszkach (regulamin pływalni). Głębokości ani temperatury strona nie podaje.",
+     "short": "Basen z wydzieloną strefą dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotelcrocus.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "kids_zone": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking i garaż prowadzi zewnętrzna spółka na zasadach odpłatnego najmu miejsca (bilet lub karta przy szlabanie), czynny całą dobę. Stawki strona nie podaje.",
+     "short": "Płatny parking/garaż",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://u.profitroom.com/hotelcrocus.pl/uploads/regulaminmiejscpostojowychpol.pdf",
+     "value": {
+      "garage": true,
+      "paid": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.286087,
+   "lon": 19.9715092,
+   "name": "Hotel Crocus",
+   "official_url": "https://hotelcrocus.pl/",
+   "place": "zakopane",
+   "slug": "crocus-zakopane",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 105,
+     "mode": "car",
+     "note": "110 km",
      "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.2842%2C19.9907",
      "verified_at": "2026-11-08"
     },
@@ -21450,6 +22158,14 @@
    "name": "Kraków",
    "region": "Małopolska",
    "slug": "krakow"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Jaroszowice",
+   "region": "Małopolska",
+   "slug": "jaroszowice"
   }
  ],
  "rule_keys": [
