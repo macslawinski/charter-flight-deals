@@ -783,3 +783,24 @@ name = "Kraśnik"
 country = "Polska"
 region = "Lubelszczyzna"
 kind = "domestic"
+
+[[place]]
+slug = "cedzyna"
+name = "Cedzyna (Kielce)"
+country = "Polska"
+region = "Góry Świętokrzyskie"
+kind = "domestic"
+
+[[place]]
+slug = "sandomierz"
+name = "Sandomierz"
+country = "Polska"
+region = "Ziemia Sandomierska"
+kind = "domestic"
+
+[[place]]
+slug = "solec-zdroj"
+name = "Solec-Zdrój"
+country = "Polska"
+region = "Ponidzie"
+kind = "domestic"

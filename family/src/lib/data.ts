@@ -339,7 +339,7 @@ export const TRIP_GROUPS: {
   { id: "wielkopolska", title: "Poznań i Wielkopolska", tone: "sea", icon: "pin",
     regions: ["Wielkopolska", "Pojezierze Leszczyńskie"] },
   { id: "wyzyny", title: "Wyżyny i uzdrowiska", tone: "coral", icon: "castle",
-    regions: ["Lubelszczyzna", "Góry Świętokrzyskie", "Ponidzie"] },
+    regions: ["Lubelszczyzna", "Góry Świętokrzyskie", "Ponidzie", "Ziemia Sandomierska"] },
 ];
 const GROUP_OF = Object.fromEntries(TRIP_GROUPS.flatMap((g) => g.regions.map((r) => [r, g.id])));
 export const tripGroupOf = (h: Hotel) => must(GROUP_OF, placeRegion(placeOf(h)), "trip group of region");

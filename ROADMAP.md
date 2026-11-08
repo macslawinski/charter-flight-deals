@@ -253,6 +253,12 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       playroom from 4, bottle warming), Trzy Korony Puławy (7: free cot, bath, changing table, free stay to 4),
       Kraft Kraśnik (5). New region "Lubelszczyzna" in a new trip group "Wyżyny i uzdrowiska". Podkarpackie
       leads closed (Gościniec nad Sawą, Blue Diamond skipped).
+- [x] C: świętokrzyskie hotels, batch 1 (2026-11-08, published; `hotel_leads/swietokrzyskie.toml`): Malinowy
+      Raj Solec-Zdrój (5: brodzik 15-30 cm at 33-34°C, high chairs, changing place), Mały Rzym Sandomierz (4),
+      Uroczysko Cedzyna (3: brodzik, indoor playground). All under 8: thin sites. Skipped Binkowski (playroom from
+      6), Cztery Wiatry (aparthotel). New regions Góry Świętokrzyskie, Ponidzie, Ziemia Sandomierska.
+      (Both batches were pushed to the branch of PR #69 after it had been merged; restored to main 2026-11-08.)
+- [ ] C: still no hotels in podlaskie, łódzkie, opolskie, lubuskie.
 - [ ] C: train access for the Karkonosze / Bieszczady hotels (Jelenia Góra, Kłodzko, Zagórz stations).
 - [ ] U (phone/e-mail, optional): Tremonti free-stay age (6 vs 3); Skalny SPA brodzik; Artus cot fee; Czarny
       Kamień cot fee; Arłamów cot fee and free-stay rule; most: playroom minimum age.

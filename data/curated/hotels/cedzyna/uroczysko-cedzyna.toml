@@ -1,0 +1,99 @@
+# Facts from the hotel's own website (hotel-uroczysko.com.pl; robots.txt allows the pages, checked by the find-hotels probe 2026-11-08):
+# /kids-club.php, /galeria-atrakcje.php. Written in our words.
+# Also on the site, no feature key for it: a rope park and inflatables for an extra fee (weather permitting); Kids SPA treatments.
+# Not stated (so not recorded yet): cot, baby bath, high chair, changing table, potty, bottle warmer, kids' menu, free-stay age, playroom hours and age, animations, brodzik depth and hours, lift, parking.
+#
+# Coordinates: OpenStreetMap way/1391444458 centre ((c) OpenStreetMap contributors, ODbL).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet.
+slug = "uroczysko-cedzyna"
+place = "cedzyna"
+name = "Hotel Uroczysko Spa & Business"
+official_url = "https://www.hotel-uroczysko.com.pl/"
+address = "Cedzyna 44D, 25-900 Kielce"
+lat = 50.8704906
+lon = 20.7365889
+status = "published"
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Sala zabaw z grami i kolorowankami"
+note = "Sala zabaw z puzzlami, grami planszowymi i kolorowankami (zależnie od dostępności sal). Godzin strona nie podaje. Minimalnego wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotel-uroczysko.com.pl/kids-club.php"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, indoor = true, outdoor = true }
+short = "Wewnętrzny i zewnętrzny plac zabaw"
+note = "Hotel ma wewnętrzny i zewnętrzny plac zabaw."
+source = "hotel_website"
+url = "https://www.hotel-uroczysko.com.pl/kids-club.php"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "paddling_pool"
+value = { available = true }
+short = "Brodzik dla dzieci"
+note = "Hotel ma brodzik dla dzieci. Głębokości i godzin strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotel-uroczysko.com.pl/kids-club.php"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 105
+note = "130 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.8705%2C20.7366"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 130
+note = "180 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.8705%2C20.7366"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 140
+note = "200 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.8705%2C20.7366"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 255
+note = "400 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.8705%2C20.7366"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 280
+note = "370 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.8705%2C20.7366"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 335
+note = "480 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.8705%2C20.7366"
+verified_at = 2026-11-08
