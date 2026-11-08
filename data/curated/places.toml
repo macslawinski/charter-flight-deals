@@ -322,3 +322,31 @@ name = "Wysoka Wieś"
 country = "Polska"
 region = "Mazury"
 kind = "domestic"
+
+[[place]]
+slug = "zalesie"
+name = "Zalesie (Barczewo)"
+country = "Polska"
+region = "Mazury"
+kind = "domestic"
+
+[[place]]
+slug = "olsztyn"
+name = "Olsztyn"
+country = "Polska"
+region = "Warmia"
+kind = "domestic"
+
+[[place]]
+slug = "worliny"
+name = "Worliny"
+country = "Polska"
+region = "Mazury"
+kind = "domestic"
+
+[[place]]
+slug = "kosewo"
+name = "Kosewo"
+country = "Polska"
+region = "Mazury"
+kind = "domestic"
