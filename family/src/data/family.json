@@ -2920,6 +2920,229 @@
   {
    "access": [
     {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 195,
+     "mode": "car",
+     "note": "260 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.8582%2C22.9985",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 305,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.8582%2C22.9985",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 365,
+     "mode": "car",
+     "note": "560 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.8582%2C22.9985",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 370,
+     "mode": "car",
+     "note": "580 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.8582%2C22.9985",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 390,
+     "mode": "car",
+     "note": "560 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.8582%2C22.9985",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 405,
+     "mode": "car",
+     "note": "600 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.8582%2C22.9985",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Zdrojowa 1, 16-300 Augustów",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Strona dla dzieci: łóżeczko z pościelą, płatne. Informacje dodatkowe: łóżeczko 40 zł za dobę.",
+     "short": "Łóżeczko z pościelą, 40 zł/doba",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelwarszawa.pl/hotel/informacje-dodatkowe",
+     "value": {
+      "available": true,
+      "bedding": true,
+      "fee_pln_per_night": 40
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "child_free_stay",
+     "note": "Informacje dodatkowe: dzieci do lat 4 śpiące w łóżku z rodzicami bezpłatnie; od 5 do 12 lat 110 zł/doba (rozkładana sofa).",
+     "short": "Dzieci do lat 4 w łóżku rodziców gratis",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelwarszawa.pl/hotel/informacje-dodatkowe",
+     "value": {
+      "free": true,
+      "max_age_years": 4,
+      "sleeping_with_parents": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W restauracji krzesełka do karmienia i foteliki dla dzieci.",
+     "short": "Krzesełka i foteliki w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelwarszawa.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja ma menu dla dzieci.",
+     "short": "Menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelwarszawa.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Strona dla dzieci wymienia podgrzewacz do butelek w pokoju. Opłaty strona nie podaje.",
+     "short": "Podgrzewacz do butelek w pokoju",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelwarszawa.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "in_room": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Strona dla dzieci wymienia wanienkę do kąpieli w pokoju. Opłaty strona nie podaje.",
+     "short": "Wanienka w pokoju",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelwarszawa.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Przewijak w ogólnodostępnej toalecie na parterze.",
+     "short": "Przewijak w toalecie na parterze",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelwarszawa.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "public_toilets"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Plac zabaw na zewnątrz z piaskownicą i statkiem pirackim.",
+     "short": "Plac zabaw z piaskownicą i statkiem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelwarszawa.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true,
+      "sandpit": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animacje dla dzieci w sezonie letnim i w wybranych terminach. Minimalnego wieku strona nie podaje.",
+     "short": "Animacje latem i w wybrane terminy",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelwarszawa.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_pool",
+     "note": "W strefie wellness jest niecka basenowa dla dzieci. Głębokości ani godzin strona nie podaje.",
+     "short": "Basen dla dzieci w strefie wellness",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelwarszawa.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking monitorowany, płatny 45 zł za samochód za dobę.",
+     "short": "Parking monitorowany 45 zł/doba",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelwarszawa.pl/hotel/informacje-dodatkowe",
+     "value": {
+      "fee_pln_per_day": 45,
+      "guarded": true,
+      "paid": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 53.85819,
+   "lon": 22.99846,
+   "name": "Hotel Warszawa Spa & Resort",
+   "official_url": "https://www.hotelwarszawa.pl/",
+   "place": "augustow",
+   "slug": "hotel-warszawa-augustow",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
      "from_code": "Poznań",
      "from_kind": "city",
      "minutes": 45,
@@ -3361,6 +3584,405 @@
    "place": "bialka-tatrzanska",
    "slug": "bania-bialka-tatrzanska",
    "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 225,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B52.6970%2C23.8779",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 400,
+     "mode": "car",
+     "note": "580 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B52.6970%2C23.8779",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 405,
+     "mode": "car",
+     "note": "600 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B52.6970%2C23.8779",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 410,
+     "mode": "car",
+     "note": "550 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B52.6970%2C23.8779",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 420,
+     "mode": "car",
+     "note": "510 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B52.6970%2C23.8779",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 440,
+     "mode": "car",
+     "note": "620 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B52.6970%2C23.8779",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Stoczek 218 B, 17-230 Białowieża",
+   "features": [
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja ma menu dla dzieci.",
+     "short": "Menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel.bialowieza.pl/hotel/atrakcje-w-hotelu-relaks-odpoczynek-sport-sala-zabaw-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Duża sala zabaw dla dzieci w każdym wieku. Minimalnego wieku, godzin ani zasad opieki strona nie podaje.",
+     "short": "Duża sala zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel.bialowieza.pl/hotel/atrakcje-w-hotelu-relaks-odpoczynek-sport-sala-zabaw-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Naturalny plac zabaw z domkiem na drzewie.",
+     "short": "Naturalny plac zabaw z domkiem na drzewie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel.bialowieza.pl/hotel/atrakcje-w-hotelu-relaks-odpoczynek-sport-sala-zabaw-dla-dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animator dla dzieci podczas imprez tematycznych; terminów ani wieku strona nie podaje.",
+     "short": "Animator podczas imprez tematycznych",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel.bialowieza.pl/hotel/atrakcje-w-hotelu-relaks-odpoczynek-sport-sala-zabaw-dla-dzieci",
+     "value": {
+      "available": true,
+      "occasional": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "W strefie basenowej brodzik i zjeżdżalnia dla dzieci. Głębokości ani godzin strona nie podaje.",
+     "short": "Brodzik ze zjeżdżalnią",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotel.bialowieza.pl/hotel/atrakcje-w-hotelu-relaks-odpoczynek-sport-sala-zabaw-dla-dzieci",
+     "value": {
+      "indoor": true,
+      "slide": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 52.69703,
+   "lon": 23.87789,
+   "name": "Hotel Białowieski",
+   "official_url": "https://www.hotel.bialowieza.pl/",
+   "place": "bialowieza",
+   "slug": "hotel-bialowieski",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 140,
+     "mode": "car",
+     "note": "200 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.1322%2C23.1700",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 310,
+     "mode": "car",
+     "note": "500 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.1322%2C23.1700",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 315,
+     "mode": "car",
+     "note": "520 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.1322%2C23.1700",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 330,
+     "mode": "car",
+     "note": "430 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.1322%2C23.1700",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 335,
+     "mode": "car",
+     "note": "500 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.1322%2C23.1700",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 350,
+     "mode": "car",
+     "note": "540 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.1322%2C23.1700",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Pałacowa 7, 15-064 Białystok",
+   "features": [
+    {
+     "age_band": "0-3",
+     "key": "child_free_stay",
+     "note": "FAQ: dzieci do 3 roku życia mają pobyt za darmo. Cen dla starszych dzieci FAQ nie podaje.",
+     "short": "Dzieci do 3 roku życia gratis",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.golebiewski.pl/bialystok",
+     "value": {
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala zabaw czynna codziennie 8:00-21:00, dzieci tylko pod opieką dorosłych; domki (jeden ze zjeżdżalnią), małpi gaj, basen z piłkami, maskotki i zabawki. Minimalnego wieku strona nie podaje.",
+     "short": "Sala zabaw 8–21, z opiekunem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.golebiewski.pl/bialystok/dzieci",
+     "value": {
+      "available": true,
+      "hours": "08:00-21:00",
+      "parent_required": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Warsztaty i aktywności dostosowane do różnych grup wiekowych. Minimalnego wieku strona nie podaje.",
+     "short": "Warsztaty i zajęcia dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.golebiewski.pl/bialystok/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "W Aquaparku Tropikana specjalna przestrzeń dla maluchów z brodzikiem z podgrzewaną wodą; FAQ: wstęp do Tropikany w cenie noclegu. Głębokości strona nie podaje.",
+     "short": "Brodzik z podgrzewaną wodą (Tropikana)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.golebiewski.pl/bialystok/dzieci",
+     "value": {
+      "heated": true,
+      "indoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "FAQ: parking dodatkowo płatny, 50 zł za dobę za samochód.",
+     "short": "Parking 50 zł/doba",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.golebiewski.pl/bialystok",
+     "value": {
+      "fee_pln_per_day": 50,
+      "paid": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 53.1322222,
+   "lon": 23.17,
+   "name": "Hotel Gołębiewski Białystok",
+   "official_url": "https://www.golebiewski.pl/bialystok",
+   "place": "bialystok",
+   "slug": "golebiewski-bialystok",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 135,
+     "mode": "car",
+     "note": "200 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.1438%2C23.1924",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 310,
+     "mode": "car",
+     "note": "500 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.1438%2C23.1924",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 315,
+     "mode": "car",
+     "note": "520 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.1438%2C23.1924",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 330,
+     "mode": "car",
+     "note": "430 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.1438%2C23.1924",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 335,
+     "mode": "car",
+     "note": "500 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.1438%2C23.1924",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 350,
+     "mode": "car",
+     "note": "550 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.1438%2C23.1924",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. 42 Pułku Piechoty 6, 15-181 Białystok",
+   "features": [
+    {
+     "age_band": "0-3",
+     "key": "cot",
+     "note": "Informator hotelowy (s. 1): rozkładane łóżeczka dla dzieci do lat 3 na życzenie, przez recepcję; strona dla dzieci: przy rezerwacji lub na miejscu. Opłaty strona nie podaje.",
+     "short": "Łóżeczko turystyczne na życzenie (do 3 lat)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://wa-uploads.profitroom.com/hotelpodlasie/16926958569735_Informator%20Hotelowy.pdf",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "travel_cot": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Strona dla dzieci: restauracja ma menu dla dzieci.",
+     "short": "Menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelpodlasie.pl/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": "2+",
+     "key": "playroom",
+     "note": "Regulamin pokoju zabaw (s. 1): czynny codziennie 8:00-20:00, dla dzieci gości hotelu w wieku 2-12 lat; dzieci do lat 4 pod opieką rodzica lub opiekuna.",
+     "short": "Pokój zabaw Happy Garden od 2 lat, 8–20",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://wa-uploads.profitroom.com/hotelpodlasie/16926958566439_REGULAMIN%20SALA%20ZABAW_HOTEL%20PODLASIE_2023.pdf",
+     "value": {
+      "available": true,
+      "hours": "08:00-20:00",
+      "min_age_years": 2,
+      "parent_required": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Informator hotelowy (s. 1): monitorowany, bezpłatny parking dla samochodów osobowych.",
+     "short": "Bezpłatny parking monitorowany",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://wa-uploads.profitroom.com/hotelpodlasie/16926958569735_Informator%20Hotelowy.pdf",
+     "value": {
+      "free": true,
+      "guarded": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 53.1438,
+   "lon": 23.19237,
+   "name": "Hotel Podlasie",
+   "official_url": "https://www.hotelpodlasie.pl/",
+   "place": "bialystok",
+   "slug": "hotel-podlasie",
+   "status": "draft"
   },
   {
    "access": [
@@ -19552,6 +20174,158 @@
   {
    "access": [
     {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 80,
+     "mode": "car",
+     "note": "110 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.4408%2C17.7679",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 95,
+     "mode": "car",
+     "note": "130 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.4408%2C17.7679",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 130,
+     "mode": "car",
+     "note": "180 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.4408%2C17.7679",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 215,
+     "mode": "car",
+     "note": "310 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.4408%2C17.7679",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 255,
+     "mode": "car",
+     "note": "410 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.4408%2C17.7679",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 370,
+     "mode": "car",
+     "note": "610 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.4408%2C17.7679",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Zamkowa 1, Moszna, 47-370 Zielina",
+   "features": [
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "FAQ: zamek ma wysokie krzesełka do karmienia; dostawiane na podstawie podanej liczby dzieci do 3 lat.",
+     "short": "Wysokie krzesełka do karmienia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://mosznazamek.pl/faq",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "FAQ: na parterze, w przejściu między restauracją a toaletami, oznaczony Pokój Rodzica przystosowany do opieki nad niemowlęciem. Czy jest w nim przewijak, strona wprost nie podaje.",
+     "short": "Pokój Rodzica na parterze",
+     "source": "hotel_website",
+     "to_confirm": true,
+     "url": "https://mosznazamek.pl/faq",
+     "value": {
+      "available": true,
+      "where": "parent_room"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "FAQ: w zamku sala zabaw Hrabiolandia, dodatkowo płatna; strona dla dzieci: małpi gaj, basen z piłkami. Minimalnego wieku ani ceny strona nie podaje.",
+     "short": "Sala zabaw Hrabiolandia (płatna)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://mosznazamek.pl/faq",
+     "value": {
+      "available": true,
+      "paid": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "FAQ: bezpłatny plac zabaw w parku, stylizowany na zamek (domek ze zjeżdżalniami).",
+     "short": "Plac zabaw w parku w kształcie zamku",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://mosznazamek.pl/faq",
+     "value": {
+      "available": true,
+      "free": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "lift",
+     "note": "FAQ: w obiekcie jest winda, ale dojeżdża tylko do wybranych pokoi noclegowych.",
+     "short": "Winda tylko do wybranych pokoi",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://mosznazamek.pl/faq",
+     "value": {
+      "available": true,
+      "partial": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "FAQ: parking dla gości nocujących w zamku bezpłatny, tuż przy wejściu do zamku.",
+     "short": "Bezpłatny parking przy wejściu",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://mosznazamek.pl/faq",
+     "value": {
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.44079,
+   "lon": 17.76793,
+   "name": "Zamek Moszna",
+   "official_url": "https://mosznazamek.pl/",
+   "place": "moszna",
+   "slug": "zamek-moszna",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
      "from_code": "Gdańsk",
      "from_kind": "city",
      "minutes": 175,
@@ -21313,6 +22087,329 @@
   {
    "access": [
     {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 80,
+     "mode": "car",
+     "note": "100 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.6639%2C17.9372",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 80,
+     "mode": "car",
+     "note": "110 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.6639%2C17.9372",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 130,
+     "mode": "car",
+     "note": "190 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.6639%2C17.9372",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 195,
+     "mode": "car",
+     "note": "290 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.6639%2C17.9372",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 240,
+     "mode": "car",
+     "note": "340 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.6639%2C17.9372",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 350,
+     "mode": "car",
+     "note": "540 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.6639%2C17.9372",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. 1 Maja 77, 45-355 Opole",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "FAQ: łóżeczka dziecięce dostępne w wybranych pokojach za dodatkową opłatą (w niektórych pokojach ich brak). Kwoty strona nie podaje.",
+     "short": "Łóżeczko w wybranych pokojach, płatne",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotel-weneda.pl/faq",
+     "value": {
+      "available": true,
+      "paid": true,
+      "selected_rooms": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "child_free_stay",
+     "note": "FAQ: pobyt dzieci do 5. roku życia bezpłatny; w innym miejscu: dzieci do lat 5 nocują bezpłatnie, jeśli nie potrzebują osobnego łóżka.",
+     "short": "Dzieci do 5 lat gratis (bez osobnego łóżka)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotel-weneda.pl/faq",
+     "value": {
+      "free": true,
+      "max_age_years": 5,
+      "no_own_bed": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "FAQ: bezpłatne miejsca przed i za hotelem, bez rezerwacji i bez gwarancji; miejsce w garażu podziemnym 40 zł za samochód (okresu strona nie podaje).",
+     "short": "Bezpłatny parking przy hotelu",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotel-weneda.pl/faq",
+     "value": {
+      "free": true,
+      "reservable": false,
+      "underground_fee_pln": 40
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.66394,
+   "lon": 17.93719,
+   "name": "Hotel Weneda",
+   "official_url": "https://hotel-weneda.pl/",
+   "place": "opole",
+   "slug": "hotel-weneda",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 75,
+     "mode": "car",
+     "note": "100 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.6721%2C17.9264",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 80,
+     "mode": "car",
+     "note": "110 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.6721%2C17.9264",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 130,
+     "mode": "car",
+     "note": "190 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.6721%2C17.9264",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 195,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.6721%2C17.9264",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 240,
+     "mode": "car",
+     "note": "340 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.6721%2C17.9264",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 355,
+     "mode": "car",
+     "note": "540 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.6721%2C17.9264",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Oleska 11, 45-052 Opole",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Strona dla dzieci: łóżeczko turystyczne z pościelą; rzeczy dla dzieci trzeba zarezerwować wcześniej, liczba ograniczona. Opłaty strona nie podaje.",
+     "short": "Łóżeczko turystyczne z pościelą (rezerwacja)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.szarawilla.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "bedding": true,
+      "on_request": true,
+      "travel_cot": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W restauracji krzesełko do karmienia.",
+     "short": "Krzesełko w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.szarawilla.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja ma menu dla dzieci („menu dla milusińskich”).",
+     "short": "Menu dla milusińskich",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.szarawilla.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Strona dla dzieci wymienia w pokoju podgrzewacz do jedzenia. Opłaty strona nie podaje.",
+     "short": "Podgrzewacz do jedzenia w pokoju",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.szarawilla.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "in_room": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "W łazience wanienka dla dziecka (do zarezerwowania wcześniej). Opłaty strona nie podaje.",
+     "short": "Wanienka do kąpieli",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.szarawilla.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Strona dla dzieci wymienia w łazience przewijak oraz pieluszki i chusteczki.",
+     "short": "Przewijak, pieluchy i chusteczki",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.szarawilla.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "bathroom"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Strona dla dzieci wymienia nocnik, nakładkę na sedes i podest.",
+     "short": "Nocnik, nakładka na sedes, podest",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.szarawilla.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "step_stool": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Informacje praktyczne: dziecięca bawialnia bezpłatna dla najmłodszych gości; strona dla dzieci: z trampoliną. Minimalnego wieku ani godzin strona nie podaje.",
+     "short": "Bawialnia z trampoliną, bezpłatna",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.szarawilla.pl/hotel/informacje-praktyczne",
+     "value": {
+      "available": true,
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "lift",
+     "note": "Informacje praktyczne: recepcja jest na I piętrze, wjazd windą.",
+     "short": "Winda (recepcja na I piętrze)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.szarawilla.pl/hotel/informacje-praktyczne",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Garaż podziemny bezpłatny dla aut do 2 m wysokości, wjazd od ul. Gen. Andersa; bezpłatny parking zewnętrzny 100 m od hotelu.",
+     "short": "Bezpłatny garaż podziemny (do 2 m)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.szarawilla.pl/hotel/informacje-praktyczne",
+     "value": {
+      "free": true,
+      "max_height_m": 2,
+      "underground": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.6720772,
+   "lon": 17.9263515,
+   "name": "Hotel Szara Willa",
+   "official_url": "https://www.szarawilla.pl/",
+   "place": "opole",
+   "slug": "szara-willa",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
      "from_code": "Warszawa",
      "from_kind": "city",
      "minutes": 105,
@@ -22938,6 +24035,142 @@
    "place": "pogorzelica",
    "slug": "sandra-spa-pogorzelica",
    "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 110,
+     "mode": "car",
+     "note": "140 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.2886%2C17.4731",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 115,
+     "mode": "car",
+     "note": "130 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.2886%2C17.4731",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 160,
+     "mode": "car",
+     "note": "210 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.2886%2C17.4731",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 235,
+     "mode": "car",
+     "note": "310 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.2886%2C17.4731",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 285,
+     "mode": "car",
+     "note": "430 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.2886%2C17.4731",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 400,
+     "mode": "car",
+     "note": "640 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.2886%2C17.4731",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "Pokrzywna 48, 48-267 Jarnołtówek",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko turystyczne z pościelą za dodatkową opłatą. Kwoty strona nie podaje.",
+     "short": "Łóżeczko turystyczne z pościelą, płatne",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.debowewzgorze.eu/spotkania_rodzinne",
+     "value": {
+      "available": true,
+      "bedding": true,
+      "paid": true,
+      "travel_cot": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Strona wymienia wanienkę do kąpieli dla dziecka. Opłaty strona nie podaje.",
+     "short": "Wanienka do kąpieli",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.debowewzgorze.eu/spotkania_rodzinne",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Bajlandia: konstrukcja z tunelami i zjeżdżalniami do basenów z piłkami. Minimalnego wieku, godzin ani opłat strona nie podaje.",
+     "short": "Bajlandia: tunele, zjeżdżalnie, piłki",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.debowewzgorze.eu/spotkania_rodzinne",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_pool",
+     "note": "Strona wymienia basen dla młodszych gości. Głębokości ani godzin strona nie podaje.",
+     "short": "Basen dla młodszych gości",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.debowewzgorze.eu/spotkania_rodzinne",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "lift",
+     "note": "Regulamin, część o dostępności: winda od strony tarasu restauracji. Do których pięter, strona nie podaje.",
+     "short": "Winda od strony tarasu restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.debowewzgorze.eu/regulamin",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.28858,
+   "lon": 17.47306,
+   "name": "Hotel Spa Dębowe Wzgórze",
+   "official_url": "https://www.debowewzgorze.eu/",
+   "place": "pokrzywna",
+   "slug": "debowe-wzgorze",
+   "status": "draft"
   },
   {
    "access": [
@@ -37731,6 +38964,54 @@
    "name": "Zgierz",
    "region": "Łódź i okolice",
    "slug": "zgierz"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Augustów",
+   "region": "Pojezierze Augustowskie",
+   "slug": "augustow"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Białowieża",
+   "region": "Puszcza Białowieska",
+   "slug": "bialowieza"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Białystok",
+   "region": "Białystok i Podlasie",
+   "slug": "bialystok"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Moszna",
+   "region": "Opolszczyzna",
+   "slug": "moszna"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Opole",
+   "region": "Opolszczyzna",
+   "slug": "opole"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Pokrzywna",
+   "region": "Góry Opawskie",
+   "slug": "pokrzywna"
   }
  ],
  "rule_keys": [

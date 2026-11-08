@@ -267,7 +267,14 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       ecoActive (6), Lawendowe Termy Uniejów (3). Skipped Holiday Inn Łódź (package only), Stara Wieś (cottages),
       Aparthotel Termy Uniejów. Car access only; train not checked. No leads left.
 - [ ] U: decide which łódzkie hotels to publish (all `draft`).
-- [ ] C: still no hotels in podlaskie, opolskie, lubuskie.
+- [x] C: hotel leads podlaskie + opolskie (2026-11-08): OSM 153 / 112 objects + web search; 8 leads, all curated
+      as `draft` (car access only, train not checked). Podlaskie: Hotel Warszawa Augustów (11 facts), Gołębiewski
+      Białystok (5), Hotel Białowieski (5), Hotel Podlasie (4). Opolskie: Szara Willa Opole (10), Zamek Moszna (5 +
+      1 do potwierdzenia: Pokój Rodzica = przewijak?), Dębowe Wzgórze (5), Weneda Opole (3). Skipped: Ibis Styles
+      and Mercure (chain pages), Logos Augustów, Dworek Tryumf, Karczma Dobarz, Leśny Białystok, Borowinowy Zdrój,
+      Biała Akacja, Antonio, DeSilva Opole. New trip groups "Podlasie i Augustów", "Opolszczyzna i Góry Opawskie".
+- [ ] U: decide which podlaskie / opolskie hotels to publish (all `draft`; Warszawa and Szara Willa reach 8 facts).
+- [ ] C: still no hotels in lubuskie.
 - [ ] C: train access for the Karkonosze / Bieszczady hotels (Jelenia Góra, Kłodzko, Zagórz stations).
 - [ ] U (phone/e-mail, optional): Tremonti free-stay age (6 vs 3); Skalny SPA brodzik; Artus cot fee; Czarny
       Kamień cot fee; Arłamów cot fee and free-stay rule; most: playroom minimum age.

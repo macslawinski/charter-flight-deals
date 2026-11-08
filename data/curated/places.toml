@@ -832,3 +832,45 @@ name = "Zgierz"
 country = "Polska"
 region = "Łódź i okolice"
 kind = "domestic"
+
+[[place]]
+slug = "augustow"
+name = "Augustów"
+country = "Polska"
+region = "Pojezierze Augustowskie"
+kind = "domestic"
+
+[[place]]
+slug = "bialowieza"
+name = "Białowieża"
+country = "Polska"
+region = "Puszcza Białowieska"
+kind = "domestic"
+
+[[place]]
+slug = "bialystok"
+name = "Białystok"
+country = "Polska"
+region = "Białystok i Podlasie"
+kind = "domestic"
+
+[[place]]
+slug = "moszna"
+name = "Moszna"
+country = "Polska"
+region = "Opolszczyzna"
+kind = "domestic"
+
+[[place]]
+slug = "opole"
+name = "Opole"
+country = "Polska"
+region = "Opolszczyzna"
+kind = "domestic"
+
+[[place]]
+slug = "pokrzywna"
+name = "Pokrzywna"
+country = "Polska"
+region = "Góry Opawskie"
+kind = "domestic"

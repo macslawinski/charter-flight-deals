@@ -1,0 +1,173 @@
+# Facts from the hotel's own website (hotelwarszawa.pl; robots.txt allows all, checked 2026-11-08):
+# /hotel/dla-dzieci, /hotel/informacje-dodatkowe. Written in our words.
+# Also on the site, no feature key for it: children 5-12 on a sofa bed 110 zł per night, from 13 years 150 zł;
+# spa tax 2 zł per child under 7 per night; playroom only for children booked on animation packages (package-only,
+# so not recorded).
+# Not stated (so not recorded yet): potty, kids' pool depth / hours, animation minimum age, lift.
+#
+# Coordinates: OpenStreetMap way/244865335, ODbL (no map link with coordinates on the site).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet.
+slug = "hotel-warszawa-augustow"
+place = "augustow"
+name = "Hotel Warszawa Spa & Resort"
+official_url = "https://www.hotelwarszawa.pl/"
+address = "ul. Zdrojowa 1, 16-300 Augustów"
+lat = 53.85819  # OpenStreetMap way/244865335, ODbL
+lon = 22.99846
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, fee_pln_per_night = 40, bedding = true }
+short = "Łóżeczko z pościelą, 40 zł/doba"
+note = "Strona dla dzieci: łóżeczko z pościelą, płatne. Informacje dodatkowe: łóżeczko 40 zł za dobę."
+source = "hotel_website"
+url = "https://www.hotelwarszawa.pl/hotel/informacje-dodatkowe"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "child_free_stay"
+value = { free = true, max_age_years = 4, sleeping_with_parents = true }
+short = "Dzieci do lat 4 w łóżku rodziców gratis"
+note = "Informacje dodatkowe: dzieci do lat 4 śpiące w łóżku z rodzicami bezpłatnie; od 5 do 12 lat 110 zł/doba (rozkładana sofa)."
+source = "hotel_website"
+url = "https://www.hotelwarszawa.pl/hotel/informacje-dodatkowe"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "high_chair"
+value = { available = true, where = "restaurant" }
+short = "Krzesełka i foteliki w restauracji"
+note = "W restauracji krzesełka do karmienia i foteliki dla dzieci."
+source = "hotel_website"
+url = "https://www.hotelwarszawa.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Menu dla dzieci"
+note = "Restauracja ma menu dla dzieci."
+source = "hotel_website"
+url = "https://www.hotelwarszawa.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true, in_room = true }
+short = "Podgrzewacz do butelek w pokoju"
+note = "Strona dla dzieci wymienia podgrzewacz do butelek w pokoju. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelwarszawa.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_bath"
+value = { available = true }
+short = "Wanienka w pokoju"
+note = "Strona dla dzieci wymienia wanienkę do kąpieli w pokoju. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelwarszawa.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "changing_table"
+value = { available = true, where = "public_toilets" }
+short = "Przewijak w toalecie na parterze"
+note = "Przewijak w ogólnodostępnej toalecie na parterze."
+source = "hotel_website"
+url = "https://www.hotelwarszawa.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true, sandpit = true }
+short = "Plac zabaw z piaskownicą i statkiem"
+note = "Plac zabaw na zewnątrz z piaskownicą i statkiem pirackim."
+source = "hotel_website"
+url = "https://www.hotelwarszawa.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, seasonal = true }
+short = "Animacje latem i w wybrane terminy"
+note = "Animacje dla dzieci w sezonie letnim i w wybranych terminach. Minimalnego wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelwarszawa.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_pool"
+value = { available = true }
+short = "Basen dla dzieci w strefie wellness"
+note = "W strefie wellness jest niecka basenowa dla dzieci. Głębokości ani godzin strona nie podaje."
+source = "hotel_website"
+url = "https://www.hotelwarszawa.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { paid = true, fee_pln_per_day = 45, guarded = true }
+short = "Parking monitorowany 45 zł/doba"
+note = "Parking monitorowany, płatny 45 zł za samochód za dobę."
+source = "hotel_website"
+url = "https://www.hotelwarszawa.pl/hotel/informacje-dodatkowe"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 195
+note = "260 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B53.8582%2C22.9985"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 305
+note = "380 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B53.8582%2C22.9985"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 365
+note = "560 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B53.8582%2C22.9985"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 370
+note = "580 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B53.8582%2C22.9985"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 390
+note = "560 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B53.8582%2C22.9985"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 405
+note = "600 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B53.8582%2C22.9985"
+verified_at = 2026-11-08
