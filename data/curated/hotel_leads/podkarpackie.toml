@@ -1,0 +1,106 @@
+# Leads for Product B: hotels in województwo podkarpackie whose own website shows an offer for children
+# 0-3. Discovered via OpenStreetMap (tourism=hotel, leisure=resort; (c) OpenStreetMap contributors,
+# ODbL) and web search pointing to the hotels' own sites; each lead confirmed on its own kids page.
+# Not facts: the curate-hotel skill reads the facts.
+voivodeship = "podkarpackie"
+checked_at = 2026-11-08
+covered = ["Bieszczady (bbox, probe top 60) i reszta województwa (probe top 60), 2026-11-08"]
+
+[[lead]]
+name = "Hotel Arłamów"
+town = "Ustrzyki Dolne"
+official_url = "https://www.arlamow.pl/"
+kids_url = "https://www.arlamow.pl/hotel-dla-dzieci"
+osm = "node/4192042517"
+lat = 49.5918121
+lon = 22.6281221
+signals = ["łóżeczko", "wanienka", "podgrzewacz", "przewijak", "nocnik", "krzesełko", "sala zabaw"]
+why = "Łóżeczko (płatne), wanienka, podgrzewacz, przenośny przewijak, nocnik, sala zabaw (od 3 lat samodzielnie)."
+status = "curated"
+
+[[lead]]
+name = "Grand Chotowa Hotel SPA & Resort"
+town = "Grabiny"
+official_url = "https://www.grandchotowa.pl/"
+kids_url = "https://www.grandchotowa.pl/resort/dla-dzieci"
+osm = "way/260839525"
+lat = 50.0323326
+lon = 21.2830819
+signals = ["łóżeczko", "wanienka", "podgrzewacz", "nocnik", "sala zabaw", "płytki basen"]
+why = "Łóżeczko, wanienka, podgrzewacz, nocnik i podest na życzenie, sala zabaw, wodny tor z płytkim basenem."
+status = "curated"
+
+[[lead]]
+name = "Gościniec Nad Sawą"
+town = "Handzlówka"
+official_url = "https://www.gosciniecnadsawa.pl/"
+kids_url = "https://www.gosciniecnadsawa.pl/sala-zabaw/urodziny-w-sali-zabaw"
+signals = ["sala zabaw", "do 3 lat"]
+why = "Do sprawdzenia: probe widzi salę zabaw i 'do 3 lat', ale tylko na stronie urodzin; trzeba znaleźć ofertę noclegową dla dzieci."
+status = "lead"
+
+[[lead]]
+name = "Hotel Solina Spa"
+town = "Myczkowce"
+official_url = "https://www.hotelsolina.eu/"
+kids_url = "https://www.hotelsolina.eu/dla-dzieci"
+osm = "way/294606715"
+lat = 49.4313239
+lon = 22.4130946
+signals = ["łóżeczko", "wanienka", "podgrzewacz", "przewijak", "niania elektroniczna"]
+why = "Łóżeczko 20 zł/doba, wanienka, podgrzewacz, przewijak, niania elektroniczna na życzenie, sala zabaw."
+status = "curated"
+
+[[lead]]
+name = "Blue Diamond"
+town = "Nowa Wieś"
+official_url = "https://bluediamond-hotel.pl/"
+signals = ["łóżeczko", "wanienka"]
+why = "Do sprawdzenia: probe widzi łóżeczko i wanienkę, ale nazwy hotelu nie ma na stronie (flaga name_not_on_site)."
+status = "lead"
+
+[[lead]]
+name = "Hotel Skalny SPA Bieszczady"
+town = "Polańczyk"
+official_url = "https://skalnyspa.pl/"
+kids_url = "https://skalnyspa.pl/dla-dzieci"
+osm = "way/292559433"
+lat = 49.3703858
+lon = 22.4285516
+signals = ["brodzik", "sala zabaw", "menu dziecięce"]
+why = "Do lat 3 bezpłatnie, krzesełka, sala zabaw, menu dziecięce; brodzik do potwierdzenia."
+status = "curated"
+
+[[lead]]
+name = "Hotel Zefir"
+town = "Polańczyk"
+official_url = "https://hotel-zefir.pl/"
+kids_url = "https://hotel-zefir.pl/dla-dzieci/"
+osm = "node/12806019451"
+lat = 49.363228
+lon = 22.4305452
+signals = ["łóżeczko", "wanienka", "nocnik", "krzesełko", "brodzik"]
+why = "Łóżeczko, wanienka i nocnik do wypożyczenia, sala zabaw, całoroczny basen z brodzikiem."
+status = "curated"
+
+[[lead]]
+name = "Hotel Bacówka Radawa & SPA"
+town = "Radawa"
+official_url = "https://www.bacowkaradawa.pl/"
+kids_url = "https://www.bacowkaradawa.pl/dla-dzieci"
+status = "skipped"
+skip_reason = "Strona dla dzieci zbyt ogólna: brak konkretnych rzeczy dla 0-3 poza słowem 'brodzik'."
+
+[[lead]]
+name = "Hotel Restauracja Salamandra"
+town = "Hoczew"
+official_url = "https://salamandra-hotel.pl/"
+kids_url = "https://salamandra-hotel.pl/hotel/dla-dzieci/"
+status = "skipped"
+skip_reason = "Strona dla dzieci zbyt ogólna: sala zabaw, nic konkretnego dla 0-3."
+
+[[lead]]
+name = "Perła Bieszczadów (Geovita)"
+town = "Czarna"
+status = "skipped"
+skip_reason = "Na stronie hotelu dla dzieci tylko sala zabaw."

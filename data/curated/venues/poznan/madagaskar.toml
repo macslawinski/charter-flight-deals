@@ -28,3 +28,12 @@ note = "Strona prosi, żeby przed wizytą zaopatrzyć dziecko w rajstopy."
 source = "venue_website"
 url = "https://www.centrummadagaskar.pl/"
 verified_at = 2026-11-04
+
+[[feature]]
+key = "birthday_parties"
+value = { available = true, weekday_pln = 350, weekend_pln = 400, people_included = 10 }
+short = "Urodziny od 350 zł za 10 osób (pon.–pt.)"
+note = "Pakiet „Madagaskar Standard”: 350 zł za 10 osób od poniedziałku do piątku, 400 zł w sobotę i niedzielę; każda kolejna osoba 25 zł. Około 2 godzin, cała sala zabaw, sala urodzinowa, przekąski i napoje niegazowane, animator i wizyta maskotki. Dodatki (np. malowanie twarzy, piniata) płatne osobno."
+source = "venue_website"
+url = "https://www.centrummadagaskar.pl/imprezy.html"
+verified_at = 2026-11-08

@@ -85,3 +85,12 @@ note = "Klub jest w centrum handlowym, które ma parking."
 source = "venue_website"
 url = "https://fikolki.pl/stary-browar/"
 verified_at = 2026-11-04
+
+[[feature]]
+key = "birthday_parties"
+value = { available = true, baby_package_0_3 = true, group_size = 10 }
+short = "Urodziny, też „Baby B-day” dla 0–3 lat"
+note = "Klub organizuje urodziny dla dzieci od 0 do 11 lat. Dla 0–3 lat jest pakiet „Baby B-day” (2 godziny w sali urodzinowej); pakiety dla 4–11 lat (np. Standard, Tematyczny, Kreatywny) są dla grupy do 10 dzieci: 2 godziny w sali i 30 minut zabawy. Strona podaje widełki 890–1490 zł za pakiet, ale cena zależy od miasta, klubu i dnia tygodnia, a cennik dla Poznania się nie wczytał."
+source = "venue_website"
+url = "https://fikolki.pl/urodziny/"
+verified_at = 2026-11-08

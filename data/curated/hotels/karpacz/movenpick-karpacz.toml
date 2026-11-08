@@ -1,0 +1,153 @@
+# Facts from the hotel's own website (movenpickkarpacz.pl; robots.txt allows the pages, checked by the find-hotels
+# probe 2026-11-08): /hotel/dla-dzieci, /hotel/atrakcje/park-bajek, footer. Written in our words.
+# Also on the site, no feature key for it: Park Bajek next to the hotel (outdoor fairy-tale park from 2 years, two playgrounds, toilets with changing tables, free parking for visitors; not part of the hotel).
+# Not stated (so not recorded yet): cot / item fees, free-stay age, playroom hours and minimum age, animation ages, lift, parking for hotel guests, changing table in the hotel itself.
+#
+# Coordinates: OpenStreetMap way/1442828381 centre ((c) OpenStreetMap contributors, ODbL).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet.
+slug = "movenpick-karpacz"
+place = "karpacz"
+name = "Mövenpick Resort & Spa Karpacz"
+official_url = "https://www.movenpickkarpacz.pl/"
+address = "ul. Obrońców Pokoju 6, 58-540 Karpacz"
+lat = 50.7708566
+lon = 15.7635472
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true }
+short = "Łóżeczko z materacem i pościelą na życzenie"
+note = "Na życzenie gości hotel udostępnia łóżeczko z materacem i pościelą. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.movenpickkarpacz.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "high_chair"
+value = { available = true, on_request = true, where = "restaurant" }
+short = "Krzesełka do karmienia, też w restauracji"
+note = "Krzesełko do karmienia jest dostępne na życzenie, a w restauracji są krzesełka do karmienia."
+source = "hotel_website"
+url = "https://www.movenpickkarpacz.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Kids Menu w restauracji"
+note = "Hotel ma specjalne Kids Menu."
+source = "hotel_website"
+url = "https://www.movenpickkarpacz.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, on_request = true }
+short = "Wanienka na życzenie"
+note = "Na życzenie gości dostępna jest wanienka. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.movenpickkarpacz.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "potty"
+value = { available = true, on_request = true, toilet_seat_adapter = true, step_stool = true }
+short = "Nocnik, nakładka i podest na życzenie"
+note = "Na życzenie gości: nocnik, nakładka na toaletę i podest (stopień). Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.movenpickkarpacz.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playroom"
+value = { available = true }
+short = "Sala zabaw Little Birds Club"
+note = "Hotel ma kolorową salę zabaw Little Birds Club. Godzin otwarcia i opieki strona nie podaje. Minimalnego wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.movenpickkarpacz.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_animation"
+value = { available = true }
+short = "Animacje dla dzieci"
+note = "Hotel organizuje animacje dla dzieci. Terminów i wieku strona nie podaje."
+source = "hotel_website"
+url = "https://www.movenpickkarpacz.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "paddling_pool"
+value = { indoor = true, heated = true, depth_cm = 45 }
+short = "Brodzik 45 cm z ciepłą wodą i zabawkami"
+note = "Basen z brodzikiem dla dzieci: płytki basen (45 cm) z ciepłą wodą i wodnymi zabawkami, dzieci bawią się pod okiem rodziców. Godzin strona nie podaje."
+source = "hotel_website"
+url = "https://www.movenpickkarpacz.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "stroller_rental"
+value = { available = true }
+short = "Wózek spacerowy w recepcji"
+note = "W recepcji dostępny jest wózek spacerowy. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.movenpickkarpacz.pl/hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 125
+note = "130 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.7709%2C15.7635"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 215
+note = "300 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.7709%2C15.7635"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 220
+note = "270 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.7709%2C15.7635"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 265
+note = "380 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.7709%2C15.7635"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 330
+note = "480 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.7709%2C15.7635"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 405
+note = "570 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.7709%2C15.7635"
+verified_at = 2026-11-08

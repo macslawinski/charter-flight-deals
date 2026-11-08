@@ -1,0 +1,38 @@
+---
+// Vaccination calendar for children 0-6: official facts only (essentials/vaccinations.toml, PSO by GIS).
+import Base from "../../layouts/Base.astro";
+import EssentialFacts from "../../components/EssentialFacts.astro";
+import { essential, plDate } from "../../lib/data";
+
+const topic = essential("vaccinations");
+const latest = topic.facts.map((f) => f.verified_at).sort().at(-1)!;
+---
+
+<Base title={topic.title} section="niezbednik" description="Szczepienia obowiązkowe i zalecane dzieci do 6 lat według Programu Szczepień Ochronnych GIS: miesiąc po miesiącu, ze źródłem.">
+  <p class="crumb"><a href="/niezbednik/">Niezbędnik</a></p>
+  <section class="page-hero">
+    <div>
+      <h1>{topic.title}</h1>
+      <p class="lead">
+        Szczepienia obowiązkowe i zalecane od urodzenia do 6 lat, według Programu Szczepień Ochronnych Głównego
+        Inspektora Sanitarnego. Przy każdej informacji link i data sprawdzenia (ostatnio {plDate(latest)}).
+      </p>
+    </div>
+  </section>
+
+  <EssentialFacts topic={topic} />
+
+  <p class="doc-disclaimer">
+    To nie jest porada medyczna. O terminie i rodzaju szczepionki decyduje lekarz po badaniu kwalifikacyjnym,
+    a dzieci urodzone przedwcześnie i z grup ryzyka mają osobne schematy (PSO, część III).
+  </p>
+</Base>
+
+<style>
+  .doc-disclaimer {
+    margin-top: 2.5rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+    max-width: 62ch;
+  }
+</style>

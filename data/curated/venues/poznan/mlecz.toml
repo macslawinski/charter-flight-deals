@@ -79,3 +79,12 @@ note = "Rodzic opiekuje się dzieckiem przez cały pobyt. Płatna opieka persone
 source = "venue_website"
 url = "https://bawialniamlecz.pl/regulamin/"
 verified_at = 2026-11-04
+
+[[feature]]
+key = "birthday_parties"
+value = { available = true, weekday_pln = 690, weekend_pln = 970, children_included = 8, hours = 2.5 }
+short = "Urodziny od 690 zł (do 8 dzieci, pon.–czw.)"
+note = "Pakiet „Stokrotka”: do 8 dzieci, 2,5 godziny, 690 zł od poniedziałku do czwartku, 970 zł w piątek–niedzielę; prywatna salka, stoliki dla rodziców w kawiarni (do 10 osób), poczęstunek i napoje dla dzieci, balony. Większe pakiety „Piwonia” (do 16 dzieci, cały lokal) od 1350 zł i „Lilia” od 1990 zł."
+source = "venue_website"
+url = "https://bawialniamlecz.pl/oferta-urodzinowa/"
+verified_at = 2026-11-08

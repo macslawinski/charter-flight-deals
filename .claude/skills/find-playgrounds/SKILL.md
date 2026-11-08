@@ -110,8 +110,9 @@ python scripts/export_family.py           # data/curated -> family/src/data/fami
 ruff check . ; pyright
 cd family; npm run build
 ```
-Venues also live in the DB (migration 013): after the tests run `python -m ingest.curated` (upserts
-into Supabase) and `python scripts/export_venues.py --city <city>` so the map `/<city>/` shows them.
+Venues reach the site only via the DB (migration 013): run `python -m ingest.curated` (upserts into
+Supabase) and `python scripts/export_venues.py --city <city>`; both the map `/<city>/` and the list
+`/<city>/bawialnie/` read that export (a test fails if it lags behind the TOMLs).
 Pools / rinks use `category = "basen" | "lodowisko"` in the TOML (keys: `ingest/curated.py`). Update `ROADMAP.md` (done items, what is left for a phone call) and the page's
 closing note. Branch `feat/<city>-playgrounds`, commit, push, PR, then give the user the Vercel
 preview deep link `/<city>/bawialnie/` (project `pieluchy-i-paszporty`).

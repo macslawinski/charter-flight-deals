@@ -6,26 +6,28 @@ import Stamp from "../../components/Stamp.astro";
 import {
   VENUE_ORDER,
   cityName,
-  data,
   forToddlers,
   short,
   venueIcon,
   venueLabel,
   type Venue,
 } from "../../lib/data";
+import { cityExports, cityPlaygrounds } from "../../lib/map";
 
 export function getStaticPaths() {
-  const cities = [...new Set(data.venues.map((v) => v.city))];
-  return cities.map((city) => ({
-    params: { city },
-    // Toddler-friendly first, then the best-documented ones.
-    props: {
-      city,
-      venues: data.venues
-        .filter((v) => v.city === city)
-        .sort((a, b) => Number(forToddlers(b)) - Number(forToddlers(a)) || b.features.length - a.features.length),
-    },
-  }));
+  return cityExports
+    .map((ex) => ({ city: ex.city, venues: cityPlaygrounds(ex) }))
+    .filter((c) => c.venues.length > 0)
+    .map(({ city, venues }) => ({
+      params: { city },
+      // Toddler-friendly first, then the best-documented ones.
+      props: {
+        city,
+        venues: venues.sort(
+          (a, b) => Number(forToddlers(b)) - Number(forToddlers(a)) || b.features.length - a.features.length,
+        ),
+      },
+    }));
 }
 interface Props {
   city: string;

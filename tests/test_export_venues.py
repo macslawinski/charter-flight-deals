@@ -109,3 +109,23 @@ def test_committed_export_is_consistent() -> None:
             assert 1 <= len(f["short"]) <= 80
     for s in doc["sources"].values():
         assert s["url"].startswith("https://") and s["attribution"]
+
+
+def test_committed_export_has_current_curated_venues() -> None:
+    # The map and the bawialnie list read curated venues only from this file, so a TOML edit without
+    # the DB round trip would leave the site stale.
+    from ingest import curated
+
+    doc = _committed()
+    got = {v["id"]: v for v in doc["venues"] if v["source"] == "curated"}
+    want = {f"curated:{v.slug}": v for v in curated.load().venues
+            if v.city == doc["city"] and v.status == "published"}
+    hint = "run: python -m ingest.curated; python scripts/export_venues.py --city " + doc["city"]
+    assert set(got) == set(want), hint
+    for vid, v in want.items():
+        e = got[vid]
+        exported = sorted((f["key"], json.dumps(f["value"], sort_keys=True), f["note"],
+                           doc["refs"][f["ref"]]["verified_at"]) for f in e["facts"])
+        current = sorted((f.key, json.dumps(f.value, sort_keys=True, default=str), f.note,
+                          f.verified_at.isoformat()) for f in v.features)
+        assert (e["name"], exported) == (v.name, current), f"{vid}: {hint}"

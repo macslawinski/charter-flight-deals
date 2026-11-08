@@ -7,6 +7,7 @@ import { cityExports, cityMap } from "../../lib/map";
 
 const benefits = essential("parent_benefits");
 const docs = essential("travel_documents");
+const vaccines = essential("vaccinations");
 const poznan = cityExports.find((ex) => ex.city === "poznan")!;
 const nisoz = cityMap(poznan).venues.filter((v) => v.cat === "nisoz").length;
 ---
@@ -30,6 +31,12 @@ const nisoz = cityMap(poznan).venues.filter((v) => v.cat === "nisoz").length;
           {benefits.facts.length} informacji: rejestracja urodzenia, urlopy, 800+, becikowe, Aktywny Rodzic, zasiłek
           opiekuńczy. Ze stron ZUS i gov.pl.
         </p>
+      </div>
+    </a>
+    <a class="door sun" href="/niezbednik/szczepienia/">
+      <div>
+        <h3>{vaccines.title}</h3>
+        <p>Szczepienia obowiązkowe i zalecane do 6 lat, miesiąc po miesiącu. Z Programu Szczepień Ochronnych GIS.</p>
       </div>
     </a>
     <a class="door sea" href="/poznan/#nocna-pomoc">

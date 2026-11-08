@@ -205,6 +205,20 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       warmer, play corner). 7 śląskie leads left.
 - [ ] U (phone/e-mail, optional): Aries free-stay age, high chair; Złoty Groń cot, baby items; Ostaniec
       free-stay age, parking; Centuria free-stay age, high chair, parking.
+- [x] C: hotel leads dolnośląskie + podkarpackie (2026-11-08, find-hotels): first hotels outside the five coastal /
+      southern voivodeships (`hotel_leads/dolnoslaskie.toml`, `podkarpackie.toml`). New places Karpacz,
+      Szklarska Poręba, Staniszów (Karkonosze), Polanica-Zdrój (Kotlina Kłodzka), Polańczyk, Myczkowce, Arłamów
+      (Bieszczady), Chotowa (Podkarpacie, trip group "Jeziora i lasy"). Car access only (OSRM); train not checked.
+- [x] C: dolnośląskie + podkarpackie hotels, batch 1 (2026-11-08), 16 hotels, all `draft`. 8+ verified facts:
+      Czarny Kamień (12), Artus (10), Zefir (10), Mövenpick (9), Tremonti (9 + free stay to 6 or 3 to confirm),
+      Termy Karkonosze (8), Arłamów (8), Grand Chotowa (8). Under 8: Gołębiewski Karpacz, Mercure Skalny,
+      Green Mountain, Irena Eris Polanica, Solina Spa, Skalny SPA (6 + brodzik to confirm), Vivaldi, Kryształ.
+      Skipped: Norweska Dolina, Holiday Park Cieplice, Pensjonat Karkonoski (not hotels), Bacówka Radawa,
+      Salamandra, Perła Bieszczadów (too thin). Leads left: Hotel Las, Pałac Bielawa, Bergo, Five Seasons,
+      Lake Hill (dolnośląskie); Gościniec nad Sawą, Blue Diamond (podkarpackie).
+- [ ] C: train access for the Karkonosze / Bieszczady hotels (Jelenia Góra, Kłodzko, Zagórz stations).
+- [ ] U (phone/e-mail, optional): Tremonti free-stay age (6 vs 3); Skalny SPA brodzik; Artus cot fee; Czarny
+      Kamień cot fee; Arłamów cot fee and free-stay rule; most: playroom minimum age.
 - [x] ~~U: decide which pomorskie hotels to publish (all are `draft`);~~ superseded above; those under 8 facts need a phone or e-mail
       round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Kiston cot fee, free-stay age, brodzik; Primavera cot fee, Playland age;
@@ -236,7 +250,8 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
 - [x] C (2026-11-08): project skill `reverify-facts` (all curated facts, not only child rules) and
       `scripts/stale_facts.py` (12 months; 6 for fees/prices, venues, airports). First facts expire 2027-05-04.
 - [ ] C: show "do ponownego sprawdzenia" on the site for expired facts (PLAN.md §3), and a monthly reminder.
-- [ ] C: venues migration (DB) once the venue format is stable.
+- [x] C (2026-11-08): `/poznan/bawialnie/` reads the map export (DB) like `/poznan/`, `family.json` no longer
+      carries venues; a test fails when the committed export lags behind the venue TOMLs.
 - [ ] Photos (optional): only with your permission per download (e.g. Unsplash), licence noted.
 
 ## Step 5. Before going public (target ~end of November 2026)
@@ -288,8 +303,15 @@ model: `docs/family-data-model.md`; sources: `docs/family-data-sources.md`.
       Animacji, Malta Ski (summer toboggan from 3, slope). Map filter "Wstęp bezpłatny". Skipped: Palmiarnia
       (closed for rebuilding), Pyrland rope park (no own website), Centrum Sztuki Dziecka (one-off events only),
       sledding hills (no venue page found).
-- [ ] C: Poznań section 1 curation, rest: farms / mini zoos, birthday venues, more culture (libraries, museums
-      with family programmes), Palmiarnia after reopening.
+- [x] C (2026-11-08): museums for families on `/poznan/` (migration 016: category `muzeum`, keys
+      `family_programme` and shared `birthday_parties`): Brama Poznania (family classes 0–3 and 3–5, 20 zł),
+      Rogalowe Muzeum (under 3: 1 zł, no lift), HistoryLand (under 3 free). Birthday packages from the venues' own
+      pages on Fikołki (both), Kraina Piratów, Mlecz, Madagaskar; map chip "Organizuje urodziny". Skipped: farms /
+      mini zoos (none inside Poznań with an own website; OSM "Mini Zoo" nodes have no site), Biblioteka
+      Raczyńskich children's branch (no current toddler programme on its page), Bawimy Jeżyce birthdays (price
+      only in the booking tool), Muzeum Narodowe and Muzeum Ziemi (no family offer / hours readable on the site).
+- [ ] C: Poznań section 1 curation, rest: more culture (libraries once they publish toddler meetings), Palmiarnia
+      after reopening.
 - [ ] C: site: map + shared filters, category pages, source + verified date on every fact (frontend-design).
 - [ ] U: route and home page decision (today `/` is the hotel finder).
 
@@ -316,7 +338,11 @@ model: `docs/family-data-model.md`; sources: `docs/family-data-sources.md`.
       Rodzic (3 benefits), zasiłek opiekuńczy; 15 facts from ZUS and gov.pl (`essentials/parent_benefits.toml`;
       the loader now also accepts `www.zus.pl`). Hub also links NiŚOZ points on `/poznan/#nocna-pomoc` and the
       travel documents. Re-verify yearly (amounts; the becikowe income limit is from 2013).
-- [ ] Vaccination schedule (PSO, GIS communiqué), product recalls (feed), car-seat tests (licence): not started.
+- [x] C (2026-11-08): `/niezbednik/szczepienia/`: vaccination calendar 0–6 from the PSO 2027 (GIS communiqué of
+      2026-10-28, Dz. Urz. MZ poz. 77): mandatory by month, 5w1 / 6w1 variants, recommended (flu, RSV antibodies,
+      meningococci, KZM, WZW A); 19 facts (`essentials/vaccinations.toml`). Who pays for 5w1 / 6w1 is
+      `to_confirm` (pacjent.gov.pl says paid, PSO silent). Re-verify every November (new PSO).
+- [ ] Product recalls (feed), car-seat tests (licence): not started.
 
 ### Backlog (needs your go)
 - E-mail agent that asks hotels/venues for missing data and updates facts from replies (`venue_submitted` /

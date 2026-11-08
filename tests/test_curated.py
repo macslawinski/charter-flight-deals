@@ -249,6 +249,16 @@ def test_parent_benefits_load_from_gov_and_zus():
     assert "800 zł" in child.short and child.url.startswith("https://www.zus.pl/")
 
 
+def test_vaccinations_load_from_gis_and_pacjent_gov():
+    [vac] = [e for e in curated.load().essentials if e.topic == "vaccinations"]
+    assert [g.id for g in vac.groups] == ["zasady", "pierwszy-rok", "do-szesciu-lat", "skojarzone", "zalecane"]
+    assert {f.url.split("/")[2] for f in vac.facts} <= {"dziennikmz.mz.gov.pl", "pacjent.gov.pl"}
+    birth = next(f for f in vac.facts if f.key == "birth")
+    assert "BCG" in birth.short and birth.url.endswith("/2026/77/akt.pdf")    # PSO 2027
+    # Sources disagree on who pays for 5w1/6w1: marked, never guessed.
+    assert next(f for f in vac.facts if f.key == "combined-cost").to_confirm
+
+
 @pytest.mark.parametrize("group, url, error", [
     ("paszport", "https://www.paszport-info.pl/x", "gov.pl or www.zus.pl https url"),
     ("paszport", "https://gov.pl.evil.com/x", "gov.pl or www.zus.pl https url"),

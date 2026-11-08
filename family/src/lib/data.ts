@@ -55,18 +55,13 @@ export interface Carrier {
   rules: Fact[];
 }
 
+// Indoor playground card (built from the map export in lib/map.ts, cityPlaygrounds).
 export interface Venue {
   slug: string;
-  city: string;
   name: string;
-  status: string;
   official_url: string | null;
   address: string | null;
-  lat: number | null;
-  lon: number | null;
-  osm: string | null;
   features: Fact[];
-  category: string;
 }
 
 // Official topics (travel documents, later "Niezbędnik"): rules, not places. Official sources only.
@@ -118,7 +113,6 @@ interface Data {
   places: Place[];
   hotels: Hotel[];
   carriers: Carrier[];
-  venues: Venue[];
 }
 
 export const data = raw as unknown as Data;
@@ -333,9 +327,9 @@ export const TRIP_GROUPS: {
   { id: "morze", title: "Nad morzem", tone: "sea", icon: "umbrella",
     regions: ["Bałtyk – Pomorze", "Bałtyk – Pomorze Zachodnie", "Zalew Wiślany"] },
   { id: "gory", title: "W górach", tone: "sun", icon: "mountain",
-    regions: ["Tatry i Podhale", "Beskidy", "Gorce", "Pieniny"] },
+    regions: ["Tatry i Podhale", "Beskidy", "Gorce", "Pieniny", "Karkonosze", "Kotlina Kłodzka", "Bieszczady"] },
   { id: "jeziora", title: "Jeziora i lasy", tone: "sea", icon: "tree",
-    regions: ["Mazury", "Warmia", "Pojezierze Iławskie", "Kaszuby", "Bory Tucholskie", "Kociewie"] },
+    regions: ["Mazury", "Warmia", "Pojezierze Iławskie", "Kaszuby", "Bory Tucholskie", "Kociewie", "Podkarpacie"] },
   { id: "jura", title: "Jura i Małopolska", tone: "coral", icon: "castle",
     regions: ["Jura Krakowsko-Częstochowska", "Małopolska"] },
 ];
@@ -362,12 +356,13 @@ const VENUE_FEATURES: Record<string, { label: string; icon: string }> = {
   supervision: { label: "Opieka", icon: "hand" },
   toddler_classes: { label: "Zajęcia dla maluchów", icon: "star" },
   changing_table: { label: "Przewijak", icon: "diaper" },
+  birthday_parties: { label: "Urodziny", icon: "star" },
 };
 export const venueLabel = (key: string) => must(VENUE_FEATURES, key, "venue label").label;
 export const venueIcon = (key: string) => must(VENUE_FEATURES, key, "venue icon").icon;
 export const VENUE_ORDER = [
   "age_range", "toddler_zone", "infant_free", "toddler_classes", "price_child", "price_adult",
-  "opening_hours", "socks_required", "cafe", "changing_table", "parking", "supervision",
+  "opening_hours", "socks_required", "birthday_parties", "cafe", "changing_table", "parking", "supervision",
 ];
 
 // A venue is "for the youngest" only when its own site says so, never by guess.

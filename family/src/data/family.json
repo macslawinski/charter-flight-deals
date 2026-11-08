@@ -2428,6 +2428,287 @@
    ],
    "title": "Dokumenty dziecka na wyjazd",
    "topic": "travel_documents"
+  },
+  "vaccinations": {
+   "facts": [
+    {
+     "also": [
+      {
+       "label": "PSO na rok 2026",
+       "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2025/85/akt.pdf"
+      },
+      {
+       "label": "GIS: Program Szczepień Ochronnych na 2026 rok",
+       "url": "https://www.gov.pl/web/gis/program-szczepien-ochronnych-na-2026-rok"
+      }
+     ],
+     "group": "zasady",
+     "key": "pso-2027",
+     "note": "To Program Szczepień Ochronnych na rok 2027 (Dziennik Urzędowy Ministra Zdrowia, poz. 77). Do końca 2026 r. obowiązuje program na rok 2026 (komunikat z 31 października 2025 r., poz. 85).",
+     "publisher": "GIS",
+     "short": "Kalendarz na 2027 r. ogłosił Główny Inspektor Sanitarny komunikatem z 28 października 2026 r.",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [],
+     "group": "zasady",
+     "key": "mandatory-free",
+     "note": null,
+     "publisher": "pacjent.gov.pl",
+     "short": "Szczepienia obowiązkowe są bezpłatne, finansowane z budżetu państwa.",
+     "to_confirm": false,
+     "url": "https://pacjent.gov.pl/kalendarz-szczepien-dzieci-i-mlodziezy-na-2026-rok",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [],
+     "group": "zasady",
+     "key": "age-meaning",
+     "note": null,
+     "publisher": "GIS",
+     "short": "„6. rok życia” to dziecko, które skończyło 5 lat. Tak PSO liczy wiek w kalendarzu.",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [],
+     "group": "zasady",
+     "key": "catch-up",
+     "note": "Szczepienie wyrównawcze jest obowiązkowe do wieku podanego w rozporządzeniu o obowiązkowych szczepieniach. Potem staje się tylko zalecane i płaci się za szczepionkę; schemat wielodawkowy rozpoczęty wcześniej kończy się bezpłatnie.",
+     "publisher": "GIS",
+     "short": "Pominięte szczepienie obowiązkowe nadrabia się jak najszybciej, według indywidualnego kalendarza szczepień.",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [],
+     "group": "pierwszy-rok",
+     "key": "birth",
+     "note": null,
+     "publisher": "GIS",
+     "short": "Od 1. doby życia, najpóźniej do wypisu ze szpitala: gruźlica (BCG) i 1. dawka przeciw WZW typu B.",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [],
+     "group": "pierwszy-rok",
+     "key": "month-2",
+     "note": "Rotawirusy: 2 lub 3 dawki, zależnie od szczepionki. Dzieci urodzone przed 37. tygodniem ciąży albo z masą urodzeniową poniżej 2500 g dostają szczepionkę z bezkomórkowym komponentem krztuśca.",
+     "publisher": "GIS",
+     "short": "W 2. miesiącu (po 6. tygodniu): rotawirusy, WZW typu B (2. dawka), błonica, tężec i krztuściec (DTP), Hib, pneumokoki.",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [],
+     "group": "pierwszy-rok",
+     "key": "month-4",
+     "note": "Rotawirusy 4 tygodnie po pierwszej dawce. Polio od ukończenia 12. tygodnia życia. DTP, Hib i pneumokoki od ukończenia 12. tygodnia, 8 tygodni po pierwszej dawce.",
+     "publisher": "GIS",
+     "short": "W 4. miesiącu: rotawirusy (2. dawka), polio (IPV, 1. dawka), DTP, Hib i pneumokoki (2. dawka).",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [],
+     "group": "pierwszy-rok",
+     "key": "month-5-6",
+     "note": null,
+     "publisher": "GIS",
+     "short": "W 5.–6. miesiącu: 3. dawka przeciw rotawirusom (tylko szczepionka 3-dawkowa). W 6. miesiącu: DTP i Hib (3. dawka), polio (2. dawka).",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [],
+     "group": "pierwszy-rok",
+     "key": "month-7",
+     "note": null,
+     "publisher": "GIS",
+     "short": "W 7. miesiącu: 3. dawka przeciw WZW typu B, 5 miesięcy po drugiej.",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [],
+     "group": "do-szesciu-lat",
+     "key": "month-13-15",
+     "note": "MMR to szczepionka żywa atenuowana; o terminie decyduje lekarz. Przebycie odry, świnki lub różyczki nie jest przeciwwskazaniem. Pneumokoki po ukończeniu 12. miesiąca, co najmniej 6 miesięcy po drugiej dawce.",
+     "publisher": "GIS",
+     "short": "W 13.–15. miesiącu: odra, świnka i różyczka (MMR) oraz 3. dawka przeciw pneumokokom.",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [],
+     "group": "do-szesciu-lat",
+     "key": "month-16-18",
+     "note": null,
+     "publisher": "GIS",
+     "short": "W 16.–18. miesiącu: DTP i Hib (4. dawka) oraz polio (3. dawka).",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [],
+     "group": "do-szesciu-lat",
+     "key": "year-6",
+     "note": "Dziecko, które nie dostało drugiej dawki MMR w 6. roku życia, powinno ją uzupełnić jak najwcześniej.",
+     "publisher": "GIS",
+     "short": "W 6. roku życia: dawki przypominające przeciw błonicy, tężcowi i krztuścowi (DTaP) i polio oraz 2. dawka MMR.",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [
+      {
+       "label": "szczepienia.pzh.gov.pl: kalendarz 2026",
+       "url": "https://szczepienia.pzh.gov.pl/kalendarz-szczepien-2026/"
+      }
+     ],
+     "group": "do-szesciu-lat",
+     "key": "varicella",
+     "note": "W kalendarzu obowiązkowym zaznaczono ją w 10.–12. i 13.–15. miesiącu życia. Według serwisu szczepienia.pzh.gov.pl szczepionkę można podać po ukończeniu 9. miesiąca, optymalnie w 12., a poza grupami ryzyka jest płatna.",
+     "publisher": "GIS",
+     "short": "Ospa wietrzna jest obowiązkowa tylko dla dzieci z grup ryzyka wskazanych w PSO; pozostałym jest zalecana: 2 dawki co najmniej 3 miesiące od siebie.",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [],
+     "group": "skojarzone",
+     "key": "combined-variants",
+     "note": "5w1: dawki w 2., 4., 6.–7. i 16.–18. miesiącu; WZW typu B osobno (po urodzeniu, w 2. i 6.–7. miesiącu). 6w1: dawki w 2., 4., 5.–6. i 16.–18. miesiącu, po urodzeniu osobna dawka przeciw WZW typu B; rotawirusy w 2., 3. i (przy 3 dawkach) 4. miesiącu. BCG, pneumokoki i MMR w obu wariantach w tych samych miesiącach co w podstawowym.",
+     "publisher": "GIS",
+     "short": "PSO ma też warianty z jedną szczepionką zamiast kilku: 5w1 (błonica, tężec, krztuściec, polio, Hib) albo 6w1 (to samo i WZW typu B).",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [
+      {
+       "label": "PSO na rok 2027 (cz. I.A.1–A.2)",
+       "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf"
+      }
+     ],
+     "group": "skojarzone",
+     "key": "combined-cost",
+     "note": "pacjent.gov.pl (kalendarz na 2026 r.): rodzice mogą zastąpić bezpłatne szczepionki preparatami wysoko skojarzonymi (odpłatnymi). PSO opisuje warianty 5w1 i 6w1 jako warianty „w populacji ogólnej dzieci do 2 lat”.",
+     "publisher": "pacjent.gov.pl",
+     "short": "Źródła różnią się w sprawie opłat: pacjent.gov.pl podaje, że szczepionki wysoko skojarzone są odpłatne, a PSO 2027 nie mówi, kto za nie płaci.",
+     "to_confirm": true,
+     "url": "https://pacjent.gov.pl/kalendarz-szczepien-dzieci-i-mlodziezy-na-2026-rok",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [
+      {
+       "label": "PSO na rok 2027 (cz. VII.B)",
+       "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf"
+      }
+     ],
+     "group": "zalecane",
+     "key": "influenza",
+     "note": "pacjent.gov.pl wymienia szczepienie przeciw grypie u dzieci od 6. miesiąca życia wśród szczepień w ramach refundacji. Schemat dawek: PSO 2027, cz. VII.B.",
+     "publisher": "pacjent.gov.pl",
+     "short": "Grypa: zalecana od 6. miesiąca życia, refundowana. Dziecko do 8 lat szczepione pierwszy raz w życiu dostaje 2 dawki w odstępie 4 tygodni.",
+     "to_confirm": false,
+     "url": "https://pacjent.gov.pl/kalendarz-szczepien-dzieci-i-mlodziezy-na-2026-rok",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [],
+     "group": "zalecane",
+     "key": "rsv",
+     "note": "To uodpornienie bierne (przeciwciała monoklonalne), nie szczepionka.",
+     "publisher": "GIS",
+     "short": "RSV: przeciwciała zalecane noworodkom i niemowlętom w ich pierwszym sezonie RSV oraz dzieciom do 2 lat szczególnie narażonym na ciężki przebieg.",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [
+      {
+       "label": "PSO na rok 2027 (cz. VII.B)",
+       "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf"
+      }
+     ],
+     "group": "zalecane",
+     "key": "meningococci",
+     "note": null,
+     "publisher": "pacjent.gov.pl",
+     "short": "Meningokoki (MenB, MenACWY): zalecane, schemat zależy od wieku dziecka. pacjent.gov.pl wymienia je wśród szczepień płatnych.",
+     "to_confirm": false,
+     "url": "https://pacjent.gov.pl/kalendarz-szczepien-dzieci-i-mlodziezy-na-2026-rok",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "also": [
+      {
+       "label": "pacjent.gov.pl: kalendarz 2026",
+       "url": "https://pacjent.gov.pl/kalendarz-szczepien-dzieci-i-mlodziezy-na-2026-rok"
+      }
+     ],
+     "group": "zalecane",
+     "key": "other-recommended",
+     "note": "pacjent.gov.pl wymienia kleszczowe zapalenie mózgu i WZW typu A wśród szczepień płatnych; COVID-19 dla dzieci od 6. miesiąca życia, zgodnie z komunikatami Ministra Zdrowia.",
+     "publisher": "GIS",
+     "short": "Zalecane także: kleszczowe zapalenie mózgu (3 dawki, przypominająca co 3–5 lat), WZW typu A (2 dawki co 6–12 miesięcy) i COVID-19.",
+     "to_confirm": false,
+     "url": "https://dziennikmz.mz.gov.pl/DUM_MZ/2026/77/akt.pdf",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "groups": [
+    {
+     "icon": "info",
+     "id": "zasady",
+     "intro": "Program Szczepień Ochronnych (PSO) ogłasza co roku Główny Inspektor Sanitarny. Poniżej program na rok 2027.",
+     "title": "Skąd jest ten kalendarz"
+    },
+    {
+     "icon": "calendar",
+     "id": "pierwszy-rok",
+     "intro": "Wariant podstawowy z PSO: osobne szczepionki. Dokładny termin każdej dawki ustala lekarz przy badaniu kwalifikacyjnym.",
+     "title": "Szczepienia obowiązkowe w 1. roku życia"
+    },
+    {
+     "icon": "calendar",
+     "id": "do-szesciu-lat",
+     "intro": null,
+     "title": "Szczepienia obowiązkowe w 2. i 6. roku życia"
+    },
+    {
+     "icon": "shield",
+     "id": "skojarzone",
+     "intro": null,
+     "title": "Szczepionki 5w1 i 6w1"
+    },
+    {
+     "icon": "medical",
+     "id": "zalecane",
+     "intro": "Nie są obowiązkowe. PSO je zaleca; część jest bezpłatna albo refundowana, część płatna.",
+     "title": "Szczepienia zalecane do 6 lat"
+    }
+   ],
+   "title": "Kalendarz szczepień",
+   "topic": "vaccinations"
   }
  },
  "feature_keys": [
@@ -2455,6 +2736,187 @@
   "transfer"
  ],
  "hotels": [
+  {
+   "access": [
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 200,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.5918%2C22.6281",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 240,
+     "mode": "car",
+     "note": "360 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.5918%2C22.6281",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 325,
+     "mode": "car",
+     "note": "440 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.5918%2C22.6281",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 355,
+     "mode": "car",
+     "note": "550 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.5918%2C22.6281",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 475,
+     "mode": "car",
+     "note": "740 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.5918%2C22.6281",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 530,
+     "mode": "car",
+     "note": "880 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.5918%2C22.6281",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "Arłamów 1, 38-700 Ustrzyki Dolne",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko z materacem dla małego dziecka i pościel do niego są za dodatkową opłatą, na życzenie. Kwoty strona nie podaje.",
+     "short": "Łóżeczko z materacem i pościelą, płatne",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.arlamow.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "paid": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W restauracjach są krzesełka do karmienia dla dzieci.",
+     "short": "Krzesełka do karmienia w restauracjach",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.arlamow.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "restaurants"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracje mają menu dla dzieci. Jedzenia dla niemowląt strona nie wymienia.",
+     "short": "Menu dziecięce w restauracjach",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.arlamow.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Na życzenie podgrzewacz do butelek do pokoju; w restauracjach można podgrzać butelkę lub słoiczek. Opłaty strona nie podaje.",
+     "short": "Podgrzewacz do butelek do pokoju",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.arlamow.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Na życzenie: wanienka. Opłaty strona nie podaje.",
+     "short": "Wanienka na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.arlamow.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Na życzenie przenośny przewijak do pokoju; przy recepcji jest publiczna toaleta z przewijakiem dla małych dzieci.",
+     "short": "Przenośny przewijak; toaleta z przewijakiem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.arlamow.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "where": "room_and_reception_toilet"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Na życzenie: nocnik. Opłaty strona nie podaje.",
+     "short": "Nocnik na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.arlamow.pl/hotel-dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Dzieci powyżej 3. roku życia mogą bawić się w sali zabaw samodzielnie. Czy młodsze mogą w niej być z rodzicem, strona nie mówi.",
+     "short": "Sala zabaw; od 3 lat dziecko bawi się samo",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.arlamow.pl/hotel-dla-dzieci",
+     "value": {
+      "alone_from_years": 3,
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.5918121,
+   "lon": 22.6281221,
+   "name": "Hotel Arłamów",
+   "official_url": "https://www.arlamow.pl/",
+   "place": "arlamow",
+   "slug": "hotel-arlamow",
+   "status": "draft"
+  },
   {
    "access": [
     {
@@ -3996,6 +4458,187 @@
    "place": "chmielno",
    "slug": "wichrowe-wzgorze-chmielno",
    "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 90,
+     "mode": "car",
+     "note": "130 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.0323%2C21.2831",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 125,
+     "mode": "car",
+     "note": "210 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.0323%2C21.2831",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 240,
+     "mode": "car",
+     "note": "400 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.0323%2C21.2831",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 265,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.0323%2C21.2831",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 360,
+     "mode": "car",
+     "note": "580 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.0323%2C21.2831",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 420,
+     "mode": "car",
+     "note": "720 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.0323%2C21.2831",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "Chotowa 87c, 39-217 Grabiny",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na życzenie: łóżeczko z materacem i pościelą dla dziecka. Opłaty strona nie podaje.",
+     "short": "Łóżeczko z materacem i pościelą na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.grandchotowa.pl/resort/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja ma menu z potrawami dostosowanymi do potrzeb dzieci.",
+     "short": "Menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.grandchotowa.pl/resort/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Na życzenie: podgrzewacz do butelek. Opłaty strona nie podaje.",
+     "short": "Podgrzewacz do butelek na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.grandchotowa.pl/resort/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Na życzenie: wanienka do kąpieli. Opłaty strona nie podaje.",
+     "short": "Wanienka na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.grandchotowa.pl/resort/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Na życzenie: nocnik, nakładka WC i podest. Opłaty strona nie podaje.",
+     "short": "Nocnik, nakładka WC i podest na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.grandchotowa.pl/resort/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "step_stool": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Resort ma przestronną salę zabaw. Godzin strona nie podaje. Minimalnego wieku strona nie podaje.",
+     "short": "Przestronna sala zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.grandchotowa.pl/resort/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Zewnętrzny plac zabaw z huśtawkami, zjeżdżalniami, drabinkami i piaskownicami.",
+     "short": "Plac zabaw z huśtawkami i piaskownicami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.grandchotowa.pl/resort/dla-dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_pool",
+     "note": "Wodny tor przeszkód z płytkim basenem, ze stałym nadzorem. Godzin strona nie podaje.",
+     "short": "Wodny tor przeszkód z płytkim basenem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.grandchotowa.pl/resort/dla-dzieci",
+     "value": {
+      "available": true,
+      "shallow": true,
+      "supervised": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.0323326,
+   "lon": 21.2830819,
+   "name": "Grand Chotowa Hotel SPA & Resort",
+   "official_url": "https://www.grandchotowa.pl/",
+   "place": "chotowa",
+   "slug": "grand-chotowa",
+   "status": "draft"
   },
   {
    "access": [
@@ -9122,6 +9765,1249 @@
    "place": "kadyny",
    "slug": "kadyny-folwark",
    "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 125,
+     "mode": "car",
+     "note": "130 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.7666%2C15.7628",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 215,
+     "mode": "car",
+     "note": "300 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.7666%2C15.7628",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 225,
+     "mode": "car",
+     "note": "270 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.7666%2C15.7628",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 265,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.7666%2C15.7628",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 335,
+     "mode": "car",
+     "note": "480 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.7666%2C15.7628",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 405,
+     "mode": "car",
+     "note": "570 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.7666%2C15.7628",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Wilcza 9, 58-540 Karpacz",
+   "features": [
+    {
+     "age_band": "0-3",
+     "key": "cot",
+     "note": "Łóżeczka dla dzieci do 3 lat są płatne i trzeba je zamówić przed przyjazdem. Kwoty strona nie podaje.",
+     "short": "Łóżeczko do 3 lat, płatne, zamówić wcześniej",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.artusresort.pl/strefa-dziecka",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "paid": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W restauracji są krzesełka dla dzieci.",
+     "short": "Krzesełka dla dzieci w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.artusresort.pl/strefa-dziecka",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja ma specjalne menu dla najmłodszych.",
+     "short": "Specjalne menu dla najmłodszych",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.artusresort.pl/strefa-dziecka",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Dostępne są podgrzewacze do butelek i chłodziarka. Opłaty strona nie podaje.",
+     "short": "Podgrzewacze do butelek i chłodziarka",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.artusresort.pl/strefa-dziecka",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Hotel udostępnia wanienki. Opłaty strona nie podaje.",
+     "short": "Wanienki",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.artusresort.pl/strefa-dziecka",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Dostępne są nakładki i podnóżki. Nocnika strona nie wymienia. Opłaty strona nie podaje.",
+     "short": "Nakładki na toaletę i podnóżki",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.artusresort.pl/strefa-dziecka",
+     "value": {
+      "available": true,
+      "step_stool": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Dwie sale zabaw: w Hotelu Artus (poziom 400, nad Centrum Zdrowia) i w Sowiej Dolinie przy restauracji, dostępne od świtu do zmierzchu. Minimalnego wieku strona nie podaje.",
+     "short": "Dwie sale zabaw, czynne od świtu do zmierzchu",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.artusresort.pl/strefa-dziecka",
+     "value": {
+      "available": true,
+      "rooms": 2
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "W wakacje, ferie zimowe, długie weekendy i święta hotel organizuje animacje dla dzieci. Wieku strona nie podaje.",
+     "short": "Animacje w wakacje, ferie, weekendy i święta",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.artusresort.pl/strefa-dziecka",
+     "value": {
+      "available": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Zewnętrzny plac zabaw jest przy słonecznym tarasie Hotelu Artus.",
+     "short": "Plac zabaw przy tarasie z widokiem na Śnieżkę",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.artusresort.pl/strefa-dziecka",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_pool",
+     "note": "Basen dla dzieci z mini zjeżdżalnią i wodnym placem zabaw; korzystanie z kompleksów basenowych jest w cenie pobytu (FAQ). Godzin strona nie podaje.",
+     "short": "Basen dla dzieci z mini zjeżdżalnią, w cenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.artusresort.pl/strefa-dziecka",
+     "value": {
+      "available": true,
+      "included": true,
+      "slide": true,
+      "splash_park": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.7666433,
+   "lon": 15.7628222,
+   "name": "Artus Resort",
+   "official_url": "https://www.artusresort.pl/",
+   "place": "karpacz",
+   "slug": "artus-resort-karpacz",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 125,
+     "mode": "car",
+     "note": "130 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.7774%2C15.7305",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 220,
+     "mode": "car",
+     "note": "310 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.7774%2C15.7305",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 225,
+     "mode": "car",
+     "note": "270 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.7774%2C15.7305",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 270,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.7774%2C15.7305",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 335,
+     "mode": "car",
+     "note": "480 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.7774%2C15.7305",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 410,
+     "mode": "car",
+     "note": "580 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.7774%2C15.7305",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Karkonoska 14, 58-540 Karpacz",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na życzenie: łóżeczko turystyczne z pościelą. Opłaty strona nie podaje.",
+     "short": "Łóżeczko turystyczne z pościelą na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.golebiewski.pl/karpacz/dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełko do karmienia jest dostępne w restauracji podczas posiłków.",
+     "short": "Krzesełko do karmienia w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.golebiewski.pl/karpacz/dzieci",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja Smakolandia ma menu dla młodych gości.",
+     "short": "Menu dla dzieci w restauracji Smakolandia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.golebiewski.pl/karpacz/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Na życzenie: wanienka do kąpieli. Opłaty strona nie podaje.",
+     "short": "Wanienka na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.golebiewski.pl/karpacz/dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Klub dla Dzieci jest czynny codziennie 9:00–21:00; dzieci do 5 lat mogą w nim przebywać tylko z dorosłym.",
+     "short": "Klub dla Dzieci 9–21, do 5 lat z dorosłym",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.golebiewski.pl/karpacz/dzieci",
+     "value": {
+      "available": true,
+      "close": "21:00",
+      "open": "09:00",
+      "with_parent_under_years": 5
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "W parku wodnym Tropikana jest bezpieczny brodzik dla dzieci z ciepłą wodą i piaskownicą.",
+     "short": "Brodzik z ciepłą wodą i piaskownicą w Tropikanie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.golebiewski.pl/karpacz/dzieci",
+     "value": {
+      "heated": true,
+      "indoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking zewnętrzny 50 zł za dobę za pojazd, podziemny 70 zł; miejsc nie można zarezerwować.",
+     "short": "Parking 50 zł/doba, podziemny 70 zł/doba",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.golebiewski.pl/karpacz/info",
+     "value": {
+      "fee_pln_per_day": 50,
+      "paid": true,
+      "reservable": false,
+      "underground_fee_pln_per_day": 70
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.777426,
+   "lon": 15.730459,
+   "name": "Hotel Gołębiewski Karpacz",
+   "official_url": "https://www.golebiewski.pl/karpacz",
+   "place": "karpacz",
+   "slug": "golebiewski-karpacz",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 125,
+     "mode": "car",
+     "note": "130 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.7646%2C15.7663",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 220,
+     "mode": "car",
+     "note": "300 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.7646%2C15.7663",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 225,
+     "mode": "car",
+     "note": "270 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.7646%2C15.7663",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 270,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.7646%2C15.7663",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 335,
+     "mode": "car",
+     "note": "480 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.7646%2C15.7663",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 405,
+     "mode": "car",
+     "note": "570 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.7646%2C15.7663",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Sarnia 21, 58-540 Karpacz",
+   "features": [
+    {
+     "age_band": "0-3",
+     "key": "child_free_stay",
+     "note": "Dzieci w wieku do lat 3 nocują bezpłatnie, jeżeli śpią na łóżku rodziców. Strona nie mówi, czy dotyczy to także 3-latków.",
+     "short": "Do 3 lat gratis w łóżku rodziców",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.green-mountain.pl/atrakcje/animacje-dla-najmlodszych",
+     "value": {
+      "free": true,
+      "sleeping_with_parents": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "W restauracji są propozycje dopasowane do dziecięcych smaków.",
+     "short": "Dania dla dzieci w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.green-mountain.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala zabaw z małpim gajem i basenem z piłeczkami dla najmłodszych. Godzin strona nie podaje. Minimalnego wieku strona nie podaje.",
+     "short": "Sala zabaw z małpim gajem i basenem z kulkami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.green-mountain.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "ball_pool": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Podczas animacji dzieci pozostają pod opieką rodziców lub opiekunów, których obecność jest wymagana. Harmonogram jest w recepcji; wieku strona nie podaje.",
+     "short": "Animacje w obecności rodziców",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.green-mountain.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "parent_present": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Zewnętrzny plac zabaw z huśtawkami i domkiem do wspinaczki.",
+     "short": "Plac zabaw z huśtawkami i domkiem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.green-mountain.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Dzieci mogą korzystać z brodzika o głębokości 50 cm. Godzin strona nie podaje.",
+     "short": "Brodzik 50 cm",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.green-mountain.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "depth_cm": 50
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Miejsce na parkingu zewnętrznym 40 zł za dobę, w garażu podziemnym 100 zł za dobę.",
+     "short": "Parking 40 zł/doba, garaż 100 zł/doba",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.green-mountain.pl/atrakcje/animacje-dla-najmlodszych",
+     "value": {
+      "fee_pln_per_day": 40,
+      "paid": true,
+      "underground_fee_pln_per_day": 100
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.7646256,
+   "lon": 15.7663482,
+   "name": "Green Mountain Hotel",
+   "official_url": "https://www.green-mountain.pl/",
+   "place": "karpacz",
+   "slug": "green-mountain-karpacz",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 125,
+     "mode": "car",
+     "note": "130 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.7724%2C15.7639",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 215,
+     "mode": "car",
+     "note": "300 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.7724%2C15.7639",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 220,
+     "mode": "car",
+     "note": "270 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.7724%2C15.7639",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 265,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.7724%2C15.7639",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 335,
+     "mode": "car",
+     "note": "480 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.7724%2C15.7639",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 405,
+     "mode": "car",
+     "note": "570 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.7724%2C15.7639",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Obrońców Pokoju 5, 58-540 Karpacz",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na życzenie hotel wstawia do pokoju łóżeczko. Opłaty strona nie podaje.",
+     "short": "Łóżeczko na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.skalnykarpacz.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W hotelowej restauracji są krzesełka dla dzieci.",
+     "short": "Krzesełka dla dzieci w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.skalnykarpacz.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja ma menu dla dzieci (w PDF na stronie).",
+     "short": "Menu dla dzieci (PDF)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.skalnykarpacz.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Hotelowa bawialnia ma bezpieczne konstrukcje do zabaw i basen z kulkami. Godzin strona nie podaje. Minimalnego wieku strona nie podaje.",
+     "short": "Bawialnia z basenem z kulkami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.skalnykarpacz.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "ball_pool": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "W wakacje i w sezonie zimowym hotel zapewnia animacje dla dzieci. Wieku strona nie podaje.",
+     "short": "Animacje w wakacje i zimą",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.skalnykarpacz.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Obok tarasu jest plac zabaw z huśtawkami, zjeżdżalnią i piaskownicą.",
+     "short": "Plac zabaw z huśtawkami i piaskownicą",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.skalnykarpacz.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_pool",
+     "note": "Hotelowy basen ma wydzieloną część dla dzieci z dmuchanymi zabawkami. Godzin strona nie podaje.",
+     "short": "Wydzielona część basenu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.skalnykarpacz.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "separate_area": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.7723528,
+   "lon": 15.763854,
+   "name": "Mercure Karpacz Skalny",
+   "official_url": "https://www.skalnykarpacz.pl/",
+   "place": "karpacz",
+   "slug": "mercure-karpacz-skalny",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 125,
+     "mode": "car",
+     "note": "130 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.7709%2C15.7635",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 215,
+     "mode": "car",
+     "note": "300 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.7709%2C15.7635",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 220,
+     "mode": "car",
+     "note": "270 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.7709%2C15.7635",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 265,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.7709%2C15.7635",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 330,
+     "mode": "car",
+     "note": "480 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.7709%2C15.7635",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 405,
+     "mode": "car",
+     "note": "570 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.7709%2C15.7635",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Obrońców Pokoju 6, 58-540 Karpacz",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na życzenie gości hotel udostępnia łóżeczko z materacem i pościelą. Opłaty strona nie podaje.",
+     "short": "Łóżeczko z materacem i pościelą na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.movenpickkarpacz.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełko do karmienia jest dostępne na życzenie, a w restauracji są krzesełka do karmienia.",
+     "short": "Krzesełka do karmienia, też w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.movenpickkarpacz.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Hotel ma specjalne Kids Menu.",
+     "short": "Kids Menu w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.movenpickkarpacz.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Na życzenie gości dostępna jest wanienka. Opłaty strona nie podaje.",
+     "short": "Wanienka na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.movenpickkarpacz.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Na życzenie gości: nocnik, nakładka na toaletę i podest (stopień). Opłaty strona nie podaje.",
+     "short": "Nocnik, nakładka i podest na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.movenpickkarpacz.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "step_stool": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Hotel ma kolorową salę zabaw Little Birds Club. Godzin otwarcia i opieki strona nie podaje. Minimalnego wieku strona nie podaje.",
+     "short": "Sala zabaw Little Birds Club",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.movenpickkarpacz.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Hotel organizuje animacje dla dzieci. Terminów i wieku strona nie podaje.",
+     "short": "Animacje dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.movenpickkarpacz.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Basen z brodzikiem dla dzieci: płytki basen (45 cm) z ciepłą wodą i wodnymi zabawkami, dzieci bawią się pod okiem rodziców. Godzin strona nie podaje.",
+     "short": "Brodzik 45 cm z ciepłą wodą i zabawkami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.movenpickkarpacz.pl/hotel/dla-dzieci",
+     "value": {
+      "depth_cm": 45,
+      "heated": true,
+      "indoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "stroller_rental",
+     "note": "W recepcji dostępny jest wózek spacerowy. Opłaty strona nie podaje.",
+     "short": "Wózek spacerowy w recepcji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.movenpickkarpacz.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.7708566,
+   "lon": 15.7635472,
+   "name": "Mövenpick Resort & Spa Karpacz",
+   "official_url": "https://www.movenpickkarpacz.pl/",
+   "place": "karpacz",
+   "slug": "movenpick-karpacz",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 125,
+     "mode": "car",
+     "note": "130 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.7748%2C15.7452",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 215,
+     "mode": "car",
+     "note": "300 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.7748%2C15.7452",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 220,
+     "mode": "car",
+     "note": "270 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.7748%2C15.7452",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 265,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.7748%2C15.7452",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 335,
+     "mode": "car",
+     "note": "480 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.7748%2C15.7452",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 405,
+     "mode": "car",
+     "note": "570 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.7748%2C15.7452",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Konstytucji 3 Maja 77/77A, 58-540 Karpacz",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na życzenie gości hotel dostawia łóżeczko dla małego dziecka. Opłaty strona nie podaje.",
+     "short": "Łóżeczko dla małego dziecka na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.tremonti.pl/karpacz/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "child_free_stay",
+     "note": "Strona „dla dzieci” podaje, że dzieci do lat 6 wypoczywają bezpłatnie, a strona główna, że dzieci do lat 3. Zasady dla starszych dzieci zależą od pakietu; hotel prosi o potwierdzenie w recepcji.",
+     "short": "Dzieci do lat 6 bezpłatnie (do potwierdzenia)",
+     "source": "hotel_website",
+     "to_confirm": true,
+     "url": "https://www.tremonti.pl/karpacz/dla-dzieci",
+     "value": {
+      "free": true,
+      "max_age_years": 6
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W restauracji są krzesełka dla dzieci, kolorowanki i kredki.",
+     "short": "Krzesełka dla dzieci w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.tremonti.pl/karpacz",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "W restauracji GUSTO jest specjalne menu dla dzieci; po południu dzieci do 12 lat dostają zupę.",
+     "short": "Menu dla dzieci w restauracji GUSTO",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.tremonti.pl/karpacz/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wśród udogodnień w pokojach strona wymienia łóżeczka, wanienki i przewijaki. Opłaty strona nie podaje.",
+     "short": "Wanienki w pokojach",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.tremonti.pl/karpacz/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Przewijaki są w toaletach i w strefie Wellness.",
+     "short": "Przewijaki w toaletach i strefie Wellness",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.tremonti.pl/karpacz/dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "toilets_and_wellness"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "W hotelu są dwie sale zabaw Piccolo z atrakcjami dla dzieci w różnym wieku. Godzin strona nie podaje. Minimalnego wieku strona nie podaje.",
+     "short": "Dwie sale zabaw Piccolo",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.tremonti.pl/karpacz/dla-dzieci",
+     "value": {
+      "available": true,
+      "rooms": 2
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "W wakacje, ferie, święta i w weekendy hotel organizuje zajęcia i animacje pod opieką animatorów. Wieku strona nie podaje.",
+     "short": "Animacje w wakacje, ferie, święta i weekendy",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.tremonti.pl/karpacz/dla-dzieci",
+     "value": {
+      "available": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Przy basenie wewnętrznym jest bezpieczny brodzik z dmuchanymi zabawkami dla maluchów. Godzin strona nie podaje.",
+     "short": "Brodzik z dmuchanymi zabawkami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.tremonti.pl/karpacz/dla-dzieci",
+     "value": {
+      "indoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking zewnętrzny 30 zł za dobę, garaż podziemny 70 zł za dobę.",
+     "short": "Parking 30 zł/doba, garaż 70 zł/doba",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.tremonti.pl/karpacz",
+     "value": {
+      "fee_pln_per_day": 30,
+      "paid": true,
+      "underground_fee_pln_per_day": 70
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.7748027,
+   "lon": 15.7452289,
+   "name": "Tremonti Karpacz",
+   "official_url": "https://www.tremonti.pl/karpacz",
+   "place": "karpacz",
+   "slug": "tremonti-karpacz",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 125,
+     "mode": "car",
+     "note": "130 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.7726%2C15.7389",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 215,
+     "mode": "car",
+     "note": "300 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.7726%2C15.7389",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 225,
+     "mode": "car",
+     "note": "270 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.7726%2C15.7389",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 270,
+     "mode": "car",
+     "note": "380 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.7726%2C15.7389",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 335,
+     "mode": "car",
+     "note": "480 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.7726%2C15.7389",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 405,
+     "mode": "car",
+     "note": "570 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.7726%2C15.7389",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Olimpijska 4, 58-540 Karpacz",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Hotel udostępnia łóżeczko z pościelą. Opłaty strona nie podaje.",
+     "short": "Łóżeczko z pościelą",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.vivaldi.pl/karpacz/hotel/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W restauracji jest krzesełko dla dziecka.",
+     "short": "Krzesełko w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.vivaldi.pl/karpacz/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja ma specjalne menu dla dzieci.",
+     "short": "Specjalne menu w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.vivaldi.pl/karpacz/hotel/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Hotel udostępnia wanienkę do kąpieli. Opłaty strona nie podaje.",
+     "short": "Wanienka do kąpieli",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.vivaldi.pl/karpacz/hotel/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Pokój zabaw z przyborami do zabawy, rysowania i malowania. Godzin strona nie podaje. Minimalnego wieku strona nie podaje.",
+     "short": "Pokój zabaw z przyborami do rysowania",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.vivaldi.pl/karpacz/hotel/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.7725885,
+   "lon": 15.738918,
+   "name": "Hotel Vivaldi Karpacz",
+   "official_url": "https://www.vivaldi.pl/karpacz",
+   "place": "karpacz",
+   "slug": "vivaldi-karpacz",
+   "status": "draft"
   },
   {
    "access": [
@@ -15650,6 +17536,172 @@
   {
    "access": [
     {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 220,
+     "mode": "car",
+     "note": "260 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.4313%2C22.4131",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 260,
+     "mode": "car",
+     "note": "340 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.4313%2C22.4131",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 350,
+     "mode": "car",
+     "note": "430 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.4313%2C22.4131",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 375,
+     "mode": "car",
+     "note": "540 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.4313%2C22.4131",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 490,
+     "mode": "car",
+     "note": "720 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.4313%2C22.4131",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 550,
+     "mode": "car",
+     "note": "860 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.4313%2C22.4131",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "Myczkowce 122, 38-623 Uherce",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko z pościelą kosztuje 20 zł za dobę. Liczba łóżeczek jest ograniczona: hotel prosi o kontakt przed przyjazdem.",
+     "short": "Łóżeczko z pościelą 20 zł/doba",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelsolina.eu/dla-dzieci",
+     "value": {
+      "available": true,
+      "fee_pln_per_night": 20,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_monitor",
+     "note": "Na życzenie: niania elektroniczna. Opłaty strona nie podaje.",
+     "short": "Niania elektroniczna na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelsolina.eu/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Na życzenie: fotelik do karmienia.",
+     "short": "Fotelik do karmienia na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelsolina.eu/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Na życzenie: podgrzewacz do butelek. Opłaty strona nie podaje.",
+     "short": "Podgrzewacz do butelek na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelsolina.eu/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Na życzenie: wanienka do kąpieli. Opłaty strona nie podaje.",
+     "short": "Wanienka na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelsolina.eu/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Na życzenie: przewijak. Opłaty strona nie podaje.",
+     "short": "Przewijak na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelsolina.eu/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Hotel ma salę zabaw, w której dzieci bawią się bezpiecznie o każdej porze roku. Godzin strona nie podaje. Minimalnego wieku strona nie podaje.",
+     "short": "Sala zabaw przez cały rok",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelsolina.eu/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.4313239,
+   "lon": 22.4130946,
+   "name": "Hotel Solina Spa",
+   "official_url": "https://www.hotelsolina.eu/",
+   "place": "myczkowce",
+   "slug": "solina-spa-myczkowce",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
      "from_code": "Gdańsk",
      "from_kind": "city",
      "minutes": 205,
@@ -17648,6 +19700,538 @@
     {
      "from_code": "Kraków",
      "from_kind": "city",
+     "minutes": 225,
+     "mode": "car",
+     "note": "270 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.3704%2C22.4286",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 265,
+     "mode": "car",
+     "note": "350 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.3704%2C22.4286",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 360,
+     "mode": "car",
+     "note": "440 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.3704%2C22.4286",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 380,
+     "mode": "car",
+     "note": "540 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.3704%2C22.4286",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 500,
+     "mode": "car",
+     "note": "730 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.3704%2C22.4286",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 560,
+     "mode": "car",
+     "note": "870 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.3704%2C22.4286",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Zdrojowa 11, 38-610 Polańczyk",
+   "features": [
+    {
+     "age_band": "0-3",
+     "key": "child_free_stay",
+     "note": "Dzieciom do lat 3 hotel gwarantuje bezpłatny pobyt. Strona nie mówi, czy dotyczy to także 3-latków.",
+     "short": "Dzieci do lat 3 bezpłatnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://skalnyspa.pl/dla-dzieci",
+     "value": {
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W restauracji są krzesełka dla najmłodszych.",
+     "short": "Krzesełka w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://skalnyspa.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja ma specjalnie opracowane menu dziecięce.",
+     "short": "Menu dziecięce",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://skalnyspa.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Hotel ma salę zabaw. Godzin strona nie podaje. Minimalnego wieku strona nie podaje.",
+     "short": "Sala zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://skalnyspa.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "W weekendy i w pakietach rodzinnych hotel zapewnia program animacji. Wieku strona nie podaje.",
+     "short": "Animacje w weekendy i w pakietach rodzinnych",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://skalnyspa.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Na terenie hotelu jest bezpieczny plac zabaw.",
+     "short": "Plac zabaw na terenie hotelu",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://skalnyspa.pl/dla-dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Strona wspomina brodzik przy basenie hotelowym i brodzik na EkoMarinie, bez szczegółów (głębokość, godziny).",
+     "short": "Brodzik przy basenie (do potwierdzenia)",
+     "source": "hotel_website",
+     "to_confirm": true,
+     "url": "https://skalnyspa.pl/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.3703858,
+   "lon": 22.4285516,
+   "name": "Hotel Skalny SPA Bieszczady",
+   "official_url": "https://skalnyspa.pl/",
+   "place": "polanczyk",
+   "slug": "skalny-spa-polanczyk",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 230,
+     "mode": "car",
+     "note": "270 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.3632%2C22.4305",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 270,
+     "mode": "car",
+     "note": "350 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.3632%2C22.4305",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 360,
+     "mode": "car",
+     "note": "440 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.3632%2C22.4305",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 385,
+     "mode": "car",
+     "note": "540 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.3632%2C22.4305",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 500,
+     "mode": "car",
+     "note": "730 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.3632%2C22.4305",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 560,
+     "mode": "car",
+     "note": "870 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.3632%2C22.4305",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Dworska 13, 38-610 Polańczyk",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Przy rezerwacji można wypożyczyć łóżeczko turystyczne z pościelą. Opłaty strona nie podaje.",
+     "short": "Łóżeczko turystyczne z pościelą do wypożyczenia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotel-zefir.pl/dla-dzieci/",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W restauracji są krzesełka do karmienia.",
+     "short": "Krzesełka do karmienia w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotel-zefir.pl/dla-dzieci/",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "W menu obiadowym jest osobna pozycja z daniami dla dzieci.",
+     "short": "Dania dla dzieci w menu obiadowym",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotel-zefir.pl/dla-dzieci/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Przy rezerwacji można wypożyczyć wanienkę. Opłaty strona nie podaje.",
+     "short": "Wanienka do wypożyczenia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotel-zefir.pl/dla-dzieci/",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Przy rezerwacji można wypożyczyć nakładkę na WC lub nocnik. Opłaty strona nie podaje.",
+     "short": "Nocnik lub nakładka na WC do wypożyczenia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotel-zefir.pl/dla-dzieci/",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Rodzice mogą doglądać dzieci w sali zabaw ze specjalnie wyznaczonych miejsc. Godzin strona nie podaje. Minimalnego wieku strona nie podaje.",
+     "short": "Sala zabaw z miejscami dla rodziców",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotel-zefir.pl/dla-dzieci/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Harmonogram i tematyka animacji zależą od wybranej opcji pobytu i terminu. Wieku strona nie podaje.",
+     "short": "Animacje zależnie od pakietu i terminu",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotel-zefir.pl/dla-dzieci/",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Plac zabaw jest na ogrodzonym, zamkniętym terenie.",
+     "short": "Ogrodzony plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotel-zefir.pl/dla-dzieci/",
+     "value": {
+      "available": true,
+      "fenced": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "Całoroczny basen z podgrzewaną wodą, brodzikiem i hydromasażem. Godzin strona nie podaje.",
+     "short": "Całoroczny basen z brodzikiem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotel-zefir.pl/dla-dzieci/",
+     "value": {
+      "heated": true,
+      "indoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_pool",
+     "note": "Hotel opisuje też wewnętrzny wodny plac zabaw. Wieku i godzin strona nie podaje.",
+     "short": "Wewnętrzny wodny plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://hotel-zefir.pl/dla-dzieci/",
+     "value": {
+      "available": true,
+      "indoor": true,
+      "splash_park": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.363228,
+   "lon": 22.4305452,
+   "name": "Hotel Zefir",
+   "official_url": "https://hotel-zefir.pl/",
+   "place": "polanczyk",
+   "slug": "zefir-polanczyk",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 110,
+     "mode": "car",
+     "note": "100 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.4115%2C16.5026",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 170,
+     "mode": "car",
+     "note": "220 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.4115%2C16.5026",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 225,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.4115%2C16.5026",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 225,
+     "mode": "car",
+     "note": "300 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.4115%2C16.5026",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 320,
+     "mode": "car",
+     "note": "450 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.4115%2C16.5026",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 410,
+     "mode": "car",
+     "note": "580 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.4115%2C16.5026",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Dębowa 19b, 57-320 Polanica-Zdrój",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na życzenie: łóżeczko dla małego dziecka. Opłaty strona nie podaje.",
+     "short": "Łóżeczko dla małego dziecka na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.drirenaerisspa.pl/polanica-zdroj/hotel/dzieci-w-hotelu",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": "0-3",
+     "key": "child_free_stay",
+     "note": "Pobyt dzieci do ukończenia 3. roku życia jest bezpłatny (nocleg i wyżywienie); dzieci od 3 do 12 lat płacą dodatkowo.",
+     "short": "Pobyt do ukończenia 3 lat bezpłatny",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.drirenaerisspa.pl/polanica-zdroj/hotel/dzieci-w-hotelu",
+     "value": {
+      "free": true,
+      "meals_included": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W Restauracji Art Déco są krzesełka dla maluchów.",
+     "short": "Krzesełka dla maluchów w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.drirenaerisspa.pl/polanica-zdroj/hotel/dzieci-w-hotelu",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja Art Déco ma specjalne menu dla dzieci.",
+     "short": "Menu dla dzieci w Restauracji Art Déco",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.drirenaerisspa.pl/polanica-zdroj/hotel/dzieci-w-hotelu",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala dla młodszych dzieci pełna zabawek (osobno sala multimedialna dla nastolatków). Godzin strona nie podaje. Minimalnego wieku strona nie podaje.",
+     "short": "Sala zabaw dla młodszych dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.drirenaerisspa.pl/polanica-zdroj/hotel/dzieci-w-hotelu",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Hotel ma plac zabaw dla dzieci.",
+     "short": "Plac zabaw dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.drirenaerisspa.pl/polanica-zdroj/hotel/dzieci-w-hotelu",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_pool",
+     "note": "W Centrum SPA jest basen dla dzieci. Godzin strona nie podaje.",
+     "short": "Basen dla dzieci w Centrum SPA",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.drirenaerisspa.pl/polanica-zdroj/hotel/dzieci-w-hotelu",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.4114943,
+   "lon": 16.5026063,
+   "name": "Dr Irena Eris Polanica Resort & SPA",
+   "official_url": "https://www.drirenaerisspa.pl/polanica-zdroj",
+   "place": "polanica-zdroj",
+   "slug": "irena-eris-polanica-zdroj",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
      "minutes": 75,
      "mode": "car",
      "note": "70 km",
@@ -19401,6 +21985,186 @@
   {
    "access": [
     {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 120,
+     "mode": "car",
+     "note": "120 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.8627%2C15.7288",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 210,
+     "mode": "car",
+     "note": "290 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.8627%2C15.7288",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 220,
+     "mode": "car",
+     "note": "260 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.8627%2C15.7288",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 265,
+     "mode": "car",
+     "note": "370 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.8627%2C15.7288",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 330,
+     "mode": "car",
+     "note": "470 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.8627%2C15.7288",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 405,
+     "mode": "car",
+     "note": "560 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.8627%2C15.7288",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Zdrojowa 2, 58-500 Staniszów",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na życzenie hotel zapewnia łóżeczka. Opłaty strona nie podaje.",
+     "short": "Łóżeczko na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://termykarkonosze.pl/dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Na życzenie hotel zapewnia krzesełka do karmienia.",
+     "short": "Krzesełka do karmienia na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://termykarkonosze.pl/dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja ma specjalne menu dla dzieci.",
+     "short": "Specjalne menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://termykarkonosze.pl/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Sala zabaw z atrakcjami dostosowanymi do wieku dzieci. Godzin strona nie podaje. Minimalnego wieku strona nie podaje.",
+     "short": "Sala zabaw dla najmłodszych",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://termykarkonosze.pl/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Animacje są w wakacje, ferie i wybrane weekendy, według harmonogramu w recepcji. Wieku strona nie podaje.",
+     "short": "Animacje w wakacje, ferie i wybrane weekendy",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://termykarkonosze.pl/dzieci",
+     "value": {
+      "available": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Na dzieci czeka zewnętrzny plac zabaw.",
+     "short": "Zewnętrzny plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://termykarkonosze.pl/dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_pool",
+     "note": "Basen dla dzieci jest płytki, zaprojektowany z myślą o bezpieczeństwie i komforcie dzieci. Godzin strona nie podaje.",
+     "short": "Płytki basen zaprojektowany dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://termykarkonosze.pl/dzieci",
+     "value": {
+      "available": true,
+      "shallow": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "stroller_rental",
+     "note": "Na miejscu są bezpłatne wózki PICO marki My Junior dla dzieci do 22 kg, bez rezerwacji; hotel nie gwarantuje dostępności.",
+     "short": "Bezpłatne wózki dla dzieci do 22 kg",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://termykarkonosze.pl/dzieci",
+     "value": {
+      "available": true,
+      "free": true,
+      "max_weight_kg": 22,
+      "subject_to_availability": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.8627244,
+   "lon": 15.7287856,
+   "name": "Termy Karkonosze Resort & Spa",
+   "official_url": "https://termykarkonosze.pl/",
+   "place": "staniszow",
+   "slug": "termy-karkonosze-staniszow",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
      "from_code": "Gdańsk",
      "from_kind": "city",
      "minutes": 95,
@@ -21012,6 +23776,380 @@
    "place": "szczyrk",
    "slug": "mercure-szczyrk",
    "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 140,
+     "mode": "car",
+     "note": "130 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.8309%2C15.5128",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 230,
+     "mode": "car",
+     "note": "310 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.8309%2C15.5128",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 240,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.8309%2C15.5128",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 280,
+     "mode": "car",
+     "note": "390 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.8309%2C15.5128",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 350,
+     "mode": "car",
+     "note": "490 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.8309%2C15.5128",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 420,
+     "mode": "car",
+     "note": "580 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.8309%2C15.5128",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Wojska Polskiego 11, 58-580 Szklarska Poręba",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko z materacem i pościelą dla małego dziecka jest za dodatkową opłatą. Kwoty strona nie podaje.",
+     "short": "Łóżeczko z materacem i pościelą, płatne",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.czarnykamien.pl/dzieci",
+     "value": {
+      "available": true,
+      "paid": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": "0-3",
+     "key": "child_free_stay",
+     "note": "Dzieci w wieku do lat 3 nocują bezpłatnie, jeżeli śpią na łóżku z rodzicami (FAQ). Strona nie mówi, czy dotyczy to także 3-latków.",
+     "short": "Do 3 lat gratis w łóżku z rodzicami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.czarnykamien.pl/hotel/faq",
+     "value": {
+      "free": true,
+      "sleeping_with_parents": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W restauracji są krzesełka dziecięce.",
+     "short": "Krzesełka dziecięce w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.czarnykamien.pl/dzieci",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Restauracja ma dedykowane menu dla dzieci.",
+     "short": "Dedykowane menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.czarnykamien.pl/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Na życzenie dostępny jest podgrzewacz do butelek. Opłaty strona nie podaje.",
+     "short": "Podgrzewacz do butelek na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.czarnykamien.pl/dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Na życzenie: wanienka do kąpieli lub mata antypoślizgowa. Opłaty strona nie podaje.",
+     "short": "Wanienka lub mata antypoślizgowa na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.czarnykamien.pl/dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "W obiekcie jest toaleta z przewijakiem dla małych dzieci; przewijak można też dostać do apartamentu.",
+     "short": "Toaleta z przewijakiem; przewijak do pokoju",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.czarnykamien.pl/dzieci",
+     "value": {
+      "available": true,
+      "where": "public_toilet_and_rooms"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Na życzenie: nocnik oraz podest do toalety lub nakładka. Opłaty strona nie podaje.",
+     "short": "Nocnik, podest lub nakładka na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.czarnykamien.pl/dzieci",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "step_stool": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Pokój Zabaw z klockami, zabawkami, grami i bajkami. Godzin strona nie podaje. Minimalnego wieku strona nie podaje.",
+     "short": "Pokój Zabaw z klockami i bajkami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.czarnykamien.pl/dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Plac zabaw jest ogrodzony, a urządzenia mają atesty.",
+     "short": "Ogrodzony plac zabaw z atestami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.czarnykamien.pl/dzieci",
+     "value": {
+      "available": true,
+      "fenced": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_pool",
+     "note": "Basen dla dzieci z ciepłą wodą i zestawem wodnych zabawek. Godzin dla dzieci strona nie podaje (basen wewnętrzny 8:00–21:30).",
+     "short": "Basen dla dzieci z ciepłą wodą i zabawkami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.czarnykamien.pl/dzieci",
+     "value": {
+      "available": true,
+      "warm": true,
+      "water_toys": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking jest bezpłatny dla wszystkich gości (FAQ).",
+     "short": "Bezpłatny parking",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.czarnykamien.pl/hotel/faq",
+     "value": {
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.8308811,
+   "lon": 15.5127825,
+   "name": "Czarny Kamień Resort & SPA",
+   "official_url": "https://www.czarnykamien.pl/",
+   "place": "szklarska-poreba",
+   "slug": "czarny-kamien-szklarska-poreba",
+   "status": "draft"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 140,
+     "mode": "car",
+     "note": "130 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B50.8246%2C15.5265",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 230,
+     "mode": "car",
+     "note": "310 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B50.8246%2C15.5265",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 240,
+     "mode": "car",
+     "note": "280 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B50.8246%2C15.5265",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 280,
+     "mode": "car",
+     "note": "390 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B50.8246%2C15.5265",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 350,
+     "mode": "car",
+     "note": "480 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B50.8246%2C15.5265",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 420,
+     "mode": "car",
+     "note": "580 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B50.8246%2C15.5265",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. 1 Maja 19, 58-580 Szklarska Poręba",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na życzenie gości: łóżeczko turystyczne. Opłaty strona nie podaje.",
+     "short": "Łóżeczko turystyczne na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelkrysztal.pl/hotel-dla-dzieci-w-gorach",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Na życzenie gości: wanienka. Opłaty strona nie podaje.",
+     "short": "Wanienka na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelkrysztal.pl/hotel-dla-dzieci-w-gorach",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Na życzenie gości: przewijak. Opłaty strona nie podaje.",
+     "short": "Przewijak na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelkrysztal.pl/hotel-dla-dzieci-w-gorach",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "where": "room"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Hotel ma salę zabaw dla dzieci. Godzin strona nie podaje. Minimalnego wieku strona nie podaje.",
+     "short": "Sala zabaw dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelkrysztal.pl/hotel-dla-dzieci-w-gorach",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "W strefie basenowej jest przystosowany brodzik. Godzin strona nie podaje.",
+     "short": "Brodzik w strefie basenowej",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelkrysztal.pl/hotel-dla-dzieci-w-gorach",
+     "value": {
+      "indoor": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 50.824604,
+   "lon": 15.5265053,
+   "name": "Hotel Kryształ",
+   "official_url": "https://www.hotelkrysztal.pl/",
+   "place": "szklarska-poreba",
+   "slug": "krysztal-szklarska-poreba",
+   "status": "draft"
   },
   {
    "access": [
@@ -27116,6 +30254,70 @@
    "name": "Ogrodzieniec",
    "region": "Jura Krakowsko-Częstochowska",
    "slug": "ogrodzieniec"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Karpacz",
+   "region": "Karkonosze",
+   "slug": "karpacz"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Szklarska Poręba",
+   "region": "Karkonosze",
+   "slug": "szklarska-poreba"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Staniszów",
+   "region": "Karkonosze",
+   "slug": "staniszow"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Polanica-Zdrój",
+   "region": "Kotlina Kłodzka",
+   "slug": "polanica-zdroj"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Polańczyk",
+   "region": "Bieszczady",
+   "slug": "polanczyk"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Myczkowce",
+   "region": "Bieszczady",
+   "slug": "myczkowce"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Arłamów",
+   "region": "Bieszczady",
+   "slug": "arlamow"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Chotowa",
+   "region": "Podkarpacie",
+   "slug": "chotowa"
   }
  ],
  "rule_keys": [
@@ -27141,6 +30343,7 @@
  },
  "venue_keys": [
   "age_range",
+  "birthday_parties",
   "cafe",
   "changing_table",
   "infant_free",
@@ -27152,718 +30355,5 @@
   "supervision",
   "toddler_classes",
   "toddler_zone"
- ],
- "venues": [
-  {
-   "address": "ul. Jana Henryka Dąbrowskiego 89/U5, Poznań",
-   "category": "sala_zabaw",
-   "city": "poznan",
-   "features": [
-    {
-     "age_band": null,
-     "key": "age_range",
-     "note": "Bawialnia inspirowana pedagogiką Montessori: wspinaczki, zjeżdżalnie, zakamarki i kąciki do wyciszenia. Strona nie podaje górnej granicy wieku.",
-     "short": "Od niemowlaka, w duchu Montessori",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://bawialniabawimy.pl/",
-     "value": {
-      "min": "infant"
-     },
-     "verified_at": "2026-11-05"
-    },
-    {
-     "age_band": null,
-     "key": "toddler_zone",
-     "note": "Zawsze dostępne są miękkie maty i zabawki dla niemowlaków, żeby najmłodsi mieli własną przestrzeń.",
-     "short": "Maty i zabawki dla niemowląt",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://bawialniabawimy.pl/",
-     "value": {
-      "available": true,
-      "soft_mats": true
-     },
-     "verified_at": "2026-11-05"
-    },
-    {
-     "age_band": "0-1",
-     "key": "infant_free",
-     "note": "Dziecko do 6 miesięcy bawi się w cenie kawy.",
-     "short": "Do 6 miesięcy w cenie kawy",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://bawialniabawimy.pl/dla-odwiedzajacych/",
-     "value": {
-      "max_months": 6,
-      "price": "coffee"
-     },
-     "verified_at": "2026-11-05"
-    },
-    {
-     "age_band": null,
-     "key": "price_child",
-     "note": "Pon.–czw.: 40 zł za godzinę, 65 zł za 2 godziny, 80 zł bez limitu. Pt.–niedz. i święta: 45, 69 i 90 zł. Taniej w aplikacji Rewardo (np. 35 zł za godzinę albo 0,70 zł za minutę). Rodzeństwo: 15% zniżki na drugie i kolejne dziecko.",
-     "short": "40 zł za godzinę (pon.–czw.)",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://bawialniabawimy.pl/dla-odwiedzajacych/",
-     "value": {
-      "app_weekday_1h_pln": 35,
-      "app_weekday_pln_per_min": 0.7,
-      "app_weekend_pln_per_min": 0.85,
-      "sibling_discount_pct": 15,
-      "weekday_1h_pln": 40,
-      "weekday_2h_pln": 65,
-      "weekday_day_pln": 85,
-      "weekday_no_limit_pln": 80,
-      "weekend_1h_pln": 45,
-      "weekend_2h_pln": 69,
-      "weekend_day_pln": 105,
-      "weekend_no_limit_pln": 90
-     },
-     "verified_at": "2026-11-05"
-    },
-    {
-     "age_band": "0-3",
-     "key": "toddler_classes",
-     "note": "Zajęcia muzyczne metodą Gordona prowadzone także dla niemowląt i małych dzieci.",
-     "short": "Umuzykalnianie metodą Gordona",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://bawialniabawimy.pl/warsztaty/",
-     "value": {
-      "available": true,
-      "method": "Gordon"
-     },
-     "verified_at": "2026-11-05"
-    },
-    {
-     "age_band": null,
-     "key": "opening_hours",
-     "note": "Według OpenStreetMap: pon., wt., czw., pt. 10:00–19:00, śr. 10:00–17:30, sob. 11:30–14:00, niedz. 9:00–19:00. Strona bawialni nie podaje godzin, więc sprawdź przed wyjściem.",
-     "short": "Zwykle 10–19, w środy do 17:30",
-     "source": "osm",
-     "to_confirm": true,
-     "url": "https://www.openstreetmap.org/node/12545941282",
-     "value": {
-      "osm": "Mo,Tu,Th,Fr 10:00-19:00; We 10:00-17:30; Sa 11:30-14:00; Su 09:00-19:00"
-     },
-     "verified_at": "2026-11-05"
-    }
-   ],
-   "lat": 52.4147167,
-   "lon": 16.8972469,
-   "name": "Bawimy Jeżyce",
-   "official_url": "https://bawialniabawimy.pl/",
-   "osm": "node/12545941282",
-   "slug": "bawimy-jezyce",
-   "status": "published"
-  },
-  {
-   "address": "ul. Smardzewska, 60-161 Poznań",
-   "category": "sala_zabaw",
-   "city": "poznan",
-   "features": [
-    {
-     "age_band": null,
-     "key": "price_child",
-     "note": "Poniedziałek–piątek 12 zł za godzinę (0,20 zł za minutę), weekend 15 zł (0,25 zł za minutę). Bilet do 5 godzin: 25 zł.",
-     "short": "12 zł za godzinę (pon.–pt.)",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://www.centrummadagaskar.pl/cennik.html",
-     "value": {
-      "up_to_5h_pln": 25,
-      "weekday_1h_pln": 12,
-      "weekday_pln_per_min": 0.2,
-      "weekend_1h_pln": 15,
-      "weekend_pln_per_min": 0.25
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "socks_required",
-     "note": "Strona prosi, żeby przed wizytą zaopatrzyć dziecko w rajstopy.",
-     "short": "Zabierz rajstopy dla dziecka",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://www.centrummadagaskar.pl/",
-     "value": {
-      "applies_to": "children",
-      "item": "tights",
-      "required": true
-     },
-     "verified_at": "2026-11-04"
-    }
-   ],
-   "lat": 52.389891,
-   "lon": 16.859353,
-   "name": "Centrum Madagaskar",
-   "official_url": "https://www.centrummadagaskar.pl/",
-   "osm": "way/165076478",
-   "slug": "madagaskar",
-   "status": "published"
-  },
-  {
-   "address": "ul. Pleszewska 1 (Posnania, 2. piętro), 61-136 Poznań",
-   "category": "sala_zabaw",
-   "city": "poznan",
-   "features": [
-    {
-     "age_band": null,
-     "key": "age_range",
-     "note": "Sala zabaw dla dzieci od niemowlęcia do 11 lat.",
-     "short": "Od niemowlaka do 11 lat",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/ch-posnania-poznan/",
-     "value": {
-      "max_years": 11,
-      "min": "infant"
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "toddler_zone",
-     "note": "Kącik malucha dla dzieci do 4 lat i osobne atrakcje dla maluchów od 0 do 3 lat.",
-     "short": "Kącik malucha i atrakcje dla 0–3 lat",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/ch-posnania-poznan/",
-     "value": {
-      "attractions_for": "0-3",
-      "available": true,
-      "max_years": 4
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "price_child",
-     "note": "Dni robocze: 0,75 zł za minutę albo 55 zł za cały dzień. Weekendy i święta: 0,90 zł za minutę albo 66 zł. Cennik jest wspólny dla sieci Fikołki.",
-     "short": "0,75 zł za minutę albo 55 zł za dzień",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/cennik/",
-     "value": {
-      "weekday_day_pln": 55,
-      "weekday_pln_per_min": 0.75,
-      "weekend_day_pln": 66,
-      "weekend_pln_per_min": 0.9
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": "0-2",
-     "key": "infant_free",
-     "note": "Karta Malucha Basic dla dzieci do 24 miesięcy: wstęp pon.–pt. do 16:00 za 0 zł miesięcznie, jeśli zgodzisz się na marketing (bez zgód 29,99 zł), plus jednorazowo 19,99 zł za aktywację. Wersja Plus, bez limitu godzin, kosztuje 19,99 zł miesięcznie ze zgodami.",
-     "short": "Do 2 lat gratis z Kartą Malucha (pon.–pt.)",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/cennik/",
-     "value": {
-      "activation_pln": 19.99,
-      "card": "karta_malucha_basic",
-      "pln_per_month": 29.99,
-      "pln_per_month_with_consents": 0,
-      "plus_unlimited_pln_per_month_with_consents": 19.99,
-      "weekdays_until": "16:00"
-     },
-     "verified_at": "2026-11-05"
-    },
-    {
-     "age_band": null,
-     "key": "opening_hours",
-     "note": "Poniedziałek–sobota 10:00–21:00, niedziela 10:00–19:00, niedziela handlowa 10:00–20:00.",
-     "short": "Pon.–sob. 10–21, niedz. 10–19",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/ch-posnania-poznan/",
-     "value": {
-      "osm": "Mo-Sa 10:00-21:00; Su 10:00-19:00"
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "cafe",
-     "note": "Rodzic może usiąść przy kawie w Fikołki Caffe.",
-     "short": "Fikołki Caffe na miejscu",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/ch-posnania-poznan/",
-     "value": {
-      "available": true
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "parking",
-     "note": "Klub korzysta z parkingu centrum Posnania.",
-     "short": "Parking centrum handlowego",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/ch-posnania-poznan/",
-     "value": {
-      "available": true,
-      "mall": true
-     },
-     "verified_at": "2026-11-04"
-    }
-   ],
-   "lat": 52.398157,
-   "lon": 16.954928,
-   "name": "Fikołki Posnania",
-   "official_url": "https://fikolki.pl/ch-posnania-poznan/",
-   "osm": "node/11048021117",
-   "slug": "fikolki-posnania",
-   "status": "published"
-  },
-  {
-   "address": "ul. Półwiejska 42 (Stary Browar), 61-888 Poznań",
-   "category": "sala_zabaw",
-   "city": "poznan",
-   "features": [
-    {
-     "age_band": null,
-     "key": "age_range",
-     "note": "Sala zabaw dla dzieci od niemowlęcia do 11 lat.",
-     "short": "Od niemowlaka do 11 lat",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/stary-browar/",
-     "value": {
-      "max_years": 11,
-      "min": "infant"
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "toddler_zone",
-     "note": "Osobny kącik malucha dla dzieci do 4 lat.",
-     "short": "Kącik malucha do 4 lat",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/stary-browar/",
-     "value": {
-      "available": true,
-      "max_years": 4
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "price_child",
-     "note": "Dni robocze: 0,75 zł za minutę albo 55 zł za cały dzień. Weekendy i święta: 0,90 zł za minutę albo 66 zł. Cennik jest wspólny dla sieci Fikołki.",
-     "short": "0,75 zł za minutę albo 55 zł za dzień",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/cennik/",
-     "value": {
-      "weekday_day_pln": 55,
-      "weekday_pln_per_min": 0.75,
-      "weekend_day_pln": 66,
-      "weekend_pln_per_min": 0.9
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": "0-2",
-     "key": "infant_free",
-     "note": "Karta Malucha Basic dla dzieci do 24 miesięcy: wstęp pon.–pt. do 16:00 za 0 zł miesięcznie, jeśli zgodzisz się na marketing (bez zgód 29,99 zł), plus jednorazowo 19,99 zł za aktywację. Wersja Plus, bez limitu godzin, kosztuje 19,99 zł miesięcznie ze zgodami.",
-     "short": "Do 2 lat gratis z Kartą Malucha (pon.–pt.)",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/cennik/",
-     "value": {
-      "activation_pln": 19.99,
-      "card": "karta_malucha_basic",
-      "pln_per_month": 29.99,
-      "pln_per_month_with_consents": 0,
-      "plus_unlimited_pln_per_month_with_consents": 19.99,
-      "weekdays_until": "16:00"
-     },
-     "verified_at": "2026-11-05"
-    },
-    {
-     "age_band": "0-3",
-     "key": "toddler_classes",
-     "note": "Klub prowadzi zajęcia ogólnorozwojowe dla dzieci od 0 do 3 lat.",
-     "short": "Zajęcia ogólnorozwojowe 0–3 lata",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/stary-browar/",
-     "value": {
-      "available": true
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "opening_hours",
-     "note": "Poniedziałek–sobota 10:00–21:00, niedziela 10:00–19:00, niedziela handlowa 10:00–20:00.",
-     "short": "Pon.–sob. 10–21, niedz. 10–19",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/stary-browar/",
-     "value": {
-      "osm": "Mo-Sa 10:00-21:00; Su 10:00-19:00"
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "cafe",
-     "note": "Na miejscu kawiarnia Fikołki Caffe.",
-     "short": "Fikołki Caffe na miejscu",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/stary-browar/",
-     "value": {
-      "available": true
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "parking",
-     "note": "Klub jest w centrum handlowym, które ma parking.",
-     "short": "Parking centrum handlowego",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://fikolki.pl/stary-browar/",
-     "value": {
-      "available": true,
-      "mall": true
-     },
-     "verified_at": "2026-11-04"
-    }
-   ],
-   "lat": 52.402821,
-   "lon": 16.924838,
-   "name": "Fikołki Stary Browar",
-   "official_url": "https://fikolki.pl/stary-browar/",
-   "osm": "way/1504245766",
-   "slug": "fikolki-stary-browar",
-   "status": "published"
-  },
-  {
-   "address": "ul. Bolesława Krzywoustego 68 (Giant Meble), Poznań",
-   "category": "sala_zabaw",
-   "city": "poznan",
-   "features": [
-    {
-     "age_band": null,
-     "key": "age_range",
-     "note": "Sala zabaw dla dzieci do 11 lat. Na zdjęciach jest kącik malucha, ale bez podanego przedziału wieku.",
-     "short": "Dla dzieci do 11 lat, jest kącik malucha",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://krainapiratow.pl/regulamin/",
-     "value": {
-      "max_years": 11
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": "0-1",
-     "key": "infant_free",
-     "note": "Dzieci, które jeszcze nie chodzą same (niemowlęta, dzieci noszone), nie płacą. Mogą być w strefie zabaw tylko z dorosłym.",
-     "short": "Niechodzące maluchy wchodzą za darmo",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://krainapiratow.pl/cennik/",
-     "value": {
-      "condition": "not_walking",
-      "free": true
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "price_child",
-     "note": "Poniedziałek–czwartek: 20 zł za godzinę, 30 zł za dwie, 40 zł za cały dzień. Piątek–niedziela i święta: 25, 35 i 45 zł. Dłuższy pobyt: 0,50 zł za minutę.",
-     "short": "Od 20 zł za godzinę (pon.–czw.)",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://krainapiratow.pl/cennik/",
-     "value": {
-      "extension_pln_per_min": 0.5,
-      "weekday_1h_pln": 20,
-      "weekday_2h_pln": 30,
-      "weekday_day_pln": 40,
-      "weekend_1h_pln": 25,
-      "weekend_2h_pln": 35,
-      "weekend_day_pln": 45
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "opening_hours",
-     "note": "Codziennie 10:00–20:00, także w niedziele niehandlowe.",
-     "short": "Codziennie 10:00–20:00",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://krainapiratow.pl/",
-     "value": {
-      "osm": "Mo-Su 10:00-20:00"
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "cafe",
-     "note": "Na miejscu jest kawiarnia dla rodziców.",
-     "short": "Kawiarnia na miejscu",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://krainapiratow.pl/",
-     "value": {
-      "available": true
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "parking",
-     "note": "Duży parking przy galerii Giant Meble.",
-     "short": "Duży parking",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://krainapiratow.pl/",
-     "value": {
-      "available": true,
-      "large": true
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "socks_required",
-     "note": "Dzieci i dorośli chodzą po sali w skarpetkach albo obuwiu ochronnym.",
-     "short": "Skarpetki obowiązkowe, także dla dorosłych",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://krainapiratow.pl/regulamin/",
-     "value": {
-      "applies_to": "children_and_adults",
-      "required": true
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "supervision",
-     "note": "Za dziecko na sali odpowiada rodzic albo pełnoletni opiekun.",
-     "short": "Dziecko zostaje pod Twoją opieką",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://krainapiratow.pl/regulamin/",
-     "value": {
-      "parent_required": true
-     },
-     "verified_at": "2026-11-04"
-    }
-   ],
-   "lat": 52.377095,
-   "lon": 16.979014,
-   "name": "Kraina Piratów",
-   "official_url": "https://krainapiratow.pl/",
-   "osm": "node/1982842819",
-   "slug": "kraina-piratow",
-   "status": "published"
-  },
-  {
-   "address": "ul. Stanisława Barańczaka 1/47 LU3, 60-537 Poznań",
-   "category": "sala_zabaw",
-   "city": "poznan",
-   "features": [
-    {
-     "age_band": null,
-     "key": "age_range",
-     "note": "Sala zabaw dla dzieci od 0 do 6 lat, urządzona głównie z myślą o młodszych.",
-     "short": "Dla dzieci od 0 do 6 lat",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://bawialniamlecz.pl/regulamin/",
-     "value": {
-      "max_years": 6,
-      "min_years": 0
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "price_child",
-     "note": "1 godzina 30 zł, 2 godziny 45 zł, bez limitu 55 zł. W weekendy i święta: 35, 50 i 65 zł.",
-     "short": "30 zł za godzinę (w tygodniu)",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://bawialniamlecz.pl/bawialnia-kawiarnia/",
-     "value": {
-      "weekday_1h_pln": 30,
-      "weekday_2h_pln": 45,
-      "weekday_no_limit_pln": 55,
-      "weekend_1h_pln": 35,
-      "weekend_2h_pln": 50,
-      "weekend_no_limit_pln": 65
-     },
-     "verified_at": "2026-11-05"
-    },
-    {
-     "age_band": "0-1",
-     "key": "infant_free",
-     "note": "Dzieci 6–12 miesięcy płacą o 50% mniej. Dla dzieci do 6 miesięcy cennik pokazuje zniżkę 70% albo 100% (układ strony jest niejasny), więc zapytaj na miejscu.",
-     "short": "Niemowlęta taniej: 6–12 mies. −50%",
-     "source": "venue_website",
-     "to_confirm": true,
-     "url": "https://bawialniamlecz.pl/bawialnia-kawiarnia/",
-     "value": {
-      "discount_pct_6_12_months": 50,
-      "discount_pct_under_6_months": "70 or 100"
-     },
-     "verified_at": "2026-11-05"
-    },
-    {
-     "age_band": null,
-     "key": "opening_hours",
-     "note": "Regulamin podaje 10:00–19:00 codziennie. W OpenStreetMap w piątki–niedziele do 20:00, więc sprawdź przed wyjściem.",
-     "short": "Codziennie 10:00–19:00",
-     "source": "venue_website",
-     "to_confirm": true,
-     "url": "https://bawialniamlecz.pl/regulamin/",
-     "value": {
-      "text": "codziennie 10:00-19:00"
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "cafe",
-     "note": "Kawiarnia z kawą, napojami i lekkimi przekąskami dla dzieci i dorosłych.",
-     "short": "Kawiarnia z przekąskami dla dzieci",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://bawialniamlecz.pl/",
-     "value": {
-      "available": true
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "socks_required",
-     "note": "Dzieci bawią się wyłącznie w skarpetkach albo rajstopach, o każdej porze roku.",
-     "short": "Dzieci tylko w skarpetkach",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://bawialniamlecz.pl/regulamin/",
-     "value": {
-      "applies_to": "children",
-      "required": true
-     },
-     "verified_at": "2026-11-04"
-    },
-    {
-     "age_band": null,
-     "key": "supervision",
-     "note": "Rodzic opiekuje się dzieckiem przez cały pobyt. Płatna opieka personelu jest tylko dla dzieci powyżej 3 lat.",
-     "short": "Dziecko zostaje pod Twoją opieką",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://bawialniamlecz.pl/regulamin/",
-     "value": {
-      "paid_care_from_years": 3,
-      "parent_required": true
-     },
-     "verified_at": "2026-11-04"
-    }
-   ],
-   "lat": 52.415421,
-   "lon": 16.90507,
-   "name": "Mlecz bawialnia i kawiarnia",
-   "official_url": "https://bawialniamlecz.pl/",
-   "osm": "node/12492719739",
-   "slug": "mlecz",
-   "status": "published"
-  },
-  {
-   "address": "ul. Szwedzka 10 (IKEA), Poznań",
-   "category": "sala_zabaw",
-   "city": "poznan",
-   "features": [
-    {
-     "age_band": null,
-     "key": "age_range",
-     "note": "Pokój zabaw przyjmuje dzieci od ukończonych 3 do 10 lat. Dziecko musi się swobodnie porozumiewać z personelem i samo korzystać z toalety. Personel może poprosić o dokument z datą urodzenia.",
-     "short": "Od 3 do 10 lat",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://www.ikea.com/pl/pl/files/pdf/76/64/76645b88/ikeapoznan-regulamin-smaland.pdf",
-     "value": {
-      "independent_toilet": true,
-      "max_years": 10,
-      "min_years": 3
-     },
-     "verified_at": "2026-11-05"
-    },
-    {
-     "age_band": null,
-     "key": "supervision",
-     "note": "Dzieckiem opiekuje się personel, najdłużej godzinę. Opiekun wypełnia formularz, zostaje w sklepie i odbiera telefon w czasie pobytu dziecka.",
-     "short": "Personel pilnuje do 1 godziny",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://www.ikea.com/pl/pl/files/pdf/76/64/76645b88/ikeapoznan-regulamin-smaland.pdf",
-     "value": {
-      "max_minutes": 60,
-      "parent_stays_in_store": true,
-      "phone_required": true,
-      "staff": true
-     },
-     "verified_at": "2026-11-05"
-    },
-    {
-     "age_band": null,
-     "key": "socks_required",
-     "note": "Dzieci wchodzą w skarpetkach, bez butów i okrycia wierzchniego. Nie wolno wnosić telefonów, zabawek ani jedzenia.",
-     "short": "Dzieci w skarpetkach, bez butów",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://www.ikea.com/pl/pl/files/pdf/76/64/76645b88/ikeapoznan-regulamin-smaland.pdf",
-     "value": {
-      "applies_to": "children",
-      "required": true
-     },
-     "verified_at": "2026-11-05"
-    },
-    {
-     "age_band": null,
-     "key": "opening_hours",
-     "note": "Poniedziałek–piątek 14:00–20:00, sobota 9:00–20:30 (według strony sklepu IKEA Poznań).",
-     "short": "Pon.–pt. 14–20, sob. 9–20:30",
-     "source": "venue_website",
-     "to_confirm": false,
-     "url": "https://www.ikea.com/pl/pl/stores/poznan/",
-     "value": {
-      "text": "pon.-pt. 14:00-20:00, sob. 09:00-20:30"
-     },
-     "verified_at": "2026-11-05"
-    }
-   ],
-   "lat": 52.3829292,
-   "lon": 16.9879961,
-   "name": "Smålandia w IKEA Poznań",
-   "official_url": "https://www.ikea.com/pl/pl/stores/poznan/",
-   "osm": "node/9945645798",
-   "slug": "smalandia-ikea",
-   "status": "published"
-  }
  ]
 }

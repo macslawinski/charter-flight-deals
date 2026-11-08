@@ -497,3 +497,59 @@ name = "Ogrodzieniec"
 country = "Polska"
 region = "Jura Krakowsko-Częstochowska"
 kind = "domestic"
+
+[[place]]
+slug = "karpacz"
+name = "Karpacz"
+country = "Polska"
+region = "Karkonosze"
+kind = "domestic"
+
+[[place]]
+slug = "szklarska-poreba"
+name = "Szklarska Poręba"
+country = "Polska"
+region = "Karkonosze"
+kind = "domestic"
+
+[[place]]
+slug = "staniszow"
+name = "Staniszów"
+country = "Polska"
+region = "Karkonosze"
+kind = "domestic"
+
+[[place]]
+slug = "polanica-zdroj"
+name = "Polanica-Zdrój"
+country = "Polska"
+region = "Kotlina Kłodzka"
+kind = "domestic"
+
+[[place]]
+slug = "polanczyk"
+name = "Polańczyk"
+country = "Polska"
+region = "Bieszczady"
+kind = "domestic"
+
+[[place]]
+slug = "myczkowce"
+name = "Myczkowce"
+country = "Polska"
+region = "Bieszczady"
+kind = "domestic"
+
+[[place]]
+slug = "arlamow"
+name = "Arłamów"
+country = "Polska"
+region = "Bieszczady"
+kind = "domestic"
+
+[[place]]
+slug = "chotowa"
+name = "Chotowa"
+country = "Polska"
+region = "Podkarpacie"
+kind = "domestic"
