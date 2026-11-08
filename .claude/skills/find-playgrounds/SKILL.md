@@ -110,8 +110,9 @@ python scripts/export_family.py           # data/curated -> family/src/data/fami
 ruff check . ; pyright
 cd family; npm run build
 ```
-Venues are TOML + site only (no DB table yet), so no migration and no `ingest.curated` run is
-needed for them. Update `ROADMAP.md` (done items, what is left for a phone call) and the page's
+Venues also live in the DB (migration 013): after the tests run `python -m ingest.curated` (upserts
+into Supabase) and `python scripts/export_venues.py --city <city>` so the map `/<city>/` shows them.
+Pools / rinks use `category = "basen" | "lodowisko"` in the TOML (keys: `ingest/curated.py`). Update `ROADMAP.md` (done items, what is left for a phone call) and the page's
 closing note. Branch `feat/<city>-playgrounds`, commit, push, PR, then give the user the Vercel
 preview deep link `/<city>/bawialnie/` (project `pieluchy-i-paszporty`).
 

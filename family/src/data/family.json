@@ -26678,6 +26678,7 @@
  "venues": [
   {
    "address": "ul. Jana Henryka Dąbrowskiego 89/U5, Poznań",
+   "category": "sala_zabaw",
    "city": "poznan",
    "features": [
     {
@@ -26783,6 +26784,7 @@
   },
   {
    "address": "ul. Smardzewska, 60-161 Poznań",
+   "category": "sala_zabaw",
    "city": "poznan",
    "features": [
     {
@@ -26828,6 +26830,7 @@
   },
   {
    "address": "ul. Pleszewska 1 (Posnania, 2. piętro), 61-136 Poznań",
+   "category": "sala_zabaw",
    "city": "poznan",
    "features": [
     {
@@ -26944,6 +26947,7 @@
   },
   {
    "address": "ul. Półwiejska 42 (Stary Browar), 61-888 Poznań",
+   "category": "sala_zabaw",
    "city": "poznan",
    "features": [
     {
@@ -27072,6 +27076,7 @@
   },
   {
    "address": "ul. Bolesława Krzywoustego 68 (Giant Meble), Poznań",
+   "category": "sala_zabaw",
    "city": "poznan",
    "features": [
     {
@@ -27198,6 +27203,7 @@
   },
   {
    "address": "ul. Stanisława Barańczaka 1/47 LU3, 60-537 Poznań",
+   "category": "sala_zabaw",
    "city": "poznan",
    "features": [
     {
@@ -27311,6 +27317,7 @@
   },
   {
    "address": "ul. Szwedzka 10 (IKEA), Poznań",
+   "category": "sala_zabaw",
    "city": "poznan",
    "features": [
     {

@@ -43,9 +43,12 @@ def build(data: curated.Curated) -> dict[str, Any]:
         "places": [asdict(p) for p in data.places],
         "hotels": [asdict(h) for h in data.hotels],
         "carriers": [asdict(c) for c in sorted(data.carriers, key=lambda c: c.carrier_iata)],
-        "venue_keys": sorted(curated.VENUE_KEYS),
+        # The bawialnie pages read indoor playgrounds only; pools and rinks reach the map via the DB
+        # (python -m ingest.curated, then scripts/export_venues.py).
+        "venue_keys": sorted(curated.VENUE_KEYS_BY_CATEGORY["sala_zabaw"]),
         "venue_cities": curated.VENUE_CITIES,
-        "venues": [asdict(v) for v in sorted(data.venues, key=lambda v: (v.city, v.name))],
+        "venues": [asdict(v) for v in sorted(data.venues, key=lambda v: (v.city, v.name))
+                   if v.category == "sala_zabaw"],
         "essentials": {e.topic: asdict(e) for e in data.essentials},
     })
 

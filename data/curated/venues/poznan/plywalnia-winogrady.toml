@@ -1,0 +1,86 @@
+# Discovered via OpenStreetMap (way/809322867, © OpenStreetMap contributors, ODbL); facts from POSiR's
+# own pages (/obiekty/winogrady, the pool page and its /cennik, the water play area rules PDF) and the
+# POSiR pool rules (Zarządzenie nr 13/2026, annex 2: Winogrady), read 2026-11-08. Written in our words.
+# Not stated: water temperature, changing table for babies, depth of the water play area.
+slug = "plywalnia-winogrady"
+city = "poznan"
+category = "basen"
+name = "Pływalnia Miejska Winogrady (POSiR)"
+official_url = "https://posir.poznan.pl/obiekty/winogrady/plywalnia-kryta"
+address = "os. Zwycięstwa 124, 61-646 Poznań"
+lat = 52.4378528
+lon = 16.9262808
+osm = "way/809322867"
+status = "published"
+
+[[feature]]
+key = "pools"
+value = { recreational_depth_cm_min = 90, recreational_depth_cm_max = 110, water_play_area = true }
+short = "Basen rekreacyjny 90–110 cm i wodny plac zabaw"
+note = "Basen rekreacyjny 5 × 9 m o głębokości 90–110 cm (używany m.in. do oswajania z wodą), sześciotorowy basen sportowy i wodny plac zabaw. Dzieci do 13 lat bawią się na wodnym placu zabaw tylko pod opieką dorosłych."
+source = "venue_website"
+url = "https://posir.poznan.pl/images/firma/Zarzdzenie_nr_13_wprowadzajce.pdf"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "paddling_pool"
+value = { available = false }
+short = "Brodzika nie ma"
+note = "Regulamin wymienia tylko basen rekreacyjny (90–110 cm) i sportowy, bez brodzika."
+source = "venue_website"
+url = "https://posir.poznan.pl/images/firma/Zarzdzenie_nr_13_wprowadzajce.pdf"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "price"
+value = { free_under_years = 3, normal_1h_pln = 21, reduced_1h_pln = 19 }
+short = "Dzieci do 3 lat wchodzą bezpłatnie"
+note = "Dzieci do lat 3 bezpłatnie. Bilet normalny 21 zł za godzinę, ulgowy 19 zł; po godzinie dopłata za każdą minutę."
+source = "venue_website"
+url = "https://posir.poznan.pl/obiekty/winogrady/plywalnia-kryta/cennik"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_classes"
+value = { available = true, price_pln = 51, includes_entry_min = 75 }
+short = "Zajęcia dla niemowląt: 51 zł z wejściem"
+note = "Zajęcia dla niemowląt kosztują 51 zł od osoby razem z 75 minutami wstępu na basen; w pakiecie 40 zł plus wstęp według cennika."
+source = "venue_website"
+url = "https://posir.poznan.pl/obiekty/winogrady/plywalnia-kryta/cennik"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "swim_nappies"
+value = { required = true, under_years = 3 }
+short = "Do 3 lat tylko w pieluchomajtkach do pływania"
+note = "Dzieci do lat 3 mogą korzystać z basenu tylko w specjalnych pieluchomajtkach."
+source = "venue_website"
+url = "https://posir.poznan.pl/images/firma/Zarzdzenie_nr_13_wprowadzajce.pdf"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "supervision"
+value = { adult_required_under_years = 13 }
+short = "Dzieci do 13 lat tylko z pełnoletnim opiekunem"
+note = "Dziecko do ukończenia 13 lat może być na pływalni tylko pod stałą opieką osoby pełnoletniej."
+source = "venue_website"
+url = "https://posir.poznan.pl/images/firma/Zarzdzenie_nr_13_wprowadzajce.pdf"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "opening_hours"
+value = { text = "codziennie 6:00-22:00" }
+short = "Codziennie 6:00–22:00"
+note = "Pływalnia jest czynna codziennie od 6:00 do 22:00; w święta według komunikatów na stronie."
+source = "venue_website"
+url = "https://posir.poznan.pl/obiekty/winogrady/plywalnia-kryta"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { available = true, spaces = 50 }
+short = "Parking na 50 aut"
+note = "Pływalnia ma własny parking na 50 samochodów, w tym 4 miejsca dla osób z niepełnosprawnością."
+source = "venue_website"
+url = "https://posir.poznan.pl/obiekty/winogrady"
+verified_at = 2026-11-08

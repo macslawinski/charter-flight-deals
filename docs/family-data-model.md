@@ -139,6 +139,9 @@ The existing playground keys (`price_child`, `infant_free`, `cafe`, `socks_requi
 shared keys (`price_child` → `price`) or `sala_zabaw` extensions. Decided (migration 013): the TOML keys are kept
 as `sala_zabaw` fact keys; `age_range`, `opening_hours`, `parking`, `changing_table` are already shared. Curated
 venues load under data source `curated` (external_id = slug, location = the OSM object, age_band → month columns).
+Migration 014 adds the categories `basen` and `lodowisko`: a TOML sets `category` (default `sala_zabaw`), its facts
+must be shared keys or that category's keys (`VENUE_KEYS_BY_CATEGORY` in `ingest/curated.py`); `supervision` became
+shared. Only `sala_zabaw` venues go to `family.json` (page `/<city>/bawialnie/`); all reach the map via the DB.
 
 ## Category extensions (examples)
 
