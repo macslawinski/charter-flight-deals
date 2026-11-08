@@ -406,3 +406,10 @@ name = "Kraków"
 country = "Polska"
 region = "Małopolska"
 kind = "domestic"
+
+[[place]]
+slug = "jaroszowice"
+name = "Jaroszowice"
+country = "Polska"
+region = "Małopolska"
+kind = "domestic"

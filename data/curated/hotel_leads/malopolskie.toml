@@ -39,7 +39,7 @@ lat = 49.3399383
 lon = 20.0809441
 signals = ["łóżeczko", "wanienka", "nocnik", "przewijak", "krzesełko", "pokój zabaw"]
 why = "Łóżeczka z pościelą, wanienka, nocnik, przewijak, wysokie krzesełka; pokój zabaw z zabawkami dla najmłodszych (pod opieką rodziców)."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Chochołowy Dwór"
@@ -63,7 +63,7 @@ lat = 49.8533046
 lon = 19.5094921
 signals = ["łóżeczko", "wanienka", "nakładka na toaletę", "krzesełko", "brodzik"]
 why = "Łóżeczka, wanienki, nakładki na toaletę i podesty, krzesełka w restauracji, brodzik ze zjeżdżalnią dla maluchów."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Amber Boutique Hotels (Hotel Amber)"
@@ -87,7 +87,7 @@ lat = 50.0085334
 lon = 19.9322407
 signals = ["łóżeczko", "przewijak", "wanienka", "krzesełko", "pokój zabaw"]
 why = "Łóżeczko/kojec, przewijak, wanienka, mata antypoślizgowa, krzesełka, zabezpieczenia kontaktów; pokój zabaw po rezerwacji."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Grand Ascot Hotel"
@@ -217,7 +217,7 @@ lat = 49.286087
 lon = 19.9715092
 signals = ["łóżeczko", "wanienka", "przewijak", "krzesełko", "sala zabaw"]
 why = "Łóżeczka, wanienki, przewijaki, krzesełka do karmienia, sala zabaw, basen ze strefą dla dzieci."
-status = "lead"
+status = "curated"
 
 [[lead]]
 name = "Gold Hotel"

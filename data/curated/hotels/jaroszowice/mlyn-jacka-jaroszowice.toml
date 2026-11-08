@@ -1,0 +1,150 @@
+# Facts from the hotel's own website (hotelmj.pl; robots.txt has no Disallow, checked 2026-11-08):
+# /hotel-dla-dzieci, /spa/basen-wellness, /kontakt, Regulamin hotelu and Regulamin strefy wellness (PDFs,
+# linked from /kontakt). Written in our words.
+# Also on the site, no feature key for it: main pool 100 m2, 130 cm deep, about 30°C; wellness 8:00-21:00
+# (Fri-Sat to 22:00); children under 12 only under an adult's care, swim nappies required for children in
+# nappies (wellness regulamin); indoor playground STARKI in Wadowice (ages 1-11, separate business, a few
+# minutes by car).
+# Not stated (so not recorded yet): cot (not on the kids page any more), free-stay age, changing table, bottle
+# warmer, baby monitor, lift, brodzik depth.
+#
+# Coordinates: OpenStreetMap way/295644809 (centre; (c) OpenStreetMap contributors, ODbL); the site's map links
+# are short links.
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet.
+slug = "mlyn-jacka-jaroszowice"
+place = "jaroszowice"
+name = "Młyn Jacka Hotel & SPA"
+official_url = "https://hotelmj.pl/"
+address = "ul. Zakopiańska 64, 34-100 Jaroszowice"
+lat = 49.8533046
+lon = 19.5094921
+status = "published"
+
+[[feature]]
+key = "high_chair"
+value = { available = true, where = "restaurant" }
+short = "Krzesełka w restauracji"
+note = "W restauracji są krzesełka dla dzieci."
+source = "hotel_website"
+url = "https://hotelmj.pl/hotel-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true }
+short = "Menu dziecięce w karcie"
+note = "W karcie restauracji jest menu dziecięce."
+source = "hotel_website"
+url = "https://hotelmj.pl/hotel-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_bath"
+value = { available = true }
+short = "Wanienki"
+note = "Hotel ma wanienki dla dzieci."
+source = "hotel_website"
+url = "https://hotelmj.pl/hotel-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "potty"
+value = { available = true, toilet_seat_adapter = true, step_stool = true }
+short = "Nakładki na toaletę i podesty"
+note = "Nakładki na toaletę i podesty ułatwiające dzieciom korzystanie z łazienki. Nocnika strona nie wymienia."
+source = "hotel_website"
+url = "https://hotelmj.pl/hotel-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "playground"
+value = { available = true, outdoor = true }
+short = "Plac zabaw"
+note = "Przy hotelu jest plac zabaw, boisko do siatkówki i szachy wielkoformatowe."
+source = "hotel_website"
+url = "https://hotelmj.pl/hotel-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_animation"
+value = { available = true, seasonal = true }
+short = "Animacje w ferie i wakacje"
+note = "W wybranych terminach, zwłaszcza w ferie zimowe i wakacje, animacje dla najmłodszych. Wieku strona nie podaje."
+source = "hotel_website"
+url = "https://hotelmj.pl/hotel-dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "paddling_pool"
+value = { available = true, heated = true, slide = true }
+short = "Brodzik ze zjeżdżalnią, cieplejszy o 2–3°C"
+note = "Brodzik ze zjeżdżalnią dla dzieci, płytki; woda o 2–3 stopnie cieplejsza niż w basenie głównym (ok. 30°C). Głębokości strona nie podaje. Dzieci do 12 lat korzystają ze zjeżdżalni i atrakcji brodzika tylko pod stałą opieką dorosłych (regulamin strefy wellness)."
+source = "hotel_website"
+url = "https://hotelmj.pl/spa/basen-wellness"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { free = true, monitored = true }
+short = "Bezpłatny parking monitorowany"
+note = "Hotel zapewnia gościom bezpłatny, monitorowany parking (regulamin hotelu, s. 2)."
+source = "hotel_website"
+url = "https://wa-uploads.profitroom.com/mlynjackahotelspa1/17689003050155_Regulamin%20hotelu%20PL.pdf"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 60
+note = "50 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.8533%2C19.5095"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 75
+note = "80 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.8533%2C19.5095"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 190
+note = "270 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.8533%2C19.5095"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 250
+note = "350 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.8533%2C19.5095"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 310
+note = "450 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.8533%2C19.5095"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 365
+note = "590 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.8533%2C19.5095"
+verified_at = 2026-11-08

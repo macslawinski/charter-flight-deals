@@ -151,6 +151,13 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       warmer, toddler zone, Termy brodzik paid). Car access only. 16 leads left.
 - [ ] U (phone/e-mail, optional): Gold cot fee (50 zł or free); Aquarion free-stay age, high chair, parking fee;
       Swing and Piwniczna cot fee and free-stay age.
+- [x] C: małopolskie hotels, batch 3 (2026-11-08): Farmona (Kraków, 9 facts: cot/playpen, free playroom by
+      reservation, free monitored parking, transfer from Balice/PKP), Młyn Jacka (Jaroszowice, 8: brodzik with a
+      slide 2–3°C warmer, toilet seats and step stools; cot no longer on the kids page), Crocus (Zakopane, 8: pool
+      with a children's zone, paid garage), Zbójnicówka (Bukowina, 7: under 8; cot with bedding, potty, playroom
+      with parents). Car access only. 12 leads left.
+- [ ] U (phone/e-mail, optional): cot fee and free-stay age at all four; Młyn Jacka whether cots are still
+      offered; Crocus parking rate; Zbójnicówka parking.
 - [x] ~~U: decide which pomorskie hotels to publish (all are `draft`);~~ superseded above; those under 8 facts need a phone or e-mail
       round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Kiston cot fee, free-stay age, brodzik; Primavera cot fee, Playland age;
