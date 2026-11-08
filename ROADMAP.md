@@ -179,6 +179,10 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       Małopolskie leads done: 23 curated, 10 skipped. Train access for the mountains still to do.
 - [ ] U (phone/e-mail, optional): Bania free-stay age, parking, Terma entry; Grand Ascot high chair and free-stay
       age; Maria cot, baby items, free-stay age.
+- [x] C: hotel leads śląskie (2026-11-08, find-hotels): 19 leads, 0 do sprawdzenia, 6 skipped
+      (`data/curated/hotel_leads/slaskie.toml`; whole voivodeship: 505 OSM objects, 233 sites probed). Beskidy
+      (Wisła, Ustroń, Szczyrk, Istebna, Brenna), Jura (Zawiercie, Podlesice, Lgota Murowana, Ogrodzieniec),
+      Katowice, Kochcice. Not covered yet: Skalite and Skalny (Szczyrk) and Aries Wisła (own site not found).
 - [x] ~~U: decide which pomorskie hotels to publish (all are `draft`);~~ superseded above; those under 8 facts need a phone or e-mail
       round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Kiston cot fee, free-stay age, brodzik; Primavera cot fee, Playland age;
