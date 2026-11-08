@@ -1612,6 +1612,284 @@
   {
    "access": [
     {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 100,
+     "mode": "car",
+     "note": "110 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.3272%2C20.0960",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 140,
+     "mode": "car",
+     "note": "180 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.3272%2C20.0960",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 250,
+     "mode": "car",
+     "note": "370 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.3272%2C20.0960",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 290,
+     "mode": "car",
+     "note": "410 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.3272%2C20.0960",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 370,
+     "mode": "car",
+     "note": "560 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.3272%2C20.0960",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 430,
+     "mode": "car",
+     "note": "700 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.3272%2C20.0960",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Sportowa 22, 34-530 Bukowina Tatrzańska",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczka dziecięce są na liście udogodnień dla rodzin. Opłaty strona nie podaje.",
+     "short": "Łóżeczka dziecięce",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelbukovina.pl/rozrywka/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": "0-3",
+     "key": "child_free_stay",
+     "note": "Strona pisze, że dzieci do 3 lat przebywają w hotelu bezpłatnie. Zasad dla starszych dzieci ta strona nie podaje.",
+     "short": "Dzieci do 3 lat bezpłatnie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelbukovina.pl/rozrywka/dla-dzieci",
+     "value": {
+      "free": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Wysokie krzesełka są na liście udogodnień dla rodzin.",
+     "short": "Wysokie krzesełka",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelbukovina.pl/rozrywka/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Codziennie specjalny bufet dla najmłodszych i kolorowa dziecięca zastawa.",
+     "short": "Codzienny bufet dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelbukovina.pl/rozrywka/dla-dzieci",
+     "value": {
+      "available": true,
+      "kids_buffet": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacze i sterylizatory są na liście udogodnień dla rodzin. Opłaty strona nie podaje.",
+     "short": "Podgrzewacze i sterylizatory",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelbukovina.pl/rozrywka/dla-dzieci",
+     "value": {
+      "available": true,
+      "sterilizer": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienki są na liście udogodnień dla rodzin.",
+     "short": "Wanienki",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelbukovina.pl/rozrywka/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Przewijaki są na liście udogodnień dla rodzin; gdzie stoją, strona nie podaje.",
+     "short": "Przewijaki",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelbukovina.pl/rozrywka/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Nocniki i nakładki na toaletę są na liście udogodnień dla rodzin.",
+     "short": "Nocniki i nakładki na toaletę",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelbukovina.pl/rozrywka/dla-dzieci",
+     "value": {
+      "available": true,
+      "toilet_seat_adapter": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": "3+",
+     "key": "playroom",
+     "note": "W Klubie Malucha pod opieką wykwalifikowanej opiekunki mogą zostać dzieci, które ukończyły 3 lata. Godzin otwarcia i opłat strona nie podaje.",
+     "short": "Klub Malucha z opiekunką od 3 lat",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelbukovina.pl/rozrywka/dla-dzieci",
+     "value": {
+      "available": true,
+      "min_age_years": 3,
+      "supervised": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Przy hotelu jest zewnętrzny plac zabaw.",
+     "short": "Zewnętrzny plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelbukovina.pl/rozrywka/dla-dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "W wybrany dzień tygodnia animacje w termalnej strefie dzieci i młodzieży. Wieku ani dnia strona nie podaje.",
+     "short": "Animacje w strefie dziecięcej Term",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelbukovina.pl/rozrywka/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "W Termach Bukovina są brodziki o głębokości 40 i 70 cm. Temperatury wody strona nie podaje.",
+     "short": "Dwa brodziki: 40 i 70 cm (Termy)",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelbukovina.pl/rozrywka/dla-dzieci",
+     "value": {
+      "available": true,
+      "count": 2,
+      "depths_cm": [
+       40,
+       70
+      ]
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_pool",
+     "note": "Termy Bukovina mają strefę zabaw dla dzieci: minibaseny, baseny z atrakcjami wodnymi, wodne huśtawki i zjeżdżalnie. Godzin, limitów wieku i tego, czy wejście jest w cenie pobytu, ta strona nie podaje.",
+     "short": "Minibaseny i wodne atrakcje dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelbukovina.pl/atrakcje/termy-bukovina",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "stroller_rental",
+     "note": "Wózek spacerowy jest na liście udogodnień dla rodzin. Opłaty strona nie podaje.",
+     "short": "Wózek spacerowy",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelbukovina.pl/rozrywka/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Garaż podziemny dla gości hotelu jest bezpłatny, częściowo monitorowany i niestrzeżony; miejsc nie można zarezerwować, gdy brak miejsc, parkuje się na dziedzińcu (regulamin hotelu, s. 5–6). Wysokość pojazdu: do 220 cm na poziomach -1 i -2, do 190 cm na -3.",
+     "short": "Bezpłatny garaż podziemny",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://u.profitroom.com/2015.hotelbukovina.pl/uploads/regulaminy/RegulaminHotelBUKOVINA.pdf",
+     "value": {
+      "free": true,
+      "garage": true,
+      "guarded": false,
+      "monitored": "partial",
+      "reservable": false
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.327232,
+   "lon": 20.095987,
+   "name": "Hotel Bukovina",
+   "official_url": "https://www.hotelbukovina.pl/",
+   "place": "bukowina-tatrzanska",
+   "slug": "bukovina-bukowina-tatrzanska",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
      "from_code": "Gdańsk",
      "from_kind": "city",
      "minutes": 80,
@@ -9496,6 +9774,251 @@
   {
    "access": [
     {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 145,
+     "mode": "car",
+     "note": "150 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.4076%2C20.9323",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 185,
+     "mode": "car",
+     "note": "230 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.4076%2C20.9323",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 295,
+     "mode": "car",
+     "note": "420 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.4076%2C20.9323",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 325,
+     "mode": "car",
+     "note": "430 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.4076%2C20.9323",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 415,
+     "mode": "car",
+     "note": "600 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.4076%2C20.9323",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 475,
+     "mode": "car",
+     "note": "740 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.4076%2C20.9323",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "ul. Czarny Potok 65, 33-380 Krynica-Zdrój",
+   "features": [
+    {
+     "age_band": "0-3",
+     "key": "cot",
+     "note": "Dla jednego dziecka do 3. roku życia można bezpłatnie dostawić łóżeczko turystyczne; prośbę zgłasza się wcześniej w recepcji (FAQ). Strona dla dzieci wymienia kojec/łóżeczko z materacem i pościelą na życzenie.",
+     "short": "Bezpłatne łóżeczko dla 1 dziecka do 3 lat",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelczarnypotok.pl/hotel/faq",
+     "value": {
+      "available": true,
+      "free": true,
+      "max_count": 1,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W restauracjach są krzesełka do karmienia dla dzieci.",
+     "short": "Krzesełka w restauracjach",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelczarnypotok.pl/dla-dzieci/poznaj-oferte-dla-najmlodszych",
+     "value": {
+      "available": true,
+      "where": "restaurants"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "W restauracjach jest wydrukowane specjalne menu dla dzieci.",
+     "short": "Drukowane menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelczarnypotok.pl/dla-dzieci/poznaj-oferte-dla-najmlodszych",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacz do butelek do pokoju na życzenie; w restauracjach podgrzewacz do butelek lub słoiczków. Opłaty strona nie podaje.",
+     "short": "Podgrzewacz w pokoju i w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelczarnypotok.pl/dla-dzieci/poznaj-oferte-dla-najmlodszych",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka do kąpieli dziecka na życzenie. Opłaty strona nie podaje.",
+     "short": "Wanienka na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelczarnypotok.pl/dla-dzieci/poznaj-oferte-dla-najmlodszych",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Dla rodzin z niemowlętami jest przestronna toaleta z przewijakiem i wózkarnia.",
+     "short": "Toaleta z przewijakiem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelczarnypotok.pl/dla-dzieci/poznaj-oferte-dla-najmlodszych",
+     "value": {
+      "available": true,
+      "where": "public_toilets"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Na życzenie krzesełko łazienkowe lub podest do łazienki. Nocnika strona nie wymienia.",
+     "short": "Krzesełko łazienkowe lub podest",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelczarnypotok.pl/dla-dzieci/poznaj-oferte-dla-najmlodszych",
+     "value": {
+      "available": true,
+      "on_request": true,
+      "step_stool": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Kids Club czynny codziennie 9:00–21:00: basen z piłeczkami, labirynt z tunelami, zabawki i jeździki (FAQ). Minimalnego wieku ani tego, czy rodzic musi zostać, strona nie podaje.",
+     "short": "Kids Club codziennie 9:00–21:00",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelczarnypotok.pl/hotel/faq",
+     "value": {
+      "available": true,
+      "close": "21:00",
+      "open": "09:00"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "Całodzienne animacje dla dzieci 9:00–21:00, program zależy od terminu i sezonu. Wieku strona nie podaje.",
+     "short": "Całodzienne animacje 9:00–21:00",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelczarnypotok.pl/hotel/faq",
+     "value": {
+      "available": true,
+      "close": "21:00",
+      "open": "09:00"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Na terenie hotelu jest zewnętrzny plac zabaw dla dzieci.",
+     "short": "Zewnętrzny plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelczarnypotok.pl/hotel/faq",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "W strefie Aqua brodzik dla maluchów o głębokości 30 cm i temperaturze 30–32°C (strona dla dzieci; strona basenu podaje 31,5°C), z grzybkiem wodnym. Latem basen zewnętrzny z brodzikiem dla dzieci (dat sezonu strona nie podaje).",
+     "short": "Brodzik 30 cm, 30–32°C; latem też na zewnątrz",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelczarnypotok.pl/dla-dzieci/poznaj-oferte-dla-najmlodszych",
+     "value": {
+      "depth_cm": 30,
+      "heated": true,
+      "indoor": true,
+      "outdoor": true,
+      "outdoor_seasonal": true,
+      "water_temp_c_max": 32,
+      "water_temp_c_min": 30
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Goście mogą korzystać z bezpłatnego parkingu; liczba miejsc jest ograniczona. Czy jest strzeżony, strona nie podaje.",
+     "short": "Bezpłatny parking, ograniczona liczba miejsc",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.hotelczarnypotok.pl/hotel/faq",
+     "value": {
+      "free": true,
+      "limited": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.407606,
+   "lon": 20.93229,
+   "name": "Hotel Czarny Potok Resort SPA & Conference",
+   "official_url": "https://www.hotelczarnypotok.pl/",
+   "place": "krynica-zdroj",
+   "slug": "czarny-potok-krynica",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
      "from_code": "Gdańsk",
      "from_kind": "city",
      "minutes": 95,
@@ -13619,6 +14142,222 @@
    "official_url": "https://www.sandraspa.pl/",
    "place": "pogorzelica",
    "slug": "sandra-spa-pogorzelica",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 75,
+     "mode": "car",
+     "note": "70 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.6003%2C20.0706",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 110,
+     "mode": "car",
+     "note": "140 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.6003%2C20.0706",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 225,
+     "mode": "car",
+     "note": "330 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.6003%2C20.0706",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 260,
+     "mode": "car",
+     "note": "360 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.6003%2C20.0706",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 340,
+     "mode": "car",
+     "note": "520 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.6003%2C20.0706",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 400,
+     "mode": "car",
+     "note": "660 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.6003%2C20.0706",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "Poręba Wielka 765, 34-735 Niedźwiedź",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Łóżeczko i pościel dla małego dziecka, dodatkowo płatne 100 zł za cały pobyt.",
+     "short": "Łóżeczko z pościelą 100 zł/pobyt",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.gorskiraj.com/dzieci/udogodnienia-dla-dzieci",
+     "value": {
+      "available": true,
+      "fee_pln_per_stay": 100
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "Krzesełka i foteliki dla maluchów.",
+     "short": "Krzesełka i foteliki dla maluchów",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.gorskiraj.com/dzieci/udogodnienia-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Specjalne menu dla dzieci.",
+     "short": "Menu dziecięce",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.gorskiraj.com/dzieci/udogodnienia-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Podgrzewacz do butelek i słoiczków. Opłaty strona nie podaje.",
+     "short": "Podgrzewacz do butelek i słoiczków",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.gorskiraj.com/dzieci/udogodnienia-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka do kąpieli w wyposażeniu łazienki dla rodzin z dzieckiem.",
+     "short": "Wanienka",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.gorskiraj.com/dzieci/udogodnienia-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Przewijak dla dzieci; gdzie stoi, strona nie podaje.",
+     "short": "Przewijak",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.gorskiraj.com/dzieci/udogodnienia-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "potty",
+     "note": "Podest łazienkowy dla dziecka. Nocnika strona nie wymienia.",
+     "short": "Podest łazienkowy",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.gorskiraj.com/dzieci",
+     "value": {
+      "available": true,
+      "step_stool": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Kącik zabaw na II poziomie; strona pisze też o sali zabaw dla dzieci. Minimalnego wieku ani godzin strona nie podaje.",
+     "short": "Kącik zabaw na II poziomie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.gorskiraj.com/dzieci/udogodnienia-dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playground",
+     "note": "Przy hotelu jest zewnętrzny plac zabaw.",
+     "short": "Zewnętrzny plac zabaw",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.gorskiraj.com/dzieci/udogodnienia-dla-dzieci",
+     "value": {
+      "available": true,
+      "outdoor": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "W ferie i wakacje zajęcia, gry i warsztaty z animatorem. Wieku strona nie podaje.",
+     "short": "Zajęcia z animatorem w ferie i wakacje",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.gorskiraj.com/dzieci",
+     "value": {
+      "available": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "lift",
+     "note": "Apartamenty są na I i III poziomie, a pokój studio na IV poziomie, bez windy. O windzie do pozostałych pokoi strona nie pisze.",
+     "short": "Brak windy do apartamentów i studia",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://www.gorskiraj.com/dzieci/udogodnienia-dla-dzieci",
+     "value": {
+      "available": false,
+      "where": "apartments_studio"
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.6002541,
+   "lon": 20.0706139,
+   "name": "Hotel Górski Raj",
+   "official_url": "https://www.gorskiraj.com/",
+   "place": "poreba-wielka",
+   "slug": "gorski-raj-poreba-wielka",
    "status": "published"
   },
   {
@@ -18943,6 +19682,213 @@
   {
    "access": [
     {
+     "from_code": "Kraków",
+     "from_kind": "city",
+     "minutes": 100,
+     "mode": "car",
+     "note": "110 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B49.2990%2C19.9588",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Katowice",
+     "from_kind": "city",
+     "minutes": 135,
+     "mode": "car",
+     "note": "180 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B49.2990%2C19.9588",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Wrocław",
+     "from_kind": "city",
+     "minutes": 250,
+     "mode": "car",
+     "note": "370 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B49.2990%2C19.9588",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Warszawa",
+     "from_kind": "city",
+     "minutes": 290,
+     "mode": "car",
+     "note": "400 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B49.2990%2C19.9588",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Poznań",
+     "from_kind": "city",
+     "minutes": 370,
+     "mode": "car",
+     "note": "560 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B49.2990%2C19.9588",
+     "verified_at": "2026-11-08"
+    },
+    {
+     "from_code": "Gdańsk",
+     "from_kind": "city",
+     "minutes": 430,
+     "mode": "car",
+     "note": "700 km",
+     "url": "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B49.2990%2C19.9588",
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "address": "T. Kościuszki 19, 34-500 Zakopane",
+   "features": [
+    {
+     "age_band": null,
+     "key": "cot",
+     "note": "Na życzenie hotel wstawia do pokoju łóżeczko dziecięce, usługa bezpłatna (informator hotelowy, s. 2).",
+     "short": "Bezpłatne łóżeczko na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://u.profitroom.com/2017.stamary.pl/uploads/Informator_Hotelowy_GHS_202321.07.2023r.pdf",
+     "value": {
+      "available": true,
+      "free": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "high_chair",
+     "note": "W restauracji są krzesełka dla maluchów.",
+     "short": "Krzesełka w restauracji",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://stamary.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "restaurant"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_menu",
+     "note": "Specjalnie przygotowane menu dla dzieci.",
+     "short": "Menu dla dzieci",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://stamary.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "bottle_warmer",
+     "note": "Hotel może wyposażyć pokój w podgrzewacz do butelek (FAQ). Opłaty strona nie podaje.",
+     "short": "Podgrzewacz do butelek na życzenie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://stamary.pl/faq",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "baby_bath",
+     "note": "Wanienka do kąpieli dziecka w wyposażeniu łazienki; hotel może ją wstawić do pokoju (FAQ).",
+     "short": "Wanienka",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://stamary.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "on_request": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "changing_table",
+     "note": "Przewijak jest w przebieralni strefy Wellness & SPA.",
+     "short": "Przewijak w przebieralni SPA",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://stamary.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "where": "spa_changing_room"
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "playroom",
+     "note": "Pokój zabaw (Stamarkowo) z dwupoziomową konstrukcją do zabawy i suchym basenem. Minimalnego wieku ani godzin strona nie podaje.",
+     "short": "Pokój zabaw z suchym basenem",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://stamary.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "kids_animation",
+     "note": "W sezonie zajęcia dla dzieci prowadzą animatorzy, są też animacje tematyczne. Wieku ani dat sezonu strona nie podaje.",
+     "short": "Animacje tematyczne w sezonie",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://stamary.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "seasonal": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "paddling_pool",
+     "note": "W strefie SPA basen z brodzikiem dla dzieci, z kolorowymi dmuchanymi zabawkami; dostępne są jednorazowe pieluchy do pływania. Głębokości ani temperatury strona nie podaje.",
+     "short": "Brodzik z dmuchanymi zabawkami",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://stamary.pl/hotel/dla-dzieci",
+     "value": {
+      "available": true,
+      "toys": true
+     },
+     "verified_at": "2026-11-08"
+    },
+    {
+     "age_band": null,
+     "key": "parking",
+     "note": "Parking hotelowy nie jest strzeżony, ale jest objęty monitoringiem (FAQ). Opłaty strona nie podaje.",
+     "short": "Parking monitorowany, niestrzeżony",
+     "source": "hotel_website",
+     "to_confirm": false,
+     "url": "https://stamary.pl/faq",
+     "value": {
+      "guarded": false,
+      "monitored": true
+     },
+     "verified_at": "2026-11-08"
+    }
+   ],
+   "lat": 49.299022,
+   "lon": 19.958837,
+   "name": "Grand Hotel Stamary",
+   "official_url": "https://stamary.pl/",
+   "place": "zakopane",
+   "slug": "stamary-zakopane",
+   "status": "published"
+  },
+  {
+   "access": [
+    {
      "from_code": "Gdańsk",
      "from_kind": "city",
      "minutes": 145,
@@ -19668,6 +20614,38 @@
    "name": "Iława",
    "region": "Pojezierze Iławskie",
    "slug": "ilawa"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Bukowina Tatrzańska",
+   "region": "Tatry i Podhale",
+   "slug": "bukowina-tatrzanska"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Zakopane",
+   "region": "Tatry i Podhale",
+   "slug": "zakopane"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Krynica-Zdrój",
+   "region": "Beskidy",
+   "slug": "krynica-zdroj"
+  },
+  {
+   "country": "Polska",
+   "dest_iata": null,
+   "kind": "domestic",
+   "name": "Poręba Wielka",
+   "region": "Gorce",
+   "slug": "poreba-wielka"
   }
  ],
  "rule_keys": [

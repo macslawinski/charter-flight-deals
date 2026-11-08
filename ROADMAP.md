@@ -138,6 +138,12 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
 - [x] C: hotel leads małopolskie (2026-11-08, `find-hotels`): 24 leads (Zakopane 9, Kraków 4, Krynica 3,
       Bukowina 2, others 1 each), 2 do sprawdzenia (Hotel Bania: JS, Hotel Krynica: TLS; read in Chrome);
       9 skipped (nothing concrete for 0-3, Radisson Blu chain site 403). 843 hotels in OSM, 400 sites probed.
+- [x] C: małopolskie hotels, batch 1 (2026-11-08): Bukovina (Bukowina Tatrzańska, 15 facts: under 3 free, all
+      baby items, brodziki 40/70 cm, free garage; Klub Malucha from 3), Czarny Potok (Krynica, 12: free cot to 3,
+      brodzik 30 cm 30–32°C, Kids Club 9–21), Górski Raj (Poręba Wielka, 11: cot 100 zł/stay, no lift to
+      apartments), Stamary (Zakopane, 10: free cot, brodzik with toys). Car access only. 20 leads left.
+- [ ] U (phone/e-mail, optional): Bukovina cot fee and Klub Malucha hours; Czarny Potok free-stay age and Kids
+      Club minimum age; Górski Raj free-stay age and parking; Stamary free-stay age and parking fee.
 - [x] ~~U: decide which pomorskie hotels to publish (all are `draft`);~~ superseded above; those under 8 facts need a phone or e-mail
       round first, or stay off the site.
 - [ ] U (phone/e-mail, optional): Kiston cot fee, free-stay age, brodzik; Primavera cot fee, Playland age;

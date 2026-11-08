@@ -364,3 +364,31 @@ name = "Iława"
 country = "Polska"
 region = "Pojezierze Iławskie"
 kind = "domestic"
+
+[[place]]
+slug = "bukowina-tatrzanska"
+name = "Bukowina Tatrzańska"
+country = "Polska"
+region = "Tatry i Podhale"
+kind = "domestic"
+
+[[place]]
+slug = "zakopane"
+name = "Zakopane"
+country = "Polska"
+region = "Tatry i Podhale"
+kind = "domestic"
+
+[[place]]
+slug = "krynica-zdroj"
+name = "Krynica-Zdrój"
+country = "Polska"
+region = "Beskidy"
+kind = "domestic"
+
+[[place]]
+slug = "poreba-wielka"
+name = "Poręba Wielka"
+country = "Polska"
+region = "Gorce"
+kind = "domestic"
