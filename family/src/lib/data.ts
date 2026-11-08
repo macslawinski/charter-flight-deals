@@ -340,6 +340,8 @@ export const TRIP_GROUPS: {
     regions: ["Wielkopolska", "Pojezierze Leszczyńskie"] },
   { id: "wyzyny", title: "Wyżyny i uzdrowiska", tone: "coral", icon: "castle",
     regions: ["Lubelszczyzna", "Góry Świętokrzyskie", "Ponidzie", "Ziemia Sandomierska"] },
+  { id: "lodzkie", title: "Łódź, Uniejów i Sulejów", tone: "sun", icon: "pin",
+    regions: ["Łódź i okolice", "Termy Uniejów", "Zalew Sulejowski"] },
 ];
 const GROUP_OF = Object.fromEntries(TRIP_GROUPS.flatMap((g) => g.regions.map((r) => [r, g.id])));
 export const tripGroupOf = (h: Hotel) => must(GROUP_OF, placeRegion(placeOf(h)), "trip group of region");

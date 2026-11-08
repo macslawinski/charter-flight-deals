@@ -1,0 +1,105 @@
+# Leads for Product B: hotels in województwo łódzkie whose own website shows an offer for children 0-3.
+# Discovered via OpenStreetMap (tourism=hotel, leisure=resort; (c) OpenStreetMap contributors, ODbL) and web
+# search pointing to the hotels' own sites; each lead confirmed on its own kids page.
+# Not facts: the curate-hotel skill reads the facts.
+voivodeship = "lodzkie"
+checked_at = 2026-11-08
+covered = ["całe województwo (OSM 242 obiekty, probe 127 stron) + web search, 2026-11-08"]
+
+[[lead]]
+name = "Fabryka Wełny"
+town = "Pabianice"
+official_url = "https://www.fabrykawelny.pl/"
+kids_url = "https://www.fabrykawelny.pl/hotel/dzieci-w-hotelu"
+osm = "way/149777407"
+lat = 51.66291
+lon = 19.35944
+signals = ["do 3 lat gratis", "krzesełko", "przewijak", "sala zabaw", "menu dla dzieci"]
+why = "Do 3 lat bezpłatnie, krzesełka w restauracjach, przewijaki w łazienkach, sala zabaw Fabrykolandia z małpim gajem, menu dziecięce."
+status = "curated"
+
+[[lead]]
+name = "Hotel Podklasztorze"
+town = "Sulejów"
+official_url = "https://www.hotelpodklasztorze.pl/"
+kids_url = "https://www.hotelpodklasztorze.pl/dzieci/udogodnienia-dla-dzieci"
+evidence_urls = ["https://www.hotelpodklasztorze.pl/dzieci/dzieci", "https://www.hotelpodklasztorze.pl/hotel/faq"]
+osm = "node/683182942"
+lat = 51.36497
+lon = 19.87967
+signals = ["łóżeczko", "wanienka", "przewijak", "podgrzewacz", "krzesełko", "brodzik", "sala zabaw", "menu dla dzieci"]
+why = "Bezpłatne łóżeczko, wanienka, przewijak, podgrzewacz i sterylizator; brodzik z mini zjeżdżalnią, sala zabaw Figlarium, menu dziecięce."
+status = "curated"
+
+[[lead]]
+name = "Hotel Uniejów ecoActive&Spa"
+town = "Uniejów"
+official_url = "https://www.hoteluniejow.pl/"
+kids_url = "https://www.hoteluniejow.pl/pl/eco-hotel/dla-dzieci"
+osm = "way/385608010"
+lat = 51.97169
+lon = 18.79399
+signals = ["łóżeczko", "wanienka", "podgrzewacz", "krzesełko", "menu dla dzieci"]
+why = "Łóżeczko w wybranych pokojach, wanienka, podgrzewacz do butelek i słoiczków, krzesełka i menu dziecięce na życzenie."
+status = "curated"
+
+[[lead]]
+name = "Lawendowe Termy"
+town = "Uniejów"
+official_url = "https://lawendowetermy.pl/"
+kids_url = "https://lawendowetermy.pl/hotel/dzieci-w-hotelu"
+osm = "way/171253107"
+lat = 51.96216
+lon = 18.78973
+signals = ["brodzik", "kącik zabaw", "plac zabaw"]
+why = "Brodzik z mini fontanną w strefie basenowej, kącik zabaw w hotelu, plac zabaw na zewnątrz; słabszy lead."
+status = "curated"
+
+[[lead]]
+name = "Stacja Nowa Gdynia"
+town = "Zgierz"
+official_url = "https://www.hotelnowagdynia.pl/"
+kids_url = "https://www.hotelnowagdynia.pl/dla-dzieci"
+osm = "node/4674774883"
+lat = 51.83131
+lon = 19.41771
+signals = ["łóżeczko", "wanienka", "podgrzewacz", "krzesełko", "sala zabaw", "brodzik"]
+why = "Łóżeczko z materacem, wanienka, podgrzewacz, krzesełko do karmienia; sala zabaw Ancymondo, brodzik 60 m w aquaparku."
+status = "curated"
+
+[[lead]]
+name = "Holiday Inn Łódź"
+town = "Łódź"
+official_url = "https://hilodz.com/"
+kids_url = "https://hilodz.com/rodzinny-pobyt-w-lodzi"
+osm = "way/175927646"
+lat = 51.75248
+lon = 19.45951
+signals = ["łóżeczko", "krzesełko"]
+why = "Łóżeczko i krzesełko tylko w pakiecie „Rodzinny pobyt w Łodzi”."
+status = "skipped"
+skip_reason = "Rzeczy dla 0-3 tylko w pakiecie rodzinnym."
+
+[[lead]]
+name = "Stara Wieś"
+town = "Załęcze Małe"
+official_url = "https://www.starawies.com.pl/"
+osm = "way/274229160"
+lat = 51.09513
+lon = 18.71417
+signals = ["łóżeczko", "wanienka", "krzesełko", "sala zabaw"]
+why = "Apartamenty i domki z dobrą ofertą dla maluchów, ale nie hotel."
+status = "skipped"
+skip_reason = "Apartamenty i domki, nie hotel (reguła: tylko hotele)."
+
+[[lead]]
+name = "Aparthotel Termy Uniejów"
+town = "Uniejów"
+official_url = "https://www.aparthotel-termyuniejow.pl/"
+osm = "way/669510167"
+lat = 51.96866
+lon = 18.78638
+signals = ["plac zabaw", "bawialnia"]
+why = "Aparthotel przy termach; na stronie dla dzieci tylko plac zabaw i bawialnia bez konkretów dla 0-3."
+status = "skipped"
+skip_reason = "Aparthotel, a strona dla dzieci bez sprzętu dla 0-3."

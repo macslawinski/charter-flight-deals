@@ -258,7 +258,16 @@ Operational checklist for both products. Background and rationale: `PLAN.md` (Pr
       Uroczysko Cedzyna (3: brodzik, indoor playground). All under 8: thin sites. Skipped Binkowski (playroom from
       6), Cztery Wiatry (aparthotel). New regions Góry Świętokrzyskie, Ponidzie, Ziemia Sandomierska.
       (Both batches were pushed to the branch of PR #69 after it had been merged; restored to main 2026-11-08.)
-- [ ] C: still no hotels in podlaskie, łódzkie, opolskie, lubuskie.
+- [x] C: hotel leads łódzkie (2026-11-08, find-hotels): 5 leads, 3 skipped (`hotel_leads/lodzkie.toml`). OSM 242,
+      probed 127. Few family hotels; Łódź city hotels show cots only in packages.
+- [x] C: łódzkie hotels, batch 1 (2026-11-08, draft): 5 hotels, new regions "Łódź i okolice", "Termy Uniejów",
+      "Zalew Sulejowski" (own trip group "Łódź, Uniejów i Sulejów"). 8+ verified facts: Podklasztorze Sulejów (11:
+      free cot, bath, warmer, changing table, brodzik with slide, no lift). Under 8: Fabryka Wełny Pabianice (7: free
+      stay to 3, playroom), Stacja Nowa Gdynia Zgierz (7 + aquapark brodzik do potwierdzenia), Hotel Uniejów
+      ecoActive (6), Lawendowe Termy Uniejów (3). Skipped Holiday Inn Łódź (package only), Stara Wieś (cottages),
+      Aparthotel Termy Uniejów. Car access only; train not checked. No leads left.
+- [ ] U: decide which łódzkie hotels to publish (all `draft`).
+- [ ] C: still no hotels in podlaskie, opolskie, lubuskie.
 - [ ] C: train access for the Karkonosze / Bieszczady hotels (Jelenia Góra, Kłodzko, Zagórz stations).
 - [ ] U (phone/e-mail, optional): Tremonti free-stay age (6 vs 3); Skalny SPA brodzik; Artus cot fee; Czarny
       Kamień cot fee; Arłamów cot fee and free-stay rule; most: playroom minimum age.

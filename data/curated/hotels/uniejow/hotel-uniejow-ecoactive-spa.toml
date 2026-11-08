@@ -1,0 +1,127 @@
+# Facts from the hotel's own website (hoteluniejow.pl; robots.txt allows all but /cache/ and /admin/, checked
+# 2026-11-08): /pl/eco-hotel/dla-dzieci, /pl/regulamin-hotelu. Written in our words.
+# Also on the site, no feature key for it: Termy Uniejów (separate thermal park) are in the same town.
+# Not stated (so not recorded yet): cot and other fees, free-stay ages and child prices, playroom, playground,
+# brodzik, lift, parking price.
+#
+# Coordinates: OpenStreetMap way/385608010, ODbL (no map link with coordinates on the site).
+# Access (checked 2026-11-08):
+# - car: OSRM public router (OpenStreetMap data), city centre -> hotel, free-flow time rounded to 5 min.
+# - train: not checked yet.
+slug = "hotel-uniejow-ecoactive-spa"
+place = "uniejow"
+name = "Hotel Uniejów ecoActive&Spa"
+official_url = "https://www.hoteluniejow.pl/"
+address = "ul. Bł. Bogumiła 32, 99-210 Uniejów"
+lat = 51.97169  # OpenStreetMap way/385608010, ODbL
+lon = 18.79399
+status = "draft"
+
+[[feature]]
+key = "cot"
+value = { available = true, on_request = true, selected_rooms = true }
+short = "Łóżeczko w wybranych pokojach (zgłosić przy rezerwacji)"
+note = "W wybranych pokojach łóżeczko dla małego dziecka, na życzenie zgłoszone przy rezerwacji. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.hoteluniejow.pl/pl/eco-hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "high_chair"
+value = { available = true, on_request = true, where = "restaurant" }
+short = "Krzesełka w restauracji na życzenie"
+note = "W restauracji na życzenie krzesełka dla maluchów."
+source = "hotel_website"
+url = "https://www.hoteluniejow.pl/pl/eco-hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "kids_menu"
+value = { available = true, on_request = true }
+short = "Menu dla dzieci na życzenie"
+note = "W restauracji na życzenie specjalne menu dla dzieci."
+source = "hotel_website"
+url = "https://www.hoteluniejow.pl/pl/eco-hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "bottle_warmer"
+value = { available = true, on_request = true }
+short = "Podgrzewacz w pokoju i w restauracji"
+note = "W wybranych pokojach podgrzewacz do butelek; w restauracji na życzenie podgrzewacz do butelek i słoiczków."
+source = "hotel_website"
+url = "https://www.hoteluniejow.pl/pl/eco-hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "baby_bath"
+value = { available = true, on_request = true }
+short = "Wanienka do łazienki"
+note = "Na życzenie hotel wyposaża łazienkę w wanienkę do kąpieli. Opłaty strona nie podaje."
+source = "hotel_website"
+url = "https://www.hoteluniejow.pl/pl/eco-hotel/dla-dzieci"
+verified_at = 2026-11-08
+
+[[feature]]
+key = "parking"
+value = { paid = true, guarded = false }
+short = "Płatny, niestrzeżony"
+note = "Regulamin: parking hotelu jest płatny według cennika i niestrzeżony. Stawek strona nie podaje."
+source = "hotel_website"
+url = "https://www.hoteluniejow.pl/pl/regulamin-hotelu"
+verified_at = 2026-11-08
+
+# --- Access: car (OSRM, free flow) -------------------------------------------------------------
+[[access]]
+from_kind = "city"
+from = "Poznań"
+mode = "car"
+minutes = 100
+note = "150 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.4064%2C16.9252%3B51.9717%2C18.7940"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Warszawa"
+mode = "car"
+minutes = 110
+note = "170 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=52.2297%2C21.0122%3B51.9717%2C18.7940"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Wrocław"
+mode = "car"
+minutes = 170
+note = "210 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=51.1079%2C17.0385%3B51.9717%2C18.7940"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Katowice"
+mode = "car"
+minutes = 175
+note = "280 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.2649%2C19.0238%3B51.9717%2C18.7940"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Gdańsk"
+mode = "car"
+minutes = 215
+note = "310 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=54.3520%2C18.6466%3B51.9717%2C18.7940"
+verified_at = 2026-11-08
+
+[[access]]
+from_kind = "city"
+from = "Kraków"
+mode = "car"
+minutes = 220
+note = "350 km"
+url = "https://www.openstreetmap.org/directions?engine=fossgis_osrm_car&route=50.0614%2C19.9366%3B51.9717%2C18.7940"
+verified_at = 2026-11-08
