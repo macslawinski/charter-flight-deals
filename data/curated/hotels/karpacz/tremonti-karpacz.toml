@@ -14,7 +14,7 @@ official_url = "https://www.tremonti.pl/karpacz"
 address = "ul. Konstytucji 3 Maja 77/77A, 58-540 Karpacz"
 lat = 50.7748027
 lon = 15.7452289
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

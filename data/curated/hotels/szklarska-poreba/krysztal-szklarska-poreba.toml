@@ -14,7 +14,7 @@ official_url = "https://www.hotelkrysztal.pl/"
 address = "ul. 1 Maja 19, 58-580 Szklarska Poręba"
 lat = 50.824604
 lon = 15.5265053
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

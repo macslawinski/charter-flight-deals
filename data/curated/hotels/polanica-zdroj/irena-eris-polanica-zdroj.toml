@@ -14,7 +14,7 @@ official_url = "https://www.drirenaerisspa.pl/polanica-zdroj"
 address = "ul. Dębowa 19b, 57-320 Polanica-Zdrój"
 lat = 50.4114943
 lon = 16.5026063
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

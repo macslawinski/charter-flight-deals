@@ -14,7 +14,7 @@ official_url = "https://www.vivaldi.pl/karpacz"
 address = "ul. Olimpijska 4, 58-540 Karpacz"
 lat = 50.7725885
 lon = 15.738918
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

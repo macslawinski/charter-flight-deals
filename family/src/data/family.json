@@ -2915,7 +2915,7 @@
    "official_url": "https://www.arlamow.pl/",
    "place": "arlamow",
    "slug": "hotel-arlamow",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -4638,7 +4638,7 @@
    "official_url": "https://www.grandchotowa.pl/",
    "place": "chotowa",
    "slug": "grand-chotowa",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -9973,7 +9973,7 @@
    "official_url": "https://www.artusresort.pl/",
    "place": "karpacz",
    "slug": "artus-resort-karpacz",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -10142,7 +10142,7 @@
    "official_url": "https://www.golebiewski.pl/karpacz",
    "place": "karpacz",
    "slug": "golebiewski-karpacz",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -10308,7 +10308,7 @@
    "official_url": "https://www.green-mountain.pl/",
    "place": "karpacz",
    "slug": "green-mountain-karpacz",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -10473,7 +10473,7 @@
    "official_url": "https://www.skalnykarpacz.pl/",
    "place": "karpacz",
    "slug": "mercure-karpacz-skalny",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -10667,7 +10667,7 @@
    "official_url": "https://www.movenpickkarpacz.pl/",
    "place": "karpacz",
    "slug": "movenpick-karpacz",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -10873,7 +10873,7 @@
    "official_url": "https://www.tremonti.pl/karpacz",
    "place": "karpacz",
    "slug": "tremonti-karpacz",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -11007,7 +11007,7 @@
    "official_url": "https://www.vivaldi.pl/karpacz",
    "place": "karpacz",
    "slug": "vivaldi-karpacz",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -17697,7 +17697,7 @@
    "official_url": "https://www.hotelsolina.eu/",
    "place": "myczkowce",
    "slug": "solina-spa-myczkowce",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -19854,7 +19854,7 @@
    "official_url": "https://skalnyspa.pl/",
    "place": "polanczyk",
    "slug": "skalny-spa-polanczyk",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -20062,7 +20062,7 @@
    "official_url": "https://hotel-zefir.pl/",
    "place": "polanczyk",
    "slug": "zefir-polanczyk",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -20225,7 +20225,7 @@
    "official_url": "https://www.drirenaerisspa.pl/polanica-zdroj",
    "place": "polanica-zdroj",
    "slug": "irena-eris-polanica-zdroj",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -22160,7 +22160,7 @@
    "official_url": "https://termykarkonosze.pl/",
    "place": "staniszow",
    "slug": "termy-karkonosze-staniszow",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -24012,7 +24012,7 @@
    "official_url": "https://www.czarnykamien.pl/",
    "place": "szklarska-poreba",
    "slug": "czarny-kamien-szklarska-poreba",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [
@@ -24149,7 +24149,7 @@
    "official_url": "https://www.hotelkrysztal.pl/",
    "place": "szklarska-poreba",
    "slug": "krysztal-szklarska-poreba",
-   "status": "draft"
+   "status": "published"
   },
   {
    "access": [

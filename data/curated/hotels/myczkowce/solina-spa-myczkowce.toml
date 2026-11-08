@@ -14,7 +14,7 @@ official_url = "https://www.hotelsolina.eu/"
 address = "Myczkowce 122, 38-623 Uherce"
 lat = 49.4313239
 lon = 22.4130946
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

@@ -14,7 +14,7 @@ official_url = "https://www.golebiewski.pl/karpacz"
 address = "ul. Karkonoska 14, 58-540 Karpacz"
 lat = 50.777426
 lon = 15.730459
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

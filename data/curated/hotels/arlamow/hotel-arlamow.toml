@@ -14,7 +14,7 @@ official_url = "https://www.arlamow.pl/"
 address = "Arłamów 1, 38-700 Ustrzyki Dolne"
 lat = 49.5918121
 lon = 22.6281221
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

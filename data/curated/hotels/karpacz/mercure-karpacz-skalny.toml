@@ -13,7 +13,7 @@ official_url = "https://www.skalnykarpacz.pl/"
 address = "ul. Obrońców Pokoju 5, 58-540 Karpacz"
 lat = 50.7723528
 lon = 15.763854
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

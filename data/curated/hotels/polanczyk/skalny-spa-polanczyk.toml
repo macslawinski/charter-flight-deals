@@ -14,7 +14,7 @@ official_url = "https://skalnyspa.pl/"
 address = "ul. Zdrojowa 11, 38-610 Polańczyk"
 lat = 49.3703858
 lon = 22.4285516
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "child_free_stay"

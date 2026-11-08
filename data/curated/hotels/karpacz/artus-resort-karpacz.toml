@@ -14,7 +14,7 @@ official_url = "https://www.artusresort.pl/"
 address = "ul. Wilcza 9, 58-540 Karpacz"
 lat = 50.7666433
 lon = 15.7628222
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

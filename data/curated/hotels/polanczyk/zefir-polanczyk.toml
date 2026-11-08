@@ -14,7 +14,7 @@ official_url = "https://hotel-zefir.pl/"
 address = "ul. Dworska 13, 38-610 Polańczyk"
 lat = 49.363228
 lon = 22.4305452
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"

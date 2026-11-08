@@ -14,7 +14,7 @@ official_url = "https://www.movenpickkarpacz.pl/"
 address = "ul. Obrońców Pokoju 6, 58-540 Karpacz"
 lat = 50.7708566
 lon = 15.7635472
-status = "draft"
+status = "published"
 
 [[feature]]
 key = "cot"
