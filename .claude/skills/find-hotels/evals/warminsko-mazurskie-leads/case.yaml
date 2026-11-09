@@ -1,4 +1,0 @@
-schema_version: "1.1"
-name: warminsko-mazurskie-leads
-expected_outcome: |
-  A leads file for warminsko-mazurskie with 20-30 hotels (or fewer with an explanation), each with the hotel's own site, a kids page and a Polish one-line reason naming concrete 0-3 items, spread over several towns.

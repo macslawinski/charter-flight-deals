@@ -1,4 +1,0 @@
-schema_version: "1.1"
-name: golebiewski-karpacz
-expected_outcome: |
-  A valid hotel TOML for Gołębiewski Karpacz under a mountain place (region in the existing style), facts from the hotel's own site only, no beach fact, playroom/kids club min age recorded or flagged as not stated, car access from the six cities.

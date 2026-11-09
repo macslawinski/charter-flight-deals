@@ -1,4 +1,0 @@
-schema_version: "1.1"
-name: gorzelanny-dzwirzyno
-expected_outcome: |
-  A valid hotel TOML under a new place dzwirzyno (places.toml entry added), facts only from gorzelanny.pl pages of the Dźwirzyno location with URLs and dates, car access from the six cities, honest 'not stated' list.
