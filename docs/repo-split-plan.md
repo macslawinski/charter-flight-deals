@@ -3,6 +3,10 @@
 Decided 2026-11-08 (user): B gets **its own GitHub repo and its own Supabase project**. Work starts 2026-11-09.
 Product A (charter flight deals) stays in `charter-flight-deals`.
 
+**Status 2026-11-09: done.** Tag `pre-split` (ca956b8); repo `macslawinski/pieluchy-i-paszporty` (PR #1 there);
+Supabase project `ifrgfusjpaqbxfzljlxr` filled from sources (same 755 venues on the Poznań map); Vercel project
+relinked; B removed from this repo and DB (migration 017, backup of the 13 tables kept outside the repo).
+
 ## Why
 - A can go public (permission e-mails, end of November) while B stays private; a public repo also gets free
   Actions minutes, so Itaka can go back to 2×/day (memory: actions-minutes-budget).

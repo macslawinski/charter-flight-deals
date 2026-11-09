@@ -19,9 +19,8 @@ dist/
 .astro/
 .vercel/
 
-# Local data / exports (raw dumps); data/curated is hand-curated source data and IS committed
-data/*
-!data/curated/
+# Local data / exports (raw dumps)
+data/
 web/public/deals.json
 
 # OS / editors
