@@ -247,7 +247,8 @@ def _offer(o: Any, path: str, observed_at: datetime) -> FlightOffer | None:
         raise ParseError(f"{path}: expected an object")
     if o.get("type") != "returnTicket":
         raise ParseError(f"{path}.type: expected 'returnTicket', got {o.get('type')!r}")
-    if o.get("currency") != "PLN":
+    # Itaka dropped `currency` on 2026-11-26; the price regex still requires "zł".
+    if o.get("currency", "PLN") != "PLN":
         raise ParseError(f"{path}.currency: expected 'PLN', got {o.get('currency')!r}")
     out_leg = _req(o, "departureFlight", path)
     ret_leg = _req(o, "returnFlight", path)

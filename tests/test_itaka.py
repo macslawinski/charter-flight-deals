@@ -119,6 +119,14 @@ def test_unexpected_shape_fails_loudly(mutate, msg):
         itaka.parse(b, NOW)
 
 
+def test_missing_currency_is_accepted():
+    b = copy.deepcopy(SAMPLE)
+    for p in b["pages"]:
+        for o in p["flightsList"]:
+            o.pop("currency", None)
+    assert itaka.parse(b, NOW) == itaka.parse(SAMPLE, NOW)
+
+
 class FakeClient:
     """Serves `pages`: a list of offers, a raw RSC string, or an exception to raise.
 
