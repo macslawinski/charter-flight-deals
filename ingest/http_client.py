@@ -79,11 +79,19 @@ class PoliteClient:
                 time.sleep(random.uniform(lo, hi))
             self._count += 1
 
-            resp = self._client.request(
-                source.method, url, headers=headers,
-                params=tuple(params) if params else None, json=payload,
-                follow_redirects=source.follow_redirects,
-            )
+            try:
+                resp = self._client.request(
+                    source.method, url, headers=headers,
+                    params=tuple(params) if params else None, json=payload,
+                    follow_redirects=source.follow_redirects,
+                )
+            except httpx.TransportError as e:  # timeouts, TLS/connection resets: transient
+                if attempt == self._s.max_retries:
+                    raise
+                wait = min(2**attempt * 5, 300)
+                log.warning("%r, attempt %s, sleeping %ss", e, attempt + 1, wait)
+                time.sleep(wait)
+                continue
             # Every redirect hop is a real request to the site: count it against the cap.
             self._count += len(resp.history)
 
